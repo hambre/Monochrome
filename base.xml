@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <!-- Base Font Definitions -->
+    <fontdef name="basefont_s" face="DejaVu Sans">
+        <pixelsize>22</pixelsize>
+        <color>#FFFFFF</color>
+    </fontdef>
+
+    <fontdef name="basefont_m" from="basefont_s">
+        <pixelsize>25</pixelsize>
+    </fontdef>
+
+    <fontdef name="basefont_l" from="basefont_s">
+        <pixelsize>28</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
+
+    <fontdef name="basefont_xl" from="basefont_s">
+        <pixelsize>33</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
+
+    <fontdef name="basefont_xxl" from="basefont_s">
+        <pixelsize>40</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
+
+    <shape name="basebackground">
+        <area>0,0,100%,100%</area>
+        <type>box</type>
+        <fill color="#000000" alpha="255" />
+        <line color="#000000" alpha="0" width="0" />
+    </shape>
+
+    <imagetype name="baseimagebackground">
+      <area>0,0,1920,1080</area>
+      <filename>images/DefaultImageBackground.png</filename>
+   </imagetype>
+
+    <!-- separators -->
+    <shape name="baseseparator_h">
+        <area>0,0,100%,2</area>
+        <type>box</type>
+        <fill style="gradient">
+            <gradient direction="horizontal">
+                <stop position="0"   color="#FFFFFF" alpha="50" />
+                <stop position="45"  color="#FFFFFF" alpha="200" />
+                <stop position="50"  color="#FFFFFF" alpha="255" />
+                <stop position="55"  color="#FFFFFF" alpha="200" />
+                <stop position="100" color="#FFFFFF" alpha="50" />
+            </gradient>
+        </fill>
+    </shape>
+    <shape name="baseseparator_v">
+        <area>0,0,2,100%-120</area>
+        <type>box</type>
+        <fill style="gradient">
+            <gradient direction="vertical">
+                <stop position="0"   color="#FFFFFF" alpha="50" />
+                <stop position="45"  color="#FFFFFF" alpha="200" />
+                <stop position="50"  color="#FFFFFF" alpha="255" />
+                <stop position="55"  color="#FFFFFF" alpha="200" />
+                <stop position="100" color="#FFFFFF" alpha="50" />
+            </gradient>
+        </fill>
+    </shape>
+
+    <shape name="baseitemseparator_h" from="baseseparator_h">
+        <alpha>127</alpha>
+    </shape>
+
+    <shape name="basebar" from="basebackground">
+        <area>0,0,1920,50</area>
+    </shape>
+
+    <group name="baseheader">
+        <area>0, 0, 1920, 50</area>
+        <shape name="headerbar" from="basebar" />
+        <shape name="headersep" from="baseseparator_h">
+            <position>0,50</position>
+        </shape>
+    </group>
+
+    <group name="basefooter">
+        <area>0, 1030, 1920, 50</area>
+        <shape name="footerbar" from="basebar">
+            <position>0, 0</position>
+        </shape>
+        <shape name="footersep" from="baseseparator_h">
+            <position>0, 0</position>
+        </shape>
+    </group>
+
+    <shape name="basepoint_s">
+        <area>0,0,10,10</area>
+        <type>ellipse</type>
+        <fill color="#FFFFFF" alpha="255" />
+        <line color="#000000" alpha="0" width="0" />
+    </shape>
+    <shape name="basepoint_m" from="basepoint_s">    <shape name="baseheader" from="baseseparator_h">
+        <position>0,50</position>
+    </shape>
+
+        <area>0,0,20,20</area>
+    </shape>
+    <shape name="basepoint_l" from="basepoint_s">
+        <area>0,0,30,30</area>
+    </shape>
+
+    <textarea name="basetext_s">
+       <font>basefont_s</font>
+       <multiline>no</multiline>
+       <align>left,vcenter</align>
+       <cutdown>yes</cutdown>
+    </textarea>
+
+    <!-- list item text area -->
+    <textarea name="baseitemtext">
+       <font>basefont_m</font>
+       <multiline>no</multiline>
+       <align>left,vcenter</align>
+       <cutdown>yes</cutdown>
+    </textarea>
+
+    <!-- item list defaults -->
+    <buttonlist name="baseitemlist">
+       <area>0,1000,750,500</area>
+       <searchposition>1000,55</searchposition>
+       <align>top,hcenter</align>
+       <layout>vertical</layout>
+       <wrapstyle>selection</wrapstyle>
+       <arrange>stack</arrange>
+       <buttonarea>0,0,750,500</buttonarea>
+       <showarrow>no</showarrow>
+       <statetype name="buttonitem">
+           <state name="active">
+               <shape name="itemseparator" from="baseitemseparator_h">
+                   <position>0, 40</position>
+               </shape>
+               <textarea name="buttontext" from="baseitemtext">
+                   <area>0,0,700,40</area>
+                   <alpha>128</alpha>
+               </textarea>
+           </state>
+           <state name="selectedactive">
+               <shape name="itemseparator" from="baseitemseparator_h">
+                   <position>0,40</position>
+               </shape>
+               <textarea name="buttontext" from="baseitemtext">
+                   <area>0,0,700,40</area>
+                   <scroll direction="left" />
+                   <alpha>255</alpha>
+               </textarea>
+           </state>
+           <state name="inactive" from="active">
+               <alpha>0</alpha>
+           </state>
+           <state name="selectedinactive" from="selectedactive">
+               <alpha>0</alpha>
+           </state>
+       </statetype>
+   </buttonlist>
+
+    <!-- required window -->
+    <window name="backgroundwindow">
+       <area>0,0,1920,1080</area>
+    </window>
+
+</mythuitheme>

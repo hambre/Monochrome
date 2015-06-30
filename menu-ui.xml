@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="mainmenu">
+        <fontdef name="menufont_m" from="basefont_s">
+            <pixelsize>40</pixelsize>
+        </fontdef>
+        <fontdef name="menufont_l" from="basefont_s">
+            <pixelsize>50</pixelsize>
+        </fontdef>
+        
+        <shape name="background" from="basebackground" />
+        <group name="header" from="baseheader" />
+        <statetype name="watermarks">
+            <!-- ########  mainmenu.xml  ########-->
+            <state name="TV">
+                <textarea name="description">
+                    <font>basefont_m</font>
+                    <area>1000,500,700,100</area>
+                    <align>left</align>
+                    <value>Hello World!</value>
+                </textarea>
+            </state>
+        </statetype>
+        <buttonlist name="menu">
+            <area>25,275,900,600</area>
+            <layout>vertical</layout>
+            <buttonarea>0,0,900,600</buttonarea>
+            <scrollstyle>center</scrollstyle>
+            <spacing>3</spacing>
+            <wrapstyle>items</wrapstyle>
+            <align>vcenter</align>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>0,0,890,100</area>
+                        <font>menufont_m</font>
+                        <cutdown>yes</cutdown>
+                        <align>right,vcenter</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="buttontext">
+                        <area>0,0,890,100</area>
+                        <font>menufont_l</font>
+                        <cutdown>yes</cutdown>
+                        <case>upper</case>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <shape name="middlesep" from="baseseparator_v">
+            <position>50%, 60</position>
+        </shape>
+        <group name="footer" from="basefooter" />
+    </window>
+
+</mythuitheme>

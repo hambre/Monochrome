@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="watchrecordings">
+
+        <imagetype name="fanart" from="baseimagebackground"/>
+        <group name="header" from="baseheader" />
+
+        <!-- the content decoration -->
+        <shape name="contentbar" from="basebar">
+            <area>0, 475, 100%, 555</area>
+            <alpha>200</alpha>
+        </shape>
+        <shape name="contentsep" from="baseseparator_h">
+            <position>0, 475</position>
+        </shape>
+
+        <!-- recordings list -->
+        <buttonlist name="recordings" from="baseitemlist">
+            <align>top,hcenter</align>
+            <layout>vertical</layout>
+            <area>25,500,750,505</area>
+            <buttonarea>0,0,750,505</buttonarea>
+            <showarrow>no</showarrow>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <arrange>fixed</arrange>
+            <showarrow>no</showarrow>
+            <spacing>2</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="titlesubtitle" from="baseitemtext">
+                        <area>00,0,700,40</area>
+                        <align>left,vcenter</align>
+                        <alpha>155</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="titlesubtitle" from="baseitemtext">
+                        <area>00,0,700,40</area>
+                        <align>left,vcenter</align>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- recording groups list -->
+        <buttonlist name="groups" from="baseitemlist">
+            <align>top,hcenter</align>
+            <layout>vertical</layout>
+            <area>25,500,750,505</area>
+            <buttonarea>0,0,750,505</buttonarea>
+            <showarrow>no</showarrow>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <arrange>fixed</arrange>
+            <showarrow>no</showarrow>
+        </buttonlist>
+
+        <!-- selected recording details -->
+        <group name="recdetails" depends="!rec_count">
+            <area>800, 500, 1400, 505</area>
+            <imagetype name="coverart">
+                <area>0, 0, 350, 505</area>
+            </imagetype>
+            <imagetype name="preview" depends="!coverart">
+                <area>0, 0, 350, 505</area>
+                <preserveaspect>yes</preserveaspect>
+            </imagetype>
+            <textarea name="description" from="basetext_s">
+                <area>400, 0, 700, 505</area>
+                <multiline>yes</multiline>
+                <align>justify</align>
+                <cutdown>yes</cutdown>
+            </textarea>
+        </group>
+        <group name="groupdetails" depends="rec_count">
+        </group>
+        <group name="footer" from="basefooter" />
+
+    </window>
+
+    <window name="groupfilter">
+        <buttonlist name="groups">
+        </buttonlist>
+    </window>
+
+    <window name="changeview">
+        <checkbox name="titles">
+        </checkbox>
+        <checkbox name="categories">
+        </checkbox>
+        <checkbox name="recgroups">
+        </checkbox>
+        <checkbox name="watchlist">
+        </checkbox>
+        <checkbox name="searches">
+        </checkbox>
+        <checkbox name="livetv">
+        </checkbox>
+        <checkbox name="watched">
+        </checkbox>
+        <checkbox name="save">
+        </checkbox>
+    </window>
+
+    <window name="passwordchanger">
+        <textedit name="oldpassword">
+        </textedit>
+        <textedit name="newpassword">
+        </textedit>
+        <button name="ok">
+        </button>
+    </window>
+
+    <window name="groupselector">
+        <buttonlist name="groups">
+        </buttonlist>
+    </window>
+
+    <window name="iconhelp">
+        <buttonlist name="iconlist">
+        </buttonlist>
+        <statetype name="items">
+        </statetype>
+    </window>
+
+    <window name="editmetadata">
+        <textedit name="title">
+        </textedit>
+        <textedit name="subtitle">
+        </textedit>
+        <textedit name="description">
+        </textedit>
+        <button name="ok">
+        </button>
+        <textedit name="inetref">
+        </textedit>
+        <spinbox name="season">
+        </spinbox>
+        <spinbox name="episode">
+        </spinbox>
+    </window>
+    
+</mythuitheme>
