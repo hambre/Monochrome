@@ -3,6 +3,9 @@
 <mythuitheme>
 
     <window name="mainmenu">
+        <fontdef name="menufont_s" from="basefont_s">
+            <pixelsize>30</pixelsize>
+        </fontdef>
         <fontdef name="menufont_m" from="basefont_s">
             <pixelsize>40</pixelsize>
         </fontdef>
@@ -12,6 +15,9 @@
         
         <shape name="background" from="basebackground" />
         <group name="header" from="baseheader" />
+        <shape name="contentsep" from="baseseparator_h">
+            <position>0, 475</position>
+        </shape>
         <statetype name="watermarks">
             <!-- ########  mainmenu.xml  ########-->
             <state name="TV">
@@ -24,9 +30,9 @@
             </state>
         </statetype>
         <buttonlist name="menu">
-            <area>25,275,900,600</area>
+            <area>25,500,1870,550</area>
             <layout>vertical</layout>
-            <buttonarea>0,0,900,600</buttonarea>
+            <buttonarea>0,0,1870,550</buttonarea>
             <scrollstyle>center</scrollstyle>
             <spacing>3</spacing>
             <wrapstyle>items</wrapstyle>
@@ -34,26 +40,33 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext">
-                        <area>0,0,890,100</area>
+                        <area>0,0,910,100</area>
                         <font>menufont_m</font>
                         <cutdown>yes</cutdown>
                         <align>right,vcenter</align>
-                        <alpha>100</alpha>
+                        <alpha>105</alpha>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <textarea name="buttontext">
-                        <area>0,0,890,100</area>
+                        <area>0,0,910,100</area>
                         <font>menufont_l</font>
                         <cutdown>yes</cutdown>
                         <case>upper</case>
                         <align>right,vcenter</align>
                     </textarea>
+                    <textarea name="description">
+                        <area>960,0,910,100</area>
+                        <font>menufont_s</font>
+                        <multiline>yes</multiline>
+                        <align>left,vcenter</align>
+                        <alpha>205</alpha>
+                    </textarea>
                 </state>
             </statetype>
         </buttonlist>
         <shape name="middlesep" from="baseseparator_v">
-            <position>50%, 60</position>
+            <area>50%,500,2,500</area>
         </shape>
         <group name="footer" from="basefooter" />
     </window>
