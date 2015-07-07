@@ -12,23 +12,72 @@
         <fontdef name="menufont_l" from="basefont_s">
             <pixelsize>50</pixelsize>
         </fontdef>
-        
-        <shape name="background" from="basebackground" />
-        <group name="header" from="baseheader" />
-        <shape name="contentsep" from="baseseparator_h">
-            <position>0, 475</position>
-        </shape>
+
+        <imagetype name="background" from="basetitlebackground" />
+
         <statetype name="watermarks">
-            <!-- ########  mainmenu.xml  ########-->
-            <state name="TV">
-                <textarea name="description">
-                    <font>basefont_m</font>
-                    <area>1000,500,700,100</area>
-                    <align>left</align>
-                    <value>Hello World!</value>
-                </textarea>
+            <state name="MENU_MEDIA_LIBRARY">
+                <imagetype name="background">
+                    <filename>images/BackgroundLibrary.jpg</filename>
+                    <area>0,0,1920,1080</area>
+                </imagetype>
+            </state>
+            <state name="MENU_MANAGE_RECORDINGS">
+                <imagetype name="background">
+                    <filename>images/BackgroundRecordings.jpg</filename>
+                    <area>0,0,1920,1080</area>
+                </imagetype>
+            </state>
+            <state name="MENU_INFO_CENTER">
+                <imagetype name="background">
+                    <filename>images/BackgroundInformation.jpg</filename>
+                    <area>0,0,1920,1080</area>
+                </imagetype>
+            </state>
+            <state name="MENU_OPTICAL_DISKS">
+                <imagetype name="background">
+                    <filename>images/BackgroundOptical.jpg</filename>
+                    <area>0,0,1920,1080</area>
+                </imagetype>
+            </state>
+            <state name="TV_WATCH_TV">
+               <imagetype name="background">
+                   <filename>images/BackgroundTV.jpg</filename>
+                   <area>0,0,1920,1080</area>
+               </imagetype>
+            </state>
+            <state name="TV_WATCH_RECORDINGS">
+               <imagetype name="background">
+                   <filename>images/BackgroundTV.jpg</filename>
+                   <area>0,0,1920,1080</area>
+               </imagetype>
+            </state>
+            <state name="VIDEO_BROWSER">
+               <imagetype name="background">
+                   <filename>images/BackgroundTV.jpg</filename>
+                   <area>0,0,1920,1080</area>
+               </imagetype>
+            </state>
+            <state name="TV_PROGRAM_GUIDE">
+               <imagetype name="background">
+                   <filename>images/BackgroundTV.jpg</filename>
+                   <area>0,0,1920,1080</area>
+               </imagetype>
+            </state>
+            <state name="MENU_UTILITIES_SETUP">
+                <imagetype name="background">
+                    <filename>images/BackgroundSetup.jpg</filename>
+                    <area>0,0,1920,1080</area>
+                </imagetype>
             </state>
         </statetype>
+
+        <group name="pageheader" from="baseheader" />
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Main Menu</value>
+        </textarea>
+        <group name="content" from="basecontent" />
+
         <buttonlist name="menu">
             <area>25,500,1870,550</area>
             <layout>vertical</layout>
@@ -68,7 +117,7 @@
         <shape name="middlesep" from="baseseparator_v">
             <area>50%,500,2,500</area>
         </shape>
-        <group name="footer" from="basefooter" />
+        <group name="pagefooter" from="basefooter" />
     </window>
 
 </mythuitheme>

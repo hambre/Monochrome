@@ -2,7 +2,7 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
-    <!-- Base Font Definitions -->
+    <!-- fonts -->
     <fontdef name="basefont_s" face="DejaVu Sans">
         <pixelsize>22</pixelsize>
         <color>#FFFFFF</color>
@@ -27,6 +27,7 @@
         <weight>bold</weight>
     </fontdef>
 
+    <!-- backgrounds -->
     <shape name="basebackground">
         <area>0,0,100%,100%</area>
         <type>box</type>
@@ -36,7 +37,12 @@
 
     <imagetype name="baseimagebackground">
       <area>0,0,1920,1080</area>
-      <filename>images/DefaultImageBackground.png</filename>
+      <filename>images/BackgroundDefault.png</filename>
+   </imagetype>
+
+    <imagetype name="basetitlebackground">
+      <area>0,0,1920,1080</area>
+      <filename>images/BackgroundTitle.png</filename>
    </imagetype>
 
     <!-- separators -->
@@ -81,6 +87,12 @@
         <shape name="headersep" from="baseseparator_h">
             <position>0,50</position>
         </shape>
+        <clock name="clock">
+            <area>1645,10,250,30</area>
+            <font>basefont_m</font>
+            <align>right</align>
+            <alpha>155</alpha>
+        </clock>
     </group>
 
     <group name="basefooter">
@@ -89,6 +101,18 @@
             <position>0, 0</position>
         </shape>
         <shape name="footersep" from="baseseparator_h">
+            <position>0, 0</position>
+        </shape>
+    </group>
+
+    <!-- the content background -->
+    <group name="basecontent">
+        <area>0, 475, 100%, 555</area>
+        <shape name="contentbar" from="basebar">
+            <area>0, 0, 100%, 555</area>
+            <alpha>200</alpha>
+        </shape>
+        <shape name="contentsep" from="baseseparator_h">
             <position>0, 0</position>
         </shape>
     </group>
@@ -110,18 +134,27 @@
     </shape>
 
     <textarea name="basetext_s">
-       <font>basefont_s</font>
-       <multiline>no</multiline>
-       <align>left,vcenter</align>
-       <cutdown>yes</cutdown>
+        <font>basefont_s</font>
+        <multiline>no</multiline>
+        <align>left,vcenter</align>
+        <cutdown>yes</cutdown>
+    </textarea>
+
+    <textarea name="basetitletext">
+        <area>50%-150, 10, 300, 30</area>
+        <font>basefont_m</font>
+        <multiline>no</multiline>
+        <align>hcenter</align>
+        <case>upper</case>
+        <alpha>155</alpha>
     </textarea>
 
     <!-- list item text area -->
     <textarea name="baseitemtext">
-       <font>basefont_m</font>
-       <multiline>no</multiline>
-       <align>left,vcenter</align>
-       <cutdown>yes</cutdown>
+        <font>basefont_m</font>
+        <multiline>no</multiline>
+        <align>left,vcenter</align>
+        <cutdown>yes</cutdown>
     </textarea>
 
     <!-- item list defaults -->

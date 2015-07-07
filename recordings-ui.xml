@@ -5,16 +5,11 @@
     <window name="watchrecordings">
 
         <imagetype name="fanart" from="baseimagebackground"/>
-        <group name="header" from="baseheader" />
-
-        <!-- the content decoration -->
-        <shape name="contentbar" from="basebar">
-            <area>0, 475, 100%, 555</area>
-            <alpha>200</alpha>
-        </shape>
-        <shape name="contentsep" from="baseseparator_h">
-            <position>0, 475</position>
-        </shape>
+        <group name="pageheader" from="baseheader" />
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Watch Recordings</value>
+        </textarea>
+        <group name="content" from="basecontent" />
 
         <!-- recordings list -->
         <buttonlist name="recordings" from="baseitemlist">
@@ -41,6 +36,7 @@
                         <area>00,0,700,40</area>
                         <align>left,vcenter</align>
                         <alpha>255</alpha>
+                        <case>upper</case>
                     </textarea>
                 </state>
             </statetype>
@@ -65,8 +61,23 @@
             <imagetype name="coverart">
                 <area>0, 0, 350, 505</area>
             </imagetype>
-            <imagetype name="preview" depends="!coverart">
+            <shape name="previewframe" depends="!coverart">
+                <type>box></type>
                 <area>0, 0, 350, 505</area>
+                <fill style="gradient">
+                    <gradient direction="vertical">
+                        <stop position="0"   color="#FFFFFF" alpha="75" />
+                        <stop position="30"   color="#FFFFFF" alpha="75" />
+                        <stop position="100" color="#FFFFFF" alpha="25" />
+                    </gradient>
+                </fill>
+            </shape>
+            <imagetype name="preview" depends="!coverart">
+                <area>0, 0, 350, 200</area>
+                <preserveaspect>yes</preserveaspect>
+            </imagetype>
+            <imagetype name="banner">
+                <area>0, 425, 350, 100</area>
                 <preserveaspect>yes</preserveaspect>
             </imagetype>
             <textarea name="description" from="basetext_s">
@@ -78,7 +89,7 @@
         </group>
         <group name="groupdetails" depends="rec_count">
         </group>
-        <group name="footer" from="basefooter" />
+        <group name="pagefooter" from="basefooter" />
 
     </window>
 
