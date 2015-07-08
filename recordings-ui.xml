@@ -6,10 +6,12 @@
 
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="pageheader" from="baseheader" />
+        <group name="content" from="basecontent" />
+        <group name="pagefooter" from="basefooter" />
+
         <textarea name="pagetitle" from="basetitletext">
             <value>Watch Recordings</value>
         </textarea>
-        <group name="content" from="basecontent" />
 
         <!-- recordings list -->
         <buttonlist name="recordings" from="baseitemlist">
@@ -89,7 +91,42 @@
         </group>
         <group name="groupdetails" depends="rec_count">
         </group>
-        <group name="pagefooter" from="basefooter" />
+
+
+        <statetype name="audioprops">
+            <area>1200,1040,100,32</area>
+            <showempty>yes</showempty>
+            <state name="stereo">
+                <imagetype name="stereo" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/AudioStereo.png</filename>
+                </imagetype>
+            </state>
+            <state name="surround">
+                <imagetype name="surround" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/AudioSurround.png</filename>
+                </imagetype>
+            </state>
+            <state name="dolby">
+                <imagetype name="dolby" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/AudioDolby.png</filename>
+                </imagetype>
+            </state>
+            <state name="mono">
+                <imagetype name="mono" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/AudioMono.png</filename>
+                </imagetype>
+            </state>
+            <state name="default">
+                <imagetype name="default" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/AudioDefault.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
 
     </window>
 

@@ -196,6 +196,13 @@
        </statetype>
    </buttonlist>
 
+    <imagetype name="baseicon">
+        <area>0,0,75,32</area>
+        <alpha>200</alpha>
+        <preserveaspect>yes</preserveaspect>
+        <filename>images/BackgroundDefault.png</filename>
+    </imagetype>
+
     <!-- required window -->
     <window name="backgroundwindow">
        <area>0,0,1920,1080</area>
