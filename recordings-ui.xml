@@ -123,6 +123,7 @@
             <state name="default">
                 <imagetype name="default" from="baseicon">
                     <area>0,0,100,32</area>
+                    <alpha>100</alpha>
                     <filename>images/icons/AudioDefault.png</filename>
                 </imagetype>
             </state>
@@ -168,7 +169,42 @@
             <state name="default">
                 <imagetype name="default" from="baseicon">
                     <area>0,0,100,32</area>
+                    <alpha>100</alpha>
                     <filename>images/icons/VideoSD.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="subtitletypes">
+            <area>1400,1040,100,32</area>
+            <state name="cc">
+                <imagetype name="sub" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/SubCC.png</filename>
+                </imagetype>
+            </state>
+            <state name="subtitles">
+                <imagetype name="sub" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/SubNormal.png</filename>
+                </imagetype>
+            </state>
+            <state name="onscreensub">
+                <imagetype name="sub" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/SubOSD.png</filename>
+                </imagetype>
+            </state>
+            <state name="deafsigned">
+                <imagetype name="sub" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/SubSDH.png</filename>
+                </imagetype>
+            </state>
+            <state name="default">
+                <imagetype name="sub" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <alpha>100</alpha>
+                    <filename>images/icons/SubNormal.png</filename>
                 </imagetype>
             </state>
         </statetype>
