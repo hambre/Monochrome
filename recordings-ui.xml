@@ -127,7 +127,51 @@
                 </imagetype>
             </state>
         </statetype>
-
+        <statetype name="videoprops">
+            <area>1300,1040,100,32</area>
+            <state name="hdtv">
+                <textarea name="hdtv" from="basetext_s">
+                    <area>0,0,100,32</area>
+                    <value>HDTV</value>
+                </textarea>
+            </state>
+            <state name="widescreen">
+                <imagetype name="widescreen" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/VideoWidescreen.png</filename>
+                </imagetype>
+            </state>
+            <state name="avchd">
+                <imagetype name="avchd" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/VideoAVCHD.png</filename>
+                </imagetype>
+            </state>
+            <state name="hd720">
+                <imagetype name="hd720" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/VideoHD720.png</filename>
+                </imagetype>
+            </state>
+            <state name="hd1080">
+                <imagetype name="hd1080" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/VideoHD1080.png</filename>
+                </imagetype>
+            </state>
+            <state name="damaged">
+                <textarea name="damaged" from="basetext_s">
+                    <area>0,0,100,32</area>
+                    <value>Damaged</value>
+                </textarea>
+            </state>
+            <state name="default">
+                <imagetype name="default" from="baseicon">
+                    <area>0,0,100,32</area>
+                    <filename>images/icons/VideoSD.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </window>
 
     <window name="groupfilter">
