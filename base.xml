@@ -140,8 +140,16 @@
         <cutdown>yes</cutdown>
     </textarea>
 
+    <textarea name="basetext_m" from="basetext_s">
+        <font>basefont_m</font>
+    </textarea>
+
+    <textarea name="basetext_l" from="basetext_s">
+        <font>basefont_l</font>
+    </textarea>
+
     <textarea name="basetitletext">
-        <area>50%-150, 10, 300, 30</area>
+        <area>50%-200, 10, 400, 30</area>
         <font>basefont_m</font>
         <multiline>no</multiline>
         <align>hcenter</align>
