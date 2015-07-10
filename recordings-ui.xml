@@ -28,18 +28,28 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>00,0,700,40</area>
+                        <area>0,0,700,40</area>
                         <align>left,vcenter</align>
                         <alpha>155</alpha>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>00,0,700,40</area>
+                        <area>0,0,668,40</area>
                         <align>left,vcenter</align>
                         <alpha>255</alpha>
                         <case>upper</case>
+                        <scroll direction="horizontal" />
+                        <cutdown>no</cutdown>
                     </textarea>
+                    <statetype name="watched">
+                        <state name="yes">
+                            <imagetype name="watched" from="baseicon">
+                                <area>668,4,32,32</area>
+                                <filename>images/icons/Watched.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
                 </state>
             </statetype>
         </buttonlist>
