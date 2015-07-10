@@ -13,6 +13,9 @@
             <value>Watch Recordings</value>
         </textarea>
 
+        <!-- add hidden rec_count widget so we can depend on it -->
+        <textarea name="rec_count"></textarea>
+
         <!-- recordings list -->
         <buttonlist name="recordings" from="baseitemlist">
             <align>top,hcenter</align>
@@ -36,10 +39,10 @@
                 <state name="selectedactive">
                     <textarea name="titlesubtitle" from="baseitemtext">
                         <area>0,0,668,40</area>
+                        <scroll direction="horizontal" />
                         <align>left,vcenter</align>
                         <alpha>255</alpha>
                         <case>upper</case>
-                        <scroll direction="horizontal" />
                         <cutdown>no</cutdown>
                     </textarea>
                     <statetype name="watched">
@@ -69,7 +72,7 @@
 
         <!-- selected recording details -->
         <group name="recdetails" depends="!rec_count">
-            <area>800, 500, 1400, 505</area>
+            <area>800, 500, 1120, 580</area>
             <imagetype name="coverart">
                 <area>0, 0, 350, 505</area>
             </imagetype>
@@ -92,132 +95,182 @@
                 <area>0, 425, 350, 100</area>
                 <preserveaspect>yes</preserveaspect>
             </imagetype>
+            <textarea name="title" from="basetext_l">
+                <area>400, 0, 700, 50</area>
+            </textarea>
             <textarea name="description" from="basetext_s">
-                <area>400, 0, 700, 505</area>
+                <area>400, 50, 700, 350</area>
                 <multiline>yes</multiline>
                 <align>justify</align>
                 <cutdown>yes</cutdown>
+                <alpha>200</alpha>
             </textarea>
+            <group name="facts">
+                <area>400,400,700,120</area>
+                <imagetype name="sender" from="baseicon">
+                    <area>0,0,32,32</area>
+                    <filename>images/icons/Sender.png</filename>
+                </imagetype>
+                <textarea name="longchannel" from="basetext_m">
+                    <area>50,0,650,32</area>
+                    <alpha>200</alpha>
+                </textarea>
+                <imagetype name="aried" from="baseicon">
+                    <area>0,40,32,32</area>
+                    <filename>images/icons/Clock.png</filename>
+                </imagetype>
+                <textarea name="startdate" from="basetext_m">
+                    <area>50,40,650,32</area>
+                    <alpha>200</alpha>
+                    <template>%startdate%%| year%, %starttime% - %endtime%</template>
+                </textarea>
+                <imagetype name="storage" from="baseicon">
+                    <area>0,80,32,32</area>
+                    <filename>images/icons/Storage.png</filename>
+                </imagetype>
+                <textarea name="storagegroup" from="basetext_m">
+                    <area>50,80,650,32</area>
+                    <alpha>200</alpha>
+                    <template>%filesize_str% of %storagegroup% Storage</template>
+                </textarea>
+            </group>
+            <textarea name="category" from="basetext_m">
+                <area>0,540,350,32</area>
+                <align>center</align>
+                <alpha>200</alpha>
+                <case>capitaliseall</case>
+            </textarea>
+
+            <statetype name="audioprops">
+                <area>400,540,100,32</area>
+                <showempty>yes</showempty>
+                <state name="stereo">
+                    <imagetype name="stereo" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/AudioStereo.png</filename>
+                    </imagetype>
+                </state>
+                <state name="surround">
+                    <imagetype name="surround" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/AudioSurround.png</filename>
+                    </imagetype>
+                </state>
+                <state name="dolby">
+                    <imagetype name="dolby" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/AudioDolby.png</filename>
+                    </imagetype>
+                </state>
+                <state name="mono">
+                    <imagetype name="mono" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/AudioMono.png</filename>
+                    </imagetype>
+                </state>
+                <state name="default">
+                    <imagetype name="default" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <alpha>100</alpha>
+                        <filename>images/icons/AudioDefault.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="videoprops">
+                <area>500,540,100,32</area>
+                <state name="hdtv">
+                    <textarea name="hdtv" from="basetext_s">
+                        <area>0,0,100,32</area>
+                        <value>HDTV</value>
+                    </textarea>
+                </state>
+                <state name="widescreen">
+                    <imagetype name="widescreen" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/VideoWidescreen.png</filename>
+                    </imagetype>
+                </state>
+                <state name="avchd">
+                    <imagetype name="avchd" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/VideoAVCHD.png</filename>
+                    </imagetype>
+                </state>
+                <state name="hd720">
+                    <imagetype name="hd720" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/VideoHD720.png</filename>
+                    </imagetype>
+                </state>
+                <state name="hd1080">
+                    <imagetype name="hd1080" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/VideoHD1080.png</filename>
+                    </imagetype>
+                </state>
+                <state name="damaged">
+                    <textarea name="damaged" from="basetext_s">
+                        <area>0,0,100,32</area>
+                        <value>Damaged</value>
+                    </textarea>
+                </state>
+                <state name="default">
+                    <imagetype name="default" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <alpha>100</alpha>
+                        <filename>images/icons/VideoSD.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="subtitletypes">
+                <area>600,540,100,32</area>
+                <state name="cc">
+                    <imagetype name="sub" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/SubCC.png</filename>
+                    </imagetype>
+                </state>
+                <state name="subtitles">
+                    <imagetype name="sub" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/SubNormal.png</filename>
+                    </imagetype>
+                </state>
+                <state name="onscreensub">
+                    <imagetype name="sub" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/SubOSD.png</filename>
+                    </imagetype>
+                </state>
+                <state name="deafsigned">
+                    <imagetype name="sub" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <filename>images/icons/SubSDH.png</filename>
+                    </imagetype>
+                </state>
+                <state name="default">
+                    <imagetype name="sub" from="baseicon">
+                        <area>0,0,100,32</area>
+                        <alpha>100</alpha>
+                        <filename>images/icons/SubNormal.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
         </group>
         <group name="groupdetails" depends="rec_count">
+            <area>800, 500, 1120, 505</area>
+            <textarea name="title" from="basetext_m">
+                <area>210, 150, 700, 50</area>
+            </textarea>
+            <textarea name="description" from="basetext_s">
+                <area>210, 200, 700, 455</area>
+                <multiline>yes</multiline>
+                <align>justify</align>
+                <cutdown>yes</cutdown>
+                <alpha>200</alpha>
+            </textarea>
         </group>
 
-
-        <statetype name="audioprops">
-            <area>1200,1040,100,32</area>
-            <showempty>yes</showempty>
-            <state name="stereo">
-                <imagetype name="stereo" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/AudioStereo.png</filename>
-                </imagetype>
-            </state>
-            <state name="surround">
-                <imagetype name="surround" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/AudioSurround.png</filename>
-                </imagetype>
-            </state>
-            <state name="dolby">
-                <imagetype name="dolby" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/AudioDolby.png</filename>
-                </imagetype>
-            </state>
-            <state name="mono">
-                <imagetype name="mono" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/AudioMono.png</filename>
-                </imagetype>
-            </state>
-            <state name="default">
-                <imagetype name="default" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <alpha>100</alpha>
-                    <filename>images/icons/AudioDefault.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="videoprops">
-            <area>1300,1040,100,32</area>
-            <state name="hdtv">
-                <textarea name="hdtv" from="basetext_s">
-                    <area>0,0,100,32</area>
-                    <value>HDTV</value>
-                </textarea>
-            </state>
-            <state name="widescreen">
-                <imagetype name="widescreen" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/VideoWidescreen.png</filename>
-                </imagetype>
-            </state>
-            <state name="avchd">
-                <imagetype name="avchd" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/VideoAVCHD.png</filename>
-                </imagetype>
-            </state>
-            <state name="hd720">
-                <imagetype name="hd720" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/VideoHD720.png</filename>
-                </imagetype>
-            </state>
-            <state name="hd1080">
-                <imagetype name="hd1080" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/VideoHD1080.png</filename>
-                </imagetype>
-            </state>
-            <state name="damaged">
-                <textarea name="damaged" from="basetext_s">
-                    <area>0,0,100,32</area>
-                    <value>Damaged</value>
-                </textarea>
-            </state>
-            <state name="default">
-                <imagetype name="default" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <alpha>100</alpha>
-                    <filename>images/icons/VideoSD.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-        <statetype name="subtitletypes">
-            <area>1400,1040,100,32</area>
-            <state name="cc">
-                <imagetype name="sub" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/SubCC.png</filename>
-                </imagetype>
-            </state>
-            <state name="subtitles">
-                <imagetype name="sub" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/SubNormal.png</filename>
-                </imagetype>
-            </state>
-            <state name="onscreensub">
-                <imagetype name="sub" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/SubOSD.png</filename>
-                </imagetype>
-            </state>
-            <state name="deafsigned">
-                <imagetype name="sub" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <filename>images/icons/SubSDH.png</filename>
-                </imagetype>
-            </state>
-            <state name="default">
-                <imagetype name="sub" from="baseicon">
-                    <area>0,0,100,32</area>
-                    <alpha>100</alpha>
-                    <filename>images/icons/SubNormal.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
     </window>
 
     <window name="groupfilter">
