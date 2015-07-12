@@ -27,6 +27,11 @@
         <weight>bold</weight>
     </fontdef>
 
+    <fontdef name="basefont_xs" from="basefont_s">
+        <pixelsize>18</pixelsize>
+        <color>#FFFFFF</color>
+    </fontdef>
+
     <!-- backgrounds -->
     <shape name="basebackground">
         <area>0,0,100%,100%</area>
@@ -123,12 +128,11 @@
         <fill color="#FFFFFF" alpha="255" />
         <line color="#000000" alpha="0" width="0" />
     </shape>
-    <shape name="basepoint_m" from="basepoint_s">    <shape name="baseheader" from="baseseparator_h">
-        <position>0,50</position>
-    </shape>
 
+    <shape name="basepoint_m" from="basepoint_s">
         <area>0,0,20,20</area>
     </shape>
+
     <shape name="basepoint_l" from="basepoint_s">
         <area>0,0,30,30</area>
     </shape>
@@ -146,6 +150,10 @@
 
     <textarea name="basetext_l" from="basetext_s">
         <font>basefont_l</font>
+    </textarea>
+
+    <textarea name="basetext_xs" from="basetext_s">
+        <font>basefont_xs</font>
     </textarea>
 
     <textarea name="basetitletext">
@@ -210,6 +218,46 @@
         <preserveaspect>yes</preserveaspect>
         <filename>images/BackgroundDefault.png</filename>
     </imagetype>
+
+    <!-- progress bars -->
+    <shape name="baseprogressbackground">
+        <area>0,0,700,30</area>
+        <type>roundbox</type>
+        <cornerradius>5</cornerradius>
+        <line color="#FFFFFF" alpha="255" width="2"/>
+        <alpha>50</alpha>
+    </shape>
+    <shape name="baseprogressimage">
+        <area>5,5,690,20</area>
+        <type>roundbox</type>
+        <cornerradius>5</cornerradius>
+        <fill color="#FFFFFF" alpha="255" />
+        <alpha>100</alpha>
+    </shape>
+
+    <progressbar name="baseprogress_m">
+        <area>0,0,700,20</area>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <shape name="background" from="baseprogressbackground">
+            <area>0,0,700,20</area>
+        </shape>
+        <shape name="progressimage" from="baseprogressimage">
+            <area>5,5,690,10</area>
+        </shape>
+    </progressbar>
+
+    <progressbar name="baseprogress_l">
+        <area>0,0,700,30</area>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <shape name="background" from="baseprogressbackground">
+            <area>0,0,700,30</area>
+        </shape>
+        <shape name="progressimage" from="baseprogressimage">
+            <area>5,5,690,20</area>
+        </shape>
+    </progressbar>
 
     <!-- required window -->
     <window name="backgroundwindow">

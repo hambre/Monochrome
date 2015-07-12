@@ -146,31 +146,31 @@
                 <showempty>yes</showempty>
                 <state name="stereo">
                     <imagetype name="stereo" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,80,32</area>
                         <filename>images/icons/AudioStereo.png</filename>
                     </imagetype>
                 </state>
                 <state name="surround">
                     <imagetype name="surround" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,80,32</area>
                         <filename>images/icons/AudioSurround.png</filename>
                     </imagetype>
                 </state>
                 <state name="dolby">
                     <imagetype name="dolby" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,80,32</area>
                         <filename>images/icons/AudioDolby.png</filename>
                     </imagetype>
                 </state>
                 <state name="mono">
                     <imagetype name="mono" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,80,32</area>
                         <filename>images/icons/AudioMono.png</filename>
                     </imagetype>
                 </state>
                 <state name="default">
                     <imagetype name="default" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,80,32</area>
                         <alpha>100</alpha>
                         <filename>images/icons/AudioDefault.png</filename>
                     </imagetype>
@@ -268,6 +268,24 @@
                 <align>justify</align>
                 <cutdown>yes</cutdown>
                 <alpha>200</alpha>
+            </textarea>
+        </group>
+        <!-- used storage space detail in left side of footer -->
+        <group name="storagedetails">
+            <area>25,1040,700,30</area>
+            <progressbar name="usedbar" from="baseprogress_l">
+                <area>0,0,700,30</area>
+                <shape name="background" from="baseprogressbackground">
+                    <area>0,0,700,30</area>
+                </shape>
+                <shape name="progressimage" from="baseprogressimage">
+                    <area>5,5,690,20</area>
+                </shape>
+            </progressbar>
+            <textarea name="freereport" from="basetext_xs">
+                <area>0,0,700,30</area>
+                <alpha>200</alpha>
+                <align>center</align>
             </textarea>
         </group>
 
