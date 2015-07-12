@@ -256,6 +256,70 @@
                     </imagetype>
                 </state>
             </statetype>
+            <statetype name="bookmark">
+                <area>725,540,32,32</area>
+                <state name="yes">
+                    <imagetype name="bookmark" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <filename>images/icons/Bookmark.png</filename>
+                    </imagetype>
+                </state>
+                <state name="no">
+                    <imagetype name="bookmark" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <alpha>50</alpha>
+                        <filename>images/icons/Bookmark.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="autoexpire">
+                <area>775,540,32,32</area>
+                <state name="yes">
+                    <imagetype name="autoexpire" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <filename>images/icons/Expire.png</filename>
+                    </imagetype>
+                </state>
+                <state name="no">
+                    <imagetype name="autoexpire" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <alpha>50</alpha>
+                        <filename>images/icons/Expire.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="commflagged">
+                <area>825,540,32,32</area>
+                <state name="yes">
+                    <imagetype name="commflagged" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <filename>images/icons/CommFlag.png</filename>
+                    </imagetype>
+                </state>
+                <state name="no">
+                    <imagetype name="commflagged" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <alpha>50</alpha>
+                        <filename>images/icons/CommFlag.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="cutlist">
+                <area>875,540,32,32</area>
+                <state name="yes">
+                    <imagetype name="cutlist" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <filename>images/icons/Cutlist.png</filename>
+                    </imagetype>
+                </state>
+                <state name="no">
+                    <imagetype name="cutlist" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <alpha>50</alpha>
+                        <filename>images/icons/Cutlist.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
         </group>
         <group name="groupdetails" depends="rec_count">
             <area>800, 500, 1120, 505</area>
