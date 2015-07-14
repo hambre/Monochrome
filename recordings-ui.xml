@@ -29,12 +29,16 @@
             <showarrow>no</showarrow>
             <spacing>2</spacing>
             <statetype name="buttonitem">
+                <area>0,0,700,40</area>
                 <state name="active">
                     <textarea name="titlesubtitle" from="baseitemtext">
                         <area>0,0,700,40</area>
                         <align>left,vcenter</align>
                         <alpha>155</alpha>
                     </textarea>
+                    <statetype name="jobstate" from="basejobstate">
+                        <position>710,0</position>
+                    </statetype>
                 </state>
                 <state name="selectedactive">
                     <textarea name="titlesubtitle" from="baseitemtext">
@@ -52,6 +56,9 @@
                                 <filename>images/icons/Watched.png</filename>
                             </imagetype>
                         </state>
+                    </statetype>
+                    <statetype name="jobstate" from="basejobstate">
+                        <position>710,0</position>
                     </statetype>
                 </state>
             </statetype>
@@ -320,6 +327,13 @@
                     </imagetype>
                 </state>
             </statetype>
+            <!-- this animation is needed to keep the animation within the buttonlist running -->
+            <imagetype name="triggeranimation">
+                <area>925,540,32,32</area>
+                <alpha>0</alpha>
+                <filepattern low="1" high="8">images/icons/jobstate/Recording%1.png</filepattern>
+                <delay>75</delay>
+            </imagetype>
         </group>
         <group name="groupdetails" depends="rec_count">
             <area>800, 500, 1120, 505</area>
