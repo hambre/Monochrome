@@ -36,6 +36,14 @@
                         <align>left,vcenter</align>
                         <alpha>155</alpha>
                     </textarea>
+                    <statetype name="playlist">
+                        <state name="yes">
+                            <imagetype name="icon" from="baseicon">
+                                <area>710,4,32,32</area>
+                                <filename>images/icons/Playlist.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
                     <statetype name="jobstate" from="basejobstate">
                         <position>710,0</position>
                     </statetype>
@@ -54,6 +62,14 @@
                             <imagetype name="watched" from="baseicon">
                                 <area>668,4,32,32</area>
                                 <filename>images/icons/Watched.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <statetype name="playlist">
+                        <state name="yes">
+                            <imagetype name="icon" from="baseicon">
+                                <area>710,4,32,32</area>
+                                <filename>images/icons/Playlist.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
