@@ -92,11 +92,19 @@
         <shape name="headersep" from="baseseparator_h">
             <position>0,50</position>
         </shape>
-        <clock name="clock">
+        <clock name="date">
+            <area>25,10,250,30</area>
+            <font>basefont_m</font>
+            <align>left</align>
+            <alpha>155</alpha>
+            <template>%DATE%</template>
+        </clock>
+        <clock name="time">
             <area>1645,10,250,30</area>
             <font>basefont_m</font>
             <align>right</align>
             <alpha>155</alpha>
+            <template>%TIME%</template>
         </clock>
     </group>
 
