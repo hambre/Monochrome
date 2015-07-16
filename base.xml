@@ -32,6 +32,14 @@
         <color>#FFFFFF</color>
     </fontdef>
 
+    <shape name="baseframe">
+        <area>0,0,30,30</area>
+        <type>roundbox</type>
+        <cornerradius>5</cornerradius>
+        <fill color="#000000" alpha="0" />
+        <line color="#FFFFFF" alpha="255" width="2" />
+    </shape>
+
     <!-- backgrounds -->
     <shape name="basebackground">
         <area>0,0,100%,100%</area>
@@ -50,6 +58,10 @@
       <filename>images/BackgroundTitle.png</filename>
    </imagetype>
 
+   <shape name="basepopupbackground" from="baseframe">
+        <fill color="#000000" alpha="255" />
+        <alpha>225</alpha>
+   </shape>
     <!-- separators -->
     <shape name="baseseparator_h">
         <area>0,0,100%,2</area>
@@ -139,14 +151,6 @@
 
     <shape name="basepoint_m" from="basepoint_s">
         <area>0,0,20,20</area>
-    </shape>
-
-    <shape name="baseframe">
-        <area>0,0,30,30</area>
-        <type>roundbox</type>
-        <cornerradius>5</cornerradius>
-        <fill color="#000000" alpha="0" />
-        <line color="#FFFFFF" alpha="255" width="2" />
     </shape>
 
     <shape name="basepoint_l" from="basepoint_s">

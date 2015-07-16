@@ -351,6 +351,8 @@
                 <delay>75</delay>
             </imagetype>
         </group>
+
+        <!-- selected group details -->
         <group name="groupdetails" depends="rec_count">
             <area>800, 500, 1120, 505</area>
             <textarea name="title" from="basetext_m">
@@ -364,6 +366,7 @@
                 <alpha>200</alpha>
             </textarea>
         </group>
+
         <!-- used storage space detail in left side of footer -->
         <group name="storagedetails">
             <area>25,1040,700,30</area>
@@ -391,22 +394,94 @@
     </window>
 
     <window name="changeview">
-        <checkbox name="titles">
-        </checkbox>
-        <checkbox name="categories">
-        </checkbox>
-        <checkbox name="recgroups">
-        </checkbox>
-        <checkbox name="watchlist">
-        </checkbox>
-        <checkbox name="searches">
-        </checkbox>
-        <checkbox name="livetv">
-        </checkbox>
-        <checkbox name="watched">
-        </checkbox>
-        <checkbox name="save">
-        </checkbox>
+        <area>-1,0,500,450</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
+            </section>
+        </animation>
+        <shape name="titlebar" from="basebar">
+            <area>0,-50,100%,100</area>
+        </shape>
+        <shape name="windowframe" from="basepopupbackground">
+            <area>0,-50,100%,500</area>
+        </shape>
+        <shape name="titleseparator" from="baseseparator_h">
+            <area>0,50,100%,2</area>
+        </shape>
+        <group name="content">
+            <area>75,0,350,450</area>
+            <textarea name="title" from="basetext_l">
+                <area>0,0,350,50</area>
+                <align>allcenter</align>
+                <value>Change View</value>
+            </textarea>
+            <textarea name="labeltitles" from="basetext_s">
+                <area>25,80,200,30</area>
+                <alpha>200</alpha>
+                <value>Titles</value>
+            </textarea>
+            <checkbox name="titles" from="basecheckbox">
+                <position>300,80</position>
+            </checkbox>
+            <textarea name="labelcategories" from="basetext_s">
+                <area>25,120,200,30</area>
+                <alpha>200</alpha>
+                <value>Categories</value>
+            </textarea>
+            <checkbox name="categories" from="basecheckbox">
+                <position>300,120</position>
+            </checkbox>
+            <textarea name="labelrecgroups" from="basetext_s">
+                <area>25,160,200,30</area>
+                <alpha>200</alpha>
+                <value>Groups</value>
+            </textarea>
+            <checkbox name="recgroups" from="basecheckbox">
+                <position>300,160</position>
+            </checkbox>
+            <textarea name="labelwatchlist" from="basetext_s">
+                <area>25,200,200,30</area>
+                <alpha>200</alpha>
+                <value>Watchlist</value>
+            </textarea>
+            <checkbox name="watchlist" from="basecheckbox">
+                <position>300,200</position>
+            </checkbox>
+            <textarea name="labelsearches" from="basetext_s">
+                <area>25,240,200,30</area>
+                <alpha>200</alpha>
+                <value>Searches</value>
+            </textarea>
+            <checkbox name="searches" from="basecheckbox">
+                <position>300,240</position>
+            </checkbox>
+            <textarea name="labellivetv" from="basetext_s">
+                <area>25,280,200,30</area>
+                <alpha>200</alpha>
+                <value>Live TV</value>
+            </textarea>
+            <checkbox name="livetv" from="basecheckbox">
+                <position>300,280</position>
+            </checkbox>
+            <textarea name="labelwatched" from="basetext_s">
+                <area>25,320,200,30</area>
+                <alpha>200</alpha>
+                <value>Watched</value>
+            </textarea>
+            <checkbox name="watched" from="basecheckbox">
+                <position>300,320</position>
+            </checkbox>
+            <button name="save" from="basebutton">
+                <area>110,380,130,40</area>
+                <value>Save</value>
+            </button>
+        </group>
     </window>
 
     <window name="passwordchanger">
