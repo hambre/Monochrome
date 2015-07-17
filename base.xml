@@ -130,6 +130,21 @@
         </shape>
     </group>
 
+    <!-- header for popup windows -->
+    <group name="basepopupheader">
+        <area>0,0,100%,500</area>
+        <!-- make titlebar 50px higher to accomodate animation overshooting -->
+        <shape name="titlebar" from="basebar">
+            <area>0,0,100%,100</area>
+        </shape>
+        <shape name="frame" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
+        <shape name="titleseparator" from="baseseparator_h">
+            <area>0,100,100%,2</area>
+        </shape>
+    </group>
+
     <!-- the content background -->
     <group name="basecontent">
         <area>0, 475, 100%, 555</area>
@@ -176,13 +191,21 @@
         <font>basefont_xs</font>
     </textarea>
 
+    <!-- text for screen titles -->
     <textarea name="basetitletext">
         <area>50%-200, 10, 400, 30</area>
         <font>basefont_m</font>
         <multiline>no</multiline>
         <align>hcenter</align>
         <case>upper</case>
-        <alpha>155</alpha>
+        <alpha>150</alpha>
+    </textarea>
+
+    <!-- text for popup window titles -->
+    <textarea name="basepopuptitletext" from="basetitletext">
+        <area>0,50,100%,50</area>
+        <align>allcenter</align>
+        <alpha>255</alpha>
     </textarea>
 
     <!-- list item text area -->
@@ -195,42 +218,45 @@
 
     <!-- item list defaults -->
     <buttonlist name="baseitemlist">
-       <area>0,1000,750,500</area>
-       <searchposition>1000,55</searchposition>
-       <align>top,hcenter</align>
-       <layout>vertical</layout>
-       <wrapstyle>selection</wrapstyle>
-       <arrange>stack</arrange>
-       <buttonarea>0,0,750,500</buttonarea>
-       <showarrow>no</showarrow>
-       <statetype name="buttonitem">
-           <state name="active">
-               <shape name="itemseparator" from="baseitemseparator_h">
-                   <position>0, 40</position>
-               </shape>
-               <textarea name="buttontext" from="baseitemtext">
-                   <area>0,0,700,40</area>
+        <area>0,1000,750,500</area>
+        <searchposition>1000,55</searchposition>
+        <align>top,hcenter</align>
+        <layout>vertical</layout>
+        <wrapstyle>selection</wrapstyle>
+        <arrange>stack</arrange>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <showarrow>no</showarrow>
+        <statetype name="buttonitem">
+            <area>0,0,100%,40</area>
+            <state name="active">
+                <area>0,0,100%,40</area>
+                <shape name="itemseparator" from="baseitemseparator_h">
+                    <position>0, 40</position>
+                </shape>
+                <textarea name="buttontext" from="baseitemtext">
+                   <area>0,0,100%,40</area>
                    <alpha>128</alpha>
-               </textarea>
-           </state>
-           <state name="selectedactive">
-               <shape name="itemseparator" from="baseitemseparator_h">
+                </textarea>
+            </state>
+            <state name="selectedactive">
+                <area>0,0,100%,40</area>
+                <shape name="itemseparator" from="baseitemseparator_h">
                    <position>0,40</position>
-               </shape>
-               <textarea name="buttontext" from="baseitemtext">
-                   <area>0,0,700,40</area>
-                   <scroll direction="left" />
-                   <alpha>255</alpha>
-               </textarea>
-           </state>
-           <state name="inactive" from="active">
-               <alpha>0</alpha>
-           </state>
-           <state name="selectedinactive" from="selectedactive">
-               <alpha>0</alpha>
-           </state>
-       </statetype>
-   </buttonlist>
+                </shape>
+                <textarea name="buttontext" from="baseitemtext">
+                    <area>0,0,100%,40</area>
+                    <scroll direction="left" />
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="inactive" from="active">
+                <alpha>0</alpha>
+            </state>
+            <state name="selectedinactive" from="selectedactive">
+                <alpha>0</alpha>
+            </state>
+        </statetype>
+    </buttonlist>
 
     <imagetype name="baseicon">
         <area>0,0,75,32</area>

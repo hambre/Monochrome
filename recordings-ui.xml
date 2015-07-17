@@ -389,7 +389,23 @@
     </window>
 
     <window name="groupfilter">
-        <buttonlist name="groups">
+        <area>-1,0,500,450</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <position>0,-50</position>
+            <textarea name="label" from="basepopuptitletext"/>
+        </group>
+        <buttonlist name="groups" from="baseitemlist">
+            <area>50,75,-50,-50</area>
         </buttonlist>
     </window>
 
@@ -405,22 +421,14 @@
                 <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
             </section>
         </animation>
-        <shape name="titlebar" from="basebar">
-            <area>0,-50,100%,100</area>
-        </shape>
-        <shape name="windowframe" from="basepopupbackground">
-            <area>0,-50,100%,500</area>
-        </shape>
-        <shape name="titleseparator" from="baseseparator_h">
-            <area>0,50,100%,2</area>
-        </shape>
+        <group name="header" from="basepopupheader">
+            <position>0,-50</position>
+            <textarea name="title" from="basepopuptitletext">
+                <value>Change Displayed Groups</value>
+            </textarea>
+        </group>
         <group name="content">
             <area>75,0,350,450</area>
-            <textarea name="title" from="basetext_l">
-                <area>0,0,350,50</area>
-                <align>allcenter</align>
-                <value>Change View</value>
-            </textarea>
             <textarea name="labeltitles" from="basetext_s">
                 <area>25,80,200,30</area>
                 <alpha>200</alpha>
@@ -478,13 +486,14 @@
                 <position>300,320</position>
             </checkbox>
             <button name="save" from="basebutton">
-                <area>110,380,130,40</area>
+                <area>110,380,-110,40</area>
                 <value>Save</value>
             </button>
         </group>
     </window>
 
     <window name="passwordchanger">
+        <area>-1,0,500,450</area>
         <textedit name="oldpassword">
         </textedit>
         <textedit name="newpassword">
@@ -494,7 +503,23 @@
     </window>
 
     <window name="groupselector">
-        <buttonlist name="groups">
+        <area>-1,0,500,450</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <position>0,-50</position>
+            <textarea name="label" from="basepopuptitletext"/>
+        </group>
+        <buttonlist name="groups" from="baseitemlist">
+            <area>50,75,-50,-50</area>
         </buttonlist>
     </window>
 
