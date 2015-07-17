@@ -157,6 +157,7 @@
         </shape>
     </group>
 
+    <!-- points -->
     <shape name="basepoint_s">
         <area>0,0,10,10</area>
         <type>ellipse</type>
@@ -170,6 +171,20 @@
 
     <shape name="basepoint_l" from="basepoint_s">
         <area>0,0,30,30</area>
+    </shape>
+
+    <shape name="baseline_h">
+        <area>0,0,100%,2</area>
+        <type>box</type>
+        <fill color="#FFFFFF" alpha="255" />
+        <line color="#000000" alpha="0" width="0" />
+    </shape>
+
+    <shape name="baseline_v">
+        <area>0,0,2,100%-120</area>
+        <type>box</type>
+        <fill color="#FFFFFF" alpha="255" />
+        <line color="#000000" alpha="0" width="0" />
     </shape>
 
     <textarea name="basetext_s">
@@ -340,6 +355,7 @@
         </statetype>
     </checkbox>
 
+    <!-- button -->
     <button name="basebutton">
         <area>0,0,150,40</area>
         <statetype name="buttonstate">
@@ -348,9 +364,11 @@
                 <area>0,0,100%,100%</area>
                 <shape name="topborder" from="baseseparator_h">
                     <area>0,0,100%,2</area>
+                    <alpha>200</alpha>
                 </shape>
                 <shape name="bottomborder" from="baseseparator_h">
                     <area>0,100%-2,100%,2</area>
+                    <alpha>200</alpha>
                 </shape>
                 <textarea name="text" from="basetext_s">
                     <area>0,0,100%,100%</area>
@@ -369,12 +387,50 @@
                 <textarea name="text" from="basetext_s">
                     <area>0,0,100%,100%</area>
                     <align>allcenter</align>
-                    <alpha>50</alpha>
+                    <alpha>100</alpha>
                 </textarea>
             </state>
             <state name="pushed" from="selected"/>
         </statetype>
     </button>
+
+    <!-- textedit -->
+    <textedit name="basetextedit">
+        <area>0,0,300,30</area>
+        <statetype name="background">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <shape name="leftborder" from="baseline_v">
+                    <area>0,100%-11,2,10</area>
+                    <alpha>100</alpha>
+                </shape>
+                <shape name="rightborder" from="baseline_v">
+                    <area>100%-2,100%-11,2,10</area>
+                    <alpha>100</alpha>
+                </shape>
+                <shape name="bottomborder1" from="baseline_h">
+                    <area>0,100%-2,100%,2</area>
+                    <alpha>100</alpha>
+                </shape>
+            </state>
+            <state name="selected" from="active">
+                <shape name="background" from="basebackground">
+                    <area>0,2,100%,-2</area>
+                    <fill color="#FFFFFF" alpha="50" />
+                </shape>
+            </state>
+            <state name="inactive" from="active">
+            </state>
+        </statetype>
+        <imagetype name="cursor">
+            <filename>images/Cursor.png</filename>
+        </imagetype>
+        <textarea name="text" from="basetext_s">
+            <area>5,3,-5,-1</area>
+            <alpha>200</alpha>
+        </textarea>
+    </textedit>
 
     <!-- required window -->
     <window name="backgroundwindow">
