@@ -493,13 +493,46 @@
     </window>
 
     <window name="passwordchanger">
-        <area>-1,0,500,450</area>
-        <textedit name="oldpassword">
-        </textedit>
-        <textedit name="newpassword">
-        </textedit>
-        <button name="ok">
-        </button>
+        <area>-1,0,600,250</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-250" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+            <textarea name="title" from="basepopuptitletext">
+                <value>Change Recording Group Password</value>
+            </textarea>
+        </group>
+        <group name="content">
+            <area>50,90,-50,165</area>
+            <textarea name="oldlabel" from="basetext_s">
+                <area>0,0,200,30</area>
+                <value>Old Password:</value>
+                <alpha>200</alpha>
+            </textarea>
+            <textedit name="oldpassword" from="basetextedit">
+                <area>200,0,-0,32</area>
+            </textedit>
+            <textarea name="newlabel" from="basetext_s">
+                <area>0,50,200,30</area>
+                <value>New Password:</value>
+                <alpha>200</alpha>
+            </textarea>
+            <textedit name="newpassword" from="basetextedit">
+                <area>200,50,-0,32</area>
+            </textedit>
+            <button name="ok" from="basebutton">
+                <area>175,125,-175,40</area>
+                <value>OK</value>
+            </button>
+        </group>
     </window>
 
     <window name="groupselector">
