@@ -49,12 +49,12 @@
     </shape>
 
     <imagetype name="baseimagebackground">
-      <area>0,0,1920,1080</area>
+      <area>0,0,100%,100%</area>
       <filename>images/BackgroundDefault.png</filename>
    </imagetype>
 
     <imagetype name="basetitlebackground">
-      <area>0,0,1920,1080</area>
+      <area>0,0,100%,100%</area>
       <filename>images/BackgroundTitle.png</filename>
    </imagetype>
 
@@ -95,11 +95,11 @@
     </shape>
 
     <shape name="basebar" from="basebackground">
-        <area>0,0,1920,50</area>
+        <area>0,0,100%,50</area>
     </shape>
 
     <group name="baseheader">
-        <area>0, 0, 1920, 50</area>
+        <area>0, 0, 100%, 50</area>
         <shape name="headerbar" from="basebar" />
         <shape name="headersep" from="baseseparator_h">
             <position>0,50</position>
@@ -121,7 +121,7 @@
     </group>
 
     <group name="basefooter">
-        <area>0, 1030, 1920, 50</area>
+        <area>0, 100%-50, 100%, 50</area>
         <shape name="footerbar" from="basebar">
             <position>0, 0</position>
         </shape>
@@ -149,7 +149,7 @@
     <group name="basecontent">
         <area>0, 475, 100%, 555</area>
         <shape name="contentbar" from="basebar">
-            <area>0, 0, 100%, 555</area>
+            <area>0, 0, 100%, 100%</area>
             <alpha>200</alpha>
         </shape>
         <shape name="contentsep" from="baseseparator_h">
@@ -231,20 +231,20 @@
             <state name="active">
                 <area>0,0,100%,40</area>
                 <shape name="itemseparator" from="baseitemseparator_h">
-                    <position>0, 40</position>
+                    <position>0, 100%</position>
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
-                   <area>0,0,100%,40</area>
-                   <alpha>128</alpha>
+                   <area>0,0,100%,100%</area>
+                   <alpha>127</alpha>
                 </textarea>
             </state>
             <state name="selectedactive">
                 <area>0,0,100%,40</area>
                 <shape name="itemseparator" from="baseitemseparator_h">
-                   <position>0,40</position>
+                   <position>0,100%</position>
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
-                    <area>0,0,100%,40</area>
+                    <area>0,0,100%,100%</area>
                     <scroll direction="left" />
                     <alpha>255</alpha>
                 </textarea>
@@ -286,10 +286,10 @@
         <layout>horizontal</layout>
         <style>reveal</style>
         <shape name="background" from="baseprogressbackground">
-            <area>0,0,700,20</area>
+            <area>0,0,100%,100%</area>
         </shape>
         <shape name="progressimage" from="baseprogressimage">
-            <area>5,5,690,10</area>
+            <area>5,5,-5,-5</area>
         </shape>
     </progressbar>
 
@@ -298,10 +298,10 @@
         <layout>horizontal</layout>
         <style>reveal</style>
         <shape name="background" from="baseprogressbackground">
-            <area>0,0,700,30</area>
+            <area>0,0,100%,100%</area>
         </shape>
         <shape name="progressimage" from="baseprogressimage">
-            <area>5,5,690,20</area>
+            <area>5,5,-5,-5</area>
         </shape>
     </progressbar>
 
@@ -341,30 +341,33 @@
     </checkbox>
 
     <button name="basebutton">
+        <area>0,0,150,40</area>
         <statetype name="buttonstate">
+            <area>0,0,100%,100%</area>
             <state name="active">
+                <area>0,0,100%,100%</area>
                 <shape name="topborder" from="baseseparator_h">
-                    <area>0,0,150,2</area>
+                    <area>0,0,100%,2</area>
                 </shape>
                 <shape name="bottomborder" from="baseseparator_h">
-                    <area>0,38,150,2</area>
+                    <area>0,100%-2,100%,2</area>
                 </shape>
                 <textarea name="text" from="basetext_s">
-                    <area>0,0,150,40</area>
+                    <area>0,0,100%,100%</area>
                     <align>allcenter</align>
                     <alpha>150</alpha>
                 </textarea>
             </state>
             <state name="selected" from="active">
                 <textarea name="text" from="basetext_s">
-                    <area>0,0,150,40</area>
+                    <area>0,0,100%,100%</area>
                     <align>allcenter</align>
                     <alpha>255</alpha>
                 </textarea>
             </state>
             <state name="disabled" from="active">
                 <textarea name="text" from="basetext_s">
-                    <area>0,0,150,40</area>
+                    <area>0,0,100%,100%</area>
                     <align>allcenter</align>
                     <alpha>50</alpha>
                 </textarea>
@@ -375,7 +378,8 @@
 
     <!-- required window -->
     <window name="backgroundwindow">
-       <area>0,0,1920,1080</area>
+        <area>0,0,100%,100%</area>
+        <shape name="background" from="basebackground"/>
     </window>
 
     <statetype name="basejobstate">

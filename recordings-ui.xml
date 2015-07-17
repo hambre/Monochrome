@@ -20,8 +20,8 @@
         <buttonlist name="recordings" from="baseitemlist">
             <align>top,hcenter</align>
             <layout>vertical</layout>
-            <area>25,500,750,505</area>
-            <buttonarea>0,0,750,505</buttonarea>
+            <area>25,500,700,505</area>
+            <buttonarea>0,0,700,505</buttonarea>
             <showarrow>no</showarrow>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
@@ -486,7 +486,7 @@
                 <position>300,320</position>
             </checkbox>
             <button name="save" from="basebutton">
-                <area>110,380,-110,40</area>
+                <area>100,380,-100,40</area>
                 <value>Save</value>
             </button>
         </group>
