@@ -34,7 +34,7 @@
                     <textarea name="titlesubtitle" from="baseitemtext">
                         <area>0,0,700,40</area>
                         <align>left,vcenter</align>
-                        <alpha>155</alpha>
+                        <alpha>150</alpha>
                     </textarea>
                     <statetype name="playlist">
                         <state name="yes">
@@ -410,7 +410,7 @@
     </window>
 
     <window name="changeview">
-        <area>-1,0,500,450</area>
+        <area>-1,0,450,450</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
@@ -428,7 +428,7 @@
             </textarea>
         </group>
         <group name="content">
-            <area>75,0,350,450</area>
+            <area>50,0,350,-50</area>
             <textarea name="labeltitles" from="basetext_s">
                 <area>25,80,200,30</area>
                 <alpha>200</alpha>
