@@ -94,6 +94,11 @@
         <alpha>127</alpha>
     </shape>
 
+    <shape name="basecontrolbackground" from="basebackground">
+        <area>0,2,100%,-2</area>
+        <fill color="#FFFFFF" alpha="50" />
+    </shape>
+
     <shape name="basebar" from="basebackground">
         <area>0,0,100%,50</area>
     </shape>
@@ -320,6 +325,19 @@
         </shape>
     </progressbar>
 
+    <group name="basetextunderline">
+        <area>0,0,150,30</area>
+        <shape name="leftborder" from="baseline_v">
+            <area>0,100%-11,2,10</area>
+        </shape>
+        <shape name="rightborder" from="baseline_v">
+            <area>100%-2,100%-11,2,10</area>
+        </shape>
+        <shape name="bottomborder1" from="baseline_h">
+            <area>0,100%-2,100%,2</area>
+        </shape>
+    </group>
+
     <!-- checkbox -->
     <checkbox name="basecheckbox">
         <area>0,0,25,25</area>
@@ -377,6 +395,7 @@
                 </textarea>
             </state>
             <state name="selected" from="active">
+                <shape name="background" from="basecontrolbackground"/>
                 <textarea name="text" from="basetext_s">
                     <area>0,0,100%,100%</area>
                     <align>allcenter</align>
@@ -394,31 +413,20 @@
         </statetype>
     </button>
 
-    <!-- textedit -->
+    <!-- single line textedit -->
     <textedit name="basetextedit">
         <area>0,0,300,30</area>
         <statetype name="background">
             <area>0,0,100%,100%</area>
             <state name="active">
                 <area>0,0,100%,100%</area>
-                <shape name="leftborder" from="baseline_v">
-                    <area>0,100%-11,2,10</area>
+                <group name="textunderline" from="basetextunderline">
+                    <area>0,0,100%,100%</area>
                     <alpha>100</alpha>
-                </shape>
-                <shape name="rightborder" from="baseline_v">
-                    <area>100%-2,100%-11,2,10</area>
-                    <alpha>100</alpha>
-                </shape>
-                <shape name="bottomborder1" from="baseline_h">
-                    <area>0,100%-2,100%,2</area>
-                    <alpha>100</alpha>
-                </shape>
+                </group>
             </state>
             <state name="selected" from="active">
-                <shape name="background" from="basebackground">
-                    <area>0,2,100%,-2</area>
-                    <fill color="#FFFFFF" alpha="50" />
-                </shape>
+                <shape name="background" from="basecontrolbackground"/>
             </state>
             <state name="inactive" from="active">
             </state>
@@ -432,12 +440,110 @@
         </textarea>
     </textedit>
 
+    <!-- multi line textedit -->
+    <textedit name="basetexteditmulti">
+        <area>0,0,300,100</area>
+        <statetype name="background">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <group name="textunderline" from="basetextunderline">
+                    <area>0,0,100%,100%</area>
+                    <alpha>100</alpha>
+                </group>
+            </state>
+            <state name="selected" from="active">
+                <shape name="background" from="basecontrolbackground"/>
+            </state>
+            <state name="inactive" from="active">
+            </state>
+        </statetype>
+        <imagetype name="cursor">
+            <filename>images/Cursor.png</filename>
+        </imagetype>
+        <textarea name="text" from="basetext_s">
+            <area>5,3,-5,-1</area>
+            <multiline>yes</multiline>
+            <alpha>200</alpha>
+        </textarea>
+    </textedit>
+
+    <!-- spinbox -->
+    <spinbox name="basespinbox">
+        <area>0,0,150,30</area>
+        <layout>horizontal</layout>
+        <statetype name="buttonitem">
+            <area>0,0,100%-15,100%</area>
+            <state name="active">
+                <area>0,0,100%-15,100%</area>
+                <textarea name="buttontext" from="basetext_s">
+                    <area>5,3,-5,-1</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <group name="textunderline" from="basetextunderline">
+                    <area>0,0,100%,100%</area>
+                    <alpha>100</alpha>
+                </group>
+            </state>
+            <state name="selectedactive" from="active">
+                <area>0,0,100%-15,100%</area>
+                <shape name="background" from="basecontrolbackground"/>
+                <textarea name="buttontext" from="basetext_s">
+                    <area>5,3,-5,-1</area>
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active">
+                <area>0,0,100%-15,100%</area>
+                <textarea name="buttontext" from="basetext_s">
+                    <area>5,3,-5,-1</area>
+                    <alpha>200</alpha>
+                </textarea>
+            </state>
+        </statetype>
+        <!-- strangely, up is handled by the left key, and down by the right key when in horizontal layout -->
+        <statetype name="downscrollarrow">
+            <position>100%-15,100%-25</position>
+            <state type="full">
+                <imagetype name="down">
+                    <filename>images/SpinboxDown.png</filename>
+                </imagetype>
+            </state>
+            <state type="off">
+                <imagetype name="down">
+                    <filename>images/SpinboxDown.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>100%-15,100%-12</position>
+            <state type="full">
+                <imagetype name="up">
+                    <filename>images/SpinboxUp.png</filename>
+                </imagetype>
+            </state>
+            <state type="off">
+                <imagetype name="up">
+                    <filename>images/SpinboxUp.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </spinbox>
+
     <!-- required window -->
     <window name="backgroundwindow">
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
     </window>
 
+    <!-- TODO: finish busy dialog -->
+    <window name="MythBusyDialog">
+        <textarea name="message" from="basetext_s">
+            <area>50,50-50-50</area>
+        </textarea>
+    </window>
     <statetype name="basejobstate">
         <area>0,0,40,40</area>
         <state name="recording">
