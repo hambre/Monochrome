@@ -255,7 +255,7 @@
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
                    <area>0,0,100%,100%</area>
-                   <alpha>127</alpha>
+                   <alpha>150</alpha>
                 </textarea>
             </state>
             <state name="selectedactive">
@@ -266,6 +266,7 @@
                 <textarea name="buttontext" from="baseitemtext">
                     <area>0,0,100%,100%</area>
                     <scroll direction="left" />
+                    <case>upper</case>
                     <alpha>255</alpha>
                 </textarea>
             </state>
