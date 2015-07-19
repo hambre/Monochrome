@@ -2,31 +2,26 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
-    <!-- fonts -->
+    <!-- fonts small, medium, large, extra large, extra extra large, extra small -->
     <fontdef name="basefont_s" face="DejaVu Sans">
         <pixelsize>22</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
-
     <fontdef name="basefont_m" from="basefont_s">
         <pixelsize>25</pixelsize>
     </fontdef>
-
     <fontdef name="basefont_l" from="basefont_s">
         <pixelsize>28</pixelsize>
         <weight>bold</weight>
     </fontdef>
-
     <fontdef name="basefont_xl" from="basefont_s">
         <pixelsize>33</pixelsize>
         <weight>bold</weight>
     </fontdef>
-
     <fontdef name="basefont_xxl" from="basefont_s">
         <pixelsize>40</pixelsize>
         <weight>bold</weight>
     </fontdef>
-
     <fontdef name="basefont_xs" from="basefont_s">
         <pixelsize>18</pixelsize>
         <color>#FFFFFF</color>
@@ -49,20 +44,22 @@
     </shape>
 
     <imagetype name="baseimagebackground">
-      <area>0,0,100%,100%</area>
-      <filename>images/BackgroundDefault.png</filename>
-   </imagetype>
+        <area>0,0,100%,100%</area>
+        <filename>images/BackgroundDefault.png</filename>
+    </imagetype>
 
     <imagetype name="basetitlebackground">
-      <area>0,0,100%,100%</area>
-      <filename>images/BackgroundTitle.png</filename>
-   </imagetype>
+        <area>0,0,100%,100%</area>
+        <filename>images/BackgroundTitle.png</filename>
+    </imagetype>
 
-   <shape name="basepopupbackground" from="baseframe">
+    <!-- background of popup windows -->
+    <shape name="basepopupbackground" from="baseframe">
         <fill color="#000000" alpha="255" />
         <alpha>225</alpha>
-   </shape>
-    <!-- separators -->
+    </shape>
+
+    <!-- horizontal and vertical separators -->
     <shape name="baseseparator_h">
         <area>0,0,100%,2</area>
         <type>box</type>
@@ -90,10 +87,12 @@
         </fill>
     </shape>
 
+    <!-- separator of items in a button list -->
     <shape name="baseitemseparator_h" from="baseseparator_h">
         <alpha>127</alpha>
     </shape>
 
+    <!-- selected background of controls like button, textedit, spinbox -->
     <shape name="basecontrolbackground" from="basebackground">
         <area>0,2,100%,-2</area>
         <fill color="#FFFFFF" alpha="50" />
@@ -103,6 +102,7 @@
         <area>0,0,100%,50</area>
     </shape>
 
+    <!-- default screen header -->
     <group name="baseheader">
         <area>0, 0, 100%, 50</area>
         <shape name="headerbar" from="basebar" />
@@ -125,6 +125,7 @@
         </clock>
     </group>
 
+    <!-- default screen footer -->
     <group name="basefooter">
         <area>0, 100%-50, 100%, 50</area>
         <shape name="footerbar" from="basebar">
@@ -169,22 +170,20 @@
         <fill color="#FFFFFF" alpha="255" />
         <line color="#000000" alpha="0" width="0" />
     </shape>
-
     <shape name="basepoint_m" from="basepoint_s">
         <area>0,0,20,20</area>
     </shape>
-
     <shape name="basepoint_l" from="basepoint_s">
         <area>0,0,30,30</area>
     </shape>
 
+    <!-- horizontal and vertical lines -->
     <shape name="baseline_h">
         <area>0,0,100%,2</area>
         <type>box</type>
         <fill color="#FFFFFF" alpha="255" />
         <line color="#000000" alpha="0" width="0" />
     </shape>
-
     <shape name="baseline_v">
         <area>0,0,2,100%-120</area>
         <type>box</type>
@@ -192,21 +191,19 @@
         <line color="#000000" alpha="0" width="0" />
     </shape>
 
+    <!-- textarea with small, medium, large and extra small font -->
     <textarea name="basetext_s">
         <font>basefont_s</font>
         <multiline>no</multiline>
         <align>left,vcenter</align>
         <cutdown>yes</cutdown>
     </textarea>
-
     <textarea name="basetext_m" from="basetext_s">
         <font>basefont_m</font>
     </textarea>
-
     <textarea name="basetext_l" from="basetext_s">
         <font>basefont_l</font>
     </textarea>
-
     <textarea name="basetext_xs" from="basetext_s">
         <font>basefont_xs</font>
     </textarea>
@@ -302,6 +299,7 @@
         <alpha>100</alpha>
     </shape>
 
+    <!-- normal progress bar -->
     <progressbar name="baseprogress_m">
         <area>0,0,700,20</area>
         <layout>horizontal</layout>
@@ -314,6 +312,7 @@
         </shape>
     </progressbar>
 
+    <!-- large progress bar -->
     <progressbar name="baseprogress_l">
         <area>0,0,700,30</area>
         <layout>horizontal</layout>
@@ -326,6 +325,7 @@
         </shape>
     </progressbar>
 
+    <!-- text underline for text controls like textedit and spinbox -->
     <group name="basetextunderline">
         <area>0,0,150,30</area>
         <shape name="leftborder" from="baseline_v">
@@ -533,18 +533,13 @@
         </statetype>
     </spinbox>
 
-    <!-- required window -->
+    <!-- default backgroun window -->
     <window name="backgroundwindow">
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
     </window>
 
-    <!-- TODO: finish busy dialog -->
-    <window name="MythBusyDialog">
-        <textarea name="message" from="basetext_s">
-            <area>50,50-50-50</area>
-        </textarea>
-    </window>
+    <!-- recornding job state (recording, commflagging, transcoding) -->
     <statetype name="basejobstate">
         <area>0,0,40,40</area>
         <state name="recording">
@@ -569,5 +564,12 @@
             </imagetype>
         </state>
     </statetype>
+
+    <!-- TODO: finish busy dialog -->
+    <window name="MythBusyDialog">
+        <textarea name="message" from="basetext_s">
+            <area>50,50-50-50</area>
+        </textarea>
+    </window>
 
 </mythuitheme>
