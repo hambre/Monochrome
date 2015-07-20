@@ -89,7 +89,7 @@
 
     <!-- separator of items in a button list -->
     <shape name="baseitemseparator_h" from="baseseparator_h">
-        <alpha>127</alpha>
+        <alpha>100</alpha>
     </shape>
 
     <!-- selected background of controls like button, textedit, spinbox -->
@@ -113,14 +113,14 @@
             <area>25,10,250,30</area>
             <font>basefont_m</font>
             <align>left</align>
-            <alpha>155</alpha>
+            <alpha>150</alpha>
             <template>%DATE%</template>
         </clock>
         <clock name="time">
             <area>1645,10,250,30</area>
             <font>basefont_m</font>
             <align>right</align>
-            <alpha>155</alpha>
+            <alpha>150</alpha>
             <template>%TIME%</template>
         </clock>
     </group>

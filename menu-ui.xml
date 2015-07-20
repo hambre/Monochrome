@@ -93,7 +93,7 @@
                         <font>menufont_m</font>
                         <cutdown>yes</cutdown>
                         <align>right,vcenter</align>
-                        <alpha>105</alpha>
+                        <alpha>100</alpha>
                     </textarea>
                 </state>
                 <state name="selectedactive">
@@ -109,7 +109,7 @@
                         <font>menufont_s</font>
                         <multiline>yes</multiline>
                         <align>left,vcenter</align>
-                        <alpha>205</alpha>
+                        <alpha>200</alpha>
                     </textarea>
                 </state>
             </statetype>
