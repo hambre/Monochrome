@@ -202,10 +202,10 @@
             <statetype name="videoprops">
                 <area>500,540,100,32</area>
                 <state name="hdtv">
-                    <textarea name="hdtv" from="basetext_s">
+                    <imagetype name="hdtv" from="baseicon">
                         <area>0,0,100,32</area>
-                        <value>HDTV</value>
-                    </textarea>
+                        <filename>images/icons/VideoHDTV.png</filename>
+                    </imagetype>
                 </state>
                 <state name="widescreen">
                     <imagetype name="widescreen" from="baseicon">
@@ -557,10 +557,169 @@
     </window>
 
     <window name="iconhelp">
-        <buttonlist name="iconlist">
+        <area>-1,0,600,450</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <position>0,-50</position>
+            <textarea name="title" from="basepopuptitletext">
+                <value>Status Icon Help</value>
+            </textarea>
+        </group>
+        <buttonlist name="iconlist" from="baseitemlist">
+            <area>50,75,-50,-50</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,40</area>
+                <state name="active">
+                    <statetype name="icons">
+                        <area>0,0,40,40</area>
+                        <state name="processing">
+                            <imagetype name="animation">
+                                <area>20,4,32,32</area>
+                                <filepattern low="1" high="8">images/icons/jobstate/CommFlagging%1.png</filepattern>
+                                <delay>75</delay>
+                            </imagetype>
+                        </state>
+                        <!-- recording states -->
+                        <state name="watched">
+                            <imagetype name="watched" from="baseicon">
+                                <area>20,4,32,32</area>
+                                <filename>images/icons/Watched.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="bookmark">
+                            <imagetype name="bookmark" from="baseicon">
+                                <area>20,4,32,32</area>
+                                <filename>images/icons/Bookmark.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="autoexpire">
+                            <imagetype name="autoexpire" from="baseicon">
+                                <area>20,4,32,32</area>
+                                <filename>images/icons/Expire.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="commflagged">
+                            <imagetype name="commflagged" from="baseicon">
+                                <area>20,4,32,32</area>
+                                <filename>images/icons/CommFlag.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="cutlist">
+                            <imagetype name="cutlist" from="baseicon">
+                                <area>20,4,32,32</area>
+                                <filename>images/icons/Cutlist.png</filename>
+                            </imagetype>
+                        </state>
+                        <!-- audio -->
+                        <state name="stereo">
+                            <imagetype name="stereo" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/AudioStereo.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="surround">
+                            <imagetype name="surround" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/AudioSurround.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="dolby">
+                            <imagetype name="dolby" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/AudioDolby.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="mono">
+                            <imagetype name="mono" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/AudioMono.png</filename>
+                            </imagetype>
+                        </state>
+                        <!-- video -->
+                        <state name="hdtv">
+                            <imagetype name="hdtv" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/VideoHDTV.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="widescreen">
+                            <imagetype name="widescreen" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/VideoWidescreen.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="avchd">
+                            <imagetype name="avchd" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/VideoAVCHD.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="hd720">
+                            <imagetype name="hd720" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/VideoHD720.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="hd1080">
+                            <imagetype name="hd1080" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/VideoHD1080.png</filename>
+                            </imagetype>
+                        </state>
+                        <!-- subtitles -->
+                        <state name="cc">
+                            <imagetype name="sub" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/SubCC.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="subtitles">
+                            <imagetype name="sub" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/SubNormal.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="onscreensub">
+                            <imagetype name="sub" from="baseicon">
+                                <area>0,4,75,32</area>
+                                <filename>images/icons/SubOSD.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <area>0,0,100%,40</area>
+                    <shape name="itemseparator" from="baseitemseparator_h">
+                        <position>0, 100%</position>
+                    </shape>
+                    <textarea name="buttontext" from="baseitemtext">
+                        <area>125,0,100%-50,100%</area>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="buttontext" from="baseitemtext">
+                        <area>125,0,100%,100%</area>
+                        <scroll direction="left" />
+                        <case>upper</case>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
         </buttonlist>
-        <statetype name="items">
-        </statetype>
     </window>
 
     <window name="editmetadata">
