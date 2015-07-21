@@ -4,14 +4,14 @@
 
     <!-- fonts small, medium, large, extra large, extra extra large, extra small -->
     <fontdef name="basefont_s" face="DejaVu Sans">
-        <pixelsize>22</pixelsize>
+        <pixelsize>24</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
     <fontdef name="basefont_m" from="basefont_s">
-        <pixelsize>25</pixelsize>
+        <pixelsize>27</pixelsize>
     </fontdef>
     <fontdef name="basefont_l" from="basefont_s">
-        <pixelsize>28</pixelsize>
+        <pixelsize>30</pixelsize>
         <weight>bold</weight>
     </fontdef>
     <fontdef name="basefont_xl" from="basefont_s">
