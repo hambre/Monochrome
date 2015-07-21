@@ -369,11 +369,11 @@
         <!-- selected group details -->
         <group name="groupdetails" depends="rec_count">
             <area>800, 500, 1120, 505</area>
-            <textarea name="title" from="basetext_m">
+            <textarea name="title" from="basetext_l">
                 <area>210, 150, 700, 50</area>
             </textarea>
-            <textarea name="description" from="basetext_s">
-                <area>210, 200, 700, 455</area>
+            <textarea name="description" from="basetext_m">
+                <area>210, 225, 700, 455</area>
                 <multiline>yes</multiline>
                 <align>justify</align>
                 <cutdown>yes</cutdown>
