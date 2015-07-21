@@ -565,10 +565,22 @@
         </state>
     </statetype>
 
-    <!-- TODO: finish busy dialog -->
+    <!-- busy dialog -->
     <window name="MythBusyDialog">
+        <area>-1,200,300,100</area>
+        <shape name="background" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
+        <imagetype name="animation">
+            <area>25,50%-16,32,32</area>
+            <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+            <delay>75</delay>
+        </imagetype>
         <textarea name="message" from="basetext_s">
-            <area>50,50-50-50</area>
+            <area>75,25,-25,-25</area>
+            <align>allcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
         </textarea>
     </window>
 
