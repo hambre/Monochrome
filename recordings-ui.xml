@@ -145,7 +145,7 @@
                 <textarea name="startdate" from="basetext_m">
                     <area>50,40,650,32</area>
                     <alpha>200</alpha>
-                    <template>%startdate%%| year%, %starttime% - %endtime%</template>
+                    <template>%startdate%%| year%, %starttime% - %endtime% (%lenmins%)</template>
                 </textarea>
                 <imagetype name="storage" from="baseicon">
                     <area>0,80,32,32</area>
