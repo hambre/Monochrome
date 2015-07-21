@@ -545,21 +545,21 @@
         <state name="recording">
             <imagetype name="animation">
                 <area>4,4,32,32</area>
-                <filepattern low="1" high="8">images/icons/jobstate/Recording%1.png</filepattern>
+                <filepattern low="1" high="8">images/icons/animated/Recording%1.png</filepattern>
                 <delay>75</delay>
             </imagetype>
         </state>
         <state name="commflagging">
             <imagetype name="animation">
                 <area>4,4,32,32</area>
-                <filepattern low="1" high="8">images/icons/jobstate/CommFlagging%1.png</filepattern>
+                <filepattern low="1" high="8">images/icons/animated/CommFlagging%1.png</filepattern>
                 <delay>75</delay>
             </imagetype>
         </state>
         <state name="transcoding">
             <imagetype name="animation">
                 <area>4,4,32,32</area>
-                <filepattern low="1" high="8">images/icons/jobstate/Transcoding%1.png</filepattern>
+                <filepattern low="1" high="8">images/icons/animated/Transcoding%1.png</filepattern>
                 <delay>75</delay>
             </imagetype>
         </state>

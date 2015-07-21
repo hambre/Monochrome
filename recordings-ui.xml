@@ -361,7 +361,7 @@
             <imagetype name="triggeranimation">
                 <area>925,540,32,32</area>
                 <alpha>0</alpha>
-                <filepattern low="1" high="8">images/icons/jobstate/Recording%1.png</filepattern>
+                <filepattern low="1" high="8">images/icons/animated/Recording%1.png</filepattern>
                 <delay>75</delay>
             </imagetype>
         </group>
@@ -598,7 +598,7 @@
                         <state name="processing">
                             <imagetype name="animation">
                                 <area>20,4,32,32</area>
-                                <filepattern low="1" high="8">images/icons/jobstate/CommFlagging%1.png</filepattern>
+                                <filepattern low="1" high="8">images/icons/animated/CommFlagging%1.png</filepattern>
                                 <delay>75</delay>
                             </imagetype>
                         </state>
