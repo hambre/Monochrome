@@ -121,13 +121,27 @@
             <textarea name="title" from="basetext_l">
                 <area>400, 0, 700, 50</area>
             </textarea>
-            <textarea name="description" from="basetext_s">
-                <area>400, 50, 700, 350</area>
-                <multiline>yes</multiline>
-                <align>justify</align>
-                <cutdown>yes</cutdown>
-                <alpha>200</alpha>
+            <textarea name="subtitle" from="basetext_m">
+                <area>400, 45, 700, 50</area>
             </textarea>
+            <group name="smalldescription" depends="subtitle">
+                <textarea name="description" from="basetext_s">
+                    <area>400, 100, 700, 290</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>200</alpha>
+                </textarea>
+            </group>
+            <group name="largedescription" depends="!subtitle">
+                <textarea name="description" from="basetext_s">
+                    <area>400, 50, 700, 350</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>200</alpha>
+                </textarea>
+            </group>
             <group name="facts">
                 <area>400,400,700,120</area>
                 <imagetype name="sender" from="baseicon">
