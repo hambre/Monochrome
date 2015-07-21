@@ -309,24 +309,8 @@
                     </imagetype>
                 </state>
             </statetype>
-            <statetype name="autoexpire">
-                <area>775,540,32,32</area>
-                <state name="yes">
-                    <imagetype name="autoexpire" from="baseicon">
-                        <area>0,0,32,32</area>
-                        <filename>images/icons/Expire.png</filename>
-                    </imagetype>
-                </state>
-                <state name="no">
-                    <imagetype name="autoexpire" from="baseicon">
-                        <area>0,0,32,32</area>
-                        <alpha>50</alpha>
-                        <filename>images/icons/Expire.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
             <statetype name="commflagged">
-                <area>825,540,32,32</area>
+                <area>775,540,32,32</area>
                 <state name="yes">
                     <imagetype name="commflagged" from="baseicon">
                         <area>0,0,32,32</area>
@@ -342,7 +326,7 @@
                 </state>
             </statetype>
             <statetype name="cutlist">
-                <area>875,540,32,32</area>
+                <area>825,540,32,32</area>
                 <state name="yes">
                     <imagetype name="cutlist" from="baseicon">
                         <area>0,0,32,32</area>
@@ -354,6 +338,22 @@
                         <area>0,0,32,32</area>
                         <alpha>50</alpha>
                         <filename>images/icons/Cutlist.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="autoexpire">
+                <area>875,540,32,32</area>
+                <state name="yes">
+                    <imagetype name="autoexpire" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <filename>images/icons/Expire.png</filename>
+                    </imagetype>
+                </state>
+                <state name="no">
+                    <imagetype name="autoexpire" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <alpha>50</alpha>
+                        <filename>images/icons/Expire.png</filename>
                     </imagetype>
                 </state>
             </statetype>
