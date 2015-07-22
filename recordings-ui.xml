@@ -415,28 +415,28 @@
             </section>
         </animation>
         <group name="header" from="basepopupheader">
-            <position>0,-50</position>
+            <area>0,-50,100%,100%</area>
             <textarea name="label" from="basepopuptitletext"/>
         </group>
         <buttonlist name="groups" from="baseitemlist">
-            <area>50,75,-50,-50</area>
+            <area>50,75,-50,-25</area>
         </buttonlist>
     </window>
 
     <window name="changeview">
-        <area>-1,0,450,450</area>
+        <area>-1,0,450,400</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
-                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
         <animation trigger="AboutToHide">
             <section duration="500" centre="middle">
-                <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
+                <position start="-1,-1" end="-1,-400" easingcurve="InBack" />
             </section>
         </animation>
         <group name="header" from="basepopupheader">
-            <position>0,-50</position>
+            <area>0,-50,100%,100%</area>
             <textarea name="title" from="basepopuptitletext">
                 <value>Change Displayed Groups</value>
             </textarea>
@@ -507,7 +507,7 @@
     </window>
 
     <window name="passwordchanger">
-        <area>-1,0,600,250</area>
+        <area>-1,0,650,250</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
@@ -532,7 +532,7 @@
                 <alpha>200</alpha>
             </textarea>
             <textedit name="oldpassword" from="basetextedit">
-                <area>200,0,-0,32</area>
+                <area>200,0,-1,32</area>
             </textedit>
             <textarea name="newlabel" from="basetext_s">
                 <area>0,50,200,30</area>
@@ -540,7 +540,7 @@
                 <alpha>200</alpha>
             </textarea>
             <textedit name="newpassword" from="basetextedit">
-                <area>200,50,-0,32</area>
+                <area>200,50,-1,32</area>
             </textedit>
             <button name="ok" from="basebutton">
                 <area>175,125,-175,40</area>
@@ -550,46 +550,46 @@
     </window>
 
     <window name="groupselector">
-        <area>-1,0,500,450</area>
+        <area>-1,0,550,460</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
-                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
+                <position start="-1,-460" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
         <animation trigger="AboutToHide">
             <section duration="500" centre="middle">
-                <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
+                <position start="-1,-1" end="-1,-460" easingcurve="InBack" />
             </section>
         </animation>
         <group name="header" from="basepopupheader">
-            <position>0,-50</position>
+            <area>0,-50,100%,100%</area>
             <textarea name="label" from="basepopuptitletext"/>
         </group>
         <buttonlist name="groups" from="baseitemlist">
-            <area>50,75,-50,-50</area>
+            <area>50,75,-50,-25</area>
         </buttonlist>
     </window>
 
     <window name="iconhelp">
-        <area>-1,0,600,450</area>
+        <area>-1,0,600,460</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
-                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
+                <position start="-1,-460" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
         <animation trigger="AboutToHide">
             <section duration="500" centre="middle">
-                <position start="-1,-1" end="-1,-450" easingcurve="InBack" />
+                <position start="-1,-1" end="-1,-460" easingcurve="InBack" />
             </section>
         </animation>
         <group name="header" from="basepopupheader">
-            <position>0,-50</position>
+            <area>0,-50,100%,100%</area>
             <textarea name="title" from="basepopuptitletext">
                 <value>Status Icon Help</value>
             </textarea>
         </group>
         <buttonlist name="iconlist" from="baseitemlist">
-            <area>50,75,-50,-50</area>
+            <area>50,75,-50,-25</area>
             <statetype name="buttonitem">
                 <area>0,0,100%,40</area>
                 <state name="active">

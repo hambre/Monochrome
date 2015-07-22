@@ -138,7 +138,7 @@
 
     <!-- header for popup windows -->
     <group name="basepopupheader">
-        <area>0,0,100%,500</area>
+        <area>0,0,100%,100%</area>
         <!-- make titlebar 50px higher to accomodate animation overshooting -->
         <shape name="titlebar" from="basebar">
             <area>0,0,100%,100</area>
@@ -584,4 +584,33 @@
         </textarea>
     </window>
 
+    <window name="MythPopupBox">
+        <area>-1,0,600,400</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-400" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+            <textarea name="title" from="basepopuptitletext"/>
+        </group>
+        <textarea name="messagearea" from="basetext_s">
+            <area>50,70,-50,110</area>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+        </textarea>
+        <shape name="separator" from="baseseparator_h">
+            <position>0,200</position>
+        </shape>
+        <buttonlist name="list" from="baseitemlist">
+            <area>50,210,-50,-25</area>
+        </buttonlist>
+    </window>
 </mythuitheme>
