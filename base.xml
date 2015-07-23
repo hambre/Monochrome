@@ -567,17 +567,27 @@
 
     <!-- busy dialog -->
     <window name="MythBusyDialog">
-        <area>-1,200,300,100</area>
-        <shape name="background" from="basepopupbackground">
-            <area>0,0,100%,100%</area>
-        </shape>
+        <area>-1,0,400,150</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-150" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-150" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+        </group>
         <imagetype name="animation">
-            <area>25,50%-16,32,32</area>
+            <area>25,100,50,50</area>
             <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
             <delay>75</delay>
         </imagetype>
         <textarea name="message" from="basetext_s">
-            <area>75,25,-25,-25</area>
+            <area>75,75,-25,-25</area>
             <align>allcenter</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
