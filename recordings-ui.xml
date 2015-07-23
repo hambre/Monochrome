@@ -58,7 +58,7 @@
                     </textarea>
                     <statetype name="watched">
                         <state name="yes">
-                            <imagetype name="watched" from="baseicon">
+                            <imagetype name="icon" from="baseicon">
                                 <area>668,4,32,32</area>
                                 <filename>images/icons/Watched.png</filename>
                             </imagetype>
