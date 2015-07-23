@@ -4,26 +4,26 @@
 
     <!-- fonts small, medium, large, extra large, extra extra large, extra small -->
     <fontdef name="basefont_s" face="DejaVu Sans">
-        <pixelsize>24</pixelsize>
+        <pixelsize>26</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
     <fontdef name="basefont_m" from="basefont_s">
-        <pixelsize>27</pixelsize>
+        <pixelsize>30</pixelsize>
     </fontdef>
     <fontdef name="basefont_l" from="basefont_s">
-        <pixelsize>30</pixelsize>
-        <weight>bold</weight>
-    </fontdef>
-    <fontdef name="basefont_xl" from="basefont_s">
         <pixelsize>33</pixelsize>
         <weight>bold</weight>
     </fontdef>
+    <fontdef name="basefont_xl" from="basefont_s">
+        <pixelsize>36</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
     <fontdef name="basefont_xxl" from="basefont_s">
-        <pixelsize>40</pixelsize>
+        <pixelsize>42</pixelsize>
         <weight>bold</weight>
     </fontdef>
     <fontdef name="basefont_xs" from="basefont_s">
-        <pixelsize>18</pixelsize>
+        <pixelsize>20</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
 
@@ -111,16 +111,16 @@
             <position>0,50</position>
         </shape>
         <clock name="date">
-            <area>25,10,250,30</area>
+            <area>25,0,250,50</area>
             <font>basefont_m</font>
-            <align>left</align>
+            <align>left,vcenter</align>
             <alpha>150</alpha>
             <template>%DATE%</template>
         </clock>
         <clock name="time">
-            <area>1645,10,250,30</area>
+            <area>1645,0,250,50</area>
             <font>basefont_m</font>
-            <align>right</align>
+            <align>right,vcenter</align>
             <alpha>150</alpha>
             <template>%TIME%</template>
         </clock>
@@ -211,10 +211,10 @@
 
     <!-- text for screen titles -->
     <textarea name="basetitletext">
-        <area>50%-200, 10, 400, 30</area>
+        <area>50%-200, 0, 400, 50</area>
         <font>basefont_m</font>
         <multiline>no</multiline>
-        <align>hcenter</align>
+        <align>allcenter</align>
         <case>upper</case>
         <alpha>150</alpha>
     </textarea>
@@ -245,25 +245,27 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <showarrow>no</showarrow>
         <statetype name="buttonitem">
-            <area>0,0,100%,40</area>
+            <area>0,0,100%,50</area>
             <state name="active">
-                <area>0,0,100%,40</area>
+                <area>0,0,100%,50</area>
                 <shape name="itemseparator" from="baseitemseparator_h">
-                    <position>0, 100%</position>
+                    <position>0,100%</position>
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
-                   <area>5,0,100%,-5</area>
+                   <area>5,0,-5,100%</area>
                    <alpha>150</alpha>
                 </textarea>
             </state>
             <state name="selectedactive">
-                <area>0,0,100%,40</area>
-                <shape name="background" from="basecontrolbackground"/>
+                <area>0,0,100%,50</area>
+                <shape name="background" from="basecontrolbackground">
+                    <area>0,0,100%,100%</area>
+                </shape>
                 <shape name="itemseparator" from="baseitemseparator_h">
                    <position>0,100%</position>
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
-                    <area>5,0,100%,-5</area>
+                    <area>5,0,-5,100%</area>
                     <scroll direction="left" />
                     <case>upper</case>
                     <alpha>255</alpha>
@@ -438,7 +440,7 @@
             <filename>images/Cursor.png</filename>
         </imagetype>
         <textarea name="text" from="basetext_s">
-            <area>5,3,-5,-1</area>
+            <area>5,0,-5,100%</area>
             <alpha>200</alpha>
         </textarea>
     </textedit>
@@ -465,7 +467,7 @@
             <filename>images/Cursor.png</filename>
         </imagetype>
         <textarea name="text" from="basetext_s">
-            <area>5,3,-5,-1</area>
+            <area>5,0,-5,100%</area>
             <multiline>yes</multiline>
             <alpha>200</alpha>
         </textarea>
@@ -480,7 +482,7 @@
             <state name="active">
                 <area>0,0,100%-15,100%</area>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,3,-5,-1</area>
+                    <area>5,1,-5,-1</area>
                     <alpha>150</alpha>
                 </textarea>
                 <group name="textunderline" from="basetextunderline">
@@ -492,14 +494,14 @@
                 <area>0,0,100%-15,100%</area>
                 <shape name="background" from="basecontrolbackground"/>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,3,-5,-1</area>
+                    <area>5,1,-5,-1</area>
                     <alpha>255</alpha>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
                 <area>0,0,100%-15,100%</area>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,3,-5,-1</area>
+                    <area>5,0,-5,100%</area>
                     <alpha>200</alpha>
                 </textarea>
             </state>
@@ -619,7 +621,7 @@
             <multiline>yes</multiline>
         </textarea>
         <shape name="separator" from="baseseparator_h">
-            <position>0,200</position>
+            <position>0,195</position>
         </shape>
         <buttonlist name="list" from="baseitemlist">
             <area>50,210,-50,-25</area>
