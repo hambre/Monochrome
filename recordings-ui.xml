@@ -50,7 +50,7 @@
                 </state>
                 <state name="selectedactive">
                     <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>5,0,668,40</area>
+                        <area>5,0,660,40</area>
                         <scroll direction="horizontal" />
                         <alpha>255</alpha>
                         <case>upper</case>
