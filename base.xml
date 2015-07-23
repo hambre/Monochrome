@@ -95,7 +95,8 @@
     <!-- selected background of controls like button, textedit, spinbox -->
     <shape name="basecontrolbackground" from="basebackground">
         <area>0,2,100%,-2</area>
-        <fill color="#FFFFFF" alpha="50" />
+        <fill color="#FFFFFF" alpha="255" />
+        <alpha>50</alpha>
     </shape>
 
     <shape name="basebar" from="basebackground">
@@ -251,17 +252,18 @@
                     <position>0, 100%</position>
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
-                   <area>0,0,100%,100%</area>
+                   <area>5,0,100%,-5</area>
                    <alpha>150</alpha>
                 </textarea>
             </state>
             <state name="selectedactive">
                 <area>0,0,100%,40</area>
+                <shape name="background" from="basecontrolbackground"/>
                 <shape name="itemseparator" from="baseitemseparator_h">
                    <position>0,100%</position>
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
-                    <area>0,0,100%,100%</area>
+                    <area>5,0,100%,-5</area>
                     <scroll direction="left" />
                     <case>upper</case>
                     <alpha>255</alpha>

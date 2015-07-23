@@ -32,7 +32,7 @@
                 <area>0,0,700,40</area>
                 <state name="active">
                     <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>0,0,700,40</area>
+                        <area>5,0,-5,40</area>
                         <align>left,vcenter</align>
                         <alpha>150</alpha>
                     </textarea>
@@ -50,9 +50,8 @@
                 </state>
                 <state name="selectedactive">
                     <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>0,0,668,40</area>
+                        <area>5,0,668,40</area>
                         <scroll direction="horizontal" />
-                        <align>left,vcenter</align>
                         <alpha>255</alpha>
                         <case>upper</case>
                         <cutdown>no</cutdown>
