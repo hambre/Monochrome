@@ -20,7 +20,7 @@
         <buttonlist name="recordings" from="baseitemlist">
             <align>top,hcenter</align>
             <layout>vertical</layout>
-            <area>25,500,700,505</area>
+            <area>25,500,700,525</area>
             <buttonarea>0,0,700,505</buttonarea>
             <showarrow>no</showarrow>
             <scrollstyle>free</scrollstyle>
@@ -32,12 +32,12 @@
                 <state name="active">
                     <textarea name="titlesubtitle" from="baseitemtext">
                         <area>5,0,-5,100%</area>
-                        <alpha>150</alpha>
+                        <alpha>100</alpha>
                     </textarea>
                     <statetype name="playlist">
                         <state name="yes">
                             <imagetype name="icon" from="baseicon">
-                                <area>710,4,32,32</area>
+                                <area>710,12,32,32</area>
                                 <filename>images/icons/Playlist.png</filename>
                             </imagetype>
                         </state>
@@ -56,7 +56,7 @@
                     <statetype name="watched">
                         <state name="yes">
                             <imagetype name="icon" from="baseicon">
-                                <area>668,4,32,32</area>
+                                <area>668,12,32,32</area>
                                 <filename>images/icons/Watched.png</filename>
                             </imagetype>
                         </state>
@@ -64,7 +64,7 @@
                     <statetype name="playlist">
                         <state name="yes">
                             <imagetype name="icon" from="baseicon">
-                                <area>710,4,32,32</area>
+                                <area>710,12,32,32</area>
                                 <filename>images/icons/Playlist.png</filename>
                             </imagetype>
                         </state>
@@ -119,23 +119,24 @@
             </textarea>
             <textarea name="subtitle" from="basetext_m">
                 <area>400, 45, 700, 50</area>
+		<alpha>150</alpha>
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <textarea name="description" from="basetext_s">
-                    <area>400, 100, 700, 270</area>
+                    <area>400, 110, 700, 260</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
                     <cutdown>yes</cutdown>
-                    <alpha>200</alpha>
+                    <alpha>150</alpha>
                 </textarea>
             </group>
             <group name="largedescription" depends="!subtitle">
                 <textarea name="description" from="basetext_s">
-                    <area>400, 50, 700, 330</area>
+                    <area>400, 60, 700, 320</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
                     <cutdown>yes</cutdown>
-                    <alpha>200</alpha>
+                    <alpha>150</alpha>
                 </textarea>
             </group>
             <group name="facts">
@@ -146,7 +147,7 @@
                 </imagetype>
                 <textarea name="longchannel" from="basetext_s">
                     <area>50,0,650,32</area>
-                    <alpha>200</alpha>
+                    <alpha>150</alpha>
                 </textarea>
                 <imagetype name="aried" from="baseicon">
                     <area>0,40,32,32</area>
@@ -154,7 +155,7 @@
                 </imagetype>
                 <textarea name="startdate" from="basetext_s">
                     <area>50,40,650,32</area>
-                    <alpha>200</alpha>
+                    <alpha>150</alpha>
                     <template>%startdate%%| year%, %starttime% - %endtime% (%lenmins%)</template>
                 </textarea>
                 <imagetype name="storage" from="baseicon">
@@ -163,14 +164,14 @@
                 </imagetype>
                 <textarea name="storagegroup" from="basetext_s">
                     <area>50,80,650,32</area>
-                    <alpha>200</alpha>
+                    <alpha>150</alpha>
                     <template>%filesize_str% of %storagegroup% Storage</template>
                 </textarea>
             </group>
             <textarea name="category" from="basetext_s">
                 <area>0,530,350,50</area>
                 <align>center</align>
-                <alpha>200</alpha>
+                <alpha>150</alpha>
                 <case>capitaliseall</case>
             </textarea>
 
@@ -373,7 +374,7 @@
                 <multiline>yes</multiline>
                 <align>justify</align>
                 <cutdown>yes</cutdown>
-                <alpha>200</alpha>
+                <alpha>150</alpha>
             </textarea>
         </group>
 
@@ -787,7 +788,7 @@
                 <area>600,150,100,30</area>
             </spinbox>
             <textarea name="labeldescription" from="basetext_s">
-                <area>0,200,200,30</area>
+                <area>0,200,250,30</area>
                 <value>Description</value>
             </textarea>
             <textedit name="description" from="basetexteditmulti">

@@ -4,13 +4,13 @@
 
     <window name="mainmenu">
         <fontdef name="menufont_s" from="basefont_s">
-            <pixelsize>30</pixelsize>
-        </fontdef>
-        <fontdef name="menufont_m" from="basefont_s">
             <pixelsize>40</pixelsize>
         </fontdef>
+        <fontdef name="menufont_m" from="basefont_s">
+            <pixelsize>45</pixelsize>
+        </fontdef>
         <fontdef name="menufont_l" from="basefont_s">
-            <pixelsize>50</pixelsize>
+            <pixelsize>55</pixelsize>
         </fontdef>
 
         <imagetype name="background" from="basetitlebackground" />
@@ -93,7 +93,7 @@
                         <font>menufont_m</font>
                         <cutdown>yes</cutdown>
                         <align>right,vcenter</align>
-                        <alpha>100</alpha>
+                        <alpha>50</alpha>
                     </textarea>
                 </state>
                 <state name="selectedactive">
@@ -101,7 +101,6 @@
                         <area>0,0,910,100</area>
                         <font>menufont_l</font>
                         <cutdown>yes</cutdown>
-                        <case>upper</case>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="description">
