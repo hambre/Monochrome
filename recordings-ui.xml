@@ -51,7 +51,6 @@
                         <area>5,0,660,100%</area>
                         <scroll direction="horizontal" />
                         <alpha>255</alpha>
-                        <case>upper</case>
                         <cutdown>no</cutdown>
                     </textarea>
                     <statetype name="watched">
@@ -719,7 +718,6 @@
                     <textarea name="buttontext" from="baseitemtext">
                         <area>125,0,100%,100%</area>
                         <scroll direction="left" />
-                        <case>upper</case>
                         <alpha>255</alpha>
                     </textarea>
                 </state>
