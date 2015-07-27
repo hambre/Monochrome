@@ -33,6 +33,7 @@
                     <textarea name="titlesubtitle" from="baseitemtext">
                         <area>5,0,-5,100%</area>
                         <alpha>100</alpha>
+                        <template>%TITLE| %%00x00| %%: |SUBTITLE%</template>
                     </textarea>
                     <statetype name="playlist">
                         <state name="yes">
@@ -52,6 +53,7 @@
                         <scroll direction="horizontal" />
                         <alpha>255</alpha>
                         <cutdown>no</cutdown>
+                        <template>%TITLE| %%00x00| %%: |SUBTITLE%</template>
                     </textarea>
                     <statetype name="watched">
                         <state name="yes">
@@ -120,6 +122,7 @@
             <textarea name="subtitle" from="basetext_m">
                 <area>400, 45, 700, 50</area>
 		<alpha>150</alpha>
+                <template>%00x00| : %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <textarea name="description" from="basetext_s">
