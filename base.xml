@@ -23,8 +23,10 @@
         <weight>bold</weight>
     </fontdef>
     <fontdef name="basefont_xs" from="basefont_s">
-        <pixelsize>25</pixelsize>
-        <color>#FFFFFF</color>
+        <pixelsize>28</pixelsize>
+    </fontdef>
+    <fontdef name="basefont_xxs" from="basefont_s">
+        <pixelsize>24</pixelsize>
     </fontdef>
 
     <shape name="baseframe">
@@ -285,45 +287,24 @@
         <filename>images/BackgroundDefault.png</filename>
     </imagetype>
 
-    <!-- progress bars -->
-    <shape name="baseprogressbackground">
-        <area>0,0,700,30</area>
-        <type>roundbox</type>
-        <cornerradius>5</cornerradius>
-        <line color="#FFFFFF" alpha="255" width="2"/>
-        <alpha>50</alpha>
-    </shape>
-    <shape name="baseprogressimage">
-        <area>5,5,690,20</area>
-        <type>roundbox</type>
-        <cornerradius>5</cornerradius>
-        <fill color="#FFFFFF" alpha="255" />
-        <alpha>100</alpha>
-    </shape>
-
-    <!-- normal progress bar -->
-    <progressbar name="baseprogress_m">
+    <!-- progress bar -->
+    <progressbar name="baseprogress">
         <area>0,0,700,20</area>
         <layout>horizontal</layout>
         <style>reveal</style>
-        <shape name="background" from="baseprogressbackground">
+        <shape name="background">
             <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <line color="#FFFFFF" alpha="255" width="1"/>
+            <alpha>200</alpha>
         </shape>
-        <shape name="progressimage" from="baseprogressimage">
+        <shape name="progressimage">
             <area>5,5,-5,-5</area>
-        </shape>
-    </progressbar>
-
-    <!-- large progress bar -->
-    <progressbar name="baseprogress_l">
-        <area>0,0,700,30</area>
-        <layout>horizontal</layout>
-        <style>reveal</style>
-        <shape name="background" from="baseprogressbackground">
-            <area>0,0,100%,100%</area>
-        </shape>
-        <shape name="progressimage" from="baseprogressimage">
-            <area>5,5,-5,-5</area>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#FFFFFF" alpha="255" />
+            <alpha>50</alpha>
         </shape>
     </progressbar>
 

@@ -145,7 +145,7 @@
                     <area>0,0,32,32</area>
                     <filename>images/icons/Sender.png</filename>
                 </imagetype>
-                <textarea name="longchannel" from="basetext_s">
+                <textarea name="longchannel" from="basetext_xs">
                     <area>50,0,650,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -153,7 +153,7 @@
                     <area>0,40,32,32</area>
                     <filename>images/icons/Clock.png</filename>
                 </imagetype>
-                <textarea name="startdate" from="basetext_s">
+                <textarea name="startdate" from="basetext_xs">
                     <area>50,40,650,32</area>
                     <alpha>150</alpha>
                     <template>%startdate%%| year%, %starttime% - %endtime% (%lenmins%)</template>
@@ -162,7 +162,7 @@
                     <area>0,80,32,32</area>
                     <filename>images/icons/Storage.png</filename>
                 </imagetype>
-                <textarea name="storagegroup" from="basetext_s">
+                <textarea name="storagegroup" from="basetext_xs">
                     <area>50,80,650,32</area>
                     <alpha>150</alpha>
                     <template>%filesize_str% of %storagegroup% Storage</template>
@@ -380,20 +380,15 @@
 
         <!-- used storage space detail in left side of footer -->
         <group name="storagedetails">
-            <area>25,1040,700,30</area>
-            <progressbar name="usedbar" from="baseprogress_l">
-                <area>0,0,700,30</area>
-                <shape name="background" from="baseprogressbackground">
-                    <area>0,0,700,30</area>
-                </shape>
-                <shape name="progressimage" from="baseprogressimage">
-                    <area>5,5,690,20</area>
-                </shape>
+            <area>25,1038,700,35</area>
+            <progressbar name="usedbar" from="baseprogress">
+                <area>0,0,100%,100%</area>
             </progressbar>
             <textarea name="freereport" from="basetext_xs">
-                <area>0,0,700,30</area>
+                <area>0,0,100%,100%</area>
                 <alpha>200</alpha>
                 <align>center</align>
+                <font>basefont_xxs</font>
             </textarea>
         </group>
 
