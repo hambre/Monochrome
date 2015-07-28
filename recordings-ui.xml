@@ -4,7 +4,7 @@
 
     <window name="watchrecordings">
 
-        <imagetype name="fanart" from="baseimagebackground"/>
+        <imagetype name="fanart" from="basetitlebackground"/>
         <group name="pageheader" from="baseheader" />
         <group name="content" from="basecontent" />
         <group name="pagefooter" from="basefooter" />
