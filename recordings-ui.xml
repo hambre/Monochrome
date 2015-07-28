@@ -398,7 +398,7 @@
     </window>
 
     <window name="groupfilter">
-        <area>-1,0,500,450</area>
+        <area>-1,0,600,450</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
@@ -419,7 +419,7 @@
     </window>
 
     <window name="changeview">
-        <area>-1,0,450,400</area>
+        <area>-1,0,550,500</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
@@ -437,62 +437,62 @@
             </textarea>
         </group>
         <group name="content">
-            <area>50,0,350,-50</area>
+            <area>100,80,-100,-25</area>
             <textarea name="labeltitles" from="basetext_s">
-                <area>25,80,200,30</area>
+                <area>25,0,200,40</area>
                 <alpha>200</alpha>
                 <value>Titles</value>
             </textarea>
             <checkbox name="titles" from="basecheckbox">
-                <position>300,80</position>
+                <position>300,10</position>
             </checkbox>
             <textarea name="labelcategories" from="basetext_s">
-                <area>25,120,200,30</area>
+                <area>25,50,200,40</area>
                 <alpha>200</alpha>
                 <value>Categories</value>
             </textarea>
             <checkbox name="categories" from="basecheckbox">
-                <position>300,120</position>
+                <position>300,60</position>
             </checkbox>
             <textarea name="labelrecgroups" from="basetext_s">
-                <area>25,160,200,30</area>
+                <area>25,100,200,40</area>
                 <alpha>200</alpha>
                 <value>Groups</value>
             </textarea>
             <checkbox name="recgroups" from="basecheckbox">
-                <position>300,160</position>
+                <position>300,110</position>
             </checkbox>
             <textarea name="labelwatchlist" from="basetext_s">
-                <area>25,200,200,30</area>
+                <area>25,150,200,40</area>
                 <alpha>200</alpha>
                 <value>Watchlist</value>
             </textarea>
             <checkbox name="watchlist" from="basecheckbox">
-                <position>300,200</position>
+                <position>300,160</position>
             </checkbox>
             <textarea name="labelsearches" from="basetext_s">
-                <area>25,240,200,30</area>
+                <area>25,200,200,40</area>
                 <alpha>200</alpha>
                 <value>Searches</value>
             </textarea>
             <checkbox name="searches" from="basecheckbox">
-                <position>300,240</position>
+                <position>300,210</position>
             </checkbox>
             <textarea name="labellivetv" from="basetext_s">
-                <area>25,280,200,30</area>
+                <area>25,250,200,40</area>
                 <alpha>200</alpha>
                 <value>Live TV</value>
             </textarea>
             <checkbox name="livetv" from="basecheckbox">
-                <position>300,280</position>
+                <position>300,260</position>
             </checkbox>
             <textarea name="labelwatched" from="basetext_s">
-                <area>25,320,200,30</area>
+                <area>25,300,200,40</area>
                 <alpha>200</alpha>
                 <value>Watched</value>
             </textarea>
             <checkbox name="watched" from="basecheckbox">
-                <position>300,320</position>
+                <position>300,310</position>
             </checkbox>
             <button name="save" from="basebutton">
                 <area>100,380,-100,40</area>
@@ -502,7 +502,7 @@
     </window>
 
     <window name="passwordchanger">
-        <area>-1,0,650,250</area>
+        <area>-1,0,750,250</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
@@ -522,20 +522,20 @@
         <group name="content">
             <area>50,90,-50,165</area>
             <textarea name="oldlabel" from="basetext_s">
-                <area>0,0,200,30</area>
+                <area>0,0,300,30</area>
                 <value>Old Password:</value>
                 <alpha>200</alpha>
             </textarea>
             <textedit name="oldpassword" from="basetextedit">
-                <area>200,0,-1,32</area>
+                <area>300,0,-1,32</area>
             </textedit>
             <textarea name="newlabel" from="basetext_s">
-                <area>0,50,200,30</area>
+                <area>0,50,300,30</area>
                 <value>New Password:</value>
                 <alpha>200</alpha>
             </textarea>
             <textedit name="newpassword" from="basetextedit">
-                <area>200,50,-1,32</area>
+                <area>300,50,-1,32</area>
             </textedit>
             <button name="ok" from="basebutton">
                 <area>175,125,-175,40</area>
@@ -545,7 +545,7 @@
     </window>
 
     <window name="groupselector">
-        <area>-1,0,550,460</area>
+        <area>-1,0,750,500</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-460" end="-1,0" easingcurve="OutBack" />
@@ -731,7 +731,7 @@
     </window>
 
     <window name="editmetadata">
-        <area>-1,0,800,480</area>
+        <area>-1,0,900,550</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
