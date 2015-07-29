@@ -550,7 +550,7 @@
 
     <!-- busy dialog -->
     <window name="MythBusyDialog">
-        <area>-1,0,400,150</area>
+        <area>-1,0,500,150</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-150" end="-1,0" easingcurve="OutBack" />
