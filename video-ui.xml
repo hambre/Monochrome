@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="browser">
+        <imagetype name="fanart" from="basetitlebackground"/>
+        <group name="pageheader" from="baseheader" />
+        <group name="content" from="basecontent" />
+        <group name="pagefooter" from="basefooter" />
+
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Watch Videos</value>
+        </textarea>
+        <buttonlist name="videos" from="baseitemlist">
+            <area>25,50,750,400</area>
+        </buttonlist>
+        <!-- video details -->
+        <group name="videodetails">
+            <area>25,500,-25,-0</area>
+            <!-- left part -->
+            <textarea name="title" from="basetext_l">
+                <area>0, 0, 715, 50</area>
+            </textarea>
+            <statetype name="watchedstate">
+                <state name="yes">
+                    <imagetype name="icon" from="baseicon">
+                        <area>718,12,32,32</area>
+                        <filename>images/icons/Watched.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <textarea name="subtitle" from="basetext_m">
+                <area>0, 45, 750, 50</area>
+		<alpha>150</alpha>
+                <template>%00x00| ~ %%SUBTITLE%</template>
+            </textarea>
+            <group name="smalldescription" depends="subtitle">
+                <textarea name="description" from="basetext_s">
+                    <area>0, 110, 750, 400</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <group name="largedescription" depends="!subtitle">
+                <textarea name="description" from="basetext_s">
+                    <area>0, 80, 750, 425</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <!-- middle part -->
+            <imagetype name="coverart">
+                <area>800, 0, 350, 505</area>
+            </imagetype>
+            <textarea name="genres" from="basetext_xs">
+                <area>750,530,450,50</area>
+                <align>center</align>
+                <alpha>150</alpha>
+                <case>capitaliseall</case>
+            </textarea>
+            <!-- right part -->
+            <textarea name="directorlabel" from="basetext_xs">
+                <area>1200,0,250,50</area>
+                <value>Director</value>
+            </textarea>
+            <textarea name="director" from="basetext_xs">
+                <area>1200,50,350,50</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="castlabel" from="basetext_xs">
+                <area>1200,100,250,50</area>
+                <value>Cast</value>
+            </textarea>
+            <textarea name="cast" from="basetext_xs">
+                <area>1200,150,-25,180</area>
+                <alpha>150</alpha>
+                <multiline>yes</multiline>
+            </textarea>
+            <imagetype name="time" from="baseicon">
+                <area>1200,375,32,32</area>
+                <filename>images/icons/Clock.png</filename>
+            </imagetype>
+            <textarea name="length" from="basetext_xs">
+                <area>1250,375,250,32</area>
+                <alpha>150</alpha>
+            </textarea>
+            <imagetype name="calendar" from="baseicon">
+                <area>1200,425,32,32</area>
+                <filename>images/icons/Calendar.png</filename>
+            </imagetype>
+            <textarea name="year" from="basetext_xs">
+                <area>1250,425,250,32</area>
+                <alpha>150</alpha>
+            </textarea>
+            <imagetype name="ratinglabel" from="baseicon">
+                <area>1200,475,32,32</area>
+                <filename>images/icons/ParentalRating.png</filename>
+            </imagetype>
+            <textarea name="rating" from="basetext_xs">
+                <area>1250,475,250,32</area>
+                <alpha>150</alpha>
+            </textarea>
+            <statetype name="userratingstate">
+                <area>100%-175,475,175,32</area>
+                <alpha>200</alpha>
+                <state name="0">
+                    <imagetype name="0">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating00.png</filename>
+                    </imagetype>
+                </state>
+                <state name="1">
+                    <imagetype name="1">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating01.png</filename>
+                    </imagetype>
+                </state>
+                <state name="2">
+                    <imagetype name="2">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating02.png</filename>
+                    </imagetype>
+                </state>
+                <state name="3">
+                    <imagetype name="3">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating03.png</filename>
+                    </imagetype>
+                </state>
+                <state name="4">
+                    <imagetype name="4">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating04.png</filename>
+                    </imagetype>
+                </state>
+                <state name="5">
+                    <imagetype name="5">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating05.png</filename>
+                    </imagetype>
+                </state>
+                <state name="6">
+                    <imagetype name="6">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating06.png</filename>
+                    </imagetype>
+                </state>
+                <state name="7">
+                    <imagetype name="7">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating07.png</filename>
+                    </imagetype>
+                </state>
+                <state name="8">
+                    <imagetype name="8">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating08.png</filename>
+                    </imagetype>
+                </state>
+                <state name="9">
+                    <imagetype name="9">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating09.png</filename>
+                    </imagetype>
+                </state>
+                <state name="10">
+                    <imagetype name="10">
+                        <area>0,0,175,32</area>
+                        <filename>images/icons/Rating10.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+
+        </group>
+
+    </window>
+</mythuitheme> 
