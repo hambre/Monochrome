@@ -159,7 +159,7 @@
         <area>0, 475, 100%, -50</area>
         <shape name="contentbar" from="basebar">
             <area>0, 0, 100%, 100%</area>
-            <alpha>225</alpha>
+            <alpha>200</alpha>
         </shape>
         <shape name="contentsep" from="baseseparator_h">
             <position>0, 0</position>
