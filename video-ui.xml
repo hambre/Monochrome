@@ -4,7 +4,7 @@
     <window name="browser">
         <imagetype name="fanart" from="basetitlebackground"/>
         <group name="pageheader" from="baseheader" />
-        <group name="content" from="basecontent" />
+        <group name="content" from="basecontent"/>
         <group name="pagefooter" from="basefooter" />
 
         <textarea name="pagetitle" from="basetitletext">
@@ -51,6 +51,10 @@
                     <alpha>150</alpha>
                 </textarea>
             </group>
+            <textarea name="breadcrumbs" from="basetext_xs">
+                <area>0,530,750,50</area>
+                <alpha>150</alpha>
+            </textarea>
             <!-- middle part -->
             <imagetype name="coverart">
                 <area>800, 0, 350, 505</area>
@@ -67,17 +71,18 @@
                 <value>Director</value>
             </textarea>
             <textarea name="director" from="basetext_xs">
-                <area>1200,50,350,50</area>
+                <area>1200,40,350,50</area>
                 <alpha>150</alpha>
             </textarea>
             <textarea name="castlabel" from="basetext_xs">
-                <area>1200,100,250,50</area>
+                <area>1200,90,250,50</area>
                 <value>Cast</value>
             </textarea>
             <textarea name="cast" from="basetext_xs">
-                <area>1200,150,-25,180</area>
+                <area>1200,140,-25,210</area>
                 <alpha>150</alpha>
                 <multiline>yes</multiline>
+                <align>top,justify</align>
             </textarea>
             <imagetype name="time" from="baseicon">
                 <area>1200,375,32,32</area>
@@ -174,6 +179,11 @@
                 </state>
             </statetype>
 
+            <textarea name="position" from="basetext_xs">
+                <area>100%-150,530,150,50</area>
+                <alpha>150</alpha>
+                <align>right,vcenter</align>
+            </textarea>
         </group>
 
     </window>
