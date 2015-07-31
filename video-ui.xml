@@ -11,7 +11,7 @@
             <value>Watch Videos</value>
         </textarea>
         <buttonlist name="videos">
-            <area>15,100,-15,300</area>
+            <area>15,110,-15,300</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <align>hcenter</align>
             <layout>horizontal</layout>
@@ -24,6 +24,7 @@
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
                         <filename>images/DefaultFillImage.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                     <shape name="top" from="baseseparator_h">
                         <position>0,0</position>
@@ -37,13 +38,20 @@
                     <shape name="background" from="basebackground"/>
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
+                        <preserveaspect>false</preserveaspect>
                         <filename>images/DefaultFillImage.png</filename>
                     </imagetype>
-                    <shape name="frame" from="baseframe">
-                        <area>0,0,100%,100%</area>
+                    <shape name="blackframe_black" from="baseframe">
+                        <area>-1,-1,100%+1,100%+1</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="0" />
+                        <line color="#000000" alpha="255" width="3" />
+                    </shape>
+                    <shape name="whiteframe" from="baseframe">
+                        <area>0,0,100%+1,100%+1</area>
                         <type>box</type>
                     </shape>
-                    <imagetype name="arrow4">
+                    <imagetype name="arrow">
                         <area>50%-18,100%-1,36,30</area>
                         <filename>images/ArrowDownBig.png</filename>
                         <alpha>255</alpha>
@@ -55,43 +63,45 @@
         <group name="videodetails">
             <area>25,500,-25,-0</area>
             <!-- left part -->
-            <textarea name="title" from="basetext_m">
-                <area>0, 0, 750, 50</area>
-                <scroll direction="horizontal" />
-                <font name="f" from="basefont_m">
-                    <bold>yes</bold>
-                </font>
-            </textarea>
-            <textarea name="subtitle" from="basetext_m">
-                <area>0, 45, 750, 50</area>
-		<alpha>150</alpha>
-                <template>%00x00| ~ %%SUBTITLE%</template>
-            </textarea>
-            <group name="smalldescription" depends="subtitle">
-                <textarea name="description" from="basetext_s">
-                    <area>0, 110, 750, 400</area>
-                    <multiline>yes</multiline>
-                    <align>justify</align>
-                    <cutdown>yes</cutdown>
+            <group name="left">
+                <area>0,0,780,100%</area>
+                <textarea name="title" from="basetext_m">
+                    <area>0, 0, 100%, 50</area>
+                    <scroll direction="horizontal" />
+                </textarea>
+                <textarea name="subtitle" from="basetext_m">
+                    <area>0, 45, 100%, 50</area>
+                    <alpha>150</alpha>
+                    <template>%00x00| ~ %%SUBTITLE%</template>
+                </textarea>
+                <group name="smalldescription" depends="subtitle">
+                    <area>0, 110, 100%, 400</area>
+                    <textarea name="description" from="basetext_s">
+                        <area>0,0,100%,100%</area>
+                        <multiline>yes</multiline>
+                        <align>justify</align>
+                        <cutdown>yes</cutdown>
+                        <alpha>150</alpha>
+                    </textarea>
+                </group>
+                <group name="largedescription" depends="!subtitle">
+                    <area>0, 80, 100%, 425</area>
+                    <textarea name="description" from="basetext_s">
+                        <area>0,0,100%,100%</area>
+                        <multiline>yes</multiline>
+                        <align>justify</align>
+                        <cutdown>yes</cutdown>
+                        <alpha>150</alpha>
+                    </textarea>
+                </group>
+                <textarea name="breadcrumbs" from="basetext_xs">
+                    <area>0,530,100%-50,50</area>
                     <alpha>150</alpha>
                 </textarea>
             </group>
-            <group name="largedescription" depends="!subtitle">
-                <textarea name="description" from="basetext_s">
-                    <area>0, 80, 750, 425</area>
-                    <multiline>yes</multiline>
-                    <align>justify</align>
-                    <cutdown>yes</cutdown>
-                    <alpha>150</alpha>
-                </textarea>
-            </group>
-            <textarea name="breadcrumbs" from="basetext_xs">
-                <area>0,530,750,50</area>
-                <alpha>150</alpha>
-            </textarea>
             <!-- middle part -->
             <imagetype name="coverart">
-                <area>800, 0, 350, 500</area>
+                <area>820, 0, 350, 505</area>
             </imagetype>
             <textarea name="genres" from="basetext_xs">
                 <area>750,530,450,50</area>
