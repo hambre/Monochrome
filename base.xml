@@ -490,12 +490,12 @@
             <position>100%-15,100%-25</position>
             <state type="full">
                 <imagetype name="down">
-                    <filename>images/SpinboxDown.png</filename>
+                    <filename>images/ArrowRight.png</filename>
                 </imagetype>
             </state>
             <state type="off">
                 <imagetype name="down">
-                    <filename>images/SpinboxDown.png</filename>
+                    <filename>images/ArrowRight.png</filename>
                     <alpha>100</alpha>
                 </imagetype>
             </state>
@@ -504,12 +504,12 @@
             <position>100%-15,100%-12</position>
             <state type="full">
                 <imagetype name="up">
-                    <filename>images/SpinboxUp.png</filename>
+                    <filename>images/ArrowLeft.png</filename>
                 </imagetype>
             </state>
             <state type="off">
                 <imagetype name="up">
-                    <filename>images/SpinboxUp.png</filename>
+                    <filename>images/ArrowLeft.png</filename>
                     <alpha>100</alpha>
                 </imagetype>
             </state>
