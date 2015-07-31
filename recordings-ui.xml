@@ -415,6 +415,7 @@
         </group>
         <buttonlist name="groups" from="baseitemlist">
             <area>50,75,-50,-25</area>
+            <align>vcenter</align>
         </buttonlist>
     </window>
 
@@ -562,11 +563,12 @@
         </group>
         <buttonlist name="groups" from="baseitemlist">
             <area>50,75,-50,-25</area>
+            <align>vcenter</align>
         </buttonlist>
     </window>
 
     <window name="iconhelp">
-        <area>-1,0,600,460</area>
+        <area>-1,0,700,460</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-460" end="-1,0" easingcurve="OutBack" />
@@ -585,6 +587,7 @@
         </group>
         <buttonlist name="iconlist" from="baseitemlist">
             <area>50,75,-50,-25</area>
+            <align>vcenter</align>
             <statetype name="buttonitem">
                 <area>0,0,100%,40</area>
                 <state name="active">

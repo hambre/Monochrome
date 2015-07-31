@@ -603,6 +603,7 @@
             <position>0,195</position>
         </shape>
         <buttonlist name="list" from="baseitemlist">
+            <align>vcenter</align>
             <area>50,210,-50,-25</area>
         </buttonlist>
     </window>
