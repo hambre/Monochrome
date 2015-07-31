@@ -10,24 +10,58 @@
         <textarea name="pagetitle" from="basetitletext">
             <value>Watch Videos</value>
         </textarea>
-        <buttonlist name="videos" from="baseitemlist">
-            <area>25,50,750,400</area>
+        <buttonlist name="videos">
+            <area>15,100,-15,300</area>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <align>hcenter</align>
+            <layout>horizontal</layout>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <statetype name="buttonitem">
+                <area>0,0,210,100%</area>
+                <state name="active">
+                    <area>0,0,210,100%</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,100%,100%</area>
+                        <filename>images/DefaultFillImage.png</filename>
+                    </imagetype>
+                    <shape name="top" from="baseseparator_h">
+                        <position>0,0</position>
+                    </shape>
+                    <shape name="bottom" from="baseseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                </state>
+                <state name="selectedactive">
+                    <area>-10,0,230,330</area>
+                    <shape name="background" from="basebackground"/>
+                    <imagetype name="buttonimage">
+                        <area>0,0,100%,100%</area>
+                        <filename>images/DefaultFillImage.png</filename>
+                    </imagetype>
+                    <shape name="frame" from="baseframe">
+                        <area>0,0,100%,100%</area>
+                        <type>box</type>
+                    </shape>
+                    <imagetype name="arrow4">
+                        <area>50%-18,100%-1,36,30</area>
+                        <filename>images/ArrowDownBig.png</filename>
+                        <alpha>255</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
         </buttonlist>
         <!-- video details -->
         <group name="videodetails">
             <area>25,500,-25,-0</area>
             <!-- left part -->
-            <textarea name="title" from="basetext_l">
-                <area>0, 0, 715, 50</area>
+            <textarea name="title" from="basetext_m">
+                <area>0, 0, 750, 50</area>
+                <scroll direction="horizontal" />
+                <font name="f" from="basefont_m">
+                    <bold>yes</bold>
+                </font>
             </textarea>
-            <statetype name="watchedstate">
-                <state name="yes">
-                    <imagetype name="icon" from="baseicon">
-                        <area>718,12,32,32</area>
-                        <filename>images/icons/Watched.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
             <textarea name="subtitle" from="basetext_m">
                 <area>0, 45, 750, 50</area>
 		<alpha>150</alpha>
@@ -57,7 +91,7 @@
             </textarea>
             <!-- middle part -->
             <imagetype name="coverart">
-                <area>800, 0, 350, 505</area>
+                <area>800, 0, 350, 500</area>
             </imagetype>
             <textarea name="genres" from="basetext_xs">
                 <area>750,530,450,50</area>
@@ -108,6 +142,15 @@
                 <area>1250,475,250,32</area>
                 <alpha>150</alpha>
             </textarea>
+            <statetype name="watchedstate">
+                <area>100%-32,425,32,32</area>
+                <state name="yes">
+                    <imagetype name="icon" from="baseicon">
+                        <area>0,0,32,32</area>
+                        <filename>images/icons/Watched.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
             <statetype name="userratingstate">
                 <area>100%-175,475,175,32</area>
                 <alpha>200</alpha>
