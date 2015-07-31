@@ -64,8 +64,8 @@
             <area>25,500,-25,-0</area>
             <!-- left part -->
             <group name="left">
-                <area>0,0,780,100%</area>
-                <textarea name="title" from="basetext_m">
+                <area>0,0,785,100%</area>
+                <textarea name="title" from="basetext_l">
                     <area>0, 0, 100%, 50</area>
                     <scroll direction="horizontal" />
                 </textarea>
