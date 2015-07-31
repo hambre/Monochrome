@@ -104,7 +104,7 @@
                 <area>820, 0, 350, 505</area>
             </imagetype>
             <textarea name="genres" from="basetext_xs">
-                <area>750,530,450,50</area>
+                <area>770,530,450,50</area>
                 <align>center</align>
                 <alpha>150</alpha>
                 <case>capitaliseall</case>
