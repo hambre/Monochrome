@@ -112,7 +112,7 @@
             <!-- right part -->
             <group name="right">
                 <area>1300,0,-1,-0</area>
-                <textarea name="directorlabel" from="basetext_xs">
+                <textarea name="directorlabel" from="basetext_s">
                     <area>0,0,250,50</area>
                     <value>Director</value>
                 </textarea>
@@ -120,7 +120,7 @@
                     <area>0,40,350,50</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="castlabel" from="basetext_xs">
+                <textarea name="castlabel" from="basetext_s">
                     <area>0,90,250,50</area>
                     <value>Cast</value>
                 </textarea>
@@ -134,7 +134,7 @@
                     <area>0,375,32,32</area>
                     <filename>images/icons/Clock.png</filename>
                 </imagetype>
-                <textarea name="length" from="basetext_xs">
+                <textarea name="length" from="basetext_s">
                     <area>50,375,250,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -142,7 +142,7 @@
                     <area>0,425,32,32</area>
                     <filename>images/icons/Calendar.png</filename>
                 </imagetype>
-                <textarea name="year" from="basetext_xs">
+                <textarea name="year" from="basetext_s">
                     <area>50,425,250,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -150,7 +150,7 @@
                     <area>0,475,32,32</area>
                     <filename>images/icons/ParentalRating.png</filename>
                 </imagetype>
-                <textarea name="rating" from="basetext_xs">
+                <textarea name="rating" from="basetext_s">
                     <area>50,475,250,32</area>
                     <alpha>150</alpha>
                 </textarea>
