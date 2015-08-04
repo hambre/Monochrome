@@ -51,11 +51,6 @@
                         <area>0,0,100%+1,100%+1</area>
                         <type>box</type>
                     </shape>
-                    <imagetype name="arrow">
-                        <area>50%-18,100%-1,36,30</area>
-                        <filename>images/ArrowDownBig.png</filename>
-                        <alpha>255</alpha>
-                    </imagetype>
                 </state>
             </statetype>
         </buttonlist>
