@@ -3,7 +3,7 @@
 <mythuitheme>
 
     <!-- fonts small, medium, large, extra large, extra extra large, extra small -->
-    <fontdef name="basefont_s" face="Luxi Sans">
+    <fontdef name="basefont_s" face="Jesaya Free">
         <pixelsize>32</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
