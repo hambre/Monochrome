@@ -64,7 +64,7 @@
             <area>25,500,-25,-0</area>
             <!-- left part -->
             <group name="left">
-                <area>0,0,885,100%</area>
+                <area>0,0,900,100%</area>
                 <textarea name="title" from="basetext_l">
                     <area>0, 0, 100%, 50</area>
                     <scroll direction="horizontal" />
@@ -101,7 +101,7 @@
             </group>
             <!-- middle part -->
             <imagetype name="coverart">
-                <area>920, 0, 350, 505</area>
+                <area>925, 0, 350, 505</area>
             </imagetype>
             <textarea name="genres" from="basetext_xs">
                 <area>850,530,490,50</area>
