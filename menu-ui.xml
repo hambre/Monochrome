@@ -7,10 +7,10 @@
             <pixelsize>40</pixelsize>
         </fontdef>
         <fontdef name="menufont_m" from="basefont_s">
-            <pixelsize>45</pixelsize>
+            <pixelsize>50</pixelsize>
         </fontdef>
         <fontdef name="menufont_l" from="basefont_s">
-            <pixelsize>55</pixelsize>
+            <pixelsize>60</pixelsize>
         </fontdef>
 
         <imagetype name="background" from="basetitlebackground" />
