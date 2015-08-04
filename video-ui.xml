@@ -64,7 +64,7 @@
             <area>25,500,-25,-0</area>
             <!-- left part -->
             <group name="left">
-                <area>0,0,785,100%</area>
+                <area>0,0,885,100%</area>
                 <textarea name="title" from="basetext_l">
                     <area>0, 0, 100%, 50</area>
                     <scroll direction="horizontal" />
@@ -101,137 +101,140 @@
             </group>
             <!-- middle part -->
             <imagetype name="coverart">
-                <area>820, 0, 350, 505</area>
+                <area>920, 0, 350, 505</area>
             </imagetype>
             <textarea name="genres" from="basetext_xs">
-                <area>770,530,450,50</area>
+                <area>850,530,490,50</area>
                 <align>center</align>
                 <alpha>150</alpha>
                 <case>capitaliseall</case>
             </textarea>
             <!-- right part -->
-            <textarea name="directorlabel" from="basetext_xs">
-                <area>1200,0,250,50</area>
-                <value>Director</value>
-            </textarea>
-            <textarea name="director" from="basetext_xs">
-                <area>1200,40,350,50</area>
-                <alpha>150</alpha>
-            </textarea>
-            <textarea name="castlabel" from="basetext_xs">
-                <area>1200,90,250,50</area>
-                <value>Cast</value>
-            </textarea>
-            <textarea name="cast" from="basetext_xs">
-                <area>1200,140,-25,210</area>
-                <alpha>150</alpha>
-                <multiline>yes</multiline>
-                <align>top,justify</align>
-            </textarea>
-            <imagetype name="time" from="baseicon">
-                <area>1200,375,32,32</area>
-                <filename>images/icons/Clock.png</filename>
-            </imagetype>
-            <textarea name="length" from="basetext_xs">
-                <area>1250,375,250,32</area>
-                <alpha>150</alpha>
-            </textarea>
-            <imagetype name="calendar" from="baseicon">
-                <area>1200,425,32,32</area>
-                <filename>images/icons/Calendar.png</filename>
-            </imagetype>
-            <textarea name="year" from="basetext_xs">
-                <area>1250,425,250,32</area>
-                <alpha>150</alpha>
-            </textarea>
-            <imagetype name="ratinglabel" from="baseicon">
-                <area>1200,475,32,32</area>
-                <filename>images/icons/ParentalRating.png</filename>
-            </imagetype>
-            <textarea name="rating" from="basetext_xs">
-                <area>1250,475,250,32</area>
-                <alpha>150</alpha>
-            </textarea>
-            <statetype name="watchedstate">
-                <area>100%-32,425,32,32</area>
-                <state name="yes">
-                    <imagetype name="icon" from="baseicon">
-                        <area>0,0,32,32</area>
-                        <filename>images/icons/Watched.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-            <statetype name="userratingstate">
-                <area>100%-175,475,175,32</area>
-                <alpha>200</alpha>
-                <state name="0">
-                    <imagetype name="0">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating00.png</filename>
-                    </imagetype>
-                </state>
-                <state name="1">
-                    <imagetype name="1">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating01.png</filename>
-                    </imagetype>
-                </state>
-                <state name="2">
-                    <imagetype name="2">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating02.png</filename>
-                    </imagetype>
-                </state>
-                <state name="3">
-                    <imagetype name="3">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating03.png</filename>
-                    </imagetype>
-                </state>
-                <state name="4">
-                    <imagetype name="4">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating04.png</filename>
-                    </imagetype>
-                </state>
-                <state name="5">
-                    <imagetype name="5">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating05.png</filename>
-                    </imagetype>
-                </state>
-                <state name="6">
-                    <imagetype name="6">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating06.png</filename>
-                    </imagetype>
-                </state>
-                <state name="7">
-                    <imagetype name="7">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating07.png</filename>
-                    </imagetype>
-                </state>
-                <state name="8">
-                    <imagetype name="8">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating08.png</filename>
-                    </imagetype>
-                </state>
-                <state name="9">
-                    <imagetype name="9">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating09.png</filename>
-                    </imagetype>
-                </state>
-                <state name="10">
-                    <imagetype name="10">
-                        <area>0,0,175,32</area>
-                        <filename>images/icons/Rating10.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
+            <group name="right">
+                <area>1300,0,-1,-0</area>
+                <textarea name="directorlabel" from="basetext_xs">
+                    <area>0,0,250,50</area>
+                    <value>Director</value>
+                </textarea>
+                <textarea name="director" from="basetext_xs">
+                    <area>0,40,350,50</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <textarea name="castlabel" from="basetext_xs">
+                    <area>0,90,250,50</area>
+                    <value>Cast</value>
+                </textarea>
+                <textarea name="cast" from="basetext_xs">
+                    <area>0,140,-25,210</area>
+                    <alpha>150</alpha>
+                    <multiline>yes</multiline>
+                    <align>top,justify</align>
+                </textarea>
+                <imagetype name="time" from="baseicon">
+                    <area>0,375,32,32</area>
+                    <filename>images/icons/Clock.png</filename>
+                </imagetype>
+                <textarea name="length" from="basetext_xs">
+                    <area>50,375,250,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="calendar" from="baseicon">
+                    <area>0,425,32,32</area>
+                    <filename>images/icons/Calendar.png</filename>
+                </imagetype>
+                <textarea name="year" from="basetext_xs">
+                    <area>50,425,250,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="ratinglabel" from="baseicon">
+                    <area>0,475,32,32</area>
+                    <filename>images/icons/ParentalRating.png</filename>
+                </imagetype>
+                <textarea name="rating" from="basetext_xs">
+                    <area>50,475,250,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <statetype name="watchedstate">
+                    <area>100%-32,425,32,32</area>
+                    <state name="yes">
+                        <imagetype name="icon" from="baseicon">
+                            <area>0,0,32,32</area>
+                            <filename>images/icons/Watched.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="userratingstate">
+                    <area>100%-175,475,175,32</area>
+                    <alpha>200</alpha>
+                    <state name="0">
+                        <imagetype name="0">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating00.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="1">
+                        <imagetype name="1">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating01.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="2">
+                        <imagetype name="2">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating02.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="3">
+                        <imagetype name="3">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating03.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="4">
+                        <imagetype name="4">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating04.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="5">
+                        <imagetype name="5">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating05.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="6">
+                        <imagetype name="6">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating06.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="7">
+                        <imagetype name="7">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating07.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="8">
+                        <imagetype name="8">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating08.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="9">
+                        <imagetype name="9">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating09.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="10">
+                        <imagetype name="10">
+                            <area>0,0,175,32</area>
+                            <filename>images/icons/Rating10.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
 
+            </group>
             <textarea name="position" from="basetext_xs">
                 <area>100%-150,530,150,50</area>
                 <alpha>150</alpha>
