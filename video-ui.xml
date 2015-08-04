@@ -149,84 +149,11 @@
                     <area>50,475,250,32</area>
                     <alpha>150</alpha>
                 </textarea>
-                <statetype name="watchedstate">
-                    <area>100%-32,425,32,32</area>
-                    <state name="yes">
-                        <imagetype name="icon" from="baseicon">
-                            <area>0,0,32,32</area>
-                            <filename>images/icons/Watched.png</filename>
-                        </imagetype>
-                    </state>
+                <statetype name="watchedstate" from="basewatchedstate">
+                    <position>100%-32,425</position>
                 </statetype>
-                <statetype name="userratingstate">
-                    <area>100%-175,475,175,32</area>
-                    <alpha>200</alpha>
-                    <state name="0">
-                        <imagetype name="0">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating00.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="1">
-                        <imagetype name="1">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating01.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="2">
-                        <imagetype name="2">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating02.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="3">
-                        <imagetype name="3">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating03.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="4">
-                        <imagetype name="4">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating04.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="5">
-                        <imagetype name="5">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating05.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="6">
-                        <imagetype name="6">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating06.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="7">
-                        <imagetype name="7">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating07.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="8">
-                        <imagetype name="8">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating08.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="9">
-                        <imagetype name="9">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating09.png</filename>
-                        </imagetype>
-                    </state>
-                    <state name="10">
-                        <imagetype name="10">
-                            <area>0,0,175,32</area>
-                            <filename>images/icons/Rating10.png</filename>
-                        </imagetype>
-                    </state>
+                <statetype name="userratingstate" from="basestarrating">
+                    <position>100%-175,475</position>
                 </statetype>
 
             </group>

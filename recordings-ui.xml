@@ -55,13 +55,8 @@
                         <cutdown>no</cutdown>
                         <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
                     </textarea>
-                    <statetype name="watched">
-                        <state name="yes">
-                            <imagetype name="icon" from="baseicon">
-                                <area>668,12,32,32</area>
-                                <filename>images/icons/Watched.png</filename>
-                            </imagetype>
-                        </state>
+                    <statetype name="watched" from="basewatchedstate">
+                        <position>668,12</position>
                     </statetype>
                     <statetype name="playlist">
                         <state name="yes">
