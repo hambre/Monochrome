@@ -126,7 +126,7 @@
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <textarea name="description" from="basetext_s">
-                    <area>400, 110, 700, 260</area>
+                    <area>400, 110, 700, 280</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
                     <cutdown>yes</cutdown>
