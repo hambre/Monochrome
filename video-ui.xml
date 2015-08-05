@@ -8,7 +8,7 @@
         <group name="pagefooter" from="basefooter" />
 
         <textarea name="pagetitle" from="basetitletext">
-            <value>Watch Videos</value>
+            <value>Video Browser</value>
         </textarea>
         <buttonlist name="videos">
             <area>15,110,-15,300</area>
@@ -62,6 +62,7 @@
                 <area>0,0,900,100%</area>
                 <textarea name="title" from="basetext_l">
                     <area>0, 0, 100%, 50</area>
+                    <align>left,top</align>
                     <scroll direction="horizontal" />
                 </textarea>
                 <textarea name="subtitle" from="basetext_m">
@@ -70,7 +71,7 @@
                     <template>%00x00| ~ %%SUBTITLE%</template>
                 </textarea>
                 <group name="smalldescription" depends="subtitle">
-                    <area>0, 110, 100%, 400</area>
+                    <area>0, 110, 100%, 395</area>
                     <textarea name="description" from="basetext_s">
                         <area>0,0,100%,100%</area>
                         <multiline>yes</multiline>
@@ -120,42 +121,14 @@
                     <value>Cast</value>
                 </textarea>
                 <textarea name="cast" from="basetext_xs">
-                    <area>0,140,-25,210</area>
+                    <area>0,140,100%,210</area>
                     <alpha>150</alpha>
                     <multiline>yes</multiline>
                     <align>top,justify</align>
                 </textarea>
-                <imagetype name="time" from="baseicon">
-                    <area>0,375,32,32</area>
-                    <filename>images/icons/Clock.png</filename>
-                </imagetype>
-                <textarea name="length" from="basetext_s">
-                    <area>50,375,250,32</area>
-                    <alpha>150</alpha>
-                </textarea>
-                <imagetype name="calendar" from="baseicon">
-                    <area>0,425,32,32</area>
-                    <filename>images/icons/Calendar.png</filename>
-                </imagetype>
-                <textarea name="year" from="basetext_s">
-                    <area>50,425,250,32</area>
-                    <alpha>150</alpha>
-                </textarea>
-                <imagetype name="ratinglabel" from="baseicon">
-                    <area>0,475,32,32</area>
-                    <filename>images/icons/ParentalRating.png</filename>
-                </imagetype>
-                <textarea name="rating" from="basetext_s">
-                    <area>50,475,250,32</area>
-                    <alpha>150</alpha>
-                </textarea>
-                <statetype name="watchedstate" from="basewatchedstate">
-                    <position>100%-32,425</position>
-                </statetype>
-                <statetype name="userratingstate" from="basestarrating">
-                    <position>100%-175,475</position>
-                </statetype>
-
+                <group name="videofacts" from="basevideofacts">
+                    <area>0,370,100%,135</area>
+                </group>
             </group>
             <textarea name="position" from="basetext_xs">
                 <area>100%-150,530,150,50</area>
@@ -163,6 +136,113 @@
                 <align>right,vcenter</align>
             </textarea>
         </group>
-
     </window>
+
+    <window name="gallery">
+        <imagetype name="fanart" from="basetitlebackground"/>
+        <group name="pageheader" from="baseheader" />
+        <group name="content" from="basecontent"/>
+        <group name="pagefooter" from="basefooter" />
+
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Video Gallery</value>
+        </textarea>
+        <buttonlist name="videos">
+            <area>25,500,900,500</area>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <align>hcenter</align>
+            <layout>grid</layout>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <statetype name="buttonitem">
+                <area>0,0,175,250</area>
+                <state name="active">
+                    <area>0,0,175,250</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,100%,100%</area>
+                        <filename>images/DefaultFillImage.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <shape name="top" from="baseseparator_h">
+                        <position>0,0</position>
+                    </shape>
+                    <shape name="bottom" from="baseseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                </state>
+                <state name="selectedactive">
+                    <area>-10,-15,196,280</area>
+                    <shape name="background" from="basebackground"/>
+                    <imagetype name="buttonimage">
+                        <area>0,0,100%,100%</area>
+                        <preserveaspect>false</preserveaspect>
+                        <filename>images/DefaultFillImage.png</filename>
+                    </imagetype>
+                    <shape name="blackframe_black" from="baseframe">
+                        <area>-1,-1,100%+1,100%+1</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="0" />
+                        <line color="#000000" alpha="255" width="3" />
+                    </shape>
+                    <shape name="whiteframe" from="baseframe">
+                        <area>0,0,100%+1,100%+1</area>
+                        <type>box</type>
+                    </shape>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- video details -->
+        <group name="videodetails">
+            <area>925,500,-25,500</area>
+            <textarea name="title" from="basetext_l">
+                <area>0, 0, 100%, 50</area>
+                <align>left,top</align>
+                <scroll direction="horizontal" />
+            </textarea>
+            <textarea name="subtitle" from="basetext_m">
+                <area>0, 45, 100%, 50</area>
+                <alpha>150</alpha>
+                <template>%00x00| ~ %%SUBTITLE%</template>
+            </textarea>
+            <group name="smalldescription" depends="subtitle">
+                <area>0, 110, 100%, 265</area>
+                <textarea name="description" from="basetext_s">
+                    <area>0,0,100%,100%</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <group name="largedescription" depends="!subtitle">
+                <area>0, 60, 100%, 315</area>
+                <textarea name="description" from="basetext_s">
+                    <area>0,0,100%,100%</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <group name="videofacts" from="basevideofacts">
+                <area>0,385,100%,100%</area>
+            </group>
+        </group>
+        <textarea name="breadcrumbs" from="basetext_xs">
+            <area>25,1030,900,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="genres" from="basetext_xs">
+            <area>925,1030,-200,50</area>
+            <alpha>150</alpha>
+            <case>capitaliseall</case>
+        </textarea>
+        <textarea name="position" from="basetext_xs">
+            <area>100%-175,1030,150,50</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+    </window>
+
 </mythuitheme> 
