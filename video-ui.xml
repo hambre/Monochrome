@@ -150,7 +150,7 @@
             <align>hcenter</align>
             <layout>grid</layout>
             <scrollstyle>free</scrollstyle>
-            <wrapstyle>items</wrapstyle>
+            <wrapstyle>flowing</wrapstyle>
             <statetype name="buttonitem">
                 <area>0,0,174,250</area>
                 <state name="active">
