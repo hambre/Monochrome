@@ -206,7 +206,7 @@
                 <template>%00x00| ~ %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
-                <area>0, 110, 100%, 265</area>
+                <area>0, 110, 100%, 250</area>
                 <textarea name="description" from="basetext_s">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
@@ -216,7 +216,7 @@
                 </textarea>
             </group>
             <group name="largedescription" depends="!subtitle">
-                <area>0, 60, 100%, 315</area>
+                <area>0, 60, 100%, 300</area>
                 <textarea name="description" from="basetext_s">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
