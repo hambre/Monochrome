@@ -11,30 +11,27 @@
             <value>Video Browser</value>
         </textarea>
         <buttonlist name="videos">
-            <area>15,110,-15,300</area>
+            <area>3,51,100%,250</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <align>hcenter</align>
             <layout>horizontal</layout>
             <scrollstyle>center</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
-                <area>0,0,210,100%</area>
+                <area>0,0,174,100%</area>
                 <state name="active">
-                    <area>0,0,210,100%</area>
+                    <area>0,0,174,100%</area>
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
                         <filename>images/DefaultFillImage.png</filename>
                         <alpha>200</alpha>
                     </imagetype>
-                    <shape name="top" from="baseseparator_h">
-                        <position>0,0</position>
-                    </shape>
                     <shape name="bottom" from="baseseparator_h">
                         <position>0,100%</position>
                     </shape>
                 </state>
                 <state name="selectedactive">
-                    <area>-10,0,230,330</area>
+                    <area>-13,0,196,280</area>
                     <shape name="background" from="basebackground"/>
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
@@ -155,9 +152,9 @@
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
-                <area>0,0,175,250</area>
+                <area>0,0,174,250</area>
                 <state name="active">
-                    <area>0,0,175,250</area>
+                    <area>0,0,174,250</area>
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
                         <filename>images/DefaultFillImage.png</filename>
@@ -171,7 +168,7 @@
                     </shape>
                 </state>
                 <state name="selectedactive">
-                    <area>-10,-15,196,280</area>
+                    <area>-11,-15,196,280</area>
                     <shape name="background" from="basebackground"/>
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
