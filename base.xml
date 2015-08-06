@@ -150,7 +150,7 @@
             <area>0,0,100%,100%</area>
         </shape>
         <shape name="titleseparator" from="baseseparator_h">
-            <area>0,100,100%,2</area>
+            <position>0,100</position>
         </shape>
     </group>
 
@@ -370,11 +370,11 @@
             <state name="active">
                 <area>0,0,100%,100%</area>
                 <shape name="topborder" from="baseseparator_h">
-                    <area>0,0,100%,2</area>
+                    <position>0,0</position>
                     <alpha>200</alpha>
                 </shape>
                 <shape name="bottomborder" from="baseseparator_h">
-                    <area>0,100%-2,100%,2</area>
+                    <position>0,100%-1</position>
                     <alpha>200</alpha>
                 </shape>
                 <textarea name="text" from="basetext_s">
