@@ -144,17 +144,25 @@
         <textarea name="pagetitle" from="basetitletext">
             <value>Video Gallery</value>
         </textarea>
+        <textarea name="title" from="basetext_l">
+            <area>75, 490, -75, 40</area>
+            <align>top,hcenter</align>
+            <scroll direction="horizontal" />
+        </textarea>
+        <statetype name="watchedstate" from="basewatchedstate">
+            <position>100%-67,494</position>
+        </statetype>
         <buttonlist name="videos">
-            <area>25,500,900,500</area>
+            <area>35,560,100%,450</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <align>hcenter</align>
             <layout>grid</layout>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>flowing</wrapstyle>
             <statetype name="buttonitem">
-                <area>0,0,174,250</area>
+                <area>0,0,154,220</area>
                 <state name="active">
-                    <area>0,0,174,250</area>
+                    <area>0,0,154,220</area>
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
                         <filename>images/DefaultFillImage.png</filename>
@@ -168,7 +176,7 @@
                     </shape>
                 </state>
                 <state name="selectedactive">
-                    <area>-11,-15,196,280</area>
+                    <area>-10,-15,175,250</area>
                     <shape name="background" from="basebackground"/>
                     <imagetype name="buttonimage">
                         <area>0,0,100%,100%</area>
@@ -189,51 +197,15 @@
             </statetype>
         </buttonlist>
 
-        <!-- video details -->
-        <group name="videodetails">
-            <area>925,500,-25,500</area>
-            <textarea name="title" from="basetext_l">
-                <area>0, 0, 100%, 50</area>
-                <align>left,top</align>
-                <scroll direction="horizontal" />
-            </textarea>
-            <textarea name="subtitle" from="basetext_m">
-                <area>0, 45, 100%, 50</area>
-                <alpha>150</alpha>
-                <template>%00x00| ~ %%SUBTITLE%</template>
-            </textarea>
-            <group name="smalldescription" depends="subtitle">
-                <area>0, 110, 100%, 250</area>
-                <textarea name="description" from="basetext_s">
-                    <area>0,0,100%,100%</area>
-                    <multiline>yes</multiline>
-                    <align>justify</align>
-                    <cutdown>yes</cutdown>
-                    <alpha>150</alpha>
-                </textarea>
-            </group>
-            <group name="largedescription" depends="!subtitle">
-                <area>0, 60, 100%, 300</area>
-                <textarea name="description" from="basetext_s">
-                    <area>0,0,100%,100%</area>
-                    <multiline>yes</multiline>
-                    <align>justify</align>
-                    <cutdown>yes</cutdown>
-                    <alpha>150</alpha>
-                </textarea>
-            </group>
-            <group name="videofacts" from="basevideofacts">
-                <area>0,385,100%,100%</area>
-            </group>
-        </group>
         <textarea name="breadcrumbs" from="basetext_xs">
             <area>25,1030,900,50</area>
             <alpha>150</alpha>
         </textarea>
         <textarea name="genres" from="basetext_xs">
-            <area>925,1030,-200,50</area>
+            <area>50%-250,1030,500,50</area>
             <alpha>150</alpha>
             <case>capitaliseall</case>
+            <align>center</align>
         </textarea>
         <textarea name="position" from="basetext_xs">
             <area>100%-175,1030,150,50</area>
@@ -280,7 +252,7 @@
         <group name="header" from="basepopupheader">
             <area>0,-50,100%,100%</area>
             <textarea name="title" from="basepopuptitletext">
-                <value>Description</value>
+                <value>Plot</value>
             </textarea>
         </group>
         <textarea name="description" from="basetext_s">
