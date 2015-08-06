@@ -259,6 +259,11 @@
             </state>
             <state name="selectedactive">
                 <area>0,0,100%,55</area>
+                <imagetype name="buttonarrow">
+                    <position>100%-25,50%-12</position>
+                    <filename>images/ArrowRightBig.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
                 <shape name="background" from="basecontrolbackground">
                     <area>0,0,100%,100%</area>
                 </shape>
