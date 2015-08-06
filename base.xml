@@ -148,6 +148,7 @@
         </shape>
         <shape name="frame" from="basepopupbackground">
             <area>0,0,100%,100%</area>
+            <alpha>240</alpha>
         </shape>
         <shape name="titleseparator" from="baseseparator_h">
             <position>0,100</position>
