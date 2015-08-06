@@ -144,13 +144,17 @@
         <textarea name="pagetitle" from="basetitletext">
             <value>Video Gallery</value>
         </textarea>
+        <statetype name="userratingstate" from="basestarrating">
+            <position>35,495</position>
+        </statetype>
+
         <textarea name="title" from="basetext_l">
-            <area>75, 490, -75, 40</area>
+            <area>235, 490, -235, 40</area>
             <align>top,hcenter</align>
             <scroll direction="horizontal" />
         </textarea>
         <statetype name="watchedstate" from="basewatchedstate">
-            <position>100%-67,494</position>
+            <position>100%-67,495</position>
         </statetype>
         <buttonlist name="videos">
             <area>35,560,100%,450</area>
