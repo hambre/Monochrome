@@ -265,4 +265,31 @@
         </buttonlist>
     </window>
 
+    <window name="descriptionpopup">
+        <area>-1,0,1000,650</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-550" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+            <textarea name="title" from="basepopuptitletext">
+                <value>Description</value>
+            </textarea>
+        </group>
+        <textarea name="description" from="basetext_s">
+            <area>50,75,-50,-25</area>
+            <multiline>yes</multiline>
+            <align>justify,vcenter</align>
+            <cutdown>yes</cutdown>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
 </mythuitheme> 
