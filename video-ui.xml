@@ -247,12 +247,12 @@
                 <scroll direction="horizontal" />
             </textarea>
             <textarea name="subtitle" from="basetext_m">
-                <area>0, 45, 100%, 50</area>
+                <area>0, 45, 100%, 45</area>
                 <alpha>150</alpha>
                 <template>%00x00| ~ %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
-                <area>0, 110, 100%, 270</area>
+                <area>0, 100, 100%, 270</area>
                 <textarea name="description" from="basetext_s">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
@@ -262,7 +262,7 @@
                 </textarea>
             </group>
             <group name="largedescription" depends="!subtitle">
-                <area>0, 80, 100%, 300</area>
+                <area>0, 70, 100%, 300</area>
                 <textarea name="description" from="basetext_s">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
