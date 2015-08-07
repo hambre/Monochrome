@@ -392,6 +392,8 @@
 
     </window>
 
+    <!--====================================================================-->
+
     <window name="groupfilter">
         <area>-1,0,600,450</area>
         <animation trigger="AboutToShow">
@@ -413,6 +415,8 @@
             <align>vcenter</align>
         </buttonlist>
     </window>
+
+    <!--====================================================================-->
 
     <window name="changeview">
         <area>-1,0,550,500</area>
@@ -497,6 +501,8 @@
         </group>
     </window>
 
+    <!--====================================================================-->
+
     <window name="passwordchanger">
         <area>-1,0,750,250</area>
         <animation trigger="AboutToShow">
@@ -540,6 +546,8 @@
         </group>
     </window>
 
+    <!--====================================================================-->
+
     <window name="groupselector">
         <area>-1,0,750,500</area>
         <animation trigger="AboutToShow">
@@ -561,6 +569,8 @@
             <align>vcenter</align>
         </buttonlist>
     </window>
+
+    <!--====================================================================-->
 
     <window name="iconhelp">
         <area>-1,0,700,460</area>
@@ -727,6 +737,8 @@
             </statetype>
         </buttonlist>
     </window>
+
+    <!--====================================================================-->
 
     <window name="editmetadata">
         <area>-1,0,900,550</area>
