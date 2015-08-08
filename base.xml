@@ -662,8 +662,17 @@
             <alpha>150</alpha>
         </textarea>
         <statetype name="watchedstate" from="basewatchedstate">
-            <position>100%-32,100%-77</position>
+            <position>100%-32,100%-122</position>
         </statetype>
+        <textarea name="userrating" from="basetext_s">
+            <area>100%-140,100%-77,100,32</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+        <imagetype name="heart" from="baseicon">
+            <area>100%-32,100%-77,32,32</area>
+            <filename>images/icons/Heart.png</filename>
+        </imagetype>
         <statetype name="userratingstate" from="basestarrating">
             <position>100%-175,100%-32</position>
         </statetype>
