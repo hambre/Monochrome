@@ -115,7 +115,7 @@
             </statetype>
         </buttonlist>
         <shape name="middlesep" from="baseseparator_v">
-            <area>50%,500,2,500</area>
+            <area>50%,500,1,500</area>
         </shape>
         <group name="pagefooter" from="basefooter" />
     </window>
