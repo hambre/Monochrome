@@ -11,6 +11,7 @@
         </fontdef>
         <fontdef name="menufont_l" from="basefont_s">
             <pixelsize>60</pixelsize>
+            <weight>bold</weight>
         </fontdef>
 
         <imagetype name="background" from="basetitlebackground" />
