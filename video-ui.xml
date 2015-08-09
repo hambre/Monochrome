@@ -273,7 +273,7 @@
             </group>
             <group name="people">
                 <area>0,100%-125,725,125</area>
-                <textarea name="genrelabel" from="basetext_s">
+                <textarea name="genrelabel" from="basetext_s" depends="genres">
                     <area>0,100%-122,150,30</area>
                     <value>Genres</value>
                 </textarea>
@@ -281,7 +281,7 @@
                     <area>160,100%-122,100%,30</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="directorlabel" from="basetext_s">
+                <textarea name="directorlabel" from="basetext_s" depends="director">
                     <area>0,100%-77,150,30</area>
                     <value>Director</value>
                 </textarea>
@@ -289,7 +289,7 @@
                     <area>160,100%-77,350,30</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="castlabel" from="basetext_s">
+                <textarea name="castlabel" from="basetext_s" depends="cast">
                     <area>0,100%-32,150,32</area>
                     <value>Cast</value>
                 </textarea>

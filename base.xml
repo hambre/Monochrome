@@ -637,7 +637,7 @@
 
     <group name="basevideofacts">
         <area>0,0,100%,100%</area>
-        <imagetype name="time" from="baseicon">
+        <imagetype name="time" from="baseicon" depends="length">
             <area>0,100%-122,32,32</area>
             <filename>images/icons/Clock.png</filename>
         </imagetype>
@@ -645,7 +645,7 @@
             <area>50,100%-122,-50,32</area>
             <alpha>150</alpha>
         </textarea>
-        <imagetype name="calendar" from="baseicon">
+        <imagetype name="calendar" from="baseicon" depends="year">
             <area>0,100%-77,32,32</area>
             <filename>images/icons/Calendar.png</filename>
         </imagetype>
@@ -653,7 +653,7 @@
             <area>50,100%-77,-50,32</area>
             <alpha>150</alpha>
         </textarea>
-        <imagetype name="ratinglabel" from="baseicon">
+        <imagetype name="ratinglabel" from="baseicon" depends="rating">
             <area>0,100%-32,32,32</area>
             <filename>images/icons/ParentalRating.png</filename>
         </imagetype>
@@ -669,7 +669,7 @@
             <alpha>150</alpha>
             <align>right,vcenter</align>
         </textarea>
-        <imagetype name="heart" from="baseicon">
+        <imagetype name="heart" from="baseicon" depends="userrating">
             <area>100%-32,100%-77,32,32</area>
             <filename>images/icons/Heart.png</filename>
         </imagetype>
