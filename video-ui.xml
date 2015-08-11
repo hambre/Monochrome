@@ -319,6 +319,140 @@
 
     <!--====================================================================-->
 
+    <window name="manager">
+        <imagetype name="fanart" from="basetitlebackground"/>
+        <group name="pageheader" from="baseheader" />
+        <group name="content" from="basecontent"/>
+        <group name="pagefooter" from="basefooter" />
+
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Video Manager</value>
+        </textarea>
+        <!-- left part - video list -->
+        <buttonlist name="videos" from="baseitemlist">
+            <area>25,500,900,505</area>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <layout>vertical</layout>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <statetype name="buttonitem">
+                <area>0,0,100%,165</area>
+                <state name="active">
+                    <imagetype name="coverart">
+                        <area>0,0,115,165</area>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="baseitemtext">
+                        <area>125,10,-40,32</area>
+                        <align>left,top</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="genres" from="basetext_xs">
+                        <area>125,80,600,30</area>
+                        <alpha>150</alpha>
+                    </textarea>
+                    <textarea name="director" from="basetext_xs">
+                        <area>125,120,400,30</area>
+                        <alpha>150</alpha>
+                    </textarea>
+                    <textarea name="year" from="basetext_xs">
+                        <area>100%-150,80,-5,30</area>
+                        <align>right,vcenter</align>
+                        <alpha>150</alpha>
+                    </textarea>
+                    <textarea name="length" from="basetext_xs">
+                        <area>100%-150,120,-5,30</area>
+                        <align>right,vcenter</align>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="coverart">
+                        <area>0,0,115,165</area>
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="baseitemtext">
+                        <area>125,10,-5,32</area>
+                        <align>left,top</align>
+                        <alpha>255</alpha>
+                    </textarea>
+                    <statetype name="watchedstate" from="basewatchedstate">
+                        <position>100%-32,10</position>
+                    </statetype>
+                </state>
+            </statetype>
+        </buttonlist>
+        <!-- right part - video details -->
+        <group name="videodetails">
+            <area>975,500,-25,505</area>
+            <textarea name="title" from="basetext_l">
+                <area>0, 0, 100%, 50</area>
+                <align>hcenter,top</align>
+                <scroll direction="horizontal" />
+            </textarea>
+            <textarea name="subtitle" from="basetext_m">
+                <area>0, 45, 100%, 45</area>
+                <alpha>150</alpha>
+                <template>%00x00| ~ %%SUBTITLE%</template>
+            </textarea>
+            <group name="smalldescription" depends="subtitle">
+                <area>0, 100, 100%, 370</area>
+                <textarea name="description" from="basetext_s">
+                    <area>0,0,100%,100%</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <group name="largedescription" depends="!subtitle">
+                <area>0, 70, 100%, 400</area>
+                <imagetype name="coverart">
+                    <area>0,5,266,380</area>
+                </imagetype>
+                <textarea name="description" from="basetext_s">
+                    <area>300,0,100%,100%</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <statetype name="userratingstate" from="basestarrating">
+                <position>0,100%-25</position>
+            </statetype>
+            <group name="userrating" from="baseuserrating">
+                <position>170,100%-25</position>
+            </group>
+            <group name="people">
+                <area>300,100%-25,100%,32</area>
+                <textarea name="castlabel" from="basetext_xs" depends="cast">
+                    <area>0,0,150,32</area>
+                    <value>Cast</value>
+                </textarea>
+                <textarea name="cast" from="basetext_xs">
+                    <area>160,0,100%,32</area>
+                    <alpha>150</alpha>
+                    <scroll direction="left"/>
+                    <align>top,left</align>
+                </textarea>
+            </group>
+        </group>
+        <!-- footer -->
+        <textarea name="breadcrumbs" from="basetext_xs">
+            <area>25,1030,1500,50</area>
+            <alpha>150</alpha>
+            <scroll direction="horizontal" />
+        </textarea>
+        <textarea name="position" from="basetext_xs">
+            <area>100%-175,1030,150,50</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="castpopup">
         <area>-1,0,600,550</area>
         <animation trigger="AboutToShow">
