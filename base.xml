@@ -635,6 +635,19 @@
         </state>
     </statetype>
 
+    <group name="baseuserrating">
+        <area>0,0,100,32</area>
+        <textarea name="userrating" from="basetext_s">
+            <area>0,0,100%-40,32</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+        <imagetype name="heart" from="baseicon" depends="userrating">
+            <area>100%-32,0,32,32</area>
+            <filename>images/icons/Heart.png</filename>
+        </imagetype>
+    </group>
+
     <group name="basevideofacts">
         <area>0,0,100%,100%</area>
         <imagetype name="time" from="baseicon" depends="length">
@@ -664,15 +677,9 @@
         <statetype name="watchedstate" from="basewatchedstate">
             <position>100%-32,100%-122</position>
         </statetype>
-        <textarea name="userrating" from="basetext_s">
-            <area>100%-140,100%-77,100,32</area>
-            <alpha>150</alpha>
-            <align>right,vcenter</align>
-        </textarea>
-        <imagetype name="heart" from="baseicon" depends="userrating">
-            <area>100%-32,100%-77,32,32</area>
-            <filename>images/icons/Heart.png</filename>
-        </imagetype>
+        <group name="userrating" from="baseuserrating">
+            <position>100%-100,100%-77</position>
+        </group>
         <statetype name="userratingstate" from="basestarrating">
             <position>100%-175,100%-32</position>
         </statetype>
