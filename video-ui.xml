@@ -123,7 +123,7 @@
                     <multiline>yes</multiline>
                     <align>top,justify</align>
                 </textarea>
-                <group name="videofacts" from="basevideofacts">
+                <group name="videofacts" from="basevideoiconfacts">
                     <area>0,370,100%,135</area>
                 </group>
             </group>
@@ -271,36 +271,10 @@
                     <alpha>150</alpha>
                 </textarea>
             </group>
-            <group name="people">
+            <group name="videotextfacts" from="basevideotextfacts">
                 <area>0,100%-125,725,125</area>
-                <textarea name="genrelabel" from="basetext_s" depends="genres">
-                    <area>0,100%-122,150,30</area>
-                    <value>Genres</value>
-                </textarea>
-                <textarea name="genres" from="basetext_xs">
-                    <area>160,100%-122,100%,30</area>
-                    <alpha>150</alpha>
-                </textarea>
-                <textarea name="directorlabel" from="basetext_s" depends="director">
-                    <area>0,100%-77,150,30</area>
-                    <value>Director</value>
-                </textarea>
-                <textarea name="director" from="basetext_xs">
-                    <area>160,100%-77,350,30</area>
-                    <alpha>150</alpha>
-                </textarea>
-                <textarea name="castlabel" from="basetext_s" depends="cast">
-                    <area>0,100%-32,150,32</area>
-                    <value>Cast</value>
-                </textarea>
-                <textarea name="cast" from="basetext_xs">
-                    <area>160,100%-32,100%,32</area>
-                    <alpha>150</alpha>
-                    <scroll direction="left"/>
-                    <align>top,left</align>
-                </textarea>
             </group>
-            <group name="videofacts" from="basevideofacts">
+            <group name="videofacts" from="basevideoiconfacts">
                 <area>750,100%-125,100%,125</area>
             </group>
         </group>
@@ -356,12 +330,12 @@
                         <alpha>150</alpha>
                     </textarea>
                     <textarea name="year" from="basetext_xs">
-                        <area>100%-150,80,-5,30</area>
+                        <area>100%-150,80,-10,30</area>
                         <align>right,vcenter</align>
                         <alpha>150</alpha>
                     </textarea>
                     <textarea name="length" from="basetext_xs">
-                        <area>100%-150,120,-5,30</area>
+                        <area>100%-150,120,-10,30</area>
                         <align>right,vcenter</align>
                         <alpha>150</alpha>
                     </textarea>
@@ -377,7 +351,7 @@
                         <alpha>255</alpha>
                     </textarea>
                     <statetype name="watchedstate" from="basewatchedstate">
-                        <position>100%-32,10</position>
+                        <position>100%-35,10</position>
                     </statetype>
                 </state>
             </statetype>
@@ -451,6 +425,78 @@
         </textarea>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="itemdetailpopup">
+        <area>-1,0,1250,800</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-550" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+            <textarea name="title" from="basepopuptitletext">
+                <value>Details</value>
+            </textarea>
+        </group>
+        <!-- content -->
+        <group name="content">
+            <area>50,75,-50,-50</area>
+            <imagetype name="coverart">
+                <area>0,0,350,500</area>
+                <alpha>255</alpha>
+            </imagetype>
+            <group name="videofacts" from="basevideoiconfacts">
+                <area>0,525,350,125</area>
+            </group>
+            <textarea name="subtitle" from="basetext_m">
+                <area>400, 0, 100%, 45</area>
+                <alpha>150</alpha>
+                <template>%00x00| ~ %%SUBTITLE%</template>
+            </textarea>
+            <group name="smalldescription" depends="subtitle">
+                <area>400, 80, 100%, 460</area>
+                <textarea name="description" from="basetext_s">
+                    <area>0,0,100%,100%</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <group name="largedescription" depends="!subtitle">
+                <area>400, 0, 100%, 510</area>
+                <textarea name="description" from="basetext_s">
+                    <area>0,0,100%,100%</area>
+                    <multiline>yes</multiline>
+                    <align>justify</align>
+                    <cutdown>yes</cutdown>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <group name="videotextfacts" from="basevideotextfacts">
+                <area>400,525,100%,125</area>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <shape name="separator" from="baseseparator_h">
+            <position>0,760</position>
+        </shape>
+        <button name="play_button" from="basebutton">
+            <area>50%-225,785,200,40</area>
+            <value>Play</value>
+        </button>
+        <button name="done_button" from="basebutton">
+            <area>50%+25,785,200,40</area>
+            <value>Done</value>
+        </button>
+    </window>
     <!--====================================================================-->
 
     <window name="castpopup">
