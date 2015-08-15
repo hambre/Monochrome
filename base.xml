@@ -648,7 +648,8 @@
         </imagetype>
     </group>
 
-    <group name="basevideofacts">
+    <!-- icon based video facts -->
+    <group name="basevideoiconfacts">
         <area>0,0,100%,100%</area>
         <imagetype name="time" from="baseicon" depends="length">
             <area>0,100%-122,32,32</area>
@@ -684,6 +685,38 @@
             <position>100%-175,100%-32</position>
         </statetype>
     </group>
+
+    <!-- text based video facts -->
+    <group name="basevideotextfacts">
+        <area>0,0,100%,125</area>
+        <textarea name="genrelabel" from="basetext_s" depends="genres">
+            <area>0,100%-122,150,30</area>
+            <value>Genres</value>
+        </textarea>
+        <textarea name="genres" from="basetext_xs">
+            <area>160,100%-122,100%,30</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="directorlabel" from="basetext_s" depends="director">
+            <area>0,100%-77,150,30</area>
+            <value>Director</value>
+        </textarea>
+        <textarea name="director" from="basetext_xs">
+            <area>160,100%-77,350,30</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="castlabel" from="basetext_s" depends="cast">
+            <area>0,100%-32,150,32</area>
+            <value>Cast</value>
+        </textarea>
+        <textarea name="cast" from="basetext_xs">
+            <area>160,100%-32,100%,32</area>
+            <alpha>150</alpha>
+            <scroll direction="left"/>
+            <align>top,left</align>
+        </textarea>
+    </group>
+
     <!-- busy dialog -->
     <window name="MythBusyDialog">
         <area>-1,0,500,150</area>
