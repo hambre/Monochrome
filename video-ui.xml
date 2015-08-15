@@ -442,7 +442,7 @@
         <group name="header" from="basepopupheader">
             <area>0,-50,100%,100%</area>
             <textarea name="title" from="basepopuptitletext">
-                <value>Details</value>
+                <alpha>255</alpha>
             </textarea>
         </group>
         <!-- content -->
