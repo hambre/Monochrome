@@ -637,7 +637,7 @@
 
     <group name="baseuserrating">
         <area>0,0,100,32</area>
-        <textarea name="userrating" from="basetext_s">
+        <textarea name="userrating" from="basetext_xs">
             <area>0,0,100%-40,32</area>
             <alpha>150</alpha>
             <align>right,vcenter</align>
@@ -655,7 +655,7 @@
             <area>0,100%-122,32,32</area>
             <filename>images/icons/Clock.png</filename>
         </imagetype>
-        <textarea name="length" from="basetext_s">
+        <textarea name="length" from="basetext_xs">
             <area>50,100%-122,-50,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -663,7 +663,7 @@
             <area>0,100%-77,32,32</area>
             <filename>images/icons/Calendar.png</filename>
         </imagetype>
-        <textarea name="year" from="basetext_s">
+        <textarea name="year" from="basetext_xs">
             <area>50,100%-77,-50,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -671,7 +671,7 @@
             <area>0,100%-32,32,32</area>
             <filename>images/icons/ParentalRating.png</filename>
         </imagetype>
-        <textarea name="rating" from="basetext_s">
+        <textarea name="rating" from="basetext_xs">
             <area>50,100%-32,-200,32</area>
             <alpha>150</alpha>
         </textarea>
