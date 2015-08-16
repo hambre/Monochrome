@@ -444,7 +444,7 @@
                 <value>Titles</value>
             </textarea>
             <checkbox name="titles" from="basecheckbox">
-                <position>300,10</position>
+                <position>300,5</position>
             </checkbox>
             <textarea name="labelcategories" from="basetext_s">
                 <area>25,50,200,40</area>
@@ -452,7 +452,7 @@
                 <value>Categories</value>
             </textarea>
             <checkbox name="categories" from="basecheckbox">
-                <position>300,60</position>
+                <position>300,55</position>
             </checkbox>
             <textarea name="labelrecgroups" from="basetext_s">
                 <area>25,100,200,40</area>
@@ -460,7 +460,7 @@
                 <value>Groups</value>
             </textarea>
             <checkbox name="recgroups" from="basecheckbox">
-                <position>300,110</position>
+                <position>300,105</position>
             </checkbox>
             <textarea name="labelwatchlist" from="basetext_s">
                 <area>25,150,200,40</area>
@@ -468,7 +468,7 @@
                 <value>Watchlist</value>
             </textarea>
             <checkbox name="watchlist" from="basecheckbox">
-                <position>300,160</position>
+                <position>300,155</position>
             </checkbox>
             <textarea name="labelsearches" from="basetext_s">
                 <area>25,200,200,40</area>
@@ -476,7 +476,7 @@
                 <value>Searches</value>
             </textarea>
             <checkbox name="searches" from="basecheckbox">
-                <position>300,210</position>
+                <position>300,205</position>
             </checkbox>
             <textarea name="labellivetv" from="basetext_s">
                 <area>25,250,200,40</area>
@@ -484,7 +484,7 @@
                 <value>Live TV</value>
             </textarea>
             <checkbox name="livetv" from="basecheckbox">
-                <position>300,260</position>
+                <position>300,255</position>
             </checkbox>
             <textarea name="labelwatched" from="basetext_s">
                 <area>25,300,200,40</area>
@@ -492,7 +492,7 @@
                 <value>Watched</value>
             </textarea>
             <checkbox name="watched" from="basecheckbox">
-                <position>300,310</position>
+                <position>300,305</position>
             </checkbox>
         </group>
         <shape name="buttonseparator" from="baseseparator_h">
