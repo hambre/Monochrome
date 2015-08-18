@@ -839,4 +839,42 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="MythConfirmationDialog">
+        <area>-1,0,750,300</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <animation trigger="AboutToHide">
+            <section duration="500" centre="middle">
+                <position start="-1,-1" end="-1,-400" easingcurve="InBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+            <textarea name="title" from="basepopuptitletext"/>
+        </group>
+        <textarea name="message" from="basetext_s">
+            <area>50,75,-50,160</area>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <shape name="separator" from="baseseparator_h">
+            <area>0,100%-90,100%,1</area>
+        </shape>
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
