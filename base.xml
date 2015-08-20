@@ -524,12 +524,6 @@
         </statetype>
     </spinbox>
 
-    <!-- default background window -->
-    <window name="backgroundwindow">
-        <area>0,0,100%,100%</area>
-        <shape name="background" from="basebackground"/>
-    </window>
-
     <!-- recornding job state (recording, commflagging, transcoding) -->
     <statetype name="basejobstate">
         <area>0,0,40,40</area>
@@ -721,17 +715,33 @@
 
     <!--====================================================================-->
 
+        <!-- default background window -->
+    <window name="backgroundwindow">
+        <area>0,0,100%,100%</area>
+        <shape name="background" from="basebackground"/>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="videowindow">
+        <area>0,0,100%,100%</area>
+        <shape name="background" from="basebackground"/>
+        <textarea name="message" from="basetext_l">
+            <area>50%-200,50%-20,400,40</area>
+            <align>center</align>
+            <alpha>200</alpha>
+            <value>Playback starting...</value>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
     <!-- busy dialog -->
     <window name="MythBusyDialog">
         <area>-1,0,500,150</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-150" end="-1,0" easingcurve="OutBack" />
-            </section>
-        </animation>
-        <animation trigger="AboutToHide">
-            <section duration="500" centre="middle">
-                <position start="-1,-1" end="-1,-150" easingcurve="InBack" />
             </section>
         </animation>
         <group name="header" from="basepopupheader">
@@ -757,11 +767,6 @@
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
-            </section>
-        </animation>
-        <animation trigger="AboutToHide">
-            <section duration="500" centre="middle">
-                <position start="-1,-1" end="-1,-400" easingcurve="InBack" />
             </section>
         </animation>
         <group name="header" from="basepopupheader">
@@ -790,11 +795,6 @@
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
-            </section>
-        </animation>
-        <animation trigger="AboutToHide">
-            <section duration="500" centre="middle">
-                <position start="-1,-1" end="-1,-400" easingcurve="InBack" />
             </section>
         </animation>
         <group name="header" from="basepopupheader">
@@ -848,11 +848,6 @@
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <animation trigger="AboutToHide">
-            <section duration="500" centre="middle">
-                <position start="-1,-1" end="-1,-400" easingcurve="InBack" />
-            </section>
-        </animation>
         <group name="header" from="basepopupheader">
             <area>0,-50,100%,100%</area>
             <textarea name="title" from="basepopuptitletext"/>
@@ -876,5 +871,7 @@
             <value>Cancel</value>
         </button>
     </window>
+
+    <!--====================================================================-->
 
 </mythuitheme>
