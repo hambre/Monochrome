@@ -286,6 +286,71 @@
         </statetype>
     </buttonlist>
 
+    <!-- single line button list, used like a combobox -->
+    <buttonlist name="baseselector" from="baseitemlist">
+        <area>0,0,250,40</area>
+        <buttonarea>0,0,100%,40</buttonarea>
+        <layout>horizontal</layout>
+        <statetype name="buttonitem">
+            <area>0,0,100%,40</area>
+            <state name="selectedactive">
+                <area>0,0,100%,40</area>
+                <textarea name="buttontext" from="basetext_s">
+                    <area>5,0,-5,100%</area>
+                    <alpha>200</alpha>
+                </textarea>
+                <shape name="line" from="baseitemseparator_h">
+                    <position>0,100%</position>
+                </shape>
+            </state>
+            <state name="active">
+                <area>0,0,100%,40</area>
+                <!-- disable highlighting background when not selected -->
+                <shape name="background" from="basecontrolbackground">
+                    <area>0,0,100%,100%</area>
+                    <alpha>0</alpha>
+                </shape>
+                <textarea name="buttontext" from="basetext_s">
+                    <area>5,0,-5,100%</area>
+                    <alpha>100</alpha>
+                </textarea>
+                <shape name="line" from="baseitemseparator_h">
+                    <position>0,100%</position>
+                </shape>
+            </state>
+            <state name="inactive" from="active"/>
+            <state name="selectedinactive" from="active"/>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>100%-15,50%-10</position>
+            <state type="full">
+                <imagetype name="down">
+                    <filename>images/ArrowRight.png</filename>
+                </imagetype>
+            </state>
+            <state type="off">
+                <imagetype name="down">
+                    <filename>images/ArrowRight.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>100%-15,50%+2</position>
+            <state type="full">
+                <imagetype name="up">
+                    <filename>images/ArrowLeft.png</filename>
+                </imagetype>
+            </state>
+            <state type="off">
+                <imagetype name="up">
+                    <filename>images/ArrowLeft.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
     <imagetype name="baseicon">
         <area>0,0,75,32</area>
         <alpha>200</alpha>
