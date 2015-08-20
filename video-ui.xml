@@ -536,4 +536,132 @@
         </textarea>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="filter">
+        <area>-1,0,800,850</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+            <textarea name="title" from="basepopuptitletext">
+                <value>Video List Filters</value>
+            </textarea>
+        </group>
+        <group name="content">
+            <area>50,75,-50,-25</area>
+            <textarea name="labeltext" from="basetext_s">
+                <area>0,0,150,40</area>
+                <value>Text Filter:</value>
+            </textarea>
+            <textedit name="textfilter_input" from="basetextedit">
+                <area>200,0,-1,40</area>
+            </textedit>
+            <textarea name="labelwatched" from="basetext_s">
+                <area>0,50,150,40</area>
+                <value>Watched:</value>
+            </textarea>
+            <buttonlist name="watched_select" from="baseselector">
+                <area>200,50,-1,40</area>
+            </buttonlist>
+            <textarea name="labelcategory" from="basetext_s">
+                <area>0,100,200,40</area>
+                <value>Category:</value>
+            </textarea>
+            <buttonlist name="category_select" from="baseselector">
+                <area>200,100,-1,40</area>
+            </buttonlist>
+            <textarea name="labelgenre" from="basetext_s">
+                <area>0,150,200,40</area>
+                <value>Genre:</value>
+            </textarea>
+            <buttonlist name="genre_select" from="baseselector">
+                <area>200,150,-1,40</area>
+            </buttonlist>
+            <textarea name="labelyear" from="basetext_s">
+                <area>0,200,200,40</area>
+                <value>Year:</value>
+            </textarea>
+            <buttonlist name="year_select" from="baseselector">
+                <area>200,200,-1,40</area>
+            </buttonlist>
+            <textarea name="labelrating" from="basetext_s">
+                <area>0,250,200,40</area>
+                <value>Rating:</value>
+            </textarea>
+            <buttonlist name="userrating_select" from="baseselector">
+                <area>200,250,-1,40</area>
+            </buttonlist>
+            <textarea name="labelcountry" from="basetext_s">
+                <area>0,300,200,40</area>
+                <value>Country:</value>
+            </textarea>
+            <buttonlist name="country_select" from="baseselector">
+                <area>200,300,-1,40</area>
+            </buttonlist>
+            <textarea name="labelcast" from="basetext_s">
+                <area>0,350,200,40</area>
+                <value>Cast:</value>
+            </textarea>
+            <buttonlist name="cast_select" from="baseselector">
+                <area>200,350,-1,40</area>
+            </buttonlist>
+            <textarea name="labelruntime" from="basetext_s">
+                <area>0,400,200,40</area>
+                <value>Runtime:</value>
+            </textarea>
+            <buttonlist name="runtime_select" from="baseselector">
+                <area>200,400,-1,40</area>
+            </buttonlist>
+            <textarea name="labelbrowse" from="basetext_s">
+                <area>0,450,200,40</area>
+                <value>Browse:</value>
+            </textarea>
+            <buttonlist name="browse_select" from="baseselector">
+                <area>200,450,-1,40</area>
+            </buttonlist>
+            <textarea name="labelinetref" from="basetext_s">
+                <area>0,500,200,40</area>
+                <value>Inetref:</value>
+            </textarea>
+            <buttonlist name="inetref_select" from="baseselector">
+                <area>200,500,-1,40</area>
+            </buttonlist>
+            <textarea name="labelcover" from="basetext_s">
+                <area>0,550,200,40</area>
+                <value>Coverfile:</value>
+            </textarea>
+            <buttonlist name="coverfile_select" from="baseselector">
+                <area>200,550,-1,40</area>
+            </buttonlist>
+            <textarea name="labelorder" from="basetext_s">
+                <area>0,600,200,40</area>
+                <value>Order By:</value>
+            </textarea>
+            <buttonlist name="orderby_select" from="baseselector">
+                <area>200,600,-1,40</area>
+            </buttonlist>
+            <textarea name="numvideos_text" from="basetext_xs">
+                <area>0,660,100%,40</area>
+                <align>center</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <shape name="separator" from="baseseparator_h">
+            <position>0,800</position>
+        </shape>
+        <button name="save_button" from="basebutton">
+            <area>50%-225,825,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="done_button" from="basebutton">
+            <area>50%+25,825,200,40</area>
+            <value>Done</value>
+        </button>
+    </window>
+
 </mythuitheme> 
