@@ -722,6 +722,9 @@
                 </checkbox>
             </group>
         </group>
+        <textarea name="helptext" from="basehelptext">
+            <area>50%-500,100%-170,1000,70</area>
+        </textarea>
         <!-- bottom part with buttons -->
         <shape name="separator" from="baseseparator_h">
             <position>0,100%-90</position>

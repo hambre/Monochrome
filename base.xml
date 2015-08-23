@@ -228,6 +228,14 @@
         <alpha>200</alpha>
     </textarea>
 
+    <!-- help text for settings windows -->
+    <textarea name="basehelptext" from="basetext_xs">
+        <area>50%-500,100%-170,1000,70</area>
+        <align>hcenter,bottom</align>
+        <multiline>yes</multiline>
+        <alpha>200</alpha>
+    </textarea>
+
     <!-- list item text area -->
     <textarea name="baseitemtext">
         <font>basefont_m</font>
