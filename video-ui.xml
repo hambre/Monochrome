@@ -666,10 +666,88 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="playersettings">
+        <shape name="background" from="basebackground"/>
+        <group name="pageheader" from="baseheader" />
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Player Settings</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,50%-250,1000,400</area>
+            <group name="labels">
+                <area>0,0,350,100%</area>
+                <textarea name="labeldefplayer" from="basetext_s">
+                    <area>0,0,100%,40</area>
+                    <value>Default player:</value>
+                </textarea>
+                <textarea name="labelaltcheck" from="basetext_s">
+                    <area>0,65,100%,40</area>
+                    <value>Enable Alternate Player:</value>
+                </textarea>
+                <textarea name="labelaltplayer" from="basetext_s">
+                    <area>0,130,100%,40</area>
+                    <value>Alternative player:</value>
+                </textarea>
+                <textarea name="labeldvddrive" from="basetext_s">
+                    <area>0,195,100%,40</area>
+                    <value>DVD drive:</value>
+                </textarea>
+                <textarea name="labeldvdplayer" from="basetext_s">
+                    <area>0,260,100%,40</area>
+                    <value>DVD player:</value>
+                </textarea>
+                <textarea name="labelbdmount" from="basetext_s">
+                    <area>0,325,100%,40</area>
+                    <value>Blu-ray Mount:</value>
+                </textarea>
+                <textarea name="labelbdregion" from="basetext_s">
+                    <area>0,390,100%,40</area>
+                    <value>Blu-ray Region:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>400,0,600,100%</area>
+                <textedit name="defaultplayer" from="basetextedit">
+                    <area>0,0,-1,40</area>
+                </textedit>
+                <checkbox name="altcheck" from="basecheckbox">
+                    <position>0,70</position>
+                </checkbox>
+                <textedit name="altplayer" from="basetextedit">
+                    <area>0,130,-1,40</area>
+                </textedit>
+                <textedit name="dvddrive" from="basetextedit">
+                    <area>0,195,-1,40</area>
+                </textedit>
+                <textedit name="dvdplayer" from="basetextedit">
+                    <area>0,260,-1,40</area>
+                </textedit>
+                <textedit name="bluraymount" from="basetextedit">
+                    <area>0,325,-1,40</area>
+                </textedit>
+                <buttonlist name="blurayregionlist" from="baseselector">
+                    <area>0,390,-1,40</area>
+                </buttonlist>
+            </group>
+        </group>
+        <textarea name="helptext" from="basehelptext">
+            <area>50%-500,100%-210,1000,105</area>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <shape name="separator" from="baseseparator_h">
+            <position>0,100%-90</position>
+        </shape>
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
     </window>
 
+    <!-- TODO
     <window name="metadatasettings">
     </window>
 
@@ -698,11 +776,11 @@
                     <value>Command:</value>
                 </textarea>
                 <textarea name="labeldefault" from="basetext_s">
-                    <area>0,140,100%,40</area>
+                    <area>0,130,100%,40</area>
                     <value>Use default player:</value>
                 </textarea>
                 <textarea name="labelignore" from="basetext_s">
-                    <area>0,205,100%,40</area>
+                    <area>0,195,100%,40</area>
                     <value>Ignore:</value>
                 </textarea>
             </group>
@@ -715,15 +793,15 @@
                     <area>0,65,-1,40</area>
                 </textedit>
                 <checkbox name="default_check" from="basecheckbox">
-                    <position>0,145</position>
+                    <position>0,135</position>
                 </checkbox>
                 <checkbox name="ignore_check" from="basecheckbox">
-                    <position>0,210</position>
+                    <position>0,200</position>
                 </checkbox>
             </group>
         </group>
         <textarea name="helptext" from="basehelptext">
-            <area>50%-500,100%-170,1000,70</area>
+            <area>50%-500,100%-210,1000,105</area>
         </textarea>
         <!-- bottom part with buttons -->
         <shape name="separator" from="baseseparator_h">
