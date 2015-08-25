@@ -753,7 +753,7 @@
         <shape name="background" from="basebackground"/>
         <group name="pageheader" from="baseheader" />
         <textarea name="pagetitle" from="basetitletext">
-            <value>Video File Associations</value>
+            <value>Video Metadata Settings</value>
         </textarea>
         <group name="content">
             <area>50%-400,50%-250,800,300</area>
