@@ -597,7 +597,7 @@
         </statetype>
     </spinbox>
 
-    <!-- recornding job state (recording, commflagging, transcoding) -->
+    <!-- recording job state (recording, commflagging, transcoding) -->
     <statetype name="basejobstate">
         <area>0,0,40,40</area>
         <state name="recording">
