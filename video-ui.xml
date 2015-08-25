@@ -312,7 +312,7 @@
             <statetype name="buttonitem">
                 <area>0,0,100%,165</area>
                 <state name="active">
-                    <imagetype name="coverart">
+                    <imagetype name="buttonimage">
                         <area>0,0,115,165</area>
                         <alpha>100</alpha>
                     </imagetype>
@@ -341,7 +341,7 @@
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
-                    <imagetype name="coverart">
+                    <imagetype name="buttonimage">
                         <area>0,0,115,165</area>
                         <alpha>255</alpha>
                     </imagetype>
@@ -747,6 +747,8 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
     <window name="metadatasettings">
         <shape name="background" from="basebackground"/>
         <group name="pageheader" from="baseheader" />
@@ -813,6 +815,8 @@
             <value>Cancel</value>
         </button>
     </window>
+
+    <!--====================================================================-->
 
     <!-- TODO
     <window name="edit_metadata">
