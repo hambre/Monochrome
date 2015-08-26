@@ -94,6 +94,19 @@
         <alpha>50</alpha>
     </shape>
 
+    <!-- placeholder for missing images like coverart or preview -->
+    <shape name="baseimageplaceholder">
+        <type>box</type>
+        <area>0, 0, 350, 505</area>
+        <fill style="gradient">
+            <gradient direction="vertical">
+                <stop position="0"   color="#FFFFFF" alpha="75" />
+                <stop position="30"  color="#FFFFFF" alpha="75" />
+                <stop position="100" color="#FFFFFF" alpha="25" />
+            </gradient>
+        </fill>
+    </shape>
+
     <!-- selected background of controls like button, textedit, spinbox -->
     <shape name="basecontrolbackground" from="basebackground">
         <area>0,2,100%,-2</area>
