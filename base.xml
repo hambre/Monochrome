@@ -1010,13 +1010,36 @@
         <buttonlist name="filelist" from="baseitemlist">
             <area>200,100,900,770</area>
         <statetype name="buttonitem">
+            <area>0,0,100%,55</area>
+            <state name="selectedactive">
+                <area>0,0,100%,55</area>
+                <statetype name="nodetype">
+                    <area>0,0,100%,55</area>
+                    <state name="folder">
+                        <area>0,0,100%,55</area>
+                        <imagetype name="icon">
+                            <position>100%-25,50%-12</position>
+                            <filename>images/ArrowRightBig.png</filename>
+                            <alpha>50</alpha>
+                        </imagetype>
+                    </state>
+                    <state name="upfolder">
+                        <area>0,0,100%,55</area>
+                        <imagetype name="icon">
+                            <position>100%-30,50%-10</position>
+                            <filename>images/ArrowUpBig.png</filename>
+                            <alpha>50</alpha>
+                        </imagetype>
+                   </state>
+               </statetype>
+            </state>
             <state name="inactive" from="active"/>
             <state name="selectedinactive" from="selectedactive"/>
         </statetype>
         </buttonlist>
         <imagetype name="preview">
             <area>1200,200,500,500</area>
-            <preserveaspect>true</preserveaspect>
+            <preserveaspect>yes</preserveaspect>
         </imagetype>
         <textarea name="info" from="basetext_s">
             <area>1200,750,500,40</area>
