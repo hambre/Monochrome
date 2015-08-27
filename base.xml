@@ -458,13 +458,16 @@
             <area>0,0,100%,100%</area>
             <state name="active">
                 <area>0,0,100%,100%</area>
+                <shape name="background" from="basecontrolbackground">
+                    <alpha>10</alpha>
+                </shape>
                 <shape name="topborder" from="baseseparator_h">
                     <position>0,0</position>
-                    <alpha>200</alpha>
+                    <alpha>100</alpha>
                 </shape>
                 <shape name="bottomborder" from="baseseparator_h">
                     <position>0,100%-1</position>
-                    <alpha>200</alpha>
+                    <alpha>100</alpha>
                 </shape>
                 <textarea name="text" from="basetext_s">
                     <area>0,0,100%,100%</area>
@@ -474,6 +477,14 @@
             </state>
             <state name="selected" from="active">
                 <shape name="background" from="basecontrolbackground"/>
+                <shape name="topborder" from="baseseparator_h">
+                    <position>0,0</position>
+                    <alpha>200</alpha>
+                </shape>
+                <shape name="bottomborder" from="baseseparator_h">
+                    <position>0,100%-1</position>
+                    <alpha>200</alpha>
+                </shape>
                 <textarea name="text" from="basetext_s">
                     <area>0,0,100%,100%</area>
                     <align>allcenter</align>
