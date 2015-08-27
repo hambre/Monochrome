@@ -317,11 +317,12 @@
             <state name="selectedactive">
                 <area>0,0,100%,40</area>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,0,-5,100%</area>
+                    <area>5,0,-20,100%</area>
                     <alpha>200</alpha>
                 </textarea>
                 <shape name="line" from="baseitemseparator_h">
                     <position>0,100%</position>
+                    <alpha>150</alpha>
                 </shape>
             </state>
             <state name="active">
@@ -332,11 +333,12 @@
                     <alpha>0</alpha>
                 </shape>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,0,-5,100%</area>
+                    <area>5,0,-20,100%</area>
                     <alpha>100</alpha>
                 </textarea>
                 <shape name="line" from="baseitemseparator_h">
                     <position>0,100%</position>
+                    <alpha>150</alpha>
                 </shape>
             </state>
             <state name="inactive" from="active"/>
@@ -551,37 +553,37 @@
         <area>0,0,150,30</area>
         <layout>horizontal</layout>
         <statetype name="buttonitem">
-            <area>0,0,100%-15,100%</area>
+            <area>0,0,100%,100%</area>
             <state name="active">
                 <area>0,0,100%-15,100%</area>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,1,-5,-1</area>
+                    <area>5,1,-20,-1</area>
                     <alpha>100</alpha>
                 </textarea>
-                <group name="textunderline" from="basetextunderline">
-                    <area>0,0,100%,100%</area>
-                    <alpha>100</alpha>
-                </group>
+                <shape name="line" from="baseitemseparator_h">
+                    <position>0,100%</position>
+                    <alpha>150</alpha>
+                </shape>
             </state>
             <state name="selectedactive" from="active">
-                <area>0,0,100%-15,100%</area>
+                <area>0,0,100%,100%</area>
                 <shape name="background" from="basecontrolbackground"/>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,1,-5,-1</area>
+                    <area>5,1,-20,-1</area>
                     <alpha>255</alpha>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
-                <area>0,0,100%-15,100%</area>
+                <area>0,0,100%,100%</area>
                 <textarea name="buttontext" from="basetext_s">
-                    <area>5,0,-5,100%</area>
+                    <area>5,0,-20,100%</area>
                     <alpha>150</alpha>
                 </textarea>
             </state>
         </statetype>
         <!-- strangely, up is handled by the left key, and down by the right key when in horizontal layout -->
         <statetype name="downscrollarrow">
-            <position>100%-15,100%-25</position>
+            <position>100%-15,50%-10</position>
             <state type="full">
                 <imagetype name="down">
                     <filename>images/ArrowRight.png</filename>
@@ -595,7 +597,7 @@
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <position>100%-15,100%-12</position>
+            <position>100%-15,50%+2</position>
             <state type="full">
                 <imagetype name="up">
                     <filename>images/ArrowLeft.png</filename>
