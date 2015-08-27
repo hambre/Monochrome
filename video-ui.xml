@@ -108,6 +108,7 @@
                 <textarea name="directorlabel" from="basetext_s">
                     <area>0,0,250,50</area>
                     <value>Director</value>
+                    <alpha>200</alpha>
                 </textarea>
                 <textarea name="director" from="basetext_xs">
                     <area>0,40,350,50</area>
@@ -116,6 +117,7 @@
                 <textarea name="castlabel" from="basetext_s">
                     <area>0,90,250,50</area>
                     <value>Cast</value>
+                    <alpha>200</alpha>
                 </textarea>
                 <textarea name="cast" from="basetext_xs">
                     <area>0,140,100%,210</area>
@@ -403,6 +405,7 @@
                 <textarea name="castlabel" from="basetext_xs" depends="cast">
                     <area>0,0,150,32</area>
                     <value>Cast</value>
+                    <alpha>200</alpha>
                 </textarea>
                 <textarea name="cast" from="basetext_xs">
                     <area>160,0,100%,32</area>

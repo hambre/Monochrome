@@ -787,6 +787,7 @@
         <textarea name="genrelabel" from="basetext_s" depends="genres">
             <area>0,100%-122,150,30</area>
             <value>Genres</value>
+            <alpha>200</alpha>
         </textarea>
         <textarea name="genres" from="basetext_xs">
             <area>160,100%-122,100%,30</area>
@@ -795,6 +796,7 @@
         <textarea name="directorlabel" from="basetext_s" depends="director">
             <area>0,100%-77,150,30</area>
             <value>Director</value>
+            <alpha>200</alpha>
         </textarea>
         <textarea name="director" from="basetext_xs">
             <area>160,100%-77,350,30</area>
@@ -803,6 +805,7 @@
         <textarea name="castlabel" from="basetext_s" depends="cast">
             <area>0,100%-32,150,32</area>
             <value>Cast</value>
+            <alpha>200</alpha>
         </textarea>
         <textarea name="cast" from="basetext_xs">
             <area>160,100%-32,100%,32</area>
