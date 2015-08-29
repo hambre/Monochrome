@@ -964,7 +964,13 @@
         <shape name="separator" from="baseseparator_h">
             <area>0,100%-90,100%,1</area>
         </shape>
-        <button name="ok" from="basebutton">
+        <!-- center ok button when cancel button is hidden-->
+        <button name="ok" from="basebutton" depends="!cancel">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <!-- center ok and cancel button when cancel button is visible -->
+        <button name="ok" from="basebutton" depends="cancel">
             <area>50%-225,100%-65,200,40</area>
             <value>Ok</value>
         </button>
