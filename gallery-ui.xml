@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="gallery">
+        <imagetype name="background">
+            <area>0,0,100%,100%</area>
+            <filename>images/BackgroundPictures.jpg</filename>
+        </imagetype>
+        <group name="content" from="basecontent"/>
+        <group name="pageheader" from="baseheader" />
+        <group name="pagefooter" from="basefooter" />
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Image Gallery</value>
+        </textarea>
+        <buttonlist name="images" from="baseitemlist">
+            <area>25,500,700,-70</area>
+        </buttonlist>
+        <imagetype name="selectedimage">
+            <area>800,500,-50,510</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+        <textarea name="breadcrumbs" from="basetext_xs">
+            <area>25,1030,900,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="position" from="basetext_xs">
+            <area>100%-175,1030,150,50</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+    </window>
+</mythuitheme>
