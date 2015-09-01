@@ -71,6 +71,12 @@
                     <area>0,0,1920,1080</area>
                 </imagetype>
             </state>
+           <state name="IMAGES">
+               <imagetype name="background">
+                   <filename>images/BackgroundPictures.jpg</filename>
+                    <area>0,0,1920,1080</area>
+               </imagetype>
+           </state>
         </statetype>
 
         <group name="pageheader" from="baseheader" />
