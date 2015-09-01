@@ -29,4 +29,72 @@
             <align>right,vcenter</align>
         </textarea>
     </window>
+
+    <!--====================================================================-->
+
+    <window name="filter">
+        <area>-1,0,1000,400</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+            <textarea name="title" from="basepopuptitletext">
+                <value>Filter/sort images</value>
+            </textarea>
+        </group>
+        <group name="content">
+            <area>50,75,-50,-90</area>
+            <group name="labels">
+                <area>0,0,250,100%</area>
+                <textarea name="labeldirfilter" from="basetext_s">
+                    <area>0,0,100%,40</area>
+                    <value>Folder filter :</value>
+                </textarea>
+                <textarea name="labeltypefilter" from="basetext_s">
+                    <area>0,65,100%,40</area>
+                    <value>Type filter :</value>
+                </textarea>
+                <textarea name="labelsort" from="basetext_s">
+                    <area>0,130,100%,40</area>
+                    <value>Sort by :</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>300,0,-1,100%</area>
+                <textedit name="dirfilter_text" from="basetextedit">
+                    <area>0,0,-1,40</area>
+                </textedit>
+                <buttonlist name="typefilter_select" from="baseselector">
+                    <area>0,65,-1,40</area>
+                </buttonlist>
+                <buttonlist name="sort_select" from="baseselector">
+                    <area>0,135,-1,40</area>
+                </buttonlist>
+            </group>
+        </group>
+        <textarea name="numimages_text" from="basetext_s">
+            <area>50,100%-140,-50,40</area>
+            <align>center</align>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <shape name="separator" from="baseseparator_h">
+            <position>0,100%-90</position>
+        </shape>
+        <button name="check_button" from="basebutton">
+            <area>50%-350,100%-65,200,40</area>
+            <value>Check Filter</value>
+        </button>
+        <button name="save_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="done_button" from="basebutton">
+            <area>50%+150,100%-65,200,40</area>
+            <value>Done</value>
+        </button>
+    </window>
+
 </mythuitheme>
