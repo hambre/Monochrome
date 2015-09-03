@@ -298,9 +298,9 @@
                     <alpha>255</alpha>
                 </textarea>
                 <statetype name="nodetype">
-                    <area>0,0,100%,55</area>
+                    <area>0,0,100%,100%</area>
                     <state name="subfolder">
-                        <area>0,0,100%,55</area>
+                        <area>0,0,100%,100%</area>
                         <imagetype name="icon">
                             <position>100%-25,50%-12</position>
                             <filename>images/ArrowRightBig.png</filename>
@@ -309,7 +309,7 @@
                     </state>
                     <state name="folder" from="subfolder"/>
                     <state name="upfolder">
-                        <area>0,0,100%,55</area>
+                        <area>0,0,100%,100%</area>
                         <imagetype name="icon">
                             <position>100%-30,50%-10</position>
                             <filename>images/ArrowUpBig.png</filename>
