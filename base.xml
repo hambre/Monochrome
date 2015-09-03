@@ -401,6 +401,12 @@
         <filename>images/BackgroundDefault.png</filename>
     </imagetype>
 
+    <imagetype name="basecoverarticon">
+        <area>50%-50,50%-50,100,100</area>
+        <filename>images/icons/Movie.png</filename>
+        <alpha>50</alpha>
+    </imagetype>
+
     <!-- progress bar -->
     <progressbar name="baseprogress">
         <area>0,0,700,20</area>
@@ -1029,7 +1035,7 @@
     <!--====================================================================-->
 
     <window name="MythProgressDialog">
-        <area>-1,0,750,220</area>
+        <area>-1,0,750,250</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-250" end="-1,0" easingcurve="OutBack" />

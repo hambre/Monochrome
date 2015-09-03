@@ -26,6 +26,7 @@
                         <filename>images/DefaultFillImage.png</filename>
                         <alpha>200</alpha>
                     </imagetype>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage"/>
                     <shape name="bottom" from="baseseparator_h">
                         <position>0,100%</position>
                     </shape>
@@ -38,6 +39,7 @@
                         <preserveaspect>false</preserveaspect>
                         <filename>images/DefaultFillImage.png</filename>
                     </imagetype>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage"/>
                     <shape name="blackframe_black" from="baseframe">
                         <area>-1,-1,100%+1,100%+1</area>
                         <type>box</type>
@@ -105,7 +107,7 @@
             <!-- right part -->
             <group name="right">
                 <area>1300,0,-1,-0</area>
-                <textarea name="directorlabel" from="basetext_s">
+                <textarea name="directorlabel" from="basetext_s" depends="director">
                     <area>0,0,250,50</area>
                     <value>Director</value>
                     <alpha>200</alpha>
@@ -114,7 +116,7 @@
                     <area>0,40,350,50</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="castlabel" from="basetext_s">
+                <textarea name="castlabel" from="basetext_s" depends="cast">
                     <area>0,90,250,50</area>
                     <value>Cast</value>
                     <alpha>200</alpha>
@@ -176,6 +178,7 @@
                         <filename>images/DefaultFillImage.png</filename>
                         <alpha>150</alpha>
                     </imagetype>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage"/>
                     <shape name="top" from="baseseparator_h">
                         <position>0,0</position>
                     </shape>
@@ -191,7 +194,8 @@
                         <preserveaspect>false</preserveaspect>
                         <filename>images/DefaultFillImage.png</filename>
                     </imagetype>
-                    <shape name="blackframe_black" from="baseframe">
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage"/>
+                    <shape name="blackframe" from="baseframe">
                         <area>-1,-1,100%+1,100%+1</area>
                         <type>box</type>
                         <fill color="#000000" alpha="0" />
@@ -317,6 +321,9 @@
                     <imagetype name="buttonimage">
                         <area>0,0,115,165</area>
                         <alpha>100</alpha>
+                    </imagetype>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage">
+                        <area>10,50%-50,100,100</area>
                     </imagetype>
                     <textarea name="buttontext" from="baseitemtext">
                         <area>125,10,-40,32</area>
