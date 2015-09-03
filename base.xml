@@ -164,7 +164,7 @@
             <alpha>240</alpha>
         </shape>
         <shape name="titleseparator" from="baseseparator_h">
-            <position>0,100</position>
+            <position>0,99</position>
         </shape>
     </group>
 
