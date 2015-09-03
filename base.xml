@@ -236,7 +236,7 @@
 
     <!-- text for popup window titles -->
     <textarea name="basepopuptitletext" from="basetitletext">
-        <area>0,50,100%,50</area>
+        <area>0,0,100%,50</area>
         <align>allcenter</align>
         <alpha>200</alpha>
     </textarea>
@@ -837,6 +837,36 @@
 
     <!--====================================================================-->
 
+    <group name="basepopupdecoration">
+        <area>0,0,100%,100%</area>
+        <group name="header" from="basepopupheader">
+            <area>0,-50,100%,100%</area>
+        </group>
+        <!-- content goes here -->
+    </group>
+
+    <group name="basebuttonpopupdecoration" from="basepopupdecoration">
+        <area>0,0,100%,100%</area>
+        <!-- content goes here -->
+        <shape name="buttonseparator" from="baseseparator_h">
+            <area>0,100%-90,100%,1</area>
+        </shape>
+        <!-- buttons go here -->
+    </group>
+
+    <group name="basesettingsdecoration">
+        <area>0,0,100%,100%</area>
+        <shape name="background" from="basebackground"/>
+        <group name="pageheader" from="baseheader" />
+        <!-- content goes here -->
+        <shape name="separator" from="baseseparator_h">
+            <position>0,100%-90</position>
+        </shape>
+        <!-- buttons go here -->
+    </group>
+
+    <!--====================================================================-->
+
         <!-- default background window -->
     <window name="backgroundwindow">
         <area>0,0,100%,100%</area>
@@ -866,20 +896,21 @@
                 <position start="-1,-150" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
+        <group name="decoration" from="basepopupdecoration"/>
+        <group name="content">
+            <area>25,75,-25,-25</area>
+            <imagetype name="animation">
+                <area>0,50%-25,50,50</area>
+                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+                <delay>75</delay>
+            </imagetype>
+            <textarea name="message" from="basetext_s">
+                <area>50,0,100%,100%</area>
+                <align>allcenter</align>
+                <cutdown>yes</cutdown>
+                <multiline>yes</multiline>
+            </textarea>
         </group>
-        <imagetype name="animation">
-            <area>25,100,50,50</area>
-            <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-            <delay>75</delay>
-        </imagetype>
-        <textarea name="message" from="basetext_s">
-            <area>75,75,-25,-25</area>
-            <align>allcenter</align>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-        </textarea>
     </window>
 
     <!--====================================================================-->
@@ -891,10 +922,8 @@
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext"/>
-        </group>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext"/>
         <textarea name="messagearea" from="basetext_s">
             <area>50,70,-50,110</area>
             <align>left,vcenter</align>
@@ -919,12 +948,10 @@
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Search List</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Search List</value>
+        </textarea>
         <statetype name="searchstate">
             <area>100%-65,84,32,32</area>
             <state name="found">
@@ -948,9 +975,6 @@
             <area>25,80,-25,40</area>
         </textedit>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <area>0,100%-90,100%,1</area>
-        </shape>
         <button name="prevbutton" from="basebutton">
             <area>50%-225,100%-65,200,40</area>
             <value>Previous</value>
@@ -970,10 +994,8 @@
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext"/>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext"/>
         <textarea name="message" from="basetext_s">
             <area>50,75,-50,160</area>
             <align>left,vcenter</align>
@@ -981,9 +1003,6 @@
             <multiline>yes</multiline>
         </textarea>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <area>0,100%-90,100%,1</area>
-        </shape>
         <!-- center ok button when cancel button is hidden-->
         <button name="ok" from="basebutton" depends="!cancel">
             <area>50%-100,100%-65,200,40</area>
@@ -1016,9 +1035,7 @@
                 <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-        </group>
+        <group name="decoration" from="basepopupdecoration"/>
         <textarea name="message" from="basetext_s">
             <area>50,75,-50,80</area>
             <align>center</align>
@@ -1045,9 +1062,7 @@
                 <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
         <textarea name="message" from="basetext_s">
             <area>50,75,-50,80</area>
             <align>center</align>
@@ -1058,9 +1073,6 @@
             <area>50,180,-50,40</area>
         </textedit>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <area>0,100%-90,100%,1</area>
-        </shape>
         <button name="ok" from="basebutton">
             <area>50%-225,100%-65,200,40</area>
             <value>Ok</value>

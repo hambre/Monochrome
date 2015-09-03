@@ -33,18 +33,16 @@
     <!--====================================================================-->
 
     <window name="filter">
-        <area>-1,0,1000,400</area>
+        <area>-1,0,1000,425</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Filter/sort images</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Filter/sort images</value>
+        </textarea>
         <group name="content">
             <area>50,75,-50,-90</area>
             <group name="labels">
@@ -80,9 +78,6 @@
             <align>center</align>
         </textarea>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,100%-90</position>
-        </shape>
         <button name="check_button" from="basebutton">
             <area>50%-350,100%-65,200,40</area>
             <value>Check Filter</value>

@@ -401,10 +401,8 @@
                 <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="label" from="basepopuptitletext"/>
-        </group>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="label" from="basepopuptitletext"/>
         <buttonlist name="groups" from="baseitemlist">
             <area>50,75,-50,-25</area>
             <align>vcenter</align>
@@ -414,18 +412,16 @@
     <!--====================================================================-->
 
     <window name="changeview">
-        <area>-1,0,550,500</area>
+        <area>-1,0,550,540</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Change Displayed Groups</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Change Displayed Groups</value>
+        </textarea>
         <group name="content">
             <area>100,80,-100,-25</area>
             <textarea name="labeltitles" from="basetext_s">
@@ -485,11 +481,8 @@
                 <position>300,305</position>
             </checkbox>
         </group>
-        <shape name="buttonseparator" from="baseseparator_h">
-            <position>0,460</position>
-        </shape>
         <button name="save" from="basebutton">
-            <area>50%-100,485,200,40</area>
+            <area>50%-100,100%-65,200,40</area>
             <value>Save</value>
         </button>
     </window>
@@ -497,42 +490,37 @@
     <!--====================================================================-->
 
     <window name="passwordchanger">
-        <area>-1,0,750,250</area>
+        <area>-1,0,750,325</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Change Recording Group Password</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Change Recording Group Password</value>
+        </textarea>
         <group name="content">
             <area>50,90,-50,165</area>
             <textarea name="oldlabel" from="basetext_s">
-                <area>0,0,300,30</area>
+                <area>0,0,300,40</area>
                 <value>Old Password:</value>
                 <alpha>200</alpha>
             </textarea>
             <textedit name="oldpassword" from="basetextedit">
-                <area>300,0,-1,32</area>
+                <area>300,0,-1,40</area>
             </textedit>
             <textarea name="newlabel" from="basetext_s">
-                <area>0,50,300,30</area>
+                <area>0,65,300,40</area>
                 <value>New Password:</value>
                 <alpha>200</alpha>
             </textarea>
             <textedit name="newpassword" from="basetextedit">
-                <area>300,50,-1,32</area>
+                <area>300,65,-1,40</area>
             </textedit>
         </group>
-        <shape name="buttonseparator" from="baseseparator_h">
-            <position>0,210</position>
-        </shape>
         <button name="ok" from="basebutton">
-            <area>50%-75,235,150,40</area>
+            <area>50%-75,100%-65,150,40</area>
             <value>OK</value>
         </button>
     </window>
@@ -546,10 +534,8 @@
                 <position start="-1,-460" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="label" from="basepopuptitletext"/>
-        </group>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="label" from="basepopuptitletext"/>
         <buttonlist name="groups" from="baseitemlist">
             <area>50,75,-50,-25</area>
             <align>vcenter</align>
@@ -565,12 +551,10 @@
                 <position start="-1,-460" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Status Icon Help</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Status Icon Help</value>
+        </textarea>
         <buttonlist name="iconlist" from="baseitemlist">
             <area>50,75,-50,-25</area>
             <align>vcenter</align>
@@ -722,68 +706,63 @@
     <!--====================================================================-->
 
     <window name="editmetadata">
-        <area>-1,0,900,575</area>
+        <area>-1,0,900,675</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="label" from="basepopuptitletext">
-                <value>Edit Recording Metadata</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="label" from="basepopuptitletext">
+            <value>Edit Recording Metadata</value>
+        </textarea>
         <group name="content">
-            <area>50,75,-90,-25</area>
+            <area>50,75,-50,-90</area>
             <textarea name="labeltitle" from="basetext_s">
-                <area>0,0,200,30</area>
+                <area>0,0,200,40</area>
                 <value>Title</value>
             </textarea>
             <textedit name="title" from="basetextedit">
-                <area>200,0,-1,30</area>
+                <area>200,0,-1,40</area>
             </textedit>
             <textarea name="labelsubtitle" from="basetext_s">
-                <area>0,50,200,30</area>
+                <area>0,65,200,40</area>
                 <value>Subtitle</value>
             </textarea>
             <textedit name="subtitle" from="basetextedit">
-                <area>200,50,-1,30</area>
+                <area>200,65,-1,40</area>
             </textedit>
             <textarea name="labelinetref" from="basetext_s">
-                <area>0,100,200,30</area>
+                <area>0,130,200,40</area>
                 <value>Inetref</value>
             </textarea>
             <textedit name="inetref" from="basetextedit">
-                <area>200,100,-1,30</area>
+                <area>200,130,-1,40</area>
             </textedit>
             <textarea name="labelseason" from="basetext_s">
-                <area>0,150,200,30</area>
+                <area>0,195,200,40</area>
                 <value>Season</value>
             </textarea>
             <spinbox name="season" from="basespinbox">
-                <area>200,150,100,30</area>
+                <area>200,195,100,40</area>
             </spinbox>
             <textarea name="labelepisode" from="basetext_s">
-                <area>400,150,200,30</area>
+                <area>100%-300,195,200,40</area>
                 <value>Episode</value>
             </textarea>
             <spinbox name="episode" from="basespinbox">
-                <area>600,150,100,30</area>
+                <area>100%-100,195,100,40</area>
             </spinbox>
             <textarea name="labeldescription" from="basetext_s">
-                <area>0,200,250,30</area>
+                <area>0,260,250,40</area>
                 <value>Description</value>
             </textarea>
             <textedit name="description" from="basetexteditmulti">
-                <area>0,230,-1,-90</area>
+                <area>0,315,-1,-25</area>
             </textedit>
         </group>
-        <shape name="buttonseparator" from="baseseparator_h">
-            <position>0,535</position>
-        </shape>
         <button name="ok" from="basebutton">
-            <area>50%-75,560,150,40</area>
+            <area>50%-75,100%-65,150,40</area>
             <value>OK</value>
         </button>
     </window>

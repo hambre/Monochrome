@@ -431,18 +431,16 @@
     <!--====================================================================-->
 
     <window name="itemdetailpopup">
-        <area>-1,0,1250,800</area>
+        <area>-1,0,1250,850</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <alpha>255</alpha>
-            </textarea>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <alpha>255</alpha>
+        </textarea>
         <!-- content -->
         <group name="content">
             <area>50,75,-50,-50</area>
@@ -483,15 +481,12 @@
             </group>
         </group>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,760</position>
-        </shape>
         <button name="play_button" from="basebutton">
-            <area>50%-225,785,200,40</area>
+            <area>50%-225,100%-65,200,40</area>
             <value>Play</value>
         </button>
         <button name="done_button" from="basebutton">
-            <area>50%+25,785,200,40</area>
+            <area>50%+25,100%-65,200,40</area>
             <value>Done</value>
         </button>
     </window>
@@ -505,12 +500,10 @@
                 <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Cast</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Cast</value>
+        </textarea>
         <buttonlist name="cast" from="baseitemlist">
             <area>50,75,-50,-25</area>
         </buttonlist>
@@ -525,12 +518,10 @@
                 <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Plot</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Plot</value>
+        </textarea>
         <textarea name="description" from="basetext_s">
             <area>50,75,-50,-25</area>
             <multiline>yes</multiline>
@@ -543,18 +534,16 @@
     <!--====================================================================-->
 
     <window name="filter">
-        <area>-1,0,800,850</area>
+        <area>-1,0,800,875</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
             </section>
         </animation>
-        <group name="header" from="basepopupheader">
-            <area>0,-50,100%,100%</area>
-            <textarea name="title" from="basepopuptitletext">
-                <value>Video List Filters</value>
-            </textarea>
-        </group>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Video List Filters</value>
+        </textarea>
         <group name="content">
             <area>50,75,-50,-25</area>
             <textarea name="labeltext" from="basetext_s">
@@ -655,15 +644,12 @@
             </textarea>
         </group>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,800</position>
-        </shape>
         <button name="save_button" from="basebutton">
-            <area>50%-225,825,200,40</area>
+            <area>50%-225,100%-65,200,40</area>
             <value>Save</value>
         </button>
         <button name="done_button" from="basebutton">
-            <area>50%+25,825,200,40</area>
+            <area>50%+25,100%-65,200,40</area>
             <value>Done</value>
         </button>
     </window>
@@ -671,11 +657,10 @@
     <!--====================================================================-->
 
     <window name="playersettings">
-        <shape name="background" from="basebackground"/>
-        <group name="pageheader" from="baseheader" />
         <textarea name="pagetitle" from="basetitletext">
             <value>Player Settings</value>
         </textarea>
+        <group name="decoration" from="basesettingsdecoration"/>
         <group name="content">
             <area>50%-500,50%-300,1000,400</area>
             <group name="labels">
@@ -738,9 +723,6 @@
             <area>50%-500,100%-210,1000,105</area>
         </textarea>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,100%-90</position>
-        </shape>
         <button name="ok" from="basebutton">
             <area>50%-225,100%-65,200,40</area>
             <value>Ok</value>
@@ -754,11 +736,10 @@
     <!--====================================================================-->
 
     <window name="metadatasettings">
-        <shape name="background" from="basebackground"/>
-        <group name="pageheader" from="baseheader" />
         <textarea name="pagetitle" from="basetitletext">
             <value>Video Metadata Settings</value>
         </textarea>
+        <group name="decoration" from="basesettingsdecoration"/>
         <group name="content">
             <area>50%-400,50%-250,800,300</area>
             <group name="labels">
@@ -807,9 +788,6 @@
             <area>50%-500,100%-210,1000,105</area>
         </textarea>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,100%-90</position>
-        </shape>
         <button name="ok" from="basebutton">
             <area>50%-225,100%-65,200,40</area>
             <value>Ok</value>
@@ -1092,11 +1070,10 @@
     <!--====================================================================-->
 
     <window name="file_associations">
-        <shape name="background" from="basebackground"/>
-        <group name="pageheader" from="baseheader" />
         <textarea name="pagetitle" from="basetitletext">
             <value>Video File Associations</value>
         </textarea>
+        <group name="decoration" from="basesettingsdecoration"/>
         <group name="content">
             <area>50%-500,50%-200,1000,400</area>
             <group name="labels">
@@ -1138,9 +1115,6 @@
             <area>50%-500,100%-210,1000,105</area>
         </textarea>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,100%-90</position>
-        </shape>
         <button name="new_button" from="basebutton">
             <area>50%-350,100%-65,200,40</area>
             <value>New</value>
