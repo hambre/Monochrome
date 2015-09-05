@@ -2,6 +2,96 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
+    <window name="MythPopupBox">
+        <area>-1,0,600,400</area>
+        <shape name="background">
+            <area>0,-10,100%,100%</area>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#000000" alpha="200" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+        </shape>
+        <textarea name="messagearea">
+            <area>50,20,-50,110</area>
+            <font>basefont_s</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+        </textarea>
+        <imagetype name="separator_bottom">
+            <area>0,145,100%,1</area>
+            <filename>images/SeparatorH.png</filename>
+        </imagetype>
+        <buttonlist name="list">
+            <align>vcenter</align>
+            <area>50,160,-50,-25</area>
+            <searchposition>-1,50</searchposition>
+            <align>top,hcenter</align>
+            <layout>vertical</layout>
+            <wrapstyle>selection</wrapstyle>
+            <arrange>stack</arrange>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <showarrow>no</showarrow>
+            <statetype name="buttonitem">
+                <area>0,0,100%,55</area>
+                <state name="active">
+                    <area>0,0,100%,55</area>
+                    <imagetype name="itemseparator">
+                        <area>0,100%,100%,1</area>
+                        <filename>images/SeparatorH.png</filename>
+                        <alpha>50</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                    <area>5,0,-5,100%</area>
+                        <area>5,0,-5,100%</area>
+                        <font>basefont_m</font>
+                        <multiline>no</multiline>
+                        <align>left,vcenter</align>
+                        <cutdown>yes</cutdown>
+                    <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,100%,55</area>
+                    <imagetype name="buttonarrow">
+                        <area>100%-30,50%-12,20,24</area>
+                        <filename>images/ArrowRightBig.png</filename>
+                        <alpha>50</alpha>
+                    </imagetype>
+                    <shape name="background">
+                        <area>1,0,100%-2,100%</area>
+                        <type>box</type>
+                        <fill color="#FFFFFF" alpha="255" />
+                        <line color="#000000" alpha="0" width="0" />
+                        <alpha>25</alpha>
+                    </shape>
+                    <imagetype name="itemseparator">
+                        <area>0,100%,100%,1</area>
+                        <filename>images/SeparatorH.png</filename>
+                        <alpha>50</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>5,0,-5,100%</area>
+                        <font>basefont_m</font>
+                        <multiline>no</multiline>
+                        <align>left,vcenter</align>
+                        <cutdown>no</cutdown>
+                        <scroll direction="left" />
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
+        </buttonlist>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="osd_message">
         <area>-1,0,500,90</area>
         <shape name="background">
