@@ -237,7 +237,6 @@
     <!-- text for popup window titles -->
     <textarea name="basepopuptitletext" from="basetitletext">
         <area>0,0,100%,50</area>
-        <align>allcenter</align>
         <alpha>200</alpha>
     </textarea>
 
