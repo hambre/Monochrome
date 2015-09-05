@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="osd_message">
+        <area>-1,0,500,90</area>
+        <shape name="background">
+            <area>0,-10,100%,100%</area>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#000000" alpha="200" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+        </shape>
+        <textarea name="message_text">
+            <area>50,0,-50,100%-10</area>
+            <font>basefont_s</font>
+            <align>center</align>
+            <multiline>yes</multiline>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
+    <!-- TODO
+    <window name="osd_input">
+    </window>
+    -->
+
+    <!--====================================================================-->
+
+    <window name="osd_status">
+        <area>0,100%-150,100%,150</area>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="255" />
+            <line color="#000000" alpha="0" width="0" />
+            <alpha>200</alpha>
+        </shape>
+        <imagetype name="separator_h">
+            <area>0,0,100%,1</area>
+            <filename>images/SeparatorH.png</filename>
+        </imagetype>
+        <clock name="date">
+            <area>50,100%-130,250,40</area>
+            <font>basefont_s</font>
+            <align>left,vcenter</align>
+            <alpha>150</alpha>
+            <template>%DATE%</template>
+        </clock>
+        <textarea name="title">
+            <font>basefont_s</font>
+            <area>50,100%-130,-50,40</area>
+            <align>center</align>
+        </textarea>
+        <clock name="time">
+            <area>100%-250,100%-130,-50,40</area>
+            <font>basefont_s</font>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+            <template>%TIME%</template>
+        </clock>
+        <progressbar name="position">
+            <area>50,100%-70,-50,12</area>
+            <layout>horizontal</layout>
+            <style>reveal</style>
+            <shape name="background">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>2</cornerradius>
+                <fill color="#323232" alpha="255" />
+            </shape>
+            <shape name="progressimage">
+                <area>2,3,-2,-3</area>
+                <type>roundbox</type>
+                <cornerradius>2</cornerradius>
+                <fill color="#969696" alpha="255" />
+            </shape>
+        </progressbar>
+        <textarea name="description">
+            <font>basefont_xs</font>
+            <area>50,100%-45,-50,30</area>
+            <align>center</align>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
+    <!-- TODO
+    <window name="program_info">
+    </window>
+    -->
+
+    <!--====================================================================-->
+
+    <!-- TODO
+    <window name="browse_info">
+    </window>
+    -->
+
+    <!--====================================================================-->
+
+    <!-- TODO
+    <window name="osd_program_editor">
+    </window>
+    -->
+
+    <!--====================================================================-->
+
+    <!-- TODO
+    <window name="ChannelEditor">
+    </window>
+    -->
+
+    <!--====================================================================-->
+
+
+</mythuitheme>
