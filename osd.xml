@@ -214,9 +214,14 @@
             <area>0,0,100%,1</area>
             <filename>images/SeparatorH.png</filename>
         </imagetype>
+        <imagetype name="seekicon">
+            <area>50,100%-125,32,32</area>
+            <filename>images/icons/Seek.png</filename>
+            <alpha>200</alpha>
+        </imagetype>
         <textarea name="seekamount">
             <font>basefont_xs</font>
-            <area>50,100%-130,250,40</area>
+            <area>100,100%-130,250,40</area>
             <align>left,vcenter</align>
         </textarea>
         <textarea name="title">
@@ -226,9 +231,14 @@
         </textarea>
         <textarea name="framedisplay">
             <font>basefont_xs</font>
-            <area>100%-250,100%-130,-50,40</area>
+            <area>100%-300,100%-130,-100,40</area>
             <align>right,vcenter</align>
         </textarea>
+        <imagetype name="frameicon">
+            <area>100%-82,100%-125,32,32</area>
+            <filename>images/icons/Number.png</filename>
+            <alpha>200</alpha>
+        </imagetype>
         <editbar name="editbar">
             <area>50,100%-80,-50,34</area>
             <shape name="keep">
@@ -274,10 +284,8 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="ChannelEditor">
     </window>
-    -->
 
     <!--====================================================================-->
 
