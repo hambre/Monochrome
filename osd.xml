@@ -285,6 +285,179 @@
     <!--====================================================================-->
 
     <window name="ChannelEditor">
+        <area>-1,0,750,440</area>
+        <shape name="background">
+            <area>0,-10,100%,100%</area>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#000000" alpha="200" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+        </shape>
+        <textarea name="title">
+            <area>0,0,100%,50</area>
+            <font>basefont_m</font>
+            <align>allcenter</align>
+            <alpha>200</alpha>
+            <value>Channel Editor</value>
+        </textarea>
+        <imagetype name="separator">
+            <area>0,60,100%,1</area>
+            <filename>images/SeparatorH.png</filename>
+        </imagetype>
+        <!-- content -->
+        <group name="content">
+            <area>50,85,-50,-115</area>
+            <group name="labels">
+                <textarea name="labeltext_s">
+                    <font>basefont_s</font>
+                    <multiline>no</multiline>
+                    <align>left,vcenter</align>
+                    <cutdown>yes</cutdown>
+                </textarea>
+                <area>0,0,250,100%</area>
+                <textarea name="labelchannum" from="labeltext_s">
+                    <area>0,0,100%,40</area>
+                    <value>Channel #</value>
+                </textarea>
+                <textarea name="labelcallsign" from="labeltext_s">
+                    <area>0,65,100%,40</area>
+                    <value>Callsign</value>
+                </textarea>
+                <textarea name="labelchanname" from="labeltext_s">
+                    <area>0,130,100%,40</area>
+                    <value>Channel Name</value>
+                </textarea>
+                <textarea name="labelXMLTV" from="labeltext_s">
+                    <area>0,195,100%,40</area>
+                    <value>XMLTV ID</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>250,0,-2,100%</area>
+                <textedit name="channum">
+                    <area>0,0,100%,40</area>
+                    <statetype name="background">
+                        <area>0,0,100%,100%</area>
+                        <state name="active">
+                            <area>0,0,100%,100%</area>
+                            <group name="textunderline">
+                                <area>0,0,100%,100%</area>
+                                <shape name="leftborder" from="baseline_v">
+                                    <area>0,100%-11,2,10</area>
+                                    <type>box</type>
+                                    <fill color="#FFFFFF" alpha="100" />
+                                    <line color="#000000" alpha="0" width="0" />
+                                </shape>
+                                <shape name="rightborder" from="baseline_v">
+                                    <area>100%-2,100%-11,2,10</area>
+                                    <type>box</type>
+                                    <fill color="#FFFFFF" alpha="100" />
+                                    <line color="#000000" alpha="0" width="0" />
+                                </shape>
+                                <shape name="bottomborder1" from="baseline_h">
+                                    <area>0,100%-2,100%,2</area>
+                                    <type>box</type>
+                                    <fill color="#FFFFFF" alpha="100" />
+                                    <line color="#000000" alpha="0" width="0" />
+                                </shape>
+                            </group>
+                        </state>
+                        <state name="selected" from="active">
+                            <shape name="background">
+                                <area>0,2,100%,-2</area>
+                                <type>box</type>
+                                <fill color="#FFFFFF" alpha="255" />
+                                <line color="#000000" alpha="0" width="0" />
+                                <alpha>25</alpha>
+                            </shape>
+                        </state>
+                        <state name="inactive" from="active"/>
+                    </statetype>
+                    <imagetype name="cursor">
+                        <area>0,0,2,25</area>
+                        <filename>images/Cursor.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>5,0,-5,100%</area>
+                        <font>basefont_s</font>
+                        <multiline>no</multiline>
+                        <align>left,vcenter</align>
+                        <cutdown>yes</cutdown>
+                        <alpha>150</alpha>
+                    </textarea>
+                </textedit>
+                <textedit name="callsign" from="channum">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="channame" from="channum">
+                    <area>0,130,100%,40</area>
+                </textedit>
+                <textedit name="XMLTV" from="channum">
+                    <area>0,195,100%,40</area>
+                </textedit>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <imagetype name="bottomseparator" from="separator">
+            <area>0,100%-90,100%,1</area>
+        </imagetype>
+        <button name="probe">
+            <area>50%-225,100%-65,200,40</area>
+            <statetype name="buttonstate">
+                <area>0,0,100%,100%</area>
+                <state name="active">
+                    <area>0,0,100%,100%</area>
+                    <shape name="background">
+                        <area>0,2,100%,-2</area>
+                        <type>box</type>
+                        <fill color="#FFFFFF" alpha="255" />
+                        <line color="#000000" alpha="0" width="0" />
+                        <alpha>10</alpha>
+                    </shape>
+                    <imagetype name="topborder">
+                        <area>0,0,100%,1</area>
+                        <filename>images/SeparatorH.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <imagetype name="bottomborder">
+                        <area>0,100%-1,100%,1</area>
+                        <filename>images/SeparatorH.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>0,0,100%,100%</area>
+                        <font>basefont_s</font>
+                        <align>allcenter</align>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background">
+                        <alpha>25</alpha>
+                    </shape>
+                    <imagetype name="topborder">
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <imagetype name="bottomborder">
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <textarea name="text">
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="disabled" from="active">
+                    <textarea name="text">
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="pushed" from="selected"/>
+            </statetype>
+            <value>Probe</value>
+        </button>
+        <button name="ok" from="probe">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
     </window>
 
     <!--====================================================================-->
