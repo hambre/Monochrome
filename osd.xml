@@ -194,10 +194,70 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="browse_info">
+        <area>0,100%-250,100%,250</area>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="255" />
+            <line color="#000000" alpha="0" width="0" />
+            <alpha>200</alpha>
+        </shape>
+        <imagetype name="separator_h">
+            <area>0,0,100%,1</area>
+            <filename>images/SeparatorH.png</filename>
+        </imagetype>
+        <shape name="iconbackground">
+            <area>25,25,150,200</area>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#FFFFFF" alpha="25" />
+            <line color="#000000" alpha="0" width="0" />
+        </shape>
+        <imagetype name="iconpath">
+            <area>25,25,150,150</area>
+        </imagetype>
+        <imagetype name="icondummy" depends="!iconpath">
+            <area>50,50,100,100</area>
+            <filename>images/icons/SenderBig.png</filename>
+            <alpha>100</alpha>
+        </imagetype>
+        <textarea name="channel">
+            <font>basefont_s</font>
+            <area>25,185,150,35</area>
+            <align>center</align>
+            <template>%CHANNUM%</template>
+            <alpha>200</alpha>
+        </textarea>
+        <textarea name="title">
+            <font>basefont_m</font>
+            <area>200,20,-25,45</area>
+            <align>left,top</align>
+            <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+        </textarea>
+        <clock name="time">
+            <area>100%-250,20,-25,40</area>
+            <font>basefont_s</font>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+            <template>%TIME%</template>
+        </clock>
+        <textarea name="timeslot">
+            <font>basefont_xs</font>
+            <area>200,70,-50,40</area>
+            <align>left,top</align>
+            <template>%CALLSIGN% : %STARTTIME% - %ENDTIME% (%LENMINS%)</template>
+            <alpha>200</alpha>
+        </textarea>
+        <textarea name="description">
+            <font>basefont_s</font>
+            <area>200,110,-25,-20</area>
+            <align>justify,vcenter</align>
+            <multiline>yes</multiline>
+            <cutdown>no</cutdown>
+            <alpha>200</alpha>
+        </textarea>
     </window>
-    -->
 
     <!--====================================================================-->
 
