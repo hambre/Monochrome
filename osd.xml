@@ -187,10 +187,270 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="program_info">
+        <area>0,100%-250,100%,250</area>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="255" />
+            <line color="#000000" alpha="0" width="0" />
+            <alpha>200</alpha>
+        </shape>
+        <imagetype name="separator_h">
+            <area>0,0,100%,1</area>
+            <filename>images/SeparatorH.png</filename>
+        </imagetype>
+        <shape name="iconbackground">
+            <area>25,25,150,200</area>
+            <type>roundbox</type>
+            <cornerradius>5</cornerradius>
+            <fill color="#FFFFFF" alpha="25" />
+            <line color="#000000" alpha="0" width="0" />
+        </shape>
+        <imagetype name="iconpath">
+            <area>25,25,150,150</area>
+        </imagetype>
+        <imagetype name="coverart">
+            <area>25,25,150,200</area>
+        </imagetype>
+        <imagetype name="sendericon" depends="channum&amp;!iconpath">
+            <area>50,50,100,100</area>
+            <filename>images/icons/SenderBig.png</filename>
+            <alpha>100</alpha>
+        </imagetype>
+        <imagetype name="movieicon" depends="!channum&amp;!coverart">
+            <area>50,75,100,100</area>
+            <filename>images/icons/Movie.png</filename>
+            <alpha>100</alpha>
+        </imagetype>
+        <textarea name="channum">
+            <font>basefont_s</font>
+            <area>25,185,150,35</area>
+            <align>center</align>
+            <template>%CHANNUM%</template>
+            <alpha>200</alpha>
+        </textarea>
+        <textarea name="title">
+            <font>basefont_m</font>
+            <area>200,20,-25,45</area>
+            <align>left,top</align>
+            <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+        </textarea>
+        <clock name="time">
+            <area>100%-250,20,-25,40</area>
+            <font>basefont_s</font>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+            <template>%TIME%</template>
+        </clock>
+        <textarea name="mediatime">
+            <font>basefont_xs</font>
+            <area>200,70,-50,40</area>
+            <align>left,top</align>
+            <template>%CALLSIGN| %%: |YEAR| %%~ |STARTTIME| %%- |ENDTIME% (%LENMINS%)</template>
+            <alpha>200</alpha>
+        </textarea>
+        <textarea name="description">
+            <font>basefont_s</font>
+            <area>200,110,-25,-20</area>
+            <align>justify,vcenter</align>
+            <multiline>yes</multiline>
+            <cutdown>no</cutdown>
+            <alpha>200</alpha>
+        </textarea>
+
+        <statetype name="videocodec">
+            <area>100%-510,70,110,32</area>
+            <showempty>yes</showempty>
+            <state name="MPEG-2">
+                <imagetype name="mpeg2">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoMPG2.png</filename>
+                </imagetype>
+            </state>
+            <state name="VC-1">
+                <imagetype name="vc1">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoVC1.png</filename>
+                </imagetype>
+            </state>
+            <state name="H.264">
+                <imagetype name="h264">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoH264.png</filename>
+                </imagetype>
+            </state>
+            <state name="MPEG-4">
+                <imagetype name="mpeg4">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoMPG4.png</filename>
+                </imagetype>
+            </state>
+            <state name="RTjpeg">
+                <imagetype name="rtjpeg">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoRTJPEG.png</filename>
+                </imagetype>
+            </state>
+            <state name="WMV3">
+                <imagetype name="wmv3">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoWMV3.png</filename>
+                </imagetype>
+            </state>
+            <state name="H.263">
+                <imagetype name="h263">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoH263.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="audiocodec">
+            <area>100%-375,70,120,32</area>
+            <showempty>yes</showempty>
+            <state name="PCM_DVD">
+                <imagetype name="pcmdvd">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioPCMDVD.png</filename>
+                </imagetype>
+            </state>
+            <state name="PCM_BLURAY">
+                <imagetype name="pcmbluray">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioPCMBD.png</filename>
+                </imagetype>
+            </state>
+            <state name="AC3">
+                <imagetype name="ac3">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioAC3.png</filename>
+                </imagetype>
+            </state>
+            <state name="E-AC3">
+                <imagetype name="eac3">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioEAC3.png</filename>
+                </imagetype>
+            </state>
+            <state name="TRUEHD">
+                <imagetype name="truehd">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioTrueHD.png</filename>
+                </imagetype>
+            </state>
+            <state name="WMAPRO">
+                <imagetype name="wmapro">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioWMAPro.png</filename>
+                </imagetype>
+            </state>
+            <state name="DTS">
+                <imagetype name="dts">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioDTS.png</filename>
+                </imagetype>
+            </state>
+            <state name="AAC">
+                <imagetype name="aac">
+                    <area>0,0,120,32</area>
+                    <filename>images/iocns/AudioAAC.png</filename>
+                </imagetype>
+            </state>
+            <state name="MP2">
+                <imagetype name="mp2">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioMP2.png</filename>
+                </imagetype>
+            </state>
+            <state name="MP3">
+                <imagetype name="mp2">
+                    <area>0,0,120,32</area>
+                    <filename>images/iocns/AudioMP3.png</filename>
+                </imagetype>
+            </state>
+            <state name="VORBIS">
+                <imagetype name="vorbis">
+                    <area>0,0,120,32</area>
+                    <filename>images/icons/AudioVorbis.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="videodescrip">
+            <area>100%-230,70,110,32</area>
+            <showempty>yes</showempty>
+            <state name="SD">
+                <imagetype name="SD">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoSD.png</filename>
+                </imagetype>
+            </state>
+            <state name="HD_720_I">
+                <imagetype name="720i">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoHD720.png</filename>
+                </imagetype>
+            </state>
+            <state name="HD_720_P">
+                <imagetype name="720p">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoHD720p.png</filename>
+                </imagetype>
+            </state>
+            <state name="HD_1080_I">
+                <imagetype name="1080i">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoHD1080i.png</filename>
+                </imagetype>
+            </state>
+            <state name="HD_1080_P">
+                <imagetype name="1080p">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/VideoHD1080p.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="audiochannels">
+            <area>100%-95,70,75,32</area>
+            <showempty>yes</showempty>
+            <state name="1">
+                <imagetype name="1">
+                    <area>0,0,75,32</area>
+                    <filename>images/icons/AudioMono.png</filename>
+                </imagetype>
+            </state>
+            <state name="2">
+                <imagetype name="2">
+                    <area>0,0,75,32</area>
+                    <filename>images/icons/AudioStereo.png</filename>
+                </imagetype>
+            </state>
+            <state name="5">
+                <imagetype name="5">
+                    <area>0,0,75,32</area>
+                    <filename>images/icons/AudioSurround6.png</filename>
+                </imagetype>
+            </state>
+            <state name="6">
+                <imagetype name="6">
+                    <area>0,0,75,32</area>
+                    <filename>images/icons/AudioSurround6.png</filename>
+                </imagetype>
+            </state>
+            <state name="7">
+                <imagetype name="7">
+                    <area>0,0,75,32</area>
+                    <filename>images/icons/AudioSurround8.png</filename>
+                </imagetype>
+            </state>
+            <state name="8">
+                <imagetype name="8">
+                    <area>0,0,75,32</area>
+                    <filename>images/icons/AudioSurround8.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
     </window>
-    -->
 
     <!--====================================================================-->
 

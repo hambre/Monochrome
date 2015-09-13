@@ -176,6 +176,12 @@
             <statetype name="audioprops">
                 <area>400,540,100,32</area>
                 <showempty>yes</showempty>
+                <state name="mono">
+                    <imagetype name="mono" from="baseicon">
+                        <area>0,0,80,32</area>
+                        <filename>images/icons/AudioMono.png</filename>
+                    </imagetype>
+                </state>
                 <state name="stereo">
                     <imagetype name="stereo" from="baseicon">
                         <area>0,0,80,32</area>
@@ -185,19 +191,13 @@
                 <state name="surround">
                     <imagetype name="surround" from="baseicon">
                         <area>0,0,80,32</area>
-                        <filename>images/icons/AudioSurround.png</filename>
+                        <filename>images/icons/AudioSurround6.png</filename>
                     </imagetype>
                 </state>
                 <state name="dolby">
                     <imagetype name="dolby" from="baseicon">
                         <area>0,0,80,32</area>
                         <filename>images/icons/AudioDolby.png</filename>
-                    </imagetype>
-                </state>
-                <state name="mono">
-                    <imagetype name="mono" from="baseicon">
-                        <area>0,0,80,32</area>
-                        <filename>images/icons/AudioMono.png</filename>
                     </imagetype>
                 </state>
                 <state name="default">
