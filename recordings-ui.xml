@@ -209,11 +209,11 @@
                 </state>
             </statetype>
             <statetype name="videoprops">
-                <area>500,540,100,32</area>
+                <area>500,540,110,32</area>
                 <state name="hdtv">
                     <imagetype name="hdtv" from="baseicon">
                         <area>0,0,100,32</area>
-                        <filename>images/icons/VideoHDTV.png</filename>
+                        <filename>images/icons/VideoHD.png</filename>
                     </imagetype>
                 </state>
                 <state name="widescreen">
