@@ -4,6 +4,11 @@
 
     <window name="watchrecordings">
 
+        <fontdef name="damagedfont" from="basefont_m">
+            <color>#808080</color>
+            <decoration>strikeout</decoration>
+        </fontdef>
+
         <imagetype name="fanart" from="basetitlebackground"/>
         <group name="pageheader" from="baseheader" />
         <group name="content" from="basecontent" />
@@ -34,6 +39,7 @@
                         <area>5,0,-5,100%</area>
                         <alpha>100</alpha>
                         <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+                        <font state="error">damagedfont</font>
                     </textarea>
                     <statetype name="playlist">
                         <state name="yes">
@@ -47,9 +53,9 @@
                         <position>710,8</position>
                     </statetype>
                 </state>
-                <state name="selectedactive">
+                <state name="selectedactive" from="active">
                     <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>5,0,650,100%</area>
+                        <area>5,0,-45,100%</area>
                         <scroll direction="horizontal" />
                         <alpha>255</alpha>
                         <cutdown>no</cutdown>
@@ -57,17 +63,6 @@
                     </textarea>
                     <statetype name="watched" from="basewatchedstate">
                         <position>668,12</position>
-                    </statetype>
-                    <statetype name="playlist">
-                        <state name="yes">
-                            <imagetype name="icon" from="baseicon">
-                                <area>710,12,32,32</area>
-                                <filename>images/icons/Playlist.png</filename>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                    <statetype name="jobstate" from="basejobstate">
-                        <position>710,8</position>
                     </statetype>
                 </state>
             </statetype>
@@ -174,7 +169,7 @@
             </textarea>
 
             <statetype name="audioprops">
-                <area>400,540,100,32</area>
+                <area>400,540,75,32</area>
                 <showempty>yes</showempty>
                 <state name="mono">
                     <imagetype name="mono" from="baseicon">
@@ -212,50 +207,50 @@
                 <area>500,540,110,32</area>
                 <state name="hdtv">
                     <imagetype name="hdtv" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,110,32</area>
                         <filename>images/icons/VideoHD.png</filename>
                     </imagetype>
                 </state>
                 <state name="widescreen">
                     <imagetype name="widescreen" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,110,32</area>
                         <filename>images/icons/VideoWidescreen.png</filename>
                     </imagetype>
                 </state>
                 <state name="avchd">
                     <imagetype name="avchd" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,110,32</area>
                         <filename>images/icons/VideoAVCHD.png</filename>
                     </imagetype>
                 </state>
                 <state name="hd720">
                     <imagetype name="hd720" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,110,32</area>
                         <filename>images/icons/VideoHD720.png</filename>
                     </imagetype>
                 </state>
                 <state name="hd1080">
                     <imagetype name="hd1080" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,110,32</area>
                         <filename>images/icons/VideoHD1080.png</filename>
                     </imagetype>
                 </state>
                 <state name="damaged">
                     <textarea name="damaged" from="basetext_s">
-                        <area>0,0,100,32</area>
+                        <area>0,0,110,32</area>
                         <value>Damaged</value>
                     </textarea>
                 </state>
                 <state name="default">
                     <imagetype name="default" from="baseicon">
-                        <area>0,0,100,32</area>
+                        <area>0,0,110,32</area>
                         <alpha>100</alpha>
                         <filename>images/icons/VideoSD.png</filename>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="subtitletypes">
-                <area>600,540,100,32</area>
+                <area>625,540,75,32</area>
                 <state name="cc">
                     <imagetype name="sub" from="baseicon">
                         <area>0,0,100,32</area>
@@ -289,7 +284,7 @@
                 </state>
             </statetype>
             <statetype name="bookmark">
-                <area>725,540,32,32</area>
+                <area>100%-182,540,32,32</area>
                 <state name="yes">
                     <imagetype name="bookmark" from="baseicon">
                         <area>0,0,32,32</area>
@@ -305,7 +300,7 @@
                 </state>
             </statetype>
             <statetype name="commflagged">
-                <area>775,540,32,32</area>
+                <area>100%-132,540,32,32</area>
                 <state name="yes">
                     <imagetype name="commflagged" from="baseicon">
                         <area>0,0,32,32</area>
@@ -321,7 +316,7 @@
                 </state>
             </statetype>
             <statetype name="cutlist">
-                <area>825,540,32,32</area>
+                <area>100%-82,540,32,32</area>
                 <state name="yes">
                     <imagetype name="cutlist" from="baseicon">
                         <area>0,0,32,32</area>
@@ -337,7 +332,7 @@
                 </state>
             </statetype>
             <statetype name="autoexpire">
-                <area>875,540,32,32</area>
+                <area>100%-32,540,32,32</area>
                 <state name="yes">
                     <imagetype name="autoexpire" from="baseicon">
                         <area>0,0,32,32</area>
