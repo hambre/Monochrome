@@ -25,8 +25,8 @@
         <buttonlist name="recordings" from="baseitemlist">
             <align>top,hcenter</align>
             <layout>vertical</layout>
-            <area>25,500,725,525</area>
-            <buttonarea>0,0,725,505</buttonarea>
+            <area>25,500,740,525</area>
+            <buttonarea>0,0,740,505</buttonarea>
             <showarrow>no</showarrow>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
@@ -44,7 +44,7 @@
                     <statetype name="playlist">
                         <state name="yes">
                             <imagetype name="icon" from="baseicon">
-                                <area>735,12,32,32</area>
+                                <area>740,12,32,32</area>
                                 <filename>images/icons/Playlist.png</filename>
                             </imagetype>
                         </state>
@@ -116,7 +116,7 @@
 
         <!-- selected recording details -->
         <group name="recdetails" depends="!rec_count">
-            <area>1175, 500, -25, 580</area>
+            <area>1185, 500, -25, 580</area>
             <textarea name="title" from="basetext_l">
                 <area>0, 0, 700, 50</area>
             </textarea>
