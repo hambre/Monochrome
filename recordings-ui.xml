@@ -25,15 +25,15 @@
         <buttonlist name="recordings" from="baseitemlist">
             <align>top,hcenter</align>
             <layout>vertical</layout>
-            <area>25,500,700,525</area>
-            <buttonarea>0,0,700,505</buttonarea>
+            <area>25,500,725,525</area>
+            <buttonarea>0,0,725,505</buttonarea>
             <showarrow>no</showarrow>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <arrange>fixed</arrange>
             <showarrow>no</showarrow>
             <statetype name="buttonitem">
-                <area>0,0,700,50</area>
+                <area>0,0,100%,50</area>
                 <state name="active">
                     <textarea name="titlesubtitle" from="baseitemtext">
                         <area>5,0,-5,100%</area>
@@ -44,13 +44,13 @@
                     <statetype name="playlist">
                         <state name="yes">
                             <imagetype name="icon" from="baseicon">
-                                <area>710,12,32,32</area>
+                                <area>735,12,32,32</area>
                                 <filename>images/icons/Playlist.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
                     <statetype name="jobstate" from="basejobstate">
-                        <position>710,8</position>
+                        <position>100%-37,12</position>
                     </statetype>
                 </state>
                 <state name="selectedactive" from="active">
@@ -62,7 +62,7 @@
                         <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
                     </textarea>
                     <statetype name="watched" from="basewatchedstate">
-                        <position>668,12</position>
+                        <position>100%-37,12</position>
                     </statetype>
                 </state>
             </statetype>
@@ -81,15 +81,15 @@
             <showarrow>no</showarrow>
         </buttonlist>
 
-        <!-- selected recording details -->
-        <group name="recdetails" depends="!rec_count">
-            <area>800, 500, -25, 580</area>
+        <!-- coverart, preview and category -->
+        <group name="middle">
+            <area>800,500,350,580</area>
             <imagetype name="coverart">
-                <area>0, 0, 350, 505</area>
+                <area>0,0,350,505</area>
             </imagetype>
             <shape name="previewframe" depends="!coverart">
                 <type>box</type>
-                <area>0, 0, 350, 505</area>
+                <area>0,0,350,505</area>
                 <fill style="gradient">
                     <gradient direction="vertical">
                         <stop position="0"   color="#FFFFFF" alpha="75" />
@@ -106,17 +106,29 @@
                 <area>0, 425, 350, 100</area>
                 <preserveaspect>yes</preserveaspect>
             </imagetype>
+            <textarea name="category" from="basetext_s">
+                <area>0,530,350,50</area>
+                <align>center</align>
+                <alpha>150</alpha>
+                <case>capitaliseall</case>
+            </textarea>
+        </group>
+
+        <!-- selected recording details -->
+        <group name="recdetails" depends="!rec_count">
+            <area>1175, 500, -25, 580</area>
             <textarea name="title" from="basetext_l">
-                <area>400, 0, 700, 50</area>
+                <area>0, 0, 700, 50</area>
             </textarea>
             <textarea name="subtitle" from="basetext_m">
-                <area>400, 45, 700, 50</area>
+                <area>0, 45, 700, 50</area>
 		<alpha>150</alpha>
                 <template>%00x00| ~ %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
+                <area>0, 110, 100%, 280</area>
                 <textarea name="description" from="basetext_s">
-                    <area>400, 110, 700, 280</area>
+                    <area>0, 0, 100%, 100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
                     <cutdown>yes</cutdown>
@@ -124,8 +136,9 @@
                 </textarea>
             </group>
             <group name="largedescription" depends="!subtitle">
+                <area>0, 60, 100%, 320</area>
                 <textarea name="description" from="basetext_s">
-                    <area>400, 60, 700, 320</area>
+                    <area>0, 0, 100%, 100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
                     <cutdown>yes</cutdown>
@@ -133,7 +146,7 @@
                 </textarea>
             </group>
             <group name="facts">
-                <area>400,400,700,120</area>
+                <area>0,400,100%,120</area>
                 <imagetype name="sender" from="baseicon">
                     <area>0,0,32,32</area>
                     <filename>images/icons/Sender.png</filename>
@@ -161,15 +174,9 @@
                     <template>%filesize_str% of %storagegroup% Storage</template>
                 </textarea>
             </group>
-            <textarea name="category" from="basetext_s">
-                <area>0,530,350,50</area>
-                <align>center</align>
-                <alpha>150</alpha>
-                <case>capitaliseall</case>
-            </textarea>
 
             <statetype name="audioprops">
-                <area>400,540,75,32</area>
+                <area>0,540,75,32</area>
                 <showempty>yes</showempty>
                 <state name="mono">
                     <imagetype name="mono" from="baseicon">
@@ -204,7 +211,7 @@
                 </state>
             </statetype>
             <statetype name="videoprops">
-                <area>500,540,110,32</area>
+                <area>100,540,110,32</area>
                 <state name="hdtv">
                     <imagetype name="hdtv" from="baseicon">
                         <area>0,0,110,32</area>
@@ -250,7 +257,7 @@
                 </state>
             </statetype>
             <statetype name="subtitletypes">
-                <area>625,540,75,32</area>
+                <area>225,540,75,32</area>
                 <state name="cc">
                     <imagetype name="sub" from="baseicon">
                         <area>0,0,100,32</area>
@@ -347,13 +354,6 @@
                     </imagetype>
                 </state>
             </statetype>
-            <!-- this animation is needed to keep the animation within the buttonlist running -->
-            <imagetype name="triggeranimation">
-                <area>925,540,32,32</area>
-                <alpha>0</alpha>
-                <filepattern low="1" high="8">images/icons/animated/Recording%1.png</filepattern>
-                <delay>75</delay>
-            </imagetype>
         </group>
 
         <!-- selected group details -->
