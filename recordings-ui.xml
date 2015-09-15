@@ -36,15 +36,16 @@
                 <area>0,0,100%,50</area>
                 <state name="active">
                     <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>5,0,-5,100%</area>
+                        <area>5,0,-45,100%</area>
                         <alpha>100</alpha>
                         <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
                         <font state="error">damagedfont</font>
                     </textarea>
-                    <statetype name="playlist">
+                    <statetype name="playlist" depends="!jobstate">
+                        <area>100%-37,12,32,32</area>
                         <state name="yes">
                             <imagetype name="icon" from="baseicon">
-                                <area>740,12,32,32</area>
+                                <area>0,0,32,32</area>
                                 <filename>images/icons/Playlist.png</filename>
                             </imagetype>
                         </state>
@@ -61,8 +62,10 @@
                         <cutdown>no</cutdown>
                         <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
                     </textarea>
-                    <statetype name="watched" from="basewatchedstate">
+                    <statetype name="watched" from="basewatchedstate" depends="!jobstate">
                         <position>100%-37,12</position>
+                    </statetype>
+                    <statetype name="playlist" depends="!watched&amp;!jobstate">
                     </statetype>
                 </state>
             </statetype>
