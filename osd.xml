@@ -783,9 +783,199 @@
     <!--====================================================================-->
 
 
-    <!-- TODO
     <window name="osd_debug">
+        <area>0,100%-250,100%,250</area>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="255" />
+            <line color="#000000" alpha="0" width="0" />
+            <alpha>200</alpha>
+        </shape>
+        <imagetype name="separator_h">
+            <area>0,0,100%,1</area>
+            <filename>images/SeparatorH.png</filename>
+        </imagetype>
+
+        <fontdef name="osdfont_s" from="basefont_xs">
+            <pixelsize>28</pixelsize>
+        </fontdef>
+
+        <textarea name="file">
+            <font>osdfont_s</font>
+            <area>50,25,200,40</area>
+            <align>left,vcenter</align>
+            <value>Filename :</value>
+        </textarea>
+        <textarea name="filename">
+            <font>osdfont_s</font>
+            <area>250,25,980,40</area>
+            <align>left,vcenter</align>
+            <alpha>200</alpha>
+        </textarea>
+
+        <group name="audiodetails">
+            <area>50,75,350,150</area>
+            <textarea name="audio">
+                <font>osdfont_s</font>
+                <area>0,0,175,40</area>
+                <align>left,vcenter</align>
+                <value>Audio :</value>
+            </textarea>
+            <textarea name="audiocodec">
+                <font>osdfont_s</font>
+                <area>175,0,150,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="channels">
+                <font>osdfont_s</font>
+                <area>0,50,175,40</area>
+                <align>left,vcenter</align>
+                <value>Channels :</value>
+            </textarea>
+            <textarea name="audiochannels">
+                <font>osdfont_s</font>
+                <area>175,50,150,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="audiorate">
+                <font>osdfont_s</font>
+                <area>0,100,175,40</area>
+                <align>left,vcenter</align>
+                <value>Sample rate :</value>
+            </textarea>
+            <textarea name="samplerate">
+                <font>osdfont_s</font>
+                <area>175,100,150,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+
+        <group name="videodetails">
+            <area>450,75,450,150</area>
+            <textarea name="video">
+                <font>osdfont_s</font>
+                <area>0,0,175,40</area>
+                <align>left,vcenter</align>
+                <value>Video :</value>
+            </textarea>
+            <textarea name="videowidth">
+                <font>osdfont_s</font>
+                <area>175,0,250,40</area>
+                <align>left,vcenter</align>
+                <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="vidcodec">
+                <font>osdfont_s</font>
+                <area>0,50,175,40</area>
+                <align>left,vcenter</align>
+                <value>Codec/Dec :</value>
+            </textarea>
+            <textarea name="videocodec">
+                <font>osdfont_s</font>
+                <area>175,50,250,40</area>
+                <align>left,vcenter</align>
+                <template>%VIDEOCODEC% %VIDEODECODER%</template>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="cpuload">
+                <font>osdfont_s</font>
+                <area>0,100,175,40</area>
+                <align>left,vcenter</align>
+                <value>CPUs :</value>
+            </textarea>
+            <textarea name="load">
+                <font>osdfont_s</font>
+                <area>175,100,250,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+
+        <group name="processingdetails">
+            <area>975,75,500,150</area>
+            <textarea name="fps">
+                <font>osdfont_s</font>
+                <area>0,0,275,40</area>
+                <align>left,vcenter</align>
+                <value>FPS :</value>
+            </textarea>
+            <textarea name="framerate">
+                <font>osdfont_s</font>
+                <area>275,0,200,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="sync">
+                <font>osdfont_s</font>
+                <area>0,50,275,40</area>
+                <align>left,vcenter</align>
+                <value>A/V Sync :</value>
+            </textarea>
+            <textarea name="avsync">
+                <font>osdfont_s</font>
+                <area>275,50,200,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="frames">
+                <font>osdfont_s</font>
+                <area>0,100,275,40</area>
+                <align>left,vcenter</align>
+                <value>Frames decoded/free :</value>
+            </textarea>
+            <textarea name="videoframes">
+                <font>osdfont_s</font>
+                <area>275,100,200,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+        <group name="storagedetails">
+            <area>1450,75,500,150</area>
+            <textarea name="storage">
+                <font>osdfont_s</font>
+                <area>0,0,250,40</area>
+                <align>left,vcenter</align>
+                <value>Storage to Buffer :</value>
+            </textarea>
+            <textarea name="storagerate">
+                <font>osdfont_s</font>
+                <area>250,0,250,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="decoder">
+                <font>osdfont_s</font>
+                <area>0,50,250,40</area>
+                <align>left,vcenter</align>
+                <value>Buffer to Decoder :</value>
+            </textarea>
+            <textarea name="decoderrate">
+                <font>osdfont_s</font>
+                <area>250,50,250,40</area>
+                <align>left,vcenter</align>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="buffer">
+                <font>osdfont_s</font>
+                <area>0,100,250,40</area>
+                <align>left,vcenter</align>
+                <value>Available Buffer :</value>
+            </textarea>
+            <textarea name="bufferavail">
+                <font>osdfont_s</font>
+                <area>250,100,250,40</area>
+                <align>left,vcenter</align>
+                <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+
     </window>
-    -->
 
 </mythuitheme>
