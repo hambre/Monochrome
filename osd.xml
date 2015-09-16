@@ -803,13 +803,13 @@
 
         <textarea name="file">
             <font>osdfont_s</font>
-            <area>50,25,200,40</area>
+            <area>50,25,175,40</area>
             <align>left,vcenter</align>
             <value>Filename :</value>
         </textarea>
         <textarea name="filename">
             <font>osdfont_s</font>
-            <area>250,25,980,40</area>
+            <area>225,25,980,40</area>
             <align>left,vcenter</align>
             <alpha>200</alpha>
         </textarea>
@@ -897,7 +897,7 @@
         </group>
 
         <group name="processingdetails">
-            <area>975,75,500,150</area>
+            <area>950,75,500,150</area>
             <textarea name="fps">
                 <font>osdfont_s</font>
                 <area>0,0,275,40</area>
