@@ -376,7 +376,7 @@
 
         <!-- used storage space detail in left side of footer -->
         <group name="storagedetails">
-            <area>25,1038,700,35</area>
+            <area>25,1038,740,35</area>
             <progressbar name="usedbar" from="baseprogress">
                 <area>0,0,100%,100%</area>
             </progressbar>
