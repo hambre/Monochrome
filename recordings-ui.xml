@@ -41,6 +41,7 @@
                         <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
                         <font state="error">damagedfont</font>
                     </textarea>
+                    <!-- display playlist state only when there is no job running -->
                     <statetype name="playlist" depends="!jobstate">
                         <area>100%-37,12,32,32</area>
                         <state name="yes">
@@ -60,11 +61,12 @@
                         <alpha>255</alpha>
                         <cutdown>no</cutdown>
                     </textarea>
+                    <!-- display watched state only when there is no job running -->
                     <statetype name="watched" from="basewatchedstate" depends="!jobstate">
                         <position>100%-37,12</position>
                     </statetype>
-                    <statetype name="playlist" depends="!watched&amp;!jobstate">
-                    </statetype>
+                    <!-- display playlist state only when there is no job running and watched state is not on -->
+                    <statetype name="playlist" depends="!watched&amp;!jobstate"/>
                 </state>
             </statetype>
         </buttonlist>
@@ -79,7 +81,6 @@
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <arrange>fixed</arrange>
-            <showarrow>no</showarrow>
         </buttonlist>
 
         <!-- coverart, preview and category -->
