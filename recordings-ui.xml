@@ -55,12 +55,10 @@
                     </statetype>
                 </state>
                 <state name="selectedactive" from="active">
-                    <textarea name="titlesubtitle" from="baseitemtext">
-                        <area>5,0,-45,100%</area>
+                    <textarea name="titlesubtitle">
                         <scroll direction="horizontal" />
                         <alpha>255</alpha>
                         <cutdown>no</cutdown>
-                        <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
                     </textarea>
                     <statetype name="watched" from="basewatchedstate" depends="!jobstate">
                         <position>100%-37,12</position>
