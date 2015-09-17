@@ -75,8 +75,8 @@
         <buttonlist name="groups" from="baseitemlist">
             <align>top,hcenter</align>
             <layout>vertical</layout>
-            <area>25,500,750,505</area>
-            <buttonarea>0,0,750,505</buttonarea>
+            <area>25,500,740,505</area>
+            <buttonarea>0,0,740,505</buttonarea>
             <showarrow>no</showarrow>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
