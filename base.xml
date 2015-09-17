@@ -502,24 +502,19 @@
             </state>
             <state name="selected" from="active">
                 <shape name="background" from="basecontrolbackground"/>
-                <shape name="topborder" from="baseseparator_h">
-                    <position>0,0</position>
+                <shape name="topborder">
                     <alpha>200</alpha>
                 </shape>
-                <shape name="bottomborder" from="baseseparator_h">
-                    <position>0,100%-1</position>
+                <shape name="bottomborder">
                     <alpha>200</alpha>
                 </shape>
-                <textarea name="text" from="basetext_s">
-                    <area>0,0,100%,100%</area>
-                    <align>allcenter</align>
+                <textarea name="text">
+                    <scroll direction="horizontal" />
                     <alpha>255</alpha>
                 </textarea>
             </state>
             <state name="disabled" from="active">
-                <textarea name="text" from="basetext_s">
-                    <area>0,0,100%,100%</area>
-                    <align>allcenter</align>
+                <textarea name="text">
                     <alpha>100</alpha>
                 </textarea>
             </state>

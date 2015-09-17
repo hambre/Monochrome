@@ -763,6 +763,7 @@
                     </imagetype>
                     <textarea name="text">
                         <alpha>255</alpha>
+                        <scroll direction="horizontal" />
                     </textarea>
                 </state>
                 <state name="disabled" from="active">
