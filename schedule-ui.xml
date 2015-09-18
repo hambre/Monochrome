@@ -86,10 +86,25 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="progdetails">
+        <group name="pageheader" from="baseheader" />
+        <group name="pagefooter" from="basefooter" />
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Program Details:</value>
+        </textarea>
+        <webbrowser name="browser">
+            <area>50,75,-30,-120</area>
+            <browserarea>0,0,100%-30,100%-30</browserarea>
+            <zoom>1.0</zoom>
+            <background color="#000000"/>
+            <scrollbar name="vertscrollbar" from="basescrollbar_v">
+                <area>100%-12,0,12,100%-12</area>
+            </scrollbar>
+            <scrollbar name="horizscrollbar" from="basescrollbar_h">
+                <area>0,100%-12,100%-12,12</area>
+            </scrollbar>
+        </webbrowser>
     </window>
-    -->
 
     <!--====================================================================-->
 

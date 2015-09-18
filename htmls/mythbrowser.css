@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Jesaya';
+    font-weight: normal;
+    src: url('../fonts/jesaya free.ttf') format('truetype');
+}
+h1 {font-size:17pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:white;}
+p  {font-size:17pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:#c8c8c8;margin-top:-10pt}
