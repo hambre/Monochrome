@@ -427,6 +427,43 @@
         </shape>
     </progressbar>
 
+    <!-- scroll bar -->
+    <scrollbar name="basescrollbar_v">
+        <area>100%-15,0,15,100%</area>
+        <layout>vertical</layout>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <cornerradius>3</cornerradius>
+            <fill color="#323232" alpha="255" />
+        </shape>
+        <shape name="slider">
+            <area>0,0,100%,10</area>
+            <type>roundbox</type>
+            <cornerradius>3</cornerradius>
+            <fill color="#969696" alpha="255" />
+            <line color="#000000" alpha="0" width="3"/>
+        </shape>
+    </scrollbar>
+
+    <scrollbar name="basescrollbar_h">
+        <area>0,100%-15,100%,15</area>
+        <layout>horizontal</layout>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <cornerradius>3</cornerradius>
+            <fill color="#323232" alpha="255" />
+        </shape>
+        <shape name="slider">
+            <area>0,0,10,100%</area>
+            <type>roundbox</type>
+            <cornerradius>3</cornerradius>
+            <fill color="#969696" alpha="255" />
+            <line color="#000000" alpha="0" width="3"/>
+        </shape>
+    </scrollbar>
+
     <!-- text underline for text controls like textedit and spinbox -->
     <group name="basetextunderline">
         <area>0,0,150,30</area>
