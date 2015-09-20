@@ -979,7 +979,7 @@
     <!--====================================================================-->
 
     <window name="MythSearchListDialog">
-        <area>-1,0,750,200</area>
+        <area>-1,0,750,240</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
