@@ -1,41 +1,49 @@
 <HTML>
-
+<head>
+    <style type="text/css">
+        table {border-spacing: 25px}
+        td {vertical-align:top}
+        td:first-child {width: auto; white-space: nowrap;}
+    </style>
+</head>
 <body>
-    <h1>%TITLE_LABEL%</h1> <p>%TITLE%</p>
-    <h1>%TITLE_PRONOUNCE_LABEL%</h1> <p>%TITLE_PRONOUNCE%</p>
-    <h1>%DESCRIPTION_LABEL%</h1> <p align="justify">%DESCRIPTION%</p>
-    <h1>%EPISODE_LABEL%</h1> <p>%EPISODE%</p>
-    <h1>%ACTORS_LABEL%</h1> <p align="justify">%ACTORS%</p>
-    <h1>%DIRECTOR_LABEL%</h1> <p>%DIRECTOR%</p>
-    <h1>%PRODUCER_LABEL%</h1> <p>%PRODUCER%</p>
-    <h1>%EXECUTIVE_PRODUCER_LABEL%</h1> <p>%EXECUTIVE_PRODUCER%</p>
-    <h1>%WRITER_LABEL%</h1> <p>%WRITER%</p>
-    <h1>%GUEST_STAR_LABEL%</h1> <p>%GUEST_STAR%</p>
-    <h1>%HOST_LABEL%</h1> <p>%HOST%</p>
-    <h1>%ADAPTER_LABEL%</h1> <p>%ADAPTER%</p>
-    <h1>%PRESENTER_LABEL%</h1> <p>%PRESENTER%</p>
-    <h1>%COMMENTATOR_LABEL%</h1> <p>%COMMENTATOR%</p>
-    <h1>%GUEST_LABEL%</h1> <p>%GUEST%</p>
-    <h1>%CATEGORY_LABEL%</h1> <p>%CATEGORY%</p>
-    <h1>%CATEGORY_TYPE_LABEL%</h1> <p>%CATEGORY_TYPE%</p>
-    <h1>%ORIGINAL_AIRDATE_LABEL%</h1> <p>%ORIGINAL_AIRDATE%</p>
-    <h1>%PROGRAMID_LABEL%</h1> <p>%PROGRAMID%</p>
-    <h1>%MYTHTV_STATUS_LABEL%</h1> <p>%MYTHTV_STATUS%</p>
-    <h1>%RECORDING_RULE_LABEL%</h1> <p>%RECORDING_RULE%</p>
-    <h1>%LAST_RECORDED_LABEL%</h1> <p>%LAST_RECORDED%</p>
-    <h1>%NEXT_RECORDING_LABEL%</h1> <p>%NEXT_RECORDING%</p>
-    <h1>%AVERAGE_TIME_SHIFT_LABEL%</h1> <p>%AVERAGE_TIME_SHIFT%</p>
-    <h1>%WATCH_LIST_SCORE_LABEL%</h1> <p>%WATCH_LIST_SCORE%</p>
-    <h1>%WATCH_LIST_STATUS_LABEL%</h1> <p>%WATCH_LIST_STATUS%</p>
-    <h1>%SEARCH_PHRASE_LABEL%</h1> <p>%SEARCH_PHRASE%</p>
-    <h1>%FINDID_LABEL%</h1> <p>%FINDID%</p>
-    <h1>%RECORDING_HOST_LABEL%</h1> <p>%RECORDING_HOST%</p>
-    <h1>%RECORDED_FILE_NAME_LABEL%</h1> <p>%RECORDED_FILE_NAME%</p>
-    <h1>%RECORDED_FILE_SIZE_LABEL%</h1> <p>%RECORDED_FILE_SIZE%</p>
-    <h1>%RECORDING_PROFILE_LABEL%</h1> <p>%RECORDING_PROFILE%</p>
-    <h1>%RECORDING_GROUP_LABEL%</h1> <p>%RECORDING_GROUP%</p>
-    <h1>%STORAGE_GROUP_LABEL%</h1> <p>%STORAGE_GROUP%</p>
-    <h1>%PLAYBACK_GROUP_LABEL%</h1> <p>%PLAYBACK_GROUP%</p>
+    <table>
+        <tr><td><p class="label">%TITLE_LABEL%</p></td><td><p>%TITLE%</p></td></tr>
+        <tr><td><p class="label">%TITLE_PRONOUNCE_LABEL%</p></td><td><p>%TITLE_PRONOUNCE%</p></td></tr>
+        <tr><td><p class="label">%DESCRIPTION_LABEL%</p></td><td><p align="justify">%DESCRIPTION%</p></td></tr>
+        <tr><td><p class="label">%EPISODE_LABEL%</p></td><td><p>%EPISODE%</p></td></tr>
+        <tr><td><p class="label">%ACTORS_LABEL%</p></td><td><p align="justify">%ACTORS%</p></td></tr>
+        <tr><td><p class="label">%DIRECTOR_LABEL%</p></td><td><p>%DIRECTOR%</p></td></tr>
+        <tr><td><p class="label">%PRODUCER_LABEL%</p></td><td><p>%PRODUCER%</p></td></tr>
+        <tr><td><p class="label">%EXECUTIVE_PRODUCER_LABEL%</p></td><td><p>%EXECUTIVE_PRODUCER%</p></td></tr>
+        <tr><td><p class="label">%WRITER_LABEL%</p></td><td><p>%WRITER%</p></td></tr>
+        <tr><td><p class="label">%GUEST_STAR_LABEL%</p></td><td><p>%GUEST_STAR%</p></td></tr>
+        <tr><td><p class="label">%HOST_LABEL%</p></td><td><p>%HOST%</p></td></tr>
+        <tr><td><p class="label">%ADAPTER_LABEL%</p></td><td><p>%ADAPTER%</p></td></tr>
+        <tr><td><p class="label">%PRESENTER_LABEL%</p></td><td><p>%PRESENTER%</p></td></tr>
+        <tr><td><p class="label">%COMMENTATOR_LABEL%</p></td><td><p>%COMMENTATOR%</p></td></tr>
+        <tr><td><p class="label">%GUEST_LABEL%</p></td><td><p>%GUEST%</p></td></tr>
+        <tr><td><p class="label">%CATEGORY_LABEL%</p></td><td><p>%CATEGORY%</p></td></tr>
+        <tr><td><p class="label">%CATEGORY_TYPE_LABEL%</p></td><td><p>%CATEGORY_TYPE%</p></td></tr>
+        <tr><td><p class="label">%ORIGINAL_AIRDATE_LABEL%</p></td><td><p>%ORIGINAL_AIRDATE%</p></td></tr>
+        <tr><td><p class="label">%PROGRAMID_LABEL%</p></td><td><p>%PROGRAMID%</p></td></tr>
+        <tr><td><p class="label">%MYTHTV_STATUS_LABEL%</p></td><td><p>%MYTHTV_STATUS%</p></td></tr>
+        <tr><td><p class="label">%RECORDING_RULE_LABEL%</p></td><td><p>%RECORDING_RULE%</p></td></tr>
+        <tr><td><p class="label">%LAST_RECORDED_LABEL%</p></td><td><p>%LAST_RECORDED%</p></td></tr>
+        <tr><td><p class="label">%NEXT_RECORDING_LABEL%</p></td><td><p>%NEXT_RECORDING%</p></td></tr>
+        <tr><td><p class="label">%AVERAGE_TIME_SHIFT_LABEL%</p></td><td><p>%AVERAGE_TIME_SHIFT%</p></td></tr>
+        <tr><td><p class="label">%WATCH_LIST_SCORE_LABEL%</p></td><td><p>%WATCH_LIST_SCORE%</p></td></tr>
+        <tr><td><p class="label">%WATCH_LIST_STATUS_LABEL%</p></td><td><p>%WATCH_LIST_STATUS%</p></td></tr>
+        <tr><td><p class="label">%SEARCH_PHRASE_LABEL%</p></td><td><p>%SEARCH_PHRASE%</p></td></tr>
+        <tr><td><p class="label">%FINDID_LABEL%</p></td><td><p>%FINDID%</p></td></tr>
+        <tr><td><p class="label">%RECORDING_HOST_LABEL%</p></td><td><p>%RECORDING_HOST%</p></td></tr>
+        <tr><td><p class="label">%RECORDED_FILE_NAME_LABEL%</p></td><td><p>%RECORDED_FILE_NAME%</p></td></tr>
+        <tr><td><p class="label">%RECORDED_FILE_SIZE_LABEL%</p></td><td><p>%RECORDED_FILE_SIZE%</p></td></tr>
+        <tr><td><p class="label">%RECORDING_PROFILE_LABEL%</p></td><td><p>%RECORDING_PROFILE%</p></td></tr>
+        <tr><td><p class="label">%RECORDING_GROUP_LABEL%</p></td><td><p>%RECORDING_GROUP%</p></td></tr>
+        <tr><td><p class="label">%STORAGE_GROUP_LABEL%</p></td><td><p>%STORAGE_GROUP%</p></td></tr>
+        <tr><td><p class="label">%PLAYBACK_GROUP_LABEL%</p></td><td><p>%PLAYBACK_GROUP%</p></td></tr>
+    </table>
 </body>
 
 </html>
