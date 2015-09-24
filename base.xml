@@ -94,6 +94,10 @@
         <alpha>50</alpha>
     </shape>
 
+    <shape name="baseitemseparator_v" from="baseseparator_v">
+        <alpha>50</alpha>
+    </shape>
+
     <!-- placeholder for missing images like coverart or preview -->
     <shape name="baseimageplaceholder">
         <type>box</type>
@@ -891,6 +895,14 @@
         <!-- buttons go here -->
     </group>
 
+    <group name="basewindowdecoration">
+        <area>0,0,100%,100%</area>
+        <shape name="background" from="basebackground"/>
+        <group name="pageheader" from="baseheader" />
+        <!-- content goes here -->
+        <group name="pagefooter" from="basefooter" />
+    </group>
+
     <group name="basesettingsdecoration">
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
@@ -904,7 +916,7 @@
 
     <!--====================================================================-->
 
-        <!-- default background window -->
+    <!-- default background window -->
     <window name="backgroundwindow">
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
