@@ -3,21 +3,26 @@
 <mythuitheme>
 
     <window name="programguide">
-        <group name="decoration" from="basewindowdecoration"/>
+        <group name="decoration" from="basewindowdecoration">
+            <clock name="date">
+                <alpha>0</alpha>
+            </clock>
+        </group>
         <textarea name="pagetitle" from="basetitletext">
             <value>Program Guide</value>
         </textarea>
         <textarea name="datetext" from="basetext_s">
-            <area>25,65,150,50</area>
+            <area>25,0,150,50</area>
             <align>hcenter,vcenter</align>
+            <alpha>200</alpha>
         </textarea>
-        <shape name="datesep" from="baseitemseparator_h">
-            <area>25,115,150,2</area>
-        </shape>
         <group name="epg">
             <area>25,65,1866,650</area>
+            <shape name="background" from="basecontrolbackground">
+                <area>0,0,148,100%</area>
+            </shape>
             <buttonlist name="timelist">
-                <area>0,50,150,600</area>
+                <area>0,0,150,100%</area>
                 <buttonarea>0,0,100%,100%</buttonarea>
                 <layout>vertical</layout>
                 <arrange>stack</arrange>
@@ -25,9 +30,6 @@
                     <area>0,0,100%,99</area>
                     <state name="active">
                         <area>0,0,100%,99</area>
-                        <shape name="bottomsep" from="baseitemseparator_h">
-                            <position>0,100%</position>
-                        </shape>
                         <textarea name="buttontext" from="basetext_s">
                             <area>10,10,-10,100%</area>
                             <align>center</align>
@@ -49,7 +51,8 @@
                     <state name="active">
                         <area>0,0,286,100%</area>
                         <shape name="background" from="basecontrolbackground">
-                            <area>2,0,100%,-2</area>
+                            <area>-1,-1,100%-1,100%-1</area>
+                            <line color="#000000" width="1"/>
                         </shape>
                         <imagetype name="channelicon">
                             <area>10,50%-16,32,32</area>
@@ -96,11 +99,10 @@
                 <recordstatus type="FindOneRecord" image="images/icons/Find.png"></recordstatus>
                 <recordstatus type="OverrideRecord" image="images/icons/Override.png"></recordstatus>
             </guidegrid>
-            <shape name="channelsep" from="baseseparator_h">
-                <area>150,50,100%,2</area>
-            </shape>
-            <shape name="timesep" from="baseseparator_v">
-                <area>150,50,2,600</area>
+            <!-- hide misalignment of right side of epg -->
+            <shape name="rightcut">
+                <area>100%-5,0,5,100%</area>
+                <fill color="#000000"/>
             </shape>
         </group>
         <group name="details">
@@ -158,21 +160,26 @@
     <!--====================================================================-->
 
     <window name="programguide-video">
-        <group name="decoration" from="basewindowdecoration"/>
+        <group name="decoration" from="basewindowdecoration">
+            <clock name="date">
+                <alpha>0</alpha>
+            </clock>
+        </group>
         <textarea name="pagetitle" from="basetitletext">
             <value>Program Guide</value>
         </textarea>
         <textarea name="datetext" from="basetext_s">
-            <area>25,65,150,50</area>
+            <area>25,0,150,50</area>
             <align>hcenter,vcenter</align>
+            <alpha>200</alpha>
         </textarea>
-        <shape name="datesep" from="baseitemseparator_h">
-            <area>25,115,150,2</area>
-        </shape>
         <group name="epg">
             <area>25,65,1866,650</area>
+            <shape name="background" from="basecontrolbackground">
+                <area>0,0,148,100%</area>
+            </shape>
             <buttonlist name="timelist">
-                <area>0,50,150,600</area>
+                <area>0,0,150,100%</area>
                 <buttonarea>0,0,100%,100%</buttonarea>
                 <layout>vertical</layout>
                 <arrange>stack</arrange>
@@ -180,9 +187,6 @@
                     <area>0,0,100%,99</area>
                     <state name="active">
                         <area>0,0,100%,99</area>
-                        <shape name="bottomsep" from="baseitemseparator_h">
-                            <position>0,100%</position>
-                        </shape>
                         <textarea name="buttontext" from="basetext_s">
                             <area>10,10,-10,100%</area>
                             <align>center</align>
@@ -204,7 +208,8 @@
                     <state name="active">
                         <area>0,0,286,100%</area>
                         <shape name="background" from="basecontrolbackground">
-                            <area>2,0,100%,-2</area>
+                            <area>-1,-1,100%-1,100%-1</area>
+                            <line color="#000000" width="1"/>
                         </shape>
                         <imagetype name="channelicon">
                             <area>10,50%-16,32,32</area>
@@ -251,11 +256,10 @@
                 <recordstatus type="FindOneRecord" image="images/icons/Find.png"></recordstatus>
                 <recordstatus type="OverrideRecord" image="images/icons/Override.png"></recordstatus>
             </guidegrid>
-            <shape name="channelsep" from="baseseparator_h">
-                <area>150,50,100%,2</area>
-            </shape>
-            <shape name="timesep" from="baseseparator_v">
-                <area>150,50,2,600</area>
+            <!-- hide misalignment of right side of epg -->
+            <shape name="rightcut">
+                <area>100%-5,0,5,100%</area>
+                <fill color="#000000"/>
             </shape>
         </group>
         <group name="details">
