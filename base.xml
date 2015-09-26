@@ -29,6 +29,13 @@
         <pixelsize>24</pixelsize>
     </fontdef>
 
+    <fontdef name="basefont_m_good" from="basefont_m">
+        <color>#00FF00</color>
+    </fontdef>
+    <fontdef name="basefont_m_bad" from="basefont_m">
+        <color>#FF0000</color>
+    </fontdef>
+
     <shape name="baseframe">
         <area>0,0,30,30</area>
         <type>roundbox</type>
@@ -899,6 +906,14 @@
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
         <group name="pageheader" from="baseheader" />
+        <!-- content goes here -->
+        <group name="pagefooter" from="basefooter" />
+    </group>
+
+    <group name="basecontentdecoration">
+        <area>0,0,100%,100%</area>
+        <group name="pageheader" from="baseheader" />
+        <group name="content" from="basecontent" />
         <!-- content goes here -->
         <group name="pagefooter" from="basefooter" />
     </group>
