@@ -9,11 +9,9 @@
             <decoration>strikeout</decoration>
         </fontdef>
 
+        <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
-        <group name="pageheader" from="baseheader" />
-        <group name="content" from="basecontent" />
-        <group name="pagefooter" from="basefooter" />
-
+        <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basetitletext">
             <value>Watch Recordings</value>
         </textarea>

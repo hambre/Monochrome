@@ -320,6 +320,7 @@
     <!--====================================================================-->
 
     <window name="viewscheduled">
+        <!-- background and decoration -->
         <imagetype name="background">
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>

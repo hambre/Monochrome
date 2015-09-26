@@ -2,14 +2,13 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
     <window name="browser">
+        <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
-        <group name="pageheader" from="baseheader" />
-        <group name="content" from="basecontent"/>
-        <group name="pagefooter" from="basefooter" />
-
+        <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basetitletext">
             <value>Video Browser</value>
         </textarea>
+
         <buttonlist name="videos">
             <area>3,51,100%,250</area>
             <buttonarea>0,0,100%,100%</buttonarea>
@@ -142,18 +141,16 @@
     <!--====================================================================-->
 
     <window name="gallery">
+        <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
-        <group name="pageheader" from="baseheader" />
-        <group name="content" from="basecontent"/>
-        <group name="pagefooter" from="basefooter" />
-
+        <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basetitletext">
             <value>Video Gallery</value>
         </textarea>
+
         <statetype name="userratingstate" from="basestarrating">
             <position>35,495</position>
         </statetype>
-
         <textarea name="title" from="basetext_l">
             <area>235, 490, -235, 40</area>
             <align>top,hcenter</align>
@@ -229,14 +226,13 @@
     <!--====================================================================-->
 
     <window name="tree">
+        <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
-        <group name="pageheader" from="baseheader" />
-        <group name="content" from="basecontent"/>
-        <group name="pagefooter" from="basefooter" />
-
+        <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basetitletext">
             <value>Video List</value>
         </textarea>
+
         <!-- left part - video list -->
         <buttontree name="videos">
             <area>25,500,750,505</area>
@@ -300,14 +296,13 @@
     <!--====================================================================-->
 
     <window name="manager">
+        <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
-        <group name="pageheader" from="baseheader" />
-        <group name="content" from="basecontent"/>
-        <group name="pagefooter" from="basefooter" />
-
+        <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basetitletext">
             <value>Video Manager</value>
         </textarea>
+
         <!-- left part - video list -->
         <buttonlist name="videos" from="baseitemlist">
             <area>25,500,900,505</area>

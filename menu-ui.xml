@@ -79,11 +79,10 @@
            </state>
         </statetype>
 
-        <group name="pageheader" from="baseheader" />
+        <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basetitletext">
             <value>Main Menu</value>
         </textarea>
-        <group name="content" from="basecontent" />
 
         <buttonlist name="menu">
             <area>25,500,1870,550</area>
@@ -123,7 +122,6 @@
         <shape name="middlesep" from="baseseparator_v">
             <area>50%,500,1,500</area>
         </shape>
-        <group name="pagefooter" from="basefooter" />
     </window>
 
 </mythuitheme>
