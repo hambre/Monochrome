@@ -524,10 +524,40 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="phrasepopup">
+        <area>-1,0,800,620</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title_text" from="basepopuptitletext"/>
+        <!-- content -->
+        <buttonlist name="phrase_list" from="baseitemlist">
+            <area>50,100,-50,-140</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive"/>
+            </statetype>
+        </buttonlist>
+        <textedit name="phrase_edit" from="basetextedit">
+            <area>50,100%-155,-50,40</area>
+        </textedit>
+        <!-- bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-350,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="delete_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Delete</value>
+        </button>
+        <button name="record_button" from="basebutton">
+            <area>50%+150,100%-65,200,40</area>
+            <value>Record</value>
+        </button>
     </window>
-    -->
 
     <!--====================================================================-->
 
