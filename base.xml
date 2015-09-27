@@ -885,6 +885,7 @@
 
     <!--====================================================================-->
 
+    <!-- decoration for popup windows -->
     <group name="basepopupdecoration">
         <area>0,0,100%,100%</area>
         <group name="header" from="basepopupheader">
@@ -893,6 +894,7 @@
         <!-- content goes here -->
     </group>
 
+    <!-- decoration for popup windows with buttons -->
     <group name="basebuttonpopupdecoration" from="basepopupdecoration">
         <area>0,0,100%,100%</area>
         <!-- content goes here -->
@@ -902,6 +904,7 @@
         <!-- buttons go here -->
     </group>
 
+    <!-- basic window decoration (header + footer) -->
     <group name="basewindowdecoration">
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
@@ -910,6 +913,7 @@
         <group name="pagefooter" from="basefooter" />
     </group>
 
+    <!-- content window decoration -->
     <group name="basecontentdecoration">
         <area>0,0,100%,100%</area>
         <group name="pageheader" from="baseheader" />
@@ -918,6 +922,7 @@
         <group name="pagefooter" from="basefooter" />
     </group>
 
+    <!-- settings window decoration (header + big footer for buttons) -->
     <group name="basesettingsdecoration">
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
