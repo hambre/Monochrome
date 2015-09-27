@@ -1251,9 +1251,34 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="MythTimeInputDialog">
+        <area>-1,0,750,370</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="message" from="basetext_s">
+            <area>50,75,-50,80</area>
+            <align>center</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+        </textarea>
+        <shape name="separator" from="baseseparator_h">
+            <position>0,180</position>
+        </shape>
+        <buttonlist name="dates" from="baseselector">
+            <area>50%-215,205,200,40</area>
+        </buttonlist>
+        <buttonlist name="times" from="baseselector">
+            <area>50%+15,205,200,40</area>
+        </buttonlist>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
     </window>
-    -->
 
 </mythuitheme>
