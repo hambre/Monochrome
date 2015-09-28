@@ -456,7 +456,7 @@
                 <alpha>200</alpha>
             </textarea>
             <group name="facts">
-                <area>0,400,100%,120</area>
+                <area>0,100%-120,100%,120</area>
                 <!-- left side -->
                 <imagetype name="sender" from="baseicon">
                     <area>0,0,32,32</area>
@@ -582,10 +582,112 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="programlist">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="sched" from="basetitletext">
+            <value>Program Listings</value>
+        </textarea>
+        <!-- left side -->
+        <buttonlist name="proglist" from="baseitemlist">
+            <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="card" from="baseitemtext">
+                        <area>5,0,50,100%</area>
+                        <font state="error">basefont_m_bad</font>
+                        <font state="running">basefont_m_good</font>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>50,0,60%,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="timedate" from="basetext_s">
+                        <area>60%,0,-5,100%</area>
+                        <align>right,vcenter</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="card" from="baseitemtext">
+                        <area>5,0,50,100%</area>
+                        <font state="error">basefont_m_bad</font>
+                        <font state="running">basefont_m_good</font>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>50,0,60%,100%</area>
+                    </textarea>
+                    <textarea name="timedate" from="basetext_s">
+                        <area>60%,0,-5,100%</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="curview" from="basetext_s">
+            <area>25,100%-50,900,50</area>
+            <align>center</align>
+            <alpha>200</alpha>
+        </textarea>
+        <!-- right side -->
+        <group name="details">
+            <area>975,500,-25,-75</area>
+            <textarea name="title" from="basetext_m">
+                <area>0,0,100%,50</area>
+                <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+            </textarea>
+            <textarea name="description" from="basetext_s">
+                <area>0,65,100%,320</area>
+                <multiline>yes</multiline>
+                <cutdown>yes</cutdown>
+                <align>justify,top</align>
+                <alpha>200</alpha>
+            </textarea>
+            <group name="facts">
+                <area>0,100%-120,100%,120</area>
+                <!-- left side -->
+                <imagetype name="sender" from="baseicon">
+                    <area>0,0,32,32</area>
+                    <filename>images/icons/Sender.png</filename>
+                </imagetype>
+                <textarea name="longchannel" from="basetext_xs">
+                    <area>50,0,50%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="aried" from="baseicon">
+                    <area>0,40,32,32</area>
+                    <filename>images/icons/Clock.png</filename>
+                </imagetype>
+                <textarea name="timedate" from="basetext_xs">
+                    <area>50,40,50%,32</area>
+                    <alpha>150</alpha>
+                    <template>%TIMEDATE% (%LENMINS%)</template>
+                </textarea>
+                <imagetype name="record" from="baseicon">
+                    <area>0,80,32,32</area>
+                    <filename>images/icons/Record.png</filename>
+                </imagetype>
+                <textarea name="rectypestatus" from="basetext_xs">
+                    <area>50,80,50%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <!-- right side -->
+                <imagetype name="group" from="baseicon" depends="recgroup">
+                    <area>50%,80,32,32</area>
+                    <filename>images/icons/Group.png</filename>
+                </imagetype>
+                <textarea name="recgroup" from="basetext_xs">
+                    <area>50%+50,80,100%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+        </group>
     </window>
-    -->
 
     <!--====================================================================-->
 
