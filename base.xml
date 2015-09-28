@@ -1188,8 +1188,7 @@
     <!--====================================================================-->
 
     <window name="MythFileBrowser">
-        <shape name="background" from="basebackground"/>
-        <group name="pageheader" from="baseheader" />
+        <group name="decoration" from="basesettingsdecoration"/>
         <textarea name="pagetitle" from="basetitletext">
             <value>File Browser</value>
         </textarea>
@@ -1214,9 +1213,6 @@
             <area>200,100%-200,900,40</area>
         </textedit>
         <!-- bottom part with buttons -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,100%-90</position>
-        </shape>
         <button name="home" from="basebutton">
             <area>50%-500,100%-65,200,40</area>
             <value>Home</value>
