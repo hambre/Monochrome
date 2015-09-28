@@ -629,10 +629,10 @@
                 </state>
             </statetype>
         </buttonlist>
-        <textarea name="curview" from="basetext_s">
+        <textarea name="curview" from="basetext_xs">
             <area>25,100%-50,900,50</area>
-            <align>center</align>
-            <alpha>200</alpha>
+            <align>left,vcenter</align>
+            <alpha>150</alpha>
         </textarea>
         <!-- right side -->
         <group name="details">
@@ -687,6 +687,11 @@
                 </textarea>
             </group>
         </group>
+        <textarea name="position" from="basetext_xs">
+            <area>100%-325,100%-50,300,50</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
     </window>
 
     <!--====================================================================-->
