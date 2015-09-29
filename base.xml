@@ -1066,24 +1066,18 @@
         <group name="decoration" from="basebuttonpopupdecoration"/>
         <textarea name="title" from="basepopuptitletext"/>
         <textarea name="message" from="basetext_s">
-            <area>50,75,-50,160</area>
+            <area>50,75,-50,120</area>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
         </textarea>
         <!-- bottom part with buttons -->
-        <!-- center ok button when cancel button is hidden-->
-        <button name="ok" from="basebutton" depends="!cancel">
+        <button name="ok" from="basebutton">
             <area>50%-100,100%-65,200,40</area>
             <value>Ok</value>
         </button>
-        <!-- center ok and cancel button when cancel button is visible -->
-        <button name="ok" from="basebutton" depends="cancel">
-            <area>50%-225,100%-65,200,40</area>
-            <value>Ok</value>
-        </button>
         <button name="cancel" from="basebutton">
-            <area>50%+25,100%-65,200,40</area>
+            <area>50%+150,100%-65,200,40</area>
             <value>Cancel</value>
         </button>
     </window>
