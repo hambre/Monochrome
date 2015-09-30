@@ -503,17 +503,223 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="channelrecpriority">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basetitletext">
+            <value>Channel Recording Priorities</value>
+        </textarea>
+        <!-- left side -->
+        <buttonlist name="channels" from="baseitemlist">
+            <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="icon">
+                        <area>5,5,45,45</area>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <textarea name="callsign" from="baseitemtext">
+                        <area>60,0,-220,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="priority" from="basetext_s">
+                        <area>100%-75,0,-30,100%</area>
+                        <align>right,vcenter</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="icon">
+                        <area>5,5,45,45</area>
+                    </imagetype>
+                    <textarea name="callsign" from="baseitemtext">
+                        <area>60,0,-220,100%</area>
+                    </textarea>
+                    <textarea name="priority" from="basetext_s">
+                        <area>100%-75,0,-30,100%</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <imagetype name="right">
+                        <position>100%-15,50%-12</position>
+                        <filename>images/ArrowRight.png</filename>
+                    </imagetype>
+                    <imagetype name="left">
+                        <position>100%-15,50%+2</position>
+                        <filename>images/ArrowLeft.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+        <!-- right side -->
+        <group name="channelimage">
+            <area>1335,630,200,250</area>
+            <shape name="iconbackground">
+                <area>0,0,100%,100%</area>
+                <type>roundbox</type>
+                <cornerradius>5</cornerradius>
+                <fill color="#FFFFFF" alpha="25" />
+                <line color="#000000" alpha="0" width="0" />
+            </shape>
+            <imagetype name="channelicon">
+                <area>0,0,100%,100%-50</area>
+            </imagetype>
+            <imagetype name="sendericon" depends="!channelicon">
+                <area>25,25,-25,-75</area>
+                <filename>images/icons/SenderBig.png</filename>
+                <alpha>100</alpha>
+            </imagetype>
+            <textarea name="callsign" from="basetext_s">
+                <area>0,100%-50,100%,50</area>
+                <align>center</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+
     </window>
-    -->
 
     <!--====================================================================-->
 
-    <!-- TODO
-    <window name="programrecpriority">
+    <window name="managerecrules">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="sched" from="basetitletext">
+            <value>Manage Recording Rules</value>
+        </textarea>
+        <!-- left side -->
+        <buttonlist name="programs" from="baseitemlist">
+            <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="rectypechar" from="baseitemtext">
+                        <area>5,0,50,100%</area>
+                        <font state="error">basefont_m_bad</font>
+                        <font state="running">basefont_m_good</font>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>50,0,-220,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="lastrecorded" from="basetext_s">
+                        <area>100%-225,0,-5,100%</area>
+                        <align>right,vcenter</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="rectypechar" from="baseitemtext">
+                        <area>5,0,50,100%</area>
+                        <font state="error">basefont_m_bad</font>
+                        <font state="running">basefont_m_good</font>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>50,0,-220,100%</area>
+                    </textarea>
+                    <textarea name="lastrecorded" from="basetext_s">
+                        <area>100%-225,0,-5,100%</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <!-- right side -->
+        <group name="details">
+            <area>975,500,-25,-75</area>
+            <textarea name="title" from="basetext_m">
+                <area>0,0,100%,50</area>
+                <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+            </textarea>
+            <textarea name="category" from="basetext_s">
+                <area>0,50,100%,40</area>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="description" from="basetext_s">
+                <area>0,95,100%,255</area>
+                <multiline>yes</multiline>
+                <cutdown>yes</cutdown>
+                <align>justify,top</align>
+                <alpha>200</alpha>
+            </textarea>
+            <group name="facts">
+                <area>0,100%-160,100%,160</area>
+                <!-- left side -->
+                <imagetype name="sender" from="baseicon">
+                    <area>0,0,32,32</area>
+                    <filename>images/icons/Sender.png</filename>
+                </imagetype>
+                <textarea name="longchannel" from="basetext_xs">
+                    <area>50,0,50%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="aried" from="baseicon">
+                    <area>0,40,32,32</area>
+                    <filename>images/icons/Clock.png</filename>
+                </imagetype>
+                <textarea name="timedate" from="basetext_xs">
+                    <area>50,40,50%,32</area>
+                    <alpha>150</alpha>
+                    <template>%TIMEDATE% (%LENMINS%)</template>
+                </textarea>
+                <imagetype name="record" from="baseicon">
+                    <area>0,80,32,32</area>
+                    <filename>images/icons/Record.png</filename>
+                </imagetype>
+                <textarea name="rectypestatus" from="basetext_xs">
+                    <area>50,80,50%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="scheduleicone" from="baseicon">
+                    <area>0,120,32,32</area>
+                    <filename>images/icons/Calendar.png</filename>
+                </imagetype>
+                <textarea name="scheduleinfo" from="basetext_xs">
+                    <area>50,120,50%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <!-- right side -->
+                <imagetype name="group" from="baseicon" depends="recgroup">
+                    <area>50%+50,0,32,32</area>
+                    <filename>images/icons/Group.png</filename>
+                </imagetype>
+                <textarea name="recgroup" from="basetext_xs">
+                    <area>50%+100,0,100%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="profileicon" from="baseicon">
+                    <area>50%+50,40,32,32</area>
+                    <filename>images/icons/Profile.png</filename>
+                </imagetype>
+                <textarea name="recordingprofile" from="basetext_xs">
+                    <area>50%+100,40,100%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="storageicon" from="baseicon">
+                    <area>50%+50,80,32,32</area>
+                    <filename>images/icons/Storage.png</filename>
+                </imagetype>
+                <textarea name="storagegroup" from="basetext_xs">
+                    <area>50%+100,80,100%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="priorityicon" from="baseicon">
+                    <area>50%+50,120,32,32</area>
+                    <filename>images/icons/Override.png</filename>
+                </imagetype>
+                <textarea name="finalpriority" from="basetext_xs">
+                    <area>50%+100,120,100%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+        </group>
     </window>
-    -->
 
     <!--====================================================================-->
 
