@@ -723,10 +723,77 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="custompriority">
+        <!-- background and decoration -->
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Custom Priority Rules</value>
+        </textarea>
+        <!-- middle part -->
+        <group name="content">
+            <area>50%-450,200,900,490</area>
+            <textarea name="ruleslabel" from="basetext_s">
+                <area>0,0,300,40</area>
+                <value>Existing Rules:</value>
+            </textarea>
+            <buttonlist name="rules" from="baseselector">
+                <area>300,0,100%,40</area>
+            </buttonlist>
+
+            <textarea name="titlelabel" from="basetext_s">
+                <area>0,65,300,40</area>
+                <value>Rule Name:</value>
+            </textarea>
+            <textedit name="title" from="basetextedit">
+                <area>300,65,100%,40</area>
+            </textedit>
+
+            <textarea name="prioritylabel" from="basetext_s">
+                <area>0,130,300,40</area>
+                <value>Priority Change:</value>
+            </textarea>
+            <spinbox name="priority" from="basespinbox">
+                <area>300,130,100,40</area>
+            </spinbox>
+
+            <textarea name="clauseslabel" from="basetext_s">
+                <area>0,200,100%,40</area>
+                <value>Select a clause from the list.</value>
+                <align>allcenter</align>
+            </textarea>
+
+            <buttonlist name="clauses" from="baseselector">
+                <area>0,265,100%,40</area>
+            </buttonlist>
+
+            <button name="add" from="basebutton">
+                <area>100%-300,330,300,40</area>
+                <value>Add Clause</value>
+            </button>
+
+            <textedit name="description" from="basetexteditmulti">
+                <area>0,395,100%,160</area>
+            </textedit>
+        </group>
+
+        <!-- bottom part with buttons -->
+        <button name="test" from="basebutton">
+            <area>50%-475,100%-65,200,40</area>
+            <value>Test</value>
+        </button>
+        <button name="delete" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Delete</value>
+        </button>
+        <button name="install" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Install</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+275,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
     </window>
-    -->
 
     <!--====================================================================-->
 
