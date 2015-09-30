@@ -289,7 +289,7 @@
                    <alpha>100</alpha>
                 </textarea>
             </state>
-            <state name="selectedactive">
+            <state name="selectedactive" from="active">
                 <area>0,0,100%,55</area>
                 <imagetype name="buttonarrow">
                     <position>100%-25,50%-12</position>
@@ -299,11 +299,8 @@
                 <shape name="background" from="basecontrolbackground">
                     <area>0,0,100%,100%</area>
                 </shape>
-                <shape name="itemseparator" from="baseitemseparator_h">
-                   <position>0,100%</position>
-                </shape>
-                <textarea name="buttontext" from="baseitemtext">
-                    <area>5,0,-5,100%</area>
+                <shape name="itemseparator"/>
+                <textarea name="buttontext">
                     <scroll direction="left" />
                     <alpha>255</alpha>
                 </textarea>
@@ -356,21 +353,16 @@
                     <alpha>150</alpha>
                 </shape>
             </state>
-            <state name="active">
+            <state name="active" from="selectedactive">
                 <area>0,0,100%,40</area>
                 <!-- disable highlighting background when not selected -->
-                <shape name="background" from="basecontrolbackground">
-                    <area>0,0,100%,100%</area>
+                <shape name="background">
                     <alpha>0</alpha>
                 </shape>
-                <textarea name="buttontext" from="basetext_s">
-                    <area>5,0,-20,100%</area>
+                <textarea name="buttontext">
                     <alpha>100</alpha>
                 </textarea>
-                <shape name="line" from="baseitemseparator_h">
-                    <position>0,100%</position>
-                    <alpha>150</alpha>
-                </shape>
+                <shape name="line"/>
             </state>
             <state name="inactive" from="active"/>
             <state name="selectedinactive" from="active"/>
@@ -649,16 +641,14 @@
             <state name="selectedactive" from="active">
                 <area>0,0,100%,100%</area>
                 <shape name="background" from="basecontrolbackground"/>
-                <textarea name="buttontext" from="basetext_s">
-                    <area>5,1,-20,-1</area>
+                <textarea name="buttontext">
                     <scroll direction="horizontal" />
                     <alpha>255</alpha>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
                 <area>0,0,100%,100%</area>
-                <textarea name="buttontext" from="basetext_s">
-                    <area>5,0,-20,100%</area>
+                <textarea name="buttontext">
                     <alpha>150</alpha>
                 </textarea>
             </state>
