@@ -348,6 +348,7 @@
                 <area>0,0,100%,40</area>
                 <textarea name="buttontext" from="basetext_s">
                     <area>5,0,-20,100%</area>
+                    <scroll direction="horizontal" />
                     <alpha>200</alpha>
                 </textarea>
                 <shape name="line" from="baseitemseparator_h">
@@ -563,7 +564,7 @@
             </state>
             <state name="disabled" from="active">
                 <textarea name="text">
-                    <alpha>100</alpha>
+                    <alpha>50</alpha>
                 </textarea>
             </state>
             <state name="pushed" from="selected"/>
@@ -623,6 +624,7 @@
         <textarea name="text" from="basetext_s">
             <area>5,0,-5,100%</area>
             <multiline>yes</multiline>
+            <align>left,bottom</align>
             <alpha>150</alpha>
         </textarea>
     </textedit>
@@ -649,6 +651,7 @@
                 <shape name="background" from="basecontrolbackground"/>
                 <textarea name="buttontext" from="basetext_s">
                     <area>5,1,-20,-1</area>
+                    <scroll direction="horizontal" />
                     <alpha>255</alpha>
                 </textarea>
             </state>
