@@ -875,10 +875,72 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="editpowersearchpopup">
+        <area>-1,0,800,700</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title_text" from="basepopuptitletext">
+            <value>Edit Power Search Fields</value>
+        </textarea>
+        <!-- content part -->
+        <textarea name="titlelabel" from="basetext_s">
+            <area>50,75,-50,40</area>
+            <value>Optional title phrase:</value>
+        </textarea>
+        <textedit name="title_edit" from="basetextedit">
+            <area>50,120,-50,40</area>
+        </textedit>
+
+        <textarea name="subtitlelabel" from="basetext_s">
+            <area>50,185,-50,40</area>
+            <value>Optional subtitle phrase:</value>
+        </textarea>
+        <textedit name="subtitle_edit" from="basetextedit">
+            <area>50,230,-50,40</area>
+        </textedit>
+
+        <textarea name="desclabel" from="basetext_s">
+            <area>50,295,-50,40</area>
+            <value>Optional subtitle phrase:</value>
+        </textarea>
+        <textedit name="desc_edit" from="basetextedit">
+            <area>50,340,-50,40</area>
+        </textedit>
+
+        <textarea name="categorylabel" from="basetext_s">
+            <area>50,405,250,40</area>
+            <value>Category:</value>
+        </textarea>
+        <buttonlist name="category_list" from="baseselector">
+            <area>300,405,-50,40</area>
+        </buttonlist>
+
+        <textarea name="genrelabel" from="basetext_s">
+            <area>50,470,250,40</area>
+            <value>Genre:</value>
+        </textarea>
+        <buttonlist name="genre_list" from="baseselector">
+            <area>300,470,-50,40</area>
+        </buttonlist>
+
+        <textarea name="channellabel" from="basetext_s">
+            <area>50,535,250,40</area>
+            <value>Channel:</value>
+        </textarea>
+        <buttonlist name="channel_list" from="baseselector">
+            <area>300,535,-50,40</area>
+        </buttonlist>
+
+        <!-- bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
     </window>
-    -->
 
     <!--====================================================================-->
 
