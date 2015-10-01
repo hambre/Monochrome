@@ -731,7 +731,7 @@
         </textarea>
         <!-- middle part -->
         <group name="content">
-            <area>50%-450,200,900,490</area>
+            <area>50%-475,200,950,490</area>
             <textarea name="ruleslabel" from="basetext_s">
                 <area>0,0,300,40</area>
                 <value>Existing Rules:</value>
