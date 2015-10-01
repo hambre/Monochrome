@@ -346,7 +346,7 @@
                 <textarea name="buttontext" from="basetext_s">
                     <area>5,0,-20,100%</area>
                     <scroll direction="horizontal" />
-                    <alpha>200</alpha>
+                    <alpha>255</alpha>
                 </textarea>
                 <shape name="line" from="baseitemseparator_h">
                     <position>0,100%</position>
@@ -360,12 +360,20 @@
                     <alpha>0</alpha>
                 </shape>
                 <textarea name="buttontext">
-                    <alpha>100</alpha>
+                    <alpha>150</alpha>
                 </textarea>
                 <shape name="line"/>
             </state>
-            <state name="inactive" from="active"/>
-            <state name="selectedinactive" from="active"/>
+            <state name="inactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>50</alpha>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>100</alpha>
+                </textarea>
+            </state>
         </statetype>
         <statetype name="downscrollarrow">
             <position>100%-15,50%-10</position>
@@ -631,7 +639,7 @@
                 <area>0,0,100%-15,100%</area>
                 <textarea name="buttontext" from="basetext_s">
                     <area>5,1,-20,-1</area>
-                    <alpha>100</alpha>
+                    <alpha>150</alpha>
                 </textarea>
                 <shape name="line" from="baseitemseparator_h">
                     <position>0,100%</position>
@@ -649,7 +657,12 @@
             <state name="selectedinactive" from="active">
                 <area>0,0,100%,100%</area>
                 <textarea name="buttontext">
-                    <alpha>150</alpha>
+                    <alpha>100</alpha>
+                </textarea>
+            </state>
+            <state name="inactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>50</alpha>
                 </textarea>
             </state>
         </statetype>
