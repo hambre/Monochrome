@@ -1013,7 +1013,7 @@
             <group name="facts">
                 <area>0,100%-120,100%,120</area>
                 <!-- left side -->
-                <imagetype name="sender" from="baseicon">
+                <imagetype name="sender" from="baseicon" depends="longchannel">
                     <area>0,0,32,32</area>
                     <filename>images/icons/Sender.png</filename>
                 </imagetype>
@@ -1021,7 +1021,7 @@
                     <area>50,0,50%,32</area>
                     <alpha>150</alpha>
                 </textarea>
-                <imagetype name="aried" from="baseicon">
+                <imagetype name="aried" from="baseicon" depends="timedate">
                     <area>0,40,32,32</area>
                     <filename>images/icons/Clock.png</filename>
                 </imagetype>
@@ -1030,7 +1030,7 @@
                     <alpha>150</alpha>
                     <template>%TIMEDATE% (%LENMINS%)</template>
                 </textarea>
-                <imagetype name="record" from="baseicon">
+                <imagetype name="record" from="baseicon" depends="rectypestatus">
                     <area>0,80,32,32</area>
                     <filename>images/icons/Record.png</filename>
                 </imagetype>
