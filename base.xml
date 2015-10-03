@@ -527,7 +527,7 @@
 
     <!-- button -->
     <button name="basebutton">
-        <area>0,0,150,40</area>
+        <area>0,0,200,40</area>
         <statetype name="buttonstate">
             <area>0,0,100%,100%</area>
             <state name="active">
