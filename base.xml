@@ -1090,10 +1090,29 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="MythDialogBox">
+        <area>-1,0,800,550</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext"/>
+        <textarea name="messagearea" from="basetext_s">
+            <area>50,70,-50,160</area>
+            <align>left,vcenter</align>
+            <multiline>yes</multiline>
+            <scroll direction="vertical"/>
+        </textarea>
+        <shape name="separator" from="baseseparator_h">
+            <position>0,245</position>
+        </shape>
+        <buttonlist name="list" from="baseitemlist">
+            <align>vcenter</align>
+            <area>50,260,-50,-25</area>
+        </buttonlist>
     </window>
-    -->
 
     <!--====================================================================-->
 
