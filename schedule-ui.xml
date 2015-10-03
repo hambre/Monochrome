@@ -1169,10 +1169,140 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="scheduleeditor">
+        <!-- background and decoration -->
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basetitletext">
+            <value>Schedule Editor</value>
+        </textarea>
+        <!-- middle part -->
+        <group name="content">
+            <area>50%-725,200,1450,600</area>
+            <group name="left">
+                <area>0,0,1000,100%</area>
+                <textarea name="ruleslabel" from="basetext_s">
+                    <area>0,0,350,40</area>
+                    <value>Select the recording rule</value>
+                </textarea>
+                <buttonlist name="rules" from="baseselector">
+                    <area>350,0,650,40</area>
+                </buttonlist>
+                <group name="details">
+                    <area>0,90,100%,100%</area>
+                    <textarea name="title" from="basetext_m">
+                        <area>0,0,100%,50</area>
+                        <scroll direction="horizontal"/>
+                        <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+                    </textarea>
+                    <textarea name="description" from="basetext_s">
+                        <area>0,65,100%,320</area>
+                        <multiline>yes</multiline>
+                        <cutdown>yes</cutdown>
+                        <align>justify,top</align>
+                        <alpha>200</alpha>
+                    </textarea>
+                    <textarea name="help2text" from="basetext_s">
+                        <area>0,0,100%,100%</area>
+                        <multiline>yes</multiline>
+                        <alpha>200</alpha>
+                    </textarea>
+                    <group name="facts">
+                        <area>0,100%-120,100%,120</area>
+                        <!-- left side -->
+                        <imagetype name="sender" from="baseicon" depends="longchannel">
+                            <area>0,0,32,32</area>
+                            <filename>images/icons/Sender.png</filename>
+                        </imagetype>
+                        <textarea name="longchannel" from="basetext_xs">
+                            <area>50,0,50%,32</area>
+                            <alpha>150</alpha>
+                        </textarea>
+                        <imagetype name="aried" from="baseicon" depends="timedate">
+                            <area>0,40,32,32</area>
+                            <filename>images/icons/Clock.png</filename>
+                        </imagetype>
+                        <textarea name="timedate" from="basetext_xs">
+                            <area>50,40,50%,32</area>
+                            <alpha>150</alpha>
+                            <template>%TIMEDATE% (%LENMINS%)</template>
+                        </textarea>
+                        <imagetype name="record" from="baseicon" depends="rectypestatus">
+                            <area>0,80,32,32</area>
+                            <filename>images/icons/Record.png</filename>
+                        </imagetype>
+                        <textarea name="rectypestatus" from="basetext_xs">
+                            <area>50,80,50%,32</area>
+                            <alpha>150</alpha>
+                        </textarea>
+                        <!-- right side -->
+                        <imagetype name="group" from="baseicon" depends="recgroup">
+                            <area>50%,0,32,32</area>
+                            <filename>images/icons/Group.png</filename>
+                        </imagetype>
+                        <textarea name="recgroup" from="basetext_xs">
+                            <area>50%+50,0,100%,32</area>
+                            <alpha>150</alpha>
+                        </textarea>
+                        <imagetype name="storageicon" from="baseicon">
+                            <area>50%,40,32,32</area>
+                            <filename>images/icons/Storage.png</filename>
+                        </imagetype>
+                        <textarea name="storagegroup" from="basetext_xs">
+                            <area>50%+50,40,100%,32</area>
+                            <alpha>150</alpha>
+                        </textarea>
+                        <imagetype name="idicon" from="baseicon">
+                            <area>50%,80,32,32</area>
+                            <filename>images/icons/Number.png</filename>
+                        </imagetype>
+                        <textarea name="programid" from="basetext_xs">
+                            <area>50%+50,80,100%,32</area>
+                            <alpha>150</alpha>
+                        </textarea>
+                    </group>
+                </group>
+            </group>
+            <shape name="separator" from="baseseparator_v">
+                <position>1050,0</position>
+            </shape>
+            <group name="buttons">
+                <area>1100,0,350,100%</area>
+                <button name="schedoptions" from="basebutton">
+                    <area>0,0,100%,40</area>
+                    <value>Schedule Options</value>
+                </button>
+                <button name="storeoptions" from="basebutton">
+                    <area>0,65,100%,40</area>
+                    <value>Storage Options</value>
+                </button>
+                <button name="metadata" from="basebutton">
+                    <area>0,130,100%,40</area>
+                    <value>Metadata Options</value>
+                </button>
+                <button name="postprocessing" from="basebutton">
+                    <area>0,195,100%,40</area>
+                    <value>Post Processing</value>
+                </button>
+                <button name="schedinfo" from="basebutton">
+                    <area>0,260,100%,40</area>
+                    <value>Schedule Info</value>
+                </button>
+                <button name="preview" from="basebutton">
+                    <area>0,325,100%,40</area>
+                    <value>Preview</value>
+                </button>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="save" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
     </window>
-    -->
 
     <!--====================================================================-->
 
