@@ -804,13 +804,11 @@
 
     <window name="edit_metadata">
         <imagetype name="fanart" from="basetitlebackground"/>
-        <shape name="background" from="basebackground">
-            <alpha>200</alpha>
-        </shape>
-        <group name="pageheader" from="baseheader" />
-        <shape name="pagefooter" from="basebackground">
-            <area>0,100%-90,100%,90</area>
-        </shape>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <alpha>200</alpha>
+            </shape>
+        </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Edit Video Information</value>
         </textarea>
