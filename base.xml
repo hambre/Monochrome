@@ -922,27 +922,27 @@
 
     <group name="basescheduleiconfactsext">
         <area>0,0,100%,120</area>
-        <imagetype name="group" from="baseicon" depends="recgroup">
+        <imagetype name="idicon" from="baseicon" depends="programid">
             <area>0,0,32,32</area>
-            <filename>images/icons/Group.png</filename>
-        </imagetype>
-        <textarea name="recgroup" from="basetext_xs">
-            <area>50,0,100%,32</area>
-            <alpha>150</alpha>
-        </textarea>
-        <imagetype name="storageicon" from="baseicon">
-            <area>0,40,32,32</area>
-            <filename>images/icons/Storage.png</filename>
-        </imagetype>
-        <textarea name="storagegroup" from="basetext_xs">
-            <area>50,40,100%,32</area>
-            <alpha>150</alpha>
-        </textarea>
-        <imagetype name="idicon" from="baseicon">
-            <area>0,80,32,32</area>
             <filename>images/icons/Number.png</filename>
         </imagetype>
         <textarea name="programid" from="basetext_xs">
+            <area>50,0,100%,32</area>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="group" from="baseicon" depends="recgroup">
+            <area>0,40,32,32</area>
+            <filename>images/icons/Group.png</filename>
+        </imagetype>
+        <textarea name="recgroup" from="basetext_xs">
+            <area>50,40,100%,32</area>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="storageicon" from="baseicon" depends="storagegroup">
+            <area>0,80,32,32</area>
+            <filename>images/icons/Storage.png</filename>
+        </imagetype>
+        <textarea name="storagegroup" from="basetext_xs">
             <area>50,80,100%,32</area>
             <alpha>150</alpha>
         </textarea>
