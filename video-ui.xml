@@ -5,7 +5,7 @@
         <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Video Browser</value>
         </textarea>
 
@@ -144,7 +144,7 @@
         <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Video Gallery</value>
         </textarea>
 
@@ -229,7 +229,7 @@
         <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Video List</value>
         </textarea>
 
@@ -299,7 +299,7 @@
         <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Video Manager</value>
         </textarea>
 
@@ -659,7 +659,7 @@
     <!--====================================================================-->
 
     <window name="playersettings">
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Player Settings</value>
         </textarea>
         <group name="decoration" from="basesettingsdecoration"/>
@@ -738,7 +738,7 @@
     <!--====================================================================-->
 
     <window name="metadatasettings">
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Video Metadata Settings</value>
         </textarea>
         <group name="decoration" from="basesettingsdecoration"/>
@@ -811,7 +811,7 @@
         <shape name="pagefooter" from="basebackground">
             <area>0,100%-90,100%,90</area>
         </shape>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Edit Video Information</value>
         </textarea>
         <group name="content">
@@ -1072,7 +1072,7 @@
     <!--====================================================================-->
 
     <window name="file_associations">
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Video File Associations</value>
         </textarea>
         <group name="decoration" from="basesettingsdecoration"/>

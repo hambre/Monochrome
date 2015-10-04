@@ -12,7 +12,7 @@
         <!-- background and decoration -->
         <imagetype name="fanart" from="basetitlebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Watch Recordings</value>
         </textarea>
 

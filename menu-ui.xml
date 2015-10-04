@@ -80,7 +80,7 @@
         </statetype>
 
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Main Menu</value>
         </textarea>
 

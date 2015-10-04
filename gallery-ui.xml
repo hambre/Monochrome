@@ -8,7 +8,7 @@
             <filename>images/BackgroundPictures.jpg</filename>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Image Gallery</value>
         </textarea>
         <buttonlist name="images" from="baseitemlist">

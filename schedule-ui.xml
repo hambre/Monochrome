@@ -8,7 +8,7 @@
                 <alpha>0</alpha>
             </clock>
         </group>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Program Guide</value>
         </textarea>
         <textarea name="datetext" from="basetext_s">
@@ -163,7 +163,7 @@
                 <alpha>0</alpha>
             </clock>
         </group>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Program Guide</value>
         </textarea>
         <textarea name="datetext" from="basetext_s">
@@ -310,7 +310,7 @@
 
     <window name="manualschedule">
         <group name="decoration" from="basesettingsdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Manual Recording Schedule</value>
         </textarea>
         <group name="widgets">
@@ -384,7 +384,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Scheduled Recordings</value>
         </textarea>
         <!-- left side -->
@@ -476,7 +476,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="title" from="basetitletext">
+        <textarea name="title" from="basepagetitletext">
             <value>Channel Recording Priorities</value>
         </textarea>
         <!-- left side -->
@@ -556,7 +556,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="sched" from="basetitletext">
+        <textarea name="sched" from="basepagetitletext">
             <value>Manage Recording Rules</value>
         </textarea>
         <!-- left side -->
@@ -669,7 +669,7 @@
     <window name="custompriority">
         <!-- background and decoration -->
         <group name="decoration" from="basesettingsdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Custom Priority Rules</value>
         </textarea>
         <!-- middle part -->
@@ -894,7 +894,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="sched" from="basetitletext">
+        <textarea name="sched" from="basepagetitletext">
             <value>Program Listings</value>
         </textarea>
         <!-- left side -->
@@ -974,7 +974,7 @@
     <window name="progdetails">
         <group name="pageheader" from="baseheader" />
         <group name="pagefooter" from="basefooter" />
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Program Details:</value>
         </textarea>
         <webbrowser name="browser">
@@ -1000,7 +1000,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
-        <textarea name="sched" from="basetitletext">
+        <textarea name="sched" from="basepagetitletext">
             <value>Program Finder</value>
         </textarea>
         <!-- left part -->
@@ -1055,7 +1055,7 @@
     <window name="scheduleeditor">
         <!-- background and decoration -->
         <group name="decoration" from="basesettingsdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Editor</value>
         </textarea>
         <!-- middle part -->
@@ -1135,7 +1135,7 @@
     <window name="scheduleoptionseditor">
         <!-- background and decoration -->
         <group name="decoration" from="basesettingsdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Options</value>
         </textarea>
         <group name="content">
@@ -1237,7 +1237,7 @@
     <window name="customedit">
         <!-- background and decoration -->
         <group name="decoration" from="basesettingsdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>Custom Record Rules</value>
         </textarea>
         <!-- middle part -->

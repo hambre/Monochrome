@@ -237,7 +237,7 @@
     </textarea>
 
     <!-- text for screen titles -->
-    <textarea name="basetitletext">
+    <textarea name="basepagetitletext">
         <area>250, 0, -250, 50</area>
         <font>basefont_m</font>
         <multiline>no</multiline>
@@ -246,7 +246,7 @@
     </textarea>
 
     <!-- text for popup window titles -->
-    <textarea name="basepopuptitletext" from="basetitletext">
+    <textarea name="basepopuptitletext" from="basepagetitletext">
         <area>0,0,100%,50</area>
         <alpha>200</alpha>
     </textarea>
@@ -1286,7 +1286,7 @@
 
     <window name="MythFileBrowser">
         <group name="decoration" from="basesettingsdecoration"/>
-        <textarea name="pagetitle" from="basetitletext">
+        <textarea name="pagetitle" from="basepagetitletext">
             <value>File Browser</value>
         </textarea>
         <buttonlist name="filelist" from="baseitemlist">
