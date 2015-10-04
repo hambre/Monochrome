@@ -360,6 +360,7 @@
                     <alpha>0</alpha>
                 </shape>
                 <textarea name="buttontext">
+                    <scroll direction="none" />
                     <alpha>150</alpha>
                 </textarea>
                 <shape name="line"/>
