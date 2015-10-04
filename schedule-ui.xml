@@ -1060,15 +1060,15 @@
         </textarea>
         <!-- middle part -->
         <group name="content">
-            <area>50%-725,200,1500,600</area>
+            <area>50%-750,200,1500,600</area>
             <group name="left">
-                <area>0,0,1000,100%</area>
+                <area>0,0,1050,100%</area>
                 <textarea name="ruleslabel" from="basetext_s">
                     <area>0,0,350,40</area>
                     <value>Select the recording rule</value>
                 </textarea>
                 <buttonlist name="rules" from="baseselector">
-                    <area>350,0,650,40</area>
+                    <area>375,0,100%,40</area>
                 </buttonlist>
                 <group name="details">
                     <area>0,90,100%,100%</area>
@@ -1083,16 +1083,16 @@
                         </group>
                         <!-- right side -->
                         <group name="iconfacts2" from="basescheduleiconfactsext">
-                            <area>50%,0,100%,120</area>
+                            <area>60%,0,100%,120</area>
                         </group>
                     </group>
                 </group>
             </group>
             <shape name="separator" from="baseseparator_v">
-                <position>1050,0</position>
+                <position>1100,0</position>
             </shape>
             <group name="buttons">
-                <area>1100,0,350,100%</area>
+                <area>1150,0,350,100%</area>
                 <button name="schedoptions" from="basebutton">
                     <area>0,0,100%,40</area>
                     <value>Schedule Options</value>
@@ -1139,21 +1139,24 @@
             <value>Schedule Options</value>
         </textarea>
         <group name="content">
-            <area>50%-725,200,1450,600</area>
-            <group name="titledesc" from="basetitledesc">
-                <area>0,0,750,480</area>
-            </group>
-            <group name="iconfacts" from="basescheduleiconfacts">
-                <area>0,480,50%,120</area>
-            </group>
-            <group name="iconfacts2" from="basescheduleiconfactsext">
-                <area>450,480,100%,120</area>
+            <area>50%-750,200,1500,600</area>
+            <group name="details">
+                <area>0,0,800,100%</area>
+                <group name="titledesc" from="basetitledesc">
+                    <area>0,0,100%,480</area>
+                </group>
+                <group name="iconfacts" from="basescheduleiconfacts">
+                    <area>0,480,70%,120</area>
+                </group>
+                <group name="iconfacts2" from="basescheduleiconfactsext">
+                    <area>70%,480,100%,120</area>
+                </group>
             </group>
             <shape name="separator" from="baseseparator_v">
-                <position>800,0</position>
+                <position>850,0</position>
             </shape>
             <group name="controls">
-                <area>850,0,600,100%</area>
+                <area>900,0,600,100%</area>
                 <textarea name="ruleactivelabel" from="basetext_s">
                     <area>5,0,300,40</area>
                     <value>Recording Rule Active</value>
