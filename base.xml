@@ -310,8 +310,8 @@
                 <shape name="background">
                     <alpha>0</alpha>
                 </shape>
-                <textarea name="buttontext">
-                    <scroll direction="none" />
+                <textarea name="buttontext" from="basetext_s">
+                    <area>5,0,-20,100%</area>
                     <alpha>150</alpha>
                 </textarea>
                 <shape name="line"/>
