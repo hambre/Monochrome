@@ -972,8 +972,7 @@
     <!--====================================================================-->
 
     <window name="progdetails">
-        <group name="pageheader" from="baseheader" />
-        <group name="pagefooter" from="basefooter" />
+        <group name="decoration" from="basewindowdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Program Details:</value>
         </textarea>
