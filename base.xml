@@ -129,55 +129,6 @@
         <area>0,0,100%,50</area>
     </shape>
 
-    <!-- default screen header -->
-    <group name="baseheader">
-        <area>0, 0, 100%, 50</area>
-        <shape name="headerbar" from="basebar" />
-        <shape name="headersep" from="baseseparator_h">
-            <position>0,50</position>
-        </shape>
-        <clock name="date">
-            <area>25,0,250,50</area>
-            <font>basefont_s</font>
-            <align>left,vcenter</align>
-            <alpha>100</alpha>
-            <template>%DATE%</template>
-        </clock>
-        <clock name="time">
-            <area>1645,0,250,50</area>
-            <font>basefont_s</font>
-            <align>right,vcenter</align>
-            <alpha>100</alpha>
-            <template>%TIME%</template>
-        </clock>
-    </group>
-
-    <!-- default screen footer -->
-    <group name="basefooter">
-        <area>0, 100%-50, 100%, 50</area>
-        <shape name="footerbar" from="basebar">
-            <position>0, 0</position>
-        </shape>
-        <shape name="footersep" from="baseseparator_h">
-            <position>0, 0</position>
-        </shape>
-    </group>
-
-    <!-- header for popup windows -->
-    <group name="basepopupheader">
-        <area>0,0,100%,100%</area>
-        <!-- make titlebar 50px higher to accomodate animation overshooting -->
-        <shape name="titlebar" from="basebar">
-            <area>0,0,100%,100</area>
-        </shape>
-        <shape name="frame" from="basepopupbackground">
-            <area>0,0,100%,100%</area>
-            <alpha>240</alpha>
-        </shape>
-        <shape name="titleseparator" from="baseseparator_h">
-            <position>0,99</position>
-        </shape>
-    </group>
 
     <!-- the content background -->
     <group name="basecontent">
@@ -969,6 +920,56 @@
 
     <!--====================================================================-->
 
+    <!-- default screen header -->
+    <group name="baseheader">
+        <area>0, 0, 100%, 50</area>
+        <shape name="headerbar" from="basebar" />
+        <shape name="headersep" from="baseseparator_h">
+            <position>0,50</position>
+        </shape>
+        <clock name="date">
+            <area>25,0,250,50</area>
+            <font>basefont_s</font>
+            <align>left,vcenter</align>
+            <alpha>100</alpha>
+            <template>%DATE%</template>
+        </clock>
+        <clock name="time">
+            <area>1645,0,250,50</area>
+            <font>basefont_s</font>
+            <align>right,vcenter</align>
+            <alpha>100</alpha>
+            <template>%TIME%</template>
+        </clock>
+    </group>
+
+    <!-- default screen footer -->
+    <group name="basefooter">
+        <area>0, 100%-50, 100%, 50</area>
+        <shape name="footerbar" from="basebar">
+            <area>0,0,100%,100%</area>
+        </shape>
+        <shape name="footersep" from="baseseparator_h">
+            <position>0, 0</position>
+        </shape>
+    </group>
+
+    <!-- header for popup windows -->
+    <group name="basepopupheader">
+        <area>0,0,100%,100%</area>
+        <!-- make titlebar 50px higher to accomodate animation overshooting -->
+        <shape name="titlebar" from="basebar">
+            <area>0,0,100%,100</area>
+        </shape>
+        <shape name="frame" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+            <alpha>240</alpha>
+        </shape>
+        <shape name="titleseparator" from="baseseparator_h">
+            <position>0,99</position>
+        </shape>
+    </group>
+
     <!-- decoration for popup windows -->
     <group name="basepopupdecoration">
         <area>0,0,100%,100%</area>
@@ -1012,9 +1013,9 @@
         <shape name="background" from="basebackground"/>
         <group name="pageheader" from="baseheader" />
         <!-- content goes here -->
-        <shape name="separator" from="baseseparator_h">
-            <position>0,100%-90</position>
-        </shape>
+        <group name="pagefooter" from="basefooter">
+            <area>0,100%-90,100%,100%</area>
+        </group>
         <!-- buttons go here -->
     </group>
 
