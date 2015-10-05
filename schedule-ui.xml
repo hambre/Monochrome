@@ -1053,69 +1053,66 @@
 
     <window name="scheduleeditor">
         <!-- background and decoration -->
-        <group name="decoration" from="basesettingsdecoration"/>
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,440,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,440</position>
+            </shape>
+        </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Editor</value>
         </textarea>
-        <!-- middle part -->
-        <group name="content">
-            <area>50%-750,200,1500,600</area>
-            <group name="left">
-                <area>0,0,1050,100%</area>
-                <textarea name="ruleslabel" from="basetext_s">
-                    <area>0,0,350,40</area>
-                    <value>Select the recording rule</value>
-                </textarea>
-                <buttonlist name="rules" from="baseselector">
-                    <area>375,0,100%,40</area>
-                </buttonlist>
-                <group name="details">
-                    <area>0,90,100%,100%</area>
-                    <group name="titledesc" from="basetitledesc">
-                        <area>0,0,100%,385</area>
-                    </group>
-                    <group name="facts">
-                        <area>0,100%-120,100%,120</area>
-                        <!-- left side -->
-                        <group name="iconfacts" from="basescheduleiconfacts">
-                            <area>0,0,50%,120</area>
-                        </group>
-                        <!-- right side -->
-                        <group name="iconfacts2" from="basescheduleiconfactsext">
-                            <area>60%,0,100%,120</area>
-                        </group>
-                    </group>
-                </group>
+        <!-- left side -->
+        <group name="controls">
+            <area>50,465,500,-115</area>
+            <buttonlist name="rules" from="baseselector">
+                <area>0,0,100%,40</area>
+            </buttonlist>
+            <button name="schedoptions" from="basebutton">
+                <area>0,65,100%,40</area>
+                <value>Schedule Options</value>
+            </button>
+            <button name="storeoptions" from="basebutton">
+                <area>0,130,100%,40</area>
+                <value>Storage Options</value>
+            </button>
+            <button name="metadata" from="basebutton">
+                <area>0,195,100%,40</area>
+                <value>Metadata Options</value>
+            </button>
+            <button name="postprocessing" from="basebutton">
+                <area>0,260,100%,40</area>
+                <value>Post Processing</value>
+            </button>
+            <button name="schedinfo" from="basebutton">
+                <area>0,325,100%,40</area>
+                <value>Schedule Info</value>
+            </button>
+            <button name="preview" from="basebutton">
+                <area>0,390,100%,40</area>
+                <value>Preview</value>
+            </button>
+        </group>
+        <!-- right side -->
+        <group name="details">
+            <area>600,465,-50,-115</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,-120</area>
             </group>
-            <shape name="separator" from="baseseparator_v">
-                <position>1100,0</position>
-            </shape>
-            <group name="buttons">
-                <area>1150,0,350,100%</area>
-                <button name="schedoptions" from="basebutton">
-                    <area>0,0,100%,40</area>
-                    <value>Schedule Options</value>
-                </button>
-                <button name="storeoptions" from="basebutton">
-                    <area>0,65,100%,40</area>
-                    <value>Storage Options</value>
-                </button>
-                <button name="metadata" from="basebutton">
-                    <area>0,130,100%,40</area>
-                    <value>Metadata Options</value>
-                </button>
-                <button name="postprocessing" from="basebutton">
-                    <area>0,195,100%,40</area>
-                    <value>Post Processing</value>
-                </button>
-                <button name="schedinfo" from="basebutton">
-                    <area>0,260,100%,40</area>
-                    <value>Schedule Info</value>
-                </button>
-                <button name="preview" from="basebutton">
-                    <area>0,325,100%,40</area>
-                    <value>Preview</value>
-                </button>
+            <!-- left side -->
+            <group name="iconfacts" from="basescheduleiconfacts">
+                <area>0,100%-112,50%,120</area>
+            </group>
+            <!-- right side -->
+            <group name="iconfacts2" from="basescheduleiconfactsext">
+                <area>60%,100%-112,100%,120</area>
             </group>
         </group>
         <!-- bottom part with buttons -->
@@ -1133,74 +1130,81 @@
 
     <window name="scheduleoptionseditor">
         <!-- background and decoration -->
-        <group name="decoration" from="basesettingsdecoration"/>
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,440,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,440</position>
+            </shape>
+        </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Options</value>
         </textarea>
-        <group name="content">
-            <area>50%-750,200,1500,600</area>
-            <group name="details">
-                <area>0,0,800,100%</area>
-                <group name="titledesc" from="basetitledesc">
-                    <area>0,0,100%,480</area>
-                </group>
-                <group name="iconfacts" from="basescheduleiconfacts">
-                    <area>0,480,70%,120</area>
-                </group>
-                <group name="iconfacts2" from="basescheduleiconfactsext">
-                    <area>70%,480,100%,120</area>
-                </group>
+        <!-- left side -->
+        <group name="controls">
+            <area>50,465,500,-115</area>
+            <textarea name="ruleactivelabel" from="basetext_s">
+                <area>5,0,300,40</area>
+                <value>Recording Rule Active</value>
+            </textarea>
+            <checkbox name="ruleactive" from="basecheckbox">
+                <area>100%-32,4,100%,40</area>
+            </checkbox>
+
+            <spinbox name="priority" from="basespinbox">
+                <area>0,65,100%,40</area>
+                <template type="negative">Reduce priority by %n</template>
+                <template type="zero">Normal recording priority</template>
+                <template type="positive">Raise priority by %n</template>
+            </spinbox>
+
+            <buttonlist name="input" from="baseselector">
+                <area>0,130,100%,40</area>
+            </buttonlist>
+
+            <spinbox name="startoffset" from="basespinbox">
+                <area>0,195,100%,40</area>
+                <template type="negative">Start recording %n minute(s) late</template>
+                <template type="zero">Start recording on time</template>
+                <template type="positive">Start recording %n minute(s) early</template>
+            </spinbox>
+
+            <spinbox name="endoffset" from="basespinbox">
+                <area>0,260,100%,40</area>
+                <template type="negative">End recording %n minute(s) early</template>
+                <template type="zero">End recording on time</template>
+                <template type="positive">End recording %n minute(s) late</template>
+            </spinbox>
+
+            <buttonlist name="dupmethod" from="baseselector">
+                <area>0,325,100%,40</area>
+            </buttonlist>
+
+            <buttonlist name="dupscope" from="baseselector">
+                <area>0,390,100%,40</area>
+            </buttonlist>
+
+            <button name="filters" from="basebutton">
+                <area>0,100%-40,100%,40</area>
+                <value>Schedule filters</value>
+            </button>
+        </group>
+        <group name="details">
+            <area>600,465,-50,-115</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,-120</area>
             </group>
-            <shape name="separator" from="baseseparator_v">
-                <position>850,0</position>
-            </shape>
-            <group name="controls">
-                <area>900,0,600,100%</area>
-                <textarea name="ruleactivelabel" from="basetext_s">
-                    <area>5,0,300,40</area>
-                    <value>Recording Rule Active</value>
-                </textarea>
-                <checkbox name="ruleactive" from="basecheckbox">
-                    <area>100%-32,4,100%,40</area>
-                </checkbox>
-
-                <spinbox name="priority" from="basespinbox">
-                    <area>0,65,100%,40</area>
-                    <template type="negative">Reduce priority by %n</template>
-                    <template type="zero">Normal recording priority</template>
-                    <template type="positive">Raise priority by %n</template>
-                </spinbox>
-
-                <buttonlist name="input" from="baseselector">
-                    <area>0,130,100%,40</area>
-                </buttonlist>
-
-                <spinbox name="startoffset" from="basespinbox">
-                    <area>0,195,100%,40</area>
-                    <template type="negative">Start recording %n minute(s) late</template>
-                    <template type="zero">Start recording on time</template>
-                    <template type="positive">Start recording %n minute(s) early</template>
-                </spinbox>
-
-                <spinbox name="endoffset" from="basespinbox">
-                    <area>0,260,100%,40</area>
-                    <template type="negative">End recording %n minute(s) early</template>
-                    <template type="zero">End recording on time</template>
-                    <template type="positive">End recording %n minute(s) late</template>
-                </spinbox>
-
-                <buttonlist name="dupmethod" from="baseselector">
-                    <area>0,325,100%,40</area>
-                </buttonlist>
-
-                <buttonlist name="dupscope" from="baseselector">
-                    <area>0,390,100%,40</area>
-                </buttonlist>
-
-                <button name="filters" from="basebutton">
-                    <area>0,100%-40,100%,40</area>
-                    <value>Schedule filters</value>
-                </button>
+            <group name="iconfacts" from="basescheduleiconfacts">
+                <area>0,100%-112,70%,120</area>
+            </group>
+            <group name="iconfacts2" from="basescheduleiconfactsext">
+                <area>70%,100%-112,100%,120</area>
             </group>
         </group>
         <!-- bottom part with buttons -->
