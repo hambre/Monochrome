@@ -1239,13 +1239,25 @@
 
     <window name="customedit">
         <!-- background and decoration -->
-        <group name="decoration" from="basesettingsdecoration"/>
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,390,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,390</position>
+            </shape>
+        </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Custom Record Rules</value>
         </textarea>
         <!-- middle part -->
         <group name="content">
-            <area>50%-500,200,1000,500</area>
+            <area>50%-500,425,1000,-115</area>
             <textarea name="ruleslabel" from="basetext_s">
                 <area>0,0,300,40</area>
                 <value>Existing Rules:</value>
