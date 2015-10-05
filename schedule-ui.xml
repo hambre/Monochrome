@@ -309,12 +309,25 @@
     <!--====================================================================-->
 
     <window name="manualschedule">
-        <group name="decoration" from="basesettingsdecoration"/>
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,440,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,440</position>
+            </shape>
+        </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Manual Recording Schedule</value>
         </textarea>
         <group name="widgets">
-            <area>50%-500,50%-250,1000,300</area>
+            <area>50%-500,550,1000,-115</area>
             <group name="labels">
                 <area>0,0,35%,100%</area>
                 <textarea name="titlelabel" from="basetext_s">
