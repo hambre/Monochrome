@@ -1179,7 +1179,7 @@
                 <value>Recording Rule Active</value>
             </textarea>
             <checkbox name="ruleactive" from="basecheckbox">
-                <area>100%-32,4,100%,40</area>
+                <area>100%-32,4,100%,32</area>
             </checkbox>
 
             <spinbox name="priority" from="basespinbox">
@@ -1220,6 +1220,7 @@
                 <value>Schedule filters</value>
             </button>
         </group>
+        <!-- right side -->
         <group name="details">
             <area>600,465,-50,-115</area>
             <group name="titledesc" from="basetitledesc">
@@ -1241,10 +1242,74 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="storageoptionseditor">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,440,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,440</position>
+            </shape>
+        </group>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Storage Options</value>
+        </textarea>
+        <!-- left side -->
+        <group name="controls">
+            <area>50,465,500,-115</area>
+            <buttonlist name="recprofile" from="baseselector">
+                <area>0,0,100%,40</area>
+            </buttonlist>
+            <buttonlist name="recgroup" from="baseselector">
+                <area>0,65,100%,40</area>
+            </buttonlist>
+            <buttonlist name="storagegroup" from="baseselector">
+                <area>0,130,100%,40</area>
+            </buttonlist>
+            <buttonlist name="playgroup" from="baseselector">
+                <area>0,195,100%,40</area>
+            </buttonlist>
+            <spinbox name="maxepisodes" from="basespinbox">
+                <area>0,260,100%,40</area>
+                <template type="zero">No episode limit</template>
+                <template type="positive">Keep at most %n episode(s)</template>
+            </spinbox>
+            <buttonlist name="maxnewest" from="baseselector">
+                <area>0,325,100%,40</area>
+            </buttonlist>
+            <textarea name="autoexpirelabel" from="basetext_s">
+                <area>0,390,-50,40</area>
+                <value>Allow recordings to expire?</value>
+            </textarea>
+            <checkbox name="autoexpire" from="basecheckbox">
+                <area>100%-32,394,32,32</area>
+            </checkbox>
+        </group>
+        <!-- right side -->
+        <group name="details">
+            <area>600,465,-50,-115</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,-120</area>
+            </group>
+            <group name="iconfacts" from="basescheduleiconfacts">
+                <area>0,100%-112,70%,120</area>
+            </group>
+            <group name="iconfacts2" from="basescheduleiconfactsext">
+                <area>70%,100%-112,100%,120</area>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="back" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Back</value>
+        </button>
     </window>
-    -->
 
     <!--====================================================================-->
 
