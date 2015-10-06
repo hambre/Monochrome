@@ -87,7 +87,7 @@
             <imagetype name="coverart">
                 <area>0,0,350,505</area>
             </imagetype>
-            <shape name="previewframe" depends="!coverart">
+            <shape name="previewframe" depends="!coverart&amp;preview">
                 <type>box</type>
                 <area>0,0,350,505</area>
                 <fill style="gradient">
