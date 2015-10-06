@@ -1173,7 +1173,7 @@
         </textarea>
         <!-- left side -->
         <group name="controls">
-            <area>50,465,500,-115</area>
+            <area>50,465,600,-115</area>
             <textarea name="ruleactivelabel" from="basetext_s">
                 <area>5,0,300,40</area>
                 <value>Recording Rule Active</value>
@@ -1222,7 +1222,7 @@
         </group>
         <!-- right side -->
         <group name="details">
-            <area>600,465,-50,-115</area>
+            <area>700,465,-50,-115</area>
             <group name="titledesc" from="basetitledesc">
                 <area>0,0,100%,-120</area>
             </group>
@@ -1262,7 +1262,7 @@
         </textarea>
         <!-- left side -->
         <group name="controls">
-            <area>50,465,500,-115</area>
+            <area>50,465,600,-115</area>
             <buttonlist name="recprofile" from="baseselector">
                 <area>0,0,100%,40</area>
             </buttonlist>
@@ -1293,7 +1293,7 @@
         </group>
         <!-- right side -->
         <group name="details">
-            <area>600,465,-50,-115</area>
+            <area>700,465,-50,-115</area>
             <group name="titledesc" from="basetitledesc">
                 <area>0,0,100%,-120</area>
             </group>
@@ -1313,10 +1313,107 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="postproceditor">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,440,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,440</position>
+            </shape>
+        </group>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Storage Options</value>
+        </textarea>
+        <!-- left side -->
+        <group name="controls">
+            <area>50,470,600,-115</area>
+            <textarea name="metadatalookuplabel" from="basetext_s">
+                <area>0,0,-50,40</area>
+                <value>Automatically Look Up Metadata</value>
+            </textarea>
+            <checkbox name="metadatalookup" from="basecheckbox">
+                <area>100%-32,4,32,32</area>
+            </checkbox>
+
+            <textarea name="autocommflaglabel" from="basetext_s">
+                <area>0,65,-50,40</area>
+                <value>Commercial Flag new recordings</value>
+            </textarea>
+            <checkbox name="autocommflag" from="basecheckbox">
+                <area>100%-32,69,32,32</area>
+            </checkbox>
+
+            <textarea name="autotranscodelabel" from="basetext_s">
+                <area>0,130,-50,40</area>
+                <value>Transcode new recordings</value>
+            </textarea>
+            <checkbox name="autotranscode" from="basecheckbox">
+                <area>100%-32,134,32,32</area>
+            </checkbox>
+
+            <buttonlist name="transcodeprofile" from="baseselector">
+                <area>0,195,100%,40</area>
+                <helptext></helptext>
+            </buttonlist>
+
+            <textarea name="userjob1label" from="basetext_s">
+                <area>0,260,-50,40</area>
+                <value>Run User Job #1</value>
+            </textarea>
+            <checkbox name="userjob1" from="basecheckbox">
+                <area>100%-32,264,32,32</area>
+            </checkbox>
+
+            <textarea name="userjob2label" from="basetext_s">
+                <area>0,325,-50,40</area>
+                <value>Run User Job #2</value>
+            </textarea>
+            <checkbox name="userjob2" from="basecheckbox">
+                <area>100%-32,329,32,32</area>
+            </checkbox>
+
+            <textarea name="userjob3label" from="basetext_s">
+                <area>0,390,-50,40</area>
+                <value>Run User Job #3</value>
+            </textarea>
+            <checkbox name="userjob3" from="basecheckbox">
+                <area>100%-32,394,32,32</area>
+            </checkbox>
+
+            <textarea name="userjob4label" from="basetext_s">
+                <area>0,455,-50,40</area>
+                <value>Run User Job #4</value>
+            </textarea>
+            <checkbox name="userjob4" from="basecheckbox">
+                <area>100%-32,459,32,32</area>
+            </checkbox>
+        </group>
+        <!-- right side -->
+        <group name="details">
+            <area>700,465,-50,-115</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,-120</area>
+            </group>
+            <group name="iconfacts" from="basescheduleiconfacts">
+                <area>0,100%-112,70%,120</area>
+            </group>
+            <group name="iconfacts2" from="basescheduleiconfactsext">
+                <area>70%,100%-112,100%,120</area>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="back" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Back</value>
+        </button>
     </window>
-    -->
 
     <!--====================================================================-->
 
