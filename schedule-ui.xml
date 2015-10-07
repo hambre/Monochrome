@@ -1602,4 +1602,60 @@
         </button>
     </window>
 
+    <window name="schedulediff">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="sched" from="basepagetitletext">
+            <value>Preview Schedule Changes</value>
+        </textarea>
+        <!-- left side -->
+        <buttonlist name="conflictlist" from="baseitemlist">
+            <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <group name="itemcontent">
+                        <area>0,0,100%,100%</area>
+                        <alpha>100</alpha>
+                        <textarea name="title" from="baseitemtext">
+                            <area>5,0,50%,100%</area>
+                        </textarea>
+                        <textarea name="shorttimedate" from="basetext_s">
+                            <area>50%,0,75%,100%</area>
+                            <align>right,vcenter</align>
+                        </textarea>
+                        <textarea name="statusbefore" from="basetext_s">
+                            <area>75%,0,-5,100%</area>
+                            <font state="error">basefont_s_bad</font>
+                            <font state="running">basefont_s_good</font>
+                            <align>right,vcenter</align>
+                            <template>[%statusbefore% >> %statusafter%]</template>
+                        </textarea>
+                    </group>
+                </state>
+                <state name="selectedactive" from="active">
+                    <group name="itemcontent">
+                        <alpha>255</alpha>
+                    </group>
+                </state>
+            </statetype>
+        </buttonlist>
+        <!-- right side -->
+        <group name="details">
+            <area>975,505,-50,-75</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,-120</area>
+            </group>
+            <group name="iconfacts" from="basescheduleiconfacts">
+                <area>0,100%-112,70%,120</area>
+            </group>
+            <group name="iconfacts2" from="basescheduleiconfactsext">
+                <area>70%,100%-112,100%,120</area>
+            </group>
+        </group>
+    </window>
+
 </mythuitheme>
