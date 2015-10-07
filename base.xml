@@ -35,6 +35,12 @@
     <fontdef name="basefont_m_bad" from="basefont_m">
         <color>#FF0000</color>
     </fontdef>
+    <fontdef name="basefont_s_good" from="basefont_s">
+        <color>#00FF00</color>
+    </fontdef>
+    <fontdef name="basefont_s_bad" from="basefont_s">
+        <color>#FF0000</color>
+    </fontdef>
 
     <shape name="baseframe">
         <area>0,0,30,30</area>
