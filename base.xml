@@ -1142,7 +1142,7 @@
     <!--====================================================================-->
 
     <window name="MythConfirmationDialog">
-        <area>-1,0,750,300</area>
+        <area>-1,0,800,350</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
@@ -1151,7 +1151,7 @@
         <group name="decoration" from="basebuttonpopupdecoration"/>
         <textarea name="title" from="basepopuptitletext"/>
         <textarea name="message" from="basetext_s">
-            <area>50,75,-50,120</area>
+            <area>50,75,-50,160</area>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
