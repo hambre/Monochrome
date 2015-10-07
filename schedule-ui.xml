@@ -1417,10 +1417,105 @@
 
     <!--====================================================================-->
 
-    <!-- TODO
     <window name="metadataoptions">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,390,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,390</position>
+            </shape>
+        </group>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Metadata Options</value>
+        </textarea>
+        <!-- left side -->
+        <group name="controls">
+            <area>50,415,600,-115</area>
+            <textarea name="inet" from="basetext_s">
+                <area>0,0,50%,40</area>
+                <value>TMDB/TVDB #:</value>
+            </textarea>
+            <textedit name="inetref_edit" from="basetextedit">
+                <area>50%,0,100%,40</area>
+            </textedit>
+
+            <textarea name="seasonlabel" from="basetext_s">
+                <area>0,65,180,40</area>
+                <value>Season:</value>
+            </textarea>
+            <spinbox name="season_spinbox" from="basespinbox">
+                <area>180,65,100,40</area>
+            </spinbox>
+
+            <textarea name="episodelabel" from="basetext_s">
+                <area>320,65,180,40</area>
+                <value>Episode:</value>
+            </textarea>
+            <spinbox name="episode_spinbox" from="basespinbox">
+                <area>500,65,100,40</area>
+            </spinbox>
+
+            <button name="query_button" from="basebutton">
+                <area>0,130,100%,40</area>
+                <value>Perform Query</value>
+            </button>
+
+            <button name="online_coverart_button" from="basebutton">
+                <area>0,195,100%,40</area>
+                <value>Find Online Coverart</value>
+            </button>
+
+            <button name="online_fanart_button" from="basebutton">
+                <area>0,260,100%,40</area>
+                <value>Find Online Fanart</value>
+            </button>
+
+            <button name="online_banner_button" from="basebutton">
+                <area>0,325,100%,40</area>
+                <value>Find Online Banners</value>
+            </button>
+
+            <button name="local_coverart_button" from="basebutton">
+                <area>0,390,100%,40</area>
+                <value>Find Local Coverart</value>
+            </button>
+
+            <button name="local_fanart_button" from="basebutton">
+                <area>0,455,100%,40</area>
+                <value>Find Local Fanart</value>
+            </button>
+
+            <button name="local_banner_button" from="basebutton">
+                <area>0,510,100%,40</area>
+                <value>Find Local Banners</value>
+            </button>
+        </group>
+        <!-- right side -->
+        <group name="details">
+            <area>700,415,-50,-115</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,-120</area>
+            </group>
+            <group name="iconfacts" from="basescheduleiconfacts">
+                <area>0,100%-112,70%,120</area>
+            </group>
+            <group name="iconfacts2" from="basescheduleiconfactsext">
+                <area>70%,100%-112,100%,120</area>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="back" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Back</value>
+        </button>
     </window>
-    -->
 
     <!--====================================================================-->
 
