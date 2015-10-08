@@ -1004,7 +1004,7 @@
         <group name="pagefooter" from="basefooter" />
     </group>
 
-    <!-- content window decoration -->
+    <!-- content window decoration (header + content bar + footer) -->
     <group name="basecontentdecoration">
         <area>0,0,100%,100%</area>
         <group name="pageheader" from="baseheader" />
@@ -1023,6 +1023,19 @@
             <area>0,100%-90,100%,100%</area>
         </group>
         <!-- buttons go here -->
+    </group>
+
+    <!-- editor window decoration (header + content bar + big footer for buttons) -->
+    <group name="baseeditordecoration" from="basecontentdecoration">
+        <group name="content">
+            <area>0,440,100%,100%</area>
+            <shape name="contentbar">
+                <alpha>225</alpha>
+            </shape>
+        </group>
+        <group name="pagefooter">
+            <area>0,100%-90,100%,100%</area>
+        </group>
     </group>
 
     <!--====================================================================-->

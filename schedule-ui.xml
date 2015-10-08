@@ -314,14 +314,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,440,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,440</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Manual Recording Schedule</value>
@@ -685,14 +681,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,390,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,390</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Custom Priority Rules</value>
@@ -1082,14 +1074,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,440,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,440</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Editor</value>
@@ -1159,14 +1147,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,440,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,440</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Options</value>
@@ -1248,14 +1232,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,440,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,440</position>
-            </shape>
+            </group>
         </group>
         <textarea name="sched" from="basepagetitletext">
             <value>Schedule filters</value>
@@ -1328,14 +1308,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,440,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,440</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Storage Options</value>
@@ -1399,14 +1375,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,440,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,440</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Storage Options</value>
@@ -1503,14 +1475,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,390,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,390</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Metadata Options</value>
@@ -1605,14 +1573,10 @@
             <filename>images/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="basesettingsdecoration">
-            <shape name="background">
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
                 <area>0,390,100%,100%</area>
-                <alpha>225</alpha>
-            </shape>
-            <shape name="contentsep" from="baseseparator_h">
-                <position>0,390</position>
-            </shape>
+            </group>
         </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Custom Record Rules</value>
