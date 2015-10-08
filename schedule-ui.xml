@@ -1117,11 +1117,11 @@
                 <value>Post Processing</value>
             </button>
             <button name="schedinfo" from="basebutton">
-                <area>0,325,100%,40</area>
+                <area>0,100%-105,100%,40</area>
                 <value>Schedule Info</value>
             </button>
             <button name="preview" from="basebutton">
-                <area>0,390,100%,40</area>
+                <area>0,100%-40,100%,40</area>
                 <value>Preview</value>
             </button>
         </group>
@@ -1242,6 +1242,86 @@
 
     <!--====================================================================-->
 
+    <window name="schedulefiltereditor">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basesettingsdecoration">
+            <shape name="background">
+                <area>0,440,100%,100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_h">
+                <position>0,440</position>
+            </shape>
+        </group>
+        <textarea name="sched" from="basepagetitletext">
+            <value>Schedule filters</value>
+        </textarea>
+        <!-- left side -->
+        <buttonlist name="filters" from="baseitemlist">
+            <area>50,465,600,-115</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <group name="itemcontent">
+                        <area>0,0,100%,100%</area>
+                        <alpha>100</alpha>
+                        <textarea name="buttontext" from="baseitemtext">
+                            <area>5,0,-50,100%</area>
+                        </textarea>
+                        <imagetype name="frame">
+                            <area>100%-37,50%-15,32,32</area>
+                            <filename>images/CheckboxFrame.png</filename>
+                            <alpha>255</alpha>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <area>100%-37,50%-15,32,32</area>
+                            <state type="off">
+                            </state>
+                            <state type="half">
+                            </state>
+                            <state type="full">
+                                <imagetype name="mark">
+                                    <filename>images/CheckboxMark.png</filename>
+                                    <alpha>200</alpha>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                    </group>
+                </state>
+                <state name="selectedactive" from="active">
+                    <group name="itemcontent">
+                        <alpha>255</alpha>
+                    </group>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+        </buttonlist>
+        <!-- right side -->
+        <group name="details">
+            <area>700,465,-50,-115</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,-120</area>
+            </group>
+            <group name="iconfacts" from="basescheduleiconfacts">
+                <area>0,100%-112,70%,120</area>
+            </group>
+            <group name="iconfacts2" from="basescheduleiconfactsext">
+                <area>70%,100%-112,100%,120</area>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="back" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Back</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+    
     <window name="storageoptionseditor">
         <!-- background and decoration -->
         <imagetype name="background">
@@ -1601,6 +1681,8 @@
             <value>Cancel</value>
         </button>
     </window>
+
+    <!--====================================================================-->
 
     <window name="schedulediff">
         <!-- background and decoration -->
