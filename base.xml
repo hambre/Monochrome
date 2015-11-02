@@ -170,7 +170,7 @@
         <line color="#000000" alpha="0" width="0" />
     </shape>
     <shape name="baseline_v">
-        <area>0,0,2,100%-120</area>
+        <area>0,0,2,100%</area>
         <type>box</type>
         <fill color="#FFFFFF" alpha="255" />
         <line color="#000000" alpha="0" width="0" />
