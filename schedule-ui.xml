@@ -100,14 +100,14 @@
                 <recordstatus type="OverrideRecord" image="images/icons/Override.png"></recordstatus>
             </guidegrid>
             <group name="columns">
-                <area>150,0,100%,100%</area>
+                <area>150,1,100%,100%</area>
                 <shape name="header" from="baseline_h">
                     <area>0,47,100%,3</area>
-                    <fill color="#969696" alpha="255" />
+                    <fill color="#646464" alpha="255" />
                 </shape>
                 <shape name="column0" from="baseline_v">
                     <area>0,0,3,100%-2</area>
-                    <fill color="#969696" alpha="255" />
+                    <fill color="#646464" alpha="255" />
                 </shape>
                 <shape name="column1" from="column0">
                     <position>284,0</position>
