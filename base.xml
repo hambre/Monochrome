@@ -141,7 +141,7 @@
         <area>0, 475, 100%, -50</area>
         <shape name="contentbar" from="basebar">
             <area>0, 0, 100%, 100%</area>
-            <alpha>200</alpha>
+            <alpha>240</alpha>
         </shape>
         <shape name="contentsep" from="baseseparator_h">
             <position>0, 0</position>
@@ -1029,9 +1029,6 @@
     <group name="baseeditordecoration" from="basecontentdecoration">
         <group name="content">
             <area>0,440,100%,100%</area>
-            <shape name="contentbar">
-                <alpha>225</alpha>
-            </shape>
         </group>
         <group name="pagefooter">
             <area>0,100%-90,100%,100%</area>
