@@ -77,6 +77,24 @@
                     <area>0,0,1920,1080</area>
                </imagetype>
            </state>
+           <state name="MUSIC">
+               <imagetype name="background">
+                   <filename>images/BackgroundMusic.jpg</filename>
+                    <area>0,0,1920,1080</area>
+               </imagetype>
+           </state>
+           <state name="MUSIC_PLAY">
+               <imagetype name="watermark">
+                   <filename>images/BackgroundMusic.jpg</filename>
+                    <area>0,0,1920,1080</area>
+               </imagetype>
+           </state>
+           <state name="MUSIC_PLAYLIST">
+               <imagetype name="watermark">
+                   <filename>images/BackgroundMusic.jpg</filename>
+                    <area>0,0,1920,1080</area>
+               </imagetype>
+           </state>
         </statetype>
 
         <group name="decoration" from="basecontentdecoration"/>
