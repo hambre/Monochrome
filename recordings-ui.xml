@@ -23,7 +23,7 @@
         <buttonlist name="recordings" from="baseitemlist">
             <align>top,hcenter</align>
             <layout>vertical</layout>
-            <area>25,500,740,525</area>
+            <area>25,500,740,505</area>
             <buttonarea>0,0,740,505</buttonarea>
             <showarrow>no</showarrow>
             <scrollstyle>free</scrollstyle>
