@@ -282,7 +282,7 @@
         </group>
         <!-- footer -->
         <textarea name="breadcrumbs" from="basetext_xs">
-            <area>25,1030,1500,50</area>
+            <area>30,1030,1500,50</area>
             <alpha>150</alpha>
             <scroll direction="horizontal" />
         </textarea>
@@ -343,6 +343,10 @@
                         <align>right,vcenter</align>
                         <alpha>150</alpha>
                     </textarea>
+                    <statetype name="watchedstate" from="basewatchedstate">
+                        <position>100%-35,15</position>
+                        <alpha>50</alpha>
+                    </statetype>
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="buttonimage">
@@ -354,8 +358,8 @@
                         <align>left,top</align>
                         <alpha>255</alpha>
                     </textarea>
-                    <statetype name="watchedstate" from="basewatchedstate">
-                        <position>100%-35,10</position>
+                    <statetype name="watchedstate">
+                        <alpha>255</alpha>
                     </statetype>
                 </state>
             </statetype>
