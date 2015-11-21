@@ -258,7 +258,7 @@
                 </shape>
                 <shape name="itemseparator"/>
                 <textarea name="buttontext">
-                    <scroll direction="left" />
+                    <scroll direction="horizontal" />
                     <alpha>255</alpha>
                 </textarea>
                 <statetype name="nodetype">
