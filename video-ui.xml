@@ -238,6 +238,27 @@
             <area>25,500,750,505</area>
             <numlist>1</numlist>
             <buttonlist name="listtemplate" from="baseitemlist">
+            <statetype name="buttonitem">
+                <area>0,0,100%,165</area>
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>5,0,-42,100%</area>
+                    </textarea>
+                    <statetype name="watchedstate" from="basewatchedstate">
+                        <position>100%-37,12</position>
+                        <alpha>50</alpha>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="buttontext">
+                        <area>5,0,-42,100%</area>
+                    </textarea>
+                    <statetype name="watchedstate" from="basewatchedstate">
+                        <position>100%-37,12</position>
+                        <alpha>255</alpha>
+                    </statetype>
+                </state>
+            </statetype>
             </buttonlist>
         </buttontree>
         <!-- right part - video details -->
