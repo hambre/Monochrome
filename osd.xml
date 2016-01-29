@@ -354,7 +354,7 @@
             <state name="AAC">
                 <imagetype name="aac">
                     <area>0,0,120,32</area>
-                    <filename>images/iocns/AudioAAC.png</filename>
+                    <filename>images/icons/AudioAAC.png</filename>
                 </imagetype>
             </state>
             <state name="MP2">
@@ -366,7 +366,7 @@
             <state name="MP3">
                 <imagetype name="mp2">
                     <area>0,0,120,32</area>
-                    <filename>images/iocns/AudioMP3.png</filename>
+                    <filename>images/icons/AudioMP3.png</filename>
                 </imagetype>
             </state>
             <state name="VORBIS">
