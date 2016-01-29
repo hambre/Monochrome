@@ -259,6 +259,7 @@
                 <shape name="itemseparator"/>
                 <textarea name="buttontext">
                     <scroll direction="horizontal" />
+                    <cutdown>no</cutdown>
                     <alpha>255</alpha>
                 </textarea>
                 <statetype name="nodetype">
@@ -303,6 +304,7 @@
                 <textarea name="buttontext" from="basetext_s">
                     <area>5,0,-20,100%</area>
                     <scroll direction="horizontal" />
+                    <cutdown>no</cutdown>
                     <alpha>255</alpha>
                 </textarea>
                 <shape name="line" from="baseitemseparator_h">
@@ -517,6 +519,7 @@
                 </shape>
                 <textarea name="text">
                     <scroll direction="horizontal" />
+                    <cutdown>no</cutdown>
                     <alpha>255</alpha>
                 </textarea>
             </state>
@@ -553,6 +556,7 @@
         </imagetype>
         <textarea name="text" from="basetext_s">
             <area>5,0,-5,100%</area>
+            <cutdown>no</cutdown>
             <alpha>150</alpha>
         </textarea>
     </textedit>
@@ -582,6 +586,7 @@
         <textarea name="text" from="basetext_s">
             <area>5,0,-5,100%</area>
             <multiline>yes</multiline>
+            <cutdown>no</cutdown>
             <align>left,bottom</align>
             <alpha>150</alpha>
         </textarea>
@@ -609,6 +614,7 @@
                 <shape name="background" from="basecontrolbackground"/>
                 <textarea name="buttontext">
                     <scroll direction="horizontal" />
+                    <cutdown>no</cutdown>
                     <alpha>255</alpha>
                 </textarea>
             </state>
@@ -843,6 +849,7 @@
             <area>160,100%-32,100%,32</area>
             <alpha>150</alpha>
             <scroll direction="left"/>
+            <cutdown>no</cutdown>
             <align>top,left</align>
         </textarea>
     </group>
@@ -909,6 +916,7 @@
     <textarea name="basetitle" from="basetext_m">
         <area>0,0,100%,50</area>
         <scroll direction="horizontal"/>
+        <cutdown>no</cutdown>
         <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
     </textarea>
 
@@ -1199,6 +1207,7 @@
             <align>left,vcenter</align>
             <multiline>yes</multiline>
             <scroll direction="vertical"/>
+            <cutdown>no</cutdown>
         </textarea>
         <shape name="separator" from="baseseparator_h">
             <position>0,245</position>
