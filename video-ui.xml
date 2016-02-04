@@ -66,7 +66,8 @@
                 <textarea name="subtitle" from="basetext_m">
                     <area>0, 45, 100%, 50</area>
                     <alpha>150</alpha>
-                    <template>%00x00| ~ %%SUBTITLE%</template>
+                    <!-- TODO: seems like 00x00 is not yet supported here -->
+                    <template>%##x##| ~ %%SUBTITLE%</template>
                 </textarea>
                 <group name="smalldescription" depends="subtitle">
                     <area>0, 110, 100%, 395</area>
@@ -155,6 +156,7 @@
             <area>235, 490, -235, 40</area>
             <align>top,hcenter</align>
             <scroll direction="horizontal" />
+            <template>%TITLE| %%~ |##x##| %%~ |SUBTITLE%</template>
         </textarea>
         <statetype name="watchedstate" from="basewatchedstate">
             <position>100%-67,495</position>
@@ -272,7 +274,8 @@
             <textarea name="subtitle" from="basetext_m">
                 <area>0, 45, 100%, 45</area>
                 <alpha>150</alpha>
-                <template>%00x00| ~ %%SUBTITLE%</template>
+                <!-- TODO: seems like 00x00 is not yet supported here -->
+                <template>%##x##| ~ %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>0, 100, 100%, 270</area>
@@ -341,6 +344,7 @@
                     <imagetype name="icon" from="basecoverarticon" depends="!buttonimage">
                         <area>10,50%-50,100,100</area>
                     </imagetype>
+                    <!-- TODO a template is not supported here -->
                     <textarea name="buttontext" from="baseitemtext">
                         <area>125,10,-40,32</area>
                         <align>left,top</align>
@@ -374,6 +378,7 @@
                         <area>0,0,115,165</area>
                         <alpha>255</alpha>
                     </imagetype>
+                    <!-- TODO a template is not supported here -->
                     <textarea name="buttontext" from="baseitemtext">
                         <area>125,10,-5,32</area>
                         <align>left,top</align>
@@ -396,7 +401,8 @@
             <textarea name="subtitle" from="basetext_m">
                 <area>0, 45, 100%, 45</area>
                 <alpha>150</alpha>
-                <template>%00x00| ~ %%SUBTITLE%</template>
+                <!-- TODO: seems like 00x00 is not yet supported here -->
+                <template>%##x##| ~ %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>0, 100, 100%, 370</area>
@@ -481,7 +487,8 @@
             <textarea name="subtitle" from="basetext_m">
                 <area>400, 0, 100%, 45</area>
                 <alpha>150</alpha>
-                <template>%00x00| ~ %%SUBTITLE%</template>
+                <!-- TODO: seems like 00x00 is not yet supported here -->
+                <template>%##x##| ~ %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>400, 80, 100%, 460</area>
