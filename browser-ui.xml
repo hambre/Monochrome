@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="browser">
+        <group name="decoration" from="basewindowdecoration"/>
+        <buttonlist name="pagelist" from="baseselector">
+            <area>50%-350,5,700,40</area>
+        </buttonlist>
+        <shape name="basecontrolbackground" from="basebackground">
+            <area>0,52,100%,-50</area>
+            <fill color="#FFFFFF" alpha="50" />
+        </shape>
+        <progressbar name="progressbar" from="baseprogress_s">
+            <area>12, 52,-12,12</area>
+        </progressbar>
+        <webbrowser name="webbrowser" from="basebrowser">
+            <area>0,65,100%,-50</area>
+            <browserarea>12,0,100%-12,100%-12</browserarea>
+        </webbrowser>
+        <textarea name="status" from="basetext_xs">
+            <area>50,100%-50,-50,100%</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
+    <window name="bookmarkmanager">
+        <imagetype name="background">
+            <filename>images/BackgroundInformation.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Bookmark Manager</value>
+        </textarea>
+        <buttonlist name="grouplist" from="baseitemlist">
+            <area>25,500,500,525</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="buttontext">
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <buttonlist name="bookmarklist" from="baseitemlist">
+            <area>575,500,-25,525</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="name" from="baseitemtext">
+                        <area>5,0,30%,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="url" from="baseitemtext">
+                        <area>30%+15,0,-5,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="name">
+                        <alpha>255</alpha>
+                    </textarea>
+                    <textarea name="url">
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="name">
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="url">
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="messagetext" from="basehelptext">
+            <area>25,100%-50,-25,100%</area>
+            <align>center</align>
+        </textarea>
+    </window>
+
+    <window name="bookmarkeditor">
+        <imagetype name="background">
+            <filename>images/BackgroundInformation.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext"/>
+        <!-- labels and edit controls -->
+        <group name="controls">
+            <area>50%-500, 500, 1000, 500</area>
+            <group name="labels">
+                <area>0,0,30%,100%</area>
+                <textarea name="categorylabel" from="basetext_s">
+                    <area>0,0,100%,40</area>
+                    <value>Category:</value>
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="namelabel" from="basetext_s">
+                    <area>0,65,100%,40</area>
+                    <value>Name:</value>
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="urllabel" from="basetext_s">
+                    <area>0,130,100%,40</area>
+                    <value>URL:</value>
+                    <alpha>200</alpha>
+                </textarea>
+            </group>
+            <group name="values">
+                <area>30%,0,100%,100%</area>
+                <textedit name="category" from="basetextedit">
+                    <area>0,0,50%,40</area>
+                </textedit>
+                <button name="findcategory" from="basebutton">
+                    <area>50%+25,0,100%,40</area>
+                    <value>Find</value>
+                </button>
+                <textedit name="name" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="url" from="basetextedit">
+                    <area>0,130,100%,40</area>
+                </textedit>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="browserconfig">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="title" from="basepagetitletext"/>
+        <!-- labels and edit controls -->
+        <group name="controls">
+            <area>50%-500, 300, 1000, 200</area>
+            <group name="labels">
+                <area>0,0,30%,100%</area>
+                <textarea name="commandlabel" from="basetext_s">
+                    <area>0,0,100%,40</area>
+                    <value>Command:</value>
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="zoomlabel" from="basetext_s">
+                    <area>0,65,100%,40</area>
+                    <value>Zoom:</value>
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="pluginlabel" from="basetext_s">
+                    <area>0,130,100%,40</area>
+                    <value>Enable plugins:</value>
+                    <alpha>200</alpha>
+                </textarea>
+            </group>
+            <group name="values">
+                <area>30%,0,100%,100%</area>
+                <textedit name="command" from="basetextedit">
+                    <area>0,0,100%,40</area>
+                </textedit>
+                <textedit name="zoom" from="basetextedit">
+                    <area>0,65,100,40</area>
+                </textedit>
+                <checkbox name="enablepluginscheck" from="basecheckbox">
+                    <area>0,130,40,40</area>
+                </checkbox>
+            </group>
+        </group>
+        <textarea name="description" from="basehelptext">
+            <area>50%-500, 800, 1000, 120</area>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
