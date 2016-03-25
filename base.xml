@@ -307,8 +307,7 @@
                     <cutdown>no</cutdown>
                     <alpha>255</alpha>
                 </textarea>
-                <shape name="line" from="baseitemseparator_h">
-                    <position>0,100%</position>
+                <shape name="itemseparator">
                     <alpha>150</alpha>
                 </shape>
             </state>
@@ -322,7 +321,6 @@
                     <area>5,0,-20,100%</area>
                     <alpha>150</alpha>
                 </textarea>
-                <shape name="line"/>
             </state>
             <state name="inactive" from="active">
                 <textarea name="buttontext">
