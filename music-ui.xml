@@ -126,25 +126,25 @@
 
         <group name="playbackbuttons">
             <area>50%-272,100%-77,544,64</area>
-            <button name="prevbutton" from="musicprevbutton">
+            <button name="prev" from="musicprevbutton">
                 <position>0,0</position>
             </button>
-            <button name="rewindbutton" from="musicrewindbutton">
+            <button name="rew" from="musicrewindbutton">
                 <position>80,0</position>
             </button>
-            <button name="stopbutton" from="musicstopbutton">
+            <button name="stop" from="musicstopbutton">
                 <position>160,0</position>
             </button>
-            <button name="playbutton" from="musicplaybutton">
+            <button name="play" from="musicplaybutton">
                 <position>240,0</position>
             </button>
-            <button name="pausebutton" from="musicpausebutton">
+            <button name="pause" from="musicpausebutton">
                 <position>320,0</position>
             </button>
-            <button name="forwardbutton" from="musicforwardbutton">
+            <button name="ff" from="musicforwardbutton">
                 <position>400,0</position>
             </button>
-            <button name="nextbutton" from="musicnextbutton">
+            <button name="next" from="musicnextbutton">
                 <position>480,0</position>
             </button>
         </group>

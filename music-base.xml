@@ -16,9 +16,7 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected">
-                <alpha>255</alpha>
-            </state>
+            <state name="pushed" from="selected"/>
         </statetype>
     </button>
 
@@ -36,9 +34,7 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected">
-                <alpha>255</alpha>
-            </state>
+            <state name="pushed" from="selected"/>
         </statetype>
     </button>
 
@@ -56,9 +52,7 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected">
-                <alpha>255</alpha>
-            </state>
+            <state name="pushed" from="selected"/>
         </statetype>
     </button>
 
@@ -76,9 +70,7 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected">
-                <alpha>255</alpha>
-            </state>
+            <state name="pushed" from="selected"/>
         </statetype>
     </button>
 
@@ -96,9 +88,7 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected">
-                <alpha>255</alpha>
-            </state>
+            <state name="pushed" from="selected"/>
         </statetype>
     </button>
 
@@ -116,9 +106,7 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected">
-                <alpha>255</alpha>
-            </state>
+            <state name="pushed" from="selected"/>
         </statetype>
     </button>
 
@@ -136,9 +124,7 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected">
-                <alpha>255</alpha>
-            </state>
+            <state name="pushed" from="selected"/>
         </statetype>
     </button>
 
