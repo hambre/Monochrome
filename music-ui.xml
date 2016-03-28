@@ -54,7 +54,7 @@
 
         <group name="imagedetails" depends="title">
             <area>50%+25,465,350,350</area>
-            <imagetype name="coverart" depends="title">
+            <imagetype name="coverart">
                 <area>0,0,100%,100%</area>
             </imagetype>
             <imagetype name="icon" from="basecoverarticon" depends="!coverart">
