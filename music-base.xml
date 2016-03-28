@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    
+    <!-- base playback button -->
+    <button name="musicbutton">
+        <area>0,0,64,64</area>
+        <statetype name="buttonstate">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <imagetype name="icon">
+                    <area>0,0,64,64</area>
+                </imagetype>
+                <alpha>150</alpha>
+            </state>
+            <state name="selected" from="active">
+                <alpha>200</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <button name="musicplaybutton" from="musicbutton">
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="icon">
+                    <filename>images/icons/Play.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <button name="musicpausebutton" from="musicbutton">
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="icon">
+                    <filename>images/icons/Pause.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <button name="musicstopbutton" from="musicbutton">
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="icon">
+                    <filename>images/icons/Stop.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <button name="musicprevbutton" from="musicbutton">
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="icon">
+                    <filename>images/icons/Prev.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <button name="musicnextbutton" from="musicbutton">
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="icon">
+                    <filename>images/icons/Next.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <button name="musicrewindbutton" from="musicbutton">
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="icon">
+                    <filename>images/icons/Rewind.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <button name="musicforwardbutton" from="musicbutton">
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="icon">
+                    <filename>images/icons/Forward.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
+            </state>
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+</mythuitheme>

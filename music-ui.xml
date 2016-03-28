@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="playlistview" include="music-base.xml">
+        <imagetype name="background">
+            <filename>images/BackgroundMusic.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Playlist View</value>
+        </textarea>
+
+        <textarea name="notracks" from="basetext_s">
+            <area>100,465,-100,-115</area>
+            <align>center</align>
+            <value>You haven't selected any tracks to play</value>
+        </textarea>
+
+        <buttonlist name="currentplaylist" from="baseitemlist">
+            <area>25,465,50%-25,-115</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,55</area>
+                <state name="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="itemseparator" from="baseitemseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                    <textarea name="title" from="baseitemtext">
+                        <template>%ARTIST% ~ %TITLE%</template>
+                        <area>5,0,-5,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="background" from="basecontrolbackground">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <shape name="itemseparator"/>
+                    <textarea name="title">
+                        <scroll direction="horizontal" />
+                        <cutdown>no</cutdown>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active">
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <group name="imagedetails" depends="title">
+            <area>50%+25,465,350,350</area>
+            <imagetype name="coverart" depends="title">
+                <area>0,0,100%,100%</area>
+            </imagetype>
+            <imagetype name="icon" from="basecoverarticon" depends="!coverart">
+                <area>50%-100,50%-100,200,200</area>
+                <filename>images/icons/Music.png</filename>
+            </imagetype>
+        </group>
+
+        <group name="trackdetails">
+            <area>50%+425,465,-25,-115</area>
+            <textarea name="artist" from="basetext_m">
+                <area>0,0,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="title" from="basetext_l">
+                <area>0,50,100%,50</area>
+            </textarea>
+            <textarea name="album" from="basetext_m">
+                <area>0,110,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="year" from="basetext_s">
+                <area>0,160,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="genre" from="basetext_s">
+                <area>0,210,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <statetype name="ratingstate" from="basestarrating" depends="title">
+                <area>0,260,100%,40</area>
+            </statetype>
+            <textarea name="playcount" from="basetext_s">
+                <area>0,100%-115,100%,40</area>
+                <alpha>150</alpha>
+                <template>Play count: %PLAYCOUNT%x</template>
+            </textarea>
+            <textarea name="lastplayed" from="basetext_s">
+                <area>0,100%-65,100%,40</area>
+                <alpha>150</alpha>
+                <template>Last played: %LASTPLAYED%</template>
+            </textarea>
+        </group>
+
+        <group name="progressdetails" depends="title">
+            <area>50%+25,100%-247,350,-115</area>
+            <textarea name="time" from="basetext_xs">
+                <area>0,0,100%,32</area>
+                <align>center</align>
+                <alpha>150</alpha>
+            </textarea>
+            <progressbar name="progress" from="baseprogress_s">
+                <area>0,35,100%,12</area>
+            </progressbar>
+            <textarea name="playlisttime" from="basetext_xs">
+                <area>0,50,100%,32</area>
+                <align>center</align>
+                <alpha>150</alpha>
+            </textarea>
+            <progressbar name="playlistprogress" from="baseprogress_s">
+                <area>0,85,100%,12</area>
+            </progressbar>
+            <textarea name="playlistposition" from="basetext_xs">
+                <area>0,100,100%,32</area>
+                <alpha>150</alpha>
+                <align>center</align>
+            </textarea>
+        </group>
+
+        <group name="playbackbuttons">
+            <area>50%-272,100%-77,544,64</area>
+            <button name="prevbutton" from="musicprevbutton">
+                <position>0,0</position>
+            </button>
+            <button name="rewindbutton" from="musicrewindbutton">
+                <position>80,0</position>
+            </button>
+            <button name="stopbutton" from="musicstopbutton">
+                <position>160,0</position>
+            </button>
+            <button name="playbutton" from="musicplaybutton">
+                <position>240,0</position>
+            </button>
+            <button name="pausebutton" from="musicpausebutton">
+                <position>320,0</position>
+            </button>
+            <button name="forwardbutton" from="musicforwardbutton">
+                <position>400,0</position>
+            </button>
+            <button name="nextbutton" from="musicnextbutton">
+                <position>480,0</position>
+            </button>
+        </group>
+
+        <group name="playbacktstate">
+            <area>25,100%-90,600,100%</area>
+            <!--
+            <statetype name="trackstate">
+                <area>0,50%-35,100%,32</area>
+                <state name="playing">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="playingtext" from="basetext_xs">
+                        <area>0,0,100%,32</area>
+                        <value>Playing</value>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="paused">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="playingtext" from="basetext_xs">
+                        <area>0,0,100%,32</area>
+                        <value>Paused</value>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="stopped">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="playingtext" from="basetext_xs">
+                        <area>0,0,100%,32</area>
+                        <value>Stopped</value>
+                        <alpha>200</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+            -->
+            <textarea name="nexttitle" from="basetext_xs">
+                <area>0,50%-16,100%,32</area>
+                <template>>> %NEXTARTIST% ~ %NEXTTITLE%</template>
+                <alpha>150</alpha>
+            </textarea>
+        </group>
+        <group name="playliststate">
+            <area>100%-535,100%-90,-25,100%</area>
+            <statetype name="mutestate">
+                <area>100%-57,50%-16,32,32</area>
+                <state name="off">
+                    <area>0,0,100%,100%</area>
+                    <imagetype name="icon" from="baseicon">
+                        <filename>images/icons/Mute.png</filename>
+                    </imagetype>
+                </state>
+                <state name="on" from="off">
+                    <area>0,0,100%,100%</area>
+                    <imagetype name="icon">
+                        <alpha>50</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="shufflestate">
+                <!-- <area>0,50%-32,-25,32</area> -->
+                <area>0,50%-16,50%-32,32</area>
+                <state name="off">
+                    <area>0,0,100%,100%</area>
+                    <imagetype name="icon" from="baseicon">
+                        <area>0,2,32,32</area>
+                        <filename>images/icons/Shuffle.png</filename>
+                    </imagetype>
+                    <textarea name="shuffle" from="basetext_xs">
+                        <area>40,0,100%,32</area>
+                        <align>left,vcenter</align>
+                        <value>Off</value>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="random" from="off">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="shuffle">
+                        <value>Random</value>
+                    </textarea>
+                </state>
+                <state name="intelligent" from="off">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="shuffle">
+                        <value>Intelligent</value>
+                    </textarea>
+                </state>
+                <state name="album" from="off">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="shuffle">
+                        <value>Album</value>
+                    </textarea>
+                </state>
+                <state name="artist" from="off">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="shuffle">
+                        <value>Artist</value>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="repeatstate">
+                <!-- <area>0,50%+5,-25,32</area> -->
+                <area>50%,50%-16,100%-50,32</area>
+                <state name="off">
+                    <area>0,0,100%,100%</area>
+                    <imagetype name="icon" from="baseicon">
+                        <area>0,2,32,32</area>
+                        <filename>images/icons/Repeat.png</filename>
+                    </imagetype>
+                    <textarea name="shuffle" from="basetext_xs">
+                        <area>40,0,100%,32</area>
+                        <align>left,vcenter</align>
+                        <value>Off</value>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="track" from="off">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="shuffle">
+                        <value>Track</value>
+                    </textarea>
+                </state>
+                <state name="all" from="off">
+                    <area>0,0,100%,100%</area>
+                    <textarea name="shuffle">
+                        <value>All</value>
+                    </textarea>
+                </state>
+            </statetype>
+        </group>
+    </window>
+
+</mythuitheme>
