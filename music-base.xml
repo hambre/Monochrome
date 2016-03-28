@@ -11,7 +11,7 @@
                 <imagetype name="icon">
                     <area>0,0,64,64</area>
                 </imagetype>
-                <alpha>150</alpha>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>200</alpha>
@@ -29,6 +29,7 @@
                 <imagetype name="icon">
                     <filename>images/icons/Play.png</filename>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -46,6 +47,7 @@
                 <imagetype name="icon">
                     <filename>images/icons/Pause.png</filename>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -63,6 +65,7 @@
                 <imagetype name="icon">
                     <filename>images/icons/Stop.png</filename>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -80,6 +83,7 @@
                 <imagetype name="icon">
                     <filename>images/icons/Prev.png</filename>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -97,6 +101,7 @@
                 <imagetype name="icon">
                     <filename>images/icons/Next.png</filename>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -114,6 +119,7 @@
                 <imagetype name="icon">
                     <filename>images/icons/Rewind.png</filename>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -131,6 +137,7 @@
                 <imagetype name="icon">
                     <filename>images/icons/Forward.png</filename>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
