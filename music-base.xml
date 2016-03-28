@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
-    
-    <!-- base playback button -->
-    <button name="musicbutton">
-        <area>0,0,64,64</area>
-        <statetype name="buttonstate">
-            <area>0,0,100%,100%</area>
-            <state name="active">
-                <imagetype name="icon">
-                    <area>0,0,64,64</area>
-                </imagetype>
-                <alpha>100</alpha>
-            </state>
-            <state name="selected" from="active">
-                <alpha>200</alpha>
-            </state>
-            <state name="disabled" from="active">
-                <alpha>50</alpha>
-            </state>
-            <state name="pushed" from="selected"/>
-        </statetype>
-    </button>
 
-    <button name="musicplaybutton" from="musicbutton">
+    <button name="musicplaybutton">
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="icon">
@@ -37,11 +16,13 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected"/>
+            <state name="pushed" from="selected">
+                <alpha>255</alpha>
+            </state>
         </statetype>
     </button>
 
-    <button name="musicpausebutton" from="musicbutton">
+    <button name="musicpausebutton">
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="icon">
@@ -55,11 +36,13 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected"/>
+            <state name="pushed" from="selected">
+                <alpha>255</alpha>
+            </state>
         </statetype>
     </button>
 
-    <button name="musicstopbutton" from="musicbutton">
+    <button name="musicstopbutton">
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="icon">
@@ -73,11 +56,13 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected"/>
+            <state name="pushed" from="selected">
+                <alpha>255</alpha>
+            </state>
         </statetype>
     </button>
 
-    <button name="musicprevbutton" from="musicbutton">
+    <button name="musicprevbutton">
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="icon">
@@ -91,11 +76,13 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected"/>
+            <state name="pushed" from="selected">
+                <alpha>255</alpha>
+            </state>
         </statetype>
     </button>
 
-    <button name="musicnextbutton" from="musicbutton">
+    <button name="musicnextbutton">
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="icon">
@@ -109,11 +96,13 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected"/>
+            <state name="pushed" from="selected">
+                <alpha>255</alpha>
+            </state>
         </statetype>
     </button>
 
-    <button name="musicrewindbutton" from="musicbutton">
+    <button name="musicrewindbutton">
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="icon">
@@ -127,11 +116,13 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected"/>
+            <state name="pushed" from="selected">
+                <alpha>255</alpha>
+            </state>
         </statetype>
     </button>
 
-    <button name="musicforwardbutton" from="musicbutton">
+    <button name="musicforwardbutton">
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="icon">
@@ -145,7 +136,9 @@
             <state name="disabled" from="active">
                 <alpha>50</alpha>
             </state>
-            <state name="pushed" from="selected"/>
+            <state name="pushed" from="selected">
+                <alpha>255</alpha>
+            </state>
         </statetype>
     </button>
 
