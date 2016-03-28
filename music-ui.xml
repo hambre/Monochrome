@@ -101,7 +101,7 @@
 
         <group name="progressdetails" depends="title">
             <area>50%+25,100%-247,350,-115</area>
-            <textarea name="tracktime" from="basetext_xs">
+            <textarea name="time" from="basetext_xs">
                 <area>0,0,100%,32</area>
                 <align>center</align>
                 <alpha>150</alpha>

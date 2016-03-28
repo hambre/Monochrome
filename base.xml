@@ -970,14 +970,14 @@
         <shape name="headersep" from="baseseparator_h">
             <position>0,50</position>
         </shape>
-        <clock name="date">
+        <clock name="headerdate">
             <area>25,0,250,50</area>
             <font>basefont_s</font>
             <align>left,vcenter</align>
             <alpha>100</alpha>
             <template>%DATE%</template>
         </clock>
-        <clock name="time">
+        <clock name="headertime">
             <area>1645,0,250,50</area>
             <font>basefont_s</font>
             <align>right,vcenter</align>
