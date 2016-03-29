@@ -3,9 +3,8 @@
 <mythuitheme>
 
     <window name="playlistview" include="music-base.xml">
-        <imagetype name="background">
+        <imagetype name="background" from="baseimagebackground">
             <filename>images/BackgroundMusic.jpg</filename>
-            <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -45,12 +44,38 @@
                         <alpha>255</alpha>
                     </textarea>
                 </state>
-                <state name="inactive" from="active">
-                </state>
-                <state name="selectedinactive" from="selectedactive">
-                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive"/>
             </statetype>
         </buttonlist>
+
+        <group name="imagedetails" from="musiccoverart"/>
+        <group name="trackdetails" from="musictrackdetails"/>
+        <group name="progressdetails" from="musicprogress"/>
+        <group name="playbackbuttons" from="musicbuttons"/>
+        <group name="playbackstate" from="musicplaybackstate"/>
+        <group name="playliststate" from="musicstate"/>
+    </window>
+
+    <window name="playlisteditorview_tree" include="music-base.xml">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/BackgroundMusic.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Playlist Editor Tree</value>
+        </textarea>
+
+        <buttontree name="playlist_tree">
+            <area>25,465,50%-25,-115</area>
+            <numlist>1</numlist>
+            <buttonlist name="listtemplate" from="baseitemlist">
+                <statetype name="buttonitem">
+                    <state name="inactive" from="active"/>
+                    <state name="selectedinactive" from="selectedactive"/>
+                </statetype>
+            </buttonlist>
+        </buttontree>
 
         <group name="imagedetails" from="musiccoverart"/>
         <group name="trackdetails" from="musictrackdetails"/>
