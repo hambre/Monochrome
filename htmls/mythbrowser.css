@@ -3,6 +3,6 @@
     font-weight: normal;
     src: url('../fonts/jesaya free.ttf') format('truetype');
 }
-h1 {font-size:20pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:white;}
-p  {font-size:20pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:#c8c8c8;margin-top:-10pt}
-p.label {font-size:20pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:white;}
+h1 {font-size:28pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:white;}
+p  {font-size:30pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:#969696;margin-top:-10pt}
+p.label {font-size:28pt;font-style: normal;font-family: 'Jesaya',sans-serif;color:white;}
