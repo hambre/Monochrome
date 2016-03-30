@@ -4,7 +4,7 @@
 
     <window name="programguide">
         <group name="decoration" from="basewindowdecoration">
-            <clock name="date">
+            <clock name="headerdate">
                 <alpha>0</alpha>
             </clock>
         </group>
@@ -183,7 +183,7 @@
 
     <window name="programguide-video">
         <group name="decoration" from="basewindowdecoration">
-            <clock name="date">
+            <clock name="headerdate">
                 <alpha>0</alpha>
             </clock>
         </group>
