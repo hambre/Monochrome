@@ -120,7 +120,7 @@
                         </shape>
                     </state>
                     <state name="selectedactive">
-                        <area>-10,-15,200,200</area>
+                        <area>-17,-17,200,200</area>
                         <shape name="background" from="basebackground"/>
                         <imagetype name="buttonimage">
                             <area>0,0,100%,100%</area>
