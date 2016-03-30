@@ -51,7 +51,7 @@
 
         <group name="imagedetails" from="musiccoverart"/>
         <group name="trackdetails" from="musictrackdetails"/>
-        <group name="progressdetails" from="musicprogress" depends="currentplaylist"/>
+        <group name="progressdetails" from="musicprogress" depends="title"/>
         <group name="playbackbuttons" from="musicbuttons"/>
         <group name="playbackstate" from="musicplaybackstate"/>
         <group name="playliststate" from="musicstate"/>
