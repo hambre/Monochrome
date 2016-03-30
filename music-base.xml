@@ -38,14 +38,17 @@
         </textarea>
     </group>
 
+    <imagetype name="musiccoverarticon" from="basecoverarticon">
+        <filename>images/icons/Music.png</filename>
+    </imagetype>
+
     <group name="musiccoverart" depends="title">
         <area>50%+25,465,350,350</area>
         <imagetype name="coverart">
             <area>0,0,100%,100%</area>
         </imagetype>
-        <imagetype name="icon" from="basecoverarticon" depends="!coverart">
+        <imagetype name="icon" from="musiccoverarticon" depends="!coverart">
             <area>50%-100,50%-100,200,200</area>
-            <filename>images/icons/Music.png</filename>
         </imagetype>
     </group>
 
@@ -233,9 +236,13 @@
             </state>
         </statetype>
         -->
-        <textarea name="nexttitle" from="basetext_xs">
+        <textarea name="nexttitle" from="basetext_xs" depends="!breadcrumbs">
             <area>0,50%-16,100%,32</area>
             <template>>> %NEXTARTIST% ~ %NEXTTITLE%</template>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="breadcrumbs" from="basetext_xs">
+            <area>0,50%-16,100%,32</area>
             <alpha>150</alpha>
         </textarea>
     </group>
