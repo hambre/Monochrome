@@ -128,7 +128,7 @@
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="description">
-                        <area>960,0,910,100</area>
+                        <area>960,0,910,110</area>
                         <font>menufont_s</font>
                         <multiline>yes</multiline>
                         <align>left,vcenter</align>
