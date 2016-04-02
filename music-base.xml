@@ -362,4 +362,91 @@
         </textarea>
     </group>
 
+    <statetype name="musicnodetype">
+        <area>0,0,100%,100%</area>
+        <state name="default">
+            <area>0,0,100%,100%</area>
+            <imagetype name="icon" from="musiccoverarticon">
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="alltracks">
+            <area>0,0,100%,100%</area>
+            <imagetype name="alltracks" from="musiccoverarticon">
+                <filename>images/icons/MusicAll.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="genres">
+            <area>0,0,100%,100%</area>
+            <imagetype name="genres" from="musiccoverarticon">
+                <filename>images/icons/MusicGenre.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="albums">
+            <area>0,0,100%,100%</area>
+            <imagetype name="albums" from="musiccoverarticon">
+                <filename>images/icons/MusicAlbum.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="artists">
+            <area>0,0,100%,100%</area>
+            <imagetype name="artists" from="musiccoverarticon">
+                <filename>images/icons/MusicArtist.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="compartists">
+            <area>0,0,100%,100%</area>
+            <imagetype name="compartists" from="musiccoverarticon">
+                <filename>images/icons/MusicCompilationArtist.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="ratings">
+            <area>0,0,100%,100%</area>
+            <imagetype name="ratings" from="musiccoverarticon">
+                <filename>images/icons/MusicRating.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="years">
+            <area>0,0,100%,100%</area>
+            <imagetype name="years" from="musiccoverarticon">
+                <filename>images/icons/MusicYears.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="compilations">
+            <area>0,0,100%,100%</area>
+            <imagetype name="compilations" from="musiccoverarticon">
+                <filename>images/icons/MusicCompilation.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="playlists">
+            <area>0,0,100%,100%</area>
+            <imagetype name="playlists" from="musiccoverarticon">
+                <filename>images/icons/MusicPlaylist.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="smartplaylists">
+            <area>0,0,100%,100%</area>
+            <imagetype name="smartplaylists" from="musiccoverarticon">
+                <filename>images/icons/MusicSmartPlaylist.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+        <state name="directory">
+            <area>0,0,100%,100%</area>
+            <imagetype name="directory" from="musiccoverarticon">
+                <filename>images/icons/MusicDirectory.png</filename>
+                <alpha>255</alpha>
+            </imagetype>
+        </state>
+    </statetype>
+
 </mythuitheme>

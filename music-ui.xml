@@ -68,7 +68,7 @@
 
         <buttontree name="playlist_tree">
             <area>25,465,50%-25,-115</area>
-            <numlist>1</numlist>
+            <numlists>1</numlists>
             <buttonlist name="listtemplate" from="baseitemlist">
                 <statetype name="buttonitem">
                     <state name="inactive" from="active"/>
@@ -96,7 +96,7 @@
 
         <buttontree name="playlist_tree">
             <area>25,465,1330,-115</area>
-            <numlist>1</numlist>
+            <numlists>1</numlists>
             <buttonlist name="listtemplate">
                 <buttonarea>0,0,100%,100%</buttonarea>
                 <align>hcenter</align>
@@ -111,7 +111,9 @@
                             <area>0,0,100%,100%</area>
                             <alpha>150</alpha>
                         </imagetype>
-                        <imagetype name="icon" from="musiccoverarticon" depends="!buttonimage"/>
+                        <statetype name="nodetype" from="musicnodetype">
+                            <alpha>50</alpha>
+                        </statetype>
                         <shape name="top" from="baseseparator_h">
                             <position>0,0</position>
                         </shape>
@@ -125,10 +127,11 @@
                         <imagetype name="buttonimage">
                             <area>0,0,100%,100%</area>
                             <preserveaspect>false</preserveaspect>
+                            <alpha>255</alpha>
                         </imagetype>
-                        <imagetype name="icon" from="musiccoverarticon" depends="!buttonimage">
+                        <statetype name="nodetype" from="musicnodetype">
                             <alpha>150</alpha>
-                        </imagetype>
+                        </statetype>
                         <shape name="blackframe" from="baseframe">
                             <area>-1,-1,100%+1,100%+1</area>
                             <type>box</type>
