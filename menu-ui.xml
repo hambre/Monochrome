@@ -4,14 +4,14 @@
 
     <window name="mainmenu">
         <fontdef name="menufont_s" from="basefont_s">
-            <pixelsize>40</pixelsize>
+            <pixelsize>45</pixelsize>
         </fontdef>
         <fontdef name="menufont_m" from="basefont_s">
-            <pixelsize>50</pixelsize>
+            <pixelsize>65</pixelsize>
         </fontdef>
         <fontdef name="menufont_l" from="basefont_s">
-            <pixelsize>60</pixelsize>
-            <weight>bold</weight>
+            <pixelsize>65</pixelsize>
+            <!-- <weight>bold</weight> -->
         </fontdef>
 
         <imagetype name="background" from="basetitlebackground" />
