@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="welcome_screen">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Welcome to MythTV</value>
+        </textarea>
+
+        <!-- status information -->
+        <group name="information">
+            <area>25,475,-25,625</area>
+            <textarea name="status_text" from="basetext_m">
+                <area>0,0,100%,50</area>
+                <align>center</align>
+                <multiline>yes</multiline>
+                <value>MythTV is idle and will shutdown shortly.</value>
+                <alpha>200</alpha>
+            </textarea>
+
+            <textarea name="conflicts_text" from="basetext_m">
+                <area>0,75,100%,50</area>
+                <align>center</align>
+                <font>basefont_m_bad</font>
+                <value>WARNING: There are conflicting scheduled recordings!</value>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="conflicts_texts" from="basetext_m">
+                <area>0,75,100%,50</area>
+                <align>center</align>
+                <font>basefont_m_bad</font>
+                <value>WARNING: There are conflicting scheduled recordings!</value>
+                <alpha>150</alpha>
+            </textarea>
+
+            <textarea name="recording_label" from="basetext_m">
+                <area>0,175,50%-25,50</area>
+                <align>right,top</align>
+                <value>Current Recording(s)</value>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="recording_text" from="basetext_m">
+                <area>50%+25,175,100%,150</area>
+                <align>left,top</align>
+                <multiline>yes</multiline>
+                <value>Retrieving Recording Status...</value>
+                <alpha>150</alpha>
+            </textarea>
+
+            <textarea name="scheduled_label" from="basetext_m">
+                <area>0,350,50%-25,50</area>
+                <align>right,top</align>
+                <value>Next Scheduled Recording(s)</value>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="scheduled_text" from="basetext_m">
+                <area>50%+25,350,100%,150</area>
+                <align>left,top</align>
+                <multiline>yes</multiline>
+                <value>Retrieving Scheduled Recordings...</value>
+                <alpha>150</alpha>
+            </textarea>
+
+        </group>
+
+        <!-- start frontend button -->
+        <button name="startfrontend_button" from="basebutton">
+            <area>50%-200,100%-65,400,40</area>
+            <value>Start Frontend</value>
+        </button>
+    </window>
+</mythuitheme>
