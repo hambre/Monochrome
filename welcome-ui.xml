@@ -25,13 +25,6 @@
                 <value>WARNING: There are conflicting scheduled recordings!</value>
                 <alpha>150</alpha>
             </textarea>
-            <textarea name="conflicts_texts" from="basetext_m">
-                <area>0,75,100%,50</area>
-                <align>center</align>
-                <font>basefont_m_bad</font>
-                <value>WARNING: There are conflicting scheduled recordings!</value>
-                <alpha>150</alpha>
-            </textarea>
 
             <textarea name="recording_label" from="basetext_m">
                 <area>0,175,50%-25,50</area>
