@@ -14,7 +14,7 @@
             <!-- <weight>bold</weight> -->
         </fontdef>
 
-        <imagetype name="background" from="basetitlebackground" />
+        <imagetype name="background" from="baseimagebackground" />
 
         <statetype name="watermarks">
             <state name="MENU_MEDIA_LIBRARY">

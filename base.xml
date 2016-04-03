@@ -60,12 +60,7 @@
 
     <imagetype name="baseimagebackground">
         <area>0,0,100%,100%</area>
-        <filename>images/BackgroundDefault.png</filename>
-    </imagetype>
-
-    <imagetype name="basetitlebackground">
-        <area>0,0,100%,100%</area>
-        <filename>images/BackgroundTitle.png</filename>
+        <filename>images/BackgroundDefault.jpg</filename>
     </imagetype>
 
     <!-- background of popup windows -->

@@ -10,7 +10,7 @@
         </fontdef>
 
         <!-- background and decoration -->
-        <imagetype name="fanart" from="basetitlebackground"/>
+        <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Watch Recordings</value>
