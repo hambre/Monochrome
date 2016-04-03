@@ -2,6 +2,9 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
     <window name="welcome_screen">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/BackgroundDefault.jpg</filename>
+        </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Welcome to MythTV</value>
@@ -9,7 +12,7 @@
 
         <!-- status information -->
         <group name="information">
-            <area>25,475,-25,625</area>
+            <area>25,465,-25,625</area>
             <textarea name="status_text" from="basetext_m">
                 <area>0,0,100%,50</area>
                 <align>center</align>
@@ -33,7 +36,7 @@
                 <alpha>200</alpha>
             </textarea>
             <textarea name="recording_text" from="basetext_m">
-                <area>50%+25,175,100%,150</area>
+                <area>50%+25,175,100%,200</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <value>Retrieving Recording Status...</value>
@@ -41,13 +44,13 @@
             </textarea>
 
             <textarea name="scheduled_label" from="basetext_m">
-                <area>0,350,50%-25,50</area>
+                <area>0,375,50%-25,50</area>
                 <align>right,top</align>
                 <value>Next Scheduled Recording(s)</value>
                 <alpha>200</alpha>
             </textarea>
             <textarea name="scheduled_text" from="basetext_m">
-                <area>50%+25,350,100%,150</area>
+                <area>50%+25,375,100%,150</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
                 <value>Retrieving Scheduled Recordings...</value>
