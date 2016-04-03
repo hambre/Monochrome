@@ -2,9 +2,7 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
     <window name="welcome_screen">
-        <imagetype name="background" from="baseimagebackground">
-            <filename>images/BackgroundDefault.jpg</filename>
-        </imagetype>
+        <imagetype name="background" from="basedefaultbackground"/>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Welcome to MythTV</value>

@@ -3,7 +3,7 @@
 <mythuitheme>
     <window name="browser">
         <!-- background and decoration -->
-        <imagetype name="background" from="baseimagebackground"/>
+        <imagetype name="background" from="basedefaultbackground"/>
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -144,7 +144,7 @@
 
     <window name="gallery">
         <!-- background and decoration -->
-        <imagetype name="background" from="baseimagebackground"/>
+        <imagetype name="background" from="basedefaultbackground"/>
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -231,7 +231,7 @@
 
     <window name="tree">
         <!-- background and decoration -->
-        <imagetype name="background" from="baseimagebackground"/>
+        <imagetype name="background" from="basedefaultbackground"/>
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -324,7 +324,7 @@
 
     <window name="manager">
         <!-- background and decoration -->
-        <imagetype name="background" from="baseimagebackground"/>
+        <imagetype name="background" from="basedefaultbackground"/>
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -839,7 +839,7 @@
     <!--====================================================================-->
 
     <window name="edit_metadata">
-        <imagetype name="background" from="baseimagebackground"/>
+        <imagetype name="background" from="basedefaultbackground"/>
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basesettingsdecoration">
             <shape name="background">

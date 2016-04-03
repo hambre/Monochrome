@@ -60,7 +60,11 @@
 
     <imagetype name="baseimagebackground">
         <area>0,0,100%,100%</area>
+    </imagetype>
+
+    <imagetype name="basedefaultbackground" from="baseimagebackground">
         <filename>images/BackgroundDefault.jpg</filename>
+        <alpha>100</alpha>
     </imagetype>
 
     <!-- background of popup windows -->
@@ -362,7 +366,6 @@
         <area>0,0,75,32</area>
         <alpha>200</alpha>
         <preserveaspect>yes</preserveaspect>
-        <filename>images/BackgroundDefault.png</filename>
     </imagetype>
 
     <imagetype name="basecoverarticon">
