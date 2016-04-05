@@ -3,7 +3,13 @@
 <mythuitheme>
     <window name="welcome_screen">
         <imagetype name="background" from="basedefaultbackground"/>
-        <group name="decoration" from="baseeditordecoration"/>
+        <group name="decoration" from="baseeditordecoration">
+            <group name="content">
+                <shape name="contentbar">
+                    <alpha>175</alpha>
+                </shape>
+            </group>
+        </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Welcome to MythTV</value>
         </textarea>
