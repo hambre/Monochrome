@@ -9,92 +9,127 @@
         <fontdef name="menufont_m" from="basefont_s">
             <pixelsize>65</pixelsize>
         </fontdef>
-        <fontdef name="menufont_l" from="basefont_s">
-            <pixelsize>65</pixelsize>
-            <!-- <weight>bold</weight> -->
-        </fontdef>
 
-        <imagetype name="background" from="baseimagebackground" />
+        <!--
+        <imagetype name="background" from="baseimagebackground">
+            <area>0,0,1920,1080</area>
+        </imagetype>
+        -->
 
         <statetype name="watermarks">
-            <state name="MENU_MEDIA_LIBRARY">
-                <imagetype name="background">
+            <state name="default">
+                <imagetype name="background" from="baseimagebackground">
+                    <filename>images/BackgroundDefault.jpg</filename>
+                    <area>0,0,1920,1080</area>
+                </imagetype>
+            </state>
+            <!-- mainmenu.xml -->
+            <state name="TV_WATCH_TV" from="default">
+               <imagetype name="background">
+                   <filename>images/BackgroundTV.jpg</filename>
+               </imagetype>
+            </state>
+            <state name="MENU_MEDIA_LIBRARY" from="default">
+               <imagetype name="background">
                     <filename>images/BackgroundLibrary.jpg</filename>
-                    <area>0,0,1920,1080</area>
                 </imagetype>
             </state>
-            <state name="MENU_MANAGE_RECORDINGS">
-                <imagetype name="background">
+            <state name="MENU_MANAGE_RECORDINGS" from="default">
+               <imagetype name="background">
                     <filename>images/BackgroundRecordings.jpg</filename>
-                    <area>0,0,1920,1080</area>
                 </imagetype>
             </state>
-            <state name="MENU_INFO_CENTER">
-                <imagetype name="background">
+            <state name="MENU_INFO_CENTER" from="default">
+               <imagetype name="background">
                     <filename>images/BackgroundInformation.jpg</filename>
-                    <area>0,0,1920,1080</area>
                 </imagetype>
             </state>
-            <state name="MENU_OPTICAL_DISKS">
-                <imagetype name="background">
+            <state name="MENU_OPTICAL_DISKS" from="default">
+               <imagetype name="background">
                     <filename>images/BackgroundOptical.jpg</filename>
-                    <area>0,0,1920,1080</area>
                 </imagetype>
             </state>
-            <state name="TV_WATCH_TV">
+            <state name="MENU_UTILITIES_SETUP" from="default">
                <imagetype name="background">
-                   <filename>images/BackgroundTV.jpg</filename>
-                   <area>0,0,1920,1080</area>
-               </imagetype>
-            </state>
-            <state name="TV_WATCH_RECORDINGS">
-               <imagetype name="background">
-                   <filename>images/BackgroundTV.jpg</filename>
-                   <area>0,0,1920,1080</area>
-               </imagetype>
-            </state>
-            <state name="VIDEO_BROWSER">
-               <imagetype name="background">
-                   <filename>images/BackgroundTV.jpg</filename>
-                   <area>0,0,1920,1080</area>
-               </imagetype>
-            </state>
-            <state name="TV_PROGRAM_GUIDE">
-               <imagetype name="background">
-                   <filename>images/BackgroundTV.jpg</filename>
-                   <area>0,0,1920,1080</area>
-               </imagetype>
-            </state>
-            <state name="MENU_UTILITIES_SETUP">
-                <imagetype name="background">
                     <filename>images/BackgroundSetup.jpg</filename>
-                    <area>0,0,1920,1080</area>
                 </imagetype>
             </state>
-           <state name="IMAGES">
+            <state name="TV_PROGRAM_GUIDE" from="default">
                <imagetype name="background">
-                   <filename>images/BackgroundPictures.jpg</filename>
-                    <area>0,0,1920,1080</area>
+                   <filename>images/BackgroundGuide.jpg</filename>
                </imagetype>
-           </state>
-           <state name="MUSIC">
+            </state>
+
+            <!-- library.xml -->
+            <state name="TV_WATCH_RECORDINGS" from="TV_WATCH_TV"/>
+            <state name="VIDEO_BROWSER" from="TV_WATCH_TV"/>
+            <state name="MUSIC_PLAY" from="default">
                <imagetype name="background">
-                   <filename>images/BackgroundMusic.jpg</filename>
-                    <area>0,0,1920,1080</area>
-               </imagetype>
-           </state>
-           <state name="MUSIC_PLAY">
-               <imagetype name="watermark">
-                   <filename>images/BackgroundMusic.jpg</filename>
-                    <area>0,0,1920,1080</area>
-               </imagetype>
-           </state>
-           <state name="MUSIC_PLAYLIST">
-               <imagetype name="watermark">
-                   <filename>images/BackgroundMusic.jpg</filename>
-                    <area>0,0,1920,1080</area>
-               </imagetype>
-           </state>
+                    <filename>images/BackgroundMusic.jpg</filename>
+                </imagetype>
+            </state>
+            <state name="IMAGES" from="default">
+               <imagetype name="background">
+                    <filename>images/BackgroundPictures.jpg</filename>
+                </imagetype>
+            </state>
+            <state name="GAME" from="default">
+               <imagetype name="background">
+                </imagetype>
+            </state>
+
+            <!-- manage_recordings.xml -->
+            <state name="TV_SCHEDULE_RECORDINGS" from="MENU_MANAGE_RECORDINGS"/>
+            <state name="TV_RECORDING_RULES" from="MENU_MANAGE_RECORDINGS"/>
+            <state name="TV_UPCOMING_RECORDINGS" from="MENU_MANAGE_RECORDINGS"/>
+            <state name="TV_PREVIOUS" from="MENU_MANAGE_RECORDINGS"/>
+
+            <!-- info_settings.xml -->
+            <state name="WEBPAGE" from="MENU_INFO_CENTER"/>
+            <state name="TV_STATUS" from="MENU_INFO_CENTER"/>
+
+            <!-- optical_menu.xml -->
+            <state name="DISC_PLAY" from="MENU_OPTICAL_DISKS"/>
+            <state name="BURN" from="MENU_OPTICAL_DISKS"/>
+            <state name="ARCHIVE" from="MENU_OPTICAL_DISKS"/>
+            <state name="MUSIC_RIP" from="MENU_OPTICAL_DISKS"/>
+            <state name="EJECT" from="MENU_OPTICAL_DISKS"/>
+
+            <!-- main_settings.xml -->
+            <state name="SETTINGS_GENERAL" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_APPEARANCE" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_TV" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_MEDIA" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_INFO_CENTER" from="MENU_INFO_CENTER"/>
+            <state name="SETTINGS_XBOX" from="MENU_UTILITIES_SETUP"/>
+            <state name="PHONE" from="MENU_UTILITIES_SETUP"/>
+            <state name="ZONEMINDER" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_THEMECHOOSER" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_SETUPWIZARD" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_AUDIOGENERAL" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_SYSTEM_EVENTS" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETUP_KEYS" from="default">
+                <imagetype name="background">
+                    <filename>images/BackgroundKeys.jpg</filename>
+                </imagetype>
+            </state>
+            <state name="SETTINGS_GRABBERS" from="MENU_UTILITIES_SETUP"/>
+            <state name="SCREENSETUPWIZARD" from="MENU_UTILITIES_SETUP"/>
+
+            <!-- tv-schedule.xml -->
+            <state name="TV_PROGFIND" from="default">
+                <imagetype name="background">
+                    <filename>images/BackgroundSearch.jpg</filename>
+                </imagetype>
+            </state>
+            <state name="TV_SEARCH_WORDS" from="TV_PROGFIND"/>
+            <state name="TV_SEARCH_LISTS" from="TV_PROGFIND"/>
+            <state name="TV_CUSTOM_RECORD" from="MENU_MANAGE_RECORDINGS"/>
+            <state name="TV_MANUAL_SCHEDULE" from="MENU_MANAGE_RECORDINGS"/>
+
+            <!-- Music -->
+           <state name="MUSIC" from="MUSIC_PLAY"/>
+           <state name="MUSIC_PLAYLIST" from="MUSIC_PLAY"/>
         </statetype>
 
         <group name="decoration" from="basecontentdecoration"/>
@@ -123,7 +158,7 @@
                 <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>0,0,910,100</area>
-                        <font>menufont_l</font>
+                        <font>menufont_m</font>
                         <cutdown>yes</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
