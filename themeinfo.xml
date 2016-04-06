@@ -19,8 +19,8 @@
     </version>
 
     <detail>
-        <thumbnail name="preview">preview.jpg</thumbnail>
-        <description>A simple theme of black, white and gray.</description>
+        <thumbnail name="preview">images/Preview.jpg</thumbnail>
+        <description>A simple theme of black, white and shades of gray.</description>
         <errata>Use this space for notes!</errata>
     </detail>
 </themeinfo>
