@@ -2,9 +2,8 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
     <window name="themechooser">
-        <imagetype name="background" from="basedefaultbackground"/>
         <imagetype name="background" from="baseimagebackground">
-            <filename>tmp/Backgrounds/colors-DSC08818_resized.jpg</filename>
+            <filename>images/Backgrounds/BackgroundThemes.jpg</filename>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -24,7 +23,7 @@
         </textarea>
         <group name="details">
             <area>1365,500,-25,360</area>
-            <textarea name="name" from="basetext_m">
+            <textarea name="name" from="basetext_l">
                 <area>0,0,100%,50</area>
             </textarea>
             <textarea name="version" from="basetext_s">
