@@ -104,7 +104,11 @@
             <state name="SETTINGS_XBOX" from="MENU_UTILITIES_SETUP"/>
             <state name="PHONE" from="MENU_UTILITIES_SETUP"/>
             <state name="ZONEMINDER" from="MENU_UTILITIES_SETUP"/>
-            <state name="SETTINGS_THEMECHOOSER" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_THEMECHOOSER" from="default">
+               <imagetype name="background">
+                    <filename>images/Backgrounds/BackgroundThemes.jpg</filename>
+                </imagetype>
+            </state>
             <state name="SETTINGS_SETUPWIZARD" from="MENU_UTILITIES_SETUP"/>
             <state name="SETTINGS_AUDIOGENERAL" from="MENU_UTILITIES_SETUP"/>
             <state name="SETTINGS_SYSTEM_EVENTS" from="MENU_UTILITIES_SETUP"/>
