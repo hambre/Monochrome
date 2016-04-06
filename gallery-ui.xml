@@ -5,7 +5,7 @@
         <!-- background and decoration -->
         <imagetype name="background">
             <area>0,0,100%,100%</area>
-            <filename>images/BackgroundPictures.jpg</filename>
+            <filename>images/Backgrounds/BackgroundPictures.jpg</filename>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">

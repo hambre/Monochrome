@@ -19,44 +19,44 @@
         <statetype name="watermarks">
             <state name="default">
                 <imagetype name="background" from="baseimagebackground">
-                    <filename>images/BackgroundDefault.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundDefault.jpg</filename>
                     <area>0,0,1920,1080</area>
                 </imagetype>
             </state>
             <!-- mainmenu.xml -->
             <state name="TV_WATCH_TV" from="default">
                <imagetype name="background">
-                   <filename>images/BackgroundTV.jpg</filename>
+                   <filename>images/Backgrounds/BackgroundTV.jpg</filename>
                </imagetype>
             </state>
             <state name="MENU_MEDIA_LIBRARY" from="default">
                <imagetype name="background">
-                    <filename>images/BackgroundLibrary.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundLibrary.jpg</filename>
                 </imagetype>
             </state>
             <state name="MENU_MANAGE_RECORDINGS" from="default">
                <imagetype name="background">
-                    <filename>images/BackgroundRecordings.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
                 </imagetype>
             </state>
             <state name="MENU_INFO_CENTER" from="default">
                <imagetype name="background">
-                    <filename>images/BackgroundInformation.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundInformation.jpg</filename>
                 </imagetype>
             </state>
             <state name="MENU_OPTICAL_DISKS" from="default">
                <imagetype name="background">
-                    <filename>images/BackgroundOptical.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundOptical.jpg</filename>
                 </imagetype>
             </state>
             <state name="MENU_UTILITIES_SETUP" from="default">
                <imagetype name="background">
-                    <filename>images/BackgroundSetup.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundSetup.jpg</filename>
                 </imagetype>
             </state>
             <state name="TV_PROGRAM_GUIDE" from="default">
                <imagetype name="background">
-                   <filename>images/BackgroundGuide.jpg</filename>
+                   <filename>images/Backgrounds/BackgroundGuide.jpg</filename>
                </imagetype>
             </state>
 
@@ -65,12 +65,12 @@
             <state name="VIDEO_BROWSER" from="TV_WATCH_TV"/>
             <state name="MUSIC_PLAY" from="default">
                <imagetype name="background">
-                    <filename>images/BackgroundMusic.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
                 </imagetype>
             </state>
             <state name="IMAGES" from="default">
                <imagetype name="background">
-                    <filename>images/BackgroundPictures.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundPictures.jpg</filename>
                 </imagetype>
             </state>
             <state name="GAME" from="default">
@@ -110,7 +110,7 @@
             <state name="SETTINGS_SYSTEM_EVENTS" from="MENU_UTILITIES_SETUP"/>
             <state name="SETUP_KEYS" from="default">
                 <imagetype name="background">
-                    <filename>images/BackgroundKeys.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundKeys.jpg</filename>
                 </imagetype>
             </state>
             <state name="SETTINGS_GRABBERS" from="MENU_UTILITIES_SETUP"/>
@@ -119,7 +119,7 @@
             <!-- tv-schedule.xml -->
             <state name="TV_PROGFIND" from="default">
                 <imagetype name="background">
-                    <filename>images/BackgroundSearch.jpg</filename>
+                    <filename>images/Backgrounds/BackgroundSearch.jpg</filename>
                 </imagetype>
             </state>
             <state name="TV_SEARCH_WORDS" from="TV_PROGFIND"/>

@@ -26,7 +26,7 @@
 
     <window name="bookmarkmanager">
         <imagetype name="background">
-            <filename>images/BackgroundInformation.jpg</filename>
+            <filename>images/Backgrounds/BackgroundInformation.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
@@ -84,7 +84,7 @@
 
     <window name="bookmarkeditor">
         <imagetype name="background">
-            <filename>images/BackgroundInformation.jpg</filename>
+            <filename>images/Backgrounds/BackgroundInformation.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration"/>

@@ -4,7 +4,7 @@
 
     <window name="playlistview" include="music-base.xml">
         <imagetype name="background" from="baseimagebackground">
-            <filename>images/BackgroundMusic.jpg</filename>
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
         </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -59,7 +59,7 @@
 
     <window name="playlisteditorview_tree" include="music-base.xml">
         <imagetype name="background" from="baseimagebackground">
-            <filename>images/BackgroundMusic.jpg</filename>
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
         </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -87,7 +87,7 @@
 
     <window name="playlisteditorview_gallery" include="music-base.xml">
         <imagetype name="background" from="baseimagebackground">
-            <filename>images/BackgroundMusic.jpg</filename>
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
         </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">

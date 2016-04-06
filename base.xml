@@ -63,7 +63,7 @@
     </imagetype>
 
     <imagetype name="basedefaultbackground" from="baseimagebackground">
-        <filename>images/BackgroundDefault.jpg</filename>
+        <filename>images/Backgrounds/BackgroundDefault.jpg</filename>
         <alpha>100</alpha>
     </imagetype>
 

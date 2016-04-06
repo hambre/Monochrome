@@ -335,7 +335,7 @@
     <window name="manualschedule">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -413,7 +413,7 @@
     <window name="viewscheduled">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
@@ -505,7 +505,7 @@
     <window name="channelrecpriority">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
@@ -585,7 +585,7 @@
     <window name="managerecrules">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
@@ -702,7 +702,7 @@
     <window name="custompriority">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -931,7 +931,7 @@
     <window name="programlist">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
@@ -1028,7 +1028,7 @@
     <window name="programfind">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
@@ -1087,7 +1087,7 @@
     <window name="scheduleeditor">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -1160,7 +1160,7 @@
     <window name="scheduleoptionseditor">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -1245,7 +1245,7 @@
     <window name="schedulefiltereditor">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -1321,7 +1321,7 @@
     <window name="storageoptionseditor">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -1388,7 +1388,7 @@
     <window name="postproceditor">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -1488,7 +1488,7 @@
     <window name="metadataoptions">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -1586,7 +1586,7 @@
     <window name="customedit">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
@@ -1667,7 +1667,7 @@
     <window name="schedulediff">
         <!-- background and decoration -->
         <imagetype name="background">
-            <filename>images/BackgroundRecordings.jpg</filename>
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
