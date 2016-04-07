@@ -117,7 +117,11 @@
             </state>
             <state name="SETTINGS_SETUPWIZARD" from="MENU_UTILITIES_SETUP"/>
             <state name="SETTINGS_AUDIOGENERAL" from="MENU_UTILITIES_SETUP"/>
-            <state name="SETTINGS_SYSTEM_EVENTS" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_SYSTEM_EVENTS" from="default">
+                <imagetype name="background">
+                    <filename>images/Backgrounds/BackgroundEvents.jpg</filename>
+                </imagetype>
+            </state>
             <state name="SETUP_KEYS" from="default">
                 <imagetype name="background">
                     <filename>images/Backgrounds/BackgroundKeys.jpg</filename>
