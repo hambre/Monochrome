@@ -267,24 +267,20 @@
             </imagetype>
         </state>
     </statetype>
-    
+
     <group name="musicstate">
         <area>100%-535,100%-90,-25,100%</area>
-        <statetype name="mutestate" from="musicmutestate">
-            <position>100%-57,50%-16</position>
-        </statetype>
         <statetype name="shufflestate">
-            <!-- <area>0,50%-32,-25,32</area> -->
-            <area>0,50%-16,50%-32,32</area>
+            <area>0,50%-16,50%-40,32</area>
             <state name="off">
                 <area>0,0,100%,100%</area>
                 <imagetype name="icon" from="baseicon">
-                    <area>0,2,32,32</area>
+                    <area>100%-32,2,32,32</area>
                     <filename>images/icons/Shuffle.png</filename>
                 </imagetype>
                 <textarea name="shuffle" from="basetext_xs">
-                    <area>40,0,100%,32</area>
-                    <align>left,vcenter</align>
+                    <area>0,0,100%-40,32</area>
+                    <align>right,vcenter</align>
                     <value>Off</value>
                     <alpha>150</alpha>
                 </textarea>
@@ -314,9 +310,12 @@
                 </textarea>
             </state>
         </statetype>
+        <statetype name="mutestate" from="musicmutestate">
+            <area>50%-16,50%-15,32,32</area>
+        </statetype>
         <statetype name="repeatstate">
             <!-- <area>0,50%+5,-25,32</area> -->
-            <area>50%,50%-16,100%-50,32</area>
+            <area>50%+40,50%-16,100%,32</area>
             <state name="off">
                 <area>0,0,100%,100%</area>
                 <imagetype name="icon" from="baseicon">
