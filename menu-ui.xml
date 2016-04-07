@@ -77,6 +77,12 @@
                <imagetype name="background">
                 </imagetype>
             </state>
+            <state name="NET_VIDEO_SEARCH" from="default">
+               <imagetype name="background">
+                    <filename>images/Backgrounds/BackgroundSearch.jpg</filename>
+                </imagetype>
+            </state>
+            <state name="NET_VIDEO_TREE" from="NET_VIDEO_SEARCH"/>
 
             <!-- manage_recordings.xml -->
             <state name="TV_SCHEDULE_RECORDINGS" from="MENU_MANAGE_RECORDINGS"/>
