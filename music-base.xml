@@ -240,31 +240,38 @@
             <area>0,50%-16,100%,32</area>
             <template>>> %NEXTARTIST% ~ %NEXTTITLE%</template>
             <scroll direction="horizontal" />
+            <cutdown>no</cutdown>
             <alpha>150</alpha>
         </textarea>
         <textarea name="breadcrumbs" from="basetext_s">
             <area>0,50%-16,100%,32</area>
             <scroll direction="horizontal" />
+            <cutdown>no</cutdown>
             <alpha>150</alpha>
         </textarea>
     </group>
 
+    <statetype name="musicmutestate">
+        <area>0,0,32,32</area>
+        <state name="off">
+            <area>0,0,100%,100%</area>
+            <imagetype name="icon" from="baseicon">
+                <area>0,0,32,32</area>
+                <filename>images/icons/Mute.png</filename>
+            </imagetype>
+        </state>
+        <state name="on" from="off">
+            <area>0,0,100%,100%</area>
+            <imagetype name="icon">
+                <alpha>50</alpha>
+            </imagetype>
+        </state>
+    </statetype>
+    
     <group name="musicstate">
         <area>100%-535,100%-90,-25,100%</area>
-        <statetype name="mutestate">
-            <area>100%-57,50%-16,32,32</area>
-            <state name="off">
-                <area>0,0,100%,100%</area>
-                <imagetype name="icon" from="baseicon">
-                    <filename>images/icons/Mute.png</filename>
-                </imagetype>
-            </state>
-            <state name="on" from="off">
-                <area>0,0,100%,100%</area>
-                <imagetype name="icon">
-                    <alpha>50</alpha>
-                </imagetype>
-            </state>
+        <statetype name="mutestate" from="musicmutestate">
+            <position>100%-57,50%-16</position>
         </statetype>
         <statetype name="shufflestate">
             <!-- <area>0,50%-32,-25,32</area> -->

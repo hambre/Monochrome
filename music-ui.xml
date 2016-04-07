@@ -57,6 +57,8 @@
         <group name="playliststate" from="musicstate"/>
     </window>
 
+    <!--====================================================================-->
+
     <window name="playlisteditorview_tree" include="music-base.xml">
         <imagetype name="background" from="baseimagebackground">
             <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
@@ -84,6 +86,8 @@
         <group name="playbackstate" from="musicplaybackstate"/>
         <group name="playliststate" from="musicstate"/>
     </window>
+
+    <!--====================================================================-->
 
     <window name="playlisteditorview_gallery" include="music-base.xml">
         <imagetype name="background" from="baseimagebackground">
@@ -161,6 +165,32 @@
         <group name="playbackbuttons" from="musicbuttons"/>
         <group name="playbackstate" from="musicplaybackstate"/>
         <group name="playliststate" from="musicstate"/>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="volume_popup">
+        <area>-1,0,750,200</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Volume</value>
+        </textarea>
+        <textarea name="volume" from="basetext_s">
+            <area>50,75,-50,40</area>
+            <align>center</align>
+        </textarea>
+        <statetype name="mutestate" from="musicmutestate">
+            <!-- <position>100%-100,75</position> -->
+            <area>100%-82,80,32,32</area>
+        </statetype>
+        <progressbar name="volumeprogress" from="baseprogress_s">
+            <area>50,135,-50,12</area>
+        </progressbar>
     </window>
 
 </mythuitheme>
