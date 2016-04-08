@@ -797,9 +797,7 @@
             <filename>images/SeparatorH.png</filename>
         </imagetype>
 
-        <fontdef name="osdfont_s" from="basefont_s">
-            <pixelsize>28</pixelsize>
-        </fontdef>
+        <fontdef name="osdfont_s" from="basefont_s"/>
 
         <textarea name="file">
             <font>osdfont_s</font>

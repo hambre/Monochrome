@@ -3,10 +3,10 @@
 <mythuitheme>
 
     <window name="mainmenu">
-        <fontdef name="menufont_s" from="basefont_m">
+        <fontdef name="menufont_s" from="basefont">
             <pixelsize>45</pixelsize>
         </fontdef>
-        <fontdef name="menufont_m" from="basefont_m">
+        <fontdef name="menufont_m" from="basefont">
             <pixelsize>65</pixelsize>
         </fontdef>
 
