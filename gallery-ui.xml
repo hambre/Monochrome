@@ -18,11 +18,11 @@
             <area>800,500,-50,510</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
-        <textarea name="breadcrumbs" from="basetext_xs">
+        <textarea name="breadcrumbs" from="basetext_s">
             <area>25,1030,900,50</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="position" from="basetext_xs">
+        <textarea name="position" from="basetext_s">
             <area>100%-175,1030,150,50</area>
             <alpha>150</alpha>
             <align>right,vcenter</align>
@@ -46,15 +46,15 @@
             <area>50,75,-50,-90</area>
             <group name="labels">
                 <area>0,0,250,100%</area>
-                <textarea name="labeldirfilter" from="basetext_s">
+                <textarea name="labeldirfilter" from="basetext_m">
                     <area>0,0,100%,40</area>
                     <value>Folder filter :</value>
                 </textarea>
-                <textarea name="labeltypefilter" from="basetext_s">
+                <textarea name="labeltypefilter" from="basetext_m">
                     <area>0,65,100%,40</area>
                     <value>Type filter :</value>
                 </textarea>
-                <textarea name="labelsort" from="basetext_s">
+                <textarea name="labelsort" from="basetext_m">
                     <area>0,130,100%,40</area>
                     <value>Sort by :</value>
                 </textarea>
@@ -72,7 +72,7 @@
                 </buttonlist>
             </group>
         </group>
-        <textarea name="numimages_text" from="basetext_s">
+        <textarea name="numimages_text" from="basetext_m">
             <area>50,100%-140,-50,40</area>
             <align>center</align>
         </textarea>

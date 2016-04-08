@@ -16,33 +16,33 @@
             <area>675,500,640,360</area> 
             <preserveaspect>yes</preserveaspect>
         </imagetype>
-        <textarea name="description" from="basetext_s">
+        <textarea name="description" from="basetext_m">
             <area>675,885,-25,-75</area>
             <multiline>yes</multiline>
             <alpha>150</alpha>
         </textarea>
         <group name="details">
             <area>1365,500,-25,360</area>
-            <textarea name="name" from="basetext_l">
+            <textarea name="name" from="basetext_xl">
                 <area>0,0,100%,50</area>
             </textarea>
-            <textarea name="version" from="basetext_s">
+            <textarea name="version" from="basetext_m">
                 <area>0,65,100%,40</area>
                 <alpha>150</alpha>
             </textarea>
-            <textarea name="resolution" from="basetext_s">
+            <textarea name="resolution" from="basetext_m">
                 <area>0,130,100%,40</area>
                 <alpha>150</alpha>
             </textarea>
-            <textarea name="aspect" from="basetext_s">
+            <textarea name="aspect" from="basetext_m">
                 <area>0,195,100%,40</area>
                 <alpha>150</alpha>
             </textarea>
-            <textarea name="authorname" from="basetext_s">
+            <textarea name="authorname" from="basetext_m">
                 <area>0,260,100%,40</area>
                 <alpha>150</alpha>
             </textarea>
-            <textarea name="authoremail" from="basetext_s">
+            <textarea name="authoremail" from="basetext_m">
                 <area>0,325,100%,40</area>
                 <alpha>150</alpha>
             </textarea>
@@ -75,7 +75,7 @@
                 <state name="selectedinactive" from="selectedactive"/>
             </statetype>
         </buttonlist>
-        <textarea name="label-text" from="basetext_m">
+        <textarea name="label-text" from="basetext_l">
             <area>875,465,-25,40</area>
         </textarea>
         <textedit name="settingvalue" from="basetextedit">

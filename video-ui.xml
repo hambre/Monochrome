@@ -59,12 +59,12 @@
             <!-- left part -->
             <group name="left">
                 <area>0,0,900,100%</area>
-                <textarea name="title" from="basetext_l">
+                <textarea name="title" from="basetext_xl">
                     <area>0, 0, 100%, 50</area>
                     <align>left,top</align>
                     <scroll direction="horizontal" />
                 </textarea>
-                <textarea name="subtitle" from="basetext_m">
+                <textarea name="subtitle" from="basetext_l">
                     <area>0, 45, 100%, 50</area>
                     <alpha>150</alpha>
                     <!-- TODO: seems like 00x00 is not yet supported here -->
@@ -72,7 +72,7 @@
                 </textarea>
                 <group name="smalldescription" depends="subtitle">
                     <area>0, 110, 100%, 395</area>
-                    <textarea name="description" from="basetext_s">
+                    <textarea name="description" from="basetext_m">
                         <area>0,0,100%,100%</area>
                         <multiline>yes</multiline>
                         <align>justify</align>
@@ -82,7 +82,7 @@
                 </group>
                 <group name="largedescription" depends="!subtitle">
                     <area>0, 80, 100%, 425</area>
-                    <textarea name="description" from="basetext_s">
+                    <textarea name="description" from="basetext_m">
                         <area>0,0,100%,100%</area>
                         <multiline>yes</multiline>
                         <align>justify</align>
@@ -90,7 +90,7 @@
                         <alpha>150</alpha>
                     </textarea>
                 </group>
-                <textarea name="breadcrumbs" from="basetext_xs">
+                <textarea name="breadcrumbs" from="basetext_s">
                     <area>0,530,100%-50,50</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -99,7 +99,7 @@
             <imagetype name="coverart">
                 <area>925, 0, 350, 505</area>
             </imagetype>
-            <textarea name="genres" from="basetext_xs">
+            <textarea name="genres" from="basetext_s">
                 <area>850,530,490,50</area>
                 <align>center</align>
                 <alpha>150</alpha>
@@ -108,21 +108,21 @@
             <!-- right part -->
             <group name="right">
                 <area>1300,0,-1,-0</area>
-                <textarea name="directorlabel" from="basetext_s" depends="director">
+                <textarea name="directorlabel" from="basetext_m" depends="director">
                     <area>0,0,250,50</area>
                     <value>Director</value>
                     <alpha>200</alpha>
                 </textarea>
-                <textarea name="director" from="basetext_xs">
+                <textarea name="director" from="basetext_s">
                     <area>0,40,350,50</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="castlabel" from="basetext_s" depends="cast">
+                <textarea name="castlabel" from="basetext_m" depends="cast">
                     <area>0,90,250,50</area>
                     <value>Cast</value>
                     <alpha>200</alpha>
                 </textarea>
-                <textarea name="cast" from="basetext_xs">
+                <textarea name="cast" from="basetext_s">
                     <area>0,140,100%,210</area>
                     <alpha>150</alpha>
                     <multiline>yes</multiline>
@@ -132,7 +132,7 @@
                     <area>0,370,100%,135</area>
                 </group>
             </group>
-            <textarea name="position" from="basetext_xs">
+            <textarea name="position" from="basetext_s">
                 <area>100%-150,530,150,50</area>
                 <alpha>150</alpha>
                 <align>right,vcenter</align>
@@ -154,7 +154,7 @@
         <statetype name="userratingstate" from="basestarrating">
             <position>35,495</position>
         </statetype>
-        <textarea name="title" from="basetext_l">
+        <textarea name="title" from="basetext_xl">
             <area>235, 490, -235, 40</area>
             <align>top,hcenter</align>
             <scroll direction="horizontal" />
@@ -210,17 +210,17 @@
             </statetype>
         </buttonlist>
         <!-- footer -->
-        <textarea name="breadcrumbs" from="basetext_xs">
+        <textarea name="breadcrumbs" from="basetext_s">
             <area>25,1030,900,50</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="genres" from="basetext_xs">
+        <textarea name="genres" from="basetext_s">
             <area>50%-250,1030,500,50</area>
             <alpha>150</alpha>
             <case>capitaliseall</case>
             <align>center</align>
         </textarea>
-        <textarea name="position" from="basetext_xs">
+        <textarea name="position" from="basetext_s">
             <area>100%-175,1030,150,50</area>
             <alpha>150</alpha>
             <align>right,vcenter</align>
@@ -269,12 +269,12 @@
         <!-- right part - video details -->
         <group name="videodetails">
             <area>800,500,-25,505</area>
-            <textarea name="title" from="basetext_l">
+            <textarea name="title" from="basetext_xl">
                 <area>0, 0, 100%, 50</area>
                 <align>left,top</align>
                 <scroll direction="horizontal" />
             </textarea>
-            <textarea name="subtitle" from="basetext_m">
+            <textarea name="subtitle" from="basetext_l">
                 <area>0, 45, 100%, 45</area>
                 <alpha>150</alpha>
                 <!-- TODO: seems like 00x00 is not yet supported here -->
@@ -282,7 +282,7 @@
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>0, 100, 100%, 270</area>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -292,7 +292,7 @@
             </group>
             <group name="largedescription" depends="!subtitle">
                 <area>0, 70, 100%, 300</area>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -308,12 +308,12 @@
             </group>
         </group>
         <!-- footer -->
-        <textarea name="breadcrumbs" from="basetext_xs">
+        <textarea name="breadcrumbs" from="basetext_s">
             <area>30,1030,1500,50</area>
             <alpha>150</alpha>
             <scroll direction="horizontal" />
         </textarea>
-        <textarea name="position" from="basetext_xs">
+        <textarea name="position" from="basetext_s">
             <area>100%-175,1030,150,50</area>
             <alpha>150</alpha>
             <align>right,vcenter</align>
@@ -354,20 +354,20 @@
                         <align>left,top</align>
                         <alpha>100</alpha>
                     </textarea>
-                    <textarea name="genres" from="basetext_xs">
+                    <textarea name="genres" from="basetext_s">
                         <area>125,80,600,30</area>
                         <alpha>150</alpha>
                     </textarea>
-                    <textarea name="director" from="basetext_xs">
+                    <textarea name="director" from="basetext_s">
                         <area>125,120,400,30</area>
                         <alpha>150</alpha>
                     </textarea>
-                    <textarea name="year" from="basetext_xs">
+                    <textarea name="year" from="basetext_s">
                         <area>100%-150,80,-10,30</area>
                         <align>right,vcenter</align>
                         <alpha>150</alpha>
                     </textarea>
-                    <textarea name="length" from="basetext_xs">
+                    <textarea name="length" from="basetext_s">
                         <area>100%-150,120,-10,30</area>
                         <align>right,vcenter</align>
                         <alpha>150</alpha>
@@ -397,12 +397,12 @@
         <!-- right part - video details -->
         <group name="videodetails">
             <area>975,500,-25,505</area>
-            <textarea name="title" from="basetext_l">
+            <textarea name="title" from="basetext_xl">
                 <area>0, 0, 100%, 50</area>
                 <align>hcenter,top</align>
                 <scroll direction="horizontal" />
             </textarea>
-            <textarea name="subtitle" from="basetext_m">
+            <textarea name="subtitle" from="basetext_l">
                 <area>0, 45, 100%, 45</area>
                 <alpha>150</alpha>
                 <!-- TODO: seems like 00x00 is not yet supported here -->
@@ -410,7 +410,7 @@
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>0, 100, 100%, 370</area>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -423,7 +423,7 @@
                 <imagetype name="coverart">
                     <area>0,5,266,380</area>
                 </imagetype>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>300,0,100%,100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -439,12 +439,12 @@
             </group>
             <group name="people">
                 <area>300,100%-25,100%,32</area>
-                <textarea name="castlabel" from="basetext_xs" depends="cast">
+                <textarea name="castlabel" from="basetext_s" depends="cast">
                     <area>0,0,150,32</area>
                     <value>Cast</value>
                     <alpha>200</alpha>
                 </textarea>
-                <textarea name="cast" from="basetext_xs">
+                <textarea name="cast" from="basetext_s">
                     <area>160,0,100%,32</area>
                     <alpha>150</alpha>
                     <scroll direction="left"/>
@@ -453,12 +453,12 @@
             </group>
         </group>
         <!-- footer -->
-        <textarea name="breadcrumbs" from="basetext_xs">
+        <textarea name="breadcrumbs" from="basetext_s">
             <area>25,1030,1500,50</area>
             <alpha>150</alpha>
             <scroll direction="horizontal" />
         </textarea>
-        <textarea name="position" from="basetext_xs">
+        <textarea name="position" from="basetext_s">
             <area>100%-175,1030,150,50</area>
             <alpha>150</alpha>
             <align>right,vcenter</align>
@@ -488,7 +488,7 @@
             <group name="videofacts" from="basevideoiconfacts">
                 <area>0,525,350,125</area>
             </group>
-            <textarea name="subtitle" from="basetext_m">
+            <textarea name="subtitle" from="basetext_l">
                 <area>400, 0, 100%, 45</area>
                 <alpha>150</alpha>
                 <!-- TODO: seems like 00x00 is not yet supported here -->
@@ -496,7 +496,7 @@
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>400, 80, 100%, 460</area>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -506,7 +506,7 @@
             </group>
             <group name="largedescription" depends="!subtitle">
                 <area>400, 0, 100%, 510</area>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>0,0,100%,100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -560,7 +560,7 @@
         <textarea name="title" from="basepopuptitletext">
             <value>Plot</value>
         </textarea>
-        <textarea name="description" from="basetext_s">
+        <textarea name="description" from="basetext_m">
             <area>50,75,-50,-25</area>
             <multiline>yes</multiline>
             <align>justify,vcenter</align>
@@ -584,98 +584,98 @@
         </textarea>
         <group name="content">
             <area>50,75,-50,-25</area>
-            <textarea name="labeltext" from="basetext_s">
+            <textarea name="labeltext" from="basetext_m">
                 <area>0,0,150,40</area>
                 <value>Text Filter:</value>
             </textarea>
             <textedit name="textfilter_input" from="basetextedit">
                 <area>200,0,-1,40</area>
             </textedit>
-            <textarea name="labelwatched" from="basetext_s">
+            <textarea name="labelwatched" from="basetext_m">
                 <area>0,50,150,40</area>
                 <value>Watched:</value>
             </textarea>
             <buttonlist name="watched_select" from="baseselector">
                 <area>200,50,-1,40</area>
             </buttonlist>
-            <textarea name="labelcategory" from="basetext_s">
+            <textarea name="labelcategory" from="basetext_m">
                 <area>0,100,200,40</area>
                 <value>Category:</value>
             </textarea>
             <buttonlist name="category_select" from="baseselector">
                 <area>200,100,-1,40</area>
             </buttonlist>
-            <textarea name="labelgenre" from="basetext_s">
+            <textarea name="labelgenre" from="basetext_m">
                 <area>0,150,200,40</area>
                 <value>Genre:</value>
             </textarea>
             <buttonlist name="genre_select" from="baseselector">
                 <area>200,150,-1,40</area>
             </buttonlist>
-            <textarea name="labelyear" from="basetext_s">
+            <textarea name="labelyear" from="basetext_m">
                 <area>0,200,200,40</area>
                 <value>Year:</value>
             </textarea>
             <buttonlist name="year_select" from="baseselector">
                 <area>200,200,-1,40</area>
             </buttonlist>
-            <textarea name="labelrating" from="basetext_s">
+            <textarea name="labelrating" from="basetext_m">
                 <area>0,250,200,40</area>
                 <value>Rating:</value>
             </textarea>
             <buttonlist name="userrating_select" from="baseselector">
                 <area>200,250,-1,40</area>
             </buttonlist>
-            <textarea name="labelcountry" from="basetext_s">
+            <textarea name="labelcountry" from="basetext_m">
                 <area>0,300,200,40</area>
                 <value>Country:</value>
             </textarea>
             <buttonlist name="country_select" from="baseselector">
                 <area>200,300,-1,40</area>
             </buttonlist>
-            <textarea name="labelcast" from="basetext_s">
+            <textarea name="labelcast" from="basetext_m">
                 <area>0,350,200,40</area>
                 <value>Cast:</value>
             </textarea>
             <buttonlist name="cast_select" from="baseselector">
                 <area>200,350,-1,40</area>
             </buttonlist>
-            <textarea name="labelruntime" from="basetext_s">
+            <textarea name="labelruntime" from="basetext_m">
                 <area>0,400,200,40</area>
                 <value>Runtime:</value>
             </textarea>
             <buttonlist name="runtime_select" from="baseselector">
                 <area>200,400,-1,40</area>
             </buttonlist>
-            <textarea name="labelbrowse" from="basetext_s">
+            <textarea name="labelbrowse" from="basetext_m">
                 <area>0,450,200,40</area>
                 <value>Browse:</value>
             </textarea>
             <buttonlist name="browse_select" from="baseselector">
                 <area>200,450,-1,40</area>
             </buttonlist>
-            <textarea name="labelinetref" from="basetext_s">
+            <textarea name="labelinetref" from="basetext_m">
                 <area>0,500,200,40</area>
                 <value>Inetref:</value>
             </textarea>
             <buttonlist name="inetref_select" from="baseselector">
                 <area>200,500,-1,40</area>
             </buttonlist>
-            <textarea name="labelcover" from="basetext_s">
+            <textarea name="labelcover" from="basetext_m">
                 <area>0,550,200,40</area>
                 <value>Coverfile:</value>
             </textarea>
             <buttonlist name="coverfile_select" from="baseselector">
                 <area>200,550,-1,40</area>
             </buttonlist>
-            <textarea name="labelorder" from="basetext_s">
+            <textarea name="labelorder" from="basetext_m">
                 <area>0,600,200,40</area>
                 <value>Order By:</value>
             </textarea>
             <buttonlist name="orderby_select" from="baseselector">
                 <area>200,600,-1,40</area>
             </buttonlist>
-            <textarea name="numvideos_text" from="basetext_xs">
+            <textarea name="numvideos_text" from="basetext_s">
                 <area>0,660,100%,40</area>
                 <align>center</align>
                 <alpha>200</alpha>
@@ -703,31 +703,31 @@
             <area>50%-500,50%-300,1000,400</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="labeldefplayer" from="basetext_s">
+                <textarea name="labeldefplayer" from="basetext_m">
                     <area>0,0,100%,40</area>
                     <value>Default player:</value>
                 </textarea>
-                <textarea name="labelaltcheck" from="basetext_s">
+                <textarea name="labelaltcheck" from="basetext_m">
                     <area>0,65,100%,40</area>
                     <value>Enable Alternate Player:</value>
                 </textarea>
-                <textarea name="labelaltplayer" from="basetext_s">
+                <textarea name="labelaltplayer" from="basetext_m">
                     <area>0,130,100%,40</area>
                     <value>Alternative player:</value>
                 </textarea>
-                <textarea name="labeldvddrive" from="basetext_s">
+                <textarea name="labeldvddrive" from="basetext_m">
                     <area>0,220,100%,40</area>
                     <value>DVD drive:</value>
                 </textarea>
-                <textarea name="labeldvdplayer" from="basetext_s">
+                <textarea name="labeldvdplayer" from="basetext_m">
                     <area>0,285,100%,40</area>
                     <value>DVD player:</value>
                 </textarea>
-                <textarea name="labelbdmount" from="basetext_s">
+                <textarea name="labelbdmount" from="basetext_m">
                     <area>0,375,100%,40</area>
                     <value>Blu-ray Mount:</value>
                 </textarea>
-                <textarea name="labelbdregion" from="basetext_s">
+                <textarea name="labelbdregion" from="basetext_m">
                     <area>0,440,100%,40</area>
                     <value>Blu-ray Region:</value>
                 </textarea>
@@ -782,23 +782,23 @@
             <area>50%-400,50%-250,800,300</area>
             <group name="labels">
                 <area>0,0,700,100%</area>
-                <textarea name="labelauto" from="basetext_s">
+                <textarea name="labelauto" from="basetext_m">
                     <area>0,0,100%,40</area>
                     <value>Perform metadata update after video scan</value>
                 </textarea>
-                <textarea name="labelunknown" from="basetext_s">
+                <textarea name="labelunknown" from="basetext_m">
                     <area>0,65,100%,40</area>
                     <value>Display unknown file types</value>
                 </textarea>
-                <textarea name="labelbrowse" from="basetext_s">
+                <textarea name="labelbrowse" from="basetext_m">
                     <area>0,130,100%,40</area>
                     <value>Enable metadata in file browse mode</value>
                 </textarea>
-                <textarea name="labelrandom" from="basetext_s">
+                <textarea name="labelrandom" from="basetext_m">
                     <area>0,195,100%,40</area>
                     <value>Enable Random Trailer Playback</value>
                 </textarea>
-                <textarea name="labelnum" from="basetext_s">
+                <textarea name="labelnum" from="basetext_m">
                     <area>0,260,100%,40</area>
                     <value>Trailers to Play:</value>
                 </textarea>
@@ -853,51 +853,51 @@
             <area>50%-500,75,1000,870</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="labeltitle" from="basetext_s">
+                <textarea name="labeltitle" from="basetext_m">
                     <area>0,0,100%,40</area>
                     <value>Title:</value>
                 </textarea>
-                <textarea name="labelsubtitle" from="basetext_s">
+                <textarea name="labelsubtitle" from="basetext_m">
                     <area>0,65,100%,40</area>
                     <value>Subtitle:</value>
                 </textarea>
-                <textarea name="labeldescription" from="basetext_s">
+                <textarea name="labeldescription" from="basetext_m">
                     <area>0,130,100%,40</area>
                     <value>Description:</value>
                 </textarea>
-                <textarea name="labelcategory" from="basetext_s">
+                <textarea name="labelcategory" from="basetext_m">
                     <area>0,315,100%,40</area>
                     <value>Category:</value>
                 </textarea>
-                <textarea name="labelinetref" from="basetext_s">
+                <textarea name="labelinetref" from="basetext_m">
                     <area>0,380,100%,40</area>
                     <value>TMDB/TVDB ID:</value>
                 </textarea>
-                <textarea name="labelseason" from="basetext_s">
+                <textarea name="labelseason" from="basetext_m">
                     <area>0,445,100%,40</area>
                     <value>Season:</value>
                 </textarea>
-                <textarea name="labelyear" from="basetext_s">
+                <textarea name="labelyear" from="basetext_m">
                     <area>0,510,100%,40</area>
                     <value>Year:</value>
                 </textarea>
-                <textarea name="labeluserrating" from="basetext_s">
+                <textarea name="labeluserrating" from="basetext_m">
                     <area>0,575,100%,40</area>
                     <value>User Rating:</value>
                 </textarea>
-                <textarea name="labelwatched" from="basetext_s">
+                <textarea name="labelwatched" from="basetext_m">
                     <area>0,640,100%,40</area>
                     <value>Watched:</value>
                 </textarea>
-                <textarea name="labellevel" from="basetext_s">
+                <textarea name="labellevel" from="basetext_m">
                     <area>0,705,100%,40</area>
                     <value>Parental Control:</value>
                 </textarea>
-                <textarea name="labelplayer" from="basetext_s">
+                <textarea name="labelplayer" from="basetext_m">
                     <area>0,770,100%,40</area>
                     <value>Unique Player Command:</value>
                 </textarea>
-                <textarea name="labelchild" from="basetext_s">
+                <textarea name="labelchild" from="basetext_m">
                     <area>0,835,100%,40</area>
                     <value>File to Always Play Next:</value>
                 </textarea>
@@ -922,7 +922,7 @@
                 <spinbox name="season" from="basespinbox">
                     <area>0,445,125,40</area>
                 </spinbox>
-                <textarea name="labelepisode" from="basetext_s">
+                <textarea name="labelepisode" from="basetext_m">
                     <area>250,445,250,40</area>
                     <value>Episode:</value>
                 </textarea>
@@ -932,7 +932,7 @@
                 <spinbox name="year_spin" from="basespinbox">
                     <area>0,510,125,40</area>
                 </spinbox>
-                <textarea name="labellength" from="basetext_s">
+                <textarea name="labellength" from="basetext_m">
                     <area>250,510,250,40</area>
                     <value>Length:</value>
                 </textarea>
@@ -942,7 +942,7 @@
                 <spinbox name="userrating_spin" from="basespinbox">
                     <area>0,575,125,40</area>
                 </spinbox>
-                <textarea name="labelrating" from="basetext_s">
+                <textarea name="labelrating" from="basetext_m">
                     <area>250,575,250,40</area>
                     <value>Movie Rating:</value>
                 </textarea>
@@ -952,7 +952,7 @@
                 <checkbox name="watched_check" from="basecheckbox">
                     <position>0,645</position>
                 </checkbox>
-                <textarea name="labelbrowse" from="basetext_s">
+                <textarea name="labelbrowse" from="basetext_m">
                     <area>250,640,250,40</area>
                     <value>Browsable:</value>
                 </textarea>
@@ -974,7 +974,7 @@
             </shape>
             <group name="buttons">
                 <area>1100,0,-25,100%</area>
-                <textarea name="labelfanart" from="basetext_s">
+                <textarea name="labelfanart" from="basetext_m">
                     <area>0,0,200,40</area>
                     <value>Fanart:</value>
                 </textarea>
@@ -987,7 +987,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labelcoverart" from="basetext_s">
+                <textarea name="labelcoverart" from="basetext_m">
                     <area>0,195,200,40</area>
                     <value>Coverart:</value>
                 </textarea>
@@ -1000,7 +1000,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labelbanner" from="basetext_s">
+                <textarea name="labelbanner" from="basetext_m">
                     <area>0,390,200,40</area>
                     <value>Banner:</value>
                 </textarea>
@@ -1013,7 +1013,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labelscreenshot" from="basetext_s">
+                <textarea name="labelscreenshot" from="basetext_m">
                     <area>0,585,200,40</area>
                     <value>Screenshot:</value>
                 </textarea>
@@ -1026,7 +1026,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labeltrailer" from="basetext_s">
+                <textarea name="labeltrailer" from="basetext_m">
                     <area>0,780,200,40</area>
                     <value>Trailer:</value>
                 </textarea>
@@ -1044,7 +1044,7 @@
             <imagetype name="coverart">
                 <area>0,0,100%,100%</area>
             </imagetype>
-            <textarea name="coverart_text" from="basetext_xs">
+            <textarea name="coverart_text" from="basetext_s">
                 <area>0,580,-1,40</area>
                 <alpha>150</alpha>
                 <align>left</align>
@@ -1061,7 +1061,7 @@
             <imagetype name="banner">
                 <area>0,0,100%,100%</area>
             </imagetype>
-            <textarea name="banner_text" from="basetext_xs">
+            <textarea name="banner_text" from="basetext_s">
                 <area>0,100,-1,40</area>
                 <alpha>150</alpha>
                 <align>left</align>
@@ -1070,7 +1070,7 @@
                 <value>Banner:</value>
             </textarea>
         </group>
-        <textarea name="fanart_text" from="basetext_xs">
+        <textarea name="fanart_text" from="basetext_s">
             <area>25,840,406,40</area>
             <alpha>150</alpha>
             <align>left</align>
@@ -1078,7 +1078,7 @@
             <template>Fanart: %1</template>
             <value>Fanart:</value>
         </textarea>
-        <textarea name="screenshot_text" from="basetext_xs">
+        <textarea name="screenshot_text" from="basetext_s">
             <area>25,880,406,40</area>
             <alpha>150</alpha>
             <align>left</align>
@@ -1086,7 +1086,7 @@
             <template>Screenshot: %1</template>
             <value>Screenshot:</value>
         </textarea>
-        <textarea name="trailer_text" from="basetext_xs">
+        <textarea name="trailer_text" from="basetext_s">
             <area>25,920,406,40</area>
             <alpha>150</alpha>
             <align>left</align>
@@ -1115,19 +1115,19 @@
             <area>50%-500,50%-200,1000,400</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="labelextension" from="basetext_s">
+                <textarea name="labelextension" from="basetext_m">
                     <area>0,0,100%,40</area>
                     <value>Extension:</value>
                 </textarea>
-                <textarea name="labelcommand" from="basetext_s">
+                <textarea name="labelcommand" from="basetext_m">
                     <area>0,65,100%,40</area>
                     <value>Command:</value>
                 </textarea>
-                <textarea name="labeldefault" from="basetext_s">
+                <textarea name="labeldefault" from="basetext_m">
                     <area>0,130,100%,40</area>
                     <value>Use default player:</value>
                 </textarea>
-                <textarea name="labelignore" from="basetext_s">
+                <textarea name="labelignore" from="basetext_m">
                     <area>0,195,100%,40</area>
                     <value>Ignore:</value>
                 </textarea>

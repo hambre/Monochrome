@@ -11,7 +11,7 @@
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Program Guide</value>
         </textarea>
-        <textarea name="datetext" from="basetext_s">
+        <textarea name="datetext" from="basetext_m">
             <area>25,0,150,50</area>
             <align>hcenter,vcenter</align>
             <alpha>200</alpha>
@@ -30,7 +30,7 @@
                     <area>0,0,100%,99</area>
                     <state name="active">
                         <area>0,0,100%,99</area>
-                        <textarea name="buttontext" from="basetext_s">
+                        <textarea name="buttontext" from="basetext_m">
                             <area>10,10,-10,100%</area>
                             <align>center</align>
                             <alpha>100</alpha>
@@ -63,7 +63,7 @@
                             <filename>images/icons/Sender.png</filename>
                             <alpha>100</alpha>
                         </imagetype>
-                        <textarea name="channelnumber" from="basetext_s">
+                        <textarea name="channelnumber" from="basetext_m">
                             <area>0,0,100%,100%</area>
                             <align>center</align>
                             <alpha>100</alpha>
@@ -82,7 +82,7 @@
                 <!-- BUG: placement of guid grid is not relative to parent -->
                 <area>175,115,1716,600</area>
                 <layout>vertical</layout>
-                <font>basefont_xs</font>
+                <font>basefont_s</font>
                 <channels>6</channels>
                 <timeslots>6</timeslots>
                 <textoffset>10,5</textoffset>
@@ -148,7 +148,7 @@
                     <filename>images/icons/SenderBig.png</filename>
                     <alpha>100</alpha>
                 </imagetype>
-                <textarea name="channel" from="basetext_s">
+                <textarea name="channel" from="basetext_m">
                     <area>0,100%-50,100%,50</area>
                     <align>center</align>
                     <alpha>200</alpha>
@@ -157,11 +157,11 @@
             <textarea name="title" from="basetitle">
                 <area>250,0,-1,50</area>
             </textarea>
-            <textarea name="timedate" from="basetext_s">
+            <textarea name="timedate" from="basetext_m">
                 <area>250,50,-1,40</area>
                 <template>%TIMEDATE% (%LENMINS%)</template>
             </textarea>
-            <textarea name="description" from="basetext_s">
+            <textarea name="description" from="basetext_m">
                 <area>250,100,-1,100%</area>
                 <multiline>yes</multiline>
                 <cutdown>yes</cutdown>
@@ -171,7 +171,7 @@
         </group>
         <group name="footer">
             <area>25,100%-50,-25,50</area>
-            <textarea name="channelgroup" from="basetext_s">
+            <textarea name="channelgroup" from="basetext_m">
                 <area>0,0,100%,100%</area>
                 <align>center</align>
                 <alpha>150</alpha>
@@ -190,7 +190,7 @@
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Program Guide</value>
         </textarea>
-        <textarea name="datetext" from="basetext_s">
+        <textarea name="datetext" from="basetext_m">
             <area>25,0,150,50</area>
             <align>hcenter,vcenter</align>
             <alpha>200</alpha>
@@ -209,7 +209,7 @@
                     <area>0,0,100%,99</area>
                     <state name="active">
                         <area>0,0,100%,99</area>
-                        <textarea name="buttontext" from="basetext_s">
+                        <textarea name="buttontext" from="basetext_m">
                             <area>10,10,-10,100%</area>
                             <align>center</align>
                             <alpha>100</alpha>
@@ -242,7 +242,7 @@
                             <filename>images/icons/Sender.png</filename>
                             <alpha>100</alpha>
                         </imagetype>
-                        <textarea name="channelnumber" from="basetext_s">
+                        <textarea name="channelnumber" from="basetext_m">
                             <area>0,0,100%,100%</area>
                             <align>center</align>
                             <alpha>100</alpha>
@@ -261,7 +261,7 @@
                 <!-- BUG: placement of guid grid is not relative to parent -->
                 <area>175,115,1716,600</area>
                 <layout>vertical</layout>
-                <font>basefont_xs</font>
+                <font>basefont_s</font>
                 <channels>6</channels>
                 <timeslots>6</timeslots>
                 <textoffset>10,5</textoffset>
@@ -295,7 +295,7 @@
                     <fill color="#FFFFFF" alpha="25" />
                     <line color="#000000" alpha="0" width="0" />
                 </shape>
-                <textarea name="channel" from="basetext_s">
+                <textarea name="channel" from="basetext_m">
                     <area>0,100%-50,100%,50</area>
                     <align>center</align>
                     <alpha>200</alpha>
@@ -304,11 +304,11 @@
             <textarea name="title" from="basetitle">
                 <area>400,0,-1,50</area>
             </textarea>
-            <textarea name="timedate" from="basetext_s">
+            <textarea name="timedate" from="basetext_m">
                 <area>400,50,-1,40</area>
                 <template>%TIMEDATE% (%LENMINS%)</template>
             </textarea>
-            <textarea name="description" from="basetext_s">
+            <textarea name="description" from="basetext_m">
                 <area>400,100,-1,100%</area>
                 <multiline>yes</multiline>
                 <cutdown>yes</cutdown>
@@ -322,7 +322,7 @@
         </imagetype>
         <group name="footer">
             <area>25,100%-50,-25,50</area>
-            <textarea name="channelgroup" from="basetext_s">
+            <textarea name="channelgroup" from="basetext_m">
                 <area>0,0,100%,100%</area>
                 <align>center</align>
                 <alpha>150</alpha>
@@ -350,23 +350,23 @@
             <area>50%-500,550,1000,-115</area>
             <group name="labels">
                 <area>0,0,35%,100%</area>
-                <textarea name="titlelabel" from="basetext_s">
+                <textarea name="titlelabel" from="basetext_m">
                     <area>0,0,100%,40</area>
                     <value>Title (Optional):</value>
                 </textarea>
-                <textarea name="channellabel" from="basetext_s">
+                <textarea name="channellabel" from="basetext_m">
                     <area>0,65,100%,40</area>
                     <value>Channel:</value>
                 </textarea>
-                <textarea name="datelabel" from="basetext_s">
+                <textarea name="datelabel" from="basetext_m">
                     <area>0,130,100%,40</area>
                     <value>Date, or day of week:</value>
                 </textarea>
-                <textarea name="timelabel" from="basetext_s">
+                <textarea name="timelabel" from="basetext_m">
                     <area>0,195,100%,40</area>
                     <value>Start Time:</value>
                 </textarea>
-                <textarea name="durationlabel" from="basetext_s">
+                <textarea name="durationlabel" from="basetext_m">
                     <area>0,260,100%,40</area>
                     <value>Duration:</value>
                 </textarea>
@@ -385,7 +385,7 @@
                 <spinbox name="starthour" from="basespinbox">
                     <area>0,195,100,40</area>
                 </spinbox>
-                <textarea name="timesep" from="basetext_s">
+                <textarea name="timesep" from="basetext_m">
                     <area>110,195,5,40</area>
                     <value>:</value>
                 </textarea>
@@ -430,15 +430,15 @@
                 <state name="active">
                     <textarea name="card" from="baseitemtext">
                         <area>5,0,50,100%</area>
-                        <font state="error">basefont_m_bad</font>
-                        <font state="running">basefont_m_good</font>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
                         <alpha>100</alpha>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,60%,100%</area>
                         <alpha>100</alpha>
                     </textarea>
-                    <textarea name="timedate" from="basetext_s">
+                    <textarea name="timedate" from="basetext_m">
                         <area>60%,0,-5,100%</area>
                         <align>right,vcenter</align>
                         <alpha>100</alpha>
@@ -447,26 +447,26 @@
                 <state name="selectedactive">
                     <textarea name="card" from="baseitemtext">
                         <area>5,0,50,100%</area>
-                        <font state="error">basefont_m_bad</font>
-                        <font state="running">basefont_m_good</font>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,60%,100%</area>
                     </textarea>
-                    <textarea name="timedate" from="basetext_s">
+                    <textarea name="timedate" from="basetext_m">
                         <area>60%,0,-5,100%</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
         </buttonlist>
-        <textarea name="filterlabel" from="basetext_s">
+        <textarea name="filterlabel" from="basetext_m">
             <area>250,100%-50,200,50</area>
             <align>right,vcenter</align>
             <value>Showing:</value>
             <alpha>200</alpha>
         </textarea>
-        <textarea name="filter" from="basetext_s">
+        <textarea name="filter" from="basetext_m">
             <area>460,100%-50,250,50</area>
             <alpha>200</alpha>
         </textarea>
@@ -487,13 +487,13 @@
                     <area>50%,80,32,32</area>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
-                <textarea name="recgroup" from="basetext_xs">
+                <textarea name="recgroup" from="basetext_s">
                     <area>50%+50,80,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
             </group>
         </group>
-        <textarea name="status" from="basetext_s">
+        <textarea name="status" from="basetext_m">
             <area>975,100%-50,-25,50</area>
             <align>center</align>
             <alpha>200</alpha>
@@ -525,7 +525,7 @@
                         <area>60,0,-220,100%</area>
                         <alpha>100</alpha>
                     </textarea>
-                    <textarea name="priority" from="basetext_s">
+                    <textarea name="priority" from="basetext_m">
                         <area>100%-75,0,-30,100%</area>
                         <align>right,vcenter</align>
                         <alpha>100</alpha>
@@ -538,7 +538,7 @@
                     <textarea name="callsign" from="baseitemtext">
                         <area>60,0,-220,100%</area>
                     </textarea>
-                    <textarea name="priority" from="basetext_s">
+                    <textarea name="priority" from="basetext_m">
                         <area>100%-75,0,-30,100%</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -571,7 +571,7 @@
                 <filename>images/icons/SenderBig.png</filename>
                 <alpha>100</alpha>
             </imagetype>
-            <textarea name="callsign" from="basetext_s">
+            <textarea name="callsign" from="basetext_m">
                 <area>0,100%-50,100%,50</area>
                 <align>center</align>
                 <alpha>200</alpha>
@@ -599,15 +599,15 @@
                 <state name="active">
                     <textarea name="rectypechar" from="baseitemtext">
                         <area>5,0,50,100%</area>
-                        <font state="error">basefont_m_bad</font>
-                        <font state="running">basefont_m_good</font>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
                         <alpha>100</alpha>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,-220,100%</area>
                         <alpha>100</alpha>
                     </textarea>
-                    <textarea name="lastrecorded" from="basetext_s">
+                    <textarea name="lastrecorded" from="basetext_m">
                         <area>100%-225,0,-5,100%</area>
                         <align>right,vcenter</align>
                         <alpha>100</alpha>
@@ -616,13 +616,13 @@
                 <state name="selectedactive">
                     <textarea name="rectypechar" from="baseitemtext">
                         <area>5,0,50,100%</area>
-                        <font state="error">basefont_m_bad</font>
-                        <font state="running">basefont_m_good</font>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,-220,100%</area>
                     </textarea>
-                    <textarea name="lastrecorded" from="basetext_s">
+                    <textarea name="lastrecorded" from="basetext_m">
                         <area>100%-225,0,-5,100%</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -635,11 +635,11 @@
             <textarea name="title" from="basetitle">
                 <area>0,0,100%,50</area>
             </textarea>
-            <textarea name="category" from="basetext_s">
+            <textarea name="category" from="basetext_m">
                 <area>0,50,100%,40</area>
                 <alpha>200</alpha>
             </textarea>
-            <textarea name="description" from="basetext_s">
+            <textarea name="description" from="basetext_m">
                 <area>0,95,100%,255</area>
                 <multiline>yes</multiline>
                 <cutdown>yes</cutdown>
@@ -656,7 +656,7 @@
                     <area>0,120,32,32</area>
                     <filename>images/icons/Calendar.png</filename>
                 </imagetype>
-                <textarea name="scheduleinfo" from="basetext_xs">
+                <textarea name="scheduleinfo" from="basetext_s">
                     <area>50,120,50%,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -665,7 +665,7 @@
                     <area>50%+50,0,32,32</area>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
-                <textarea name="recgroup" from="basetext_xs">
+                <textarea name="recgroup" from="basetext_s">
                     <area>50%+100,0,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -673,7 +673,7 @@
                     <area>50%+50,40,32,32</area>
                     <filename>images/icons/Profile.png</filename>
                 </imagetype>
-                <textarea name="recordingprofile" from="basetext_xs">
+                <textarea name="recordingprofile" from="basetext_s">
                     <area>50%+100,40,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -681,7 +681,7 @@
                     <area>50%+50,80,32,32</area>
                     <filename>images/icons/Storage.png</filename>
                 </imagetype>
-                <textarea name="storagegroup" from="basetext_xs">
+                <textarea name="storagegroup" from="basetext_s">
                     <area>50%+100,80,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -689,7 +689,7 @@
                     <area>50%+50,120,32,32</area>
                     <filename>images/icons/Override.png</filename>
                 </imagetype>
-                <textarea name="finalpriority" from="basetext_xs">
+                <textarea name="finalpriority" from="basetext_s">
                     <area>50%+100,120,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -716,7 +716,7 @@
         <!-- middle part -->
         <group name="content">
             <area>50%-475,415,950,-115</area>
-            <textarea name="ruleslabel" from="basetext_s">
+            <textarea name="ruleslabel" from="basetext_m">
                 <area>0,0,300,40</area>
                 <value>Existing Rules:</value>
             </textarea>
@@ -724,7 +724,7 @@
                 <area>300,0,100%,40</area>
             </buttonlist>
 
-            <textarea name="titlelabel" from="basetext_s">
+            <textarea name="titlelabel" from="basetext_m">
                 <area>0,65,300,40</area>
                 <value>Rule Name:</value>
             </textarea>
@@ -732,7 +732,7 @@
                 <area>300,65,100%,40</area>
             </textedit>
 
-            <textarea name="prioritylabel" from="basetext_s">
+            <textarea name="prioritylabel" from="basetext_m">
                 <area>0,130,300,40</area>
                 <value>Priority Change:</value>
             </textarea>
@@ -740,7 +740,7 @@
                 <area>300,130,100,40</area>
             </spinbox>
 
-            <textarea name="clauseslabel" from="basetext_s">
+            <textarea name="clauseslabel" from="basetext_m">
                 <area>0,200,100%,40</area>
                 <value>Select a clause from the list.</value>
                 <align>allcenter</align>
@@ -871,7 +871,7 @@
             <value>Edit Power Search Fields</value>
         </textarea>
         <!-- content part -->
-        <textarea name="titlelabel" from="basetext_s">
+        <textarea name="titlelabel" from="basetext_m">
             <area>50,75,-50,40</area>
             <value>Optional title phrase:</value>
         </textarea>
@@ -879,7 +879,7 @@
             <area>50,120,-50,40</area>
         </textedit>
 
-        <textarea name="subtitlelabel" from="basetext_s">
+        <textarea name="subtitlelabel" from="basetext_m">
             <area>50,185,-50,40</area>
             <value>Optional subtitle phrase:</value>
         </textarea>
@@ -887,7 +887,7 @@
             <area>50,230,-50,40</area>
         </textedit>
 
-        <textarea name="desclabel" from="basetext_s">
+        <textarea name="desclabel" from="basetext_m">
             <area>50,295,-50,40</area>
             <value>Optional subtitle phrase:</value>
         </textarea>
@@ -895,7 +895,7 @@
             <area>50,340,-50,40</area>
         </textedit>
 
-        <textarea name="categorylabel" from="basetext_s">
+        <textarea name="categorylabel" from="basetext_m">
             <area>50,405,250,40</area>
             <value>Category:</value>
         </textarea>
@@ -903,7 +903,7 @@
             <area>300,405,-50,40</area>
         </buttonlist>
 
-        <textarea name="genrelabel" from="basetext_s">
+        <textarea name="genrelabel" from="basetext_m">
             <area>50,470,250,40</area>
             <value>Genre:</value>
         </textarea>
@@ -911,7 +911,7 @@
             <area>300,470,-50,40</area>
         </buttonlist>
 
-        <textarea name="channellabel" from="basetext_s">
+        <textarea name="channellabel" from="basetext_m">
             <area>50,535,250,40</area>
             <value>Channel:</value>
         </textarea>
@@ -945,15 +945,15 @@
                 <state name="active">
                     <textarea name="card" from="baseitemtext">
                         <area>5,0,50,100%</area>
-                        <font state="error">basefont_m_bad</font>
-                        <font state="running">basefont_m_good</font>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
                         <alpha>100</alpha>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,60%,100%</area>
                         <alpha>100</alpha>
                     </textarea>
-                    <textarea name="timedate" from="basetext_s">
+                    <textarea name="timedate" from="basetext_m">
                         <area>60%,0,-5,100%</area>
                         <align>right,vcenter</align>
                         <alpha>100</alpha>
@@ -962,20 +962,20 @@
                 <state name="selectedactive">
                     <textarea name="card" from="baseitemtext">
                         <area>5,0,50,100%</area>
-                        <font state="error">basefont_m_bad</font>
-                        <font state="running">basefont_m_good</font>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,60%,100%</area>
                     </textarea>
-                    <textarea name="timedate" from="basetext_s">
+                    <textarea name="timedate" from="basetext_m">
                         <area>60%,0,-5,100%</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
         </buttonlist>
-        <textarea name="curview" from="basetext_xs">
+        <textarea name="curview" from="basetext_s">
             <area>25,100%-50,900,50</area>
             <align>left,vcenter</align>
             <alpha>150</alpha>
@@ -997,13 +997,13 @@
                     <area>50%,80,32,32</area>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
-                <textarea name="recgroup" from="basetext_xs">
+                <textarea name="recgroup" from="basetext_s">
                     <area>50%+50,80,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
             </group>
         </group>
-        <textarea name="position" from="basetext_xs">
+        <textarea name="position" from="basetext_s">
             <area>100%-325,100%-50,300,50</area>
             <align>right,vcenter</align>
             <alpha>150</alpha>
@@ -1058,7 +1058,7 @@
             <group name="titledesc" from="basetitledesc">
                 <area>0,0,100%,385</area>
             </group>
-            <textarea name="help2text" from="basetext_s">
+            <textarea name="help2text" from="basetext_m">
                 <area>0,0,100%,100%</area>
                 <multiline>yes</multiline>
                 <alpha>200</alpha>
@@ -1074,7 +1074,7 @@
                     <area>50%,80,32,32</area>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
-                <textarea name="recgroup" from="basetext_xs">
+                <textarea name="recgroup" from="basetext_s">
                     <area>50%+50,80,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -1174,7 +1174,7 @@
         <!-- left side -->
         <group name="controls">
             <area>50,465,600,-115</area>
-            <textarea name="ruleactivelabel" from="basetext_s">
+            <textarea name="ruleactivelabel" from="basetext_m">
                 <area>5,0,300,40</area>
                 <value>Recording Rule Active</value>
             </textarea>
@@ -1355,7 +1355,7 @@
             <buttonlist name="maxnewest" from="baseselector">
                 <area>0,325,100%,40</area>
             </buttonlist>
-            <textarea name="autoexpirelabel" from="basetext_s">
+            <textarea name="autoexpirelabel" from="basetext_m">
                 <area>0,390,-50,40</area>
                 <value>Allow recordings to expire?</value>
             </textarea>
@@ -1402,7 +1402,7 @@
         <!-- left side -->
         <group name="controls">
             <area>50,470,600,-115</area>
-            <textarea name="metadatalookuplabel" from="basetext_s">
+            <textarea name="metadatalookuplabel" from="basetext_m">
                 <area>0,0,-50,40</area>
                 <value>Automatically Look Up Metadata</value>
             </textarea>
@@ -1410,7 +1410,7 @@
                 <area>100%-32,4,32,32</area>
             </checkbox>
 
-            <textarea name="autocommflaglabel" from="basetext_s">
+            <textarea name="autocommflaglabel" from="basetext_m">
                 <area>0,65,-50,40</area>
                 <value>Commercial Flag new recordings</value>
             </textarea>
@@ -1418,7 +1418,7 @@
                 <area>100%-32,69,32,32</area>
             </checkbox>
 
-            <textarea name="autotranscodelabel" from="basetext_s">
+            <textarea name="autotranscodelabel" from="basetext_m">
                 <area>0,130,-50,40</area>
                 <value>Transcode new recordings</value>
             </textarea>
@@ -1431,7 +1431,7 @@
                 <helptext></helptext>
             </buttonlist>
 
-            <textarea name="userjob1label" from="basetext_s">
+            <textarea name="userjob1label" from="basetext_m">
                 <area>0,260,-50,40</area>
                 <value>Run User Job #1</value>
             </textarea>
@@ -1439,7 +1439,7 @@
                 <area>100%-32,264,32,32</area>
             </checkbox>
 
-            <textarea name="userjob2label" from="basetext_s">
+            <textarea name="userjob2label" from="basetext_m">
                 <area>0,325,-50,40</area>
                 <value>Run User Job #2</value>
             </textarea>
@@ -1447,7 +1447,7 @@
                 <area>100%-32,329,32,32</area>
             </checkbox>
 
-            <textarea name="userjob3label" from="basetext_s">
+            <textarea name="userjob3label" from="basetext_m">
                 <area>0,390,-50,40</area>
                 <value>Run User Job #3</value>
             </textarea>
@@ -1455,7 +1455,7 @@
                 <area>100%-32,394,32,32</area>
             </checkbox>
 
-            <textarea name="userjob4label" from="basetext_s">
+            <textarea name="userjob4label" from="basetext_m">
                 <area>0,455,-50,40</area>
                 <value>Run User Job #4</value>
             </textarea>
@@ -1502,7 +1502,7 @@
         <!-- left side -->
         <group name="controls">
             <area>50,415,600,-115</area>
-            <textarea name="inet" from="basetext_s">
+            <textarea name="inet" from="basetext_m">
                 <area>0,0,50%,40</area>
                 <value>TMDB/TVDB #:</value>
             </textarea>
@@ -1510,7 +1510,7 @@
                 <area>50%,0,100%,40</area>
             </textedit>
 
-            <textarea name="seasonlabel" from="basetext_s">
+            <textarea name="seasonlabel" from="basetext_m">
                 <area>0,65,180,40</area>
                 <value>Season:</value>
             </textarea>
@@ -1518,7 +1518,7 @@
                 <area>180,65,100,40</area>
             </spinbox>
 
-            <textarea name="episodelabel" from="basetext_s">
+            <textarea name="episodelabel" from="basetext_m">
                 <area>320,65,180,40</area>
                 <value>Episode:</value>
             </textarea>
@@ -1600,7 +1600,7 @@
         <!-- middle part -->
         <group name="content">
             <area>50%-500,425,1000,-115</area>
-            <textarea name="ruleslabel" from="basetext_s">
+            <textarea name="ruleslabel" from="basetext_m">
                 <area>0,0,300,40</area>
                 <value>Existing Rules:</value>
             </textarea>
@@ -1608,7 +1608,7 @@
                 <area>300,0,700,40</area>
             </buttonlist>
 
-            <textarea name="titlelabel" from="basetext_s">
+            <textarea name="titlelabel" from="basetext_m">
                 <area>0,65,300,40</area>
                 <value>Rule Name:</value>
             </textarea>
@@ -1616,18 +1616,18 @@
                 <area>300,65,700,40</area>
             </textedit>
 
-            <textarea name="clauseslabel" from="basetext_s">
+            <textarea name="clauseslabel" from="basetext_m">
                 <area>0,130,300,40</area>
                 <value>Sample Clauses:</value>
             </textarea>
             <buttonlist name="clauses" from="baseselector">
                 <area>300,130,700,40</area>
             </buttonlist>
-            <textarea name="clausetext" from="basetext_s">
+            <textarea name="clausetext" from="basetext_m">
                 <area>300,195,300,40</area>
             </textarea>
 
-            <textarea name="descriptionlabel" from="basetext_s">
+            <textarea name="descriptionlabel" from="basetext_m">
                 <area>0,250,300,40</area>
                 <value>Description:</value>
             </textarea>
@@ -1635,7 +1635,7 @@
                 <area>300,260,100%,160</area>
             </textedit>
 
-            <textarea name="subtitlelabel" from="basetext_s">
+            <textarea name="subtitlelabel" from="basetext_m">
                 <area>0,445,300,40</area>
                 <value>Additional Tables:</value>
             </textarea>
@@ -1685,14 +1685,14 @@
                         <textarea name="title" from="baseitemtext">
                             <area>5,0,50%,100%</area>
                         </textarea>
-                        <textarea name="shorttimedate" from="basetext_s">
+                        <textarea name="shorttimedate" from="basetext_m">
                             <area>50%,0,75%,100%</area>
                             <align>right,vcenter</align>
                         </textarea>
-                        <textarea name="statusbefore" from="basetext_s">
+                        <textarea name="statusbefore" from="basetext_m">
                             <area>75%,0,-5,100%</area>
-                            <font state="error">basefont_s_bad</font>
-                            <font state="running">basefont_s_good</font>
+                            <font state="error">basefont_m_bad</font>
+                            <font state="running">basefont_m_good</font>
                             <align>right,vcenter</align>
                             <template>[%statusbefore% >> %statusafter%]</template>
                         </textarea>

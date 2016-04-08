@@ -13,7 +13,7 @@
         </shape>
         <textarea name="messagearea">
             <area>50,20,-50,110</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
@@ -42,7 +42,6 @@
                         <alpha>50</alpha>
                     </imagetype>
                     <textarea name="buttontext">
-                    <area>5,0,-5,100%</area>
                         <area>5,0,-5,100%</area>
                         <font>basefont_m</font>
                         <multiline>no</multiline>
@@ -103,7 +102,7 @@
         </shape>
         <textarea name="message_text">
             <area>50,0,-50,100%-10</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>center</align>
             <multiline>yes</multiline>
         </textarea>
@@ -122,7 +121,7 @@
         </shape>
         <textarea name="osd_number_entry">
             <area>50,0,-50,100%-10</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>center</align>
         </textarea>
     </window>
@@ -144,19 +143,19 @@
         </imagetype>
         <clock name="date">
             <area>50,100%-130,250,40</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>left,vcenter</align>
             <alpha>150</alpha>
             <template>%DATE%</template>
         </clock>
         <textarea name="title">
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <area>50,100%-130,-50,40</area>
             <align>center</align>
         </textarea>
         <clock name="time">
             <area>100%-250,100%-130,-50,40</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>right,vcenter</align>
             <alpha>150</alpha>
             <template>%TIME%</template>
@@ -179,7 +178,7 @@
             </shape>
         </progressbar>
         <textarea name="description">
-            <font>basefont_xs</font>
+            <font>basefont_s</font>
             <area>50,100%-45,-50,30</area>
             <align>center</align>
         </textarea>
@@ -224,7 +223,7 @@
             <alpha>100</alpha>
         </imagetype>
         <textarea name="channum">
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <area>25,185,150,35</area>
             <align>center</align>
             <template>%CHANNUM%</template>
@@ -238,20 +237,20 @@
         </textarea>
         <clock name="time">
             <area>100%-250,20,-25,40</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>right,vcenter</align>
             <alpha>150</alpha>
             <template>%TIME%</template>
         </clock>
         <textarea name="mediatime">
-            <font>basefont_xs</font>
+            <font>basefont_s</font>
             <area>200,70,-50,40</area>
             <align>left,top</align>
             <template>%CALLSIGN| %%: |YEAR| %%~ |STARTTIME| %%- |ENDTIME% (%LENMINS%)</template>
             <alpha>200</alpha>
         </textarea>
         <textarea name="description">
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <area>200,110,-25,-20</area>
             <align>justify,vcenter</align>
             <multiline>yes</multiline>
@@ -483,7 +482,7 @@
             <alpha>100</alpha>
         </imagetype>
         <textarea name="channel">
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <area>25,185,150,35</area>
             <align>center</align>
             <template>%CHANNUM%</template>
@@ -497,20 +496,20 @@
         </textarea>
         <clock name="time">
             <area>100%-250,20,-25,40</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>right,vcenter</align>
             <alpha>150</alpha>
             <template>%TIME%</template>
         </clock>
         <textarea name="timeslot">
-            <font>basefont_xs</font>
+            <font>basefont_s</font>
             <area>200,70,-50,40</area>
             <align>left,top</align>
             <template>%CALLSIGN% : %STARTTIME% - %ENDTIME% (%LENMINS%)</template>
             <alpha>200</alpha>
         </textarea>
         <textarea name="description">
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <area>200,110,-25,-20</area>
             <align>justify,vcenter</align>
             <multiline>yes</multiline>
@@ -540,17 +539,17 @@
             <alpha>200</alpha>
         </imagetype>
         <textarea name="seekamount">
-            <font>basefont_xs</font>
+            <font>basefont_s</font>
             <area>100,100%-130,250,40</area>
             <align>left,vcenter</align>
         </textarea>
         <textarea name="title">
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <area>50,100%-130,-50,40</area>
             <align>center</align>
         </textarea>
         <textarea name="framedisplay">
-            <font>basefont_xs</font>
+            <font>basefont_s</font>
             <area>100%-300,100%-130,-100,40</area>
             <align>right,vcenter</align>
         </textarea>
@@ -595,7 +594,7 @@
             </shape>
         </editbar>
         <textarea name="timedisplay">
-            <font>basefont_xs</font>
+            <font>basefont_s</font>
             <area>50,100%-45,-50,30</area>
             <align>center</align>
             <template>%TIMEDISPLAY% %CUTINDICATOR%</template>
@@ -629,7 +628,7 @@
             <area>50,85,-50,-115</area>
             <group name="labels">
                 <textarea name="labeltext_s">
-                    <font>basefont_s</font>
+                    <font>basefont_m</font>
                     <multiline>no</multiline>
                     <align>left,vcenter</align>
                     <cutdown>yes</cutdown>
@@ -699,7 +698,7 @@
                     </imagetype>
                     <textarea name="text">
                         <area>5,0,-5,100%</area>
-                        <font>basefont_s</font>
+                        <font>basefont_m</font>
                         <multiline>no</multiline>
                         <align>left,vcenter</align>
                         <cutdown>yes</cutdown>
@@ -746,7 +745,7 @@
                     </imagetype>
                     <textarea name="text">
                         <area>0,0,100%,100%</area>
-                        <font>basefont_s</font>
+                        <font>basefont_m</font>
                         <align>allcenter</align>
                         <alpha>150</alpha>
                     </textarea>
@@ -798,7 +797,7 @@
             <filename>images/SeparatorH.png</filename>
         </imagetype>
 
-        <fontdef name="osdfont_s" from="basefont_xs">
+        <fontdef name="osdfont_s" from="basefont_s">
             <pixelsize>28</pixelsize>
         </fontdef>
 

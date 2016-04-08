@@ -11,7 +11,7 @@
             <value>Playlist View</value>
         </textarea>
 
-        <textarea name="notracks" from="basetext_s">
+        <textarea name="notracks" from="basetext_m">
             <area>100,465,-100,-115</area>
             <align>center</align>
             <value>You haven't selected any tracks to play</value>
@@ -180,7 +180,7 @@
         <textarea name="title" from="basepopuptitletext">
             <value>Volume</value>
         </textarea>
-        <textarea name="volume" from="basetext_s">
+        <textarea name="volume" from="basetext_m">
             <area>50,75,-50,40</area>
             <align>center</align>
         </textarea>

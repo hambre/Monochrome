@@ -17,7 +17,7 @@
         <!-- status information -->
         <group name="information">
             <area>25,465,-25,625</area>
-            <textarea name="status_text" from="basetext_m">
+            <textarea name="status_text" from="basetext_l">
                 <area>0,0,100%,50</area>
                 <align>center</align>
                 <multiline>yes</multiline>
@@ -25,21 +25,21 @@
                 <alpha>200</alpha>
             </textarea>
 
-            <textarea name="conflicts_text" from="basetext_m">
+            <textarea name="conflicts_text" from="basetext_l">
                 <area>0,75,100%,50</area>
                 <align>center</align>
-                <font>basefont_m_bad</font>
+                <font>basefont_l_bad</font>
                 <value>WARNING: There are conflicting scheduled recordings!</value>
                 <alpha>150</alpha>
             </textarea>
 
-            <textarea name="recording_label" from="basetext_m">
+            <textarea name="recording_label" from="basetext_l">
                 <area>0,175,50%-25,50</area>
                 <align>right,top</align>
                 <value>Current Recording(s)</value>
                 <alpha>200</alpha>
             </textarea>
-            <textarea name="recording_text" from="basetext_m">
+            <textarea name="recording_text" from="basetext_l">
                 <area>50%+25,175,100%,200</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>
@@ -47,13 +47,13 @@
                 <alpha>150</alpha>
             </textarea>
 
-            <textarea name="scheduled_label" from="basetext_m">
+            <textarea name="scheduled_label" from="basetext_l">
                 <area>0,375,50%-25,50</area>
                 <align>right,top</align>
                 <value>Next Scheduled Recording(s)</value>
                 <alpha>200</alpha>
             </textarea>
-            <textarea name="scheduled_text" from="basetext_m">
+            <textarea name="scheduled_text" from="basetext_l">
                 <area>50%+25,375,100%,150</area>
                 <align>left,top</align>
                 <multiline>yes</multiline>

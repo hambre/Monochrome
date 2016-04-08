@@ -3,42 +3,37 @@
 <mythuitheme>
 
     <!-- fonts small, medium, large, extra large, extra extra large, extra small -->
-    <fontdef name="basefont_s" face="Jesaya Free">
-        <pixelsize>32</pixelsize>
+    <fontdef name="basefont" face="Jesaya Free">
+        <pixelsize>12</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
-    <fontdef name="basefont_m" from="basefont_s">
+    <fontdef name="basefont_xs" from="basefont">
+        <pixelsize>24</pixelsize>
+    </fontdef>
+    <fontdef name="basefont_s" from="basefont">
+        <pixelsize>28</pixelsize>
+    </fontdef>
+    <fontdef name="basefont_m" from="basefont">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+    <fontdef name="basefont_l" from="basefont">
         <pixelsize>36</pixelsize>
     </fontdef>
-    <fontdef name="basefont_l" from="basefont_s">
+    <fontdef name="basefont_xl" from="basefont">
         <pixelsize>39</pixelsize>
         <weight>bold</weight>
     </fontdef>
-    <fontdef name="basefont_xl" from="basefont_s">
-        <pixelsize>42</pixelsize>
-        <weight>bold</weight>
+    <!-- colored fonts -->
+    <fontdef name="basefont_l_good" from="basefont_l">
+        <color>#00FF00</color>
     </fontdef>
-    <fontdef name="basefont_xxl" from="basefont_s">
-        <pixelsize>48</pixelsize>
-        <weight>bold</weight>
+    <fontdef name="basefont_l_bad" from="basefont_l">
+        <color>#FF0000</color>
     </fontdef>
-    <fontdef name="basefont_xs" from="basefont_s">
-        <pixelsize>28</pixelsize>
-    </fontdef>
-    <fontdef name="basefont_xxs" from="basefont_s">
-        <pixelsize>24</pixelsize>
-    </fontdef>
-
     <fontdef name="basefont_m_good" from="basefont_m">
         <color>#00FF00</color>
     </fontdef>
     <fontdef name="basefont_m_bad" from="basefont_m">
-        <color>#FF0000</color>
-    </fontdef>
-    <fontdef name="basefont_s_good" from="basefont_s">
-        <color>#00FF00</color>
-    </fontdef>
-    <fontdef name="basefont_s_bad" from="basefont_s">
         <color>#FF0000</color>
     </fontdef>
 
@@ -176,26 +171,28 @@
     </shape>
 
     <!-- textarea with small, medium, large and extra small font -->
-    <textarea name="basetext_s">
-        <font>basefont_s</font>
+    <textarea name="basetext">
         <multiline>no</multiline>
         <align>left,vcenter</align>
         <cutdown>yes</cutdown>
     </textarea>
-    <textarea name="basetext_m" from="basetext_s">
+    <textarea name="basetext_m" from="basetext">
         <font>basefont_m</font>
     </textarea>
-    <textarea name="basetext_l" from="basetext_s">
+    <textarea name="basetext_l" from="basetext">
         <font>basefont_l</font>
     </textarea>
-    <textarea name="basetext_xs" from="basetext_s">
-        <font>basefont_xs</font>
+    <textarea name="basetext_xl" from="basetext">
+        <font>basefont_xl</font>
+    </textarea>
+    <textarea name="basetext_s" from="basetext">
+        <font>basefont_s</font>
     </textarea>
 
     <!-- text for screen titles -->
     <textarea name="basepagetitletext">
         <area>250, 0, -250, 50</area>
-        <font>basefont_m</font>
+        <font>basefont_l</font>
         <multiline>no</multiline>
         <align>allcenter</align>
         <alpha>150</alpha>
@@ -208,7 +205,7 @@
     </textarea>
 
     <!-- help text for settings windows -->
-    <textarea name="basehelptext" from="basetext_xs">
+    <textarea name="basehelptext" from="basetext_s">
         <area>50%-500,100%-170,1000,70</area>
         <align>hcenter,bottom</align>
         <multiline>yes</multiline>
@@ -217,7 +214,7 @@
 
     <!-- list item text area -->
     <textarea name="baseitemtext">
-        <font>basefont_m</font>
+        <font>basefont_l</font>
         <multiline>no</multiline>
         <align>left,vcenter</align>
         <cutdown>yes</cutdown>
@@ -300,7 +297,7 @@
             <area>0,0,100%,40</area>
             <state name="selectedactive">
                 <area>0,0,100%,40</area>
-                <textarea name="buttontext" from="basetext_s">
+                <textarea name="buttontext" from="basetext_m">
                     <area>5,0,-20,100%</area>
                     <scroll direction="horizontal" />
                     <cutdown>no</cutdown>
@@ -316,7 +313,7 @@
                 <shape name="background">
                     <alpha>0</alpha>
                 </shape>
-                <textarea name="buttontext" from="basetext_s">
+                <textarea name="buttontext" from="basetext_m">
                     <area>5,0,-20,100%</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -516,7 +513,7 @@
                     <position>0,100%-1</position>
                     <alpha>100</alpha>
                 </shape>
-                <textarea name="text" from="basetext_s">
+                <textarea name="text" from="basetext_m">
                     <area>0,0,100%,100%</area>
                     <align>allcenter</align>
                     <alpha>150</alpha>
@@ -567,7 +564,7 @@
             <filename>images/Cursor.png</filename>
             <area>0,0,2,25</area>
         </imagetype>
-        <textarea name="text" from="basetext_s">
+        <textarea name="text" from="basetext_m">
             <area>5,0,-5,100%</area>
             <cutdown>no</cutdown>
             <alpha>150</alpha>
@@ -596,7 +593,7 @@
             <filename>images/Cursor.png</filename>
             <area>0,0,2,25</area>
         </imagetype>
-        <textarea name="text" from="basetext_s">
+        <textarea name="text" from="basetext_m">
             <area>5,0,-5,100%</area>
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
@@ -613,7 +610,7 @@
             <area>0,0,100%,100%</area>
             <state name="active">
                 <area>0,0,100%-15,100%</area>
-                <textarea name="buttontext" from="basetext_s">
+                <textarea name="buttontext" from="basetext_m">
                     <area>5,1,-20,-1</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -797,7 +794,7 @@
 
     <group name="baseuserrating">
         <area>0,0,100,32</area>
-        <textarea name="userrating" from="basetext_xs">
+        <textarea name="userrating" from="basetext_s">
             <area>0,0,100%-40,32</area>
             <alpha>150</alpha>
             <align>right,vcenter</align>
@@ -815,7 +812,7 @@
             <area>0,100%-122,32,32</area>
             <filename>images/icons/Clock.png</filename>
         </imagetype>
-        <textarea name="length" from="basetext_xs">
+        <textarea name="length" from="basetext_s">
             <area>50,100%-122,-50,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -823,7 +820,7 @@
             <area>0,100%-77,32,32</area>
             <filename>images/icons/Calendar.png</filename>
         </imagetype>
-        <textarea name="year" from="basetext_xs">
+        <textarea name="year" from="basetext_s">
             <area>50,100%-77,-50,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -831,7 +828,7 @@
             <area>0,100%-32,32,32</area>
             <filename>images/icons/ParentalRating.png</filename>
         </imagetype>
-        <textarea name="rating" from="basetext_xs">
+        <textarea name="rating" from="basetext_s">
             <area>50,100%-32,-200,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -849,30 +846,30 @@
     <!-- text based video facts -->
     <group name="basevideotextfacts">
         <area>0,0,100%,125</area>
-        <textarea name="genrelabel" from="basetext_s" depends="genres">
+        <textarea name="genrelabel" from="basetext_m" depends="genres">
             <area>0,100%-122,150,30</area>
             <value>Genres</value>
             <alpha>200</alpha>
         </textarea>
-        <textarea name="genres" from="basetext_xs">
+        <textarea name="genres" from="basetext_s">
             <area>160,100%-122,100%,30</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="directorlabel" from="basetext_s" depends="director">
+        <textarea name="directorlabel" from="basetext_m" depends="director">
             <area>0,100%-77,150,30</area>
             <value>Director</value>
             <alpha>200</alpha>
         </textarea>
-        <textarea name="director" from="basetext_xs">
+        <textarea name="director" from="basetext_s">
             <area>160,100%-77,350,30</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="castlabel" from="basetext_s" depends="cast">
+        <textarea name="castlabel" from="basetext_m" depends="cast">
             <area>0,100%-32,150,32</area>
             <value>Cast</value>
             <alpha>200</alpha>
         </textarea>
-        <textarea name="cast" from="basetext_xs">
+        <textarea name="cast" from="basetext_s">
             <area>160,100%-32,100%,32</area>
             <alpha>150</alpha>
             <scroll direction="left"/>
@@ -888,7 +885,7 @@
             <area>0,0,32,32</area>
             <filename>images/icons/Sender.png</filename>
         </imagetype>
-        <textarea name="longchannel" from="basetext_xs">
+        <textarea name="longchannel" from="basetext_s">
             <area>50,0,100%,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -896,7 +893,7 @@
             <area>0,40,32,32</area>
             <filename>images/icons/Clock.png</filename>
         </imagetype>
-        <textarea name="timedate" from="basetext_xs">
+        <textarea name="timedate" from="basetext_s">
             <area>50,40,100%,32</area>
             <alpha>150</alpha>
             <template>%TIMEDATE% (%LENMINS%)</template>
@@ -905,7 +902,7 @@
             <area>0,80,32,32</area>
             <filename>images/icons/Record.png</filename>
         </imagetype>
-        <textarea name="rectypestatus" from="basetext_xs">
+        <textarea name="rectypestatus" from="basetext_s">
             <area>50,80,100%,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -917,7 +914,7 @@
             <area>0,0,32,32</area>
             <filename>images/icons/Number.png</filename>
         </imagetype>
-        <textarea name="programid" from="basetext_xs">
+        <textarea name="programid" from="basetext_s">
             <area>50,0,100%,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -925,7 +922,7 @@
             <area>0,40,32,32</area>
             <filename>images/icons/Group.png</filename>
         </imagetype>
-        <textarea name="recgroup" from="basetext_xs">
+        <textarea name="recgroup" from="basetext_s">
             <area>50,40,100%,32</area>
             <alpha>150</alpha>
         </textarea>
@@ -933,14 +930,14 @@
             <area>0,80,32,32</area>
             <filename>images/icons/Storage.png</filename>
         </imagetype>
-        <textarea name="storagegroup" from="basetext_xs">
+        <textarea name="storagegroup" from="basetext_s">
             <area>50,80,100%,32</area>
             <alpha>150</alpha>
         </textarea>
     </group>
 
     <!-- title text for selected item, e.g program, recording, video -->
-    <textarea name="basetitle" from="basetext_m">
+    <textarea name="basetitle" from="basetext_l">
         <area>0,0,100%,50</area>
         <scroll direction="horizontal"/>
         <cutdown>no</cutdown>
@@ -950,7 +947,7 @@
     <!-- title + description for selected item -->
     <group name="basetitledesc">
         <textarea name="title" from="basetitle"/>
-        <textarea name="description" from="basetext_s">
+        <textarea name="description" from="basetext_m">
             <area>0,65,100%,100%</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
@@ -970,14 +967,14 @@
         </shape>
         <clock name="headerdate">
             <area>25,0,250,50</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>left,vcenter</align>
             <alpha>100</alpha>
             <template>%DATE%</template>
         </clock>
         <clock name="headertime">
             <area>1645,0,250,50</area>
-            <font>basefont_s</font>
+            <font>basefont_m</font>
             <align>right,vcenter</align>
             <alpha>100</alpha>
             <template>%TIME%</template>
@@ -1083,7 +1080,7 @@
     <window name="videowindow">
         <area>0,0,100%,100%</area>
         <shape name="background" from="basebackground"/>
-        <textarea name="message" from="basetext_l">
+        <textarea name="message" from="basetext_xl">
             <area>50%-200,50%-20,400,40</area>
             <align>center</align>
             <alpha>200</alpha>
@@ -1109,7 +1106,7 @@
                 <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
                 <delay>75</delay>
             </imagetype>
-            <textarea name="message" from="basetext_s">
+            <textarea name="message" from="basetext_m">
                 <area>50,0,100%,100%</area>
                 <align>allcenter</align>
                 <cutdown>yes</cutdown>
@@ -1129,7 +1126,7 @@
         </animation>
         <group name="decoration" from="basepopupdecoration"/>
         <textarea name="title" from="basepopuptitletext"/>
-        <textarea name="messagearea" from="basetext_s">
+        <textarea name="messagearea" from="basetext_m">
             <area>50,70,-50,110</area>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
@@ -1201,7 +1198,7 @@
         </animation>
         <group name="decoration" from="basebuttonpopupdecoration"/>
         <textarea name="title" from="basepopuptitletext"/>
-        <textarea name="message" from="basetext_s">
+        <textarea name="message" from="basetext_m">
             <area>50,75,-50,160</area>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
@@ -1229,7 +1226,7 @@
         </animation>
         <group name="decoration" from="basepopupdecoration"/>
         <textarea name="title" from="basepopuptitletext"/>
-        <textarea name="messagearea" from="basetext_s">
+        <textarea name="messagearea" from="basetext_m">
             <area>50,70,-50,160</area>
             <align>left,vcenter</align>
             <multiline>yes</multiline>
@@ -1255,7 +1252,7 @@
             </section>
         </animation>
         <group name="decoration" from="basepopupdecoration"/>
-        <textarea name="message" from="basetext_s">
+        <textarea name="message" from="basetext_m">
             <area>50,75,-50,80</area>
             <align>center</align>
             <cutdown>yes</cutdown>
@@ -1264,11 +1261,11 @@
         <progressbar name="progressbar" from="baseprogress">
             <area>50,180,-50,40</area>
         </progressbar>
-        <textarea name="progresstext" from="basetext_xs">
+        <textarea name="progresstext" from="basetext_s">
             <area>50,180,-50,40</area>
             <alpha>200</alpha>
             <align>center</align>
-            <font>basefont_xxs</font>
+            <font>basefont_xs</font>
         </textarea>
     </window>
 
@@ -1282,7 +1279,7 @@
             </section>
         </animation>
         <group name="decoration" from="basebuttonpopupdecoration"/>
-        <textarea name="message" from="basetext_s">
+        <textarea name="message" from="basetext_m">
             <area>50,75,-50,80</area>
             <align>center</align>
             <cutdown>yes</cutdown>
@@ -1354,7 +1351,7 @@
             <area>1200,200,500,500</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
-        <textarea name="info" from="basetext_s">
+        <textarea name="info" from="basetext_m">
             <area>1200,750,500,40</area>
             <align>center</align>
             <alpha>200</alpha>
@@ -1405,7 +1402,7 @@
             </section>
         </animation>
         <group name="decoration" from="basebuttonpopupdecoration"/>
-        <textarea name="message" from="basetext_s">
+        <textarea name="message" from="basetext_m">
             <area>50,75,-50,80</area>
             <align>center</align>
             <cutdown>yes</cutdown>

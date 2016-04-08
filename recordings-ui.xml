@@ -4,7 +4,7 @@
 
     <window name="watchrecordings">
 
-        <fontdef name="damagedfont" from="basefont_m">
+        <fontdef name="damagedfont" from="basefont_l">
             <color>#808080</color>
             <decoration>strikeout</decoration>
         </fontdef>
@@ -113,7 +113,7 @@
                 <area>0, 425, 350, 100</area>
                 <preserveaspect>yes</preserveaspect>
             </imagetype>
-            <textarea name="category" from="basetext_s">
+            <textarea name="category" from="basetext_m">
                 <area>0,530,350,50</area>
                 <align>center</align>
                 <alpha>150</alpha>
@@ -124,17 +124,17 @@
         <!-- selected recording details -->
         <group name="recdetails" depends="!rec_count">
             <area>1185, 500, -25, 580</area>
-            <textarea name="title" from="basetext_l">
+            <textarea name="title" from="basetext_xl">
                 <area>0, 0, 700, 50</area>
             </textarea>
-            <textarea name="subtitle" from="basetext_m">
+            <textarea name="subtitle" from="basetext_l">
                 <area>0, 45, 700, 50</area>
 		<alpha>150</alpha>
                 <template>%00x00| ~ %%SUBTITLE%</template>
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>0, 110, 100%, 280</area>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>0, 0, 100%, 100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -144,7 +144,7 @@
             </group>
             <group name="largedescription" depends="!subtitle">
                 <area>0, 60, 100%, 320</area>
-                <textarea name="description" from="basetext_s">
+                <textarea name="description" from="basetext_m">
                     <area>0, 0, 100%, 100%</area>
                     <multiline>yes</multiline>
                     <align>justify</align>
@@ -158,7 +158,7 @@
                     <area>0,0,32,32</area>
                     <filename>images/icons/Sender.png</filename>
                 </imagetype>
-                <textarea name="longchannel" from="basetext_xs">
+                <textarea name="longchannel" from="basetext_s">
                     <area>50,0,650,32</area>
                     <alpha>150</alpha>
                 </textarea>
@@ -166,7 +166,7 @@
                     <area>0,40,32,32</area>
                     <filename>images/icons/Clock.png</filename>
                 </imagetype>
-                <textarea name="startdate" from="basetext_xs">
+                <textarea name="startdate" from="basetext_s">
                     <area>50,40,650,32</area>
                     <alpha>150</alpha>
                     <template>%startdate%%| year%, %starttime% - %endtime% (%lenmins%)</template>
@@ -175,7 +175,7 @@
                     <area>0,80,32,32</area>
                     <filename>images/icons/Storage.png</filename>
                 </imagetype>
-                <textarea name="storagegroup" from="basetext_xs">
+                <textarea name="storagegroup" from="basetext_s">
                     <area>50,80,650,32</area>
                     <alpha>150</alpha>
                     <template>%filesize_str% of %storagegroup% Storage</template>
@@ -250,7 +250,7 @@
                     </imagetype>
                 </state>
                 <state name="damaged">
-                    <textarea name="damaged" from="basetext_s">
+                    <textarea name="damaged" from="basetext_m">
                         <area>0,0,110,32</area>
                         <value>Damaged</value>
                     </textarea>
@@ -366,10 +366,10 @@
         <!-- selected group details -->
         <group name="groupdetails" depends="rec_count">
             <area>800, 500, 1120, 505</area>
-            <textarea name="title" from="basetext_l">
+            <textarea name="title" from="basetext_xl">
                 <area>210, 150, 700, 50</area>
             </textarea>
-            <textarea name="description" from="basetext_m">
+            <textarea name="description" from="basetext_l">
                 <area>210, 225, 700, 455</area>
                 <multiline>yes</multiline>
                 <align>justify</align>
@@ -384,11 +384,11 @@
             <progressbar name="usedbar" from="baseprogress">
                 <area>0,0,100%,100%</area>
             </progressbar>
-            <textarea name="freereport" from="basetext_xs">
+            <textarea name="freereport" from="basetext_s">
                 <area>0,0,100%,100%</area>
                 <alpha>200</alpha>
                 <align>center</align>
-                <font>basefont_xxs</font>
+                <font>basefont_xs</font>
             </textarea>
         </group>
 
@@ -426,7 +426,7 @@
         </textarea>
         <group name="content">
             <area>100,80,-100,-25</area>
-            <textarea name="labeltitles" from="basetext_s">
+            <textarea name="labeltitles" from="basetext_m">
                 <area>25,0,200,40</area>
                 <alpha>200</alpha>
                 <value>Titles</value>
@@ -434,7 +434,7 @@
             <checkbox name="titles" from="basecheckbox">
                 <position>300,5</position>
             </checkbox>
-            <textarea name="labelcategories" from="basetext_s">
+            <textarea name="labelcategories" from="basetext_m">
                 <area>25,50,200,40</area>
                 <alpha>200</alpha>
                 <value>Categories</value>
@@ -442,7 +442,7 @@
             <checkbox name="categories" from="basecheckbox">
                 <position>300,55</position>
             </checkbox>
-            <textarea name="labelrecgroups" from="basetext_s">
+            <textarea name="labelrecgroups" from="basetext_m">
                 <area>25,100,200,40</area>
                 <alpha>200</alpha>
                 <value>Groups</value>
@@ -450,7 +450,7 @@
             <checkbox name="recgroups" from="basecheckbox">
                 <position>300,105</position>
             </checkbox>
-            <textarea name="labelwatchlist" from="basetext_s">
+            <textarea name="labelwatchlist" from="basetext_m">
                 <area>25,150,200,40</area>
                 <alpha>200</alpha>
                 <value>Watchlist</value>
@@ -458,7 +458,7 @@
             <checkbox name="watchlist" from="basecheckbox">
                 <position>300,155</position>
             </checkbox>
-            <textarea name="labelsearches" from="basetext_s">
+            <textarea name="labelsearches" from="basetext_m">
                 <area>25,200,200,40</area>
                 <alpha>200</alpha>
                 <value>Searches</value>
@@ -466,7 +466,7 @@
             <checkbox name="searches" from="basecheckbox">
                 <position>300,205</position>
             </checkbox>
-            <textarea name="labellivetv" from="basetext_s">
+            <textarea name="labellivetv" from="basetext_m">
                 <area>25,250,200,40</area>
                 <alpha>200</alpha>
                 <value>Live TV</value>
@@ -474,7 +474,7 @@
             <checkbox name="livetv" from="basecheckbox">
                 <position>300,255</position>
             </checkbox>
-            <textarea name="labelwatched" from="basetext_s">
+            <textarea name="labelwatched" from="basetext_m">
                 <area>25,300,200,40</area>
                 <alpha>200</alpha>
                 <value>Watched</value>
@@ -504,7 +504,7 @@
         </textarea>
         <group name="content">
             <area>50,90,-50,165</area>
-            <textarea name="oldlabel" from="basetext_s">
+            <textarea name="oldlabel" from="basetext_m">
                 <area>0,0,300,40</area>
                 <value>Old Password:</value>
                 <alpha>200</alpha>
@@ -512,7 +512,7 @@
             <textedit name="oldpassword" from="basetextedit">
                 <area>300,0,-1,40</area>
             </textedit>
-            <textarea name="newlabel" from="basetext_s">
+            <textarea name="newlabel" from="basetext_m">
                 <area>0,65,300,40</area>
                 <value>New Password:</value>
                 <alpha>200</alpha>
@@ -720,42 +720,42 @@
         </textarea>
         <group name="content">
             <area>50,75,-50,-90</area>
-            <textarea name="labeltitle" from="basetext_s">
+            <textarea name="labeltitle" from="basetext_m">
                 <area>0,0,200,40</area>
                 <value>Title</value>
             </textarea>
             <textedit name="title" from="basetextedit">
                 <area>200,0,-1,40</area>
             </textedit>
-            <textarea name="labelsubtitle" from="basetext_s">
+            <textarea name="labelsubtitle" from="basetext_m">
                 <area>0,65,200,40</area>
                 <value>Subtitle</value>
             </textarea>
             <textedit name="subtitle" from="basetextedit">
                 <area>200,65,-1,40</area>
             </textedit>
-            <textarea name="labelinetref" from="basetext_s">
+            <textarea name="labelinetref" from="basetext_m">
                 <area>0,130,200,40</area>
                 <value>Inetref</value>
             </textarea>
             <textedit name="inetref" from="basetextedit">
                 <area>200,130,-1,40</area>
             </textedit>
-            <textarea name="labelseason" from="basetext_s">
+            <textarea name="labelseason" from="basetext_m">
                 <area>0,195,200,40</area>
                 <value>Season</value>
             </textarea>
             <spinbox name="season" from="basespinbox">
                 <area>200,195,100,40</area>
             </spinbox>
-            <textarea name="labelepisode" from="basetext_s">
+            <textarea name="labelepisode" from="basetext_m">
                 <area>100%-300,195,200,40</area>
                 <value>Episode</value>
             </textarea>
             <spinbox name="episode" from="basespinbox">
                 <area>100%-100,195,100,40</area>
             </spinbox>
-            <textarea name="labeldescription" from="basetext_s">
+            <textarea name="labeldescription" from="basetext_m">
                 <area>0,260,250,40</area>
                 <value>Description</value>
             </textarea>
