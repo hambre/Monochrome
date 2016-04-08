@@ -170,11 +170,14 @@
         <line color="#000000" alpha="0" width="0" />
     </shape>
 
-    <!-- textarea with small, medium, large and extra small font -->
+    <!-- textarea with small, medium, large and extra large font -->
     <textarea name="basetext">
         <multiline>no</multiline>
         <align>left,vcenter</align>
         <cutdown>yes</cutdown>
+    </textarea>
+    <textarea name="basetext_s" from="basetext">
+        <font>basefont_s</font>
     </textarea>
     <textarea name="basetext_m" from="basetext">
         <font>basefont_m</font>
@@ -185,9 +188,9 @@
     <textarea name="basetext_xl" from="basetext">
         <font>basefont_xl</font>
     </textarea>
-    <textarea name="basetext_s" from="basetext">
-        <font>basefont_s</font>
-    </textarea>
+
+    <!-- text for titles -->
+    <textarea name="basetitletext" from="basetext_xl"/>
 
     <!-- text for screen titles -->
     <textarea name="basepagetitletext">

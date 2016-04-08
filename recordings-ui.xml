@@ -124,7 +124,7 @@
         <!-- selected recording details -->
         <group name="recdetails" depends="!rec_count">
             <area>1185, 500, -25, 580</area>
-            <textarea name="title" from="basetext_xl">
+            <textarea name="title" from="basetitletext">
                 <area>0, 0, 700, 50</area>
             </textarea>
             <textarea name="subtitle" from="basetext_l">
@@ -366,7 +366,7 @@
         <!-- selected group details -->
         <group name="groupdetails" depends="rec_count">
             <area>800, 500, 1120, 505</area>
-            <textarea name="title" from="basetext_xl">
+            <textarea name="title" from="basetitletext">
                 <area>210, 150, 700, 50</area>
             </textarea>
             <textarea name="description" from="basetext_l">

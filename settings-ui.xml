@@ -23,7 +23,7 @@
         </textarea>
         <group name="details">
             <area>1365,500,-25,360</area>
-            <textarea name="name" from="basetext_xl">
+            <textarea name="name" from="basetitletext">
                 <area>0,0,100%,50</area>
             </textarea>
             <textarea name="version" from="basetext_m">

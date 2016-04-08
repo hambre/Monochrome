@@ -59,7 +59,7 @@
             <!-- left part -->
             <group name="left">
                 <area>0,0,900,100%</area>
-                <textarea name="title" from="basetext_xl">
+                <textarea name="title" from="basetitletext">
                     <area>0, 0, 100%, 50</area>
                     <align>left,top</align>
                     <scroll direction="horizontal" />
@@ -154,7 +154,7 @@
         <statetype name="userratingstate" from="basestarrating">
             <position>35,495</position>
         </statetype>
-        <textarea name="title" from="basetext_xl">
+        <textarea name="title" from="basetitletext">
             <area>235, 490, -235, 40</area>
             <align>top,hcenter</align>
             <scroll direction="horizontal" />
@@ -269,7 +269,7 @@
         <!-- right part - video details -->
         <group name="videodetails">
             <area>800,500,-25,505</area>
-            <textarea name="title" from="basetext_xl">
+            <textarea name="title" from="basetitletext">
                 <area>0, 0, 100%, 50</area>
                 <align>left,top</align>
                 <scroll direction="horizontal" />
@@ -397,7 +397,7 @@
         <!-- right part - video details -->
         <group name="videodetails">
             <area>975,500,-25,505</area>
-            <textarea name="title" from="basetext_xl">
+            <textarea name="title" from="basetitletext">
                 <area>0, 0, 100%, 50</area>
                 <align>hcenter,top</align>
                 <scroll direction="horizontal" />
