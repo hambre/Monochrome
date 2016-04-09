@@ -134,22 +134,14 @@
             </textarea>
             <group name="smalldescription" depends="subtitle">
                 <area>0, 110, 100%, 280</area>
-                <textarea name="description" from="basetext_m">
+                <textarea name="description" from="basedescriptiontext">
                     <area>0, 0, 100%, 100%</area>
-                    <multiline>yes</multiline>
-                    <align>justify</align>
-                    <cutdown>yes</cutdown>
-                    <alpha>150</alpha>
                 </textarea>
             </group>
             <group name="largedescription" depends="!subtitle">
                 <area>0, 60, 100%, 320</area>
-                <textarea name="description" from="basetext_m">
+                <textarea name="description" from="basedescriptiontext">
                     <area>0, 0, 100%, 100%</area>
-                    <multiline>yes</multiline>
-                    <align>justify</align>
-                    <cutdown>yes</cutdown>
-                    <alpha>150</alpha>
                 </textarea>
             </group>
             <group name="facts">

@@ -192,6 +192,13 @@
     <!-- text for titles -->
     <textarea name="basetitletext" from="basetext_xl"/>
 
+    <textarea name="basedescriptiontext" from="basetext_m">
+        <multiline>yes</multiline>
+        <align>justify</align>
+        <cutdown>yes</cutdown>
+        <alpha>150</alpha>
+    </textarea>
+
     <!-- text for screen titles -->
     <textarea name="basepagetitletext">
         <area>250, 0, -250, 50</area>
@@ -950,12 +957,9 @@
     <!-- title + description for selected item -->
     <group name="basetitledesc">
         <textarea name="title" from="basetitle"/>
-        <textarea name="description" from="basetext_m">
+        <textarea name="description" from="basedescriptiontext">
             <area>0,65,100%,100%</area>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
             <align>justify,top</align>
-            <alpha>200</alpha>
         </textarea>
     </group>
 

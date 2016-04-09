@@ -161,12 +161,9 @@
                 <area>250,50,-1,40</area>
                 <template>%TIMEDATE% (%LENMINS%)</template>
             </textarea>
-            <textarea name="description" from="basetext_m">
+            <textarea name="description" from="basedescriptiontext">
                 <area>250,100,-1,100%</area>
-                <multiline>yes</multiline>
-                <cutdown>yes</cutdown>
                 <align>justify,top</align>
-                <alpha>200</alpha>
             </textarea>
         </group>
         <group name="footer">
@@ -308,12 +305,9 @@
                 <area>400,50,-1,40</area>
                 <template>%TIMEDATE% (%LENMINS%)</template>
             </textarea>
-            <textarea name="description" from="basetext_m">
+            <textarea name="description" from="basedescriptiontext">
                 <area>400,100,-1,100%</area>
-                <multiline>yes</multiline>
-                <cutdown>yes</cutdown>
                 <align>justify,top</align>
-                <alpha>200</alpha>
             </textarea>
         </group>
         <!-- BUG: placement of video widget is not relative to parent -->
@@ -639,12 +633,9 @@
                 <area>0,50,100%,40</area>
                 <alpha>200</alpha>
             </textarea>
-            <textarea name="description" from="basetext_m">
+            <textarea name="description" from="basedescriptiontext">
                 <area>0,95,100%,255</area>
-                <multiline>yes</multiline>
-                <cutdown>yes</cutdown>
                 <align>justify,top</align>
-                <alpha>200</alpha>
             </textarea>
             <group name="facts">
                 <area>0,100%-160,100%,160</area>

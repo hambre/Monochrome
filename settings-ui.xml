@@ -16,10 +16,8 @@
             <area>675,500,640,360</area> 
             <preserveaspect>yes</preserveaspect>
         </imagetype>
-        <textarea name="description" from="basetext_m">
+        <textarea name="description" from="basedescriptiontext">
             <area>675,885,-25,-75</area>
-            <multiline>yes</multiline>
-            <alpha>150</alpha>
         </textarea>
         <group name="details">
             <area>1365,500,-25,360</area>
