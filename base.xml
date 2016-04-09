@@ -37,6 +37,66 @@
         <color>#FF0000</color>
     </fontdef>
 
+    <!-- textarea with small, medium, large and extra large font -->
+    <textarea name="basetext">
+        <multiline>no</multiline>
+        <align>left,vcenter</align>
+        <cutdown>yes</cutdown>
+    </textarea>
+    <textarea name="basetext_s" from="basetext">
+        <font>basefont_s</font>
+    </textarea>
+    <textarea name="basetext_m" from="basetext">
+        <font>basefont_m</font>
+    </textarea>
+    <textarea name="basetext_l" from="basetext">
+        <font>basefont_l</font>
+    </textarea>
+    <textarea name="basetext_xl" from="basetext">
+        <font>basefont_xl</font>
+    </textarea>
+
+    <!-- text for titles -->
+    <textarea name="basetitletext" from="basetext_xl"/>
+
+    <textarea name="basedescriptiontext" from="basetext_m">
+        <multiline>yes</multiline>
+        <align>justify</align>
+        <cutdown>yes</cutdown>
+        <alpha>150</alpha>
+    </textarea>
+
+    <!-- text for screen titles -->
+    <textarea name="basepagetitletext">
+        <area>250, 0, -250, 50</area>
+        <font>basefont_l</font>
+        <multiline>no</multiline>
+        <align>allcenter</align>
+        <alpha>150</alpha>
+    </textarea>
+
+    <!-- text for popup window titles -->
+    <textarea name="basepopuptitletext" from="basepagetitletext">
+        <area>0,0,100%,50</area>
+        <alpha>200</alpha>
+    </textarea>
+
+    <!-- help text for settings windows -->
+    <textarea name="basehelptext" from="basetext_s">
+        <area>50%-500,100%-170,1000,70</area>
+        <align>hcenter,bottom</align>
+        <multiline>yes</multiline>
+        <alpha>200</alpha>
+    </textarea>
+
+    <!-- list item text area -->
+    <textarea name="baseitemtext">
+        <font>basefont_l</font>
+        <multiline>no</multiline>
+        <align>left,vcenter</align>
+        <cutdown>yes</cutdown>
+    </textarea>
+
     <shape name="baseframe">
         <area>0,0,30,30</area>
         <type>roundbox</type>
@@ -169,66 +229,6 @@
         <fill color="#FFFFFF" alpha="255" />
         <line color="#000000" alpha="0" width="0" />
     </shape>
-
-    <!-- textarea with small, medium, large and extra large font -->
-    <textarea name="basetext">
-        <multiline>no</multiline>
-        <align>left,vcenter</align>
-        <cutdown>yes</cutdown>
-    </textarea>
-    <textarea name="basetext_s" from="basetext">
-        <font>basefont_s</font>
-    </textarea>
-    <textarea name="basetext_m" from="basetext">
-        <font>basefont_m</font>
-    </textarea>
-    <textarea name="basetext_l" from="basetext">
-        <font>basefont_l</font>
-    </textarea>
-    <textarea name="basetext_xl" from="basetext">
-        <font>basefont_xl</font>
-    </textarea>
-
-    <!-- text for titles -->
-    <textarea name="basetitletext" from="basetext_xl"/>
-
-    <textarea name="basedescriptiontext" from="basetext_m">
-        <multiline>yes</multiline>
-        <align>justify</align>
-        <cutdown>yes</cutdown>
-        <alpha>150</alpha>
-    </textarea>
-
-    <!-- text for screen titles -->
-    <textarea name="basepagetitletext">
-        <area>250, 0, -250, 50</area>
-        <font>basefont_l</font>
-        <multiline>no</multiline>
-        <align>allcenter</align>
-        <alpha>150</alpha>
-    </textarea>
-
-    <!-- text for popup window titles -->
-    <textarea name="basepopuptitletext" from="basepagetitletext">
-        <area>0,0,100%,50</area>
-        <alpha>200</alpha>
-    </textarea>
-
-    <!-- help text for settings windows -->
-    <textarea name="basehelptext" from="basetext_s">
-        <area>50%-500,100%-170,1000,70</area>
-        <align>hcenter,bottom</align>
-        <multiline>yes</multiline>
-        <alpha>200</alpha>
-    </textarea>
-
-    <!-- list item text area -->
-    <textarea name="baseitemtext">
-        <font>basefont_l</font>
-        <multiline>no</multiline>
-        <align>left,vcenter</align>
-        <cutdown>yes</cutdown>
-    </textarea>
 
     <!-- item list defaults -->
     <buttonlist name="baseitemlist">
