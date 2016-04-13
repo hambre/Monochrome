@@ -169,6 +169,111 @@
 
     <!--====================================================================-->
 
+    <window name="editmetadata">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Edit Track Information</value>
+        </textarea>
+        <!-- content -->
+        <group name="widgets">
+            <area>50%-700,500,1400,-115</area>
+            <group name="labels">
+                <area>0,0,350,100%</area>
+                <textarea name="titlelabel" from="basetext_m">
+                    <area>0,0,100%,40</area>
+                    <value>Title:</value>
+                </textarea>
+                <textarea name="artistlabel" from="basetext_m">
+                    <area>0,65,100%,40</area>
+                    <value>Artist:</value>
+                </textarea>
+                <textarea name="compilationlabel" from="basetext_m">
+                    <area>0,130,100%,40</area>
+                    <value>Compilation:</value>
+                </textarea>
+                <textarea name="compartistlabel" from="basetext_m">
+                    <area>0,195,100%,40</area>
+                    <value>Comp. Artist:</value>
+                </textarea>
+                <textarea name="albumlabel" from="basetext_m">
+                    <area>0,260,100%,40</area>
+                    <value>Album:</value>
+                </textarea>
+                <textarea name="genrelabel" from="basetext_m">
+                    <area>0,325,100%,40</area>
+                    <value>Genre:</value>
+                </textarea>
+                <textarea name="ratinglabel" from="basetext_m">
+                    <area>0,390,100%,40</area>
+                    <value>Rating:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>350,0,100%,100%</area>
+                <spinbox name="tracknumspin" from="basespinbox">
+                    <area>0,0,100,40</area>
+                </spinbox>
+                <textedit name="titleedit" from="basetextedit">
+                    <area>125,0,100%-225,40</area>
+                </textedit>
+                <textedit name="artistedit" from="basetextedit">
+                    <area>125,65,100%-225,40</area>
+                </textedit>
+                <button name="searchartistbutton" from="basebutton">
+                    <area>100%-200,65,100%,40</area>
+                    <value>Search</value>
+                </button>
+                <checkbox name="compilationcheck" from="basecheckbox">
+                    <area>125,130,40,40</area>
+                </checkbox>
+                <textedit name="compartistedit" from="basetextedit">
+                    <area>125,195,100%-225,40</area>
+                </textedit>
+                <button name="searchcompartistbutton" from="basebutton">
+                    <area>100%-200,195,100%,40</area>
+                    <value>Search</value>
+                </button>
+                <spinbox name="yearspin" from="basespinbox">
+                    <area>0,260,100,40</area>
+                </spinbox>
+                <textedit name="albumedit" from="basetextedit">
+                    <area>125,260,100%-225,40</area>
+                </textedit>
+                <button name="searchalbumbutton" from="basebutton">
+                    <area>100%-200,260,100%,40</area>
+                    <value>Search</value>
+                </button>
+                <textedit name="genreedit" from="basetextedit">
+                    <area>125,325,100%-225,40</area>
+                </textedit>
+                <button name="searchgenrebutton" from="basebutton">
+                    <area>100%-200,325,100%,40</area>
+                    <value>Search</value>
+                </button>
+                <spinbox name="ratingspin" from="basespinbox">
+                    <area>0,390,100,40</area>
+                </spinbox>
+                <statetype name="ratingstate" from="basestarrating">
+                    <position>125,395</position>
+                </statetype>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="albumartbutton" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Album Art</value>
+        </button>
+        <button name="donebutton" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Done</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="volume_popup">
         <area>-1,0,750,200</area>
         <animation trigger="AboutToShow">
