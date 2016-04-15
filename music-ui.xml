@@ -263,11 +263,119 @@
         </group>
         <!-- bottom part with buttons -->
         <button name="albumartbutton" from="basebutton">
-            <area>50%-225,100%-65,200,40</area>
+            <area>50%-275,100%-65,250,40</area>
             <value>Album Art</value>
         </button>
         <button name="donebutton" from="basebutton">
-            <area>50%+25,100%-65,200,40</area>
+            <area>50%+25,100%-65,250,40</area>
+            <value>Done</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="editalbumart">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Album Art</value>
+        </textarea>
+        <!-- content -->
+        <buttonlist name="coverartlist" from="baseitemlist">
+            <area>40,460,50%-275,-105</area>
+            <align>left,top</align>
+            <layout>grid</layout>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>flowing</wrapstyle>
+            <spacing>10</spacing>
+            <statetype name="buttonitem">
+                <area>0,0,250,250</area>
+                <state name="active">
+                    <area>0,0,200,250</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,100%,100%-50</area>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <imagetype name="defaultimage" from="musiccoverarticon" depends="!buttonimage">
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetext_s">
+                        <area>0,200,200,50</area>
+                        <align>center</align>
+                        <alpha>150</alpha>
+                    </textarea>
+                    <shape name="top" from="baseseparator_h">
+                        <position>0,0</position>
+                    </shape>
+                    <shape name="bottom" from="baseseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,200,250</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,100%,100%-50</area>
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <imagetype name="defaultimage" from="musiccoverarticon" depends="!buttonimage">
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetext_s">
+                        <area>0,200,200,50</area>
+                        <align>center</align>
+                        <alpha>200</alpha>
+                    </textarea>
+                    <shape name="blackframe" from="baseframe">
+                        <area>0,0,100%,100%</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="0" />
+                        <line color="#000000" alpha="255" width="3" />
+                    </shape>
+                    <shape name="whiteframe" from="baseframe">
+                        <area>0,0,100%,100%</area>
+                        <type>box</type>
+                    </shape>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive"/>
+            </statetype>
+        </buttonlist>
+        <group name="musiccoverart" depends="imagefilenametext">
+            <area>50%-250,460,500,500</area>
+            <imagetype name="coverartimage">
+                <area>0,0,100%,100%</area>
+            </imagetype>
+            <imagetype name="icon" from="musiccoverarticon" depends="!coverartimage">
+                <area>50%-100,50%-100,200,200</area>
+            </imagetype>
+        </group>
+        <textarea name="labelimagetypetext" from="basetext_m">
+            <area>50%+300,465,100,40</area>
+            <alpha>200</alpha>
+            <value>Type:</value>
+        </textarea>
+        <textarea name="imagetypetext" from="basetext_m">
+            <area>50%+475,465,-25,40</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="labelimagefilenametext" from="basetext_m">
+            <area>50%+300,530,-25,40</area>
+            <alpha>200</alpha>
+            <value>Filename:</value>
+        </textarea>
+        <textarea name="imagefilenametext" from="basetext_m">
+            <area>50%+475,530,-25,40</area>
+            <alpha>150</alpha>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="metadatabutton" from="basebutton">
+            <area>50%-275,100%-65,250,40</area>
+            <value>Metadata</value>
+        </button>
+        <button name="donebutton" from="basebutton">
+            <area>50%+25,100%-65,250,40</area>
             <value>Done</value>
         </button>
     </window>
