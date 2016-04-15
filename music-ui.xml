@@ -28,9 +28,19 @@
                     </shape>
                     <textarea name="title" from="baseitemtext">
                         <template>%ARTIST% ~ %TITLE%</template>
-                        <area>5,0,-5,100%</area>
+                        <area>5,0,-45,100%</area>
                         <alpha>100</alpha>
                     </textarea>
+                    <statetype name="playstate">
+                        <area>100%-37,50%-16,32,32</area>
+                        <state name="playing">
+                            <imagetype name="animation">
+                                <area>0,0,100%,100%</area>
+                                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+                                <delay>75</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
                 </state>
                 <state name="selectedactive" from="active">
                     <area>0,0,100%,55</area>
