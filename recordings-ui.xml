@@ -73,6 +73,12 @@
                     <!-- display playlist state only when there is no job running and watched state is not on -->
                     <statetype name="playlist" depends="!watched&amp;!jobstate"/>
                 </state>
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
             </statetype>
         </buttonlist>
 
@@ -86,6 +92,14 @@
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <arrange>fixed</arrange>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
         </buttonlist>
 
         <!-- coverart, preview and category -->

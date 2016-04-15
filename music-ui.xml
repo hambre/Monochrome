@@ -81,12 +81,7 @@
         <buttontree name="playlist_tree">
             <area>25,465,50%-25,-115</area>
             <numlists>1</numlists>
-            <buttonlist name="listtemplate" from="baseitemlist">
-                <statetype name="buttonitem">
-                    <state name="inactive" from="active"/>
-                    <state name="selectedinactive" from="selectedactive"/>
-                </statetype>
-            </buttonlist>
+            <buttonlist name="listtemplate" from="baseitemlist"/>
         </buttontree>
 
         <group name="imagedetails" from="musiccoverart"/>

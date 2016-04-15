@@ -9,25 +9,9 @@
         <group name="decoration" from="basecontentdecoration"/>
         <buttonlist name="category" from="baseitemlist">
             <area>25,500,500,525</area>
-            <statetype name="buttonitem">
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive">
-                    <textarea name="buttontext">
-                        <alpha>100</alpha>
-                    </textarea>
-                </state>
-            </statetype>
         </buttonlist>
         <buttonlist name="log" from="baseitemlist">
             <area>575,500,-25,525</area>
-            <statetype name="buttonitem">
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive">
-                    <textarea name="buttontext">
-                        <alpha>100</alpha>
-                    </textarea>
-                </state>
-            </statetype>
         </buttonlist>
         <textarea name="helptext" from="basehelptext">
             <area>25,100%-50,-25,100%</area>

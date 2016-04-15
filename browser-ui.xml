@@ -35,14 +35,6 @@
         </textarea>
         <buttonlist name="grouplist" from="baseitemlist">
             <area>25,500,500,525</area>
-            <statetype name="buttonitem">
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive">
-                    <textarea name="buttontext">
-                        <alpha>100</alpha>
-                    </textarea>
-                </state>
-            </statetype>
         </buttonlist>
         <buttonlist name="bookmarklist" from="baseitemlist">
             <area>575,500,-25,525</area>

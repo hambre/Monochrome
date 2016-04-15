@@ -289,11 +289,11 @@
                    </state>
                </statetype>
             </state>
-            <state name="inactive" from="active">
-                <alpha>0</alpha>
-            </state>
+            <state name="inactive" from="active"/>
             <state name="selectedinactive" from="selectedactive">
-                <alpha>0</alpha>
+                <textarea name="buttontext">
+                    <alpha>100</alpha>
+                </textarea>
             </state>
         </statetype>
     </buttonlist>
@@ -1323,10 +1323,6 @@
         </textedit>
         <buttonlist name="itemlist" from="baseitemlist">
             <area>50,165,-50,-100</area>
-            <statetype name="buttonitem">
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive"/>
-            </statetype>
         </buttonlist>
         <!-- bottom part with buttons -->
         <button name="ok" from="basebutton">
@@ -1348,11 +1344,6 @@
         </textarea>
         <buttonlist name="filelist" from="baseitemlist">
             <area>200,100,900,770</area>
-        <statetype name="buttonitem">
-            <area>0,0,100%,55</area>
-            <state name="inactive" from="active"/>
-            <state name="selectedinactive" from="selectedactive"/>
-        </statetype>
         </buttonlist>
         <imagetype name="preview">
             <area>1200,200,500,500</area>

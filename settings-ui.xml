@@ -68,10 +68,6 @@
         <!-- content -->
         <buttonlist name="settings" from="baseitemlist">
             <area>25,465,800,-75</area>
-            <statetype name="buttonitem">
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive"/>
-            </statetype>
         </buttonlist>
         <textarea name="label-text" from="basetext_l">
             <area>875,465,-25,40</area>

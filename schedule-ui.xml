@@ -417,6 +417,14 @@
         <!-- left side -->
         <buttonlist name="groups" from="baseitemlist">
             <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
         </buttonlist>
         <buttonlist name="schedules" from="baseitemlist">
             <area>25,505,900,505</area>
@@ -784,10 +792,6 @@
         <!-- content -->
         <buttonlist name="phrase_list" from="baseitemlist">
             <area>50,100,-50,-140</area>
-            <statetype name="buttonitem">
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive"/>
-            </statetype>
         </buttonlist>
         <textedit name="phrase_edit" from="basetextedit">
             <area>50,100%-155,-50,40</area>
@@ -828,10 +832,6 @@
         <!-- content -->
         <buttonlist name="phrase_list" from="baseitemlist">
             <area>50,75,-50,-115</area>
-            <statetype name="buttonitem">
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive"/>
-            </statetype>
         </buttonlist>
         <!-- bottom part with buttons -->
         <button name="edit_button" from="basebutton">
@@ -1037,11 +1037,25 @@
                         <alpha>50</alpha>
                     </imagetype>
                 </state>
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
             </statetype>
         </buttonlist>
         <buttonlist name="shows" from="alphabet"/>
         <buttonlist name="times" from="baseitemlist">
             <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
         </buttonlist>
         <!-- right side -->
         <group name="details">
