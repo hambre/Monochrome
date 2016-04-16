@@ -12,10 +12,10 @@
             <value>Image Gallery</value>
         </textarea>
         <buttonlist name="images" from="baseitemlist">
-            <area>25,500,700,-70</area>
+            <area>25,500,50%-25,-70</area>
         </buttonlist>
         <imagetype name="selectedimage">
-            <area>800,500,-50,510</area>
+            <area>50%+25,500,-25,-75</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
         <textarea name="breadcrumbs" from="basetext_s">
