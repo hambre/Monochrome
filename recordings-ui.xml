@@ -392,7 +392,7 @@
             </progressbar>
             <textarea name="freereport" from="basetext_s">
                 <area>0,0,100%,100%</area>
-                <alpha>200</alpha>
+                <alpha>150</alpha>
                 <align>left,vcenter</align>
                 <font>basefont_xs</font>
             </textarea>
