@@ -411,4 +411,12 @@
         </progressbar>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="visualizerview">
+        <video name="visualizer">
+            <area>0,0,100%,100%</area>
+        </video>
+    </window>
+
 </mythuitheme>
