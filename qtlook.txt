@@ -1,0 +1,2 @@
+# Pixmap to use for the background
+str BackgroundPixmap=images/Backgrounds/BackgroundDefault.jpg
