@@ -403,11 +403,10 @@
             <align>center</align>
         </textarea>
         <statetype name="mutestate" from="musicmutestate">
-            <!-- <position>100%-100,75</position> -->
-            <area>100%-82,80,32,32</area>
+            <area>50,125,32,32</area>
         </statetype>
         <progressbar name="volumeprogress" from="baseprogress_s">
-            <area>50,135,-50,12</area>
+            <area>100,135,-50,12</area>
         </progressbar>
     </window>
 
