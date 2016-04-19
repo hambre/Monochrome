@@ -407,6 +407,7 @@
         </statetype>
         <progressbar name="volumeprogress" from="baseprogress_s">
             <area>100,135,-50,12</area>
+            <alpha>200</alpha> 
         </progressbar>
     </window>
 
