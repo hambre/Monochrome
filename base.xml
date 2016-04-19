@@ -1078,8 +1078,9 @@
 
     <!-- default background window -->
     <window name="backgroundwindow">
-        <area>0,0,100%,100%</area>
-        <shape name="background" from="basebackground"/>
+        <imagetype name="backimg">
+            <filename>images/Backgrounds/BackgroundDefault.jpg</filename>
+        </imagetype>
     </window>
 
     <!--====================================================================-->
@@ -1252,7 +1253,7 @@
     <!--====================================================================-->
 
     <window name="MythProgressDialog">
-        <area>-1,0,750,250</area>
+        <area>-1,0,750,270</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
@@ -1265,15 +1266,14 @@
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
         </textarea>
-        <progressbar name="progressbar" from="baseprogress">
-            <area>50,180,-50,40</area>
-        </progressbar>
         <textarea name="progresstext" from="basetext_s">
             <area>50,180,-50,40</area>
             <alpha>200</alpha>
             <align>center</align>
-            <font>basefont_xs</font>
         </textarea>
+        <progressbar name="progressbar" from="baseprogress_s">
+            <area>50,220,-50,12</area>
+        </progressbar>
     </window>
 
     <!--====================================================================-->
