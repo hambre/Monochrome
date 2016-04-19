@@ -1,2 +1,85 @@
 # Pixmap to use for the background
 str BackgroundPixmap=images/Backgrounds/BackgroundDefault.jpg
+
+# Color of lines, text, etc
+str ForegroundColor=#000000
+
+str Font=Jesaya Free
+
+# general foreground color
+str ActiveForeground=#FFFFFF
+str InactiveForeground=#969696
+str DisabledForeground=#646464
+
+# general background color
+str ActiveBackground=#000000
+str InactiveBackground=#000000
+str DisabledBackground=#000000
+
+# button background color
+str ActiveButton=#202020
+str InactiveButton=#000000
+str DisabledButton=#000000
+
+# lighter than button color
+str ActiveLight=#323232
+str InactiveLight=#323232
+str DisabledLight=#323232
+
+# foreground color for buttons
+str ActiveButtonText=#FFFFFF
+str InactiveButtonText=#808080
+str DisabledButtonText=#646464
+
+# background for text entry widgets
+str ActiveBase=#000000
+str InactiveBase=#000000
+str DisabledBase=#000000
+
+# foreground color used with *Base
+str ActiveText=#969696
+str InactiveText=#808080
+str DisabledText=#646464
+
+# bright text color
+str ActiveBrightText=#FFFFFF
+str InactiveBrightText=#808080
+str DisabledBrightText=#646464
+
+# a very dark color
+str ActiveShadow=#000000
+str InactiveShadow=#000000
+str DisabledShadow=#000000
+
+# a color to indicate selected or current item
+str ActiveHighlight=#202020
+str InactiveHighlight=#000000
+str DisabledHighlight=#000000
+
+# a color to contrast with *Highlight
+str ActiveHighlightedText=#FFFFFF
+str InactiveHighlightedText=#969696
+str DisabledHighlightedText=#323232
+
+str curTimeChan_bgColor=#8F2813
+str curTimeChan_fgColor=#FFFFFF
+str date_bgColor=#0F2E8F
+str date_dsColor=#000000
+str date_fgColor=#FFFFFF
+str chan_bgColor=#0F2F5A
+str chan_dsColor=#000000
+str chan_fgColor=#FFFFFF
+str time_bgColor=#0F2E8F
+str time_dsColor=#000000
+str time_fgColor=#FFFFFF
+str prog_bgColor=#2D587B
+str prog_fgColor=#FFFFFF
+str progLine_Color=#104064
+str progArrow_Color=#FFFFFF
+int progArrow_Type=0
+str curProg_bgColor=#85A5BC
+str curRecProg_bgColor=#BC4C32
+str curProg_dsColor=#000000
+str curProg_fgColor=#EEFB92
+str misChanIcon_bgColor=#000000
+str misChanIcon_fgColor=#ffffff
