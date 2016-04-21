@@ -3,83 +3,126 @@
 <mythuitheme>
 
     <group name="musictrackdetails">
-        <area>50%+425,465,-25,-115</area>
+        <area>50%+425,465,-25,-165</area>
         <textarea name="title" from="basetitletext">
             <area>0,0,100%,50</area>
         </textarea>
+        <!--
+        <imagetype name="artisticon" from="baseicon">
+            <position>0,64</position>
+            <filename>images/icons/MusicArtist.png</filename>
+        </imagetype>
+        -->
         <textarea name="artist" from="basetext_l">
             <area>0,60,100%,40</area>
             <alpha>150</alpha>
         </textarea>
+        <!--
+        <imagetype name="albumicon" from="baseicon">
+            <position>0,119</position>
+            <filename>images/icons/MusicAlbum.png</filename>
+        </imagetype>
+        -->
         <textarea name="album" from="basetext_l">
             <area>0,115,100%,40</area>
             <alpha>150</alpha>
         </textarea>
+        <imagetype name="tracknumicon" from="baseicon">
+            <position>0,169</position>
+            <filename>images/icons/Number.png</filename>
+        </imagetype>
         <textarea name="tracknum" from="basetext_m">
-            <area>0,165,100%,40</area>
+            <area>50,165,100%,40</area>
             <alpha>150</alpha>
-            <template># %TRACKNUM%</template>
         </textarea>
+        <imagetype name="yearicon" from="baseicon">
+            <position>0,219</position>
+            <filename>images/icons/Calendar.png</filename>
+        </imagetype>
         <textarea name="year" from="basetext_m">
-            <area>0,215,100%,40</area>
+            <area>50,215,100%,40</area>
             <alpha>150</alpha>
         </textarea>
+        <imagetype name="genreicon" from="baseicon">
+            <position>0,269</position>
+            <filename>images/icons/MusicGenre.png</filename>
+        </imagetype>
         <textarea name="genre" from="basetext_m">
-            <area>0,265,100%,40</area>
+            <area>50,265,100%,40</area>
             <alpha>150</alpha>
         </textarea>
         <statetype name="ratingstate" from="basestarrating" depends="title">
             <area>0,318,100%,32</area>
         </statetype>
+        <imagetype name="playcounticon" from="baseicon">
+            <position>0,100%-36</position>
+            <filename>images/icons/Play.png</filename>
+        </imagetype>
         <textarea name="playcount" from="basetext_m">
-            <area>0,100%-115,100%,40</area>
+            <area>50,100%-40,100%,40</area>
             <alpha>150</alpha>
-            <template>Play count: %PLAYCOUNT%x</template>
-        </textarea>
-        <textarea name="lastplayed" from="basetext_m">
-            <area>0,100%-65,100%,40</area>
-            <alpha>150</alpha>
-            <template>Last played: %LASTPLAYED%</template>
+            <template>%PLAYCOUNT%x ~ %LASTPLAYED%</template>
         </textarea>
     </group>
 
+    <!--
     <group name="musictrackstats">
-        <area>0,0,400,200</area>
-        <textarea name="labellength" from="basetext_m">
-            <area>0,0,100%,40</area>
-            <alpha>150</alpha>
-            <value>Length:</value>
-        </textarea>
+        <area>0,0,400,150</area>
+        <imagetype name="lengthicon" from="baseicon">
+            <position>0,4</position>
+            <filename>images/icons/Clock.png</filename>
+        </imagetype>
         <textarea name="length" from="basetext_m">
-            <area>100%-150,0,100%,40</area>
+            <area>50,0,100%,40</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="labelplaycount" from="basetext_m">
-            <area>0,50,100%,40</area>
-            <alpha>150</alpha>
-            <value>Played:</value>
-        </textarea>
+        <imagetype name="playcounticon" from="baseicon">
+            <position>0,54</position>
+            <filename>images/icons/Play.png</filename>
+        </imagetype>
         <textarea name="playcount" from="basetext_m">
-            <area>100%-150,50,100%,40</area>
+            <area>50,50,100%,40</area>
             <alpha>150</alpha>
-            <template>%PLAYCOUNT%x</template>
+            <template>%PLAYCOUNT%x ~ %LASTPLAYED%</template>
         </textarea>
-        <textarea name="labellastplayed" from="basetext_m">
-            <area>0,100,100%,40</area>
-            <alpha>150</alpha>
-            <value>Last Played:</value>
-        </textarea>
-        <textarea name="lastplayed" from="basetext_m">
-            <area>100%-150,100,100%,40</area>
-            <alpha>150</alpha>
-        </textarea>
-        <textarea name="labeldateadded" from="basetext_m">
-            <area>0,150,100%,40</area>
-            <alpha>150</alpha>
-            <value>Date Added:</value>
-        </textarea>
+        <imagetype name="dateaddedicon" from="baseicon">
+            <position>0,104</position>
+            <filename>images/icons/Playlist.png</filename>
+        </imagetype>
         <textarea name="dateadded" from="basetext_m">
-            <area>100%-150,150,100%,40</area>
+            <area>50,100,100%,40</area>
+            <alpha>150</alpha>
+        </textarea>
+    </group>
+    -->
+    <group name="musictrackstats">
+        <area>0,0,400,150</area>
+        <imagetype name="lengthicon" from="baseicon">
+            <position>100%-32,4</position>
+            <filename>images/icons/Clock.png</filename>
+        </imagetype>
+        <textarea name="length" from="basetext_m">
+            <area>0,0,100%-50,40</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="playcounticon" from="baseicon">
+            <position>100%-32,54</position>
+            <filename>images/icons/Play.png</filename>
+        </imagetype>
+        <textarea name="playcount" from="basetext_m">
+            <area>0,50,100%-50,40</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+            <template>%PLAYCOUNT%x ~ %LASTPLAYED%</template>
+        </textarea>
+        <imagetype name="dateaddedicon" from="baseicon">
+            <position>100%-32,104</position>
+            <filename>images/icons/Playlist.png</filename>
+        </imagetype>
+        <textarea name="dateadded" from="basetext_m">
+            <area>0,100,100%-50,40</area>
+            <align>right,vcenter</align>
             <alpha>150</alpha>
         </textarea>
     </group>
@@ -302,7 +345,7 @@
         <state name="off">
             <area>0,0,100%,100%</area>
             <imagetype name="icon" from="baseicon">
-                <area>0,0,32,32</area>
+                <position>0,0</position>
                 <filename>images/icons/Mute.png</filename>
             </imagetype>
         </state>
@@ -321,7 +364,7 @@
             <state name="off">
                 <area>0,0,100%,100%</area>
                 <imagetype name="icon" from="baseicon">
-                    <area>100%-32,2,32,32</area>
+                    <position>100%-32,2</position>
                     <filename>images/icons/Shuffle.png</filename>
                 </imagetype>
                 <textarea name="shuffle" from="basetext_s">
@@ -365,7 +408,7 @@
             <state name="off">
                 <area>0,0,100%,100%</area>
                 <imagetype name="icon" from="baseicon">
-                    <area>0,2,32,32</area>
+                    <position>0,2</position>
                     <filename>images/icons/Repeat.png</filename>
                 </imagetype>
                 <textarea name="shuffle" from="basetext_s">

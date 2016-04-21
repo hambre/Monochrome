@@ -415,7 +415,7 @@
 
     <!-- TODO Add to Mythtv-Wiki -->
     <window name="trackdetail_popup" include="music-base.xml">
-        <area>-1,0,1250,725</area>
+        <area>-1,0,1250,525</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
@@ -436,22 +436,29 @@
             <statetype name="rating_state" from="basestarrating" depends="title">
                 <area>0,318,100%,40</area>
             </statetype>
-            <textarea name="playcount">
+            <imagetype name="playcounticon">
                 <alpha>0</alpha>
-            </textarea>
-            <textarea name="lastplayed">
+            </imagetype>
+            <textarea name="playcount">
                 <alpha>0</alpha>
             </textarea>
         </group>
         <group name="trackstats" from="musictrackstats">
-            <area>450,450,400,200</area>
+            <area>100%-450,290,400,150</area>
         </group>
-        <textarea name="filename" from="basetext_m">
-            <area>450,660,-50,40</area>
-            <alpha>150</alpha>
-            <cutdown>no</cutdown>
-            <scroll direction="horizontal"/>
-        </textarea>
+        <group name="file">
+            <area>450,450,-50,40</area>
+            <imagetype name="filenameicon" from="baseicon">
+                <position>0,4</position>
+                <filename>images/icons/MusicDirectory.png</filename>
+            </imagetype>
+            <textarea name="filename" from="basetext_m">
+                <area>50,0,100%,40</area>
+                <alpha>150</alpha>
+                <cutdown>no</cutdown>
+                <scroll direction="horizontal"/>
+            </textarea>
+        </group>
     </window>
 
     <!--====================================================================-->
