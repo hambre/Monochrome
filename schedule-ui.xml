@@ -486,7 +486,7 @@
                 </group>
                 <!-- right side -->
                 <imagetype name="group" from="baseicon" depends="recgroup">
-                    <area>50%,80,32,32</area>
+                    <position>50%,80</position>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
                 <textarea name="recgroup" from="basetext_s">
@@ -652,7 +652,7 @@
                     <area>0,0,50%,120</area>
                 </group>
                 <imagetype name="scheduleicon" from="baseicon">
-                    <area>0,120,32,32</area>
+                    <position>0,120</position>
                     <filename>images/icons/Calendar.png</filename>
                 </imagetype>
                 <textarea name="scheduleinfo" from="basetext_s">
@@ -661,7 +661,7 @@
                 </textarea>
                 <!-- right side -->
                 <imagetype name="group" from="baseicon" depends="recgroup">
-                    <area>50%+50,0,32,32</area>
+                    <position>50%+50,0</position>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
                 <textarea name="recgroup" from="basetext_s">
@@ -669,7 +669,7 @@
                     <alpha>150</alpha>
                 </textarea>
                 <imagetype name="profileicon" from="baseicon">
-                    <area>50%+50,40,32,32</area>
+                    <position>50%+50,40</position>
                     <filename>images/icons/Profile.png</filename>
                 </imagetype>
                 <textarea name="recordingprofile" from="basetext_s">
@@ -677,7 +677,7 @@
                     <alpha>150</alpha>
                 </textarea>
                 <imagetype name="storageicon" from="baseicon">
-                    <area>50%+50,80,32,32</area>
+                    <position>50%+50,80</position>
                     <filename>images/icons/Storage.png</filename>
                 </imagetype>
                 <textarea name="storagegroup" from="basetext_s">
@@ -685,7 +685,7 @@
                     <alpha>150</alpha>
                 </textarea>
                 <imagetype name="priorityicon" from="baseicon">
-                    <area>50%+50,120,32,32</area>
+                    <position>50%+50,120</position>
                     <filename>images/icons/Override.png</filename>
                 </imagetype>
                 <textarea name="finalpriority" from="basetext_s">
@@ -985,7 +985,7 @@
                 </group>
                 <!-- right side -->
                 <imagetype name="group" from="baseicon" depends="recgroup">
-                    <area>50%,80,32,32</area>
+                    <position>50%,80</position>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
                 <textarea name="recgroup" from="basetext_s">
@@ -1076,7 +1076,7 @@
                 </group>
                 <!-- right side -->
                 <imagetype name="group" from="baseicon" depends="recgroup">
-                    <area>50%,80,32,32</area>
+                    <position>50%,80</position>
                     <filename>images/icons/Group.png</filename>
                 </imagetype>
                 <textarea name="recgroup" from="basetext_s">

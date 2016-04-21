@@ -370,7 +370,7 @@
     </buttonlist>
 
     <imagetype name="baseicon">
-        <area>0,0,75,32</area>
+        <area>0,0,32,32</area>
         <alpha>200</alpha>
         <preserveaspect>yes</preserveaspect>
     </imagetype>
@@ -724,8 +724,9 @@
     <statetype name="basewatchedstate">
         <area>0,0,32,32</area>
         <state name="yes">
+            <area>0,0,100%,100%</area>
             <imagetype name="icon" from="baseicon">
-                <area>0,0,32,32</area>
+                <position>0,0</position>
                 <filename>images/icons/Watched.png</filename>
             </imagetype>
         </state>
@@ -810,7 +811,7 @@
             <align>right,vcenter</align>
         </textarea>
         <imagetype name="heart" from="baseicon" depends="userrating">
-            <area>100%-32,0,32,32</area>
+            <position>100%-32,0</position>
             <filename>images/icons/Heart.png</filename>
         </imagetype>
     </group>
@@ -819,7 +820,7 @@
     <group name="basevideoiconfacts">
         <area>0,0,100%,100%</area>
         <imagetype name="time" from="baseicon" depends="length">
-            <area>0,100%-122,32,32</area>
+            <position>0,100%-122</position>
             <filename>images/icons/Clock.png</filename>
         </imagetype>
         <textarea name="length" from="basetext_s">
@@ -827,7 +828,7 @@
             <alpha>150</alpha>
         </textarea>
         <imagetype name="calendar" from="baseicon" depends="year">
-            <area>0,100%-77,32,32</area>
+            <position>0,100%-77</position>
             <filename>images/icons/Calendar.png</filename>
         </imagetype>
         <textarea name="year" from="basetext_s">
@@ -835,7 +836,7 @@
             <alpha>150</alpha>
         </textarea>
         <imagetype name="ratinglabel" from="baseicon" depends="rating">
-            <area>0,100%-32,32,32</area>
+            <position>0,100%-32</position>
             <filename>images/icons/ParentalRating.png</filename>
         </imagetype>
         <textarea name="rating" from="basetext_s">
@@ -892,7 +893,7 @@
     <group name="basescheduleiconfacts">
         <area>0,0,100%,120</area>
         <imagetype name="sender" from="baseicon">
-            <area>0,0,32,32</area>
+            <position>0,0</position>
             <filename>images/icons/Sender.png</filename>
         </imagetype>
         <textarea name="longchannel" from="basetext_s">
@@ -900,7 +901,7 @@
             <alpha>150</alpha>
         </textarea>
         <imagetype name="aried" from="baseicon">
-            <area>0,40,32,32</area>
+            <position>0,40</position>
             <filename>images/icons/Clock.png</filename>
         </imagetype>
         <textarea name="timedate" from="basetext_s">
@@ -909,7 +910,7 @@
             <template>%TIMEDATE% (%LENMINS%)</template>
         </textarea>
         <imagetype name="record" from="baseicon">
-            <area>0,80,32,32</area>
+            <position>0,80</position>
             <filename>images/icons/Record.png</filename>
         </imagetype>
         <textarea name="rectypestatus" from="basetext_s">
@@ -921,7 +922,7 @@
     <group name="basescheduleiconfactsext">
         <area>0,0,100%,120</area>
         <imagetype name="idicon" from="baseicon" depends="programid">
-            <area>0,0,32,32</area>
+            <position>0,0</position>
             <filename>images/icons/Number.png</filename>
         </imagetype>
         <textarea name="programid" from="basetext_s">
@@ -929,7 +930,7 @@
             <alpha>150</alpha>
         </textarea>
         <imagetype name="group" from="baseicon" depends="recgroup">
-            <area>0,40,32,32</area>
+            <position>0,40</position>
             <filename>images/icons/Group.png</filename>
         </imagetype>
         <textarea name="recgroup" from="basetext_s">
@@ -937,7 +938,7 @@
             <alpha>150</alpha>
         </textarea>
         <imagetype name="storageicon" from="baseicon" depends="storagegroup">
-            <area>0,80,32,32</area>
+            <position>0,80</position>
             <filename>images/icons/Storage.png</filename>
         </imagetype>
         <textarea name="storagegroup" from="basetext_s">
@@ -1167,7 +1168,7 @@
             <state name="found">
                 <area>0,0,32,32</area>
                 <imagetype name="foundicon" from="baseicon">
-                    <area>0,0,32,32</area>
+                    <position>0,0</position>
                     <alpha>100</alpha>
                     <filename>images/icons/Watched.png</filename>
                 </imagetype>
@@ -1175,7 +1176,7 @@
             <state name="notfound">
                 <area>0,0,32,32</area>
                 <imagetype name="notfoundicon" from="baseicon">
-                    <area>0,0,32,32</area>
+                    <position>0,0</position>
                     <alpha>100</alpha>
                     <filename>images/icons/Cross.png</filename>
                 </imagetype>

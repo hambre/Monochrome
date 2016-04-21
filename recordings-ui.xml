@@ -49,8 +49,9 @@
                     <statetype name="playlist" depends="!watched&amp;!jobstate">
                         <area>100%-37,12,32,32</area>
                         <state name="yes">
+                            <area>0,0,100%,100%</area>
                             <imagetype name="icon" from="baseicon">
-                                <area>0,0,32,32</area>
+                                <position>0,0</position>
                                 <filename>images/icons/Playlist.png</filename>
                             </imagetype>
                         </state>
@@ -161,7 +162,7 @@
             <group name="facts">
                 <area>0,400,100%,120</area>
                 <imagetype name="sender" from="baseicon">
-                    <area>0,0,32,32</area>
+                    <position>0,0</position>
                     <filename>images/icons/Sender.png</filename>
                 </imagetype>
                 <textarea name="longchannel" from="basetext_s">
@@ -169,7 +170,7 @@
                     <alpha>150</alpha>
                 </textarea>
                 <imagetype name="aried" from="baseicon">
-                    <area>0,40,32,32</area>
+                    <position>0,40</position>
                     <filename>images/icons/Clock.png</filename>
                 </imagetype>
                 <textarea name="startdate" from="basetext_s">
@@ -178,7 +179,7 @@
                     <template>%startdate%%| year%, %starttime% - %endtime% (%lenmins%)</template>
                 </textarea>
                 <imagetype name="storage" from="baseicon">
-                    <area>0,80,32,32</area>
+                    <position>0,80</position>
                     <filename>images/icons/Storage.png</filename>
                 </imagetype>
                 <textarea name="storagegroup" from="basetext_s">
@@ -306,14 +307,16 @@
             <statetype name="bookmark">
                 <area>100%-182,540,32,32</area>
                 <state name="yes">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="bookmark" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <filename>images/icons/Bookmark.png</filename>
                     </imagetype>
                 </state>
                 <state name="no">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="bookmark" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <alpha>50</alpha>
                         <filename>images/icons/Bookmark.png</filename>
                     </imagetype>
@@ -322,14 +325,16 @@
             <statetype name="commflagged">
                 <area>100%-132,540,32,32</area>
                 <state name="yes">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="commflagged" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <filename>images/icons/CommFlag.png</filename>
                     </imagetype>
                 </state>
                 <state name="no">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="commflagged" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <alpha>50</alpha>
                         <filename>images/icons/CommFlag.png</filename>
                     </imagetype>
@@ -338,14 +343,16 @@
             <statetype name="cutlist">
                 <area>100%-82,540,32,32</area>
                 <state name="yes">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="cutlist" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <filename>images/icons/Cutlist.png</filename>
                     </imagetype>
                 </state>
                 <state name="no">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="cutlist" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <alpha>50</alpha>
                         <filename>images/icons/Cutlist.png</filename>
                     </imagetype>
@@ -354,14 +361,16 @@
             <statetype name="autoexpire">
                 <area>100%-32,540,32,32</area>
                 <state name="yes">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="autoexpire" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <filename>images/icons/Expire.png</filename>
                     </imagetype>
                 </state>
                 <state name="no">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="autoexpire" from="baseicon">
-                        <area>0,0,32,32</area>
+                        <position>0,0</position>
                         <alpha>50</alpha>
                         <filename>images/icons/Expire.png</filename>
                     </imagetype>
@@ -580,32 +589,37 @@
                         </state>
                         <!-- recording states -->
                         <state name="watched">
+                            <area>0,0,100%,100%</area>
                             <imagetype name="watched" from="baseicon">
-                                <area>20,4,32,32</area>
+                                <position>20,4</position>
                                 <filename>images/icons/Watched.png</filename>
                             </imagetype>
                         </state>
                         <state name="bookmark">
+                            <area>0,0,100%,100%</area>
                             <imagetype name="bookmark" from="baseicon">
-                                <area>20,4,32,32</area>
+                                <position>20,4</position>
                                 <filename>images/icons/Bookmark.png</filename>
                             </imagetype>
                         </state>
                         <state name="autoexpire">
+                            <area>0,0,100%,100%</area>
                             <imagetype name="autoexpire" from="baseicon">
-                                <area>20,4,32,32</area>
+                                <position>20,4</position>
                                 <filename>images/icons/Expire.png</filename>
                             </imagetype>
                         </state>
                         <state name="commflagged">
+                            <area>0,0,100%,100%</area>
                             <imagetype name="commflagged" from="baseicon">
-                                <area>20,4,32,32</area>
+                                <position>20,4</position>
                                 <filename>images/icons/CommFlag.png</filename>
                             </imagetype>
                         </state>
                         <state name="cutlist">
+                            <area>0,0,100%,100%</area>
                             <imagetype name="cutlist" from="baseicon">
-                                <area>20,4,32,32</area>
+                                <position>20,4</position>
                                 <filename>images/icons/Cutlist.png</filename>
                             </imagetype>
                         </state>
@@ -619,7 +633,7 @@
                         <state name="surround">
                             <imagetype name="surround" from="baseicon">
                                 <area>0,4,75,32</area>
-                                <filename>images/icons/AudioSurround.png</filename>
+                                <filename>images/icons/AudioSurround6.png</filename>
                             </imagetype>
                         </state>
                         <state name="dolby">
