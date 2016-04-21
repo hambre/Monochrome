@@ -3,7 +3,7 @@
 <mythuitheme>
 
     <group name="musictrackdetails">
-        <area>50%+425,465,-25,-165</area>
+        <area>50%+425,465,-25,-160</area>
         <textarea name="title" from="basetitletext">
             <area>0,0,100%,50</area>
         </textarea>
