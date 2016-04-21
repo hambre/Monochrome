@@ -35,7 +35,7 @@
             <area>50,165,100%,40</area>
             <alpha>150</alpha>
         </textarea>
-        <imagetype name="yearicon" from="baseicon">
+        <imagetype name="yearicon" from="baseicon" depends="year">
             <position>0,219</position>
             <filename>images/icons/Calendar.png</filename>
         </imagetype>
