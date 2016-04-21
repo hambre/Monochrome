@@ -4,27 +4,32 @@
 
     <group name="musictrackdetails">
         <area>50%+425,465,-25,-115</area>
-        <textarea name="artist" from="basetext_l">
-            <area>0,0,100%,40</area>
-            <alpha>150</alpha>
-        </textarea>
         <textarea name="title" from="basetitletext">
-            <area>0,50,100%,50</area>
+            <area>0,0,100%,50</area>
+        </textarea>
+        <textarea name="artist" from="basetext_l">
+            <area>0,60,100%,40</area>
+            <alpha>150</alpha>
         </textarea>
         <textarea name="album" from="basetext_l">
-            <area>0,110,100%,40</area>
+            <area>0,115,100%,40</area>
             <alpha>150</alpha>
         </textarea>
+        <textarea name="tracknum" from="basetext_m">
+            <area>0,165,100%,40</area>
+            <alpha>150</alpha>
+            <template># %TRACKNUM%</template>
+        </textarea>
         <textarea name="year" from="basetext_m">
-            <area>0,160,100%,40</area>
+            <area>0,215,100%,40</area>
             <alpha>150</alpha>
         </textarea>
         <textarea name="genre" from="basetext_m">
-            <area>0,210,100%,40</area>
+            <area>0,265,100%,40</area>
             <alpha>150</alpha>
         </textarea>
         <statetype name="ratingstate" from="basestarrating" depends="title">
-            <area>0,260,100%,40</area>
+            <area>0,318,100%,32</area>
         </statetype>
         <textarea name="playcount" from="basetext_m">
             <area>0,100%-115,100%,40</area>
@@ -35,6 +40,47 @@
             <area>0,100%-65,100%,40</area>
             <alpha>150</alpha>
             <template>Last played: %LASTPLAYED%</template>
+        </textarea>
+    </group>
+
+    <group name="musictrackstats">
+        <area>0,0,400,200</area>
+        <textarea name="labellength" from="basetext_m">
+            <area>0,0,100%,40</area>
+            <alpha>150</alpha>
+            <value>Length:</value>
+        </textarea>
+        <textarea name="length" from="basetext_m">
+            <area>100%-150,0,100%,40</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="labelplaycount" from="basetext_m">
+            <area>0,50,100%,40</area>
+            <alpha>150</alpha>
+            <value>Played:</value>
+        </textarea>
+        <textarea name="playcount" from="basetext_m">
+            <area>100%-150,50,100%,40</area>
+            <alpha>150</alpha>
+            <template>%PLAYCOUNT%x</template>
+        </textarea>
+        <textarea name="labellastplayed" from="basetext_m">
+            <area>0,100,100%,40</area>
+            <alpha>150</alpha>
+            <value>Last Played:</value>
+        </textarea>
+        <textarea name="lastplayed" from="basetext_m">
+            <area>100%-150,100,100%,40</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="labeldateadded" from="basetext_m">
+            <area>0,150,100%,40</area>
+            <alpha>150</alpha>
+            <value>Date Added:</value>
+        </textarea>
+        <textarea name="dateadded" from="basetext_m">
+            <area>100%-150,150,100%,40</area>
+            <alpha>150</alpha>
         </textarea>
     </group>
 
