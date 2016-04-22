@@ -651,31 +651,31 @@
                         <!-- video -->
                         <state name="hdtv">
                             <imagetype name="hdtv" from="baseicon">
-                                <area>0,4,75,32</area>
+                                <area>0,4,110,32</area>
                                 <filename>images/icons/VideoHDTV.png</filename>
                             </imagetype>
                         </state>
                         <state name="widescreen">
                             <imagetype name="widescreen" from="baseicon">
-                                <area>0,4,75,32</area>
+                                <area>0,4,110,32</area>
                                 <filename>images/icons/VideoWidescreen.png</filename>
                             </imagetype>
                         </state>
                         <state name="avchd">
                             <imagetype name="avchd" from="baseicon">
-                                <area>0,4,75,32</area>
+                                <area>0,4,110,32</area>
                                 <filename>images/icons/VideoAVCHD.png</filename>
                             </imagetype>
                         </state>
                         <state name="hd720">
                             <imagetype name="hd720" from="baseicon">
-                                <area>0,4,75,32</area>
+                                <area>0,4,110,32</area>
                                 <filename>images/icons/VideoHD720.png</filename>
                             </imagetype>
                         </state>
                         <state name="hd1080">
                             <imagetype name="hd1080" from="baseicon">
-                                <area>0,4,75,32</area>
+                                <area>0,4,110,32</area>
                                 <filename>images/icons/VideoHD1080.png</filename>
                             </imagetype>
                         </state>
@@ -703,13 +703,13 @@
                     <shape name="itemseparator" from="baseitemseparator_h">
                         <position>0, 100%</position>
                     </shape>
-                    <textarea name="buttontext" from="baseitemtext">
+                    <textarea name="buttontext" from="basetext_m">
                         <area>125,0,100%-50,100%</area>
                         <alpha>150</alpha>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
-                    <textarea name="buttontext" from="baseitemtext">
+                    <textarea name="buttontext" from="basetext_m">
                         <area>125,0,100%,100%</area>
                         <scroll direction="left" />
                         <alpha>255</alpha>
