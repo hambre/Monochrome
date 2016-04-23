@@ -27,7 +27,7 @@
             <area>0,115,100%,40</area>
             <alpha>150</alpha>
         </textarea>
-        <imagetype name="tracknumicon" from="baseicon">
+        <imagetype name="tracknumicon" from="baseicon" depends="tracknum">
             <position>0,169</position>
             <filename>images/icons/Number.png</filename>
         </imagetype>
@@ -43,7 +43,7 @@
             <area>50,215,100%,40</area>
             <alpha>150</alpha>
         </textarea>
-        <imagetype name="genreicon" from="baseicon">
+        <imagetype name="genreicon" from="baseicon" depends="genre">
             <position>0,269</position>
             <filename>images/icons/MusicGenre.png</filename>
         </imagetype>
@@ -54,7 +54,7 @@
         <statetype name="ratingstate" from="basestarrating" depends="title">
             <area>0,318,100%,32</area>
         </statetype>
-        <imagetype name="playcounticon" from="baseicon">
+        <imagetype name="playcounticon" from="baseicon" depends="playcount">
             <position>0,100%-36</position>
             <filename>images/icons/Play.png</filename>
         </imagetype>
@@ -65,36 +65,6 @@
         </textarea>
     </group>
 
-    <!--
-    <group name="musictrackstats">
-        <area>0,0,400,150</area>
-        <imagetype name="lengthicon" from="baseicon">
-            <position>0,4</position>
-            <filename>images/icons/Clock.png</filename>
-        </imagetype>
-        <textarea name="length" from="basetext_m">
-            <area>50,0,100%,40</area>
-            <alpha>150</alpha>
-        </textarea>
-        <imagetype name="playcounticon" from="baseicon">
-            <position>0,54</position>
-            <filename>images/icons/Play.png</filename>
-        </imagetype>
-        <textarea name="playcount" from="basetext_m">
-            <area>50,50,100%,40</area>
-            <alpha>150</alpha>
-            <template>%PLAYCOUNT%x ~ %LASTPLAYED%</template>
-        </textarea>
-        <imagetype name="dateaddedicon" from="baseicon">
-            <position>0,104</position>
-            <filename>images/icons/Playlist.png</filename>
-        </imagetype>
-        <textarea name="dateadded" from="basetext_m">
-            <area>50,100,100%,40</area>
-            <alpha>150</alpha>
-        </textarea>
-    </group>
-    -->
     <group name="musictrackstats">
         <area>0,0,400,150</area>
         <imagetype name="lengthicon" from="baseicon">
@@ -106,7 +76,7 @@
             <align>right,vcenter</align>
             <alpha>150</alpha>
         </textarea>
-        <imagetype name="playcounticon" from="baseicon">
+        <imagetype name="playcounticon" from="baseicon" depends="playcount">
             <position>100%-32,54</position>
             <filename>images/icons/Play.png</filename>
         </imagetype>
@@ -461,12 +431,6 @@
 
     <statetype name="musicnodetype">
         <area>0,0,100%,100%</area>
-        <state name="default">
-            <area>0,0,100%,100%</area>
-            <imagetype name="icon" from="musiccoverarticon">
-                <alpha>255</alpha>
-            </imagetype>
-        </state>
         <state name="alltracks">
             <area>0,0,100%,100%</area>
             <imagetype name="alltracks" from="musiccoverarticon">

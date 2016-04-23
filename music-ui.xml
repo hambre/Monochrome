@@ -120,6 +120,9 @@
                             <area>0,0,100%,100%</area>
                             <alpha>150</alpha>
                         </imagetype>
+                        <imagetype name="icon" from="musiccoverarticon" depends="!buttonimage&amp;!nodetype">
+                            <area>50%-50,50%-50,100,100</area>
+                        </imagetype>
                         <statetype name="nodetype" from="musicnodetype">
                             <alpha>50</alpha>
                         </statetype>
@@ -137,6 +140,10 @@
                             <area>0,0,100%,100%</area>
                             <preserveaspect>false</preserveaspect>
                             <alpha>255</alpha>
+                        </imagetype>
+                        <imagetype name="icon" from="musiccoverarticon" depends="!buttonimage&amp;!nodetype">
+                            <area>50%-50,50%-50,100,100</area>
+                            <alpha>150</alpha>
                         </imagetype>
                         <statetype name="nodetype" from="musicnodetype">
                             <alpha>150</alpha>
@@ -157,15 +164,15 @@
         </buttontree>
 
         <group name="trackdetails" from="musictrackdetails">
-            <textarea name="playcount">
+            <imagetype name="playcounticon">
                 <alpha>0</alpha>
-            </textarea>
-            <textarea name="lastplayed">
+            </imagetype>
+            <textarea name="playcount">
                 <alpha>0</alpha>
             </textarea>
         </group>
         <group name="progressdetails" from="musicprogress">
-        <area>50%+425,100%-247,-25,-115</area>
+            <area>50%+425,100%-247,-25,-115</area>
         </group>
         <group name="playbackbuttons" from="musicbuttons"/>
         <group name="playbackstate" from="musicplaybackstate"/>
