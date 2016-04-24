@@ -713,7 +713,7 @@
             <value>Custom Priority Rules</value>
         </textarea>
         <!-- middle part -->
-        <group name="content">
+        <group name="controls">
             <area>50%-475,415,950,-115</area>
             <textarea name="ruleslabel" from="basetext_m">
                 <area>0,0,300,40</area>
