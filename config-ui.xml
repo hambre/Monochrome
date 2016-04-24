@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="languageselection">
+        <imagetype name="background" from="baseimagebackground"/>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="helptext" from="basepagetitletext">
+            <value>Select your preferred language</value>
+        </textarea>
+        <buttonlist name="countries" from="baseitemlist">
+            <area>50,465,50%-25,-115</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>5,7,60,40</area>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>80,0,-5,100%</area>
+                        <template>%NATIVECOUNTRY%</template>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="buttonimage">
+                        <area>5,7,60,40</area>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>80,0,-5,100%</area>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="buttontext">
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <buttonlist name="languages" from="baseitemlist">
+            <area>50%+25,465,-50,-115</area>
+        </buttonlist>
+        <!-- bottom part with buttons -->
+        <button name="save" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+</mythuitheme>
