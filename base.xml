@@ -1048,7 +1048,7 @@
     <group name="basecontentdecoration">
         <area>0,0,100%,100%</area>
         <group name="pageheader" from="baseheader" />
-        <group name="content" from="basecontent" />
+        <group name="pagecontent" from="basecontent" />
         <!-- content goes here -->
         <group name="pagefooter" from="basefooter" />
     </group>
@@ -1067,7 +1067,7 @@
 
     <!-- editor window decoration (header + content bar + big footer for buttons) -->
     <group name="baseeditordecoration" from="basecontentdecoration">
-        <group name="content">
+        <group name="pagecontent">
             <area>0,440,100%,100%</area>
         </group>
         <group name="pagefooter">

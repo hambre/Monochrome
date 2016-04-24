@@ -333,7 +333,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,440,100%,100%</area>
             </group>
         </group>
@@ -705,7 +705,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,390,100%,100%</area>
             </group>
         </group>
@@ -1096,7 +1096,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,440,100%,100%</area>
             </group>
         </group>
@@ -1169,7 +1169,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,440,100%,100%</area>
             </group>
         </group>
@@ -1254,7 +1254,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,440,100%,100%</area>
             </group>
         </group>
@@ -1330,7 +1330,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,440,100%,100%</area>
             </group>
         </group>
@@ -1397,7 +1397,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,440,100%,100%</area>
             </group>
         </group>
@@ -1497,7 +1497,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,390,100%,100%</area>
             </group>
         </group>
@@ -1595,7 +1595,7 @@
             <area>0,0,100%,100%</area>
         </imagetype>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <area>0,390,100%,100%</area>
             </group>
         </group>

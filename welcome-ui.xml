@@ -4,7 +4,7 @@
     <window name="welcome_screen">
         <imagetype name="background" from="basedefaultbackground"/>
         <group name="decoration" from="baseeditordecoration">
-            <group name="content">
+            <group name="pagecontent">
                 <shape name="contentbar">
                     <alpha>175</alpha>
                 </shape>
