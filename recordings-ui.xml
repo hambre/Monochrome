@@ -138,7 +138,7 @@
 
         <!-- selected recording details -->
         <group name="recdetails" depends="!rec_count">
-            <area>1185, 500, -25, 580</area>
+            <area>1185, 500, -25, 100%</area>
             <textarea name="title" from="basetitletext">
                 <area>0, 0, 700, 50</area>
             </textarea>
@@ -190,7 +190,7 @@
             </group>
 
             <statetype name="audioprops">
-                <area>0,540,75,32</area>
+                <area>0,100%-40,75,32</area>
                 <showempty>yes</showempty>
                 <state name="mono">
                     <imagetype name="mono" from="baseicon">
@@ -225,7 +225,7 @@
                 </state>
             </statetype>
             <statetype name="videoprops">
-                <area>100,540,110,32</area>
+                <area>100,100%-40,110,32</area>
                 <state name="hdtv">
                     <imagetype name="hdtv" from="baseicon">
                         <area>0,0,110,32</area>
@@ -271,7 +271,7 @@
                 </state>
             </statetype>
             <statetype name="subtitletypes">
-                <area>225,540,75,32</area>
+                <area>225,100%-40,75,32</area>
                 <state name="cc">
                     <imagetype name="sub" from="baseicon">
                         <area>0,0,100,32</area>
@@ -305,7 +305,7 @@
                 </state>
             </statetype>
             <statetype name="bookmark">
-                <area>100%-182,540,32,32</area>
+                <area>100%-182,100%-40,32,32</area>
                 <state name="yes">
                     <area>0,0,100%,100%</area>
                     <imagetype name="bookmark" from="baseicon">
@@ -323,7 +323,7 @@
                 </state>
             </statetype>
             <statetype name="commflagged">
-                <area>100%-132,540,32,32</area>
+                <area>100%-132,100%-40,32,32</area>
                 <state name="yes">
                     <area>0,0,100%,100%</area>
                     <imagetype name="commflagged" from="baseicon">
@@ -341,7 +341,7 @@
                 </state>
             </statetype>
             <statetype name="cutlist">
-                <area>100%-82,540,32,32</area>
+                <area>100%-82,100%-40,32,32</area>
                 <state name="yes">
                     <area>0,0,100%,100%</area>
                     <imagetype name="cutlist" from="baseicon">
@@ -359,7 +359,7 @@
                 </state>
             </statetype>
             <statetype name="autoexpire">
-                <area>100%-32,540,32,32</area>
+                <area>100%-32,100%-40,32,32</area>
                 <state name="yes">
                     <area>0,0,100%,100%</area>
                     <imagetype name="autoexpire" from="baseicon">
