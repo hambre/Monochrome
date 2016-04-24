@@ -16,7 +16,6 @@
                     </imagetype>
                     <textarea name="buttontext">
                         <area>80,0,-5,100%</area>
-                        <template>%NATIVECOUNTRY%</template>
                     </textarea>
                 </state>
                 <state name="selectedactive">
