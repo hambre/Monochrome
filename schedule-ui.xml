@@ -332,11 +332,7 @@
             <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="baseeditordecoration">
-            <group name="pagecontent">
-                <area>0,440,100%,100%</area>
-            </group>
-        </group>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Manual Recording Schedule</value>
         </textarea>
@@ -1095,11 +1091,7 @@
             <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="baseeditordecoration">
-            <group name="pagecontent">
-                <area>0,440,100%,100%</area>
-            </group>
-        </group>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Editor</value>
         </textarea>
@@ -1168,11 +1160,7 @@
             <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="baseeditordecoration">
-            <group name="pagecontent">
-                <area>0,440,100%,100%</area>
-            </group>
-        </group>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Options</value>
         </textarea>
@@ -1253,11 +1241,7 @@
             <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="baseeditordecoration">
-            <group name="pagecontent">
-                <area>0,440,100%,100%</area>
-            </group>
-        </group>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="sched" from="basepagetitletext">
             <value>Schedule filters</value>
         </textarea>
@@ -1329,11 +1313,7 @@
             <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="baseeditordecoration">
-            <group name="pagecontent">
-                <area>0,440,100%,100%</area>
-            </group>
-        </group>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Storage Options</value>
         </textarea>
@@ -1396,11 +1376,7 @@
             <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="baseeditordecoration">
-            <group name="pagecontent">
-                <area>0,440,100%,100%</area>
-            </group>
-        </group>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Storage Options</value>
         </textarea>
