@@ -420,7 +420,6 @@
 
     <!--====================================================================-->
 
-    <!-- TODO Add to Mythtv-Wiki -->
     <window name="trackdetail_popup" include="music-base.xml">
         <area>-1,0,1250,525</area>
         <animation trigger="AboutToShow">
