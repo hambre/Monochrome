@@ -47,4 +47,61 @@
             <value>Cancel</value>
         </button>
     </window>
+
+    <window name="grabbersettings">
+        <imagetype name="background" from="baseimagebackground"/>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Artwork and Metadata Sources</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,500,1000,300</area>
+            <group name="labels">
+                <area>0,0,60%,100%</area>
+                <textarea name="movielabel" from="basetext_m">
+                    <area>0,0,100%,40</area>
+                    <value>Movie Metadata Source:</value>
+                </textarea>
+                <textarea name="tvlabel" from="basetext_m">
+                    <area>0,65,100%,40</area>
+                    <value>Television Metadata Source:</value>
+                </textarea>
+                <textarea name="gamelabel" from="basetext_m">
+                    <area>0,130,100%,40</area>
+                    <value>Game Metadata Source:</value>
+                </textarea>
+                <textarea name="updatelabel" from="basetext_m">
+                    <area>0,195,100%,40</area>
+                    <value>Perform daily updates of recording artwork</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>60%,0,100%,100%</area>
+                <buttonlist name="moviegrabber" from="baseselector">
+                    <area>0,0,100%,40</area>
+                </buttonlist>
+                <buttonlist name="tvgrabber" from="baseselector">
+                    <area>0,65,100%,40</area>
+                </buttonlist>
+                <buttonlist name="gamegrabber" from="baseselector">
+                    <area>0,130,100%,40</area>
+                </buttonlist>
+                <checkbox name="dailyupdates" from="basecheckbox">
+                    <area>0,199,100%,32</area>
+                </checkbox>
+            </group>
+        </group>
+        <textarea name="helptext" from="basehelptext">
+            <area>50%-600,100%-170,1200,70</area>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
 </mythuitheme>
