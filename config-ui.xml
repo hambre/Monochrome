@@ -133,13 +133,96 @@
         </group>
         <textarea name="helptext" from="basehelptext"/>
         <!-- bottom part with buttons -->
-        <button name="next" from="basebutton">
+        <button name="cancel" from="basebutton">
             <area>50%-225,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+        <button name="next" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
             <value>Next</value>
         </button>
-        <button name="cancel" from="basebutton">
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="audiowizard">
+        <imagetype name="background" from="baseimagebackground"/>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Audio Configuration</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,465,1000,500</area>
+            <group name="labels">
+                <area>0,0,40%,100%</area>
+                <textarea name="devicelabel" from="basetext_m">
+                    <area>0,0,100%,40</area>
+                    <value>Audio Device:</value>
+                </textarea>
+                <textarea name="speakerlabel" from="basetext_m">
+                    <area>0,390,100%,40</area>
+                    <value>Number of Speakers:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>40%,0,100%,100%</area>
+                <buttonlist name="audiodevices" from="baseselector">
+                    <area>0,0,100%,40</area>
+                </buttonlist>
+                <checkbox name="ac3check" from="basecheckbox">
+                    <area>0,69,32,32</area>
+                </checkbox>
+                <textarea name="ac3label" from="basetext_m">
+                    <area>50,65,100%,40</area>
+                    <value>My audio subsystem supports Dolby Digital</value>
+                </textarea>
+                <checkbox name="dtscheck" from="basecheckbox">
+                    <area>0,134,32,32</area>
+                </checkbox>
+                <textarea name="dtslabel" from="basetext_m">
+                    <area>50,130,100%,40</area>
+                    <value>My audio subsystem supports DTS</value>
+                </textarea>
+                <checkbox name="eac3check" from="basecheckbox">
+                    <area>0,199,32,32</area>
+                </checkbox>
+                <textarea name="eac3label" from="basetext_m">
+                    <area>50,195,100%,40</area>
+                    <value>My audio subsystem supports E-AC-3</value>
+                </textarea>
+                <checkbox name="truehdcheck" from="basecheckbox">
+                    <area>0,264,32,32</area>
+                </checkbox>
+                <textarea name="truehdlabel" from="basetext_m">
+                    <area>50,260,100%,40</area>
+                    <value>My audio subsystem supports TrueHD</value>
+                </textarea>
+                <checkbox name="dtshdcheck" from="basecheckbox">
+                    <area>0,329,32,32</area>
+                </checkbox>
+                <textarea name="dtshdlabel" from="basetext_m">
+                    <area>50,325,100%,40</area>
+                    <value>My audio subsystem supports DTS-HD</value>
+                </textarea>
+                <buttonlist name="speakers" from="baseselector">
+                    <area>0,390,50%-25,40</area>
+                </buttonlist>
+                <button name="testspeakers" from="basebutton">
+                    <area>50%,390,100%,40</area>
+                </button>
+            </group>
+        </group>
+        <textarea name="helptext" from="basehelptext">
+            <area>50%-650,100%-170,1300,70</area>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="previous" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Previuos</value>
+        </button>
+        <button name="next" from="basebutton">
             <area>50%+25,100%-65,200,40</area>
-            <value>Cancel</value>
+            <value>Next</value>
         </button>
     </window>
 
