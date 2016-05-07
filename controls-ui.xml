@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="controls">
+        <group name="decoration" from="basesettingsdecoration"/>
+
+        <!-- left side -->
+        <textarea name="leftdesc" from="basetext_m">
+            <area>50,100,50%-25,40</area>
+            <value>Contexts</value>
+        </textarea>
+        <buttonlist name="leftlist" from="baseitemlist">
+            <area>50,165,50%-25,-150</area>
+        </buttonlist>
+
+        <!-- right side -->
+        <textarea name="rightdesc" from="basetext_m">
+            <area>50%+25,100,-50,40</area>
+            <value>Actions</value>
+        </textarea>
+        <buttonlist name="rightlist" from="baseitemlist">
+            <area>50%+25,165,-50,-150</area>
+        </buttonlist>
+
+        <textarea name="description" from="basehelptext"/>
+
+        <!-- bottom part with buttons -->
+        <button name="action_0" from="basebutton">
+            <area>50%-475,100%-65,200,40</area>
+        </button>
+        <button name="action_1" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+        </button>
+        <button name="action_2" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+        </button>
+        <button name="action_3" from="basebutton">
+            <area>50%+275,100%-65,200,40</area>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="keygrabpopup">
+        <area>-1,0,800,350</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext"/>
+        <textarea name="message" from="basetext_m">
+            <area>50,75,-50,160</area>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
