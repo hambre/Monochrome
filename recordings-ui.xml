@@ -41,22 +41,15 @@
                         <font state="error">damagedfont</font>
                     </textarea>
                     <!-- display watched state only when there is no job running -->
-                    <statetype name="watched" from="basewatchedstate" depends="!jobstate">
+                    <statetype name="watched" from="basewatchedstate" depends="!jobstate&amp;!playlist">
                         <position>100%-37,12</position>
                         <alpha>50</alpha>
                     </statetype>
                     <!-- display playlist state only when there is no job running -->
-                    <statetype name="playlist" depends="!watched&amp;!jobstate">
-                        <area>100%-37,12,32,32</area>
-                        <state name="yes">
-                            <area>0,0,100%,100%</area>
-                            <imagetype name="icon" from="baseicon">
-                                <position>0,0</position>
-                                <filename>images/icons/Playlist.png</filename>
-                            </imagetype>
-                        </state>
+                    <statetype name="playlist" from="baseplayliststate">
+                        <position>100%-37,12</position>
                     </statetype>
-                    <statetype name="jobstate" from="basejobstate">
+                    <statetype name="jobstate" from="basejobstate" depends="!playlist">
                         <position>100%-37,12</position>
                     </statetype>
                 </state>
@@ -67,12 +60,9 @@
                         <cutdown>no</cutdown>
                     </textarea>
                     <!-- display watched state only when there is no job running -->
-                    <statetype name="watched" from="basewatchedstate" depends="!jobstate">
-                        <position>100%-37,12</position>
+                    <statetype name="watched" depends="!jobstate&amp;!playlist">
                         <alpha>255</alpha>
                     </statetype>
-                    <!-- display playlist state only when there is no job running and watched state is not on -->
-                    <statetype name="playlist" depends="!watched&amp;!jobstate"/>
                 </state>
                 <state name="inactive" from="active">
                     <alpha>0</alpha>
@@ -187,6 +177,11 @@
                     <alpha>150</alpha>
                     <template>%filesize_str% of %storagegroup% Storage</template>
                 </textarea>
+
+                <statetype name="watched" from="basewatchedstate">
+                    <position>100%-32,80</position>
+                </statetype>
+
             </group>
 
             <statetype name="audioprops">
