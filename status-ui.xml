@@ -37,9 +37,9 @@
             <statetype name="backendstatus">
                 <area>25,75,-25,80</area>
                 <state name="idle">
-                    <area>0,0,100%,100%</area>
+                    <area>0,0,100%,80</area>
                     <textarea name="status" from="basetext_m">
-                        <area>0,0,100%,100%</area>
+                        <area>0,0,100%,80</area>
                         <align>center</align>
                         <multiline>yes</multiline>
                         <alpha>200</alpha>
@@ -58,6 +58,8 @@
                 </state>
                 <state name="offline" from="idle">
                     <textarea name="status">
+                        <font>basefont_m_bad</font>
+                        <alpha>150</alpha>
                         <value>Backend is offline</value>
                     </textarea>
                 </state>
