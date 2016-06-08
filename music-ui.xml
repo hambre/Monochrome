@@ -584,4 +584,122 @@
         </video>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="cdripper">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <group name="content">
+            <area>50%-450,100,900,100%-115</area>
+            <group name="labels">
+                <area>0,0,300,100%</area>
+                <textarea name="artistlabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Artist:</value>
+                </textarea>
+                <textarea name="albumlabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Album:</value>
+                </textarea>
+                <textarea name="genrelabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Genre:</value>
+                </textarea>
+                <textarea name="yearlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Year:</value>
+                </textarea>
+                <textarea name="compilationlabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
+                    <value>Compilation:</value>
+                </textarea>
+                <textarea name="qualitylabel" from="baselabeltext">
+                    <area>0,320,100%,40</area>
+                    <value>Quality:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>300,0,100%,100%</area>
+                <textedit name="artist" from="basetextedit">
+                    <area>0,0,100%-225,40</area>
+                </textedit>
+                <button name="searchartist" from="basebutton">
+                    <area>100%-200,0,100%,40</area>
+                    <value>Search</value>
+                </button>
+                <textedit name="album" from="basetextedit">
+                    <area>0,65,100%-225,40</area>
+                </textedit>
+                <button name="searchalbum" from="basebutton">
+                    <area>100%-200,65,100%,40</area>
+                    <value>Search</value>
+                </button>
+                <textedit name="genre" from="basetextedit">
+                    <area>0,130,100%-225,40</area>
+                </textedit>
+                <button name="searchgenre" from="basebutton">
+                    <area>100%-200,130,100%,40</area>
+                    <value>Search</value>
+                </button>
+                <textedit name="year" from="basetextedit">
+                    <area>0,195,100%-225,40</area>
+                </textedit>
+                <checkbox name="compilation" from="basecheckbox">
+                    <area>0,264,32,32</area>
+                </checkbox>
+                <button name="switch" from="basebutton">
+                    <area>100%-525,260,300,40</area>
+                    <value>Switch Titles</value>
+                </button>
+                <buttonlist name="quality" from="baseselector">
+                    <area>0,325,100%-225,40</area>
+                </buttonlist>
+            </group>
+            <buttonlist name="tracks" from="baseitemlist">
+                <area>0,400,100%,100%</area>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <statetype name="buttoncheck">
+                            <position>5,5</position>
+                        </statetype>
+                        <group name="text">
+                            <area>40,0,-5,100%</area>
+                            <textarea name="track" from="baseitemtext">
+                                <area>0,0,50,100%</area>
+                                <align>right,vcenter</align>
+                            </textarea>
+                            <textarea name="title" from="baseitemtext">
+                                <area>75,0,-125,100%</area>
+                                <template>%TITLE% ~ %ARTIST%</template>
+                            </textarea>
+                            <textarea name="length" from="baseitemtext">
+                                <area>100%-100,0,100%,100%</area>
+                                <align>right,vcenter</align>
+                            </textarea>
+                            <alpha>100</alpha>
+                        </group>
+                    </state>
+                    <state name="selectedactive" from="active">
+                        <group name="text">
+                            <alpha>255</alpha>
+                        </group>
+                    </state>
+                    <state name="inactive" from="active"/>
+                    <state name="selectedinactive" from="selectedactive">
+                        <group name="text">
+                            <alpha>100</alpha>
+                        </group>
+                    </state>
+                </statetype>
+            </buttonlist>
+        </group>
+        <!-- bottom buttons -->
+        <button name="scan" from="basebutton">
+            <area>50%-325,100%-65,300,40</area>
+            <value>Scan CD</value>
+        </button>
+        <button name="rip" from="basebutton">
+            <area>50%+25,100%-65,300,40</area>
+            <value>Rip CD</value>
+        </button>
+    </window>
 </mythuitheme>
