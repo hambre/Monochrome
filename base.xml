@@ -97,6 +97,10 @@
         <cutdown>yes</cutdown>
     </textarea>
 
+    <textarea name="baselabeltext" from="basetext_m">
+        <alpha>200</alpha>
+    </textarea>
+
     <shape name="baseframe">
         <area>0,0,30,30</area>
         <type>roundbox</type>
@@ -1387,20 +1391,6 @@
             <value>Cancel</value>
         </button>
     </window>
-
-    <!--====================================================================-->
-
-    <!-- TODO
-    <window name="MythMetadataResults">
-    </window>
-    -->
-
-    <!--====================================================================-->
-
-    <!-- TODO
-    <window name="MythArtworkResults">
-    </window>
-    -->
 
     <!--====================================================================-->
 
