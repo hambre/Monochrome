@@ -191,7 +191,7 @@
         </textarea>
         <!-- content -->
         <group name="widgets">
-            <area>50%-700,500,1400,-115</area>
+            <area>50%-650,500,1300,-115</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
                 <textarea name="titlelabel" from="basetext_m">
@@ -229,41 +229,37 @@
                     <area>0,0,100,40</area>
                 </spinbox>
                 <textedit name="titleedit" from="basetextedit">
-                    <area>125,0,100%-225,40</area>
+                    <area>125,0,100%-125,40</area>
                 </textedit>
                 <textedit name="artistedit" from="basetextedit">
-                    <area>125,65,100%-225,40</area>
+                    <area>125,65,100%-125,40</area>
                 </textedit>
-                <button name="searchartistbutton" from="basebutton">
-                    <area>100%-200,65,100%,40</area>
-                    <value>Search</value>
+                <button name="searchartistbutton" from="basesearchbutton">
+                    <area>100%-100,65,100%,40</area>
                 </button>
                 <checkbox name="compilationcheck" from="basecheckbox">
                     <area>125,130,40,40</area>
                 </checkbox>
                 <textedit name="compartistedit" from="basetextedit">
-                    <area>125,195,100%-225,40</area>
+                    <area>125,195,100%-125,40</area>
                 </textedit>
-                <button name="searchcompartistbutton" from="basebutton">
-                    <area>100%-200,195,100%,40</area>
-                    <value>Search</value>
+                <button name="searchcompartistbutton" from="basesearchbutton">
+                    <area>100%-100,195,100%,40</area>
                 </button>
                 <spinbox name="yearspin" from="basespinbox">
                     <area>0,260,100,40</area>
                 </spinbox>
                 <textedit name="albumedit" from="basetextedit">
-                    <area>125,260,100%-225,40</area>
+                    <area>125,260,100%-125,40</area>
                 </textedit>
-                <button name="searchalbumbutton" from="basebutton">
-                    <area>100%-200,260,100%,40</area>
-                    <value>Search</value>
+                <button name="searchalbumbutton" from="basesearchbutton">
+                    <area>100%-100,260,100%,40</area>
                 </button>
                 <textedit name="genreedit" from="basetextedit">
-                    <area>125,325,100%-225,40</area>
+                    <area>125,325,100%-125,40</area>
                 </textedit>
-                <button name="searchgenrebutton" from="basebutton">
-                    <area>100%-200,325,100%,40</area>
-                    <value>Search</value>
+                <button name="searchgenrebutton" from="basesearchbutton">
+                    <area>100%-100,325,100%,40</area>
                 </button>
                 <spinbox name="ratingspin" from="basespinbox">
                     <area>0,390,100,40</area>
