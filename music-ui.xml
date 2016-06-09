@@ -672,21 +672,18 @@
                 </textedit>
                 <button name="searchartist" from="basesearchbutton">
                     <area>100%-100,0,100%,40</area>
-                    <value>Search</value>
                 </button>
                 <textedit name="album" from="basetextedit">
                     <area>0,65,100%-125,40</area>
                 </textedit>
                 <button name="searchalbum" from="basesearchbutton">
                     <area>100%-100,65,100%,40</area>
-                    <value>Search</value>
                 </button>
                 <textedit name="genre" from="basetextedit">
                     <area>0,130,100%-125,40</area>
                 </textedit>
                 <button name="searchgenre" from="basesearchbutton">
                     <area>100%-100,130,100%,40</area>
-                    <value>Search</value>
                 </button>
                 <textedit name="year" from="basetextedit">
                     <area>0,195,150,40</area>
