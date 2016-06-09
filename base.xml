@@ -252,8 +252,8 @@
                     <position>0,100%</position>
                 </shape>
                 <textarea name="buttontext" from="baseitemtext">
-                   <area>5,0,-5,100%</area>
-                   <alpha>100</alpha>
+                    <area>5,0,-5,100%</area>
+                    <alpha>100</alpha>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
@@ -474,6 +474,20 @@
         </shape>
     </group>
 
+    <statetype name="basecheckstate">
+        <state type="full">
+            <imagetype name="mark">
+                <filename>images/CheckboxMark.png</filename>
+            </imagetype>
+        </state>
+        <state type="half">
+            <imagetype name="mark">
+                <filename>images/CheckboxMark.png</filename>
+            </imagetype>
+        </state>
+        <state type="off" />
+    </statetype>
+
     <!-- checkbox -->
     <checkbox name="basecheckbox">
         <area>0,0,25,25</area>
@@ -492,20 +506,8 @@
             </state>
             <state name="disabled" />
         </statetype>
-        <statetype name="checkstate">
-            <state type="full">
-                <imagetype name="mark">
-                    <filename>images/CheckboxMark.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-            </state>
-            <state type="half">
-                <imagetype name="mark">
-                    <filename>images/CheckboxMark.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-            </state>
-            <state type="off" />
+        <statetype name="checkstate" from="basecheckstate">
+            <alpha>200</alpha>
         </statetype>
     </checkbox>
 
