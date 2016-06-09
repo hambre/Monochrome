@@ -558,6 +558,35 @@
         </statetype>
     </button>
 
+    <!-- search button -->
+    <button name="basesearchbutton" from="basebutton">
+        <area>0,0,100,40</area>
+        <statetype name="buttonstate">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <textarea name="text">
+                    <alpha>0</alpha>
+                </textarea>
+                <imagetype name="icon" from="baseicon">
+                    <area>50%-16,50%-16,32,32</area>
+                    <filename>images/icons/Search.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="icon">
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active">
+                <imagetype name="icon">
+                    <alpha>50</alpha>
+                </imagetype>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
     <!-- single line textedit -->
     <textedit name="basetextedit">
         <area>0,0,300,32</area>
