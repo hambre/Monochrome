@@ -943,9 +943,8 @@
                     <area>0,0,200,40</area>
                     <value>Fanart:</value>
                 </textarea>
-                <button name="fanart_button" from="basebutton">
+                <button name="fanart_button" from="basesearchbutton">
                     <area>25,55,275,40</area>
-                    <value>Search</value>
                 </button>
                 <button name="net_fanart_button" from="basebutton">
                     <area>25,120,275,40</area>
@@ -956,9 +955,8 @@
                     <area>0,195,200,40</area>
                     <value>Coverart:</value>
                 </textarea>
-                <button name="coverart_button" from="basebutton">
+                <button name="coverart_button" from="basesearchbutton">
                     <area>25,250,275,40</area>
-                    <value>Search</value>
                 </button>
                 <button name="net_coverart_button" from="basebutton">
                     <area>25,315,275,40</area>
@@ -969,9 +967,8 @@
                     <area>0,390,200,40</area>
                     <value>Banner:</value>
                 </textarea>
-                <button name="banner_button" from="basebutton">
+                <button name="banner_button" from="basesearchbutton">
                     <area>25,445,275,40</area>
-                    <value>Search</value>
                 </button>
                 <button name="net_banner_button" from="basebutton">
                     <area>25,510,275,40</area>
@@ -982,9 +979,8 @@
                     <area>0,585,200,40</area>
                     <value>Screenshot:</value>
                 </textarea>
-                <button name="screenshot_button" from="basebutton">
+                <button name="screenshot_button" from="basesearchbutton">
                     <area>25,640,275,40</area>
-                    <value>Search</value>
                 </button>
                 <button name="net_screenshot_button" from="basebutton">
                     <area>25,705,275,40</area>
@@ -995,9 +991,8 @@
                     <area>0,780,200,40</area>
                     <value>Trailer:</value>
                 </textarea>
-                <button name="trailer_button" from="basebutton">
+                <button name="trailer_button" from="basesearchbutton">
                     <area>25,835,275,40</area>
-                    <value>Search</value>
                 </button>
             </group>
         </group>
