@@ -706,4 +706,139 @@
             <value>Rip CD</value>
         </button>
     </window>
+
+    <!--====================================================================-->
+
+    <window name="import_music">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Import Music</value>
+        </textarea>
+        <!-- left side -->
+        <group name="buttons">
+            <area>50,500,500,-115</area>
+            <button name="scan" from="basebutton">
+                <area>0,0,100%,40</area>
+                <value>Scan</value>
+            </button>
+            <button name="coverart" from="basebutton">
+                <area>0,65,100%,40</area>
+                <value>Cover Art</value>
+            </button>
+            <button name="prev" from="basebutton">
+                <area>0,130,100%,40</area>
+                <value>Previous</value>
+            </button>
+            <button name="play" from="basebutton">
+                <area>0,195,100%,40</area>
+                <value>Play</value>
+            </button>
+            <button name="add" from="basebutton">
+                <area>0,260,100%,40</area>
+                <value>Add</value>
+            </button>
+            <button name="next" from="basebutton">
+                <area>0,325,100%,40</area>
+                <value>Next</value>
+            </button>
+            <button name="nextnew" from="basebutton">
+                <area>0,390,100%,40</area>
+                <value>Next New</value>
+            </button>
+            <button name="addallnew" from="basebutton">
+                <area>0,455,100%,40</area>
+                <value>Add All New</value>
+            </button>
+        </group>
+        <!-- right side -->
+        <group name="content">
+            <area>600,500,-25,-115</area>
+            <group name="labels">
+                <area>0,0,300,100%</area>
+                <textarea name="labellocation" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Location:</value>
+                </textarea>
+                <textarea name="filenamelabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Filename:</value>
+                </textarea>
+                <textarea name="titlelabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Title:</value>
+                </textarea>
+                <textarea name="artistlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Artist:</value>
+                </textarea>
+                <textarea name="compilationlabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
+                    <value>Compilation:</value>
+                </textarea>
+                <textarea name="compartistlabel" from="baselabeltext">
+                    <area>0,325,100%,40</area>
+                    <value>Comp. Artist:</value>
+                </textarea>
+                <textarea name="albumlabel" from="baselabeltext">
+                    <area>0,390,100%,40</area>
+                    <value>Album:</value>
+                </textarea>
+                <textarea name="genrelabel" from="baselabeltext">
+                    <area>0,455,100%,40</area>
+                    <value>Genre:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>300,0,100%,100%</area>
+                <textedit name="location" from="basetextedit">
+                    <area>0,0,100%-125,40</area>
+                </textedit>
+                <button name="directoryfinder" from="basesearchbutton">
+                    <area>100%-100,0,100,40</area>
+                </button>
+
+                <textarea name="filename" from="basetext_m">
+                    <area>0,65,100%,40</area>
+                </textarea>
+                <textarea name="track" from="basetext_m">
+                    <area>0,130,100,40</area>
+                    <align>center</align>
+                </textarea>
+                <textarea name="title" from="basetext_m">
+                    <area>0,130,100%,40</area>
+                </textarea>
+                <textarea name="artist" from="basetext_m">
+                    <area>0,195,100%,40</area>
+                </textarea>
+                <checkbox name="compilation" from="basecheckbox">
+                    <area>0,260,40,40</area>
+                </checkbox>
+                <textarea name="compartist" from="basetext_m">
+                    <area>0,325,100%,40</area>
+                </textarea>
+                <textarea name="year" from="basetext_m">
+                    <area>0,390,100,40</area>
+                </textarea>
+                <textarea name="album" from="basetext_m">
+                    <area>100,390,100%,40</area>
+                </textarea>
+                <textarea name="genre" from="basetext_m">
+                    <area>0,455,100%,40</area>
+                </textarea>
+            </group>
+        </group>
+        <textarea name="status" from="basetext_s">
+            <area>600,100%-50,-200,100%</area>
+            <alpha>150</alpha>
+            <value>Already in database</value>
+        </textarea>
+        <textarea name="position" from="basetext_s">
+            <area>100%-200,100%-50,-25,100%</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
 </mythuitheme>
