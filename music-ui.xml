@@ -716,34 +716,34 @@
         </textarea>
         <!-- left side -->
         <group name="buttons">
-            <area>50,500,500,-115</area>
+            <area>25,500,500,-115</area>
             <button name="scan" from="basebutton">
                 <area>0,0,100%,40</area>
                 <value>Scan</value>
             </button>
-            <button name="coverart" from="basebutton">
-                <area>0,65,100%,40</area>
-                <value>Cover Art</value>
-            </button>
             <button name="prev" from="basebutton">
-                <area>0,130,100%,40</area>
+                <area>0,65,100%,40</area>
                 <value>Previous</value>
             </button>
-            <button name="play" from="basebutton">
-                <area>0,195,100%,40</area>
-                <value>Play</value>
-            </button>
-            <button name="add" from="basebutton">
-                <area>0,260,100%,40</area>
-                <value>Add</value>
-            </button>
             <button name="next" from="basebutton">
-                <area>0,325,100%,40</area>
+                <area>0,130,100%,40</area>
                 <value>Next</value>
             </button>
             <button name="nextnew" from="basebutton">
-                <area>0,390,100%,40</area>
+                <area>0,195,100%,40</area>
                 <value>Next New</value>
+            </button>
+            <button name="play" from="basebutton">
+                <area>0,260,100%,40</area>
+                <value>Play</value>
+            </button>
+            <button name="coverart" from="basebutton">
+                <area>0,325,100%,40</area>
+                <value>Cover Art</value>
+            </button>
+            <button name="add" from="basebutton">
+                <area>0,390,100%,40</area>
+                <value>Add</value>
             </button>
             <button name="addallnew" from="basebutton">
                 <area>0,455,100%,40</area>
@@ -752,7 +752,7 @@
         </group>
         <!-- right side -->
         <group name="content">
-            <area>600,500,-25,-115</area>
+            <area>575,500,-25,-115</area>
             <group name="labels">
                 <area>0,0,300,100%</area>
                 <textarea name="labellocation" from="baselabeltext">
@@ -799,38 +799,117 @@
 
                 <textarea name="filename" from="basetext_m">
                     <area>0,65,100%,40</area>
+                    <scroll direction="horizontal"/>
+                    <alpha>150</alpha>
                 </textarea>
                 <textarea name="track" from="basetext_m">
-                    <area>0,130,100,40</area>
-                    <align>center</align>
+                    <area>0,130,50,40</area>
+                    <alpha>150</alpha>
+                    <value>10</value>
                 </textarea>
                 <textarea name="title" from="basetext_m">
-                    <area>0,130,100%,40</area>
+                    <area>50,130,100%,40</area>
+                    <alpha>150</alpha>
+                    <value>Song title</value>
                 </textarea>
                 <textarea name="artist" from="basetext_m">
                     <area>0,195,100%,40</area>
+                    <alpha>150</alpha>
                 </textarea>
                 <checkbox name="compilation" from="basecheckbox">
                     <area>0,260,40,40</area>
+                    <alpha>150</alpha>
                 </checkbox>
                 <textarea name="compartist" from="basetext_m">
                     <area>0,325,100%,40</area>
+                    <alpha>150</alpha>
                 </textarea>
                 <textarea name="year" from="basetext_m">
                     <area>0,390,100,40</area>
+                    <alpha>150</alpha>
                 </textarea>
                 <textarea name="album" from="basetext_m">
                     <area>100,390,100%,40</area>
+                    <alpha>150</alpha>
                 </textarea>
                 <textarea name="genre" from="basetext_m">
                     <area>0,455,100%,40</area>
+                    <alpha>150</alpha>
                 </textarea>
             </group>
         </group>
         <textarea name="status" from="basetext_s">
-            <area>600,100%-50,-200,100%</area>
+            <area>25,100%-50,-200,100%</area>
             <alpha>150</alpha>
             <value>Already in database</value>
+        </textarea>
+        <textarea name="position" from="basetext_s">
+            <area>100%-200,100%-50,-25,100%</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="import_coverart">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Import Coverart</value>
+        </textarea>
+        <!-- left side -->
+        <button name="prev" from="basebutton">
+            <area>25,500,500,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next" from="basebutton">
+            <area>25,565,500,40</area>
+            <value>Next</value>
+        </button>
+        <group name="info">
+            <area>25,665,-575,500</area>
+            <textarea name="filelabel" from="baselabeltext">
+                <area>0,0,200,40</area>
+                <value>File:</value>
+            </textarea>
+            <textarea name="file" from="basetext_m">
+                <area>200,0,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="destinationlabel" from="baselabeltext">
+                <area>0,65,200,40</area>
+                <value>Destination:</value>
+            </textarea>
+            <textarea name="destination" from="basetext_m">
+                <area>200,65,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="typelabel" from="baselabeltext">
+                <area>0,130,200,40</area>
+                <value>Type:</value>
+            </textarea>
+            <buttonlist name="type" from="baseselector">
+                <area>200,130,300,40</area>
+            </buttonlist>
+        </group>
+        <button name="copy" from="basebutton">
+            <area>25,100%-180,500,40</area>
+            <value>Copy</value>
+        </button>
+        <button name="exit" from="basebutton">
+            <area>25,100%-115,500,40</area>
+            <value>Finish</value>
+        </button>
+        <!-- right side -->
+        <imagetype name="coverart">
+            <area>100%-525,500,500,500</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+        <!-- status bar -->
+        <textarea name="status" from="basetext_s">
+            <area>25,100%-50,-200,100%</area>
+            <alpha>150</alpha>
+            <value>File Already Exists</value>
         </textarea>
         <textarea name="position" from="basetext_s">
             <area>100%-200,100%-50,-25,100%</area>
