@@ -853,21 +853,12 @@
     <!--====================================================================-->
 
     <window name="import_coverart">
-        <group name="decoration" from="basecontentdecoration"/>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Import Coverart</value>
         </textarea>
-        <!-- left side -->
-        <button name="prev" from="basebutton">
-            <area>25,500,500,40</area>
-            <value>Previous</value>
-        </button>
-        <button name="next" from="basebutton">
-            <area>25,565,500,40</area>
-            <value>Next</value>
-        </button>
         <group name="info">
-            <area>25,665,-575,500</area>
+            <area>25,465,-575,500</area>
             <textarea name="filelabel" from="baselabeltext">
                 <area>0,0,200,40</area>
                 <value>File:</value>
@@ -884,35 +875,40 @@
                 <area>200,65,100%,40</area>
                 <alpha>150</alpha>
             </textarea>
-            <textarea name="typelabel" from="baselabeltext">
-                <area>0,130,200,40</area>
-                <value>Type:</value>
-            </textarea>
-            <buttonlist name="type" from="baseselector">
-                <area>200,130,300,40</area>
-            </buttonlist>
         </group>
-        <button name="copy" from="basebutton">
-            <area>25,100%-180,500,40</area>
-            <value>Copy</value>
+        <!-- left side -->
+        <button name="prev" from="basebutton">
+            <area>25,100%-350,500,40</area>
+            <value>Previous</value>
         </button>
-        <button name="exit" from="basebutton">
-            <area>25,100%-115,500,40</area>
-            <value>Finish</value>
+        <button name="next" from="basebutton">
+            <area>25,100%-285,500,40</area>
+            <value>Next</value>
+        </button>
+        <buttonlist name="type" from="baseselector">
+            <area>25,100%-220,500,40</area>
+        </buttonlist>
+        <button name="copy" from="basebutton">
+            <area>25,100%-155,500,40</area>
+            <value>Copy</value>
         </button>
         <!-- right side -->
         <imagetype name="coverart">
-            <area>100%-525,500,500,500</area>
+            <area>100%-525,465,500,500</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         <!-- status bar -->
         <textarea name="status" from="basetext_s">
-            <area>25,100%-50,-200,100%</area>
+            <area>25,100%-90,-200,100%</area>
             <alpha>150</alpha>
             <value>File Already Exists</value>
         </textarea>
+        <button name="exit" from="basebutton">
+            <area>50%-150,100%-65,300,40</area>
+            <value>Finish</value>
+        </button>
         <textarea name="position" from="basetext_s">
-            <area>100%-200,100%-50,-25,100%</area>
+            <area>100%-200,100%-90,-25,100%</area>
             <alpha>150</alpha>
             <align>right,vcenter</align>
         </textarea>
