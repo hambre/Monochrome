@@ -916,4 +916,92 @@
 
     <!--====================================================================-->
 
+    <window name="smartplaylisteditor">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Smart Playlist Editor</value>
+        </textarea>
+        <group name="content">
+            <area>50%-600,465,1200,-115</area>
+            <group name="labels">
+                <area>0,0,300,100%</area>
+                <textarea name="categorylabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Category:</value>
+                </textarea>
+                <textarea name="titlelabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Title:</value>
+                </textarea>
+                <textarea name="matchlabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Match</value>
+                </textarea>
+                <textarea name="orderbylabel" from="baselabeltext">
+                    <area>0,390,100%,40</area>
+                    <value>Order By:</value>
+                </textarea>
+                <textarea name="matcheslabel" from="baselabeltext">
+                    <area>0,455,100%,40</area>
+                    <value>Matches:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>300,0,100%,100%</area>
+                <buttonlist name="categoryselector" from="baseselector">
+                    <area>0,0,-125,40</area>
+                </buttonlist>
+                <button name="categorybutton" from="basesearchbutton">
+                    <area>100%-100,0,100,40</area>
+                </button>
+                <textedit name="titleedit" from="basetextedit">
+                    <area>0,65,-125,40</area>
+                </textedit>
+                <buttonlist name="matchselector" from="baseselector">
+                    <area>0,130,200,40</area>
+                </buttonlist>
+                <textarea name="criterialabel" from="baselabeltext">
+                    <area>225,130,100%,40</area>
+                    <value>Of The Following Conditions</value>
+                </textarea>
+                <buttonlist name="criterialist" from="baseitemlist">
+                    <area>0,195,-125,195</area>
+                </buttonlist>
+                <buttonlist name="orderbyselector" from="baseselector">
+                    <area>0,390,-125,40</area>
+                </buttonlist>
+                <button name="orderbybutton" from="basesearchbutton">
+                    <area>100%-100,390,100,40</area>
+                </button>
+                <textarea name="matchestext" from="basetext_m">
+                    <area>0,455,50%-25,40</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <textarea name="limitlabel" from="baselabeltext">
+                    <area>50%,455,100%-350,40</area>
+                    <align>right,vcenter</align>
+                    <value>Limit:</value>
+                </textarea>
+                <spinbox name="limitspin" from="basespinbox">
+                    <area>100%-325,455,-125,40</area>
+                </spinbox>
+            </group>
+        </group>
+        <!-- bottom -->
+        <button name="showresultsbutton" from="basebutton">
+            <area>50%-400,100%-65,250,40</area>
+            <value>Show Results</value>
+        </button>
+        <button name="savebutton" from="basebutton">
+            <area>50%-125,100%-65,250,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancelbutton" from="basebutton">
+            <area>50%+150,100%-65,250,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
 </mythuitheme>
