@@ -1004,4 +1004,46 @@
 
     <!--====================================================================-->
 
+    <window name="smartplresultviewer">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Smart Playlist Result Viewer</value>
+        </textarea>
+        <buttonlist name="tracklist" from="baseitemlist">
+            <area>25,500,-25,-75</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <group name="content">
+                        <area>0,0,100%,100%</area>
+                        <imagetype name="buttonimage">
+                            <area>5,5,45,45</area>
+                            <filename>mm_nothumb.png</filename>
+                        </imagetype>
+                        <textarea name="title" from="baseitemtext">
+                            <area>60,0,-5,100%</area>
+                            <template>%ARTIST% ~ %TITLE% ~ %ALBUM%</template>
+                        </textarea>
+                        <textarea name="length" from="baseitemtext">
+                            <area>100%-105,0,100,100%</area>
+                            <align>right,vcenter</align>
+                        </textarea>
+                        <alpha>100</alpha>
+                    </group>
+                </state>
+                <state name="selectedactive" from="active">
+                    <group name="content">
+                        <alpha>255</alpha>
+                    </group>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="position" from="basetext_s">
+            <area>50%-200,100%-50,400,100%</area>
+            <alpha>150</alpha>
+            <align>center</align>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
 </mythuitheme>
