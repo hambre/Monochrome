@@ -1103,4 +1103,101 @@
 
     <!--====================================================================-->
 
+    <window name="orderbydialog">
+        <area>-1,0,800,425</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Order By Fields</value>
+        </textarea>
+        <buttonlist name="fieldselector" from="baseselector">
+            <area>50,75,-350,40</area>
+        </buttonlist>
+        <button name="addbutton" from="basebutton">
+            <area>100%-250,75,-50,40</area>
+            <value>Add</value>
+        </button>
+        <buttonlist name="fieldlist" from="baseitemlist">
+            <area>50,140,-350,-115</area>
+        </buttonlist>
+        <group name="buttons">
+            <area>100%-325,75,-50,285</area>
+            <button name="deletebutton" from="basebutton">
+                <area>75,65,100%,40</area>
+                <value>Delete</value>
+            </button>
+            <button name="moveupbutton" from="basebutton">
+                <area>0,65,50,40</area>
+                <statetype name="buttonstate">
+                    <area>0,0,100%,100%</area>
+                    <state name="active">
+                        <imagetype name="icon" from="baseicon">
+                            <area>50%-12,50%-10,24,20</area>
+                            <filename>images/ArrowUpBig.png</filename>
+                            <alpha>100</alpha>
+                        </imagetype>
+                    </state>
+                    <state name="selected" from="active">
+                        <imagetype name="icon">
+                            <alpha>255</alpha>
+                        </imagetype>
+                    </state>
+                    <state name="disabled" from="active">
+                        <imagetype name="icon">
+                            <alpha>50</alpha>
+                        </imagetype>
+                    </state>
+                    <state name="pushed" from="selected"/>
+                </statetype>
+            </button>
+            <button name="movedownbutton" from="basebutton">
+                <area>0,130,50,40</area>
+                <statetype name="buttonstate">
+                    <area>0,0,100%,100%</area>
+                    <state name="active">
+                        <imagetype name="icon" from="baseicon">
+                            <area>50%-12,50%-10,24,20</area>
+                            <filename>images/ArrowDownBig.png</filename>
+                            <alpha>100</alpha>
+                        </imagetype>
+                    </state>
+                    <state name="selected" from="active">
+                        <imagetype name="icon">
+                            <alpha>255</alpha>
+                        </imagetype>
+                    </state>
+                    <state name="disabled" from="active">
+                        <imagetype name="icon">
+                            <alpha>50</alpha>
+                        </imagetype>
+                    </state>
+                    <state name="pushed" from="selected"/>
+                </statetype>
+            </button>
+            <button name="ascendingbutton" from="basebutton">
+                <area>75,130,100%,40</area>
+                <value>Ascending</value>
+            </button>
+            <button name="descendingbutton" from="basebutton">
+                <area>75,195,100%,40</area>
+                <value>Descending</value>
+            </button>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="okbutton" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancelbutton" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
 </mythuitheme>
