@@ -575,7 +575,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="icon">
-                    <alpha>200</alpha>
+                    <alpha>255</alpha>
                 </imagetype>
             </state>
             <state name="disabled" from="active">
