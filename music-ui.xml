@@ -1200,4 +1200,65 @@
 
     <!--====================================================================-->
 
+    <window name="dateeditordialog">
+        <area>-1,0,800,425</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Edit Date</value>
+        </textarea>
+        <textarea name="fixeddatelabel" from="baselabeltext">
+            <area>100,75,200,40</area>
+            <value>Fixed Date</value>
+        </textarea>
+        <checkbox name="fixeddatecheck" from="basecheckbox">
+            <area>50,80,40,40</area>
+        </checkbox>
+        <spinbox name="dayspinbox" from="basespinbox">
+            <area>100,140,125,40</area>
+        </spinbox>
+        <spinbox name="monthspinbox" from="basespinbox">
+            <area>250,140,125,40</area>
+        </spinbox>
+        <spinbox name="yearspinbox" from="basespinbox">
+            <area>400,140,125,40</area>
+        </spinbox>
+        <textarea name="nowlabel" from="baselabeltext">
+            <area>100,205,350,40</area>
+            <value>Use Current Date</value>
+        </textarea>
+        <checkbox name="nowcheck" from="basecheckbox">
+            <area>50,210,40,40</area>
+        </checkbox>
+        <textarea name="adddayslabel" from="baselabeltext">
+            <area>100,270,200,40</area>
+            <value>+/- Days</value>
+        </textarea>
+        <spinbox name="adddaysspinbox" from="basespinbox">
+            <area>250,270,125,40</area>
+        </spinbox>
+        <textarea name="statustext" from="basetext_m">
+            <area>400,270,-50,40</area>
+            <align>center</align>
+            <font state="valid">basefont_m_good</font>
+            <font state="error">basefont_m_bad</font>
+            <alpha>100</alpha>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="okbutton" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancelbutton" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
 </mythuitheme>
