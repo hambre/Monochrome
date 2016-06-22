@@ -202,6 +202,7 @@
         </textarea>
         <textarea name="matches_text" from="basetext_m">
             <area>1225,465,150,40</area>
+            <alpha>150</alpha>
         </textarea>
         <buttonlist name="tracks_list" from="baseitemlist">
             <area>25,530,1330,-105</area>
