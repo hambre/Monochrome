@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="generalsettings">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>General Settings</value>
+        </textarea>
+        <group name="content">
+            <area>50%-600,200,1200,-115</area>
+            <group name="labels">
+                <area>0,0,50%,100%</area>
+                <textarea name="locationlabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Directory to hold music:</value>
+                </textarea>
+                <textarea name="cddevicelabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>CD device:</value>
+                </textarea>
+                <textarea name="audiodevicelabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Audio device:</value>
+                </textarea>
+                <textarea name="upmixlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Convert stereo to 5.1 sound:</value>
+                </textarea>
+                <textarea name="filenamelabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
+                    <value>Filename Format:</value>
+                </textarea>
+                <textarea name="ignoretagslabel" from="baselabeltext">
+                    <area>0,325,100%,40</area>
+                    <value>Ignore ID3 Tags:</value>
+                </textarea>
+                <textarea name="writetagslabel" from="baselabeltext">
+                    <area>0,390,100%,40</area>
+                    <value>Allow metadata to be written to tags:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>50%,0,100%,100%</area>
+                <textedit name="musiclocation" from="basetextedit">
+                    <area>0,0,100%,40</area>
+                </textedit>
+                <textedit name="musiccddevice" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="musicaudiodevice" from="basetextedit">
+                    <area>0,130,100%,40</area>
+                </textedit>
+                <checkbox name="musicdefaultupmix" from="basecheckbox">
+                    <area>0,199,32,32</area>
+                </checkbox>
+                <textedit name="nonid3filenameformat" from="basetextedit">
+                    <area>0,260,100%,40</area>
+                </textedit>
+                <checkbox name="ignoreid3tags" from="basecheckbox">
+                    <area>0,329,32,32</area>
+                </checkbox>
+                <checkbox name="allowtagwriting" from="basecheckbox">
+                    <area>0,394,32,32</area>
+                </checkbox>
+            </group>
+            <textarea name="helptext" from="basehelptext">
+                <area>0,100%-105,100%,105</area>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="save" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+</mythuitheme>
