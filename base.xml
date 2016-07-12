@@ -1102,7 +1102,11 @@
     <!-- settings window decoration (header + big footer for buttons) -->
     <group name="basesettingsdecoration">
         <area>0,0,100%,100%</area>
-        <shape name="background" from="basebackground"/>
+        <imagetype name="pagebackground" from="basedefaultbackground"/>
+        <shape name="contentbar" from="basebar">
+            <area>0, 0, 100%, 100%</area>
+            <alpha>225</alpha>
+        </shape>
         <group name="pageheader" from="baseheader" />
         <!-- content goes here -->
         <group name="pagefooter" from="basefooter">
