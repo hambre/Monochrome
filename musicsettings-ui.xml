@@ -194,4 +194,62 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="visualizationsettings">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Visualiser Settings</value>
+        </textarea>
+        <group name="content">
+            <area>50%-400,300,800,-115</area>
+            <group name="labels">
+                <area>0,0,80%,100%</area>
+                <textarea name="cycleonsongchangelabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Change Visualizer on each song:</value>
+                </textarea>
+                <textarea name="randomizeorderlabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Randomize Visualizer order:</value>
+                </textarea>
+                <textarea name="scalewidthlabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Width for Visual Scaling:</value>
+                </textarea>
+                <textarea name="scaleheightlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Height for Visual Scaling:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>80%,0,100%,100%</area>
+                <checkbox name="cycleonsongchange" from="basecheckbox">
+                    <area>0,4,100%,40</area>
+                </checkbox>
+                <checkbox name="randomizeorder" from="basecheckbox">
+                    <area>0,69,100%,40</area>
+                </checkbox>
+                <spinbox name="scalewidth" from="basespinbox">
+                    <area>0,130,100%,40</area>
+                </spinbox>
+                <spinbox name="scaleheight" from="basespinbox">
+                    <area>0,195,100%,40</area>
+                </spinbox>
+            </group>
+            <textarea name="helptext" from="basehelptext">
+                <area>0,100%-105,100%,105</area>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="save" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
