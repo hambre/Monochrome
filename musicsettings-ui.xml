@@ -136,4 +136,62 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="ratingsettings">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Player Settings</value>
+        </textarea>
+        <group name="content">
+            <area>50%-400,300,800,-115</area>
+            <group name="labels">
+                <area>0,0,80%,100%</area>
+                <textarea name="ratingweightlabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Rating Weight:</value>
+                </textarea>
+                <textarea name="playcountweightlabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Play Count Weight:</value>
+                </textarea>
+                <textarea name="lastplayweightlabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Last Play Weight:</value>
+                </textarea>
+                <textarea name="randomweightlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Random Weight:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>80%,0,100%,100%</area>
+                <spinbox name="ratingweight" from="basespinbox">
+                    <area>0,0,100%,40</area>
+                </spinbox>
+                <spinbox name="playcountweight" from="basespinbox">
+                    <area>0,65,100%,40</area>
+                </spinbox>
+                <spinbox name="lastplayweight" from="basespinbox">
+                    <area>0,130,100%,40</area>
+                </spinbox>
+                <spinbox name="randomweight" from="basespinbox">
+                    <area>0,195,100%,40</area>
+                </spinbox>
+            </group>
+            <textarea name="helptext" from="basehelptext">
+                <area>0,100%-105,100%,105</area>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="save" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
