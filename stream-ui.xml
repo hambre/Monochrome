@@ -17,51 +17,8 @@
             <value>Press MENU to add some radio streams to play.</value>
         </textarea>
 
-        <buttonlist name="streamlist" from="baseitemlist">
+        <buttonlist name="streamlist" from="musicstreamlist">
             <area>25,465,50%-25,220</area>
-            <statetype name="buttonitem">
-                <area>0,0,100%,55</area>
-                <state name="active">
-                    <area>0,0,100%,55</area>
-                    <shape name="itemseparator" from="baseitemseparator_h">
-                        <position>0,100%</position>
-                    </shape>
-                    <textarea name="station" from="baseitemtext">
-                        <template>%STATION% ~ %CHANNEL% ~ %GENRE%</template>
-                        <area>5,0,-45,100%</area>
-                        <alpha>100</alpha>
-                    </textarea>
-                    <statetype name="playstate">
-                        <area>100%-37,50%-16,32,32</area>
-                        <state name="playing">
-                            <imagetype name="animation">
-                                <area>0,0,100%,100%</area>
-                                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                                <delay>75</delay>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                </state>
-                <state name="selectedactive" from="active">
-                    <area>0,0,100%,55</area>
-                    <shape name="background" from="basecontrolbackground">
-                        <area>0,0,100%,100%</area>
-                    </shape>
-                    <shape name="itemseparator"/>
-                    <textarea name="station">
-                        <scroll direction="horizontal" />
-                        <cutdown>no</cutdown>
-                        <alpha>255</alpha>
-                    </textarea>
-                </state>
-                <state name="inactive" from="active">
-                </state>
-                <state name="selectedinactive" from="selectedactive">
-                    <shape name="background">
-                        <alpha>0</alpha>
-                    </shape>
-                </state>
-            </statetype>
         </buttonlist>
 
         <buttonlist name="playedtrackslist" from="baseitemlist">
@@ -274,6 +231,58 @@
             <area>50%+25,100%-65,200,40</area>
             <value>Cancel</value>
         </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="searchstream">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundRadio.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Search for Music Stream</value>
+        </textarea>
+        <group name="content">
+            <area>25,500,700,-115</area>
+            <group name="labels">
+                <area>0,0,40%,100%</area>
+                <textarea name="stationlabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Station:</value>
+                </textarea>
+                <textarea name="genrelabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Genre:</value>
+                </textarea>
+                <textarea name="channellabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Channel:</value>
+                </textarea>
+                <textarea name="matcheslabel" from="baselabeltext">
+                    <area>0,195,300,40</area>
+                    <value>Matches:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>40%,0,100%,100%</area>
+                <buttonlist name="stationlist" from="baseselector">
+                    <area>0,0,100%,40</area>
+                </buttonlist>
+                <buttonlist name="genrelist" from="baseselector">
+                    <area>0,65,100%,40</area>
+                </buttonlist>
+                <textedit name="channeledit" from="basetextedit">
+                    <area>0,130,100%,40</area>
+                </textedit>
+                <textarea name="matchestext" from="basetext_m">
+                    <area>0,195,100%,40</area>
+                </textarea>
+            </group>
+        </group>
+        <buttonlist name="streamlist" from="musicstreamlist">
+            <area>775,500,-25,-75</area>
+        </buttonlist>
     </window>
 
 </mythuitheme>
