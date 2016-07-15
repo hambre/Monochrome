@@ -196,6 +196,84 @@
         <statetype name="mutestate" from="musicmutestate">
             <position>100%-58,100%-61</position>
         </statetype>
-
     </window>
+
+    <!--====================================================================-->
+
+    <window name="editstreammetadata">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundRadio.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Add/Edit Music Stream</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,530,1000,-115</area>
+            <group name="labels">
+                <area>0,0,30%,100%</area>
+                <textarea name="stationlabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Station:</value>
+                </textarea>
+                <textarea name="channellabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Channel:</value>
+                </textarea>
+                <textarea name="urllabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>URL:</value>
+                </textarea>
+                <textarea name="logolabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Logo URL:</value>
+                </textarea>
+                <textarea name="genrelabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
+                    <value>Genres:</value>
+                </textarea>
+                <textarea name="formatlabel" from="baselabeltext">
+                    <area>0,325,100%,40</area>
+                    <value>Metadata Format:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>30%,0,100%,100%</area>
+                <textedit name="stationedit" from="basetextedit">
+                    <area>0,0,100%-125,40</area>
+                </textedit>
+                <button name="searchbutton" from="basesearchbutton">
+                    <area>100%-100,0,100%,40</area>
+                </button>
+                <textedit name="channeledit" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="urledit" from="basetextedit">
+                    <area>0,130,100%,40</area>
+                </textedit>
+                <textedit name="logourledit" from="basetextedit">
+                    <area>0,195,100%,40</area>
+                </textedit>
+                <textedit name="genreedit" from="basetextedit">
+                    <area>0,260,100%,40</area>
+                </textedit>
+                <textedit name="formatedit" from="basetextedit">
+                    <area>0,325,100%,40</area>
+                </textedit>
+            </group>
+            <textarea name="helptext" from="basehelptext">
+                <area>0,100%-105,100%,105</area>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="savebutton" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancelbutton" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
