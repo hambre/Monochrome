@@ -8,7 +8,7 @@
         </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
-            <value>Stream View</value>
+            <value>Play radio streams</value>
         </textarea>
 
         <textarea name="nostreams" from="basetext_m">
