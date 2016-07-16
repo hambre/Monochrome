@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="treeeditor">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Manage Site Subscriptions</value>
+        </textarea>
+        <buttonlist name="grabbers" from="baseitemlist">
+            <area>50%-500,500,1000,-75</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,55</area>
+                <state name="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="itemseparator" from="baseitemseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                    <statetype name="buttoncheck" from="basecheckstate">
+                        <position>5,11</position>
+                        <imagetype name="frame">
+                            <filename>images/CheckboxFrame.png</filename>
+                        </imagetype>
+                        <alpha>100</alpha>
+                    </statetype>
+                    <textarea name="buttontext">
+                        <area>60,0,-45,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="background" from="basecontrolbackground">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <shape name="itemseparator"/>
+                    <statetype name="buttoncheck">
+                        <alpha>255</alpha>
+                    </statetype>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive"/>
+            </statetype>
+        </buttonlist>
+    </window>
+</mythuitheme>
