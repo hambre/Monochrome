@@ -64,7 +64,7 @@
             <textedit name="search" from="basetextedit">
                 <area>250,0,100%,40</area>
             </textedit>
-            <textarea name="sitelabel" from="baselabeltext" depends="sites">
+            <textarea name="sitelabel" from="baselabeltext">
                 <area>5,65,200,40</area>
                 <value>Search Site:</value>
             </textarea>
