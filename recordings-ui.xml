@@ -406,23 +406,6 @@
 
     <!--====================================================================-->
 
-    <window name="groupfilter">
-        <area>-1,0,600,450</area>
-        <animation trigger="AboutToShow">
-            <section duration="500" centre="middle">
-                <position start="-1,-450" end="-1,0" easingcurve="OutBack" />
-            </section>
-        </animation>
-        <group name="decoration" from="basepopupdecoration"/>
-        <textarea name="label" from="basepopuptitletext"/>
-        <buttonlist name="groups" from="baseitemlist">
-            <area>50,75,-50,-25</area>
-            <align>vcenter</align>
-        </buttonlist>
-    </window>
-
-    <!--====================================================================-->
-
     <window name="changeview">
         <area>-1,0,550,540</area>
         <animation trigger="AboutToShow">
