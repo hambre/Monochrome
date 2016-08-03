@@ -51,7 +51,7 @@
             <value>Search Internet Videos</value>
         </textarea>
         <textarea name="nosites" from="basedescriptiontext">
-            <area>50%-300,650,600,120</area>
+            <area>50%-400,650,800,160</area>
             <value>Can't find any search scripts!  This usually indicates missing search script prerequisites.  Try running a script from the command line.</value>
             <alpha>150</alpha>
         </textarea>
@@ -85,6 +85,61 @@
             </textarea>
             <imagetype name="preview">
                 <area>0,100%-200,320,200</area>
+            </imagetype>
+            <imagetype name="fallback" from="basecoverarticon" depends="!preview">
+                <area>60,100%-200,200,200</area>
+            </imagetype>
+            <textarea name="authorlabel" from="baselabeltext" depends="author">
+                <area>350,100%-150,150,40</area>
+                <value>Author:</value>
+            </textarea>
+            <textarea name="author" from="basetext_m">
+                <area>500,100%-150,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="filelabel" from="baselabeltext" depends="filesize_str">
+                <area>350,100%-100,150,40</area>
+                <value>File Size:</value>
+            </textarea>
+            <textarea name="filesize_str" from="basetext_m">
+                <area>500,100%-100,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+        </group>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="tree">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Search Internet Videos</value>
+        </textarea>
+        <textarea name="nosites" from="basedescriptiontext">
+            <area>50%-400,650,800,160</area>
+          <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+            <alpha>150</alpha>
+        </textarea>
+        <!-- left part - video list -->
+        <buttontree name="videos">
+            <area>25,500,50%-25,-75</area>
+            <numlist>1</numlist>
+            <buttonlist name="listtemplate" from="baseitemlist"/>
+        </buttontree>
+        <group name="right">
+            <area>50%+25,500,-25,-75</area>
+            <textarea name="title" from="basetitletext">
+                <area>0,0,100%,50</area>
+            </textarea>
+            <textarea name="description" from="basedescriptiontext">
+                <area>0,80,100%,-225</area>
+            </textarea>
+            <imagetype name="preview">
+                <area>0,100%-200,320,200</area>
+                <preserveaspect>true</preserveaspect>
+            </imagetype>
+            <imagetype name="fallback" from="basecoverarticon" depends="!preview&amp;title">
+                <area>60,100%-200,200,200</area>
             </imagetype>
             <textarea name="authorlabel" from="baselabeltext" depends="author">
                 <area>350,100%-150,150,40</area>
