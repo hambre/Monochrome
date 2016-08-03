@@ -2,6 +2,9 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
     <window name="treeeditor">
+        <imagetype name="background">
+            <filename>images/Backgrounds/BackgroundSearch.jpg</filename>
+        </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Manage Site Subscriptions</value>
@@ -46,6 +49,9 @@
     <!--====================================================================-->
 
     <window name="netsearch">
+        <imagetype name="background">
+            <filename>images/Backgrounds/BackgroundSearch.jpg</filename>
+        </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Search Internet Videos</value>
@@ -111,6 +117,9 @@
     <!--====================================================================-->
 
     <window name="tree">
+        <imagetype name="background">
+            <filename>images/Backgrounds/BackgroundSearch.jpg</filename>
+        </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Search Internet Videos</value>
