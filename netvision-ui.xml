@@ -240,4 +240,88 @@
         </buttonlist>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="browser">
+        <imagetype name="background">
+            <filename>images/Backgrounds/BackgroundSearch.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Search Internet Videos</value>
+        </textarea>
+        <textarea name="nosites" from="basedescriptiontext">
+            <area>50%-400,650,800,160</area>
+          <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+            <alpha>150</alpha>
+        </textarea>
+        <buttonlist name="videos">
+            <area>55,500,100%,230</area>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <align>hcenter</align>
+            <layout>horizontal</layout>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <statetype name="buttonitem">
+                <area>0,0,360,225</area>
+                <state name="active">
+                    <area>0,0,360,225</area>
+                    <shape name="background" from="basebackground"/>
+                    <imagetype name="buttonimage">
+                        <area>1,1,-1,-1</area>
+                        <filename>images/DefaultFillImage.png</filename>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage"/>
+                    <shape name="top" from="baseseparator_h">
+                        <position>0,0</position>
+                    </shape>
+                    <shape name="bottom" from="baseseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                </state>
+                <state name="selectedactive">
+                    <area>-20,-12,400,250</area>
+                    <shape name="background" from="basebackground"/>
+                    <imagetype name="buttonimage">
+                        <area>1,1,-1,-1</area>
+                        <preserveaspect>true</preserveaspect>
+                        <filename>images/DefaultFillImage.png</filename>
+                    </imagetype>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage"/>
+                    <shape name="blackframe" from="baseframe">
+                        <area>-1,-1,100%+1,100%+1</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="0" />
+                        <line color="#000000" alpha="255" width="3" />
+                    </shape>
+                    <shape name="whiteframe" from="baseframe">
+                        <area>0,0,100%+1,100%+1</area>
+                        <type>box</type>
+                    </shape>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="title" from="basetitletext">
+            <area>50, 775, -50, 40</area>
+            <align>top,hcenter</align>
+            <scroll direction="horizontal" />
+            <template>%TITLE| %%~ |AUTHOR%</template>
+        </textarea>
+        <textarea name="description" from="basedescriptiontext">
+            <area>50,840,-50,70</area>
+            <align>center</align>
+        </textarea>
+        <textarea name="filelabel" from="baselabeltext" depends="filesize_str">
+            <area>50%-160,100%-115,150,40</area>
+            <value>File Size:</value>
+            <align>right</align>
+        </textarea>
+        <textarea name="filesize_str" from="basetext_m">
+            <area>50%+10,100%-115,100%,40</area>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
 </mythuitheme>
