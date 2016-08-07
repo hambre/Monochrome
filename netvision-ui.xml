@@ -324,4 +324,51 @@
         </textarea>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="rsseditor">
+        <imagetype name="background">
+            <filename>images/Backgrounds/BackgroundSearch.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Manage RSS Subscriptions</value>
+        </textarea>
+        <!-- left part with sites list -->
+        <buttonlist name="sites" from="baseitemlist">
+            <area>25,465,50%-25,-115</area>
+        </buttonlist>
+        <!-- right part with details -->
+        <textarea name="title" from="basetitletext">
+            <area>50%+25,465,-25,40</area>
+        </textarea>
+        <textarea name="author" from="basetext_m">
+            <area>50%+25,530,-25,40</area>
+        </textarea>
+        <textarea name="description" from="basedescriptiontext">
+            <area>50%+25,595,-25,70</area>
+        </textarea>
+        <textarea name="url" from="basetext_m">
+            <area>50%+25,690,-25,40</area>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="preview">
+            <area>75%-100,725,320,200</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+        <!-- bottom part with buttons -->
+        <button name="new" from="basebutton">
+            <area>50%-350,100%-65,200,40</area>
+            <value>New</value>
+        </button>
+        <button name="edit" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Edit</value>
+        </button>
+        <button name="delete" from="basebutton">
+            <area>50%+150,100%-65,200,40</area>
+            <value>Delete</value>
+        </button>
+    </window>
+
 </mythuitheme>
