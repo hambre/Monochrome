@@ -371,4 +371,85 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="rsseditpopup">
+        <area>-1,0,1000,750</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-150" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="pagetitle" from="basepopuptitletext">
+            <value>Manage RSS Subscriptions</value>
+        </textarea>
+        <group name="content">
+            <area>50,75,-50,-115</area>
+            <group name="labels">
+                <area>0,0,30%,100%</area>
+                <textarea name="titlelabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Feed Name:</value>
+                </textarea>
+                <textarea name="authorlabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Feed Author:</value>
+                </textarea>
+                <textarea name="descriptionlabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Feed Description:</value>
+                </textarea>
+                <textarea name="urllabel" from="baselabeltext">
+                    <area>0,235,100%,40</area>
+                    <value>Feed URL:</value>
+                </textarea>
+                <textarea name="previewlabel" from="baselabeltext">
+                    <area>0,365,100%,40</area>
+                    <value>Preview</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>30%,0,100%,100%</area>
+                <textedit name="title" from="basetextedit">
+                    <area>0,0,100%,40</area>
+                </textedit>
+                <textedit name="author" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="description" from="basetexteditmulti">
+                    <area>0,130,100%,80</area>
+                </textedit>
+                <textedit name="url" from="basetextedit">
+                    <area>0,235,100%,40</area>
+                </textedit>
+                <checkbox name="download" from="basecheckbox">
+                    <area>0,304,32,32</area>
+                </checkbox>
+                <textarea name="downloadlabel" from="baselabeltext">
+                    <area>50,300,100%,40</area>
+                    <value>Download this feed automatically</value>
+                </textarea>
+                <shape name="previewbackground" from="baseimageplaceholder">
+                    <area>0,365,-125,200</area>
+                </shape>
+                <imagetype name="preview">
+                    <area>0,365,-125,200</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <button name="preview_browse" from="basesearchbutton">
+                    <area>100%-100,365,100,40</area>
+                </button>
+            </group>
+        </group>
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
