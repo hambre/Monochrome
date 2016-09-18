@@ -3,43 +3,40 @@
 <mythuitheme>
 
     <window name="notification">
-        <area>-1,0,700,300</area>
-        <animation trigger="AboutToShow">
-            <section duration="500" centre="middle">
-                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
-            </section>
-        </animation>
-        <group name="decoration" from="basepopupdecoration"/>
-        <textarea name="title" from="basepopuptitletext"/>
-        <shape name="bottomseparator" from="baseseparator_h">
-            <position>0,100%</position>
+        <area>100%-700,100%-280,-2,-2</area>
+        <shape name="decoration" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
         </shape>
         <group name="content">
-            <area>25,75,-25,210</area>
+            <area>25,25,-25,-25</area>
             <group name="text">
                 <area>0,0,100%,100%</area>
                 <textarea name="origin" from="basetext_s">
-                    <area>0,0,100%,40</area>
+                    <area>0,0,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
+                <textarea name="title" from="basetext_m">
+                    <area>0,40,100%,40</area>
+                    <alpha>255</alpha>
+                </textarea>
                 <textarea name="description" from="basedescriptiontext" depends="extra">
-                    <area>0,50,100%,50</area>
+                    <area>0,90,100%,50</area>
                 </textarea>
                 <textarea name="description2" from="basedescriptiontext" depends="!extra">
-                    <area>0,50,100%,100</area>
+                    <area>0,90,100%,100</area>
                     <template>%DESCRIPTION%</template>
                 </textarea>
-                <textarea name="extra" from="basetext_m">
-                    <area>0,100,100%,40</area>
+                <textarea name="extra" from="basetext_s">
+                    <area>0,140,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
                 <textarea name="progress_text" from="basetext_s">
-                    <area>0,155,100%,32</area>
+                    <area>0,180,100%,32</area>
                     <alpha>150</alpha>
                     <align>center</align>
                 </textarea>
                 <progressbar name="progress" from="baseprogress_s">
-                    <area>0,192,100%,12</area>
+                    <area>0,218,100%,12</area>
                 </progressbar>
             </group>
         </group>
@@ -48,21 +45,14 @@
     <!--====================================================================-->
 
     <window name="notification-image">
-        <area>-1,0,900,300</area>
-        <animation trigger="AboutToShow">
-            <section duration="500" centre="middle">
-                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
-            </section>
-        </animation>
-        <group name="decoration" from="basepopupdecoration"/>
-        <textarea name="title" from="basepopuptitletext"/>
-        <shape name="bottomseparator" from="baseseparator_h">
-            <position>0,100%</position>
+        <area>100%-850,100%-280,-2,-2</area>
+        <shape name="decoration" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
         </shape>
         <group name="content">
-            <area>25,75,-25,210</area>
+            <area>25,25,-25,-25</area>
             <group name="graphics">
-                <area>5,5,200,200</area>
+                <area>0,0,200,100%</area>
                 <imagetype name="image" depends="!mediastate&amp;!errorstate">
                     <area>0,0,100%,100%</area>
                     <preserveaspect>true</preserveaspect>
@@ -106,29 +96,33 @@
                 </statetype>
             </group>
             <group name="text">
-                <area>235,0,100%,100%</area>
+                <area>225,0,100%,100%</area>
                 <textarea name="origin" from="basetext_s">
-                    <area>0,0,100%,40</area>
+                    <area>0,0,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
+                <textarea name="title" from="basetext_m">
+                    <area>0,40,100%,40</area>
+                    <alpha>255</alpha>
+                </textarea>
                 <textarea name="description" from="basedescriptiontext" depends="extra">
-                    <area>0,50,100%,50</area>
+                    <area>0,90,100%,50</area>
                 </textarea>
                 <textarea name="description2" from="basedescriptiontext" depends="!extra">
-                    <area>0,50,100%,100</area>
+                    <area>0,90,100%,100</area>
                     <template>%DESCRIPTION%</template>
                 </textarea>
-                <textarea name="extra" from="basetext_m">
-                    <area>0,100,100%,40</area>
+                <textarea name="extra" from="basetext_s">
+                    <area>0,140,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
                 <textarea name="progress_text" from="basetext_s">
-                    <area>0,155,100%,32</area>
+                    <area>0,180,100%,32</area>
                     <alpha>150</alpha>
                     <align>center</align>
                 </textarea>
                 <progressbar name="progress" from="baseprogress_s">
-                    <area>0,192,100%,12</area>
+                    <area>0,218,100%,12</area>
                 </progressbar>
             </group>
         </group>
@@ -140,13 +134,23 @@
         <shape name="background" from="basebackground">
             <alpha>225</alpha>
         </shape>
-        <shape name="topseparator" from="baseseparator_h">
-            <position>0,50%-155</position>
-        </shape>
+        <group name="decoration">
+            <area>0,50%-150,100%,300</area>
+            <shape name="windowbackground" from="basebackground">
+                <area>0,0,100%,100%</area>
+                <alpha>200</alpha>
+            </shape>
+            <shape name="topseparator" from="baseseparator_h">
+                <position>0,0</position>
+            </shape>
+            <shape name="bottomseparator" from="baseseparator_h">
+                <position>0,100%</position>
+            </shape>
+        </group>
         <group name="content">
-            <area>50%-500,50%-130,1000,260</area>
+            <area>50%-500,50%-130,1000,250</area>
             <group name="graphics">
-                <area>5,5,250,250</area>
+                <area>0,0,250,100%</area>
                 <imagetype name="image" depends="!mediastate&amp;!errorstate">
                     <area>0,0,100%,100%</area>
                     <preserveaspect>true</preserveaspect>
@@ -208,23 +212,20 @@
                     <area>0,50,100%,100</area>
                     <template>%DESCRIPTION%</template>
                 </textarea>
-                <textarea name="extra" from="basetext_m">
-                    <area>0,150,100%,40</area>
+                <textarea name="extra" from="basetext_s">
+                    <area>0,150,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
                 <textarea name="progress_text" from="basetext_s">
-                    <area>0,210,100%,32</area>
+                    <area>0,200,100%,32</area>
                     <alpha>150</alpha>
                     <align>center</align>
                 </textarea>
                 <progressbar name="progress" from="baseprogress_s">
-                    <area>0,248,100%,12</area>
+                    <area>0,238,100%,12</area>
                 </progressbar>
             </group>
         </group>
-        <shape name="bottomseparator" from="baseseparator_h">
-            <position>0,50%+155</position>
-        </shape>
     </window>
 
 </mythuitheme>
