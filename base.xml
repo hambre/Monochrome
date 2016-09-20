@@ -1459,4 +1459,81 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="MythMetadataResults">
+        <area>-1,0,900,500</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Metadata Results</value>
+        </textarea>
+        <buttonlist name="results" from="baseitemlist">
+            <area>50,75,-50,-25</area>
+            <align>vcenter</align>
+            <statetype name="buttonitem">
+                <area>0,0,100%,130</area>
+                <state name="active">
+                    <area>0,0,100%,130</area>
+                    <shape name="itemseparator" from="baseitemseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage">
+                        <area>5,5,80,-5</area>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>5,5,80,-5</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>100,5,-5,40</area>
+                        <template>%TITLE%% ~ |SUBTITLE%% (|YEAR|)%</template>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="description" from="basetext_s">
+                        <area>100,50,-5,-5</area>
+                        <multiline>yes</multiline>
+                        <align>justify</align>
+                        <cutdown>yes</cutdown>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <shape name="background" from="basecontrolbackground">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <shape name="itemseparator"/>
+                    <imagetype name="buttonimage">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <textarea name="title">
+                        <scroll direction="horizontal" />
+                        <cutdown>no</cutdown>
+                        <alpha>255</alpha>
+                    </textarea>
+                    <textarea name="description">
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="title">
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="description">
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+    </window>
+
 </mythuitheme>
