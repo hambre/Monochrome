@@ -1536,4 +1536,68 @@
         </buttonlist>
     </window>
 
+    <!--====================================================================-->
+    
+    <window name="MythArtworkResults">
+        <area>-1,0,1100,350</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basepopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Artwork Search Results</value>
+        </textarea>
+        <buttonlist name="results">
+            <area>50,75,1005,250</area>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <align>hcenter</align>
+            <layout>horizontal</layout>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <statetype name="buttonitem">
+                <area>0,0,200,250</area>
+                <state name="active">
+                    <area>0,0,200,250</area>
+                    <imagetype name="buttonimage">
+                        <area>1,0,-1,-50</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage">
+                        <area>0,0,100%,-50</area>
+                    </imagetype>
+                    <shape name="top" from="baseseparator_h">
+                        <position>0,0</position>
+                    </shape>
+                    <shape name="bottom" from="baseseparator_h">
+                        <position>0,100%-50</position>
+                    </shape>
+                    <textarea name="resolution" from="basetext_s">
+                        <area>0,100%-50,100%,100%</area>
+                        <align>center</align>
+                        <cutdown>yes</cutdown>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <shape name="background" from="basecontrolbackground">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <shape name="whiteframe" from="baseframe">
+                        <area>0,0,100%,100%</area>
+                        <type>box</type>
+                    </shape>
+                    <textarea name="resolution">
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+    </window>
+
 </mythuitheme>
