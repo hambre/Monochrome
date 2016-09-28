@@ -15,14 +15,20 @@
                     <area>0,0,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="title" from="basetext_m">
+                <textarea name="title" from="basetext_m" depends="description">
                     <area>0,40,100%,40</area>
+                    <alpha>255</alpha>
+                </textarea>
+                <textarea name="title_l" from="basetext_m" depends="!description">
+                    <area>0,40,100%,80</area>
+                    <multiline>yes</multiline>
+                    <template>%TITLE%</template>
                     <alpha>255</alpha>
                 </textarea>
                 <textarea name="description" from="basedescriptiontext" depends="extra">
                     <area>0,90,100%,50</area>
                 </textarea>
-                <textarea name="description2" from="basedescriptiontext" depends="!extra">
+                <textarea name="description_l" from="basedescriptiontext" depends="!extra">
                     <area>0,90,100%,100</area>
                     <template>%DESCRIPTION%</template>
                 </textarea>
@@ -101,14 +107,20 @@
                     <area>0,0,100%,32</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="title" from="basetext_m">
+                <textarea name="title" from="basetext_m" depends="description">
                     <area>0,40,100%,40</area>
+                    <alpha>255</alpha>
+                </textarea>
+                <textarea name="title_l" from="basetext_m" depends="!description">
+                    <area>0,40,100%,80</area>
+                    <multiline>yes</multiline>
+                    <template>%TITLE%</template>
                     <alpha>255</alpha>
                 </textarea>
                 <textarea name="description" from="basedescriptiontext" depends="extra">
                     <area>0,90,100%,50</area>
                 </textarea>
-                <textarea name="description2" from="basedescriptiontext" depends="!extra">
+                <textarea name="description_l" from="basedescriptiontext" depends="!extra">
                     <area>0,90,100%,100</area>
                     <template>%DESCRIPTION%</template>
                 </textarea>
@@ -200,15 +212,22 @@
                     <area>0,0,100%,40</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="title" from="basepopuptitletext">
+                <textarea name="title" from="basepopuptitletext" depends="description">
                     <align>left,vcenter</align>
                     <area>0,50,100%,40</area>
+                    <alpha>255</alpha>
+                </textarea>
+                <textarea name="title_l" from="basepopuptitletext" depends="!description">
+                    <align>left,vcenter</align>
+                    <area>0,50,100%,80</area>
+                    <multiline>yes</multiline>
+                    <template>%TITLE%</template>
                     <alpha>255</alpha>
                 </textarea>
                 <textarea name="description" from="basedescriptiontext" depends="extra">
                     <area>0,100,100%,40</area>
                 </textarea>
-                <textarea name="description2" from="basedescriptiontext" depends="!extra">
+                <textarea name="description_l" from="basedescriptiontext" depends="!extra">
                     <area>0,50,100%,100</area>
                     <template>%DESCRIPTION%</template>
                 </textarea>
