@@ -792,6 +792,62 @@
 
     <!--====================================================================-->
 
+    <window name="ripstatus">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundOptical.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Rip CD</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,600,1000,-75</area>
+            <group name="overallinfo">
+                <area>0,150,100%,100%</area>
+                <textarea name="overalllabel" from="baselabeltext">
+                    <area>0,0,200,40</area>
+                    <value>Importing CD</value>
+                </textarea>
+                <textarea name="overall" from="basetext_m">
+                    <area>250,0,100%,40</area>
+                </textarea>
+                <progressbar name="overall_progress" from="baseprogress_s">
+                    <area>0,65,100%,12</area>
+                </progressbar>
+                <textarea name="overallpct" from="basetext_s">
+                    <area>0,85,100%,32</area>
+                    <align>center</align>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <group name="trackinfo">
+                <area>0,0,100%,100%</area>
+                <textarea name="trackllabel" from="baselabeltext">
+                    <area>0,0,200,40</area>
+                    <value>Encoding Track</value>
+                </textarea>
+                <textarea name="track" from="basetext_m">
+                    <area>250,0,100%,40</area>
+                </textarea>
+                <progressbar name="track_progress" from="baseprogress_s">
+                    <area>0,65,100%,12</area>
+                </progressbar>
+                <textarea name="trackpct" from="basetext_s">
+                    <area>0,85,100%,32</area>
+                    <align>center</align>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+        </group>
+        <textarea name="status" from="basetext_m">
+            <area>50,100%-50,-50,50</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="import_music">
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
