@@ -1583,7 +1583,7 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="background" from="basecontrolbackground">
-                        <area>0,0,100%,100%</area>
+                        <area>0,100%-50,100%,100%</area>
                     </shape>
                     <imagetype name="buttonimage">
                         <alpha>255</alpha>
