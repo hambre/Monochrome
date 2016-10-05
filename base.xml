@@ -1539,7 +1539,7 @@
     <!--====================================================================-->
     
     <window name="MythArtworkResults">
-        <area>-1,0,1100,350</area>
+        <area>-1,0,1605,450</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
@@ -1550,16 +1550,16 @@
             <value>Artwork Search Results</value>
         </textarea>
         <buttonlist name="results">
-            <area>50,75,1005,250</area>
+            <area>50,75,1505,250</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <align>hcenter</align>
             <layout>horizontal</layout>
             <scrollstyle>center</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
-                <area>0,0,200,250</area>
+                <area>0,0,300,350</area>
                 <state name="active">
-                    <area>0,0,200,250</area>
+                    <area>0,0,300,350</area>
                     <imagetype name="buttonimage">
                         <area>1,0,-1,-50</area>
                         <preserveaspect>true</preserveaspect>
