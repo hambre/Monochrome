@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="appearance">
+        <shape name="blackout" from="basebackground">
+        </shape>
+        <imagetype name="preview">
+            <filename>images/icons/Corner.png</filename>
+            <preserveaspect>false</preserveaspect>
+        </imagetype>
+        <textarea name="title" from="basepagetitletext">
+            <value>Appearance Wizard</value>
+        </textarea>
+        <group name="info">
+            <area>50%-500,250,1000,500</area>
+            <textarea name="helptext" from="basedescriptiontext">
+                <area>0,0,100%,120</area>
+                <value>Move the selected corner of the preview image to the corner of the TV screen.  Press SELECT to edit the other corner.  Press MENU for options and ESC to quit.</value>
+                <multiline>yes</multiline>
+            </textarea>
+
+            <textarea name="offsets" from="basetext_m">
+                <area>0,150,100%,40</area>
+                <alpha>200</alpha>
+            </textarea>
+
+            <textarea name="size" from="basetext_m">
+                <area>0,215,100%,40</area>
+                <alpha>200</alpha>
+            </textarea>
+
+            <textarea name="changeamount" from="basetext_m">
+                <area>0,280,100%,40</area>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+    </window>
+
+</mythuitheme>
