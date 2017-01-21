@@ -8,12 +8,43 @@
         </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <buttonlist name="category" from="baseitemlist">
-            <area>25,500,500,525</area>
+            <area>25,500,50%-25,-75</area>
+            <statetype name="buttonitem">
+                <state name="selectedactive" from="active">
+                    <area>0,0,100%,55</area>
+                    <imagetype name="icon">
+                        <position>100%-25,50%-12</position>
+                        <filename>images/ArrowRightBig.png</filename>
+                        <alpha>50</alpha>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
         </buttonlist>
         <buttonlist name="log" from="baseitemlist">
-            <area>575,500,-25,525</area>
+            <area>25,500,50%-25,-75</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
         </buttonlist>
-        <textarea name="helptext" from="basehelptext">
+        <textarea name="helptext" from="basetext_m">
+            <area>50%+25,500,-25,-75</area>
+            <multiline>yes</multiline>
+            <alpha>200</alpha>
+            <align>top,left</align>
+            <value>This screen displays the status of various system components</value>
+        </textarea>
+        <textarea name="justhelptext" from="basehelptext">
             <area>25,100%-50,-25,100%</area>
             <align>center</align>
         </textarea>
