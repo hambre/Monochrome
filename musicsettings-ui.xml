@@ -88,37 +88,58 @@
         <group name="content">
             <area>50%-500,300,1000,-115</area>
             <group name="labels">
-                <area>0,0,50%,100%</area>
+                <area>0,0,60%,100%</area>
                 <textarea name="resumemodelabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Resume mode:</value>
                 </textarea>
-                <textarea name="exitactionlabel" from="baselabeltext">
+                <textarea name="resumemodeeditorlabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
+                    <value>Resume mode (Playlist Editor):</value>
+                </textarea>
+                <textarea name="resumemoderadiolabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Resume mode (Radio):</value>
+                </textarea>
+                <textarea name="exitactionlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
                     <value>Action on exit:</value>
                 </textarea>
+                <textarea name="jumpactionlabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
+                    <value>Action on jumppoint:</value>
+                </textarea>
                 <textarea name="audiodevicelabel" from="baselabeltext">
-                    <area>0,130,100%,40</area>
+                    <area>0,325,100%,40</area>
                     <value>Automatically lookup CDs:</value>
                 </textarea>
                 <textarea name="upmixlabel" from="baselabeltext">
-                    <area>0,195,100%,40</area>
+                    <area>0,390,100%,40</area>
                     <value>Automatically Play CDs:</value>
                 </textarea>
             </group>
             <group name="controls">
-                <area>50%,0,100%,100%</area>
+                <area>60%,0,100%,100%</area>
                 <buttonlist name="resumemode" from="baseselector">
                     <area>0,0,100%,40</area>
                 </buttonlist>
-                <buttonlist name="exitaction" from="baseselector">
+                <buttonlist name="resumemodeeditor" from="baseselector">
                     <area>0,65,100%,40</area>
                 </buttonlist>
+                <buttonlist name="resumemoderadio" from="baseselector">
+                    <area>0,130,100%,40</area>
+                </buttonlist>
+                <buttonlist name="exitaction" from="baseselector">
+                    <area>0,195,100%,40</area>
+                </buttonlist>
+                <buttonlist name="jumpaction" from="baseselector">
+                    <area>0,260,100%,40</area>
+                </buttonlist>
                 <checkbox name="autolookupcd" from="basecheckbox">
-                    <area>0,134,32,32</area>
+                    <area>0,329,32,32</area>
                 </checkbox>
                 <checkbox name="autoplaycd" from="basecheckbox">
-                    <area>0,199,32,32</area>
+                    <area>0,394,32,32</area>
                 </checkbox>
             </group>
             <textarea name="helptext" from="basehelptext">
