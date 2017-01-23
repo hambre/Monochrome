@@ -430,16 +430,20 @@
                         <area>5,0,50,100%</area>
                         <font state="error">basefont_l_bad</font>
                         <font state="running">basefont_l_good</font>
+                        <font state="warning">basefont_l_warn</font>
+                        <font state="disabled">basefont_l_off</font>
                         <alpha>100</alpha>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,60%,100%</area>
+                        <font state="disabled">basefont_l_off</font>
                         <alpha>100</alpha>
                     </textarea>
                     <textarea name="timedate" from="basetext_m">
                         <area>60%,0,-5,100%</area>
                         <align>right,vcenter</align>
                         <alpha>100</alpha>
+                        <font state="disabled">basefont_m_off</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
@@ -447,13 +451,17 @@
                         <area>5,0,50,100%</area>
                         <font state="error">basefont_l_bad</font>
                         <font state="running">basefont_l_good</font>
+                        <font state="warning">basefont_l_warn</font>
+                        <font state="disabled">basefont_l_off</font>
                     </textarea>
                     <textarea name="title" from="baseitemtext">
                         <area>50,0,60%,100%</area>
+                        <font state="disabled">basefont_l_off</font>
                     </textarea>
                     <textarea name="timedate" from="basetext_m">
                         <area>60%,0,-5,100%</area>
                         <align>right,vcenter</align>
+                        <font state="disabled">basefont_m_off</font>
                     </textarea>
                 </state>
             </statetype>
