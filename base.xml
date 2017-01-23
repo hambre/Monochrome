@@ -30,11 +30,23 @@
     <fontdef name="basefont_l_bad" from="basefont_l">
         <color>#FF0000</color>
     </fontdef>
+    <fontdef name="basefont_l_warn" from="basefont_l">
+        <color>#FFA500</color>
+    </fontdef>
+    <fontdef name="basefont_l_off" from="basefont_l">
+        <color>#7F7F7F</color>
+    </fontdef>
     <fontdef name="basefont_m_good" from="basefont_m">
         <color>#00FF00</color>
     </fontdef>
     <fontdef name="basefont_m_bad" from="basefont_m">
         <color>#FF0000</color>
+    </fontdef>
+    <fontdef name="basefont_m_warn" from="basefont_m">
+        <color>#FFA500</color>
+    </fontdef>
+    <fontdef name="basefont_m_off" from="basefont_m">
+        <color>#7F7F7F</color>
     </fontdef>
 
     <!-- textarea with small, medium, large and extra large font -->
