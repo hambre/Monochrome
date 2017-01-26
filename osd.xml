@@ -208,6 +208,7 @@
         </shape>
         <imagetype name="iconpath">
             <area>25,25,150,150</area>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="coverart">
             <area>25,25,150,200</area>
@@ -475,6 +476,7 @@
         </shape>
         <imagetype name="iconpath">
             <area>25,25,150,150</area>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
         <imagetype name="icondummy" depends="!iconpath">
             <area>50,50,100,100</area>
