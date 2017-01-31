@@ -1161,6 +1161,13 @@
 
     <!--====================================================================-->
 
+    <!-- Black background for OpenMAX videos to prevent bleed through-->
+    <window name="videobackground">
+        <shape name="background" from="basebackground"/>
+    </window>
+
+    <!--====================================================================-->
+
     <!-- busy dialog -->
     <window name="MythBusyDialog">
         <area>-1,0,750,150</area>
