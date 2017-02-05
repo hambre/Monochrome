@@ -1,7 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
-    <window name="slideshow">
+
+    <window name="gallery" include="image-base.xml">
+        <group name="decoration" from="basewindowdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Image Gallery</value>
+        </textarea>
+        <buttonlist name="images0" from="baseitemlist">
+            <area>25,60,-25,-60</area>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <align>hcenter</align>
+            <layout>grid</layout>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>flowing</wrapstyle>
+            <statetype name="buttonitem">
+                <area>0,0,165,190</area>
+                <state name="active">
+                    <area>0,0,165,190</area>
+                    <!-- show icon depending of type -->
+                    <statetype name="buttontype" depends="!parenttype&amp;!buttoncheck">
+                        <area>5,5,32,32</area>
+                        <state name="subfolder">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="icon" from="baseicon">
+                                <filename>images/icons/MusicDirectory.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="device">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="icon" from="baseicon">
+                                <filename>images/icons/Storage.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="image"/>
+                        <state name="video">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="icon" from="baseicon">
+                                <filename>images/icons/Movie.png</filename>
+                            </imagetype>
+                        </state>
+                        <alpha>100</alpha>
+                    </statetype>
+                    <!-- Show up arrow on parent dir with ancestors -->
+                    <statetype name="parenttype">
+                        <area>50%-16,5,32,32</area>
+                        <state name="upfolder">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="icon" from="baseicon">
+                                <area>0,4,24,24</area>
+                                <filename>images/ArrowUpBig.png</filename>
+                                <alpha>100</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <!-- Shows that the image was marked/selected and
+                    might be manipulated with other images -->
+                    <statetype name="buttoncheck">
+                        <area>5,5,32,32</area>
+                        <state type="full">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="icon" from="baseicon">
+                                <filename>images/icons/Playlist.png</filename>
+                                <alpha>100</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetext_s" depends="!parenttype">
+                        <area>40,5,-5,32</area>
+                        <align>right,vcenter</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <imagetype name="defaultimage" depends="!buttonimage&amp;!folderimage&amp;!videoimage&amp;!thumbimage0">
+                        <area>5,40,-5,-40</area>
+                        <preserveaspect>true</preserveaspect>
+                        <filename>images/icons/ArtworkHuge.png</filename>
+                        <alpha>50</alpha>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>5,10,-5,-40</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <imagetype name="folderimage">
+                        <area>5,40,-5,-40</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <imagetype name="videoimage">
+                        <area>5,40,-5,-40</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <imagetype name="thumbimage0">
+                        <area>5,40,-5,-40</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetext_s" depends="!parenttype">
+                        <area>5,100%-37,-5,32</area>
+                        <align>center</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="backtext" from="basetext_s" depends="parenttype">
+                        <area>5,100%-37,-5,32</area>
+                        <align>center</align>
+                        <alpha>100</alpha>
+                        <value>Back</value>
+                    </textarea>
+                    <shape name="itemseparator">
+                        <alpha>0</alpha>
+                    </shape>
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="buttonimage">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <imagetype name="folderimage">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <imagetype name="videoimage">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <imagetype name="thumbimage0">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <scroll direction="horizontal" />
+                        <cutdown>no</cutdown>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="noimages" from="basetext_m">
+            <area>50%-250,500,500,300</area>
+            <align>center</align>
+            <multiline>yes</multiline>
+        </textarea>
+        <buttonlist name="infolist" from="imageinfolist">
+            <area>25,75,550,-75</area>
+        </buttonlist>
+        <!-- footer -->
+        <textarea name="typefilter" from="basetext_s">
+            <area>25,100%-50,100,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="hidefilter" from="basetext_s">
+            <area>150,100%-50,150,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="caption" from="basetext_s">
+            <area>325,100%-50,100%-325,50</area>
+            <alpha>150</alpha>
+            <align>center</align>
+        </textarea>
+        <textarea name="position" from="basetext_s">
+            <area>100%-150,100%-50,125,50</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+        <group name="scanpopup" depends="scanprogressbar">
+            <area>50%-375,0,750,175</area>
+            <animation trigger="AboutToShow">
+                <section duration="500" centre="middle">
+                    <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+                </section>
+            </animation>
+            <group name="decoration" from="basepopupdecoration"/>
+            <textarea name="scanprogresstext" from="basetext_s">
+                <area>50,100%-100,-50,40</area>
+                <alpha>200</alpha>
+                <align>center</align>
+            </textarea>
+            <progressbar name="scanprogressbar" from="baseprogress_s">
+                <area>50,100%-37,-50,12</area>
+            </progressbar>
+        </group>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="slideshow" include="image-base.xml">
         <shape name="background" from="basebackground"/>
         <imagetype name="image">
             <area>0,0,100%,100%</area>
@@ -19,63 +199,8 @@
             </shape>
         </group>
         -->
-        <buttonlist name="infolist" from="baseitemlist">
+        <buttonlist name="infolist" from="imageinfolist">
             <area>25,75,550,-75</area>
-            <statetype name="buttonitem">
-                <area>0,0,100%,40</area>
-                <state name="active">
-                    <area>0,0,100%,40</area>
-                    <shape name="background" from="basecontrolbackground">
-                        <area>0,0,100%,100%</area>
-                        <fill color="#000000" alpha="255" />
-                        <alpha>200</alpha>
-                    </shape>
-                    <shape name="topseparator"  from="baseitemseparator_h">
-                        <position>0,0</position>
-                    </shape>
-                    <shape name="itemseparator"  from="baseitemseparator_h">
-                        <position>0,100%</position>
-                    </shape>
-                    <textarea name="name" from="basetext_s">
-                        <area>5,0,50%-10,100%</area>
-                        <alpha>100</alpha>
-                    </textarea>
-                    <textarea name="value" from="basetext_s">
-                        <area>50%,0,-5,100%</area>
-                        <alpha>100</alpha>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active">
-                    <area>0,0,100%,40</area>
-                    <shape name="defaultbackground">
-                        <alpha>0</alpha>
-                    </shape>
-                    <shape name="background" from="basecontrolbackground">
-                        <area>0,0,100%,100%</area>
-                        <fill color="#191919" alpha="255" />
-                        <alpha>200</alpha>
-                    </shape>
-                    <shape name="topseparator"/>
-                    <shape name="itemseparator"/>
-                    <textarea name="name">
-                        <alpha>255</alpha>
-                    </textarea>
-                    <textarea name="value">
-                        <scroll direction="horizontal" />
-                        <cutdown>no</cutdown>
-                        <alpha>255</alpha>
-                    </textarea>
-                </state>
-                <state name="inactive" from="active"/>
-                <state name="selectedinactive" from="selectedactive">
-                    <textarea name="name">
-                        <alpha>100</alpha>
-                    </textarea>
-                    <textarea name="value">
-                        <alpha>100</alpha>
-                    </textarea>
-                </state>
-            </statetype>
         </buttonlist>
         <textarea name="hidecaptions">
             <alpha>0</alpha>
