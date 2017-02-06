@@ -7,132 +7,63 @@
         <textarea name="title" from="basepagetitletext">
             <value>Image Gallery</value>
         </textarea>
-        <buttonlist name="images0" from="baseitemlist">
-            <area>25,60,-25,-60</area>
-            <buttonarea>0,0,100%,100%</buttonarea>
-            <align>hcenter</align>
-            <layout>grid</layout>
-            <scrollstyle>free</scrollstyle>
-            <wrapstyle>flowing</wrapstyle>
+
+        <!-- smallest image list 10x5 -->
+        <buttonlist name="images0" from="imagelist">
+            <area>35,60,-25,-60</area>
             <statetype name="buttonitem">
-                <area>0,0,165,190</area>
+                <area>0,0,165,175</area>
                 <state name="active">
-                    <area>0,0,165,190</area>
-                    <!-- show icon depending of type -->
-                    <statetype name="buttontype" depends="!parenttype&amp;!buttoncheck">
-                        <area>5,5,32,32</area>
-                        <state name="subfolder">
-                            <area>0,0,100%,100%</area>
-                            <imagetype name="icon" from="baseicon">
-                                <filename>images/icons/MusicDirectory.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="device">
-                            <area>0,0,100%,100%</area>
-                            <imagetype name="icon" from="baseicon">
-                                <filename>images/icons/Storage.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="image"/>
-                        <state name="video">
-                            <area>0,0,100%,100%</area>
-                            <imagetype name="icon" from="baseicon">
-                                <filename>images/icons/Movie.png</filename>
-                            </imagetype>
-                        </state>
-                        <alpha>100</alpha>
-                    </statetype>
-                    <!-- Show up arrow on parent dir with ancestors -->
-                    <statetype name="parenttype">
-                        <area>50%-16,5,32,32</area>
-                        <state name="upfolder">
-                            <area>0,0,100%,100%</area>
-                            <imagetype name="icon" from="baseicon">
-                                <area>0,4,24,24</area>
-                                <filename>images/ArrowUpBig.png</filename>
-                                <alpha>100</alpha>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                    <!-- Shows that the image was marked/selected and
-                    might be manipulated with other images -->
-                    <statetype name="buttoncheck">
-                        <area>5,5,32,32</area>
-                        <state type="full">
-                            <area>0,0,100%,100%</area>
-                            <imagetype name="icon" from="baseicon">
-                                <filename>images/icons/Playlist.png</filename>
-                                <alpha>100</alpha>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                    <textarea name="childcount" from="basetext_s" depends="!parenttype">
-                        <area>40,5,-5,32</area>
-                        <align>right,vcenter</align>
-                        <alpha>100</alpha>
-                    </textarea>
-                    <imagetype name="defaultimage" depends="!buttonimage&amp;!folderimage&amp;!videoimage&amp;!thumbimage0">
-                        <area>5,40,-5,-40</area>
-                        <preserveaspect>true</preserveaspect>
-                        <filename>images/icons/ArtworkHuge.png</filename>
-                        <alpha>50</alpha>
-                    </imagetype>
-                    <imagetype name="buttonimage">
-                        <area>5,10,-5,-40</area>
-                        <preserveaspect>true</preserveaspect>
-                        <alpha>150</alpha>
-                    </imagetype>
-                    <imagetype name="folderimage">
-                        <area>5,40,-5,-40</area>
-                        <preserveaspect>true</preserveaspect>
-                        <alpha>150</alpha>
-                    </imagetype>
-                    <imagetype name="videoimage">
-                        <area>5,40,-5,-40</area>
-                        <preserveaspect>true</preserveaspect>
-                        <alpha>150</alpha>
-                    </imagetype>
-                    <imagetype name="thumbimage0">
-                        <area>5,40,-5,-40</area>
-                        <preserveaspect>true</preserveaspect>
-                        <alpha>150</alpha>
-                    </imagetype>
-                    <textarea name="buttontext" from="basetext_s" depends="!parenttype">
-                        <area>5,100%-37,-5,32</area>
-                        <align>center</align>
-                        <alpha>100</alpha>
-                    </textarea>
-                    <textarea name="backtext" from="basetext_s" depends="parenttype">
-                        <area>5,100%-37,-5,32</area>
-                        <align>center</align>
-                        <alpha>100</alpha>
-                        <value>Back</value>
-                    </textarea>
-                    <shape name="itemseparator">
-                        <alpha>0</alpha>
-                    </shape>
+                    <area>0,0,165,175</area>
                 </state>
-                <state name="selectedactive" from="active">
-                    <imagetype name="buttonimage">
-                        <alpha>255</alpha>
-                    </imagetype>
-                    <imagetype name="folderimage">
-                        <alpha>255</alpha>
-                    </imagetype>
-                    <imagetype name="videoimage">
-                        <alpha>255</alpha>
-                    </imagetype>
-                    <imagetype name="thumbimage0">
-                        <alpha>255</alpha>
-                    </imagetype>
-                    <textarea name="buttontext">
-                        <scroll direction="horizontal" />
-                        <cutdown>no</cutdown>
-                        <alpha>255</alpha>
-                    </textarea>
+                <state name="selectedactive">
+                    <area>0,0,165,175</area>
                 </state>
             </statetype>
         </buttonlist>
+
+        <!-- small image list 9x4 -->
+        <buttonlist name="images1" from="imagelist">
+            <area>40,70,-25,-60</area>
+            <statetype name="buttonitem">
+                <area>0,0,185,220</area>
+                <state name="active">
+                    <area>0,0,185,220</area>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,185,220</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- big image list 7x3 -->
+        <buttonlist name="images2" from="imagelist">
+            <area>35,70,-25,-60</area>
+            <statetype name="buttonitem">
+                <area>0,0,245,300</area>
+                <state name="active">
+                    <area>0,0,245,300</area>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,245,300</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- biggest image list 5x2 -->
+        <buttonlist name="images3" from="imagelist">
+            <area>40,80,-25,-60</area>
+            <statetype name="buttonitem">
+                <area>0,0,350,450</area>
+                <state name="active">
+                    <area>0,0,350,450</area>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,350,450</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
         <textarea name="noimages" from="basetext_m">
             <area>50%-250,500,500,300</area>
             <align>center</align>
