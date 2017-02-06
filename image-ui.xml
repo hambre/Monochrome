@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="gallery" include="image-base.xml">
+        <group name="decoration" from="basewindowdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Image Gallery</value>
+        </textarea>
+
+        <!-- smallest image list 10x5 -->
+        <buttonlist name="images0" from="imagelist">
+            <area>35,60,-25,-60</area>
+            <statetype name="buttonitem">
+                <area>0,0,165,175</area>
+                <state name="active">
+                    <area>0,0,165,175</area>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,165,175</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- small image list 9x4 -->
+        <buttonlist name="images1" from="imagelist">
+            <area>40,70,-25,-60</area>
+            <statetype name="buttonitem">
+                <area>0,0,185,220</area>
+                <state name="active">
+                    <area>0,0,185,220</area>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,185,220</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- big image list 7x3 -->
+        <buttonlist name="images2" from="imagelist">
+            <area>35,70,-25,-60</area>
+            <statetype name="buttonitem">
+                <area>0,0,245,300</area>
+                <state name="active">
+                    <area>0,0,245,300</area>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,245,300</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <!-- biggest image list 5x2 -->
+        <buttonlist name="images3" from="imagelist">
+            <area>40,80,-25,-60</area>
+            <statetype name="buttonitem">
+                <area>0,0,350,450</area>
+                <state name="active">
+                    <area>0,0,350,450</area>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,350,450</area>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="noimages" from="basetext_m">
+            <area>50%-250,500,500,300</area>
+            <align>center</align>
+            <multiline>yes</multiline>
+        </textarea>
+        <buttonlist name="infolist" from="imageinfolist">
+            <area>25,75,550,-75</area>
+        </buttonlist>
+        <!-- footer -->
+        <textarea name="typefilter" from="basetext_s">
+            <area>25,100%-50,100,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="hidefilter" from="basetext_s">
+            <area>150,100%-50,150,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="caption" from="basetext_s">
+            <area>325,100%-50,100%-325,50</area>
+            <alpha>150</alpha>
+            <align>center</align>
+        </textarea>
+        <textarea name="position" from="basetext_s">
+            <area>100%-150,100%-50,125,50</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
+        <group name="scanpopup" depends="scanprogressbar">
+            <area>50%-375,0,750,175</area>
+            <animation trigger="AboutToShow">
+                <section duration="500" centre="middle">
+                    <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+                </section>
+            </animation>
+            <group name="decoration" from="basepopupdecoration"/>
+            <textarea name="scanprogresstext" from="basetext_s">
+                <area>50,100%-100,-50,40</area>
+                <alpha>200</alpha>
+                <align>center</align>
+            </textarea>
+            <progressbar name="scanprogressbar" from="baseprogress_s">
+                <area>50,100%-37,-50,12</area>
+            </progressbar>
+        </group>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="slideshow" include="image-base.xml">
+        <shape name="background" from="basebackground"/>
+        <imagetype name="image">
+            <area>0,0,100%,100%</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+        <!-- this sucks, we have no way to show/hide a decoration for the details list
+        <group name="basesidebar" depends="infolist">
+            <area>0, 0, 600, 100%</area>
+            <shape name="contentbar" from="basebar">
+                <area>0, 0, 100%, 100%</area>
+                <alpha>225</alpha>
+            </shape>
+            <shape name="contentsep" from="baseseparator_v">
+                <position>100%, 0</position>
+            </shape>
+        </group>
+        -->
+        <buttonlist name="infolist" from="imageinfolist">
+            <area>25,75,550,-75</area>
+        </buttonlist>
+        <textarea name="hidecaptions">
+            <alpha>0</alpha>
+        </textarea>
+        <group name="footer" from="basefooter" depends="!hidecaptions">
+            <shape name="footerbar">
+                <alpha>200</alpha>
+            </shape>
+            <textarea name="status" from="basetext_s">
+                <area>25,100%-50,150,50</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="caption" from="basetext_s">
+                <area>200,100%-50,100%-200,50</area>
+                <alpha>150</alpha>
+                <align>center</align>
+            </textarea>
+            <textarea name="slidecount" from="basetext_s">
+                <area>100%-150,100%-50,125,50</area>
+                <alpha>150</alpha>
+                <align>right,vcenter</align>
+            </textarea>
+        </group>
+    </window>
+</mythuitheme>
