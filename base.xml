@@ -397,6 +397,11 @@
         <alpha>50</alpha>
     </imagetype>
 
+    <imagetype name="basebusyanimation">
+        <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+        <delay>75</delay>
+    </imagetype>
+
     <!-- progress bar -->
     <progressbar name="baseprogress">
         <area>0,0,700,20</area>
@@ -1179,10 +1184,8 @@
         <group name="decoration" from="basepopupdecoration"/>
         <group name="content">
             <area>25,75,-25,-25</area>
-            <imagetype name="animation">
+            <imagetype name="animation" from="basebusyanimation">
                 <area>0,50%-25,50,50</area>
-                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                <delay>75</delay>
             </imagetype>
             <textarea name="message" from="basetext_m">
                 <area>50,0,100%,100%</area>

@@ -527,10 +527,8 @@
                 <statetype name="playstate">
                     <area>100%-37,50%-16,32,32</area>
                     <state name="playing">
-                        <imagetype name="animation">
+                        <imagetype name="animation" from="basebusyanimation">
                             <area>0,0,100%,100%</area>
-                            <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                            <delay>75</delay>
                         </imagetype>
                     </state>
                 </statetype>
