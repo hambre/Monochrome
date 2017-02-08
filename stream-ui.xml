@@ -307,36 +307,50 @@
             <area>25,500,700,-115</area>
             <group name="labels">
                 <area>0,0,40%,100%</area>
-                <textarea name="stationlabel" from="baselabeltext">
+                <textarea name="broadcasterlabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
-                    <value>Station:</value>
+                    <value>Broadcaster:</value>
                 </textarea>
                 <textarea name="genrelabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Genre:</value>
                 </textarea>
-                <textarea name="channellabel" from="baselabeltext">
+                <textarea name="countrylabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
+                    <value>Country:</value>
+                </textarea>
+                <textarea name="languagelabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Language:</value>
+                </textarea>
+                <textarea name="channellabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
                     <value>Channel:</value>
                 </textarea>
                 <textarea name="matcheslabel" from="baselabeltext">
-                    <area>0,195,300,40</area>
+                    <area>0,325,300,40</area>
                     <value>Matches:</value>
                 </textarea>
             </group>
             <group name="controls">
                 <area>40%,0,100%,100%</area>
-                <buttonlist name="stationlist" from="baseselector">
+                <buttonlist name="broadcasterlist" from="baseselector">
                     <area>0,0,100%,40</area>
                 </buttonlist>
                 <buttonlist name="genrelist" from="baseselector">
                     <area>0,65,100%,40</area>
                 </buttonlist>
-                <textedit name="channeledit" from="basetextedit">
+                <buttonlist name="countrylist" from="baseselector">
                     <area>0,130,100%,40</area>
+                </buttonlist>
+                <buttonlist name="languagelist" from="baseselector">
+                    <area>0,195,100%,40</area>
+                </buttonlist>
+                <textedit name="channeledit" from="basetextedit">
+                    <area>0,260,100%,40</area>
                 </textedit>
                 <textarea name="matchestext" from="basetext_m">
-                    <area>0,195,100%,40</area>
+                    <area>0,325,100%,40</area>
                 </textarea>
             </group>
         </group>
