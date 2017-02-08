@@ -69,6 +69,102 @@
 
     <!--====================================================================-->
 
+    <window name="trackslyricsview" include="music-base.xml">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Tracks Lyrics View</value>
+        </textarea>
+
+        <textarea name="notracks" from="basetext_m">
+            <area>100,465,-100,-115</area>
+            <align>center</align>
+            <value>You haven't selected any tracks to play</value>
+        </textarea>
+
+        <buttonlist name="currentplaylist" from="baseitemlist">
+            <area>25,465,50%-450,-115</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,55</area>
+                <state name="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="itemseparator" from="baseitemseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                    <textarea name="title" from="baseitemtext">
+                        <template>%ARTIST% ~ %TITLE%</template>
+                        <area>5,0,-45,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <statetype name="playstate">
+                        <area>100%-37,50%-16,32,32</area>
+                        <state name="playing">
+                            <imagetype name="animation">
+                                <area>0,0,100%,100%</area>
+                                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+                                <delay>75</delay>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="background" from="basecontrolbackground">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <shape name="itemseparator"/>
+                    <textarea name="title">
+                        <scroll direction="horizontal" />
+                        <cutdown>no</cutdown>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive"/>
+            </statetype>
+        </buttonlist>
+        <group name="lyrcis">
+            <area>50%-400,465,800,-115</area>
+            <buttonlist name="lyrics_list" from="baseitemlist">
+                <area>0,0,100%,100%</area>
+            </buttonlist>
+            <statetype name="loading_state">
+                <area>50%-25,50%-100,50,50</area>
+                <state name="on">
+                    <imagetype name="animation">
+                        <area>0,0,50,50</area>
+                        <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+                        <delay>75</delay>
+                    </imagetype>
+                </state>
+                <state name="off"/>
+            </statetype>
+            <textarea name="status_text" from="basetext_m">
+                <area>0,50%-20,100%,40</area>
+                <align>center</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+        <group name="trackdetails" from="musictrackdetails">
+            <imagetype name="playcounticon">
+                <alpha>0</alpha>
+            </imagetype>
+            <textarea name="playcount">
+                <alpha>0</alpha>
+            </textarea>
+        </group>
+        <group name="progressdetails" from="musicprogress">
+            <area>50%+425,100%-247,-25,-115</area>
+        </group>
+        <group name="playbackbuttons" from="musicbuttons"/>
+        <group name="playbackstate" from="musicplaybackstate"/>
+        <group name="playliststate" from="musicstate"/>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="playlisteditorview_tree" include="music-base.xml">
         <imagetype name="background" from="baseimagebackground">
             <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
