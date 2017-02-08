@@ -519,8 +519,8 @@
                 <shape name="itemseparator" from="baseitemseparator_h">
                     <position>0,100%</position>
                 </shape>
-                <textarea name="station" from="baseitemtext">
-                    <template>%STATION% ~ %CHANNEL% ~ %GENRE%</template>
+                <textarea name="broadcaster" from="baseitemtext">
+                    <template>%BROADCASTER% ~ %CHANNEL% ~ %GENRE%</template>
                     <area>5,0,-45,100%</area>
                     <alpha>100</alpha>
                 </textarea>

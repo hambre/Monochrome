@@ -101,20 +101,21 @@
                 </textarea>
             </group>
 
-            <group name="stationdetails">
+            <group name="broadcasterdetails">
                 <area>0,100%-220,100%,100%</area>
-                <imagetype name="stationicon" from="baseicon">
+                <imagetype name="broadcastericon" from="baseicon">
                     <area>15,0,90,90</area>
                     <filename>images/icons/SenderBig.png</filename>
                 </imagetype>
-                <textarea name="station" from="basetext_m">
+                <textarea name="broadcaster" from="basetext_m">
                     <area>150,0,100%,40</area>
-                    <template>%STATION% ~ %CHANNEL%</template>
+                    <template>%BROADCASTER% ~ %CHANNEL%</template>
                     <alpha>150</alpha>
                 </textarea>
                 <textarea name="url" from="basetext_m">
                     <area>150,50,100%,40</area>
                     <alpha>150</alpha>
+                    <cutdown>no</cutdown>
                     <scroll direction="horizontal"/>
                 </textarea>
             </group>
