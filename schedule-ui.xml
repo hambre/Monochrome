@@ -343,23 +343,23 @@
             <area>50%-500,550,1000,-115</area>
             <group name="labels">
                 <area>0,0,35%,100%</area>
-                <textarea name="titlelabel" from="basetext_m">
+                <textarea name="titlelabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Title (Optional):</value>
                 </textarea>
-                <textarea name="channellabel" from="basetext_m">
+                <textarea name="channellabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Channel:</value>
                 </textarea>
-                <textarea name="datelabel" from="basetext_m">
+                <textarea name="datelabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Date, or day of week:</value>
                 </textarea>
-                <textarea name="timelabel" from="basetext_m">
+                <textarea name="timelabel" from="baselabeltext">
                     <area>0,195,100%,40</area>
                     <value>Start Time:</value>
                 </textarea>
-                <textarea name="durationlabel" from="basetext_m">
+                <textarea name="durationlabel" from="baselabeltext">
                     <area>0,260,100%,40</area>
                     <value>Duration:</value>
                 </textarea>
@@ -469,11 +469,10 @@
                 </state>
             </statetype>
         </buttonlist>
-        <textarea name="filterlabel" from="basetext_m">
+        <textarea name="filterlabel" from="baselabeltext">
             <area>250,100%-50,200,50</area>
             <align>right,vcenter</align>
             <value>Showing:</value>
-            <alpha>200</alpha>
         </textarea>
         <textarea name="filter" from="basetext_m">
             <area>460,100%-50,250,50</area>
@@ -723,7 +722,7 @@
         <!-- middle part -->
         <group name="controls">
             <area>50%-475,415,950,-115</area>
-            <textarea name="ruleslabel" from="basetext_m">
+            <textarea name="ruleslabel" from="baselabeltext">
                 <area>0,0,300,40</area>
                 <value>Existing Rules:</value>
             </textarea>
@@ -731,7 +730,7 @@
                 <area>300,0,100%,40</area>
             </buttonlist>
 
-            <textarea name="titlelabel" from="basetext_m">
+            <textarea name="titlelabel" from="baselabeltext">
                 <area>0,65,300,40</area>
                 <value>Rule Name:</value>
             </textarea>
@@ -739,7 +738,7 @@
                 <area>300,65,100%,40</area>
             </textedit>
 
-            <textarea name="prioritylabel" from="basetext_m">
+            <textarea name="prioritylabel" from="baselabeltext">
                 <area>0,130,300,40</area>
                 <value>Priority Change:</value>
             </textarea>
@@ -747,7 +746,7 @@
                 <area>300,130,100,40</area>
             </spinbox>
 
-            <textarea name="clauseslabel" from="basetext_m">
+            <textarea name="clauseslabel" from="baselabeltext">
                 <area>0,200,100%,40</area>
                 <value>Select a clause from the list.</value>
                 <align>allcenter</align>
@@ -863,7 +862,7 @@
             <value>Edit Power Search Fields</value>
         </textarea>
         <!-- content part -->
-        <textarea name="titlelabel" from="basetext_m">
+        <textarea name="titlelabel" from="baselabeltext">
             <area>50,75,-50,40</area>
             <value>Optional title phrase:</value>
         </textarea>
@@ -871,7 +870,7 @@
             <area>50,120,-50,40</area>
         </textedit>
 
-        <textarea name="subtitlelabel" from="basetext_m">
+        <textarea name="subtitlelabel" from="baselabeltext">
             <area>50,185,-50,40</area>
             <value>Optional subtitle phrase:</value>
         </textarea>
@@ -879,7 +878,7 @@
             <area>50,230,-50,40</area>
         </textedit>
 
-        <textarea name="desclabel" from="basetext_m">
+        <textarea name="desclabel" from="baselabeltext">
             <area>50,295,-50,40</area>
             <value>Optional subtitle phrase:</value>
         </textarea>
@@ -887,7 +886,7 @@
             <area>50,340,-50,40</area>
         </textedit>
 
-        <textarea name="categorylabel" from="basetext_m">
+        <textarea name="categorylabel" from="baselabeltext">
             <area>50,405,250,40</area>
             <value>Category:</value>
         </textarea>
@@ -895,7 +894,7 @@
             <area>300,405,-50,40</area>
         </buttonlist>
 
-        <textarea name="genrelabel" from="basetext_m">
+        <textarea name="genrelabel" from="baselabeltext">
             <area>50,470,250,40</area>
             <value>Genre:</value>
         </textarea>
@@ -903,7 +902,7 @@
             <area>300,470,-50,40</area>
         </buttonlist>
 
-        <textarea name="channellabel" from="basetext_m">
+        <textarea name="channellabel" from="baselabeltext">
             <area>50,535,250,40</area>
             <value>Channel:</value>
         </textarea>
@@ -1172,7 +1171,7 @@
         <!-- left side -->
         <group name="controls">
             <area>50,465,600,-115</area>
-            <textarea name="ruleactivelabel" from="basetext_m">
+            <textarea name="ruleactivelabel" from="baselabeltext">
                 <area>5,0,300,40</area>
                 <value>Recording Rule Active</value>
             </textarea>
@@ -1345,7 +1344,7 @@
             <buttonlist name="maxnewest" from="baseselector">
                 <area>0,325,100%,40</area>
             </buttonlist>
-            <textarea name="autoexpirelabel" from="basetext_m">
+            <textarea name="autoexpirelabel" from="baselabeltext">
                 <area>0,390,-50,40</area>
                 <value>Allow recordings to expire?</value>
             </textarea>
@@ -1388,7 +1387,7 @@
         <!-- left side -->
         <group name="controls">
             <area>50,470,600,-115</area>
-            <textarea name="metadatalookuplabel" from="basetext_m">
+            <textarea name="metadatalookuplabel" from="baselabeltext">
                 <area>0,0,-50,40</area>
                 <value>Automatically Look Up Metadata</value>
             </textarea>
@@ -1396,7 +1395,7 @@
                 <area>100%-32,4,32,32</area>
             </checkbox>
 
-            <textarea name="autocommflaglabel" from="basetext_m">
+            <textarea name="autocommflaglabel" from="baselabeltext">
                 <area>0,65,-50,40</area>
                 <value>Commercial Flag new recordings</value>
             </textarea>
@@ -1404,7 +1403,7 @@
                 <area>100%-32,69,32,32</area>
             </checkbox>
 
-            <textarea name="autotranscodelabel" from="basetext_m">
+            <textarea name="autotranscodelabel" from="baselabeltext">
                 <area>0,130,-50,40</area>
                 <value>Transcode new recordings</value>
             </textarea>
@@ -1417,7 +1416,7 @@
                 <helptext></helptext>
             </buttonlist>
 
-            <textarea name="userjob1label" from="basetext_m">
+            <textarea name="userjob1label" from="baselabeltext">
                 <area>0,260,-50,40</area>
                 <value>Run User Job #1</value>
             </textarea>
@@ -1425,7 +1424,7 @@
                 <area>100%-32,264,32,32</area>
             </checkbox>
 
-            <textarea name="userjob2label" from="basetext_m">
+            <textarea name="userjob2label" from="baselabeltext">
                 <area>0,325,-50,40</area>
                 <value>Run User Job #2</value>
             </textarea>
@@ -1433,7 +1432,7 @@
                 <area>100%-32,329,32,32</area>
             </checkbox>
 
-            <textarea name="userjob3label" from="basetext_m">
+            <textarea name="userjob3label" from="baselabeltext">
                 <area>0,390,-50,40</area>
                 <value>Run User Job #3</value>
             </textarea>
@@ -1441,7 +1440,7 @@
                 <area>100%-32,394,32,32</area>
             </checkbox>
 
-            <textarea name="userjob4label" from="basetext_m">
+            <textarea name="userjob4label" from="baselabeltext">
                 <area>0,455,-50,40</area>
                 <value>Run User Job #4</value>
             </textarea>
@@ -1496,7 +1495,7 @@
                 <area>50%,0,100%,40</area>
             </textedit>
 
-            <textarea name="seasonlabel" from="basetext_m">
+            <textarea name="seasonlabel" from="baselabeltext">
                 <area>0,65,180,40</area>
                 <value>Season:</value>
             </textarea>
@@ -1504,7 +1503,7 @@
                 <area>180,65,100,40</area>
             </spinbox>
 
-            <textarea name="episodelabel" from="basetext_m">
+            <textarea name="episodelabel" from="baselabeltext">
                 <area>320,65,180,40</area>
                 <value>Episode:</value>
             </textarea>
@@ -1586,7 +1585,7 @@
         <!-- middle part -->
         <group name="content">
             <area>50%-500,425,1000,-115</area>
-            <textarea name="ruleslabel" from="basetext_m">
+            <textarea name="ruleslabel" from="baselabeltext">
                 <area>0,0,300,40</area>
                 <value>Existing Rules:</value>
             </textarea>
@@ -1594,7 +1593,7 @@
                 <area>300,0,700,40</area>
             </buttonlist>
 
-            <textarea name="titlelabel" from="basetext_m">
+            <textarea name="titlelabel" from="baselabeltext">
                 <area>0,65,300,40</area>
                 <value>Rule Name:</value>
             </textarea>
@@ -1602,7 +1601,7 @@
                 <area>300,65,700,40</area>
             </textedit>
 
-            <textarea name="clauseslabel" from="basetext_m">
+            <textarea name="clauseslabel" from="baselabeltext">
                 <area>0,130,300,40</area>
                 <value>Sample Clauses:</value>
             </textarea>
@@ -1613,7 +1612,7 @@
                 <area>300,195,300,40</area>
             </textarea>
 
-            <textarea name="descriptionlabel" from="basetext_m">
+            <textarea name="descriptionlabel" from="baselabeltext">
                 <area>0,250,300,40</area>
                 <value>Description:</value>
             </textarea>
@@ -1621,7 +1620,7 @@
                 <area>300,260,100%,160</area>
             </textedit>
 
-            <textarea name="subtitlelabel" from="basetext_m">
+            <textarea name="subtitlelabel" from="baselabeltext">
                 <area>0,445,300,40</area>
                 <value>Additional Tables:</value>
             </textarea>

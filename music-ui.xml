@@ -367,31 +367,31 @@
             <area>50%-650,500,1300,-115</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="titlelabel" from="basetext_m">
+                <textarea name="titlelabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Title:</value>
                 </textarea>
-                <textarea name="artistlabel" from="basetext_m">
+                <textarea name="artistlabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Artist:</value>
                 </textarea>
-                <textarea name="compilationlabel" from="basetext_m">
+                <textarea name="compilationlabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Compilation:</value>
                 </textarea>
-                <textarea name="compartistlabel" from="basetext_m">
+                <textarea name="compartistlabel" from="baselabeltext">
                     <area>0,195,100%,40</area>
                     <value>Comp. Artist:</value>
                 </textarea>
-                <textarea name="albumlabel" from="basetext_m">
+                <textarea name="albumlabel" from="baselabeltext">
                     <area>0,260,100%,40</area>
                     <value>Album:</value>
                 </textarea>
-                <textarea name="genrelabel" from="basetext_m">
+                <textarea name="genrelabel" from="baselabeltext">
                     <area>0,325,100%,40</area>
                     <value>Genre:</value>
                 </textarea>
-                <textarea name="ratinglabel" from="basetext_m">
+                <textarea name="ratinglabel" from="baselabeltext">
                     <area>0,390,100%,40</area>
                     <value>Rating:</value>
                 </textarea>
@@ -532,7 +532,7 @@
                 <area>50%-100,50%-100,200,200</area>
             </imagetype>
         </group>
-        <textarea name="labelimagetypetext" from="basetext_m">
+        <textarea name="labelimagetypetext" from="baselabeltext">
             <area>50%+300,465,100,40</area>
             <alpha>200</alpha>
             <value>Type:</value>
@@ -541,7 +541,7 @@
             <area>50%+475,465,-25,40</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="labelimagefilenametext" from="basetext_m">
+        <textarea name="labelimagefilenametext" from="baselabeltext">
             <area>50%+300,530,-25,40</area>
             <alpha>200</alpha>
             <value>Filename:</value>

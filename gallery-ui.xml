@@ -46,15 +46,15 @@
             <area>50,75,-50,-90</area>
             <group name="labels">
                 <area>0,0,250,100%</area>
-                <textarea name="labeldirfilter" from="basetext_m">
+                <textarea name="labeldirfilter" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Folder filter :</value>
                 </textarea>
-                <textarea name="labeltypefilter" from="basetext_m">
+                <textarea name="labeltypefilter" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Type filter :</value>
                 </textarea>
-                <textarea name="labelsort" from="basetext_m">
+                <textarea name="labelsort" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Sort by :</value>
                 </textarea>

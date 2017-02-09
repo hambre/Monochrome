@@ -100,19 +100,17 @@
             <!-- right part -->
             <group name="right">
                 <area>1300,0,-1,-0</area>
-                <textarea name="directorlabel" from="basetext_m" depends="director">
+                <textarea name="labeldirector" from="baselabeltext" depends="director">
                     <area>0,0,250,50</area>
                     <value>Director</value>
-                    <alpha>200</alpha>
                 </textarea>
                 <textarea name="director" from="basetext_s">
                     <area>0,40,350,50</area>
                     <alpha>150</alpha>
                 </textarea>
-                <textarea name="castlabel" from="basetext_m" depends="cast">
+                <textarea name="labelcast" from="baselabeltext" depends="cast">
                     <area>0,90,250,50</area>
                     <value>Cast</value>
-                    <alpha>200</alpha>
                 </textarea>
                 <textarea name="cast" from="basetext_s">
                     <area>0,140,100%,210</area>
@@ -415,7 +413,7 @@
             </group>
             <group name="people">
                 <area>300,100%-25,100%,32</area>
-                <textarea name="castlabel" from="basetext_s" depends="cast">
+                <textarea name="labelcast" from="basetext_s" depends="cast">
                     <area>0,0,150,32</area>
                     <value>Cast</value>
                     <alpha>200</alpha>
@@ -549,91 +547,91 @@
         </textarea>
         <group name="content">
             <area>50,75,-50,-25</area>
-            <textarea name="labeltext" from="basetext_m">
+            <textarea name="labeltext" from="baselabeltext">
                 <area>0,0,150,40</area>
                 <value>Text Filter:</value>
             </textarea>
             <textedit name="textfilter_input" from="basetextedit">
                 <area>200,0,-1,40</area>
             </textedit>
-            <textarea name="labelwatched" from="basetext_m">
+            <textarea name="labelwatched" from="baselabeltext">
                 <area>0,50,150,40</area>
                 <value>Watched:</value>
             </textarea>
             <buttonlist name="watched_select" from="baseselector">
                 <area>200,50,-1,40</area>
             </buttonlist>
-            <textarea name="labelcategory" from="basetext_m">
+            <textarea name="labelcategory" from="baselabeltext">
                 <area>0,100,200,40</area>
                 <value>Category:</value>
             </textarea>
             <buttonlist name="category_select" from="baseselector">
                 <area>200,100,-1,40</area>
             </buttonlist>
-            <textarea name="labelgenre" from="basetext_m">
+            <textarea name="labelgenre" from="baselabeltext">
                 <area>0,150,200,40</area>
                 <value>Genre:</value>
             </textarea>
             <buttonlist name="genre_select" from="baseselector">
                 <area>200,150,-1,40</area>
             </buttonlist>
-            <textarea name="labelyear" from="basetext_m">
+            <textarea name="labelyear" from="baselabeltext">
                 <area>0,200,200,40</area>
                 <value>Year:</value>
             </textarea>
             <buttonlist name="year_select" from="baseselector">
                 <area>200,200,-1,40</area>
             </buttonlist>
-            <textarea name="labelrating" from="basetext_m">
+            <textarea name="labelrating" from="baselabeltext">
                 <area>0,250,200,40</area>
                 <value>Rating:</value>
             </textarea>
             <buttonlist name="userrating_select" from="baseselector">
                 <area>200,250,-1,40</area>
             </buttonlist>
-            <textarea name="labelcountry" from="basetext_m">
+            <textarea name="labelcountry" from="baselabeltext">
                 <area>0,300,200,40</area>
                 <value>Country:</value>
             </textarea>
             <buttonlist name="country_select" from="baseselector">
                 <area>200,300,-1,40</area>
             </buttonlist>
-            <textarea name="labelcast" from="basetext_m">
+            <textarea name="labelcast" from="baselabeltext">
                 <area>0,350,200,40</area>
                 <value>Cast:</value>
             </textarea>
             <buttonlist name="cast_select" from="baseselector">
                 <area>200,350,-1,40</area>
             </buttonlist>
-            <textarea name="labelruntime" from="basetext_m">
+            <textarea name="labelruntime" from="baselabeltext">
                 <area>0,400,200,40</area>
                 <value>Runtime:</value>
             </textarea>
             <buttonlist name="runtime_select" from="baseselector">
                 <area>200,400,-1,40</area>
             </buttonlist>
-            <textarea name="labelbrowse" from="basetext_m">
+            <textarea name="labelbrowse" from="baselabeltext">
                 <area>0,450,200,40</area>
                 <value>Browse:</value>
             </textarea>
             <buttonlist name="browse_select" from="baseselector">
                 <area>200,450,-1,40</area>
             </buttonlist>
-            <textarea name="labelinetref" from="basetext_m">
+            <textarea name="labelinetref" from="baselabeltext">
                 <area>0,500,200,40</area>
                 <value>Inetref:</value>
             </textarea>
             <buttonlist name="inetref_select" from="baseselector">
                 <area>200,500,-1,40</area>
             </buttonlist>
-            <textarea name="labelcover" from="basetext_m">
+            <textarea name="labelcover" from="baselabeltext">
                 <area>0,550,200,40</area>
                 <value>Coverfile:</value>
             </textarea>
             <buttonlist name="coverfile_select" from="baseselector">
                 <area>200,550,-1,40</area>
             </buttonlist>
-            <textarea name="labelorder" from="basetext_m">
+            <textarea name="labelorder" from="baselabeltext">
                 <area>0,600,200,40</area>
                 <value>Order By:</value>
             </textarea>
@@ -668,31 +666,31 @@
             <area>50%-500,50%-300,1000,400</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="labeldefplayer" from="basetext_m">
+                <textarea name="labeldefplayer" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Default player:</value>
                 </textarea>
-                <textarea name="labelaltcheck" from="basetext_m">
+                <textarea name="labelaltcheck" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Enable Alternate Player:</value>
                 </textarea>
-                <textarea name="labelaltplayer" from="basetext_m">
+                <textarea name="labelaltplayer" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Alternative player:</value>
                 </textarea>
-                <textarea name="labeldvddrive" from="basetext_m">
+                <textarea name="labeldvddrive" from="baselabeltext">
                     <area>0,220,100%,40</area>
                     <value>DVD drive:</value>
                 </textarea>
-                <textarea name="labeldvdplayer" from="basetext_m">
+                <textarea name="labeldvdplayer" from="baselabeltext">
                     <area>0,285,100%,40</area>
                     <value>DVD player:</value>
                 </textarea>
-                <textarea name="labelbdmount" from="basetext_m">
+                <textarea name="labelbdmount" from="baselabeltext">
                     <area>0,375,100%,40</area>
                     <value>Blu-ray Mount:</value>
                 </textarea>
-                <textarea name="labelbdregion" from="basetext_m">
+                <textarea name="labelbdregion" from="baselabeltext">
                     <area>0,440,100%,40</area>
                     <value>Blu-ray Region:</value>
                 </textarea>
@@ -747,23 +745,23 @@
             <area>50%-400,50%-250,800,300</area>
             <group name="labels">
                 <area>0,0,700,100%</area>
-                <textarea name="labelauto" from="basetext_m">
+                <textarea name="labelauto" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Perform metadata update after video scan</value>
                 </textarea>
-                <textarea name="labelunknown" from="basetext_m">
+                <textarea name="labelunknown" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Display unknown file types</value>
                 </textarea>
-                <textarea name="labelbrowse" from="basetext_m">
+                <textarea name="labelbrowse" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Enable metadata in file browse mode</value>
                 </textarea>
-                <textarea name="labelrandom" from="basetext_m">
+                <textarea name="labelrandom" from="baselabeltext">
                     <area>0,195,100%,40</area>
                     <value>Enable Random Trailer Playback</value>
                 </textarea>
-                <textarea name="labelnum" from="basetext_m">
+                <textarea name="labelnum" from="baselabeltext">
                     <area>0,260,100%,40</area>
                     <value>Trailers to Play:</value>
                 </textarea>
@@ -818,51 +816,51 @@
             <area>50%-500,75,1000,870</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="labeltitle" from="basetext_m">
+                <textarea name="labeltitle" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Title:</value>
                 </textarea>
-                <textarea name="labelsubtitle" from="basetext_m">
+                <textarea name="labelsubtitle" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Subtitle:</value>
                 </textarea>
-                <textarea name="labeldescription" from="basetext_m">
+                <textarea name="labeldescription" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Description:</value>
                 </textarea>
-                <textarea name="labelcategory" from="basetext_m">
+                <textarea name="labelcategory" from="baselabeltext">
                     <area>0,315,100%,40</area>
                     <value>Category:</value>
                 </textarea>
-                <textarea name="labelinetref" from="basetext_m">
+                <textarea name="labelinetref" from="baselabeltext">
                     <area>0,380,100%,40</area>
                     <value>TMDB/TVDB ID:</value>
                 </textarea>
-                <textarea name="labelseason" from="basetext_m">
+                <textarea name="labelseason" from="baselabeltext">
                     <area>0,445,100%,40</area>
                     <value>Season:</value>
                 </textarea>
-                <textarea name="labelyear" from="basetext_m">
+                <textarea name="labelyear" from="baselabeltext">
                     <area>0,510,100%,40</area>
                     <value>Year:</value>
                 </textarea>
-                <textarea name="labeluserrating" from="basetext_m">
+                <textarea name="labeluserrating" from="baselabeltext">
                     <area>0,575,100%,40</area>
                     <value>User Rating:</value>
                 </textarea>
-                <textarea name="labelwatched" from="basetext_m">
+                <textarea name="labelwatched" from="baselabeltext">
                     <area>0,640,100%,40</area>
                     <value>Watched:</value>
                 </textarea>
-                <textarea name="labellevel" from="basetext_m">
+                <textarea name="labellevel" from="baselabeltext">
                     <area>0,705,100%,40</area>
                     <value>Parental Control:</value>
                 </textarea>
-                <textarea name="labelplayer" from="basetext_m">
+                <textarea name="labelplayer" from="baselabeltext">
                     <area>0,770,100%,40</area>
                     <value>Unique Player Command:</value>
                 </textarea>
-                <textarea name="labelchild" from="basetext_m">
+                <textarea name="labelchild" from="baselabeltext">
                     <area>0,835,100%,40</area>
                     <value>File to Always Play Next:</value>
                 </textarea>
@@ -887,7 +885,7 @@
                 <spinbox name="season" from="basespinbox">
                     <area>0,445,125,40</area>
                 </spinbox>
-                <textarea name="labelepisode" from="basetext_m">
+                <textarea name="labelepisode" from="baselabeltext">
                     <area>250,445,250,40</area>
                     <value>Episode:</value>
                 </textarea>
@@ -897,7 +895,7 @@
                 <spinbox name="year_spin" from="basespinbox">
                     <area>0,510,125,40</area>
                 </spinbox>
-                <textarea name="labellength" from="basetext_m">
+                <textarea name="labellength" from="baselabeltext">
                     <area>250,510,250,40</area>
                     <value>Length:</value>
                 </textarea>
@@ -907,7 +905,7 @@
                 <spinbox name="userrating_spin" from="basespinbox">
                     <area>0,575,125,40</area>
                 </spinbox>
-                <textarea name="labelrating" from="basetext_m">
+                <textarea name="labelrating" from="baselabeltext">
                     <area>250,575,250,40</area>
                     <value>Movie Rating:</value>
                 </textarea>
@@ -917,7 +915,7 @@
                 <checkbox name="watched_check" from="basecheckbox">
                     <position>0,645</position>
                 </checkbox>
-                <textarea name="labelbrowse" from="basetext_m">
+                <textarea name="labelbrowse" from="baselabeltext">
                     <area>250,640,250,40</area>
                     <value>Browsable:</value>
                 </textarea>
@@ -939,7 +937,7 @@
             </shape>
             <group name="buttons">
                 <area>1100,0,-25,100%</area>
-                <textarea name="labelfanart" from="basetext_m">
+                <textarea name="labelfanart" from="baselabeltext">
                     <area>0,0,200,40</area>
                     <value>Fanart:</value>
                 </textarea>
@@ -951,7 +949,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labelcoverart" from="basetext_m">
+                <textarea name="labelcoverart" from="baselabeltext">
                     <area>0,195,200,40</area>
                     <value>Coverart:</value>
                 </textarea>
@@ -963,7 +961,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labelbanner" from="basetext_m">
+                <textarea name="labelbanner" from="baselabeltext">
                     <area>0,390,200,40</area>
                     <value>Banner:</value>
                 </textarea>
@@ -975,7 +973,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labelscreenshot" from="basetext_m">
+                <textarea name="labelscreenshot" from="baselabeltext">
                     <area>0,585,200,40</area>
                     <value>Screenshot:</value>
                 </textarea>
@@ -987,7 +985,7 @@
                     <value>Find Online...</value>
                 </button>
 
-                <textarea name="labeltrailer" from="basetext_m">
+                <textarea name="labeltrailer" from="baselabeltext">
                     <area>0,780,200,40</area>
                     <value>Trailer:</value>
                 </textarea>
@@ -1075,19 +1073,19 @@
             <area>50%-500,50%-200,1000,400</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="labelextension" from="basetext_m">
+                <textarea name="labelextension" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Extension:</value>
                 </textarea>
-                <textarea name="labelcommand" from="basetext_m">
+                <textarea name="labelcommand" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Command:</value>
                 </textarea>
-                <textarea name="labeldefault" from="basetext_m">
+                <textarea name="labeldefault" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Use default player:</value>
                 </textarea>
-                <textarea name="labelignore" from="basetext_m">
+                <textarea name="labelignore" from="baselabeltext">
                     <area>0,195,100%,40</area>
                     <value>Ignore:</value>
                 </textarea>

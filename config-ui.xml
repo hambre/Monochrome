@@ -61,19 +61,19 @@
             <area>50%-500,500,1000,300</area>
             <group name="labels">
                 <area>0,0,60%,100%</area>
-                <textarea name="movielabel" from="basetext_m">
+                <textarea name="movielabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Movie Metadata Source:</value>
                 </textarea>
-                <textarea name="tvlabel" from="basetext_m">
+                <textarea name="tvlabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Television Metadata Source:</value>
                 </textarea>
-                <textarea name="gamelabel" from="basetext_m">
+                <textarea name="gamelabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Game Metadata Source:</value>
                 </textarea>
-                <textarea name="updatelabel" from="basetext_m">
+                <textarea name="updatelabel" from="baselabeltext">
                     <area>0,195,100%,40</area>
                     <value>Perform daily updates of recording artwork</value>
                 </textarea>
@@ -155,11 +155,11 @@
             <area>50%-500,465,1000,500</area>
             <group name="labels">
                 <area>0,0,40%,100%</area>
-                <textarea name="devicelabel" from="basetext_m">
+                <textarea name="devicelabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Audio Device:</value>
                 </textarea>
-                <textarea name="speakerlabel" from="basetext_m">
+                <textarea name="speakerlabel" from="baselabeltext">
                     <area>0,390,100%,40</area>
                     <value>Number of Speakers:</value>
                 </textarea>
@@ -172,35 +172,35 @@
                 <checkbox name="ac3check" from="basecheckbox">
                     <area>0,69,32,32</area>
                 </checkbox>
-                <textarea name="ac3label" from="basetext_m">
+                <textarea name="ac3label" from="baselabeltext">
                     <area>50,65,100%,40</area>
                     <value>My audio subsystem supports Dolby Digital</value>
                 </textarea>
                 <checkbox name="dtscheck" from="basecheckbox">
                     <area>0,134,32,32</area>
                 </checkbox>
-                <textarea name="dtslabel" from="basetext_m">
+                <textarea name="dtslabel" from="baselabeltext">
                     <area>50,130,100%,40</area>
                     <value>My audio subsystem supports DTS</value>
                 </textarea>
                 <checkbox name="eac3check" from="basecheckbox">
                     <area>0,199,32,32</area>
                 </checkbox>
-                <textarea name="eac3label" from="basetext_m">
+                <textarea name="eac3label" from="baselabeltext">
                     <area>50,195,100%,40</area>
                     <value>My audio subsystem supports E-AC-3</value>
                 </textarea>
                 <checkbox name="truehdcheck" from="basecheckbox">
                     <area>0,264,32,32</area>
                 </checkbox>
-                <textarea name="truehdlabel" from="basetext_m">
+                <textarea name="truehdlabel" from="baselabeltext">
                     <area>50,260,100%,40</area>
                     <value>My audio subsystem supports TrueHD</value>
                 </textarea>
                 <checkbox name="dtshdcheck" from="basecheckbox">
                     <area>0,329,32,32</area>
                 </checkbox>
-                <textarea name="dtshdlabel" from="basetext_m">
+                <textarea name="dtshdlabel" from="baselabeltext">
                     <area>50,325,100%,40</area>
                     <value>My audio subsystem supports DTS-HD</value>
                 </textarea>
@@ -236,7 +236,7 @@
         </textarea>
         <group name="content">
             <area>50%-450,500,900,200</area>
-            <textarea name="profilelabel" from="basetext_m">
+            <textarea name="profilelabel" from="baselabeltext">
                 <area>0,0,50%,40</area>
                 <value>Video Playback Profile:</value>
             </textarea>
