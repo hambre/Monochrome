@@ -48,10 +48,8 @@
                     <statetype name="playstate">
                         <area>100%-37,50%-16,32,32</area>
                         <state name="playing">
-                            <imagetype name="animation">
+                            <imagetype name="animation" from="basebusyanimation">
                                 <area>0,0,100%,100%</area>
-                                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                                <delay>75</delay>
                             </imagetype>
                         </state>
                     </statetype>
@@ -103,20 +101,21 @@
                 </textarea>
             </group>
 
-            <group name="stationdetails">
+            <group name="broadcasterdetails">
                 <area>0,100%-220,100%,100%</area>
-                <imagetype name="stationicon" from="baseicon">
+                <imagetype name="broadcastericon" from="baseicon">
                     <area>15,0,90,90</area>
                     <filename>images/icons/SenderBig.png</filename>
                 </imagetype>
-                <textarea name="station" from="basetext_m">
+                <textarea name="broadcaster" from="basetext_m">
                     <area>150,0,100%,40</area>
-                    <template>%STATION% ~ %CHANNEL%</template>
+                    <template>%BROADCASTER% ~ %CHANNEL%</template>
                     <alpha>150</alpha>
                 </textarea>
                 <textarea name="url" from="basetext_m">
                     <area>150,50,100%,40</area>
                     <alpha>150</alpha>
+                    <cutdown>no</cutdown>
                     <scroll direction="horizontal"/>
                 </textarea>
             </group>
@@ -166,57 +165,118 @@
             <value>Add/Edit Music Stream</value>
         </textarea>
         <group name="content">
-            <area>50%-500,530,1000,-115</area>
-            <group name="labels">
-                <area>0,0,30%,100%</area>
-                <textarea name="stationlabel" from="baselabeltext">
-                    <area>0,0,100%,40</area>
-                    <value>Station:</value>
-                </textarea>
-                <textarea name="channellabel" from="baselabeltext">
-                    <area>0,65,100%,40</area>
-                    <value>Channel:</value>
-                </textarea>
-                <textarea name="urllabel" from="baselabeltext">
-                    <area>0,130,100%,40</area>
-                    <value>URL:</value>
-                </textarea>
-                <textarea name="logolabel" from="baselabeltext">
-                    <area>0,195,100%,40</area>
-                    <value>Logo URL:</value>
-                </textarea>
-                <textarea name="genrelabel" from="baselabeltext">
-                    <area>0,260,100%,40</area>
-                    <value>Genres:</value>
-                </textarea>
-                <textarea name="formatlabel" from="baselabeltext">
-                    <area>0,325,100%,40</area>
-                    <value>Metadata Format:</value>
-                </textarea>
+            <area>50,500,-50,-115</area>
+            <group name="left">
+                <area>0,0,50%-25,100%</area>
+                <group name="leftlabels">
+                    <area>0,0,35%,100%</area>
+                    <textarea name="broadcasterlabel" from="baselabeltext">
+                        <area>0,0,100%,40</area>
+                        <value>Broadcaster:</value>
+                    </textarea>
+                    <textarea name="channellabel" from="baselabeltext">
+                        <area>0,65,100%,40</area>
+                        <value>Channel:</value>
+                    </textarea>
+                    <textarea name="descriptionlabel" from="baselabeltext">
+                        <area>0,130,100%,40</area>
+                        <value>Description:</value>
+                    </textarea>
+                    <textarea name="genrelabel" from="baselabeltext">
+                        <area>0,195,100%,40</area>
+                        <value>Genres:</value>
+                    </textarea>
+                    <textarea name="formatlabel" from="baselabeltext">
+                        <area>0,260,100%,40</area>
+                        <value>Metadata Format:</value>
+                    </textarea>
+                    <textarea name="countrylabel" from="baselabeltext">
+                        <area>0,325,100%,40</area>
+                        <value>Country:</value>
+                    </textarea>
+                    <textarea name="languagelabel" from="baselabeltext">
+                        <area>0,390,100%,40</area>
+                        <value>Language:</value>
+                    </textarea>
+                </group>
+                <group name="leftcontrols">
+                    <area>35%,0,100%,100%</area>
+                    <textedit name="broadcasteredit" from="basetextedit">
+                        <area>0,0,100%-125,40</area>
+                    </textedit>
+                    <button name="searchbutton" from="basesearchbutton">
+                        <area>100%-100,0,100%,40</area>
+                    </button>
+                    <textedit name="channeledit" from="basetextedit">
+                        <area>0,65,100%,40</area>
+                    </textedit>
+                    <textedit name="descriptionedit" from="basetextedit">
+                        <area>0,130,100%,40</area>
+                    </textedit>
+                    <textedit name="genreedit" from="basetextedit">
+                        <area>0,195,100%,40</area>
+                    </textedit>
+                    <textedit name="formatedit" from="basetextedit">
+                        <area>0,260,100%,40</area>
+                    </textedit>
+                    <textedit name="countryedit" from="basetextedit">
+                        <area>0,325,100%,40</area>
+                    </textedit>
+                    <textedit name="languageedit" from="basetextedit">
+                        <area>0,390,100%,40</area>
+                    </textedit>
+                </group>
             </group>
-            <group name="controls">
-                <area>30%,0,100%,100%</area>
-                <textedit name="stationedit" from="basetextedit">
-                    <area>0,0,100%-125,40</area>
-                </textedit>
-                <button name="searchbutton" from="basesearchbutton">
-                    <area>100%-100,0,100%,40</area>
-                </button>
-                <textedit name="channeledit" from="basetextedit">
-                    <area>0,65,100%,40</area>
-                </textedit>
-                <textedit name="urledit" from="basetextedit">
-                    <area>0,130,100%,40</area>
-                </textedit>
-                <textedit name="logourledit" from="basetextedit">
-                    <area>0,195,100%,40</area>
-                </textedit>
-                <textedit name="genreedit" from="basetextedit">
-                    <area>0,260,100%,40</area>
-                </textedit>
-                <textedit name="formatedit" from="basetextedit">
-                    <area>0,325,100%,40</area>
-                </textedit>
+            <group name="right">
+                <area>50%+25,0,100%,100%</area>
+                <group name="rightlabels">
+                    <area>0,0,20%,100%</area>
+                    <textarea name="url1label" from="baselabeltext">
+                        <area>0,0,100%,40</area>
+                        <value>URL:</value>
+                    </textarea>
+                    <textarea name="url2label" from="baselabeltext">
+                        <area>0,65,100%,40</area>
+                        <value>URL:</value>
+                    </textarea>
+                    <textarea name="url3label" from="baselabeltext">
+                        <area>0,130,100%,40</area>
+                        <value>URL:</value>
+                    </textarea>
+                    <textarea name="url4label" from="baselabeltext">
+                        <area>0,195,100%,40</area>
+                        <value>URL:</value>
+                    </textarea>
+                    <textarea name="url5label" from="baselabeltext">
+                        <area>0,260,100%,40</area>
+                        <value>URL:</value>
+                    </textarea>
+                    <textarea name="logolabel" from="baselabeltext">
+                        <area>0,325,100%,40</area>
+                        <value>Logo URL:</value>
+                    </textarea>
+                </group>
+                <group name="rightcontrols">
+                    <area>20%,0,100%,100%</area>
+                    <textedit name="url1edit" from="basetextedit">
+                        <area>0,0,100%,40</area>
+                    </textedit>
+                    <textedit name="url2edit" from="basetextedit">
+                        <area>0,65,100%,40</area>
+                    </textedit>
+                    <textedit name="url3edit" from="basetextedit">
+                        <area>0,130,100%,40</area>
+                    </textedit>
+                    <textedit name="url4edit" from="basetextedit">
+                        <area>0,195,100%,40</area>
+                    </textedit>
+                    <textedit name="url5edit" from="basetextedit">
+                        <area>0,260,100%,40</area>
+                    </textedit>
+                    <textedit name="logourledit" from="basetextedit">
+                        <area>0,325,100%,40</area>
+                    </textedit>
+                </group>
             </group>
             <textarea name="helptext" from="basehelptext">
                 <area>0,100%-105,100%,105</area>
@@ -247,36 +307,50 @@
             <area>25,500,700,-115</area>
             <group name="labels">
                 <area>0,0,40%,100%</area>
-                <textarea name="stationlabel" from="baselabeltext">
+                <textarea name="broadcasterlabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
-                    <value>Station:</value>
+                    <value>Broadcaster:</value>
                 </textarea>
                 <textarea name="genrelabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Genre:</value>
                 </textarea>
-                <textarea name="channellabel" from="baselabeltext">
+                <textarea name="countrylabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
+                    <value>Country:</value>
+                </textarea>
+                <textarea name="languagelabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Language:</value>
+                </textarea>
+                <textarea name="channellabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
                     <value>Channel:</value>
                 </textarea>
                 <textarea name="matcheslabel" from="baselabeltext">
-                    <area>0,195,300,40</area>
+                    <area>0,325,300,40</area>
                     <value>Matches:</value>
                 </textarea>
             </group>
             <group name="controls">
                 <area>40%,0,100%,100%</area>
-                <buttonlist name="stationlist" from="baseselector">
+                <buttonlist name="broadcasterlist" from="baseselector">
                     <area>0,0,100%,40</area>
                 </buttonlist>
                 <buttonlist name="genrelist" from="baseselector">
                     <area>0,65,100%,40</area>
                 </buttonlist>
-                <textedit name="channeledit" from="basetextedit">
+                <buttonlist name="countrylist" from="baseselector">
                     <area>0,130,100%,40</area>
+                </buttonlist>
+                <buttonlist name="languagelist" from="baseselector">
+                    <area>0,195,100%,40</area>
+                </buttonlist>
+                <textedit name="channeledit" from="basetextedit">
+                    <area>0,260,100%,40</area>
                 </textedit>
                 <textarea name="matchestext" from="basetext_m">
-                    <area>0,195,100%,40</area>
+                    <area>0,325,100%,40</area>
                 </textarea>
             </group>
         </group>

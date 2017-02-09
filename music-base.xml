@@ -519,18 +519,16 @@
                 <shape name="itemseparator" from="baseitemseparator_h">
                     <position>0,100%</position>
                 </shape>
-                <textarea name="station" from="baseitemtext">
-                    <template>%STATION% ~ %CHANNEL% ~ %GENRE%</template>
+                <textarea name="broadcaster" from="baseitemtext">
+                    <template>%BROADCASTER% ~ %CHANNEL% ~ %GENRE%</template>
                     <area>5,0,-45,100%</area>
                     <alpha>100</alpha>
                 </textarea>
                 <statetype name="playstate">
                     <area>100%-37,50%-16,32,32</area>
                     <state name="playing">
-                        <imagetype name="animation">
+                        <imagetype name="animation" from="basebusyanimation">
                             <area>0,0,100%,100%</area>
-                            <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                            <delay>75</delay>
                         </imagetype>
                     </state>
                 </statetype>

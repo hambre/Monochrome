@@ -86,17 +86,17 @@
             <area>50%-500, 500, 1000, 500</area>
             <group name="labels">
                 <area>0,0,30%,100%</area>
-                <textarea name="categorylabel" from="basetext_m">
+                <textarea name="categorylabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Category:</value>
                     <alpha>200</alpha>
                 </textarea>
-                <textarea name="namelabel" from="basetext_m">
+                <textarea name="namelabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Name:</value>
                     <alpha>200</alpha>
                 </textarea>
-                <textarea name="urllabel" from="basetext_m">
+                <textarea name="urllabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>URL:</value>
                     <alpha>200</alpha>
@@ -138,17 +138,17 @@
             <area>50%-500, 300, 1000, 200</area>
             <group name="labels">
                 <area>0,0,30%,100%</area>
-                <textarea name="commandlabel" from="basetext_m">
+                <textarea name="commandlabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Command:</value>
                     <alpha>200</alpha>
                 </textarea>
-                <textarea name="zoomlabel" from="basetext_m">
+                <textarea name="zoomlabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Zoom:</value>
                     <alpha>200</alpha>
                 </textarea>
-                <textarea name="pluginlabel" from="basetext_m">
+                <textarea name="pluginlabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Enable plugins:</value>
                     <alpha>200</alpha>

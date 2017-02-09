@@ -34,10 +34,8 @@
                     <statetype name="playstate">
                         <area>100%-37,50%-16,32,32</area>
                         <state name="playing">
-                            <imagetype name="animation">
+                            <imagetype name="animation" from="basebusyanimation">
                                 <area>0,0,100%,100%</area>
-                                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                                <delay>75</delay>
                             </imagetype>
                         </state>
                     </statetype>
@@ -62,6 +60,100 @@
         <group name="imagedetails" from="musiccoverart"/>
         <group name="trackdetails" from="musictrackdetails"/>
         <group name="progressdetails" from="musicprogress" depends="title"/>
+        <group name="playbackbuttons" from="musicbuttons"/>
+        <group name="playbackstate" from="musicplaybackstate"/>
+        <group name="playliststate" from="musicstate"/>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="trackslyricsview" include="music-base.xml">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Tracks Lyrics View</value>
+        </textarea>
+
+        <textarea name="notracks" from="basetext_m">
+            <area>100,465,-100,-115</area>
+            <align>center</align>
+            <value>You haven't selected any tracks to play</value>
+        </textarea>
+
+        <buttonlist name="currentplaylist" from="baseitemlist">
+            <area>25,465,50%-450,-115</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,55</area>
+                <state name="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="itemseparator" from="baseitemseparator_h">
+                        <position>0,100%</position>
+                    </shape>
+                    <textarea name="title" from="baseitemtext">
+                        <template>%ARTIST% ~ %TITLE%</template>
+                        <area>5,0,-45,100%</area>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <statetype name="playstate">
+                        <area>100%-37,50%-16,32,32</area>
+                        <state name="playing">
+                            <imagetype name="animation" from="basebusyanimation">
+                                <area>0,0,100%,100%</area>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="background" from="basecontrolbackground">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <shape name="itemseparator"/>
+                    <textarea name="title">
+                        <scroll direction="horizontal" />
+                        <cutdown>no</cutdown>
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive"/>
+            </statetype>
+        </buttonlist>
+        <group name="lyrcis">
+            <area>50%-400,465,800,-115</area>
+            <buttonlist name="lyrics_list" from="baseitemlist">
+                <area>0,0,100%,100%</area>
+            </buttonlist>
+            <statetype name="loading_state">
+                <area>50%-25,50%-100,50,50</area>
+                <state name="on">
+                    <imagetype name="animation">
+                        <area>0,0,50,50</area>
+                        <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+                        <delay>75</delay>
+                    </imagetype>
+                </state>
+                <state name="off"/>
+            </statetype>
+            <textarea name="status_text" from="basetext_m">
+                <area>0,50%-20,100%,40</area>
+                <align>center</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
+        <group name="trackdetails" from="musictrackdetails">
+            <imagetype name="playcounticon">
+                <alpha>0</alpha>
+            </imagetype>
+            <textarea name="playcount">
+                <alpha>0</alpha>
+            </textarea>
+        </group>
+        <group name="progressdetails" from="musicprogress">
+            <area>50%+425,100%-247,-25,-115</area>
+        </group>
         <group name="playbackbuttons" from="musicbuttons"/>
         <group name="playbackstate" from="musicplaybackstate"/>
         <group name="playliststate" from="musicstate"/>
@@ -221,10 +313,8 @@
                     <statetype name="playstate">
                         <area>100%-37,50%-16,32,32</area>
                         <state name="playing">
-                            <imagetype name="animation">
+                            <imagetype name="animation" from="basebusyanimation">
                                 <area>0,0,100%,100%</area>
-                                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                                <delay>75</delay>
                             </imagetype>
                         </state>
                     </statetype>
@@ -277,31 +367,31 @@
             <area>50%-650,500,1300,-115</area>
             <group name="labels">
                 <area>0,0,350,100%</area>
-                <textarea name="titlelabel" from="basetext_m">
+                <textarea name="titlelabel" from="baselabeltext">
                     <area>0,0,100%,40</area>
                     <value>Title:</value>
                 </textarea>
-                <textarea name="artistlabel" from="basetext_m">
+                <textarea name="artistlabel" from="baselabeltext">
                     <area>0,65,100%,40</area>
                     <value>Artist:</value>
                 </textarea>
-                <textarea name="compilationlabel" from="basetext_m">
+                <textarea name="compilationlabel" from="baselabeltext">
                     <area>0,130,100%,40</area>
                     <value>Compilation:</value>
                 </textarea>
-                <textarea name="compartistlabel" from="basetext_m">
+                <textarea name="compartistlabel" from="baselabeltext">
                     <area>0,195,100%,40</area>
                     <value>Comp. Artist:</value>
                 </textarea>
-                <textarea name="albumlabel" from="basetext_m">
+                <textarea name="albumlabel" from="baselabeltext">
                     <area>0,260,100%,40</area>
                     <value>Album:</value>
                 </textarea>
-                <textarea name="genrelabel" from="basetext_m">
+                <textarea name="genrelabel" from="baselabeltext">
                     <area>0,325,100%,40</area>
                     <value>Genre:</value>
                 </textarea>
-                <textarea name="ratinglabel" from="basetext_m">
+                <textarea name="ratinglabel" from="baselabeltext">
                     <area>0,390,100%,40</area>
                     <value>Rating:</value>
                 </textarea>
@@ -442,7 +532,7 @@
                 <area>50%-100,50%-100,200,200</area>
             </imagetype>
         </group>
-        <textarea name="labelimagetypetext" from="basetext_m">
+        <textarea name="labelimagetypetext" from="baselabeltext">
             <area>50%+300,465,100,40</area>
             <alpha>200</alpha>
             <value>Type:</value>
@@ -451,7 +541,7 @@
             <area>50%+475,465,-25,40</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="labelimagefilenametext" from="basetext_m">
+        <textarea name="labelimagefilenametext" from="baselabeltext">
             <area>50%+300,530,-25,40</area>
             <alpha>200</alpha>
             <value>Filename:</value>
@@ -1399,5 +1489,75 @@
     </window>
 
     <!--====================================================================-->
+
+    <window name="editlyrics">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Add/Edit Lyrics</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,465,1000,100%-115</area>
+            <group name="labels">
+                <area>0,0,250,100%</area>
+                <textarea name="titlelabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Title:</value>
+                </textarea>
+                <textarea name="artistlabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Artist:</value>
+                </textarea>
+                <textarea name="albumlabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Album:</value>
+                </textarea>
+                <textarea name="grabberlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                    <value>Grabber:</value>
+                </textarea>
+                <textarea name="syncronizedlabel" from="baselabeltext">
+                    <area>0,260,100%,40</area>
+                    <value>Syncronized:</value>
+                </textarea>
+                <textarea name="lyricslabel" from="baselabeltext">
+                    <area>0,325,100%,40</area>
+                    <value>Lyrics:</value>
+                </textarea>
+            </group>
+            <group name="edits">
+                <area>275,0,100%,100%</area>
+                <textedit name="titleedit" from="basetextedit">
+                    <area>0,0,100%,40</area>
+                </textedit>
+                <textedit name="artistedit" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="albumedit" from="basetextedit">
+                    <area>0,130,100%,40</area>
+                </textedit>
+                <textedit name="grabberedit" from="basetextedit">
+                    <area>0,195,100%,40</area>
+                </textedit>
+                <checkbox name="syncronizedcheck" from="basecheckbox">
+                    <area>0,264,32,32</area>
+                </checkbox>
+                <textedit name="lyricsedit" from="basetexteditmulti">
+                    <area>0,325,100%,100%</area>
+                </textedit>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="okbutton" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancelbutton" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
 
 </mythuitheme>

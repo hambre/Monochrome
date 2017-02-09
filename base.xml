@@ -397,6 +397,11 @@
         <alpha>50</alpha>
     </imagetype>
 
+    <imagetype name="basebusyanimation">
+        <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+        <delay>75</delay>
+    </imagetype>
+
     <!-- progress bar -->
     <progressbar name="baseprogress">
         <area>0,0,700,20</area>
@@ -915,28 +920,25 @@
     <!-- text based video facts -->
     <group name="basevideotextfacts">
         <area>0,0,100%,125</area>
-        <textarea name="genrelabel" from="basetext_m" depends="genres">
+        <textarea name="genrelabel" from="baselabeltext" depends="genres">
             <area>0,100%-122,150,30</area>
             <value>Genres</value>
-            <alpha>200</alpha>
         </textarea>
         <textarea name="genres" from="basetext_s">
             <area>160,100%-122,100%,30</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="directorlabel" from="basetext_m" depends="director">
+        <textarea name="directorlabel" from="baselabeltext" depends="director">
             <area>0,100%-77,150,30</area>
             <value>Director</value>
-            <alpha>200</alpha>
         </textarea>
         <textarea name="director" from="basetext_s">
             <area>160,100%-77,350,30</area>
             <alpha>150</alpha>
         </textarea>
-        <textarea name="castlabel" from="basetext_m" depends="cast">
+        <textarea name="castlabel" from="baselabeltext" depends="cast">
             <area>0,100%-32,150,32</area>
             <value>Cast</value>
-            <alpha>200</alpha>
         </textarea>
         <textarea name="cast" from="basetext_s">
             <area>160,100%-32,100%,32</area>
@@ -1179,10 +1181,8 @@
         <group name="decoration" from="basepopupdecoration"/>
         <group name="content">
             <area>25,75,-25,-25</area>
-            <imagetype name="animation">
+            <imagetype name="animation" from="basebusyanimation">
                 <area>0,50%-25,50,50</area>
-                <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                <delay>75</delay>
             </imagetype>
             <textarea name="message" from="basetext_m">
                 <area>50,0,100%,100%</area>
