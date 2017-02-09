@@ -111,20 +111,9 @@
                             <imagetype name="icon" from="baseicon">
                                 <area>0,4,24,24</area>
                                 <filename>images/ArrowUpBig.png</filename>
-                                <alpha>100</alpha>
                             </imagetype>
                         </state>
-                    </statetype>
-                    <!-- Shows that the image was marked/selected -->
-                    <statetype name="buttoncheck">
-                        <area>10,10,32,32</area>
-                        <state type="full">
-                            <area>0,0,100%,100%</area>
-                            <imagetype name="icon" from="baseicon">
-                                <filename>images/icons/Playlist.png</filename>
-                                <alpha>100</alpha>
-                            </imagetype>
-                        </state>
+                        <alpha>100</alpha>
                     </statetype>
                     <textarea name="childcount" from="basetext_s" depends="!parenttype">
                         <area>40,5,-10,32</area>
@@ -157,6 +146,23 @@
                         </imagetype>
                         <alpha>150</alpha>
                     </group>
+                    <!-- Shows that the image was marked/selected -->
+                    <shape name="cutout" depends="buttoncheck">
+                        <area>8,8,36,36</area>
+                        <type>ellipse</type>
+                        <fill color="#000000" alpha="255" />
+                        <line color="#000000" alpha="0" width="0" />
+                    </shape>
+                    <statetype name="buttoncheck">
+                        <area>10,10,32,32</area>
+                        <state type="full">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="icon" from="baseicon">
+                                <filename>images/icons/Playlist.png</filename>
+                            </imagetype>
+                        </state>
+                        <alpha>100</alpha>
+                    </statetype>
                     <textarea name="buttontext" from="basetext_s" depends="!parenttype">
                         <area>5,100%-37,-5,32</area>
                         <align>center</align>
@@ -171,12 +177,27 @@
                 </group>
             </state>
             <state name="selectedactive" from="active">
-                <shape name="background" from="basecontrolbackground">
-                    <area>0,0,100%,100%</area>
+                <shape name="whiteframe" from="baseframe">
+                    <area>-5,-5,100%+10,100%+4</area>
+                    <type>box</type>
+                    <alpha>150</alpha>
                 </shape>
+                <statetype name="parenttype">
+                    <alpha>255</alpha>
+                </statetype>
+                <statetype name="buttontype">
+                    <alpha>255</alpha>
+                </statetype>
+                <textarea name="childcount">
+                    <alpha>255</alpha>
+                </textarea>
                 <group name="images">
                     <alpha>255</alpha>
                 </group>
+                <shape name="cutout"/>
+                <statetype name="buttoncheck">
+                    <alpha>255</alpha>
+                </statetype>
                 <textarea name="buttontext">
                     <scroll direction="horizontal" />
                     <cutdown>no</cutdown>
