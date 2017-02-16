@@ -121,27 +121,8 @@
                 <state name="selectedinactive" from="selectedactive"/>
             </statetype>
         </buttonlist>
-        <group name="lyrcis">
+        <group name="lyrcis" from="musiclyrics">
             <area>50%-400,465,800,-115</area>
-            <buttonlist name="lyrics_list" from="baseitemlist">
-                <area>0,0,100%,100%</area>
-            </buttonlist>
-            <statetype name="loading_state">
-                <area>50%-25,50%-100,50,50</area>
-                <state name="on">
-                    <imagetype name="animation">
-                        <area>0,0,50,50</area>
-                        <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
-                        <delay>75</delay>
-                    </imagetype>
-                </state>
-                <state name="off"/>
-            </statetype>
-            <textarea name="status_text" from="basetext_m">
-                <area>0,50%-20,100%,40</area>
-                <align>center</align>
-                <alpha>200</alpha>
-            </textarea>
         </group>
         <group name="trackdetails" from="musictrackdetails">
             <imagetype name="playcounticon">
@@ -1558,6 +1539,52 @@
             <area>50%+25,100%-65,200,40</area>
             <value>Cancel</value>
         </button>
+    </window>
+
+    <!-- No idea why this is not in stream-ui.xml -->
+    <window name="streamlyricsview" include="music-base.xml">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundRadio.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Play radio streams</value>
+        </textarea>
+
+        <!--
+        <textarea name="nostreams" from="basetext_m">
+            <area>100,465,-100,-115</area>
+            <align>center</align>
+            <value>Press MENU to add some radio streams to play.</value>
+        </textarea>
+
+        <buttonlist name="streamlist" from="streamlist">
+            <area>25,465,50%-25,220</area>
+        </buttonlist>
+        -->
+
+        <buttonlist name="playedtrackslist" from="streamtrackslist">
+            <area>25,465,50%-25,-115</area>
+            <align>top,hcenter</align>
+        </buttonlist>
+
+        <group name="lyrics" from="musiclyrics">
+            <area>50%+25,465,-25,-115</area>
+        </group>
+
+        <!-- buffer detail in left side of footer -->
+        <group name="bufferdetails" from="streambufferdetails">
+            <area>25,100%-77,500,64</area>
+        </group>
+
+        <!-- playback buttons -->
+        <group name="buttons" from="streambuttons">
+            <area>50%-112,100%-77,224,64</area>
+        </group>
+
+        <statetype name="mutestate" from="musicmutestate">
+            <position>100%-58,100%-61</position>
+        </statetype>
     </window>
 
 </mythuitheme>

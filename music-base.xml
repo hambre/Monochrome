@@ -510,7 +510,30 @@
         </state>
     </statetype>
 
-    <buttonlist name="musicstreamlist" from="baseitemlist">
+    <group name="musiclyrics">
+        <area>50%-400,465,800,-115</area>
+        <buttonlist name="lyrics_list" from="baseitemlist">
+            <area>0,0,100%,100%</area>
+        </buttonlist>
+        <statetype name="loading_state">
+            <area>50%-25,50%-100,50,50</area>
+            <state name="on">
+                <imagetype name="animation">
+                    <area>0,0,50,50</area>
+                    <filepattern low="1" high="8">images/icons/animated/Spinner%1.png</filepattern>
+                    <delay>75</delay>
+                </imagetype>
+            </state>
+            <state name="off"/>
+        </statetype>
+        <textarea name="status_text" from="basetext_m">
+            <area>0,50%-20,100%,40</area>
+            <align>center</align>
+            <alpha>200</alpha>
+        </textarea>
+    </group>
+    
+    <buttonlist name="streamlist" from="baseitemlist">
         <area>25,465,50%-25,220</area>
         <statetype name="buttonitem">
             <area>0,0,100%,55</area>
@@ -555,4 +578,90 @@
         </statetype>
     </buttonlist>
 
+    <buttonlist name="streamtrackslist" from="baseitemlist">
+        <area>25,100%-335,50%-25,-115</area>
+        <align>bottom,hcenter</align>
+        <statetype name="buttonitem">
+            <area>0,0,100%,55</area>
+            <state name="active">
+                <area>0,0,100%,55</area>
+                <shape name="itemseparator" from="baseitemseparator_h">
+                    <position>0,100%</position>
+                </shape>
+                <textarea name="tracknum" from="basetext_m">
+                    <area>5,0,50,100%</area>
+                    <alpha>100</alpha>
+                </textarea>
+                <textarea name="title" from="baseitemtext">
+                    <template>%ARTIST% ~ %TITLE%</template>
+                    <area>80,0,-100,100%</area>
+                    <alpha>100</alpha>
+                </textarea>
+                <textarea name="length" from="basetext_m">
+                    <area>100%-100,0,-5,100%</area>
+                    <align>right,vcenter</align>
+                    <alpha>100</alpha>
+                </textarea>
+                <statetype name="playstate">
+                    <area>100%-37,50%-16,32,32</area>
+                    <state name="playing">
+                        <imagetype name="animation" from="basebusyanimation">
+                            <area>0,0,100%,100%</area>
+                        </imagetype>
+                    </state>
+                </statetype>
+            </state>
+            <state name="selectedactive" from="active">
+                <area>0,0,100%,55</area>
+                <shape name="background" from="basecontrolbackground">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <shape name="itemseparator"/>
+                <textarea name="tracknum">
+                    <alpha>255</alpha>
+                </textarea>
+                <textarea name="title">
+                    <scroll direction="horizontal" />
+                    <cutdown>no</cutdown>
+                    <alpha>255</alpha>
+                </textarea>
+                <textarea name="length">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="inactive" from="active">
+            </state>
+            <state name="selectedinactive" from="selectedactive">
+                <shape name="background">
+                    <alpha>0</alpha>
+                </shape>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <group name="streambufferdetails">
+        <area>25,100%-77,500,64</area>
+        <textarea name="bufferstatus" from="basetext_s">
+            <area>0,5,100%,30</area>
+            <alpha>150</alpha>
+            <align>center</align>
+            <font>basefont_xs</font>
+        </textarea>
+        <progressbar name="bufferprogress" from="baseprogress_s">
+            <area>0,40,100%,12</area>
+        </progressbar>
+    </group>
+
+    <group name="streambuttons">
+        <area>50%-112,100%-77,224,64</area>
+        <button name="stop" from="musicstopbutton">
+            <position>0,0</position>
+        </button>
+        <button name="play" from="musicplaybutton">
+            <position>80,0</position>
+        </button>
+        <button name="pause" from="musicpausebutton">
+            <position>160,0</position>
+        </button>
+    </group>
 </mythuitheme>
