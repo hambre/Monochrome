@@ -532,7 +532,7 @@
             <alpha>200</alpha>
         </textarea>
     </group>
-    
+
     <buttonlist name="streamlist" from="baseitemlist">
         <area>25,465,50%-25,220</area>
         <statetype name="buttonitem">
