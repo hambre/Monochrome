@@ -1568,11 +1568,20 @@
         </buttonlist>
         -->
 
+        <!-- left side with track list and details -->
+        <group name="details" from="streamtrackdetails">
+            <area>25,465,50%-50,120</area>
+        </group>
         <buttonlist name="playedtrackslist" from="streamtrackslist">
-            <area>25,465,50%-25,-115</area>
+            <area>25,625,50%-50,-115</area>
             <align>top,hcenter</align>
         </buttonlist>
 
+        <shape name="separator" from="baseseparator_v" depends="!nostreams">
+            <area>50%-1,465,2,-115</area>
+        </shape>
+
+        <!-- right side with lyrcis list -->
         <group name="lyrics" from="musiclyrics">
             <area>50%+25,465,-25,-115</area>
         </group>
