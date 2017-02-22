@@ -268,4 +268,96 @@
 
     <!--====================================================================-->
 
+    <window name="channeloverview">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Channel Editor</value>
+        </textarea>
+        <buttonlist name="channels" from="baseitemlist">
+            <area>25,465,900,-115</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <group name="text">
+                        <area>0,0,100%,100%</area>
+                        <textarea name="channum" from="baseitemtext">
+                            <area>5,0,100,100%</area>
+                            <font state="normal">basefont_l_good</font>
+                            <font state="disabled">basefont_l_off</font>
+                            <font state="warning">basefont_l_warn</font>
+                        </textarea>
+                        <textarea name="name" from="baseitemtext">
+                            <area>150,0,-200,100%</area>
+                        </textarea>
+                        <textarea name="sourcename" from="baseitemtext">
+                            <area>100%-200,0,-5,100%</area>
+                            <align>right,vcenter</align>
+                        </textarea>
+                        <alpha>150</alpha>
+                    </group>
+                </state>
+                <state name="selectedactive" from="active">
+                    <group name="text">
+                        <alpha>255</alpha>
+                    </group>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <group name="text">
+                        <alpha>255</alpha>
+                    </group>
+                </state>
+            </statetype>
+        </buttonlist>
+        <group name="details">
+            <area>975,465,-25,200</area>
+            <group name="labels">
+                <area>0,0,60%,100%</area>
+                <textarea name="labelsorting" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Sort Mode:</value>
+                </textarea>
+                <textarea name="labelsource" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Video Source:</value>
+                </textarea>
+                <textarea name="labelnochannum" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Hide Channels without channel number.</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>60%,0,100%,100%</area>
+                <buttonlist name="sorting" from="baseselector">
+                    <area>0,0,100%,40</area>
+                </buttonlist>
+                <buttonlist name="source" from="baseselector">
+                    <area>0,65,100%,40</area>
+                </buttonlist>
+                <checkbox name="nochannum" from="basecheckbox">
+                    <area>0,134,32,32</area>
+                </checkbox>
+            </group>
+        </group>
+        <textarea name="helptext" from="basehelptext">
+            <area>975,100%-185,-25,70</area>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="scan" from="basebutton">
+            <area>50%-875,100%-65,400,40</area>
+            <value>Channel Scan</value>
+        </button>
+        <button name="delete" from="basebutton">
+            <area>50%-425,100%-65,400,40</area>
+            <value>Delete Channels</value>
+        </button>
+        <button name="edittransport" from="basebutton">
+            <area>50%+25,100%-65,400,40</area>
+            <value>Edit Transports</value>
+        </button>
+        <button name="importicons" from="basebutton">
+            <area>50%+475,100%-65,400,40</area>
+            <value>Icon Download</value>
+        </button>
+    </window>
+
 </mythuitheme>
