@@ -360,4 +360,75 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="iconimport">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="name" from="basepagetitletext"/>
+        <group name="searchcontrols">
+            <area>50%-500,500,50%+500,40</area>
+            <textarea name="labelmanualsearch" from="baselabeltext">
+                <area>0,0,200,40</area>
+                <value>Search terms:</value>
+            </textarea>
+            <textedit name="manualsearch" from="basetextedit">
+                <area>250,0,350,40</area>
+            </textedit>
+            <button name="search" from="basesearchbutton">
+                <position>650,0</position>
+            </button>
+            <button name="skip" from="basebutton">
+                <area>800,0,200,40</area>
+                <value>Skip</value>
+            </button>
+        </group>
+        <buttonlist name="icons" from="baseitemlist">
+            <area>25,600,-25,-65</area>
+            <align>top,hcenter</align>
+            <layout>grid</layout>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>none</wrapstyle>
+            <spacing>20</spacing>
+            <statetype name="buttonitem">
+                <area>0,0,350,110</area>
+                <state name="active">
+                    <area>0,0,350,110</area>
+                    <imagetype name="icon">
+                        <area>5,5,100,100</area>
+                        <preserveaspect>true</preserveaspect>
+                        <filename>images/icons/SenderBig.png</filename>
+                        <alpha>150</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>130,5,-5,-5</area>
+                        <font>basefont_s</font>
+                        <multiline>true</multiline>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="icon">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="buttontext">
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="helptext" from="basehelptext" depends="!status">
+            <area>25,100%-50,-25,100%</area>
+            <align>center</align>
+        </textarea>
+        <textarea name="status" from="basehelptext">
+            <area>25,100%-50,-25,100%</area>
+            <align>center</align>
+        </textarea>
+    </window>
+
 </mythuitheme>
