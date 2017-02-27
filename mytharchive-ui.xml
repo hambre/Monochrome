@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="selectdestination">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Select Destination</value>
+        </textarea>
+        <group name="content">
+            <area>50%-400,550,800,-115</area>
+            <buttonlist name="destination_selector" from="baseselector">
+                <area>0,0,100%,40</area>
+            </buttonlist>
+            <textarea name="labelfreespace" from="baselabeltext">
+                <area>0,65,60%,40</area>
+                <value>Free Space:</value>
+            </textarea>
+            <textarea name="freespace_text" from="basetext_m">
+                <area>0,65,40%,40</area>
+                <align>right,vcenter</align>
+            </textarea>
+
+            <checkbox name="makeisoimage_check" from="basecheckbox">
+                <area>0,134,32,32</area>
+            </checkbox>
+            <textarea name="labelmakeisoimage" from="baselabeltext">
+                <area>50,130,100%,40</area>
+                <value>Make ISO image</value>
+            </textarea>
+
+            <textedit name="filename_edit" from="basetextedit">
+                <area>0,195,-125,40</area>
+            </textedit>
+            <button name="find_button" from="basesearchbutton">
+                <position>100%-100,195</position>
+            </button>
+
+            <checkbox name="burntodvdr_check" from="basecheckbox">
+                <area>0,199,32,32</area>
+            </checkbox>
+            <textarea name="burntodvdr_text" from="baselabeltext">
+                <area>50,195,100%,40</area>
+                <value>Burn to DVD</value>
+            </textarea>
+
+            <checkbox name="erasedvdrw_check" from="basecheckbox">
+                <area>0,264,32,32</area>
+            </checkbox>
+            <textarea name="erasedvdrw_text" from="baselabeltext">
+                <area>50,260,100%,40</area>
+                <value>Force Overwrite of DVD-RW Media</value>
+            </textarea>
+
+        </group>
+        <textarea name="destination_text" from="basehelptext"/>
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Next</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="file_selector">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>File Browser</value>
+        </textarea>
+        <buttonlist name="filelist" from="baseitemlist">
+            <area>50%-500,100,1000,770</area>
+        </buttonlist>
+        <textedit name="location_edit" from="basetextedit">
+            <area>50%-500,100%-200,1000,40</area>
+        </textedit>
+        <!-- bottom part with buttons -->
+        <button name="home_button" from="basebutton">
+            <area>50%-500,100%-65,200,40</area>
+            <value>Home</value>
+        </button>
+        <button name="back_button" from="basebutton">
+            <area>50%-250,100%-65,200,40</area>
+            <value>Back</value>
+        </button>
+        <button name="ok_button" from="basebutton">
+            <area>50%+50,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+300,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
