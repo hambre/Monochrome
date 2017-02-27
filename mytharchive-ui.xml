@@ -100,4 +100,69 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="video_selector">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Select Videos</value>
+        </textarea>
+        <!-- left part with category and video list -->
+        <textarea name="labelcategory" from="baselabeltext">
+            <area>25,465,225,40</area>
+            <value>Video Category</value>
+        </textarea>
+        <buttonlist name="category_selector" from="baseselector">
+            <area>250,465,50%-150,40</area>
+        </buttonlist>
+        <buttonlist name="videolist" from="baseitemchecklist">
+            <area>25,550,50%-50,-115</area>
+        </buttonlist>
+        <textarea name="warning_text" from="basetext_m">
+            <area>50%-500,600,1000,40</area>
+            <align>center</align>
+            <value>No videos available</value>
+        </textarea>
+        <!-- right part with cover image, video title and description, etc. -->
+        <textarea name="videotitle" from="basetitletext">
+            <area>50%+25,465,-25,50</area>
+            <align>center</align>
+        </textarea>
+        <group name="coverart">
+            <area>50%+25,550,266,380</area>
+            <imagetype name="cover_image">
+                <area>0,0,100%,100%</area>
+            </imagetype>
+            <imagetype name="cover_image_icon" from="basecoverarticon" depends="!cover_image"/>
+        </group>
+        <textarea name="videoplot" from="basedescriptiontext">
+            <area>50%+315,550,-25,-175</area>
+        </textarea>
+        <imagetype name="iconfilesize" from="baseicon">
+            <position>50%+325,100%-150</position>
+            <filename>images/icons/Storage.png</filename>
+        </imagetype>
+        <textarea name="filesize" from="basetext_s">
+            <area>50%+375,100%-150,350,32</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="parentallevel_text" from="basetext_s">
+            <area>100%-125,100%-150,50,32</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="iconparentallevel" from="baseicon" depends="parentallevel_text">
+            <position>100%-57,100%-150</position>
+            <filename>images/icons/ParentalRating.png</filename>
+        </imagetype>
+        <!--  bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
 </mythuitheme>
