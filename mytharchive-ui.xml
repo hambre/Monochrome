@@ -222,4 +222,33 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="logviewer">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Log Viewer</value>
+        </textarea>
+        <buttonlist name="loglist" from="baseitemlist">
+            <area>50%-750,100,1500,-300</area>
+        </buttonlist>
+        <textarea name="logitem_text" from="baselabeltext">
+            <area>50%-750,100%-255,1500,120</area>
+            <multiline>yes</multiline>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="update_button" from="basebutton">
+            <area>50%-350,100%-65,200,40</area>
+            <value>Update</value>
+        </button>
+        <button name="exit_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Exit</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+150,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
