@@ -3,6 +3,9 @@
 <mythuitheme>
 
     <window name="selectdestination">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="titletext" from="basepagetitletext">
             <value>Select Destination</value>
@@ -103,6 +106,9 @@
     <!--====================================================================-->
 
     <window name="video_selector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="titletext" from="basepagetitletext">
             <value>Select Videos</value>
@@ -169,6 +175,9 @@
     <!--====================================================================-->
 
     <window name="recording_selector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="titletext" from="basepagetitletext">
             <value>Select Recordings</value>
