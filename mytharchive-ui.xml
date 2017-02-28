@@ -113,10 +113,10 @@
             <value>Video Category</value>
         </textarea>
         <buttonlist name="category_selector" from="baseselector">
-            <area>250,465,50%-150,40</area>
+            <area>250,465,685,40</area>
         </buttonlist>
         <buttonlist name="videolist" from="baseitemchecklist">
-            <area>25,550,50%-50,-115</area>
+            <area>25,550,910,-115</area>
         </buttonlist>
         <textarea name="warning_text" from="basetext_m">
             <area>50%-500,600,1000,40</area>
@@ -139,11 +139,11 @@
             <area>50%+315,550,-25,-175</area>
         </textarea>
         <imagetype name="iconfilesize" from="baseicon">
-            <position>50%+325,100%-150</position>
+            <position>50%+315,100%-150</position>
             <filename>images/icons/Storage.png</filename>
         </imagetype>
         <textarea name="filesize" from="basetext_s">
-            <area>50%+375,100%-150,350,32</area>
+            <area>50%+365,100%-150,350,32</area>
             <alpha>150</alpha>
         </textarea>
         <textarea name="parentallevel_text" from="basetext_s">
