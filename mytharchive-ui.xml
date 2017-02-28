@@ -165,4 +165,61 @@
             <value>Cancel</value>
         </button>
     </window>
+
+    <!--====================================================================-->
+
+    <window name="recording_selector">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Select Recordings</value>
+        </textarea>
+        <!-- left part with category and video list -->
+        <textarea name="labelcategory" from="baselabeltext">
+            <area>25,465,300,40</area>
+            <value>Show Recordings</value>
+        </textarea>
+        <buttonlist name="category_selector" from="baseselector">
+            <area>325,465,610,40</area>
+        </buttonlist>
+        <buttonlist name="recordinglist" from="baseitemchecklist">
+            <area>25,550,910,-115</area>
+        </buttonlist>
+        <!-- right part with preview image, program title and description, etc. -->
+        <textarea name="progtitle" from="basetitletext">
+            <area>50%+25,465,-25,50</area>
+            <align>center</align>
+        </textarea>
+        <group name="preview">
+            <area>50%+25,550,266,380</area>
+            <imagetype name="preview_image">
+                <area>0,0,100%,100%</area>
+            </imagetype>
+            <imagetype name="preview_icon" from="basecoverarticon" depends="!preview_image"/>
+        </group>
+        <textarea name="progdescription" from="basedescriptiontext">
+            <area>50%+315,550,-25,-175</area>
+        </textarea>
+        <imagetype name="iconfilesize" from="baseicon" depends="filesize">
+            <position>50%+315,100%-150</position>
+            <filename>images/icons/Storage.png</filename>
+        </imagetype>
+        <textarea name="filesize" from="basetext_s">
+            <area>50%+365,100%-150,350,32</area>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="cutlist_image" from="baseicon">
+            <position>100%-57,100%-150</position>
+            <filename>images/icons/Cutlist.png</filename>
+        </imagetype>
+        <!--  bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
