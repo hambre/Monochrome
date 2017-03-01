@@ -74,15 +74,18 @@
     <!--====================================================================-->
 
     <window name="file_selector">
-        <group name="decoration" from="basesettingsdecoration"/>
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>File Browser</value>
         </textarea>
         <buttonlist name="filelist" from="baseitemlist">
-            <area>50%-500,100,1000,770</area>
+            <area>50%-500,475,1000,-200</area>
         </buttonlist>
         <textedit name="location_edit" from="basetextedit">
-            <area>50%-500,100%-200,1000,40</area>
+            <area>50%-500,100%-175,1000,40</area>
         </textedit>
         <!-- bottom part with buttons -->
         <button name="home_button" from="basebutton">
