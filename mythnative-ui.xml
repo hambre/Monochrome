@@ -100,22 +100,22 @@
         </textarea>
         <!-- left part with file list -->
         <buttonlist name="filelist" from="baseitemlist">
-            <area>25,465,1000,-200</area>
+            <area>25,475,1000,-200</area>
         </buttonlist>
         <textedit name="location_edit" from="basetextedit">
-            <area>25,100%-165,1000,40</area>
+            <area>25,100%-175,1000,40</area>
         </textedit>
         <button name="back_button" from="basebutton">
-            <area>1050,100%-165,200,40</area>
+            <area>1050,100%-175,200,40</area>
             <value>Back</value>
         </button>
         <button name="home_button" from="basebutton">
-            <area>1275,100%-165,200,40</area>
+            <area>1275,100%-175,200,40</area>
             <value>Home</value>
         </button>
         <!-- right part with details -->
         <group name="details">
-            <area>1075,465,-25,-115</area>
+            <area>1075,475,-25,-115</area>
             <textarea name="title_text" from="basetitletext">
                 <area>0,0,100%,50</area>
             </textarea>
