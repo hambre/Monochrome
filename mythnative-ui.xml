@@ -148,4 +148,145 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="importnative">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Select Associated Channel</value>
+        </textarea>
+        <!-- left part with channel ids -->
+        <group name="archivedchannel">
+            <area>25,550,450,-115</area>
+            <textarea name="labelarchivechannel" from="basetext_m">
+                <area>0,0,100%,40</area>
+                <value>Archived Channel</value>
+            </textarea>
+            <textarea name="labelchanname" from="baselabeltext">
+                <area>0,75,200,40</area>
+                <value>Name:</value>
+            </textarea>
+            <textarea name="name" from="basetext_m">
+                <area>200,75,100%,40</area>
+            </textarea>
+            <textarea name="labelcallsign" from="baselabeltext">
+                <area>0,140,200,40</area>
+                <value>Callsign:</value>
+            </textarea>
+            <textarea name="callsign" from="basetext_m">
+                <area>200,140,100%,40</area>
+            </textarea>
+            <textarea name="labelchanno" from="baselabeltext">
+                <area>0,205,200,40</area>
+                <value>Chan. No:</value>
+            </textarea>
+            <textarea name="channo" from="basetext_m">
+                <area>200,205,100%,40</area>
+            </textarea>
+            <textarea name="labelchanid" from="baselabeltext">
+                <area>0,270,200,40</area>
+                <value>Chan. Id:</value>
+            </textarea>
+            <textarea name="chanid" from="basetext_m">
+                <area>200,270,100%,40</area>
+            </textarea>
+        </group>
+        <group name="localchannel">
+            <area>500,550,550,-115</area>
+            <textarea name="labellocalchannel" from="basetext_m">
+                <area>0,0,100%,40</area>
+                <value>Local Channel</value>
+            </textarea>
+            <textarea name="labelllocalchanname" from="baselabeltext">
+                <area>0,75,100,40</area>
+                <value>Name:</value>
+            </textarea>
+            <textarea name="local_name" from="basetext_m">
+                <area>200,75,100%,40</area>
+            </textarea>
+            <button name="searchname_button" from="basesearchbutton">
+                <position>100%-100,75</position>
+            </button>
+            <textarea name="labellocalcallsign" from="baselabeltext">
+                <area>0,140,200,40</area>
+                <value>Callsign:</value>
+            </textarea>
+            <textarea name="local_callsign" from="basetext_m">
+                <area>200,140,100%,40</area>
+            </textarea>
+            <button name="searchcallsign_button" from="basesearchbutton">
+                <position>100%-100,140</position>
+            </button>
+            <textarea name="labellocalchanno" from="baselabeltext">
+                <area>0,205,200,40</area>
+                <value>Chan. No:</value>
+            </textarea>
+            <textarea name="local_channo" from="basetext_m">
+                <area>200,205,100%,40</area>
+            </textarea>
+            <button name="searchchanno_button" from="basesearchbutton">
+                <position>100%-100,205</position>
+            </button>
+            <textarea name="labelchanid" from="baselabeltext">
+                <area>0,270,200,40</area>
+                <value>Chan. Id:</value>
+            </textarea>
+            <textarea name="local_chanid" from="basetext_m">
+                <area>200,270,100%,40</area>
+            </textarea>
+            <button name="searchchanid_button" from="basesearchbutton">
+                <position>100%-100,270</position>
+            </button>
+        </group>
+        <group name="separators">
+            <area>25,550,1025,-115</area>
+            <shape name="sep1" from="baseitemseparator_h">
+                <position>0,125</position>
+            </shape>
+            <shape name="sep2" from="baseitemseparator_h">
+                <position>0,190</position>
+            </shape>
+            <shape name="sep3" from="baseitemseparator_h">
+                <position>0,255</position>
+            </shape>
+            <shape name="sep4" from="baseitemseparator_h">
+                <position>0,320</position>
+            </shape>
+        </group>
+        <!-- right part with details -->
+        <group name="details">
+            <area>1125,465,-15,-115</area>
+            <textarea name="progtitle" from="basetitletext">
+                <area>0,0,100%,50</area>
+            </textarea>
+            <textarea name="progdescription" from="basedescriptiontext">
+                <area>0,75,100%,-50</area>
+            </textarea>
+            <imagetype name="icondatetime" from="baseicon" depends="progdatetime">
+                <position>0,100%-32</position>
+                <filename>images/icons/Calendar.png</filename>
+            </imagetype>
+            <textarea name="progdatetime" from="basetext_s">
+                <area>50,100%-32,200,32</area>
+                <alpha>150</alpha>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="finish_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
