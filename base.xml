@@ -631,6 +631,67 @@
                 </imagetype>
             </state>
             <state name="selected" from="active">
+                <shape name="background" from="basecontrolbackground"/>
+                <imagetype name="icon">
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active">
+                <imagetype name="icon">
+                    <alpha>50</alpha>
+                </imagetype>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <!-- file selector back button -->
+    <button name="basebackbutton" from="basebutton">
+        <area>0,0,75,40</area>
+        <statetype name="buttonstate">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <textarea name="text">
+                    <alpha>0</alpha>
+                </textarea>
+                <imagetype name="icon" from="baseicon">
+                    <area>50%-12,50%-12,20,24</area>
+                    <filename>images/ArrowLeftBig.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <shape name="background" from="basecontrolbackground"/>
+                <imagetype name="icon">
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active">
+                <imagetype name="icon">
+                    <alpha>50</alpha>
+                </imagetype>
+            </state>
+            <state name="pushed" from="selected"/>
+        </statetype>
+    </button>
+
+    <!-- home button -->
+    <button name="basehomebutton" from="basebutton">
+        <area>0,0,75,40</area>
+        <statetype name="buttonstate">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <textarea name="text">
+                    <alpha>0</alpha>
+                </textarea>
+                <imagetype name="icon" from="baseicon">
+                    <area>50%-16,50%-15,32,32</area>
+                    <filename>images/icons/Home.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <shape name="background" from="basecontrolbackground"/>
                 <imagetype name="icon">
                     <alpha>255</alpha>
                 </imagetype>
@@ -1452,36 +1513,40 @@
         <textarea name="pagetitle" from="basepagetitletext">
             <value>File Browser</value>
         </textarea>
+        <group name="locationbar">
+            <area>100,100,1000,40</area>
+            <textedit name="location" from="basetextedit">
+                <area>0,0,-200,40</area>
+            </textedit>
+            <button name="back" from="basebackbutton">
+                <area>100%-175,0,75,40</area>
+            </button>
+            <button name="home" from="basehomebutton">
+                <area>100%-75,0,75,40</area>
+            </button>
+        </group>
         <buttonlist name="filelist" from="baseitemlist">
-            <area>200,100,900,770</area>
+            <area>100,175,1000,-115</area>
         </buttonlist>
-        <imagetype name="preview">
-            <area>1200,200,500,500</area>
-            <preserveaspect>yes</preserveaspect>
-        </imagetype>
-        <textarea name="info" from="basetext_m">
-            <area>1200,750,500,40</area>
-            <align>center</align>
-            <alpha>200</alpha>
-        </textarea>
-        <textedit name="location" from="basetextedit">
-            <area>200,100%-200,900,40</area>
-        </textedit>
+        <group name="details">
+            <area>1200,50%-300,-100,600</area>
+            <imagetype name="preview">
+                <area>0,0,100%,-90</area>
+                <preserveaspect>yes</preserveaspect>
+            </imagetype>
+            <textarea name="info" from="basetext_m">
+                <area>0,100%-40,100%,40</area>
+                <align>center</align>
+                <alpha>200</alpha>
+            </textarea>
+        </group>
         <!-- bottom part with buttons -->
-        <button name="home" from="basebutton">
-            <area>50%-500,100%-65,200,40</area>
-            <value>Home</value>
-        </button>
-        <button name="back" from="basebutton">
-            <area>50%-250,100%-65,200,40</area>
-            <value>Back</value>
-        </button>
         <button name="ok" from="basebutton">
-            <area>50%+50,100%-65,200,40</area>
+            <area>50%-225,100%-65,200,40</area>
             <value>Ok</value>
         </button>
         <button name="cancel" from="basebutton">
-            <area>50%+300,100%-65,200,40</area>
+            <area>50%+25,100%-65,200,40</area>
             <value>Cancel</value>
         </button>
     </window>

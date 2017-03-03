@@ -81,27 +81,28 @@
         <textarea name="pagetitle" from="basepagetitletext">
             <value>File Browser</value>
         </textarea>
+        <group name="locationbar">
+            <area>50%-500,465,1000,40</area>
+            <textedit name="location_edit" from="basetextedit">
+                <area>0,0,-200,40</area>
+            </textedit>
+            <button name="back_button" from="basebackbutton">
+                <area>100%-175,0,75,40</area>
+            </button>
+            <button name="home_button" from="basehomebutton">
+                <area>100%-75,0,75,40</area>
+            </button>
+        </group>
         <buttonlist name="filelist" from="baseitemlist">
-            <area>50%-500,475,1000,-200</area>
+            <area>50%-500,550,1000,-115</area>
         </buttonlist>
-        <textedit name="location_edit" from="basetextedit">
-            <area>50%-500,100%-175,1000,40</area>
-        </textedit>
         <!-- bottom part with buttons -->
-        <button name="home_button" from="basebutton">
-            <area>50%-500,100%-65,200,40</area>
-            <value>Home</value>
-        </button>
-        <button name="back_button" from="basebutton">
-            <area>50%-250,100%-65,200,40</area>
-            <value>Back</value>
-        </button>
         <button name="ok_button" from="basebutton">
-            <area>50%+50,100%-65,200,40</area>
+            <area>50%-225,100%-65,200,40</area>
             <value>Ok</value>
         </button>
         <button name="cancel_button" from="basebutton">
-            <area>50%+300,100%-65,200,40</area>
+            <area>50%+25,100%-65,200,40</area>
             <value>Cancel</value>
         </button>
     </window>

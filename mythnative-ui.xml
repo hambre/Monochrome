@@ -99,23 +99,25 @@
             <value>File Finder To Import</value>
         </textarea>
         <!-- left part with file list -->
+        <group name="locationbar">
+            <area>25,465,1000,40</area>
+            <textedit name="location_edit" from="basetextedit">
+                <area>0,0,-200,40</area>
+            </textedit>
+            <button name="back_button" from="basebackbutton">
+                <area>100%-175,0,75,40</area>
+            </button>
+            <button name="home_button" from="basehomebutton">
+                <area>100%-75,0,75,40</area>
+                <value>Home</value>
+            </button>
+        </group>
         <buttonlist name="filelist" from="baseitemlist">
-            <area>25,475,1000,-200</area>
+            <area>25,550,1000,-115</area>
         </buttonlist>
-        <textedit name="location_edit" from="basetextedit">
-            <area>25,100%-175,1000,40</area>
-        </textedit>
-        <button name="back_button" from="basebutton">
-            <area>1050,100%-175,200,40</area>
-            <value>Back</value>
-        </button>
-        <button name="home_button" from="basebutton">
-            <area>1275,100%-175,200,40</area>
-            <value>Home</value>
-        </button>
         <!-- right part with details -->
         <group name="details">
-            <area>1075,475,-25,-115</area>
+            <area>1100,475,-25,-115</area>
             <textarea name="title_text" from="basetitletext">
                 <area>0,0,100%,50</area>
             </textarea>
