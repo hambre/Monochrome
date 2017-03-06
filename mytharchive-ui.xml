@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="selectdestination">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Select Destination</value>
+        </textarea>
+        <group name="content">
+            <area>50%-400,550,800,-115</area>
+            <buttonlist name="destination_selector" from="baseselector">
+                <area>0,0,100%,40</area>
+            </buttonlist>
+            <textarea name="labelfreespace" from="baselabeltext">
+                <area>0,65,60%,40</area>
+                <value>Free Space:</value>
+            </textarea>
+            <textarea name="freespace_text" from="basetext_m">
+                <area>0,65,40%,40</area>
+                <align>right,vcenter</align>
+            </textarea>
+
+            <checkbox name="makeisoimage_check" from="basecheckbox">
+                <area>0,134,32,32</area>
+            </checkbox>
+            <textarea name="labelmakeisoimage" from="baselabeltext">
+                <area>50,130,100%,40</area>
+                <value>Make ISO image</value>
+            </textarea>
+
+            <textedit name="filename_edit" from="basetextedit">
+                <area>0,195,-125,40</area>
+            </textedit>
+            <button name="find_button" from="basesearchbutton">
+                <position>100%-100,195</position>
+            </button>
+
+            <checkbox name="burntodvdr_check" from="basecheckbox">
+                <area>0,199,32,32</area>
+            </checkbox>
+            <textarea name="burntodvdr_text" from="baselabeltext">
+                <area>50,195,100%,40</area>
+                <value>Burn to DVD</value>
+            </textarea>
+
+            <checkbox name="erasedvdrw_check" from="basecheckbox">
+                <area>0,264,32,32</area>
+            </checkbox>
+            <textarea name="erasedvdrw_text" from="baselabeltext">
+                <area>50,260,100%,40</area>
+                <value>Force Overwrite of DVD-RW Media</value>
+            </textarea>
+
+        </group>
+        <textarea name="destination_text" from="basehelptext"/>
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Next</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="file_selector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>File Browser</value>
+        </textarea>
+        <group name="locationbar">
+            <area>50%-500,465,1000,40</area>
+            <textedit name="location_edit" from="basetextedit">
+                <area>0,0,-200,40</area>
+            </textedit>
+            <button name="back_button" from="basebackbutton">
+                <area>100%-175,0,75,40</area>
+            </button>
+            <button name="home_button" from="basehomebutton">
+                <area>100%-75,0,75,40</area>
+            </button>
+        </group>
+        <buttonlist name="filelist" from="baseitemlist">
+            <area>50%-500,550,1000,-115</area>
+        </buttonlist>
+        <!-- bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="video_selector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Select Videos</value>
+        </textarea>
+        <!-- left part with category and video list -->
+        <textarea name="labelcategory" from="baselabeltext">
+            <area>25,465,225,40</area>
+            <value>Video Category</value>
+        </textarea>
+        <buttonlist name="category_selector" from="baseselector">
+            <area>250,465,685,40</area>
+        </buttonlist>
+        <buttonlist name="videolist" from="baseitemchecklist">
+            <area>25,550,910,-115</area>
+        </buttonlist>
+        <textarea name="warning_text" from="basetext_m">
+            <area>50%-500,600,1000,40</area>
+            <align>center</align>
+            <value>No videos available</value>
+        </textarea>
+        <!-- right part with cover image, video title and description, etc. -->
+        <textarea name="videotitle" from="basetitletext">
+            <area>50%+25,465,-25,50</area>
+            <align>center</align>
+        </textarea>
+        <group name="coverart">
+            <area>50%+25,550,266,380</area>
+            <imagetype name="cover_image">
+                <area>0,0,100%,100%</area>
+            </imagetype>
+            <imagetype name="cover_image_icon" from="basecoverarticon" depends="!cover_image"/>
+        </group>
+        <textarea name="videoplot" from="basedescriptiontext">
+            <area>50%+315,550,-25,-175</area>
+        </textarea>
+        <imagetype name="iconfilesize" from="baseicon">
+            <position>50%+315,100%-150</position>
+            <filename>images/icons/Storage.png</filename>
+        </imagetype>
+        <textarea name="filesize" from="basetext_s">
+            <area>50%+365,100%-150,350,32</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="parentallevel_text" from="basetext_s">
+            <area>100%-125,100%-150,50,32</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="iconparentallevel" from="baseicon" depends="parentallevel_text">
+            <position>100%-57,100%-150</position>
+            <filename>images/icons/ParentalRating.png</filename>
+        </imagetype>
+        <!--  bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="recording_selector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Select Recordings</value>
+        </textarea>
+        <!-- left part with category and video list -->
+        <textarea name="labelcategory" from="baselabeltext">
+            <area>25,465,300,40</area>
+            <value>Show Recordings</value>
+        </textarea>
+        <buttonlist name="category_selector" from="baseselector">
+            <area>325,465,610,40</area>
+        </buttonlist>
+        <buttonlist name="recordinglist" from="baseitemchecklist">
+            <area>25,550,910,-115</area>
+        </buttonlist>
+        <!-- right part with preview image, program title and description, etc. -->
+        <textarea name="progtitle" from="basetitletext">
+            <area>50%+25,465,-25,50</area>
+            <align>center</align>
+        </textarea>
+        <group name="preview">
+            <area>50%+25,550,266,380</area>
+            <imagetype name="preview_image">
+                <area>0,0,100%,100%</area>
+            </imagetype>
+            <imagetype name="preview_icon" from="basecoverarticon" depends="!preview_image"/>
+        </group>
+        <textarea name="progdescription" from="basedescriptiontext">
+            <area>50%+315,550,-25,-175</area>
+        </textarea>
+        <imagetype name="iconfilesize" from="baseicon" depends="filesize">
+            <position>50%+315,100%-150</position>
+            <filename>images/icons/Storage.png</filename>
+        </imagetype>
+        <textarea name="filesize" from="basetext_s">
+            <area>50%+365,100%-150,350,32</area>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="cutlist_image" from="baseicon">
+            <position>100%-57,100%-150</position>
+            <filename>images/icons/Cutlist.png</filename>
+        </imagetype>
+        <!--  bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="logviewer">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Log Viewer</value>
+        </textarea>
+        <buttonlist name="loglist" from="baseitemlist">
+            <area>50%-750,100,1500,-300</area>
+        </buttonlist>
+        <textarea name="logitem_text" from="baselabeltext">
+            <area>50%-750,100%-255,1500,120</area>
+            <multiline>yes</multiline>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="update_button" from="basebutton">
+            <area>50%-350,100%-65,200,40</area>
+            <value>Update</value>
+        </button>
+        <button name="exit_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Exit</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+150,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>

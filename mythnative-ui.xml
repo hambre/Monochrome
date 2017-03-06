@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="exportnative">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Select Archive Items</value>
+        </textarea>
+        <buttonlist name="archivelist" from="baseitemlist">
+            <area>25,465,910,-115</area>
+        </buttonlist>
+        <group name="addbuttons">
+            <area>25,100%-155,910,40</area>
+            <button name="addrecording_button" from="basebutton">
+                <area>50%-375,0,350,40</area>
+                <value>Add Recording</value>
+            </button>
+            <button name="addvideo_button" from="basebutton">
+                <area>50%+25,0,350,40</area>
+                <value>Add Video</value>
+            </button>
+        </group>
+        <textarea name="nofiles" from="basetext_m">
+            <area>50%-500,600,1000,40</area>
+            <align>center</align>
+            <value>No files are selected for archive</value>
+        </textarea>
+        <!-- right part with details -->
+        <textarea name="progtitle" from="basetitletext">
+            <area>50%+25,465,-25,50</area>
+        </textarea>
+        <textarea name="progdescription" from="basedescriptiontext">
+            <area>50%+25,550,-25,-250</area>
+        </textarea>
+        <imagetype name="icondatetime" from="baseicon" depends="progdatetime">
+            <position>50%+25,100%-225</position>
+            <filename>images/icons/Calendar.png</filename>
+        </imagetype>
+        <textarea name="progdatetime" from="basetext_s">
+            <area>50%+75,100%-225,200,32</area>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="iconfilesize" from="baseicon" depends="filesize">
+            <position>100%-57,100%-225</position>
+            <filename>images/icons/Storage.png</filename>
+        </imagetype>
+        <textarea name="filesize" from="basetext_s">
+            <area>100%-282,100%-225,200,32</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="minsize" from="basetext_s">
+            <area>50%+25,100%-160,100,24</area>
+            <font>basefont_xs</font>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="currentsize" from="basetext_s">
+            <area>50%+25,100%-160,-25,24</area>
+            <font>basefont_xs</font>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+        <progressbar name="size_bar" from="baseprogress_s">
+            <area>50%+25,100%-127,-25,12</area>
+        </progressbar>
+        <textarea name="maxsize" from="basetext_s">
+            <area>100%-175,100%-160,-25,24</area>
+            <font>basefont_xs</font>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Next</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="archivefile_selector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>File Finder To Import</value>
+        </textarea>
+        <!-- left part with file list -->
+        <group name="locationbar">
+            <area>25,465,1000,40</area>
+            <textedit name="location_edit" from="basetextedit">
+                <area>0,0,-200,40</area>
+            </textedit>
+            <button name="back_button" from="basebackbutton">
+                <area>100%-175,0,75,40</area>
+            </button>
+            <button name="home_button" from="basehomebutton">
+                <area>100%-75,0,75,40</area>
+                <value>Home</value>
+            </button>
+        </group>
+        <buttonlist name="filelist" from="baseitemlist">
+            <area>25,550,1000,-115</area>
+        </buttonlist>
+        <!-- right part with details -->
+        <group name="details">
+            <area>1100,475,-25,-115</area>
+            <textarea name="title_text" from="basetitletext">
+                <area>0,0,100%,50</area>
+            </textarea>
+            <textarea name="subtitle_text" from="basetext_m" depends="title_text">
+                <area>0,75,100%,40</area>
+                <value>~</value>
+                <alpha>200</alpha>
+            </textarea>
+            <imagetype name="iconstarttime" from="baseicon" depends="starttime_text">
+                <position>0,140</position>
+                <filename>images/icons/Calendar.png</filename>
+            </imagetype>
+            <textarea name="starttime_text" from="basetext_s">
+                <area>50,140,100%,32</area>
+                <alpha>150</alpha>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Next</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="importnative">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Select Associated Channel</value>
+        </textarea>
+        <!-- left part with channel ids -->
+        <group name="archivedchannel">
+            <area>25,550,450,-115</area>
+            <textarea name="labelarchivechannel" from="basetext_m">
+                <area>0,0,100%,40</area>
+                <value>Archived Channel</value>
+            </textarea>
+            <textarea name="labelchanname" from="baselabeltext">
+                <area>0,75,200,40</area>
+                <value>Name:</value>
+            </textarea>
+            <textarea name="name" from="basetext_m">
+                <area>200,75,100%,40</area>
+            </textarea>
+            <textarea name="labelcallsign" from="baselabeltext">
+                <area>0,140,200,40</area>
+                <value>Callsign:</value>
+            </textarea>
+            <textarea name="callsign" from="basetext_m">
+                <area>200,140,100%,40</area>
+            </textarea>
+            <textarea name="labelchanno" from="baselabeltext">
+                <area>0,205,200,40</area>
+                <value>Chan. No:</value>
+            </textarea>
+            <textarea name="channo" from="basetext_m">
+                <area>200,205,100%,40</area>
+            </textarea>
+            <textarea name="labelchanid" from="baselabeltext">
+                <area>0,270,200,40</area>
+                <value>Chan. Id:</value>
+            </textarea>
+            <textarea name="chanid" from="basetext_m">
+                <area>200,270,100%,40</area>
+            </textarea>
+        </group>
+        <group name="localchannel">
+            <area>500,550,550,-115</area>
+            <textarea name="labellocalchannel" from="basetext_m">
+                <area>0,0,100%,40</area>
+                <value>Local Channel</value>
+            </textarea>
+            <textarea name="labelllocalchanname" from="baselabeltext">
+                <area>0,75,100,40</area>
+                <value>Name:</value>
+            </textarea>
+            <textarea name="local_name" from="basetext_m">
+                <area>200,75,100%,40</area>
+            </textarea>
+            <button name="searchname_button" from="basesearchbutton">
+                <position>100%-100,75</position>
+            </button>
+            <textarea name="labellocalcallsign" from="baselabeltext">
+                <area>0,140,200,40</area>
+                <value>Callsign:</value>
+            </textarea>
+            <textarea name="local_callsign" from="basetext_m">
+                <area>200,140,100%,40</area>
+            </textarea>
+            <button name="searchcallsign_button" from="basesearchbutton">
+                <position>100%-100,140</position>
+            </button>
+            <textarea name="labellocalchanno" from="baselabeltext">
+                <area>0,205,200,40</area>
+                <value>Chan. No:</value>
+            </textarea>
+            <textarea name="local_channo" from="basetext_m">
+                <area>200,205,100%,40</area>
+            </textarea>
+            <button name="searchchanno_button" from="basesearchbutton">
+                <position>100%-100,205</position>
+            </button>
+            <textarea name="labelchanid" from="baselabeltext">
+                <area>0,270,200,40</area>
+                <value>Chan. Id:</value>
+            </textarea>
+            <textarea name="local_chanid" from="basetext_m">
+                <area>200,270,100%,40</area>
+            </textarea>
+            <button name="searchchanid_button" from="basesearchbutton">
+                <position>100%-100,270</position>
+            </button>
+        </group>
+        <group name="separators">
+            <area>25,550,1025,-115</area>
+            <shape name="sep1" from="baseitemseparator_h">
+                <position>0,125</position>
+            </shape>
+            <shape name="sep2" from="baseitemseparator_h">
+                <position>0,190</position>
+            </shape>
+            <shape name="sep3" from="baseitemseparator_h">
+                <position>0,255</position>
+            </shape>
+            <shape name="sep4" from="baseitemseparator_h">
+                <position>0,320</position>
+            </shape>
+        </group>
+        <!-- right part with details -->
+        <group name="details">
+            <area>1125,465,-15,-115</area>
+            <textarea name="progtitle" from="basetitletext">
+                <area>0,0,100%,50</area>
+            </textarea>
+            <textarea name="progdescription" from="basedescriptiontext">
+                <area>0,75,100%,-50</area>
+            </textarea>
+            <imagetype name="icondatetime" from="baseicon" depends="progdatetime">
+                <position>0,100%-32</position>
+                <filename>images/icons/Calendar.png</filename>
+            </imagetype>
+            <textarea name="progdatetime" from="basetext_s">
+                <area>50,100%-32,200,32</area>
+                <alpha>150</alpha>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="finish_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
