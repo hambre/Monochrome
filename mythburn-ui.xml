@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="themeselector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>DVD Menu Theme</value>
+        </textarea>
+        <buttonlist name="theme_selector" from="baseselector">
+            <area>25,465,750,40</area>
+        </buttonlist>
+        <textarea name="themedescription" from="basedescriptiontext">
+            <area>25,550,-25,80</area>
+        </textarea>
+        <group name="previews">
+            <area>25,675,-25,-115</area>
+            <group name="theme">
+                <area>0,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="theme_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labeltheme" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Preview</value>
+                </textarea>
+            </group>
+            <group name="intro">
+                <area>384,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="intro_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelintro" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Intro</value>
+                </textarea>
+            </group>
+            <group name="mainmenu">
+                <area>768,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="mainmenu_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelmainmenu" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Main Menu</value>
+                </textarea>
+            </group>
+            <group name="chapter">
+                <area>1152,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="chapter_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelchapter" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Chapter Menu</value>
+                </textarea>
+            </group>
+            <group name="details">
+                <area>1536,0,334,100%</area>
+                <imagetype name="details_image_fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="details_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labeldetails" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Details</value>
+                </textarea>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Next</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
