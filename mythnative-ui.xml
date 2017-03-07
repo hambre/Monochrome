@@ -64,6 +64,12 @@
             <align>center</align>
             <alpha>150</alpha>
         </textarea>
+        <textarea name="currentsize_error" from="basetext_s">
+            <area>50%+25,100%-160,-25,24</area>
+            <font>basefont_xs_bad</font>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
         <progressbar name="size_bar" from="baseprogress_s">
             <area>50%+25,100%-127,-25,12</area>
         </progressbar>
