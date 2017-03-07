@@ -144,7 +144,7 @@
                         <area>10,5,100%-300,50</area>
                     </textarea>
                     <group name="texts">
-                        <area>10,0,-10,100%</area>
+                        <area>10,0,-50,100%</area>
                         <textarea name="subtitle" from="basetext_m">
                             <area>0,100%-45,100%-300,40</area>
                         </textarea>
@@ -159,6 +159,27 @@
                         </textarea>
                         <alpha>100</alpha>
                     </group>
+                    <statetype name="cutliststatus">
+                        <area>100%-37,50%-15,32,32</area>
+                        <state name="none">
+                        </state>
+                        <state name="using">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="statusimage" from="baseicon">
+                                <position>0,0</position>
+                                <filename>images/icons/Cutlist.png</filename>
+                                <alpha>200</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="notusing">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="statusimage" from="baseicon">
+                                <position>0,0</position>
+                                <filename>images/icons/Cutlist.png</filename>
+                                <alpha>50</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
                 </state>
                 <state name="selectedactive" from="active">
                     <textarea name="buttontext">
@@ -169,6 +190,21 @@
                     <group name="texts">
                         <alpha>255</alpha>
                     </group>
+                    <statetype name="movestate">
+                        <area>100%-33,5,32,-5</area>
+                        <state name="off"></state>
+                        <state name="on">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="uparrow">
+                                <position>0,0</position>
+                                <filename>images/ArrowUpBig.png</filename>
+                            </imagetype>
+                            <imagetype name="downarrow">
+                                <position>0,100%-20</position>
+                                <filename>images/ArrowDownBig.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
                 </state>
                 <state name="inactive" from="active"/>
                 <state name="selectedinactive" from="selectedactive">
