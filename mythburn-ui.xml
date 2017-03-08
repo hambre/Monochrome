@@ -347,4 +347,40 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="profilepopup">
+        <area>-1,0,700,410</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Change Encoding Profile</value>
+        </textarea>
+        <textarea name="caption_text" from="basetitletext">
+            <area>50,75,-50,50</area>
+            <align>center</align>
+        </textarea>
+        <textarea name="oldsize_text" from="baselabeltext">
+            <area>50,150,125,40</area>
+        </textarea>
+        <buttonlist name="profile_list" from="baseselector">
+            <area>200,150,-200,40</area>
+        </buttonlist>
+        <textarea name="newsize_text" from="baselabeltext">
+            <area>100%-175,150,125,40</area>
+            <align>right,vcenter</align>
+        </textarea>
+        <textarea name="description_text" from="basedescriptiontext">
+            <area>50,215,-50,80</area>
+        </textarea>
+        <button name="ok_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+    </window>
+
 </mythuitheme>
