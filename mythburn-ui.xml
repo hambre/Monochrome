@@ -383,4 +383,145 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="thumbfinder">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Thumb Image Selector</value>
+        </textarea>
+        <!-- left part with the thumbs list -->
+        <group name="thumbs">
+            <area>25,465,-775,-115</area>
+            <buttonlist name="thumblist" from="baseitemlist">
+                <area>0,0,100%,-37</area>
+                <layout>grid</layout>
+                <scrollstyle>free</scrollstyle>
+                <wrapstyle>none</wrapstyle>
+                <spacing>20</spacing>
+                <statetype name="buttonitem">
+                    <area>0,0,200,250</area>
+                    <state name="active">
+                        <area>0,0,200,215</area>
+                        <imagetype name="buttonimage">
+                            <area>0,0,100%,-50</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                        <textarea name="buttontext">
+                            <area>0,100%-50,100%,50</area>
+                            <align>center</align>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive" from="active">
+                        <textarea name="buttontext">
+                            <alpha>255</alpha>
+                        </textarea>
+                    </state>
+                    <state name="inactive" from="active">
+                        <textarea name="buttontext">
+                            <alpha>50</alpha>
+                        </textarea>
+                    </state>
+                    <state name="selectedinactive" from="active">
+                        <textarea name="buttontext">
+                            <alpha>100</alpha>
+                        </textarea>
+                    </state>
+                </statetype>
+            </buttonlist>
+            <imagetype name="positionimage">
+                <area>20,100%-20,-20,12</area>
+                <alpha>150</alpha>
+            </imagetype>
+        </group>
+        <!-- right part with the thumb details -->
+        <group name="selector">
+            <area>100%-725,465,700,-115</area>
+            <shape name="framebackground" from="baseimageplaceholder">
+                <area>0,0,100%,-125</area>
+            </shape>
+            <imagetype name="frameimage">
+                <area>0,0,100%,-125</area>
+            </imagetype>
+            <group name="labels">
+                <area>150,100%-105,100%,100%</area>
+                <textarea name="labelseekamount" from="baselabeltext">
+                    <area>0,0,250,40</area>
+                    <value>Seek Amount</value>
+                </textarea>
+                <textarea name="seekamount" from="basetext_m">
+                    <area>275,0,250,40</area>
+                </textarea>
+                <textarea name="labelposition" from="baselabeltext">
+                    <area>0,100%-40,250,40</area>
+                    <align>bottom,left</align>
+                    <value>Current Position</value>
+                </textarea>
+                <textarea name="currentpos" from="basetext_m">
+                    <area>275,100%-40,250,40</area>
+                    <align>bottom,left</align>
+                </textarea>
+            </group>
+            <button name="frame_button" from="basebutton">
+                <area>0,100%-100,100,100</area>
+                <statetype name="buttonstate">
+                    <area>0,0,100%,100%</area>
+                    <state name="active">
+                        <textarea name="text">
+                            <alpha>0</alpha>
+                        </textarea>
+                        <group name="icons">
+                            <area>10,10,-10,-10</area>
+                            <imagetype name="lefticon" from="baseicon">
+                                <area>0,50%-6,10,12</area>
+                                <filename>images/ArrowLeft.png</filename>
+                            </imagetype>
+                            <imagetype name="righticon" from="baseicon">
+                                <area>100%-12,50%-6,10,12</area>
+                                <filename>images/ArrowRight.png</filename>
+                            </imagetype>
+                            <imagetype name="topicon" from="baseicon">
+                                <area>50%-6,0,12,10</area>
+                                <filename>images/ArrowUp.png</filename>
+                            </imagetype>
+                            <imagetype name="bottomicon" from="baseicon">
+                                <area>50%-6,100%-10,12,10</area>
+                                <filename>images/ArrowDown.png</filename>
+                            </imagetype>
+                            <imagetype name="centericon" from="baseicon">
+                                <area>50%-16,50%-16,32,32</area>
+                                <filename>images/icons/Playlist.png</filename>
+                            </imagetype>
+                            <alpha>100</alpha>
+                        </group>
+                    </state>
+                    <state name="selected" from="active">
+                        <shape name="background" from="basecontrolbackground"/>
+                        <group name="icons">
+                            <alpha>255</alpha>
+                        </group>
+                    </state>
+                    <state name="disabled" from="active">
+                        <group name="icons">
+                            <alpha>50</alpha>
+                        </group>
+                    </state>
+                    <state name="pushed"/>
+                </statetype>
+            </button>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="save_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
