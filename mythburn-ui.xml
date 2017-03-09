@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="themeselector">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>DVD Menu Theme</value>
+        </textarea>
+        <buttonlist name="theme_selector" from="baseselector">
+            <area>25,465,750,40</area>
+        </buttonlist>
+        <textarea name="themedescription" from="basedescriptiontext">
+            <area>25,550,-25,80</area>
+        </textarea>
+        <group name="previews">
+            <area>25,675,-25,-115</area>
+            <group name="theme">
+                <area>0,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="theme_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labeltheme" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Preview</value>
+                </textarea>
+            </group>
+            <group name="intro">
+                <area>384,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="intro_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelintro" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Intro</value>
+                </textarea>
+            </group>
+            <group name="mainmenu">
+                <area>768,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="mainmenu_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelmainmenu" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Main Menu</value>
+                </textarea>
+            </group>
+            <group name="chapter">
+                <area>1152,0,334,100%</area>
+                <imagetype name="fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="chapter_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelchapter" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Chapter Menu</value>
+                </textarea>
+            </group>
+            <group name="details">
+                <area>1536,0,334,100%</area>
+                <imagetype name="details_image_fallback">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                    <filename>images/icons/ArtworkHuge.png</filename>
+                    <alpha>50</alpha>
+                </imagetype>
+                <imagetype name="details_image">
+                    <area>0,0,100%,-40</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labeldetails" from="baselabeltext">
+                    <area>0,100%-40,100%,100%</area>
+                    <align>center</align>
+                    <value>Details</value>
+                </textarea>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Next</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="mythburn">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Select Archive Items</value>
+        </textarea>
+        <buttonlist name="archivelist" from="baseitemlist">
+            <area>25,480,1100,-170</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,90</area>
+                <state name="active">
+                    <area>0,0,100%,99</area>
+                    <textarea name="buttontext">
+                        <area>10,5,100%-300,50</area>
+                    </textarea>
+                    <group name="texts">
+                        <area>10,0,-50,100%</area>
+                        <textarea name="subtitle" from="basetext_m">
+                            <area>0,100%-45,100%-300,40</area>
+                        </textarea>
+                        <textarea name="date" from="basetext_s">
+                            <area>100%-300,50%-40,100%,32</area>
+                            <align>right,vcenter</align>
+                        </textarea>
+                        <textarea name="profile" from="basetext_s">
+                            <area>100%-300,50%+8,100%,32</area>
+                            <align>right,vcenter</align>
+                            <template>%SIZE% ~ %PROFILE%</template>
+                        </textarea>
+                        <alpha>100</alpha>
+                    </group>
+                    <statetype name="cutliststatus">
+                        <area>100%-37,50%-15,32,32</area>
+                        <state name="none">
+                        </state>
+                        <state name="using">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="statusimage" from="baseicon">
+                                <position>0,0</position>
+                                <filename>images/icons/Cutlist.png</filename>
+                                <alpha>200</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="notusing">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="statusimage" from="baseicon">
+                                <position>0,0</position>
+                                <filename>images/icons/Cutlist.png</filename>
+                                <alpha>50</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="buttontext">
+                        <scroll direction="horizontal" />
+                        <cutdown>no</cutdown>
+                        <alpha>255</alpha>
+                    </textarea>
+                    <group name="texts">
+                        <alpha>255</alpha>
+                    </group>
+                    <statetype name="movestate">
+                        <area>100%-33,5,32,-5</area>
+                        <state name="off"></state>
+                        <state name="on">
+                            <area>0,0,100%,100%</area>
+                            <imagetype name="uparrow">
+                                <position>0,0</position>
+                                <filename>images/ArrowUpBig.png</filename>
+                            </imagetype>
+                            <imagetype name="downarrow">
+                                <position>0,100%-20</position>
+                                <filename>images/ArrowDownBig.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="buttontext">
+                        <alpha>100</alpha>
+                    </textarea>
+                    <group name="texts">
+                        <alpha>100</alpha>
+                    </group>
+                </state>
+            </statetype>
+        </buttonlist>
+        <group name="addbuttons">
+            <area>25,100%-155,1100,40</area>
+            <button name="addrecording_button" from="basebutton">
+                <area>0,0,350,40</area>
+                <value>Add Recording</value>
+            </button>
+            <button name="addvideo_button" from="basebutton">
+                <area>375,0,350,40</area>
+                <value>Add Video</value>
+            </button>
+            <button name="addfile_button" from="basebutton">
+                <area>750,0,350,40</area>
+                <value>Add File</value>
+            </button>
+        </group>
+        <textarea name="nofiles" from="basetext_m">
+            <area>50%-500,600,1000,40</area>
+            <align>center</align>
+            <value>No files are selected for archive</value>
+        </textarea>
+        <!-- right part with details -->
+        <group name="totalsize">
+            <area>1175,100%-160,-25,-115</area>
+            <textarea name="minsize" from="basetext_s">
+                <area>0,0,100,24</area>
+                <font>basefont_xs</font>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="currentsize" from="basetext_s">
+                <area>0,0,100%,24</area>
+                <font>basefont_xs</font>
+                <align>center</align>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="currentsize_error" from="basetext_s">
+                <area>0,0,100%,24</area>
+                <font>basefont_xs_bad</font>
+                <align>center</align>
+                <alpha>150</alpha>
+            </textarea>
+            <progressbar name="size_bar" from="baseprogress_s">
+                <area>0,100%-12,100%,12</area>
+            </progressbar>
+            <textarea name="maxsize" from="basetext_s">
+                <area>100%-175,0,100%,24</area>
+                <font>basefont_xs</font>
+                <align>right,vcenter</align>
+                <alpha>150</alpha>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="prev_button" from="basebutton">
+            <area>50%-325,100%-65,200,40</area>
+            <value>Previous</value>
+        </button>
+        <button name="next_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Next</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+125,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="edit_metadata">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Archive Item Details</value>
+        </textarea>
+        <group name="content">
+            <area>50%-600,480,1200,-115</area>
+            <group name="labels">
+                <area>0,0,25%,100%</area>
+                <textarea name="labeltitle" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                    <value>Title:</value>
+                </textarea>
+                <textarea name="labelsubtitle" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                    <value>Subtitle:</value>
+                </textarea>
+                <textarea name="labeldescription" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                    <value>Description:</value>
+                </textarea>
+                <textarea name="labelstartdate" from="baselabeltext">
+                    <area>0,355,100%,40</area>
+                    <value>Start Date:</value>
+                </textarea>
+                <textarea name="labeltime" from="baselabeltext">
+                    <area>0,420,100%,40</area>
+                    <value>Time:</value>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>25%,0,100%,100%</area>
+                <textedit name="title_edit" from="basetextedit">
+                    <area>0,0,100%,40</area>
+                </textedit>
+                <textedit name="subtitle_edit" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="description_edit" from="basetexteditmulti">
+                    <area>0,130,100%,200</area>
+                </textedit>
+                <textedit name="startdate_edit" from="basetextedit">
+                    <area>0,355,100%,40</area>
+                </textedit>
+                <textedit name="starttime_edit" from="basetextedit">
+                    <area>0,420,100%,40</area>
+                </textedit>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="ok_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="profilepopup">
+        <area>-1,0,700,410</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-400" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <value>Change Encoding Profile</value>
+        </textarea>
+        <textarea name="caption_text" from="basetitletext">
+            <area>50,75,-50,50</area>
+            <align>center</align>
+        </textarea>
+        <textarea name="oldsize_text" from="baselabeltext">
+            <area>50,150,125,40</area>
+        </textarea>
+        <buttonlist name="profile_list" from="baseselector">
+            <area>200,150,-200,40</area>
+        </buttonlist>
+        <textarea name="newsize_text" from="baselabeltext">
+            <area>100%-175,150,125,40</area>
+            <align>right,vcenter</align>
+        </textarea>
+        <textarea name="description_text" from="basedescriptiontext">
+            <area>50,215,-50,80</area>
+        </textarea>
+        <button name="ok_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="thumbfinder">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundArchive.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Thumb Image Selector</value>
+        </textarea>
+        <!-- left part with the thumbs list -->
+        <group name="thumbs">
+            <area>25,465,-775,-115</area>
+            <buttonlist name="thumblist" from="baseitemlist">
+                <area>0,0,100%,-37</area>
+                <layout>grid</layout>
+                <scrollstyle>free</scrollstyle>
+                <wrapstyle>none</wrapstyle>
+                <spacing>20</spacing>
+                <statetype name="buttonitem">
+                    <area>0,0,200,250</area>
+                    <state name="active">
+                        <area>0,0,200,215</area>
+                        <imagetype name="buttonimage">
+                            <area>0,0,100%,-50</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                        <textarea name="buttontext">
+                            <area>0,100%-50,100%,50</area>
+                            <align>center</align>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive" from="active">
+                        <textarea name="buttontext">
+                            <alpha>255</alpha>
+                        </textarea>
+                    </state>
+                    <state name="inactive" from="active">
+                        <textarea name="buttontext">
+                            <alpha>50</alpha>
+                        </textarea>
+                    </state>
+                    <state name="selectedinactive" from="active">
+                        <textarea name="buttontext">
+                            <alpha>100</alpha>
+                        </textarea>
+                    </state>
+                </statetype>
+            </buttonlist>
+            <imagetype name="positionimage">
+                <area>20,100%-20,-20,12</area>
+                <alpha>150</alpha>
+            </imagetype>
+        </group>
+        <!-- right part with the thumb details -->
+        <group name="selector">
+            <area>100%-725,465,700,-115</area>
+            <shape name="framebackground" from="baseimageplaceholder">
+                <area>0,0,100%,-125</area>
+            </shape>
+            <imagetype name="frameimage">
+                <area>0,0,100%,-125</area>
+            </imagetype>
+            <group name="labels">
+                <area>150,100%-105,100%,100%</area>
+                <textarea name="labelseekamount" from="baselabeltext">
+                    <area>0,0,250,40</area>
+                    <value>Seek Amount</value>
+                </textarea>
+                <textarea name="seekamount" from="basetext_m">
+                    <area>275,0,250,40</area>
+                </textarea>
+                <textarea name="labelposition" from="baselabeltext">
+                    <area>0,100%-40,250,40</area>
+                    <align>bottom,left</align>
+                    <value>Current Position</value>
+                </textarea>
+                <textarea name="currentpos" from="basetext_m">
+                    <area>275,100%-40,250,40</area>
+                    <align>bottom,left</align>
+                </textarea>
+            </group>
+            <button name="frame_button" from="basebutton">
+                <area>0,100%-100,100,100</area>
+                <statetype name="buttonstate">
+                    <area>0,0,100%,100%</area>
+                    <state name="active">
+                        <textarea name="text">
+                            <alpha>0</alpha>
+                        </textarea>
+                        <group name="icons">
+                            <area>10,10,-10,-10</area>
+                            <imagetype name="lefticon" from="baseicon">
+                                <area>0,50%-6,10,12</area>
+                                <filename>images/ArrowLeft.png</filename>
+                            </imagetype>
+                            <imagetype name="righticon" from="baseicon">
+                                <area>100%-12,50%-6,10,12</area>
+                                <filename>images/ArrowRight.png</filename>
+                            </imagetype>
+                            <imagetype name="topicon" from="baseicon">
+                                <area>50%-6,0,12,10</area>
+                                <filename>images/ArrowUp.png</filename>
+                            </imagetype>
+                            <imagetype name="bottomicon" from="baseicon">
+                                <area>50%-6,100%-10,12,10</area>
+                                <filename>images/ArrowDown.png</filename>
+                            </imagetype>
+                            <imagetype name="centericon" from="baseicon">
+                                <area>50%-16,50%-16,32,32</area>
+                                <filename>images/icons/Playlist.png</filename>
+                            </imagetype>
+                            <alpha>100</alpha>
+                        </group>
+                    </state>
+                    <state name="selected" from="active">
+                        <shape name="background" from="basecontrolbackground"/>
+                        <group name="icons">
+                            <alpha>255</alpha>
+                        </group>
+                    </state>
+                    <state name="disabled" from="active">
+                        <group name="icons">
+                            <alpha>50</alpha>
+                        </group>
+                    </state>
+                    <state name="pushed"/>
+                </statetype>
+            </button>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="save_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="cancel_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
