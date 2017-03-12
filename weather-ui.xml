@@ -17,6 +17,46 @@
         </textarea>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="screen-setup">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Screen Setup</value>
+        </textarea>
+        <group name="left">
+            <area>100,465,50%-150,-210</area>
+            <textarea name="inactivehdr" from="baselabeltext">
+                <area>0,0,100%,40</area>
+            </textarea>
+            <buttonlist name="inactivelist" from="baseitemlist">
+                <area>0,65,100%,100%</area>
+            </buttonlist>
+        </group>
+        <group name="right">
+            <area>50%+50,465,-100,-210</area>
+            <textarea name="activehdr" from="baselabeltext">
+                <area>0,0,100%,40</area>
+            </textarea>
+            <buttonlist name="activelist" from="baseitemlist">
+                <area>0,65,100%,100%</area>
+            </buttonlist>
+        </group>
+        <textarea name="helptxt" from="basehelptext">
+            <area>50%-500,100%-210,1000,110</area>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="finishbutton" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="Three Day Forecast">
         <textarea name="3dlocation" from="basetext_l">
             <area>50%-250,100,500,40</area>
