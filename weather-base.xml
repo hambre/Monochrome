@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <textarea name="weatherlocation" from="basetext_l">
+        <area>50%-250,100,500,40</area>
+        <align>center</align>
+    </textarea>
+
+    <textarea name="weatherupdatetime" from="basetext_s" depends="!update_text">
+        <area>25,150,-25,50</area>
+        <align>center</align>
+        <alpha>150</alpha>
+    </textarea>
+
+    <textarea name="weathercopyright" from="basetext_s">
+        <area>50%-500,100%-50,1000,50</area>
+        <align>center</align>
+        <alpha>150</alpha>
+    </textarea>
+
+    <imagetype name="weathercopyrightlogo">
+        <area>50%-550,100%-41,32,32</area>
+        <preserveaspect>true</preserveaspect>
+    </imagetype>
+
+    <!-- a text area displaying the date ot time of the data -->
+    <textarea name="weatherdatetimetext" from="basetext_m">
+        <area>0,25,100%,40</area>
+        <align>center</align>
+        <alpha>200</alpha>
+    </textarea>
+
+    <imagetype name="weathericon">
+        <area>0,85,100%,-150</area>
+        <preserveaspect>true</preserveaspect>
+    </imagetype>
+
+    <textarea name="weatherlabeltext0" from="baselabeltext">
+        <area>50%-125,100%-120,200,40</area>
+    </textarea>
+
+    <textarea name="weatherlabeltext1" from="baselabeltext">
+        <area>50%-125,100%-65,200,40</area>
+    </textarea>
+
+    <textarea name="weatherdatatext0" from="basetext_m">
+        <area>50%+75,100%-120,100%,40</area>
+        <value>~</value>
+    </textarea>
+
+    <textarea name="weatherdatatext1" from="basetext_m">
+        <area>50%+75,100%-65,100%,40</area>
+        <value>~</value>
+    </textarea>
+
+    <!-- a weather data group -->
+    <group name="weatherdatagroup">
+        <area>0,0,400,500</area>
+        <shape name="bg" from="basecontrolbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
+        <shape name="bottomsep" from="baseseparator_h">
+            <position>0,100%</position>
+        </shape>
+    </group>
+
+</mythuitheme>
