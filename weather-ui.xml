@@ -57,6 +57,47 @@
 
     <!--====================================================================-->
 
+    <window name="setup-location">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Location Search</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,500,1000,-150</area>
+            <textarea name="labellocation" from="baselabeltext">
+                <area>0,0,300,40</area>
+                <value>Enter Location:</value>
+            </textarea>
+            <textedit name="loc-edit" from="basetextedit">
+                <area>325,0,-125,40</area>
+            </textedit>
+            <button name="searchbtn" from="basesearchbutton">
+                <position>100%-100,0</position>
+            </button>
+            <buttonlist name="results" from="baseitemlist">
+                <area>0,90,100%,100%</area>
+            </buttonlist>
+        </group>
+        <textarea name="helptext" from="basehelptext">
+            <area>50%-500,100%-130,1000,70</area>
+            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
+        </textarea>
+        <textarea name="numresults" from="basetext_s">
+            <area>25,100%-50,500,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="source" from="basetext_s">
+            <area>100%-525,100%-50,-25,50</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="Three Day Forecast">
         <textarea name="3dlocation" from="basetext_l">
             <area>50%-250,100,500,40</area>
