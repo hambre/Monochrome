@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="weatherbase">
+        <group name="decoration" from="basewindowdecoration">
+            <imagetype name="pagebackground" from="basedefaultbackground"/>
+        </group>
+        <textarea name="header" from="basepagetitletext"/>
+        <textarea name="update_text" from="basehelptext">
+            <area>25,150,-25,50</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="pause_text" from="basetext_s">
+            <area>25,100%-50,250,50</area>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
+    <window name="Three Day Forecast">
+        <textarea name="3dlocation" from="basetext_l">
+            <area>50%-250,100,500,40</area>
+            <align>center</align>
+        </textarea>
+        <textarea name="updatetime" from="basetext_s" depends="!update_text">
+            <area>25,150,-25,50</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+        <group name="days">
+            <area>50%-650,50%-200,1300,500</area>
+            <group name="day-0">
+                <area>0,0,400,100%</area>
+                <textarea name="date-0" from="basetext_m">
+                    <area>0,0,100%,40</area>
+                    <align>center</align>
+                    <alpha>200</alpha>
+                </textarea>
+                <imagetype name="icon-0">
+                    <area>0,65,100%,-150</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelhigh-0" from="baselabeltext">
+                    <area>50%-100,100%-105,100,40</area>
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-0" from="basetext_m">
+                    <area>50%+25,100%-105,100%,40</area>
+                    <value>~</value>
+                </textarea>
+                <textarea name="labellow-0" from="baselabeltext">
+                    <area>50%-100,100%-40,100,40</area>
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-0" from="basetext_m">
+                    <area>50%+25,100%-40,100%,40</area>
+                    <value>~</value>
+                </textarea>
+            </group>
+            <group name="day-1">
+                <area>50%-200,0,400,100%</area>
+                <textarea name="date-1" from="basetext_m">
+                    <area>0,0,100%,40</area>
+                    <align>center</align>
+                    <alpha>200</alpha>
+                </textarea>
+                <imagetype name="icon-1">
+                    <area>0,65,100%,-150</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelhigh-1" from="baselabeltext">
+                    <area>50%-100,100%-105,100,40</area>
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-1" from="basetext_m">
+                    <area>50%+25,100%-105,100%,40</area>
+                    <value>~</value>
+                </textarea>
+                <textarea name="labellow-1" from="baselabeltext">
+                    <area>50%-100,100%-40,100,40</area>
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-1" from="basetext_m">
+                    <area>50%+25,100%-40,100%,40</area>
+                    <value>~</value>
+                </textarea>
+            </group>
+            <group name="day-2">
+                <area>100%-400,0,400,100%</area>
+                <textarea name="date-2" from="basetext_m">
+                    <area>0,0,100%,40</area>
+                    <align>center</align>
+                    <alpha>200</alpha>
+                </textarea>
+                <imagetype name="icon-2">
+                    <area>0,65,100%,-150</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="labelhigh-2" from="baselabeltext">
+                    <area>50%-100,100%-105,100,40</area>
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-2" from="basetext_m">
+                    <area>50%+25,100%-105,100%,40</area>
+                    <value>~</value>
+                </textarea>
+                <textarea name="labellow-2" from="baselabeltext">
+                    <area>50%-100,100%-40,100,40</area>
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-2" from="basetext_m">
+                    <area>50%+25,100%-40,100%,40</area>
+                    <value>~</value>
+                </textarea>
+            </group>
+        </group>
+        <textarea name="copyright" from="basetext_s">
+            <area>50%-500,100%-50,1000,50</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="copyrightlogo">
+            <area>50%-550,100%-41,32,32</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+    </window>
+</mythuitheme>
