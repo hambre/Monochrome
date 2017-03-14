@@ -99,6 +99,40 @@
 
     <!--====================================================================-->
 
+    <window name="global-setup">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Global Settings</value>
+        </textarea>
+        <group name="content">
+            <area>50%-350,550,700,130</area>
+            <textarea name="labeltimeout" from="baselabeltext">
+                <area>0,0,-150,40</area>
+                <value>Seconds to display each page:</value>
+            </textarea>
+            <spinbox name="timeout_spinbox" from="basespinbox">
+                <area>100%-150,0,100%,40</area>
+            </spinbox>
+            <textarea name="labelbackgroundcheck" from="baselabeltext">
+                <area>0,65,-150,40</area>
+                <value>Retrieve data in the background:</value>
+            </textarea>
+            <checkbox name="backgroundcheck" from="basecheckbox">
+                <area>100%-150,65,100%,40</area>
+            </checkbox>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="finishbutton" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="Three Day Forecast">
         <textarea name="3dlocation" from="weatherlocation"/>
         <textarea name="updatetime" from="weatherupdatetime" depends="!update_text"/>
