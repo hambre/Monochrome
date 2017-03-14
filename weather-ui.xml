@@ -402,4 +402,71 @@
         <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="Current Conditions">
+        <textarea name="smdesc" from="weatherlocation"/>
+        <textarea name="observation_time" from="weatherupdatetime" depends="!update_text"/>
+        <group name="weathergroup" from="weatherdatagroup">
+            <area>50%-500,50%-200,400,500</area>
+            <textarea name="weather" from="weatherdatetimetext"/>
+            <imagetype name="weather_icon" from="weathericon"/>
+            <textarea name="labeltemp" from="weatherlabeltext1">
+                <value>Temp</value>
+            </textarea>
+            <textarea name="temp" from="weatherdatatext1"/>
+        </group>
+        <group name="detailsgroup" from="weatherdatagroup">
+            <area>50%-50,50%-200,550,500</area>
+            <group name="text">
+                <area>50,50%-180,-50,-50</area>
+                <textarea name="labelhumidity" from="baselabeltext">
+                    <area>0,0,65%,40</area>
+                    <value>Humidity</value>
+                </textarea>
+                <textarea name="relative_humidity" from="basetext_m">
+                    <area>65%,0,100%,40</area>
+                </textarea>
+                <textarea name="labelpressure" from="baselabeltext">
+                    <area>0,65,65%,40</area>
+                    <value>Pressure</value>
+                </textarea>
+                <textarea name="pressure" from="basetext_m">
+                    <area>65%,65,100%,40</area>
+                </textarea>
+                <textarea name="labelwindgust" from="baselabeltext">
+                    <area>0,130,65%,40</area>
+                    <value>Wind(Gust)</value>
+                </textarea>
+                <textarea name="wind_spdgst" from="basetext_m">
+                    <area>65%,130,100%,40</area>
+                </textarea>
+                <textarea name="labelwinddir" from="baselabeltext">
+                    <area>0,195,65%,40</area>
+                    <value>Wind Direction</value>
+                </textarea>
+                <textarea name="wind_dir" from="basetext_m">
+                    <area>65%,195,100%,40</area>
+                </textarea>
+                <textarea name="labelvisibilty" from="baselabeltext">
+                    <area>0,260,65%,40</area>
+                    <value>Visibilty</value>
+                </textarea>
+                <textarea name="visibility" from="basetext_m">
+                    <area>65%,260,100%,40</area>
+                </textarea>
+                <textarea name="labelappt" from="baselabeltext">
+                    <area>0,325,65%,40</area>
+                    <value>Feels Like</value>
+                </textarea>
+                <textarea name="appt" from="basetext_m">
+                    <area>65%,325,100%,40</area>
+                </textarea>
+            </group>
+        </group>
+        <textarea name="copyright" from="weathercopyright"/>
+        <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
+    </window>
+    -->
+
 </mythuitheme>
