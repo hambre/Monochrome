@@ -133,6 +133,46 @@
 
     <!--====================================================================-->
 
+    <window name="source-setup">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Source Setup</value>
+        </textarea>
+        <buttonlist name="srclist" from="baseitemlist">
+            <area>25,465,50%-50,-115</area>
+        </buttonlist>
+        <group name="controls">
+            <area>50%+50,465,-200,-115</area>
+            <textarea name="labelupdate" from="baselabeltext">
+                <area>0,0,-150,40</area>
+                <value>Data Retrieval Interval (minutes):</value>
+            </textarea>
+            <spinbox name="update_spinbox" from="basespinbox">
+                <area>100%-150,0,100%,40</area>
+            </spinbox>
+            <textarea name="labelretrieve" from="baselabeltext">
+                <area>0,65,-150,40</area>
+                <value>Source Update Timeout (seconds):</value>
+            </textarea>
+            <spinbox name="retrieve_spinbox" from="basespinbox">
+                <area>100%-150,65,100%,40</area>
+            </spinbox>
+            <textarea name="srcinfo" from="basedescriptiontext">
+                <area>0,200,100%,100%</area>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="finishbutton" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="Three Day Forecast">
         <textarea name="3dlocation" from="weatherlocation"/>
         <textarea name="updatetime" from="weatherupdatetime" depends="!update_text"/>
