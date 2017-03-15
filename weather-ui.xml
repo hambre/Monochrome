@@ -467,6 +467,22 @@
         <textarea name="copyright" from="weathercopyright"/>
         <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
     </window>
-    -->
+
+    <!--====================================================================-->
+
+    <window name="Severe Weather Alerts">
+        <textarea name="swlocation" from="weatherlocation"/>
+        <textarea name="updatetime" from="weatherupdatetime" depends="!update_text"/>
+        <group name="content" from="weatherdatagroup">
+            <area>50%-500,50%-200,1000,400</area>
+            <textarea name="alerts" from="basedescriptiontext">
+                <area>50,50,-50,-50</area>
+                <align>center</align>
+            </textarea>
+        </group>
+        <textarea name="copyright" from="weathercopyright"/>
+        <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
+    </window>
+
 
 </mythuitheme>
