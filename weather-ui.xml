@@ -405,7 +405,7 @@
     <!--====================================================================-->
 
     <window name="Current Conditions">
-        <textarea name="smdesc" from="weatherlocation"/>
+        <textarea name="cclocation" from="weatherlocation"/>
         <textarea name="observation_time" from="weatherupdatetime" depends="!update_text"/>
         <group name="weathergroup" from="weatherdatagroup">
             <area>50%-500,50%-200,400,500</area>
