@@ -57,8 +57,9 @@
     <!-- a weather data group -->
     <group name="weatherdatagroup">
         <area>0,0,400,500</area>
-        <shape name="bg" from="basecontrolbackground">
+        <shape name="bg" from="basebackground">
             <area>0,0,100%,100%</area>
+            <alpha>200</alpha>
         </shape>
         <shape name="bottomsep" from="baseseparator_h">
             <position>0,100%</position>

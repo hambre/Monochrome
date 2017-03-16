@@ -3,8 +3,16 @@
 <mythuitheme>
 
     <window name="weatherbase" include="weather-base.xml">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <shape name="backgroundshape" from="basebackground">
+            <alpha>225</alpha>
+        </shape>
         <group name="decoration" from="basewindowdecoration">
-            <imagetype name="pagebackground" from="basedefaultbackground"/>
+            <shape name="background">
+                <alpha>0</alpha>
+            </shape>
         </group>
         <textarea name="header" from="basepagetitletext"/>
         <textarea name="update_text" from="basehelptext">
