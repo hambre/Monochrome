@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="weatherbase" include="weather-base.xml">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <shape name="backgroundshape" from="basebackground">
+            <alpha>225</alpha>
+        </shape>
+        <group name="decoration" from="basewindowdecoration">
+            <shape name="background">
+                <alpha>0</alpha>
+            </shape>
+        </group>
+        <textarea name="header" from="basepagetitletext"/>
+        <textarea name="update_text" from="basehelptext">
+            <area>25,150,-25,50</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="pause_text" from="basetext_s">
+            <area>25,100%-50,250,50</area>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="screen-setup">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Screen Setup</value>
+        </textarea>
+        <group name="left">
+            <area>100,465,50%-150,-210</area>
+            <textarea name="inactivehdr" from="baselabeltext">
+                <area>0,0,100%,40</area>
+            </textarea>
+            <buttonlist name="inactivelist" from="baseitemlist">
+                <area>0,65,100%,100%</area>
+            </buttonlist>
+        </group>
+        <group name="right">
+            <area>50%+50,465,-100,-210</area>
+            <textarea name="activehdr" from="baselabeltext">
+                <area>0,0,100%,40</area>
+            </textarea>
+            <buttonlist name="activelist" from="baseitemlist">
+                <area>0,65,100%,100%</area>
+            </buttonlist>
+        </group>
+        <textarea name="helptxt" from="basehelptext">
+            <area>50%-500,100%-210,1000,110</area>
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="finishbutton" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="setup-location">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Location Search</value>
+        </textarea>
+        <group name="content">
+            <area>50%-500,500,1000,-150</area>
+            <textarea name="labellocation" from="baselabeltext">
+                <area>0,0,300,40</area>
+                <value>Enter Location:</value>
+            </textarea>
+            <textedit name="loc-edit" from="basetextedit">
+                <area>325,0,-125,40</area>
+            </textedit>
+            <button name="searchbtn" from="basesearchbutton">
+                <position>100%-100,0</position>
+            </button>
+            <buttonlist name="results" from="baseitemlist">
+                <area>0,90,100%,100%</area>
+            </buttonlist>
+        </group>
+        <textarea name="helptext" from="basehelptext">
+            <area>50%-500,100%-130,1000,70</area>
+            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
+        </textarea>
+        <textarea name="numresults" from="basetext_s">
+            <area>25,100%-50,500,50</area>
+            <alpha>150</alpha>
+        </textarea>
+        <textarea name="source" from="basetext_s">
+            <area>100%-525,100%-50,-25,50</area>
+            <align>right,vcenter</align>
+            <alpha>150</alpha>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="global-setup">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Global Settings</value>
+        </textarea>
+        <group name="content">
+            <area>50%-350,550,700,130</area>
+            <textarea name="labeltimeout" from="baselabeltext">
+                <area>0,0,-150,40</area>
+                <value>Seconds to display each page:</value>
+            </textarea>
+            <spinbox name="timeout_spinbox" from="basespinbox">
+                <area>100%-150,0,100%,40</area>
+            </spinbox>
+            <textarea name="labelbackgroundcheck" from="baselabeltext">
+                <area>0,65,-150,40</area>
+                <value>Retrieve data in the background:</value>
+            </textarea>
+            <checkbox name="backgroundcheck" from="basecheckbox">
+                <area>100%-150,65,100%,40</area>
+            </checkbox>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="finishbutton" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="source-setup">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Source Setup</value>
+        </textarea>
+        <buttonlist name="srclist" from="baseitemlist">
+            <area>25,465,50%-50,-115</area>
+        </buttonlist>
+        <group name="controls">
+            <area>50%+50,465,-200,-115</area>
+            <textarea name="labelupdate" from="baselabeltext">
+                <area>0,0,-150,40</area>
+                <value>Data Retrieval Interval (minutes):</value>
+            </textarea>
+            <spinbox name="update_spinbox" from="basespinbox">
+                <area>100%-150,0,100%,40</area>
+            </spinbox>
+            <textarea name="labelretrieve" from="baselabeltext">
+                <area>0,65,-150,40</area>
+                <value>Source Update Timeout (seconds):</value>
+            </textarea>
+            <spinbox name="retrieve_spinbox" from="basespinbox">
+                <area>100%-150,65,100%,40</area>
+            </spinbox>
+            <textarea name="srcinfo" from="basedescriptiontext">
+                <area>0,200,100%,100%</area>
+            </textarea>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="finishbutton" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Finish</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="Three Day Forecast">
+        <textarea name="3dlocation" from="weatherlocation"/>
+        <textarea name="updatetime" from="weatherupdatetime" depends="!update_text"/>
+        <group name="days">
+            <area>50%-650,50%-200,1300,500</area>
+            <group name="day-0" from="weatherdatagroup">
+                <area>0,0,400,100%</area>
+                <textarea name="date-0" from="weatherdatetimetext"/>
+                <imagetype name="icon-0" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-0" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-0" from="weatherdatatext1"/>
+            </group>
+            <group name="day-1" from="weatherdatagroup">
+                <area>50%-200,0,400,100%</area>
+                <textarea name="date-1" from="weatherdatetimetext"/>
+                <imagetype name="icon-1" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-1" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-1" from="weatherdatatext1"/>
+            </group>
+            <group name="day-2" from="weatherdatagroup">
+                <area>100%-400,0,400,100%</area>
+                <textarea name="date-2" from="weatherdatetimetext"/>
+                <imagetype name="icon-2" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-2" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-2" from="weatherdatatext1"/>
+            </group>
+        </group>
+        <textarea name="copyright" from="weathercopyright"/>
+        <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="Six Day Forecast">
+        <textarea name="6dlocation" from="weatherlocation"/>
+        <textarea name="updatetime" from="weatherupdatetime" depends="!update_text"/>
+        <group name="days">
+            <area>50%-650,250,1300,-100</area>
+            <group name="day-0" from="weatherdatagroup">
+                <area>0,0,400,50%-25</area>
+                <textarea name="date-0" from="weatherdatetimetext"/>
+                <imagetype name="icon-0" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-0" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-0" from="weatherdatatext1"/>
+            </group>
+            <group name="day-1" from="weatherdatagroup">
+                <area>50%-200,0,400,50%-25</area>
+                <textarea name="date-1" from="weatherdatetimetext"/>
+                <imagetype name="icon-1" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-1" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-1" from="weatherdatatext1"/>
+            </group>
+            <group name="day-2" from="weatherdatagroup">
+                <area>100%-400,0,400,50%-25</area>
+                <textarea name="date-2" from="weatherdatetimetext"/>
+                <imagetype name="icon-2" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-2" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-2" from="weatherdatatext1"/>
+            </group>
+            <group name="day-3" from="weatherdatagroup">
+                <area>0,50%+25,400,100%</area>
+                <textarea name="date-3" from="weatherdatetimetext"/>
+                <imagetype name="icon-3" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-3" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-3" from="weatherdatatext1"/>
+            </group>
+            <group name="day-4" from="weatherdatagroup">
+                <area>50%-200,50%+25,400,100%</area>
+                <textarea name="date-4" from="weatherdatetimetext"/>
+                <imagetype name="icon-4" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-4" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-4" from="weatherdatatext1"/>
+            </group>
+            <group name="day-5" from="weatherdatagroup">
+                <area>100%-400,50%+25,400,100%</area>
+                <textarea name="date-5" from="weatherdatetimetext"/>
+                <imagetype name="icon-5" from="weathericon"/>
+                <textarea name="labelhigh" from="weatherlabeltext0">
+                    <value>High</value>
+                </textarea>
+                <textarea name="high-5" from="weatherdatatext0"/>
+                <textarea name="labellow" from="weatherlabeltext1">
+                    <value>Low</value>
+                </textarea>
+                <textarea name="low-5" from="weatherdatatext1"/>
+            </group>
+        </group>
+        <textarea name="copyright" from="weathercopyright"/>
+        <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="18 Hour Forecast">
+        <textarea name="18hrlocation" from="weatherlocation"/>
+        <textarea name="updatetime" from="weatherupdatetime" depends="!update_text"/>
+        <group name="hours">
+            <area>50%-650,250,1300,-100</area>
+            <group name="hour-0" from="weatherdatagroup">
+                <area>0,0,400,50%-25</area>
+                <textarea name="time-0" from="weatherdatetimetext"/>
+                <imagetype name="18icon-0" from="weathericon"/>
+                <textarea name="labeltemp" from="weatherlabeltext0">
+                    <value>Temp</value>
+                </textarea>
+                <textarea name="temp-0" from="weatherdatatext0"/>
+                <textarea name="labelpop" from="weatherlabeltext1">
+                    <value>Precip</value>
+                </textarea>
+                <textarea name="pop-0" from="weatherdatatext1"/>
+            </group>
+            <group name="hour-1" from="weatherdatagroup">
+                <area>50%-200,0,400,50%-25</area>
+                <textarea name="time-1" from="weatherdatetimetext"/>
+                <imagetype name="18icon-1" from="weathericon"/>
+                <textarea name="labeltemp" from="weatherlabeltext0">
+                    <value>Temp</value>
+                </textarea>
+                <textarea name="temp-1" from="weatherdatatext0"/>
+                <textarea name="labelpop" from="weatherlabeltext1">
+                    <value>Precip</value>
+                </textarea>
+                <textarea name="pop-1" from="weatherdatatext1"/>
+            </group>
+            <group name="hour-2" from="weatherdatagroup">
+                <area>100%-400,0,400,50%-25</area>
+                <textarea name="time-2" from="weatherdatetimetext"/>
+                <imagetype name="18icon-2" from="weathericon"/>
+                <textarea name="labeltemp" from="weatherlabeltext0">
+                    <value>Temp</value>
+                </textarea>
+                <textarea name="temp-2" from="weatherdatatext0"/>
+                <textarea name="labelpop" from="weatherlabeltext1">
+                    <value>Precip</value>
+                </textarea>
+                <textarea name="pop-2" from="weatherdatatext1"/>
+            </group>
+            <group name="hour-3" from="weatherdatagroup">
+                <area>0,50%+25,400,100%</area>
+                <textarea name="time-3" from="weatherdatetimetext"/>
+                <imagetype name="18icon-3" from="weathericon"/>
+                <textarea name="labeltemp" from="weatherlabeltext0">
+                    <value>Temp</value>
+                </textarea>
+                <textarea name="temp-3" from="weatherdatatext0"/>
+                <textarea name="labelpop" from="weatherlabeltext1">
+                    <value>Precip</value>
+                </textarea>
+                <textarea name="pop-3" from="weatherdatatext1"/>
+            </group>
+            <group name="hour-4" from="weatherdatagroup">
+                <area>50%-200,50%+25,400,100%</area>
+                <textarea name="time-4" from="weatherdatetimetext"/>
+                <imagetype name="18icon-4" from="weathericon"/>
+                <textarea name="labeltemp" from="weatherlabeltext0">
+                    <value>Temp</value>
+                </textarea>
+                <textarea name="temp-4" from="weatherdatatext0"/>
+                <textarea name="labelpop" from="weatherlabeltext1">
+                    <value>Precip</value>
+                </textarea>
+                <textarea name="pop-4" from="weatherdatatext1"/>
+            </group>
+            <group name="hour-5" from="weatherdatagroup">
+                <area>100%-400,50%+25,400,100%</area>
+                <textarea name="time-5" from="weatherdatetimetext"/>
+                <imagetype name="18icon-5" from="weathericon"/>
+                <textarea name="labeltemp" from="weatherlabeltext0">
+                    <value>Temp</value>
+                </textarea>
+                <textarea name="temp-5" from="weatherdatatext0"/>
+                <textarea name="labelpop" from="weatherlabeltext1">
+                    <value>Precip</value>
+                </textarea>
+                <textarea name="pop-5" from="weatherdatatext1"/>
+            </group>
+        </group>
+        <textarea name="copyright" from="weathercopyright"/>
+        <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="Current Conditions">
+        <textarea name="cclocation" from="weatherlocation"/>
+        <textarea name="observation_time" from="weatherupdatetime" depends="!update_text"/>
+        <group name="weathergroup" from="weatherdatagroup">
+            <area>50%-500,50%-200,400,500</area>
+            <textarea name="weather" from="weatherdatetimetext"/>
+            <imagetype name="weather_icon" from="weathericon"/>
+            <textarea name="labeltemp" from="weatherlabeltext1">
+                <value>Temp</value>
+            </textarea>
+            <textarea name="temp" from="weatherdatatext1"/>
+        </group>
+        <group name="detailsgroup" from="weatherdatagroup">
+            <area>50%-50,50%-200,550,500</area>
+            <group name="text">
+                <area>50,50%-180,-50,-50</area>
+                <textarea name="labelhumidity" from="baselabeltext">
+                    <area>0,0,65%,40</area>
+                    <value>Humidity</value>
+                </textarea>
+                <textarea name="relative_humidity" from="basetext_m">
+                    <area>65%,0,100%,40</area>
+                </textarea>
+                <textarea name="labelpressure" from="baselabeltext">
+                    <area>0,65,65%,40</area>
+                    <value>Pressure</value>
+                </textarea>
+                <textarea name="pressure" from="basetext_m">
+                    <area>65%,65,100%,40</area>
+                </textarea>
+                <textarea name="labelwindgust" from="baselabeltext">
+                    <area>0,130,65%,40</area>
+                    <value>Wind(Gust)</value>
+                </textarea>
+                <textarea name="wind_spdgst" from="basetext_m">
+                    <area>65%,130,100%,40</area>
+                </textarea>
+                <textarea name="labelwinddir" from="baselabeltext">
+                    <area>0,195,65%,40</area>
+                    <value>Wind Direction</value>
+                </textarea>
+                <textarea name="wind_dir" from="basetext_m">
+                    <area>65%,195,100%,40</area>
+                </textarea>
+                <textarea name="labelvisibilty" from="baselabeltext">
+                    <area>0,260,65%,40</area>
+                    <value>Visibilty</value>
+                </textarea>
+                <textarea name="visibility" from="basetext_m">
+                    <area>65%,260,100%,40</area>
+                </textarea>
+                <textarea name="labelappt" from="baselabeltext">
+                    <area>0,325,65%,40</area>
+                    <value>Feels Like</value>
+                </textarea>
+                <textarea name="appt" from="basetext_m">
+                    <area>65%,325,100%,40</area>
+                </textarea>
+            </group>
+        </group>
+        <textarea name="copyright" from="weathercopyright"/>
+        <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="Severe Weather Alerts">
+        <textarea name="swlocation" from="weatherlocation"/>
+        <textarea name="updatetime" from="weatherupdatetime" depends="!update_text"/>
+        <group name="content" from="weatherdatagroup">
+            <area>50%-500,50%-200,1000,400</area>
+            <textarea name="alerts" from="basedescriptiontext">
+                <area>50,50,-50,-50</area>
+                <align>center</align>
+            </textarea>
+        </group>
+        <textarea name="copyright" from="weathercopyright"/>
+        <imagetype name="copyrightlogo" from="weathercopyrightlogo"/>
+    </window>
+
+
+</mythuitheme>

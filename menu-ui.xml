@@ -93,6 +93,11 @@
             <!-- info_settings.xml -->
             <state name="WEBPAGE" from="MENU_INFO_CENTER"/>
             <state name="TV_STATUS" from="MENU_INFO_CENTER"/>
+            <state name="WEATHER" from="default">
+               <imagetype name="background">
+                    <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
+                </imagetype>
+            </state>
 
             <!-- optical_menu.xml -->
             <state name="DISC_PLAY" from="MENU_OPTICAL_DISKS"/>
@@ -129,6 +134,7 @@
             </state>
             <state name="SETTINGS_GRABBERS" from="MENU_UTILITIES_SETUP"/>
             <state name="SCREENSETUPWIZARD" from="MENU_UTILITIES_SETUP"/>
+            <state name="SETTINGS_WEATHER" from="WEATHER"/>
 
             <!-- tv-schedule.xml -->
             <state name="TV_PROGFIND" from="default">
@@ -142,8 +148,14 @@
             <state name="TV_MANUAL_SCHEDULE" from="MENU_MANAGE_RECORDINGS"/>
 
             <!-- Music -->
-           <state name="MUSIC" from="MUSIC_PLAY"/>
-           <state name="MUSIC_PLAYLIST" from="MUSIC_PLAY"/>
+            <state name="MUSIC" from="MUSIC_PLAY"/>
+            <state name="MUSIC_PLAYLIST" from="MUSIC_PLAY"/>
+
+            <!-- Weather -->
+            <state name="WEATHER_SETTINGS_GENERAL" from="WEATHER"/>
+            <state name="WEATHER_SETTINGS_SCREEN" from="WEATHER"/>
+            <state name="WEATHER_SETTINGS_SOURCE" from="WEATHER"/>
+
         </statetype>
 
         <group name="decoration" from="basecontentdecoration"/>
