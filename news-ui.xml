@@ -18,4 +18,62 @@
         </textarea>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="news">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Bookmark Manager</value>
+        </textarea>
+        <buttonlist name="siteslist" from="baseitemlist">
+            <area>25,500,50%-50,-75</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
+        </buttonlist>
+        <buttonlist name="articleslist" from="baseitemlist">
+            <area>25,500,50%-50,-75</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="title" from="basetitletext">
+            <area>50%+25,500,-25,50</area>
+        </textarea>
+        <textarea name="description" from="basedescriptiontext">
+            <area>50%+25,575,-25,250</area>
+        </textarea>
+        <imagetype name="thumbnail">
+            <area>50%+25,900,-25,100</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+        <textarea name="updated" from="basetext_s">
+            <area>50%-250,100%-50,500,50</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="download" from="baseicon">
+            <area>100%-57,100%-41,32,32</area>
+            <filename>images/icons/Download.png</filename>
+        </imagetype>
+        <imagetype name="ispodcast" from="baseicon">
+            <area>100%-114,100%-41,32,32</area>
+            <filename>images/icons/Sender.png</filename>
+        </imagetype>
+        <imagetype name="enclosures" from="baseicon">
+            <area>100%-171,100%-41,32,32</area>
+            <filename>images/icons/Link.png</filename>
+        </imagetype>
+    </window>
+
 </mythuitheme>
