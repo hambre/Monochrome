@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="config">
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>News Settings</value>
+        </textarea>
+        <buttonlist name="category" from="baseitemlist">
+            <area>25,500,50%-50,-75</area>
+        </buttonlist>
+        <buttonlist name="sites" from="baseitemchecklist">
+            <area>50%+25,500,-25,-75</area>
+        </buttonlist>
+        <textarea name="help" from="basehelptext">
+            <area>50%-500,100%-50,1000,50</area>
+        </textarea>
+    </window>
+
+</mythuitheme>
