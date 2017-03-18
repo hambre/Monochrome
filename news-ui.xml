@@ -3,6 +3,9 @@
 <mythuitheme>
 
     <window name="config">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundNews.jpg</filename>
+        </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="title" from="basepagetitletext">
             <value>News Settings</value>
@@ -21,6 +24,9 @@
     <!--====================================================================-->
 
     <window name="news">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundNews.jpg</filename>
+        </imagetype>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="title" from="basepagetitletext">
             <value>Bookmark Manager</value>
@@ -79,6 +85,9 @@
     <!--====================================================================-->
 
     <window name="editor">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundNews.jpg</filename>
+        </imagetype>
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="title" from="basepagetitletext"/>
         <group name="content">
