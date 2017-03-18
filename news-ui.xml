@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="config">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundNews.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>News Settings</value>
+        </textarea>
+        <buttonlist name="category" from="baseitemlist">
+            <area>25,500,50%-50,-75</area>
+        </buttonlist>
+        <buttonlist name="sites" from="baseitemchecklist">
+            <area>50%+25,500,-25,-75</area>
+        </buttonlist>
+        <textarea name="help" from="basehelptext">
+            <area>50%-500,100%-50,1000,50</area>
+        </textarea>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="news">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundNews.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="title" from="basepagetitletext">
+            <value>Bookmark Manager</value>
+        </textarea>
+        <buttonlist name="siteslist" from="baseitemlist">
+            <area>25,500,50%-50,-75</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
+        </buttonlist>
+        <buttonlist name="articleslist" from="baseitemlist">
+            <area>25,500,50%-50,-75</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="title" from="basetitletext">
+            <area>50%+25,500,-25,50</area>
+        </textarea>
+        <textarea name="description" from="basedescriptiontext">
+            <area>50%+25,575,-25,250</area>
+        </textarea>
+        <imagetype name="thumbnail">
+            <area>50%+25,900,-25,100</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+        <textarea name="updated" from="basetext_s">
+            <area>50%-250,100%-50,500,50</area>
+            <align>center</align>
+            <alpha>150</alpha>
+        </textarea>
+        <imagetype name="download" from="baseicon">
+            <area>100%-57,100%-41,32,32</area>
+            <filename>images/icons/Download.png</filename>
+        </imagetype>
+        <imagetype name="ispodcast" from="baseicon">
+            <area>100%-114,100%-41,32,32</area>
+            <filename>images/icons/Sender.png</filename>
+        </imagetype>
+        <imagetype name="enclosures" from="baseicon">
+            <area>100%-171,100%-41,32,32</area>
+            <filename>images/icons/Link.png</filename>
+        </imagetype>
+    </window>
+
+    <!--====================================================================-->
+
+    <window name="editor">
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundNews.jpg</filename>
+        </imagetype>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext"/>
+        <group name="content">
+            <area>50%-500,550,1000,-115</area>
+            <group name="labels">
+                <area>0,0,20%,100%</area>
+                <textarea name="namelabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                </textarea>
+                <textarea name="urllabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                </textarea>
+                <textarea name="iconlabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                </textarea>
+                <textarea name="podcastlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>20%,0,100%,100%</area>
+                <textedit name="name" from="basetextedit">
+                    <area>0,0,100%,40</area>
+                </textedit>
+                <textedit name="url" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="icon" from="basetextedit">
+                    <area>0,130,100%,40</area>
+                </textedit>
+                <checkbox name="podcast_check" from="basecheckbox">
+                    <area>0,199,32,32</area>
+                </checkbox>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
