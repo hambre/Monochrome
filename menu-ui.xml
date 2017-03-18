@@ -98,6 +98,11 @@
                     <filename>images/Backgrounds/BackgroundWeather.jpg</filename>
                 </imagetype>
             </state>
+            <state name="NEWS" from="default">
+               <imagetype name="background">
+                    <filename>images/Backgrounds/BackgroundNews.jpg</filename>
+                </imagetype>
+            </state>
 
             <!-- optical_menu.xml -->
             <state name="DISC_PLAY" from="MENU_OPTICAL_DISKS"/>
@@ -135,6 +140,7 @@
             <state name="SETTINGS_GRABBERS" from="MENU_UTILITIES_SETUP"/>
             <state name="SCREENSETUPWIZARD" from="MENU_UTILITIES_SETUP"/>
             <state name="SETTINGS_WEATHER" from="WEATHER"/>
+            <state name="SETTINGS_NEWS" from="NEWS"/>
 
             <!-- tv-schedule.xml -->
             <state name="TV_PROGFIND" from="default">
