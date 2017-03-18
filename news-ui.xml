@@ -76,4 +76,53 @@
         </imagetype>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="editor">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="title" from="basepagetitletext"/>
+        <group name="content">
+            <area>50%-500,550,1000,-115</area>
+            <group name="labels">
+                <area>0,0,20%,100%</area>
+                <textarea name="namelabel" from="baselabeltext">
+                    <area>0,0,100%,40</area>
+                </textarea>
+                <textarea name="urllabel" from="baselabeltext">
+                    <area>0,65,100%,40</area>
+                </textarea>
+                <textarea name="iconlabel" from="baselabeltext">
+                    <area>0,130,100%,40</area>
+                </textarea>
+                <textarea name="podcastlabel" from="baselabeltext">
+                    <area>0,195,100%,40</area>
+                </textarea>
+            </group>
+            <group name="controls">
+                <area>20%,0,100%,100%</area>
+                <textedit name="name" from="basetextedit">
+                    <area>0,0,100%,40</area>
+                </textedit>
+                <textedit name="url" from="basetextedit">
+                    <area>0,65,100%,40</area>
+                </textedit>
+                <textedit name="icon" from="basetextedit">
+                    <area>0,130,100%,40</area>
+                </textedit>
+                <checkbox name="podcast_check" from="basecheckbox">
+                    <area>0,199,32,32</area>
+                </checkbox>
+            </group>
+        </group>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
 </mythuitheme>
