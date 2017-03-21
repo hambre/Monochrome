@@ -91,7 +91,7 @@
             <alpha>150</alpha>
             <align>right,vcenter</align>
         </textarea>
-        <group name="scanpopup" depends="scanprogressbar">
+        <group name="scanpopup" depends="scanprogresstext">
             <area>50%-375,0,750,175</area>
             <animation trigger="AboutToShow">
                 <section duration="500" centre="middle">
