@@ -51,6 +51,117 @@
 
     <!--====================================================================-->
 
+    <window name="backendselection">
+        <imagetype name="background" from="baseimagebackground"/>
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>MythTV Servers</value>
+        </textarea>
+        <buttonlist name="backends" from="baseitemlist">
+            <area>50%-500,465,1000,-120</area>
+            <statetype name="buttonitem">
+                <area>0,0,100%,75</area>
+                <state name="active">
+                    <area>0,0,100%,75</area>
+                    <textarea name="buttontext">
+                        <alpha>0</alpha>
+                    </textarea>
+                    <textarea name="modelname" from="baseitemtext">
+                        <area>50,5,65%,-5</area>
+                        <template>%MODELNAME% ~ %VERSION%</template>
+                    </textarea>
+                    <group name="details">
+                        <area>0,0,100%,75</area>
+                        <statetype name="securitypin">
+                            <area>5,21,32,32</area>
+                            <state name="yes">
+                                <area>0,0,32,32</area>
+                                <imagetype name="locked" from="baseicon">
+                                    <position>0,0</position>
+                                    <filename>images/icons/Locked.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="no">
+                                <area>0,0,32,32</area>
+                                <imagetype name="unlocked" from="baseicon">
+                                    <position>0,0</position>
+                                    <filename>images/icons/Unlocked.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                        <textarea name="protocolversion" from="basetext_s">
+                            <area>65%,5,-5,50%</area>
+                            <align>top,right</align>
+                            <template>Protocol: %PROTOCOLVERSION%</template>
+                        </textarea>
+                        <statetype name="connection">
+                            <area>65%,50%,-5,-5</area>
+                            <state name="good">
+                                <area>0,0,100%,100%</area>
+                                <textarea name="description" from="basetext_xs">
+                                    <area>0,0,100%,100%</area>
+                                    <align>bottom,right</align>
+                                    <value>Ok</value>
+                                    <font>basefont_xs_good</font>
+                                </textarea>
+                            </state>
+                            <state name="protocolmismatch" from="good">
+                                <textarea name="description" from="basetext_xs">
+                                    <area>0,0,100%,100%</area>
+                                    <align>bottom,right</align>
+                                    <value>Version Mismatch</value>
+                                    <font>basefont_xs_bad</font>
+                                </textarea>
+                            </state>
+                            <state name="blocked" from="protocolmismatch">
+                                <textarea name="description" from="basetext_xs">
+                                    <area>0,0,100%,100%</area>
+                                    <align>bottom,right</align>
+                                    <value>Firewall</value>
+                                    <font>basefont_xs_warn</font>
+                                </textarea>
+                            </state>
+                        </statetype>
+                        <alpha>100</alpha>
+                    </group>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="modelname">
+                        <alpha>255</alpha>
+                    </textarea>
+                    <group name="details">
+                        <alpha>150</alpha>
+                    </group>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="modelname">
+                        <alpha>100</alpha>
+                    </textarea>
+                    <group name="details">
+                        <alpha>100</alpha>
+                    </group>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="helptext" from="basehelptext"/>
+        <!-- bottom part with buttons -->
+        <button name="save" from="basebutton">
+            <area>50%-350,100%-65,200,40</area>
+            <value>Save</value>
+        </button>
+        <button name="manual" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Manual</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+150,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="grabbersettings">
         <imagetype name="background" from="baseimagebackground"/>
         <group name="decoration" from="baseeditordecoration"/>
