@@ -48,8 +48,14 @@
     <fontdef name="basefont_m_off" from="basefont_m">
         <color>#7F7F7F</color>
     </fontdef>
+    <fontdef name="basefont_xs_good" from="basefont_xs">
+        <color>#00FF00</color>
+    </fontdef>
     <fontdef name="basefont_xs_bad" from="basefont_xs">
         <color>#FF0000</color>
+    </fontdef>
+    <fontdef name="basefont_xs_warn" from="basefont_xs">
+        <color>#FFA500</color>
     </fontdef>
 
     <!-- textarea with small, medium, large and extra large font -->
@@ -57,6 +63,9 @@
         <multiline>no</multiline>
         <align>left,vcenter</align>
         <cutdown>yes</cutdown>
+    </textarea>
+    <textarea name="basetext_xs" from="basetext">
+        <font>basefont_xs</font>
     </textarea>
     <textarea name="basetext_s" from="basetext">
         <font>basefont_s</font>
