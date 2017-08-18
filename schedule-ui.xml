@@ -1016,6 +1016,48 @@
 
     <!--====================================================================-->
 
+    <window name="programdetails">
+        <group name="decoration" from="basewindowdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Program Details:</value>
+        </textarea>
+        <buttonlist name="infolist">
+            <area>50,75,-35,-75</area>
+            <align>top,hcenter</align>
+            <layout>vertical</layout>
+            <wrapstyle>selection</wrapstyle>
+            <arrange>stack</arrange>
+            <buttonarea>0,0,-30,100%</buttonarea>
+            <spacing>25</spacing>
+            <statetype name="buttonitem">
+                <area>0,0,100%,500</area>
+                <minsize shrink="short">100%,5</minsize>
+                <state name="active">
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,5</minsize>
+                    <textarea name="name" from="baseitemtext">
+                        <area>5,5,15%,-5</area>
+                        <align>top, left</align>
+                        <minsize shrink="short">100%,5</minsize>
+                        <alpha>200</alpha>
+                    </textarea>
+                    <textarea name="value" from="baseitemtext">
+                        <area>16%,5,-5,-5</area>
+                        <align>top, left</align>
+                        <multiline>yes</multiline>
+                        <minsize shrink="short">100%,5</minsize>
+                        <alpha>150</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active" />
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <scrollbar name="scrollbar" from="basescrollbar_v"/>
+        </buttonlist>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="programfind">
         <!-- background and decoration -->
         <imagetype name="background">
