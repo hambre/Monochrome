@@ -431,4 +431,125 @@
         </textarea>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="guistartup">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="name" from="basepagetitletext">
+            <value>MythTV Startup Status</value>
+        </textarea>
+
+        <statetype name="statusstate">
+            <area>50,500,-50,50</area>
+            <state name="start">
+                <area>0,0,100%,50</area>
+                <textarea name="status" from="basetext_m">
+                    <area>0,0,100%,50</area>
+                    <align>allcenter</align>
+                    <value>Waking up Database Machine.</value>
+                    <alpha>200</alpha>
+                </textarea>
+            </state>
+            <state name="startFail" from="start">
+                <textarea name="status">
+                    <font>basefont_m_bad</font>
+                    <value>Database machine failed to wake up.</value>
+                </textarea>
+            </state>
+            <state name="dbAwake" from="start">
+                <textarea name="status">
+                    <value>Waiting for Database to start.</value>
+                </textarea>
+            </state>
+            <state name="dbAwakeFail" from="start">
+                <textarea name="status">
+                    <font>basefont_m_bad</font>
+                    <value>Database failed to start.</value>
+                </textarea>
+            </state>
+            <state name="dbStarted" from="start">
+                <textarea name="status">
+                    <value>Attempting to connect to Database.</value>
+                </textarea>
+            </state>
+            <state name="dbStartedFail" from="start">
+                <textarea name="status">
+                    <font>basefont_m_bad</font>
+                    <value>Unable to connect to Database.</value>
+                </textarea>
+            </state>
+            <state name="beWOL" from="start">
+                <textarea name="status">
+                    <value>Attempting to wake master backend.</value>
+                </textarea>
+            </state>
+            <state name="beWOLFail" from="start">
+                <textarea name="status">
+                    <font>basefont_m_bad</font>
+                    <value>Master backend failed to wake.</value>
+                </textarea>
+            </state>
+            <state name="beAwake" from="start">
+                <textarea name="status">
+                    <value>Attempting to connect to master backend.</value>
+                </textarea>
+            </state>
+            <state name="beAwakeFail" from="start">
+                <textarea name="status">
+                    <font>basefont_m_bad</font>
+                    <value>Unable to connect to master backend.</value>
+                </textarea>
+            </state>
+        </statetype>
+
+        <progressbar name="progress" from="baseprogress">
+            <area>50%-500,625,1000,20</area>
+        </progressbar>
+
+        <statetype name="messagestate">
+            <area>50,710,-50,120</area>
+            <state name="makeselection">
+                <area>0,0,100%,100%</area>
+                <textarea name="message" from="basetext_m">
+                    <area>0,0,100%,100%</area>
+                    <align>allcenter</align>
+                    <value>Select an option below.</value>
+                    <multiline>true</multiline>
+                </textarea>
+            </state>
+            <state name="empty" from="makeselection">
+                <textarea name="message">
+                    <value></value>
+                </textarea>
+            </state>
+        </statetype>
+
+        <textarea name="helptext" from="basehelptext">
+        </textarea>
+        <!-- bottom part with buttons -->
+        <button name="dummy" from="basebutton">
+            <area>0,100%-65,0,0</area>
+        </button>
+        <button name="retry" from="basebutton">
+            <area>50%-475,100%-65,200,40</area>
+            <value>Retry</value>
+            <helptext>Try again to establish connections.</helptext>
+        </button>
+        <button name="search" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Search</value>
+            <helptext>Search the local network for the MythTV Backend.</helptext>
+        </button>
+        <button name="setup" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Setup</value>
+            <helptext>Use Database setup to enter database parameters.</helptext>
+        </button>
+        <button name="exit" from="basebutton">
+            <area>50%+275,100%-65,200,40</area>
+            <value>Exit</value>
+            <helptext>Exit from MythTV.</helptext>
+        </button>
+    </window>
+
 </mythuitheme>
