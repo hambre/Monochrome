@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="settingssetup">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textarea name="title" from="basepagetitletext"/>
+        <buttonlist name="settingslist" from="baseitemlist">
+            <area>50,100,-50,-270</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>5,5,65%-25,-5</area>
+                    </textarea>
+                    <textarea name="value" from="baseitemtext">
+                        <area>65%,5,-5,-5</area>
+                        <alpha>150</alpha>
+                    </textarea>
+                    <statetype name="buttoncheck" from="basecheckstate">
+                        <position>65%,50%-16</position>
+                        <imagetype name="frame">
+                            <filename>images/CheckboxFrame.png</filename>
+                        </imagetype>
+                        <alpha>100</alpha>
+                    </statetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="buttontext">
+                        <alpha>255</alpha>
+                    </textarea>
+                    <textarea name="value">
+                        <alpha>255</alpha>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <alpha>255</alpha>
+                    </statetype>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedinactive" from="selectedactive">
+                    <textarea name="buttontext">
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="value">
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="selectedsettinghelp" from="basehelptext">
+            <area>100,100%-220,-100,120</area>
+        </textarea>
+        <textarea name="grouphelp" from="basehelptext">
+            <area>50%-700,100%-90,1400,90</area>
+            <align>center</align>
+        </textarea>
+    </window>
+
+</mythuitheme>
