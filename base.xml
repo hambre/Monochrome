@@ -337,6 +337,7 @@
                     <alpha>100</alpha>
                 </textarea>
             </state>
+            <state name="disabledactive" from="active"/>
         </statetype>
     </buttonlist>
 
@@ -377,6 +378,7 @@
             </state>
             <state name="inactive" from="active"/>
             <state name="selectedinactive" from="selectedactive"/>
+            <state name="disabledactive" from="active"/>
         </statetype>
     </buttonlist>
 
