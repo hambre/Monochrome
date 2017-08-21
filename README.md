@@ -1,7 +1,7 @@
 # Monochrome
 A simple black and white Mythtv theme
 
-The theme was created for Mythtv 0.27 and was updated to also work with version 0.28 of Mythtv.
+The theme works with version 0.27, 0.28, and 29 of Mythtv.
 
 Jump over to the wiki to see some screenshots of the theme: https://github.com/hambre/Monochrome/wiki 
 
