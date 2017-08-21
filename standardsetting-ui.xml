@@ -55,4 +55,24 @@
         </textarea>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="terminal">
+        <group name="decoration" from="basesettingsdecoration"/>
+        <textedit name="textedit" from="basetextedit">
+            <area>50,75,-275,40</area>
+        </textedit>
+        <button name="enter" from="basebutton">
+            <area>100%-250,75,-50,40</area>
+            <value>Enter</value>
+        </button>
+        <buttonlist name="output" from="baseitemlist">
+            <area>50,150,-50,-120</area>
+        </buttonlist>
+        <button name="close" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Close</value>
+        </button>
+    </window>
+
 </mythuitheme>
