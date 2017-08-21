@@ -473,6 +473,98 @@
 
     <!--====================================================================-->
 
+    <window name="channelscanner">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="titletext" from="basepagetitletext">
+            <value>Scanning</value>
+        </textarea>
+        <group name="details">
+            <area>50%+25,465,-50,-120</area>
+            <textarea name="labelstatus" from="baselabeltext">
+                <area>0,0,40%,40</area>
+                <value>Status</value>
+            </textarea>
+            <textarea name="status" from="basetext_m">
+                <area>40%,0,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="labelsignallock" from="baselabeltext">
+                <area>0,65,40%,40</area>
+                <value>Lock</value>
+            </textarea>
+            <textarea name="signallock" from="basetext_m">
+                <area>40%,65,100%,40</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="labelprogresstext" from="baselabeltext">
+                <area>0,130,40%,40</area>
+                <value>Scan Progress</value>
+            </textarea>
+            <textarea name="progresstext" from="basetext_s">
+                <area>100%-100,130,100%,40</area>
+                <align>right,vcenter</align>
+                <alpha>150</alpha>
+            </textarea>
+            <progressbar name="scanprogress" from="baseprogress_s">
+                <area>40%,145,-100,12</area>
+                <align>right,vcenter</align>
+                <alpha>150</alpha>
+            </progressbar>
+            <textarea name="scanprogresstext" from="basetext_m">
+                <area>40%,195,-100,40</area>
+                <align>center</align>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="labelsignalnoise" from="baselabeltext" depends="signalnoise">
+                <area>0,260,40%,40</area>
+                <value>Signal/Noise</value>
+            </textarea>
+            <textarea name="signalnoisetext" from="basetext_s" depends="signalnoise">
+                <area>100%-100,260,100%,40</area>
+                <align>right,vcenter</align>
+                <alpha>150</alpha>
+            </textarea>
+            <progressbar name="signalnoise" from="baseprogress_s">
+                <area>40%,275,-100,12</area>
+                <alpha>150</alpha>
+            </progressbar>
+            <textarea name="labelsignalstrength" from="baselabeltext" depends="signalstrength">
+                <area>0,325,40%,40</area>
+                <value>Signal Strength</value>
+            </textarea>
+            <textarea name="signalstrengthtext" from="basetext_s" depends="signalstrength">
+                <area>100%-100,325,100%,40</area>
+                <align>right,vcenter</align>
+                <alpha>150</alpha>
+            </textarea>
+            <progressbar name="signalstrength" from="baseprogress_s">
+                <area>40%,340,-100,12</area>
+                <alpha>150</alpha>
+            </progressbar>
+            <textarea name="labelrotorprogress" from="baselabeltext" depends="rotorprogressbar">
+                <area>0,390,40%,40</area>
+                <value>Rotor Movement</value>
+            </textarea>
+            <textarea name="rotorprogresstext" from="basetext_s" depends="rotorprogressbar">
+                <area>100%-100,390,100%,40</area>
+                <align>right,vcenter</align>
+                <alpha>150</alpha>
+            </textarea>
+            <progressbar name="rotorprogressbar" from="baseprogress_s">
+                <area>40%,405,-100,12</area>
+            </progressbar>
+        </group>
+        <buttonlist name="log" from="baseitemlist">
+            <area>50,465,50%-25,-120</area>
+        </buttonlist>
+        <button name="exit" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Exit</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="iconimport">
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="name" from="basepagetitletext"/>
