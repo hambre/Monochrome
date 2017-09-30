@@ -566,16 +566,15 @@
             <state name="active">
                 <imagetype name="frame">
                     <filename>images/CheckboxFrame.png</filename>
-                    <alpha>150</alpha>
                 </imagetype>
+                <alpha>100</alpha>
             </state>
-            <state name="selected">
-                <imagetype name="frame">
-                    <filename>images/CheckboxFrame.png</filename>
-                    <alpha>255</alpha>
-                </imagetype>
+            <state name="selected" from="active">
+                <alpha>255</alpha>
             </state>
-            <state name="disabled" />
+            <state name="disabled" from="active">
+                <alpha>50</alpha>
+            </state>
         </statetype>
         <statetype name="checkstate" from="basecheckstate">
             <alpha>200</alpha>
