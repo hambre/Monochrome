@@ -533,7 +533,7 @@
         </textarea>
     </group>
 
-    <buttonlist name="streamlist" from="baseitemlist">
+    <buttonlist name="musicstreamlist" from="baseitemlist">
         <area>25,465,50%-25,220</area>
         <statetype name="buttonitem">
             <area>0,0,100%,55</area>
