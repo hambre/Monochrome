@@ -1563,7 +1563,7 @@
             <value>Press MENU to add some radio streams to play.</value>
         </textarea>
 
-        <buttonlist name="streamlist" from="streamlist">
+        <buttonlist name="streamlist" from="musicstreamlist">
             <area>25,465,50%-25,220</area>
         </buttonlist>
         -->

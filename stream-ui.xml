@@ -37,7 +37,7 @@
                 <scroll direction="horizontal"/>
             </textarea>
         </group>
-        <buttonlist name="streamlist" from="streamlist">
+        <buttonlist name="streamlist" from="musicstreamlist">
             <area>25,625,50%-50,-115</area>
         </buttonlist>
 
