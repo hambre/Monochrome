@@ -77,6 +77,17 @@
                     <area>50,80,650,32</area>
                     <alpha>150</alpha>
                 </textarea>
+                <statetype name="favorite">
+                    <area>0,0,100%,100%</area>
+                    <state name="yes">
+                        <area>0,0,100%,100%</area>
+                        <imagetype name="favicon" from="baseicon">
+                            <position>100%-32,80</position>
+                            <filename>images/icons/Heart.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="no"/>
+                </statetype>
             </group>
         </group>
         
