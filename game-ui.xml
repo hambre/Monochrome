@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="gameui">
+        <!-- background and decoration -->
+        <imagetype name="background" from="basedefaultbackground"/>
+        <imagetype name="fanart" from="baseimagebackground"/>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Games</value>
+        </textarea>
+
+        <!-- left game list -->
+        <buttontree name="gametreelist">
+            <area>25,500,750,505</area>
+            <numlists>1</numlists>
+            <buttonlist name="listtemplate" from="baseitemlist">
+            </buttonlist>
+        </buttontree>
+
+        <!-- coverart, preview and category -->
+        <group name="middle">
+            <area>800,500,350,580</area>
+            <imagetype name="coverart">
+                <area>0,0,350,505</area>
+            </imagetype>
+            <shape name="previewframe" depends="!coverart&amp;screenshot">
+                <type>box</type>
+                <area>0,0,350,505</area>
+                <fill style="gradient">
+                    <gradient direction="vertical">
+                        <stop position="0"   color="#FFFFFF" alpha="75" />
+                        <stop position="30"   color="#FFFFFF" alpha="75" />
+                        <stop position="100" color="#FFFFFF" alpha="25" />
+                    </gradient>
+                </fill>
+            </shape>
+            <imagetype name="screenshot" depends="!coverart">
+                <area>0, 0, 350, 200</area>
+                <preserveaspect>yes</preserveaspect>
+            </imagetype>
+        </group>
+
+        <!-- right part - selected game details -->
+        <group name="gamedetails">
+            <area>1185, 500, -25, 100%</area>
+            <textarea name="title" from="basetitletext">
+                <area>0, 0, 700, 50</area>
+            </textarea>
+            <textarea name="description" from="basedescriptiontext">
+                <area>0, 0, 100%, 100%</area>
+            </textarea>
+            <group name="facts" depends="title">
+                <area>0,400,100%,120</area>
+                <imagetype name="genreicon" from="baseicon">
+                    <position>0,0</position>
+                    <filename>images/icons/MusicGenre.png</filename>
+                </imagetype>
+                <textarea name="genre" from="basetext_s">
+                    <area>50,0,650,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="systemicon" from="baseicon">
+                    <position>0,40</position>
+                    <filename>images/icons/Game.png</filename>
+                </imagetype>
+                <textarea name="system" from="basetext_s">
+                    <area>50,40,650,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="yearicon" from="baseicon">
+                    <position>0,80</position>
+                    <filename>images/icons/Calendar.png</filename>
+                </imagetype>
+                <textarea name="year" from="basetext_s">
+                    <area>50,80,650,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+        </group>
+        
+    </window>
+
+</mythuitheme>
