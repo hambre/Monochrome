@@ -62,6 +62,7 @@
                 <textarea name="title" from="basetitletext">
                     <area>0, 0, 100%, 50</area>
                     <align>left,top</align>
+                    <cutdown>no</cutdown>
                     <scroll direction="horizontal" />
                 </textarea>
                 <textarea name="subtitle" from="basetext_l">
@@ -84,6 +85,8 @@
                 <textarea name="breadcrumbs" from="basetext_s">
                     <area>0,530,100%-50,50</area>
                     <alpha>150</alpha>
+                    <cutdown>no</cutdown>
+                    <scroll direction="horizontal" />
                 </textarea>
             </group>
             <!-- middle part -->
@@ -146,6 +149,7 @@
         <textarea name="title" from="basetitletext">
             <area>235, 490, -235, 40</area>
             <align>top,hcenter</align>
+            <cutdown>no</cutdown>
             <scroll direction="horizontal" />
             <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
         </textarea>
@@ -202,6 +206,8 @@
         <textarea name="breadcrumbs" from="basetext_s">
             <area>25,1030,900,50</area>
             <alpha>150</alpha>
+            <cutdown>no</cutdown>
+            <scroll direction="horizontal" />
         </textarea>
         <textarea name="genres" from="basetext_s">
             <area>50%-250,1030,500,50</area>
@@ -230,7 +236,7 @@
         <!-- left part - video list -->
         <buttontree name="videos">
             <area>25,500,750,505</area>
-            <numlist>1</numlist>
+            <numlists>1</numlists>
             <buttonlist name="listtemplate" from="baseitemlist">
             <statetype name="buttonitem">
                 <area>0,0,100%,165</area>
@@ -261,6 +267,7 @@
             <textarea name="title" from="basetitletext">
                 <area>0, 0, 100%, 50</area>
                 <align>left,top</align>
+                <cutdown>no</cutdown>
                 <scroll direction="horizontal" />
             </textarea>
             <textarea name="subtitle" from="basetext_l">
@@ -291,6 +298,7 @@
         <textarea name="breadcrumbs" from="basetext_s">
             <area>30,1030,1500,50</area>
             <alpha>150</alpha>
+            <cutdown>no</cutdown>
             <scroll direction="horizontal" />
         </textarea>
         <textarea name="position" from="basetext_s">
@@ -380,6 +388,7 @@
             <textarea name="title" from="basetitletext">
                 <area>0, 0, 100%, 50</area>
                 <align>hcenter,top</align>
+                <cutdown>no</cutdown>
                 <scroll direction="horizontal" />
             </textarea>
             <textarea name="subtitle" from="basetext_l">
@@ -418,6 +427,7 @@
                 <textarea name="cast" from="basetext_s">
                     <area>160,0,100%,32</area>
                     <alpha>150</alpha>
+                    <cutdown>no</cutdown>
                     <scroll direction="left"/>
                     <align>top,left</align>
                 </textarea>
@@ -427,6 +437,7 @@
         <textarea name="breadcrumbs" from="basetext_s">
             <area>25,1030,1500,50</area>
             <alpha>150</alpha>
+            <cutdown>no</cutdown>
             <scroll direction="horizontal" />
         </textarea>
         <textarea name="position" from="basetext_s">
@@ -512,7 +523,7 @@
     <!--====================================================================-->
 
     <window name="descriptionpopup">
-        <area>-1,0,1000,650</area>
+        <area>-1,0,1000,700</area>
         <animation trigger="AboutToShow">
             <section duration="500" centre="middle">
                 <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
@@ -525,6 +536,8 @@
         <textarea name="description" from="basedescriptiontext">
             <area>50,75,-50,-25</area>
             <align>justify,vcenter</align>
+            <cutdown>no</cutdown>
+            <scroll direction="vertical" />
         </textarea>
     </window>
 
@@ -1002,6 +1015,7 @@
                 <area>0,580,-1,40</area>
                 <alpha>150</alpha>
                 <align>left</align>
+                <cutdown>no</cutdown>
                 <scroll direction="horizontal"/>
                 <template>Coverart: %1</template>
                 <value>Coverart:</value>
@@ -1019,6 +1033,7 @@
                 <area>0,100,-1,40</area>
                 <alpha>150</alpha>
                 <align>left</align>
+                <cutdown>no</cutdown>
                 <scroll direction="horizontal"/>
                 <template>Banner: %1</template>
                 <value>Banner:</value>
@@ -1028,6 +1043,7 @@
             <area>25,840,406,40</area>
             <alpha>150</alpha>
             <align>left</align>
+            <cutdown>no</cutdown>
             <scroll direction="horizontal"/>
             <template>Fanart: %1</template>
             <value>Fanart:</value>
@@ -1036,6 +1052,7 @@
             <area>25,880,406,40</area>
             <alpha>150</alpha>
             <align>left</align>
+            <cutdown>no</cutdown>
             <scroll direction="horizontal"/>
             <template>Screenshot: %1</template>
             <value>Screenshot:</value>
@@ -1044,6 +1061,7 @@
             <area>25,920,406,40</area>
             <alpha>150</alpha>
             <align>left</align>
+            <cutdown>no</cutdown>
             <scroll direction="horizontal"/>
             <template>Trailer: %1</template>
             <value>Trailer:</value>
