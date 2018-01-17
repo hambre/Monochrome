@@ -19,25 +19,17 @@
             </buttonlist>
         </buttontree>
 
-        <!-- coverart, preview and category -->
-        <group name="middle">
+        <!-- coverart / screenshot -->
+        <group name="middle" depends="title">
             <area>800,500,350,580</area>
             <imagetype name="coverart">
-                <area>0,0,350,505</area>
+                <area>0,0,100%,505</area>
             </imagetype>
-            <shape name="previewframe" depends="!coverart&amp;screenshot">
-                <type>box</type>
-                <area>0,0,350,505</area>
-                <fill style="gradient">
-                    <gradient direction="vertical">
-                        <stop position="0"   color="#FFFFFF" alpha="75" />
-                        <stop position="30"   color="#FFFFFF" alpha="75" />
-                        <stop position="100" color="#FFFFFF" alpha="25" />
-                    </gradient>
-                </fill>
+            <shape name="previewframe" from="basepreviewframe" depends="!coverart&amp;screenshot">
+                <area>0,0,100%,505</area>
             </shape>
             <imagetype name="screenshot" depends="!coverart">
-                <area>0, 0, 350, 200</area>
+                <area>0,0,100%,200</area>
                 <preserveaspect>yes</preserveaspect>
             </imagetype>
         </group>
@@ -202,6 +194,123 @@
         </group>
         <button name="done_button" from="basebutton">
             <area>50%-100,100%-65,200,40</area>
+            <value>Done</value>
+        </button>
+    </window>
+
+    <window name="gamedetailspopup">
+        <area>-1,0,1250,695</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-550" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="title" from="basepopuptitletext">
+            <alpha>255</alpha>
+            <value>Game Information</value>
+        </textarea>
+
+        <!-- coverart / screenshot -->
+        <group name="left" depends="title">
+            <area>25,75,350,580</area>
+            <imagetype name="coverart">
+                <area>0,0,100%,505</area>
+            </imagetype>
+            <shape name="previewframe" from="basepreviewframe" depends="!coverart&amp;screenshot">
+                <area>0,0,100%,505</area>
+            </shape>
+            <imagetype name="screenshot" depends="!coverart">
+                <area>0,0,100%,200</area>
+                <preserveaspect>yes</preserveaspect>
+            </imagetype>
+        </group>
+        <!-- right -->
+        <group name="right">
+            <area>400,75,100%,510</area>
+            <textarea name="description" from="basedescriptiontext">
+                <area>0,0,100%,250</area>
+            </textarea>
+            <textarea name="publisherlabel" from="basetext_s">
+                <area>0,275,20%,32</area>
+                <value>Publisher:</value>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="publisher" from="basetext_s">
+                <area>20%,275,100%,32</area>
+                <alpha>150</alpha>
+            </textarea>
+            <textarea name="countrylabel" from="basetext_s">
+                <area>0,315,20%,32</area>
+                <value>Country:</value>
+                <alpha>200</alpha>
+            </textarea>
+            <textarea name="country" from="basetext_s">
+                <area>20%,315,100%,32</area>
+                <alpha>150</alpha>
+            </textarea>
+            <group name="iconfacts">
+                <area>0,395,100%,110</area>
+                <imagetype name="genreicon" from="baseicon">
+                    <position>0,0</position>
+                    <filename>images/icons/MusicGenre.png</filename>
+                </imagetype>
+                <textarea name="genre" from="basetext_s">
+                    <area>50,0,650,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="systemicon" from="baseicon">
+                    <position>0,40</position>
+                    <filename>images/icons/Game.png</filename>
+                </imagetype>
+                <textarea name="allsystems" from="basetext_s">
+                    <area>50,40,650,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="yearicon" from="baseicon">
+                    <position>0,80</position>
+                    <filename>images/icons/Calendar.png</filename>
+                </imagetype>
+                <textarea name="year" from="basetext_s">
+                    <area>50,80,650,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="crcicon" from="baseicon" depends="crc">
+                    <position>40%,0</position>
+                    <filename>images/icons/Number.png</filename>
+                </imagetype>
+                <textarea name="crc" from="basetext_s">
+                    <area>40%+50,0,-25,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="romicon" from="baseicon">
+                    <position>40%,40</position>
+                    <filename>images/icons/MusicAlbum.png</filename>
+                </imagetype>
+                <textarea name="romname" from="basetext_s">
+                    <area>40%+50,40,-25,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+                <imagetype name="pathicon" from="baseicon">
+                    <position>40%,80</position>
+                    <filename>images/icons/MusicDirectory.png</filename>
+                </imagetype>
+                <textarea name="rompath" from="basetext_s">
+                    <area>40%+50,80,-25,32</area>
+                    <alpha>150</alpha>
+                    <cutdown>no</cutdown>
+                    <scroll direction="horizontal"/>
+                </textarea>
+            </group>
+        </group>
+
+        <!-- buttons -->
+        <button name="play_button" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Play</value>
+        </button>
+        <button name="done_button" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
             <value>Done</value>
         </button>
     </window>
