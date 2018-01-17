@@ -49,7 +49,7 @@
                 <area>0, 0, 700, 50</area>
             </textarea>
             <textarea name="description" from="basedescriptiontext">
-                <area>0, 0, 100%, 100%</area>
+                <area>0, 70, 100%, 100%</area>
             </textarea>
             <group name="facts" depends="title">
                 <area>0,400,100%,120</area>
@@ -90,7 +90,120 @@
                 </statetype>
             </group>
         </group>
-        
+    </window>
+
+    <window name="edit_metadata">
+        <group name="decoration" from="baseeditordecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Edit Game Information</value>
+        </textarea>
+        <group name="controls">
+            <area>25,530,-25,-115</area>
+            <group name="left">
+                <area>0,0,50%-25,100%</area>
+                <group name="labels">
+                    <area>0,0,30%,100%</area>
+                    <textarea name="titlelabel" from="baselabeltext">
+                        <area>0,0,100%,40</area>
+                        <value>Game Name:</value>
+                    </textarea>
+                    <textarea name="genrelabel" from="baselabeltext">
+                        <area>0,65,100%,40</area>
+                        <value>Genre:</value>
+                    </textarea>
+                    <textarea name="yearlabel" from="baselabeltext">
+                        <area>0,130,100%,40</area>
+                        <value>Year:</value>
+                    </textarea>
+                    <textarea name="countrylabel" from="baselabeltext">
+                        <area>0,195,100%,40</area>
+                        <value>Country:</value>
+                    </textarea>
+                    <textarea name="publisherlabel" from="baselabeltext">
+                        <area>0,260,100%,40</area>
+                        <value>Publisher:</value>
+                    </textarea>
+                    <textarea name="favoritelabel" from="baselabeltext">
+                        <area>0,325,100%,40</area>
+                        <value>Favorite:</value>
+                    </textarea>
+                </group>
+                <group name="controls">
+                    <area>30%,0,100%,100%</area>
+                    <textedit name="title_edit" from="basetextedit">
+                        <area>0,0,100%,40</area>
+                    </textedit>
+                    <textedit name="genre_edit" from="basetextedit">
+                        <area>0,65,100%,40</area>
+                    </textedit>
+                    <textedit name="year_edit" from="basetextedit">
+                        <area>0,130,100%,40</area>
+                    </textedit>
+                    <textedit name="country_edit" from="basetextedit">
+                        <area>0,195,100%,40</area>
+                    </textedit>
+                    <textedit name="publisher_edit" from="basetextedit">
+                        <area>0,260,100%,40</area>
+                    </textedit>
+                    <checkbox name="favorite_check" from="basecheckbox">
+                        <position>0,329</position>
+                    </checkbox>
+                </group>
+            </group>
+            <group name="right">
+                <area>50%+25,0,100%,100%</area>
+                <group name="labels">
+                    <area>0,0,30%,100%</area>
+                    <textarea name="descriptionlabel" from="baselabeltext">
+                        <area>0,0,100%,40</area>
+                        <value>Description:</value>
+                    </textarea>
+                    <textarea name="coverartlabel" from="baselabeltext">
+                        <area>0,195,100%,40</area>
+                        <value>Coverart:</value>
+                    </textarea>
+                    <textarea name="fanartlabel" from="baselabeltext">
+                        <area>0,260,100%,40</area>
+                        <value>Fanart:</value>
+                    </textarea>
+                    <textarea name="screenshotlabel" from="baselabeltext">
+                        <area>0,325,100%,40</area>
+                        <value>Screenshot:</value>
+                    </textarea>
+                </group>
+                <group name="controls">
+                    <area>30%,0,100%,100%</area>
+                    <textedit name="description_edit" from="basetexteditmulti">
+                        <area>0,0,100%,170</area>
+                    </textedit>
+                    <textarea name="coverart_text" from="baselabeltext">
+                        <area>0,195,100%-125,40</area>
+                        <value>/path/to/the/thing.jpg</value>
+                    </textarea>
+                    <button name="coverart_button" from="basesearchbutton">
+                        <area>100%-100,195,100%,40</area>
+                    </button>
+                    <textarea name="fanart_text" from="baselabeltext">
+                        <area>0,260,100%-125,40</area>
+                        <value>/path/to/the/thing.jpg</value>
+                    </textarea>
+                    <button name="fanart_button" from="basesearchbutton">
+                        <area>100%-100,260,100%,40</area>
+                    </button>
+                    <textarea name="screenshot_text" from="baselabeltext">
+                        <area>0,325,100%-125,40</area>
+                        <value>/path/to/the/thing.jpg</value>
+                    </textarea>
+                    <button name="screenshot_button" from="basesearchbutton">
+                        <area>100%-100,325,100%,40</area>
+                    </button>
+                </group>
+            </group>
+        </group>
+        <button name="done_button" from="basebutton">
+            <area>50%-100,100%-65,200,40</area>
+            <value>Done</value>
+        </button>
     </window>
 
 </mythuitheme>
