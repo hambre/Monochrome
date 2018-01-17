@@ -84,6 +84,8 @@
         </group>
     </window>
 
+    <!--====================================================================-->
+
     <window name="edit_metadata">
         <group name="decoration" from="baseeditordecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
@@ -197,6 +199,8 @@
             <value>Done</value>
         </button>
     </window>
+
+    <!--====================================================================-->
 
     <window name="gamedetailspopup">
         <area>-1,0,1250,695</area>
