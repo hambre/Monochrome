@@ -97,29 +97,21 @@
         <group name="middle">
             <area>800,500,350,580</area>
             <imagetype name="coverart">
-                <area>0,0,350,505</area>
+                <area>0,0,100%,505</area>
             </imagetype>
-            <shape name="previewframe" depends="!coverart&amp;preview">
-                <type>box</type>
-                <area>0,0,350,505</area>
-                <fill style="gradient">
-                    <gradient direction="vertical">
-                        <stop position="0"   color="#FFFFFF" alpha="75" />
-                        <stop position="30"   color="#FFFFFF" alpha="75" />
-                        <stop position="100" color="#FFFFFF" alpha="25" />
-                    </gradient>
-                </fill>
+            <shape name="previewframe" from="basepreviewframe" depends="!coverart&amp;preview">
+                <area>0,0,100%,505</area>
             </shape>
             <imagetype name="preview" depends="!coverart">
-                <area>0, 0, 350, 200</area>
+                <area>0,0,100%,200</area>
                 <preserveaspect>yes</preserveaspect>
             </imagetype>
             <imagetype name="banner">
-                <area>0, 425, 350, 100</area>
+                <area>0,425,100%,100</area>
                 <preserveaspect>yes</preserveaspect>
             </imagetype>
             <textarea name="category" from="basetext_m">
-                <area>0,530,350,50</area>
+                <area>0,530,100%,50</area>
                 <align>center</align>
                 <alpha>150</alpha>
                 <case>capitaliseall</case>

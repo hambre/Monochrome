@@ -133,6 +133,19 @@
         <line color="#FFFFFF" alpha="255" width="2" />
     </shape>
 
+    <!-- background for preview/screenshot images -->
+    <shape name="basepreviewframe">
+        <type>box</type>
+        <area>0,0,350,505</area>
+        <fill style="gradient">
+            <gradient direction="vertical">
+                <stop position="0"   color="#FFFFFF" alpha="50" />
+                <stop position="30"   color="#FFFFFF" alpha="50" />
+                <stop position="100" color="#FFFFFF" alpha="5" />
+            </gradient>
+        </fill>
+    </shape>
+
     <!-- backgrounds -->
     <shape name="basebackground">
         <area>0,0,100%,100%</area>
