@@ -4,7 +4,9 @@
 
     <window name="gameui">
         <!-- background and decoration -->
-        <imagetype name="background" from="basedefaultbackground"/>
+        <imagetype name="background" from="baseimagebackground">
+            <filename>images/Backgrounds/BackgroundGames.jpg</filename>
+        </imagetype>
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">

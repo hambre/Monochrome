@@ -75,6 +75,7 @@
             </state>
             <state name="GAME" from="default">
                <imagetype name="background">
+                    <filename>images/Backgrounds/BackgroundGames.jpg</filename>
                 </imagetype>
             </state>
             <state name="NET_VIDEO_SEARCH" from="default">
