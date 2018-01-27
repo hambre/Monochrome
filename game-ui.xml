@@ -4,7 +4,7 @@
 
     <window name="gameui">
         <!-- background and decoration -->
-        <imagetype name="background" from="baseimagebackground">
+        <imagetype name="background" from="baseimagebackground" depends="!fanart">
             <filename>images/Backgrounds/BackgroundGames.jpg</filename>
         </imagetype>
         <imagetype name="fanart" from="baseimagebackground"/>

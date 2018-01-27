@@ -10,7 +10,9 @@
         </fontdef>
 
         <!-- background and decoration -->
-        <imagetype name="background" from="basedefaultbackground"/>
+        <imagetype name="background" from="baseimagebackground" depends="!fanart">
+            <filename>images/Backgrounds/BackgroundTV.jpg</filename>
+        </imagetype>
         <imagetype name="fanart" from="baseimagebackground"/>
         <group name="decoration" from="basecontentdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
