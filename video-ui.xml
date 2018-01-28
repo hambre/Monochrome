@@ -249,6 +249,12 @@
                 <state name="active">
                     <textarea name="buttontext">
                         <area>5,0,-37,100%</area>
+                        <alpha>0</alpha>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>5,0,-37,100%</area>
+                        <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+                        <alpha>100</alpha>
                     </textarea>
                     <statetype name="watchedstate" from="basewatchedstate">
                         <position>100%-32,12</position>
@@ -259,6 +265,12 @@
                     <textarea name="buttontext">
                         <area>5,0,-37,100%</area>
                     </textarea>
+                    <!-- BUG: this does not work for selected items
+                    <textarea name="title">
+                        <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+                        <alpha>255</alpha>
+                    </textarea>
+                    -->
                     <statetype name="watchedstate" from="basewatchedstate">
                         <position>100%-32,12</position>
                         <alpha>255</alpha>
@@ -344,7 +356,6 @@
                     <imagetype name="icon" from="basecoverarticon" depends="!buttonimage">
                         <area>10,50%-50,100,100</area>
                     </imagetype>
-                    <!-- TODO a template is not supported here -->
                     <textarea name="buttontext" from="baseitemtext">
                         <area>125,10,-40,32</area>
                         <align>left,top</align>
@@ -378,7 +389,6 @@
                         <area>0,0,115,165</area>
                         <alpha>255</alpha>
                     </imagetype>
-                    <!-- TODO a template is not supported here -->
                     <textarea name="buttontext" from="baseitemtext">
                         <area>125,10,-5,32</area>
                         <align>left,top</align>
@@ -393,11 +403,18 @@
         <!-- right part - video details -->
         <group name="videodetails">
             <area>975,500,-25,505</area>
-            <textarea name="title" from="basetitletext">
+            <textarea name="title" from="basetitletext" depends="!subtitle">
                 <area>0, 0, 100%, 50</area>
                 <align>hcenter,top</align>
                 <cutdown>no</cutdown>
                 <scroll direction="horizontal" />
+            </textarea>
+            <textarea name="largetitle" from="basetitletext" depends="subtitle">
+                <area>0, 0, 100%, 50</area>
+                <align>left,top</align>
+                <cutdown>no</cutdown>
+                <scroll direction="horizontal" />
+                <template>%TITLE%</template>
             </textarea>
             <textarea name="subtitle" from="basetext_l">
                 <area>0, 45, 100%, 45</area>
