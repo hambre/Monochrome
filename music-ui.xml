@@ -753,6 +753,7 @@
             <area>25,465,50%-25,100%-115</area>
             <statetype name="buttonitem">
                 <state name="active">
+                    <alpha>100</alpha>
                     <statetype name="buttoncheck" from="basecheckstate">
                         <position>5,11</position>
                         <imagetype name="frame">
@@ -774,16 +775,15 @@
                             <align>center</align>
                         </textarea>
                     </group>
-                    <alpha>100</alpha>
                 </state>
                 <state name="selectedactive" from="active">
+                    <alpha>255</alpha>
                     <group name="text">
                         <textarea name="title">
                             <scroll direction="horizontal" />
                             <cutdown>no</cutdown>
                         </textarea>
                     </group>
-                    <alpha>255</alpha>
                 </state>
                 <state name="inactive" from="active"/>
                 <state name="selectedinactive" from="selectedactive">

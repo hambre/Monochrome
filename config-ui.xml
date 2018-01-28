@@ -507,7 +507,6 @@
             </textarea>
             <progressbar name="scanprogress" from="baseprogress_s">
                 <area>40%,145,-100,12</area>
-                <align>right,vcenter</align>
                 <alpha>150</alpha>
             </progressbar>
             <textarea name="scanprogresstext" from="basetext_m">

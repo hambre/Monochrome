@@ -114,10 +114,10 @@
     <button name="musicplaybutton">
         <statetype name="buttonstate">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="icon">
                     <filename>images/icons/Play.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -132,10 +132,10 @@
     <button name="musicpausebutton">
         <statetype name="buttonstate">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="icon">
                     <filename>images/icons/Pause.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -150,10 +150,10 @@
     <button name="musicstopbutton">
         <statetype name="buttonstate">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="icon">
                     <filename>images/icons/Stop.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -168,10 +168,10 @@
     <button name="musicprevbutton">
         <statetype name="buttonstate">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="icon">
                     <filename>images/icons/Prev.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -186,10 +186,10 @@
     <button name="musicnextbutton">
         <statetype name="buttonstate">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="icon">
                     <filename>images/icons/Next.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -204,10 +204,10 @@
     <button name="musicrewindbutton">
         <statetype name="buttonstate">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="icon">
                     <filename>images/icons/Rewind.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>
@@ -222,10 +222,10 @@
     <button name="musicforwardbutton">
         <statetype name="buttonstate">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="icon">
                     <filename>images/icons/Forward.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>

@@ -100,7 +100,7 @@
         <!-- left part - video list -->
         <buttontree name="videos">
             <area>25,500,50%-25,-75</area>
-            <numlist>1</numlist>
+            <numlists>1</numlists>
             <buttonlist name="listtemplate" from="baseitemlist"/>
         </buttontree>
         <group name="right">

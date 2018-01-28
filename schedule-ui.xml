@@ -1037,13 +1037,13 @@
                     <minsize shrink="short">100%,5</minsize>
                     <textarea name="name" from="baseitemtext">
                         <area>5,5,15%,-5</area>
-                        <align>top, left</align>
+                        <align>left,top</align>
                         <minsize shrink="short">100%,5</minsize>
                         <alpha>200</alpha>
                     </textarea>
                     <textarea name="value" from="baseitemtext">
                         <area>16%,5,-5,-5</area>
-                        <align>top, left</align>
+                        <align>left,top</align>
                         <multiline>yes</multiline>
                         <minsize shrink="short">100%,5</minsize>
                         <alpha>150</alpha>

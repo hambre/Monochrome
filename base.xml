@@ -577,10 +577,10 @@
         <area>0,0,25,25</area>
         <statetype name="background">
             <state name="active">
+                <alpha>100</alpha>
                 <imagetype name="frame">
                     <filename>images/CheckboxFrame.png</filename>
                 </imagetype>
-                <alpha>100</alpha>
             </state>
             <state name="selected" from="active">
                 <alpha>255</alpha>

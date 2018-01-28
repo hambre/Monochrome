@@ -550,6 +550,7 @@
             <statetype name="buttonitem">
                 <area>0,0,100%,40</area>
                 <state name="active">
+                    <area>0,0,100%,40</area>
                     <statetype name="icons">
                         <area>0,0,40,40</area>
                         <state name="processing">
@@ -671,7 +672,6 @@
                             </imagetype>
                         </state>
                     </statetype>
-                    <area>0,0,100%,40</area>
                     <shape name="itemseparator" from="baseitemseparator_h">
                         <position>0, 100%</position>
                     </shape>
