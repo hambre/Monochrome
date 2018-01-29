@@ -341,7 +341,7 @@
 
         <!-- left part - video list -->
         <buttonlist name="videos" from="baseitemlist">
-            <area>25,500,900,505</area>
+            <area>25,500,50%-25,505</area>
             <buttonarea>0,0,100%,100%</buttonarea>
             <layout>vertical</layout>
             <scrollstyle>center</scrollstyle>
@@ -349,26 +349,67 @@
             <statetype name="buttonitem">
                 <area>0,0,100%,165</area>
                 <state name="active">
-                    <imagetype name="buttonimage">
-                        <area>0,0,115,165</area>
+                    <!-- use series/episode as switch between movie/episode mode -->
+                    <textarea name="00x00">
+                        <alpha>0</alpha>
+                    </textarea>
+                    <!-- show coverart for movies or for episodes without a screenshot -->
+                    <imagetype name="coverart" depends="!screenshot|!00x00">
+                        <area>0,0,115,100%</area>
                         <alpha>100</alpha>
                     </imagetype>
-                    <imagetype name="icon" from="basecoverarticon" depends="!buttonimage">
+                    <!-- show screenshot for episodes -->
+                    <imagetype name="screenshot" depends="00x00">
+                        <area>0,0,230,100%</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <!-- show generic coverart icon if no coverart or screenshot exists -->
+                    <imagetype name="icon" from="basecoverarticon" depends="!coverart&amp;!screenshot">
                         <area>10,50%-50,100,100</area>
                     </imagetype>
+                    <!-- hide the default button text -->
                     <textarea name="buttontext" from="baseitemtext">
-                        <area>125,10,-40,32</area>
-                        <align>left,top</align>
-                        <alpha>100</alpha>
+                        <alpha>0</alpha>
                     </textarea>
-                    <textarea name="genres" from="basetext_s">
-                        <area>125,80,600,30</area>
-                        <alpha>150</alpha>
-                    </textarea>
-                    <textarea name="director" from="basetext_s">
-                        <area>125,120,400,30</area>
-                        <alpha>150</alpha>
-                    </textarea>
+                    <!-- this group is shown if coverart is displayed -->
+                    <group name="coverarttext" depends="!screenshot|!00x00">
+                        <area>0,0,100%,165</area>
+                        <textarea name="title" from="baseitemtext">
+                            <area>125,10,-40,32</area>
+                            <align>left,top</align>
+                            <alpha>100</alpha>
+                            <template>%TITLE| %%~ |SUBTITLE%</template>
+                        </textarea>
+                        <textarea name="genres" from="basetext_s">
+                            <area>125,80,600,30</area>
+                            <alpha>150</alpha>
+                        </textarea>
+                        <textarea name="director" from="basetext_s">
+                            <area>125,120,400,30</area>
+                            <alpha>150</alpha>
+                        </textarea>
+                    </group>
+                    <!-- this group is shown if screenshot is displayed -->
+                    <group name="screenshottext" depends="screenshot&amp;00x00">
+                        <area>0,0,100%,165</area>
+                        <textarea name="subtitle" from="baseitemtext">
+                            <area>240,10,-40,32</area>
+                            <align>left,top</align>
+                            <alpha>100</alpha>
+                            <template>%00x00| %%~ |SUBTITLE%</template>
+                        </textarea>
+                        <textarea name="category" from="basetext_s">
+                            <area>240,80,600,30</area>
+                            <alpha>150</alpha>
+                            <template>%GENRES%</template>
+                        </textarea>
+                        <textarea name="cast" from="basetext_s">
+                            <area>240,120,400,30</area>
+                            <alpha>150</alpha>
+                            <template>%DIRECTOR%</template>
+                        </textarea>
+                    </group>
                     <textarea name="year" from="basetext_s">
                         <area>100%-150,80,-10,30</area>
                         <align>right,vcenter</align>
@@ -385,14 +426,27 @@
                     </statetype>
                 </state>
                 <state name="selectedactive" from="active">
-                    <imagetype name="buttonimage">
+                    <imagetype name="coverart">
                         <area>0,0,115,165</area>
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <imagetype name="screenshot">
                         <alpha>255</alpha>
                     </imagetype>
                     <textarea name="buttontext" from="baseitemtext">
                         <area>125,10,-5,32</area>
                         <align>left,top</align>
+                        <alpha>0</alpha>
+                    </textarea>
+                    <textarea name="title">
                         <alpha>255</alpha>
+                        <cutdown>no</cutdown>
+                        <scroll direction="horizontal"/>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <alpha>255</alpha>
+                        <cutdown>no</cutdown>
+                        <scroll direction="horizontal"/>
                     </textarea>
                     <statetype name="watchedstate">
                         <alpha>255</alpha>
@@ -402,7 +456,7 @@
         </buttonlist>
         <!-- right part - video details -->
         <group name="videodetails">
-            <area>975,500,-25,505</area>
+            <area>50%+25,500,-25,505</area>
             <textarea name="title" from="basetitletext" depends="!subtitle">
                 <area>0, 0, 100%, 50</area>
                 <align>hcenter,top</align>
