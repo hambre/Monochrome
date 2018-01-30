@@ -248,12 +248,20 @@
                 <area>0,0,100%,165</area>
                 <state name="active">
                     <textarea name="buttontext">
-                        <area>5,0,-37,100%</area>
                         <alpha>0</alpha>
                     </textarea>
-                    <textarea name="title" from="baseitemtext">
+                    <!-- use series/episode number to switch displayed text -->
+                    <textarea name="00x00">
+                        <alpha>0</alpha>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext" depends="!00x00">
                         <area>5,0,-37,100%</area>
-                        <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
+                        <template>%TITLE| %%~ |SUBTITLE%</template>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="subtitle" from="baseitemtext" depends="00x00">
+                        <area>5,0,-37,100%</area>
+                        <template>%00x00| %%~ |SUBTITLE%</template>
                         <alpha>100</alpha>
                     </textarea>
                     <statetype name="watchedstate" from="basewatchedstate">
@@ -261,18 +269,14 @@
                         <alpha>50</alpha>
                     </statetype>
                 </state>
-                <state name="selectedactive">
-                    <textarea name="buttontext">
-                        <area>5,0,-37,100%</area>
-                    </textarea>
-                    <!-- BUG: this does not work for selected items
+                <state name="selectedactive" from="active">
                     <textarea name="title">
-                        <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
                         <alpha>255</alpha>
                     </textarea>
-                    -->
-                    <statetype name="watchedstate" from="basewatchedstate">
-                        <position>100%-32,12</position>
+                    <textarea name="subtitle">
+                        <alpha>255</alpha>
+                    </textarea>
+                    <statetype name="watchedstate">
                         <alpha>255</alpha>
                     </statetype>
                 </state>
