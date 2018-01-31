@@ -72,12 +72,6 @@
                 <textarea name="description" from="basedescriptiontext">
                     <area>0,0,100%,-50</area>
                 </textarea>
-                <textarea name="breadcrumbs" from="basetext_s">
-                    <area>0,100%-50,100%-200,50</area>
-                    <alpha>150</alpha>
-                    <cutdown>no</cutdown>
-                    <scroll direction="horizontal" />
-                </textarea>
             </group>
             <!-- right part -->
             <group name="right">
@@ -94,12 +88,19 @@
                     <area>0,100%-135,100%,125</area>
                 </group>
             </group>
-            <textarea name="position" from="basetext_s">
-                <area>100%-150,100%-50,150,50</area>
-                <alpha>150</alpha>
-                <align>right,vcenter</align>
-            </textarea>
         </group>
+        <!-- bottom part -->
+        <textarea name="breadcrumbs" from="basetext_s">
+            <area>25,100%-50,100%-200,50</area>
+            <alpha>150</alpha>
+            <cutdown>no</cutdown>
+            <scroll direction="horizontal" />
+        </textarea>
+        <textarea name="position" from="basetext_s">
+            <area>100%-175,100%-50,150,50</area>
+            <alpha>150</alpha>
+            <align>right,vcenter</align>
+        </textarea>
     </window>
 
     <!--====================================================================-->
