@@ -99,6 +99,8 @@
                 <recordstatus type="WeekslotRecord" image="images/icons/Calendar.png"></recordstatus>
                 <recordstatus type="FindOneRecord" image="images/icons/Find.png"></recordstatus>
                 <recordstatus type="OverrideRecord" image="images/icons/Override.png"></recordstatus>
+                <arrow direction="up" image="images/ArrowUp.png"></arrow>
+                <arrow direction="down" image="images/ArrowDown.png"></arrow>
             </guidegrid>
             <group name="columns">
                 <area>150,1,100%,100%</area>
