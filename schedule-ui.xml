@@ -42,16 +42,16 @@
                 </statetype>
             </buttonlist>
             <buttonlist name="channellist">
-                <area>153,0,1716,50</area>
+                <area>150,0,100%,50</area>
                 <buttonarea>0,0,100%,100%</buttonarea>
                 <layout>horizontal</layout>
                 <arrange>stack</arrange>
                 <statetype name="buttonitem">
-                    <area>0,0,286,100%</area>
+                    <area>0,0,190,100%</area>
                     <state name="active">
-                        <area>0,0,286,100%</area>
+                        <area>0,0,190,100%</area>
                         <shape name="background" from="basecontrolbackground">
-                            <area>-1,-1,100%-1,100%-1</area>
+                            <area>1,1,100%-2,100%-2</area>
                             <line color="#000000" width="1"/>
                         </shape>
                         <imagetype name="channelicon">
@@ -76,15 +76,14 @@
                 </statetype>
             </buttonlist>
             <shape name="gridbackground">
-                <area>150,50,100%,100%</area>
+                <area>150,50,1710,100%</area>
                 <fill color="#FFFFFF" alpha="15"/>
             </shape>
             <guidegrid name="guidegrid">
-                <!-- BUG: placement of guid grid is not relative to parent -->
-                <area>175,115,1716,600</area>
+                <area>150,50,1710,600</area>
                 <layout>vertical</layout>
                 <font>basefont_s</font>
-                <channels>6</channels>
+                <channels>9</channels>
                 <timeslots>6</timeslots>
                 <textoffset>10,5</textoffset>
                 <showcategorycolors>no</showcategorycolors>
@@ -102,35 +101,6 @@
                 <arrow direction="up" image="images/More.png"></arrow>
                 <arrow direction="down" image="images/More.png"></arrow>
             </guidegrid>
-            <group name="columns">
-                <area>150,1,100%,100%</area>
-                <shape name="header" from="baseline_h">
-                    <area>0,47,100%,3</area>
-                    <fill color="#646464" alpha="255" />
-                </shape>
-                <shape name="column0" from="baseline_v">
-                    <area>0,0,3,100%-2</area>
-                    <fill color="#646464" alpha="255" />
-                </shape>
-                <shape name="column1" from="column0">
-                    <position>284,0</position>
-                </shape>
-                <shape name="column2" from="column0">
-                    <position>570,0</position>
-                </shape>
-                <shape name="column3" from="column0">
-                    <position>856,0</position>
-                </shape>
-                <shape name="column4" from="column0">
-                    <position>1142,0</position>
-                </shape>
-                <shape name="column5" from="column0">
-                    <position>1429,0</position>
-                </shape>
-                <shape name="column6" from="column0">
-                    <position>100%-1,0</position>
-                </shape>
-            </group>
         </group>
         <group name="details">
             <area>25,750,-25,-75</area>
@@ -227,11 +197,11 @@
                 <layout>horizontal</layout>
                 <arrange>stack</arrange>
                 <statetype name="buttonitem">
-                    <area>0,0,286,100%</area>
+                    <area>0,0,190,100%</area>
                     <state name="active">
-                        <area>0,0,286,100%</area>
+                        <area>0,0,190,100%</area>
                         <shape name="background" from="basecontrolbackground">
-                            <area>-1,-1,100%-1,100%-1</area>
+                            <area>1,1,100%-2,100%-2</area>
                             <line color="#000000" width="1"/>
                         </shape>
                         <imagetype name="channelicon">
@@ -256,15 +226,14 @@
                 </statetype>
             </buttonlist>
             <shape name="gridbackground">
-                <area>150,50,100%,100%</area>
-                <fill color="#FFFFFF" alpha="30"/>
+                <area>150,50,1710,100%</area>
+                <fill color="#FFFFFF" alpha="15"/>
             </shape>
             <guidegrid name="guidegrid">
-                <!-- BUG: placement of guid grid is not relative to parent -->
-                <area>175,115,1716,600</area>
+                <area>150,50,1710,600</area>
                 <layout>vertical</layout>
                 <font>basefont_s</font>
-                <channels>6</channels>
+                <channels>9</channels>
                 <timeslots>6</timeslots>
                 <textoffset>10,5</textoffset>
                 <showcategorycolors>no</showcategorycolors>
@@ -282,11 +251,6 @@
                 <arrow direction="up" image="images/More.png"></arrow>
                 <arrow direction="down" image="images/More.png"></arrow>
             </guidegrid>
-            <!-- hide misalignment of right side of epg -->
-            <shape name="rightcut">
-                <area>100%-5,0,5,100%</area>
-                <fill color="#000000"/>
-            </shape>
         </group>
         <group name="details">
             <area>25,750,-25,-75</area>
