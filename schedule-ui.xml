@@ -90,7 +90,7 @@
                 <solidcolor>#323232</solidcolor>
                 <recordingcolor>#326432</recordingcolor>
                 <conflictingcolor>#643232</conflictingcolor>
-                <selector type="box" fillcolor="#646464" ></selector>
+                <selector type="box" fillcolor="#646464"></selector>
                 <recordstatus type="SingleRecord" image="images/icons/Record.png"></recordstatus>
                 <recordstatus type="TimeslotRecord" image="images/icons/Clock.png"></recordstatus>
                 <recordstatus type="ChannelRecord" image="images/icons/Sender.png"></recordstatus>
@@ -101,6 +101,42 @@
                 <arrow direction="up" image="images/More.png"></arrow>
                 <arrow direction="down" image="images/More.png"></arrow>
             </guidegrid>
+            <group name="gridlines">
+                <!-- Add some vertical lines to separate columns in guid grid to improve appearance -->
+                <area>148,0,1710,100%</area>
+                <shape name="l1">
+                    <type>box</type>
+                    <area>0,0,4,100%</area>
+                    <fill color="#000000"/>
+                </shape>
+                <shape name="l2" from="l1">
+                    <position>190,0</position>
+                </shape>
+                <shape name="l3" from="l1">
+                    <position>380,0</position>
+                </shape>
+                <shape name="l4" from="l1">
+                    <position>570,0</position>
+                </shape>
+                <shape name="l5" from="l1">
+                    <position>760,0</position>
+                </shape>
+                <shape name="l6" from="l1">
+                    <position>950,0</position>
+                </shape>
+                <shape name="l7" from="l1">
+                    <position>1140,0</position>
+                </shape>
+                <shape name="l8" from="l1">
+                    <position>1330,0</position>
+                </shape>
+                <shape name="l9" from="l1">
+                    <position>1520,0</position>
+                </shape>
+                <shape name="l10" from="l1">
+                    <position>1710,0</position>
+                </shape>
+            </group>
         </group>
         <group name="details">
             <area>25,750,-25,-75</area>
@@ -240,7 +276,7 @@
                 <solidcolor>#323232</solidcolor>
                 <recordingcolor>#326432</recordingcolor>
                 <conflictingcolor>#643232</conflictingcolor>
-                <selector type="box" fillcolor="#646464" ></selector>
+                <selector type="box" fillcolor="#646464"></selector>
                 <recordstatus type="SingleRecord" image="images/icons/Record.png"></recordstatus>
                 <recordstatus type="TimeslotRecord" image="images/icons/Clock.png"></recordstatus>
                 <recordstatus type="ChannelRecord" image="images/icons/Sender.png"></recordstatus>
@@ -251,6 +287,42 @@
                 <arrow direction="up" image="images/More.png"></arrow>
                 <arrow direction="down" image="images/More.png"></arrow>
             </guidegrid>
+            <group name="gridlines">
+                <!-- Add some vertical lines to separate columns in guid grid to improve appearance -->
+                <area>148,0,1710,100%</area>
+                <shape name="l1">
+                    <type>box</type>
+                    <area>0,0,4,100%</area>
+                    <fill color="#000000"/>
+                </shape>
+                <shape name="l2" from="l1">
+                    <position>190,0</position>
+                </shape>
+                <shape name="l3" from="l1">
+                    <position>380,0</position>
+                </shape>
+                <shape name="l4" from="l1">
+                    <position>570,0</position>
+                </shape>
+                <shape name="l5" from="l1">
+                    <position>760,0</position>
+                </shape>
+                <shape name="l6" from="l1">
+                    <position>950,0</position>
+                </shape>
+                <shape name="l7" from="l1">
+                    <position>1140,0</position>
+                </shape>
+                <shape name="l8" from="l1">
+                    <position>1330,0</position>
+                </shape>
+                <shape name="l9" from="l1">
+                    <position>1520,0</position>
+                </shape>
+                <shape name="l10" from="l1">
+                    <position>1710,0</position>
+                </shape>
+            </group>
         </group>
         <group name="details">
             <area>25,750,-25,-75</area>
