@@ -1802,4 +1802,111 @@
         </button>
     </window>
 
+    <!--====================================================================-->
+
+    <window name="prevreclist">
+        <!-- background and decoration -->
+        <imagetype name="background">
+            <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
+            <area>0,0,100%,100%</area>
+        </imagetype>
+        <group name="decoration" from="basecontentdecoration"/>
+        <textarea name="pagetitle" from="basepagetitletext">
+            <value>Previously Recorded</value>
+        </textarea>
+        <!-- left side -->
+        <buttonlist name="titles" from="baseitemlist">
+            <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="inactive" from="active">
+                    <alpha>0</alpha>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <alpha>0</alpha>
+                </state>
+            </statetype>
+        </buttonlist>
+        <buttonlist name="shows" from="baseitemlist">
+            <area>25,505,900,505</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="card" from="baseitemtext">
+                        <area>5,0,50,100%</area>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
+                        <font state="warning">basefont_l_warn</font>
+                        <font state="disabled">basefont_l_off</font>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>50,0,60%,100%</area>
+                        <font state="disabled">basefont_l_off</font>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <textarea name="timedate" from="basetext_m">
+                        <area>60%,0,-5,100%</area>
+                        <align>right,vcenter</align>
+                        <alpha>100</alpha>
+                        <font state="disabled">basefont_m_off</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <textarea name="card" from="baseitemtext">
+                        <area>5,0,50,100%</area>
+                        <font state="error">basefont_l_bad</font>
+                        <font state="running">basefont_l_good</font>
+                        <font state="warning">basefont_l_warn</font>
+                        <font state="disabled">basefont_l_off</font>
+                    </textarea>
+                    <textarea name="title" from="baseitemtext">
+                        <area>50,0,60%,100%</area>
+                        <font state="disabled">basefont_l_off</font>
+                    </textarea>
+                    <textarea name="timedate" from="basetext_m">
+                        <area>60%,0,-5,100%</area>
+                        <align>right,vcenter</align>
+                        <font state="disabled">basefont_m_off</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+        <textarea name="curview" from="basetext_m">
+            <area>50%-125,100%-50,250,50</area>
+            <align>center</align>
+            <alpha>200</alpha>
+        </textarea>
+        <!-- right side -->
+        <group name="details">
+            <area>975,500,-25,-75</area>
+            <group name="titledesc" from="basetitledesc">
+                <area>0,0,100%,385</area>
+            </group>
+            <group name="facts">
+                <area>0,100%-120,100%,120</area>
+                <!-- left side -->
+                <group name="iconfacts" from="basescheduleiconfacts">
+                    <area>0,0,50%,120</area>
+                </group>
+                <!-- right side -->
+                <imagetype name="group" from="baseicon" depends="recgroup">
+                    <position>50%,80</position>
+                    <filename>images/icons/Group.png</filename>
+                </imagetype>
+                <textarea name="recgroup" from="basetext_s">
+                    <area>50%+50,80,100%,32</area>
+                    <alpha>150</alpha>
+                </textarea>
+            </group>
+            <textarea name="help2text" from="basehelptext" depends="!title">
+                <area>0, 0, 100%, 100%</area>
+                <align>center</align>
+            </textarea>
+        </group>
+        <textarea name="status" from="basetext_m">
+            <area>975,100%-50,-25,50</area>
+            <align>center</align>
+            <alpha>200</alpha>
+        </textarea>
+    </window>
+
 </mythuitheme>
