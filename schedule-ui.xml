@@ -1043,19 +1043,6 @@
 
     <!--====================================================================-->
 
-    <window name="progdetails">
-        <group name="decoration" from="basewindowdecoration"/>
-        <textarea name="pagetitle" from="basepagetitletext">
-            <value>Program Details:</value>
-        </textarea>
-        <webbrowser name="browser" from="basebrowser">
-            <area>50,75,-30,-120</area>
-            <browserarea>0,0,100%-30,100%-30</browserarea>
-        </webbrowser>
-    </window>
-
-    <!--====================================================================-->
-
     <window name="programdetails">
         <group name="decoration" from="basewindowdecoration"/>
         <textarea name="pagetitle" from="basepagetitletext">
