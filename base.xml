@@ -1505,6 +1505,37 @@
 
     <!--====================================================================-->
 
+    <window name="SpinBoxEntryDialog">
+        <area>-1,0,550,330</area>
+        <animation trigger="AboutToShow">
+            <section duration="500" centre="middle">
+                <position start="-1,-250" end="-1,0" easingcurve="OutBack" />
+            </section>
+        </animation>
+        <group name="decoration" from="basebuttonpopupdecoration"/>
+        <textarea name="rules" from="basetext_m">
+            <area>50,75,-50,80</area>
+            <align>center</align>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <template>Values from %LOW% to %HIGH% in increments of %STEP%</template>
+        </textarea>
+        <textedit name="entry" from="basetextedit">
+            <area>50,180,-50,40</area>
+        </textedit>
+        <!-- bottom part with buttons -->
+        <button name="ok" from="basebutton">
+            <area>50%-225,100%-65,200,40</area>
+            <value>Ok</value>
+        </button>
+        <button name="cancel" from="basebutton">
+            <area>50%+25,100%-65,200,40</area>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <!--====================================================================-->
+
     <window name="MythSpinBoxDialog">
         <area>-1,0,750,330</area>
         <animation trigger="AboutToShow">
