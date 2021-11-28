@@ -1249,36 +1249,40 @@
             </checkbox>
 
             <spinbox name="priority" from="basespinbox">
-                <area>0,65,100%,40</area>
+                <area>0,55,100%,40</area>
                 <template type="negative">Reduce priority by %n</template>
                 <template type="zero">Normal recording priority</template>
                 <template type="positive">Raise priority by %n</template>
             </spinbox>
 
             <buttonlist name="input" from="baseselector">
-                <area>0,130,100%,40</area>
+                <area>0,110,100%,40</area>
             </buttonlist>
 
             <spinbox name="startoffset" from="basespinbox">
-                <area>0,195,100%,40</area>
+                <area>0,165,100%,40</area>
                 <template type="negative">Start recording %n minute(s) late</template>
                 <template type="zero">Start recording on time</template>
                 <template type="positive">Start recording %n minute(s) early</template>
             </spinbox>
 
             <spinbox name="endoffset" from="basespinbox">
-                <area>0,260,100%,40</area>
+                <area>0,220,100%,40</area>
                 <template type="negative">End recording %n minute(s) early</template>
                 <template type="zero">End recording on time</template>
                 <template type="positive">End recording %n minute(s) late</template>
             </spinbox>
 
             <buttonlist name="dupmethod" from="baseselector">
-                <area>0,325,100%,40</area>
+                <area>0,275,100%,40</area>
             </buttonlist>
 
             <buttonlist name="dupscope" from="baseselector">
-                <area>0,390,100%,40</area>
+                <area>0,330,100%,40</area>
+            </buttonlist>
+
+            <buttonlist name="autoextend" from="baseselector">
+                <area>0,385,100%,40</area>
             </buttonlist>
 
             <button name="filters" from="basebutton">
