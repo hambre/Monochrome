@@ -1233,13 +1233,17 @@
             <filename>images/Backgrounds/BackgroundRecordings.jpg</filename>
             <area>0,0,100%,100%</area>
         </imagetype>
-        <group name="decoration" from="baseeditordecoration"/>
+        <group name="decoration" from="baseeditordecoration">
+            <group name="pagecontent">
+                <area>0,385,100%,100%</area>
+            </group>
+        </group>
         <textarea name="pagetitle" from="basepagetitletext">
             <value>Schedule Options</value>
         </textarea>
         <!-- left side -->
         <group name="controls">
-            <area>50,465,600,-115</area>
+            <area>50,400,600,-115</area>
             <textarea name="ruleactivelabel" from="baselabeltext">
                 <area>5,0,300,40</area>
                 <value>Recording Rule Active</value>
@@ -1281,6 +1285,10 @@
                 <area>0,390,100%,40</area>
             </buttonlist>
 
+            <buttonlist name="autoextend" from="baseselector">
+                <area>0,455,100%,40</area>
+            </buttonlist>
+
             <button name="filters" from="basebutton">
                 <area>0,100%-40,100%,40</area>
                 <value>Schedule filters</value>
@@ -1288,7 +1296,7 @@
         </group>
         <!-- right side -->
         <group name="details">
-            <area>700,465,-50,-115</area>
+            <area>700,400,-50,-115</area>
             <group name="titledesc" from="basetitledesc">
                 <area>0,0,100%,-120</area>
             </group>
