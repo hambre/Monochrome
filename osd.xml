@@ -265,43 +265,67 @@
             <state name="MPEG-2">
                 <imagetype name="mpeg2">
                     <area>0,0,110,32</area>
-                    <filename>images/icons/VideoMPG2.png</filename>
+                    <filename>images/icons/CodecMPG2.png</filename>
                 </imagetype>
             </state>
             <state name="VC-1">
                 <imagetype name="vc1">
                     <area>0,0,110,32</area>
-                    <filename>images/icons/VideoVC1.png</filename>
+                    <filename>images/icons/CodecVC1.png</filename>
                 </imagetype>
             </state>
             <state name="H.264">
                 <imagetype name="h264">
                     <area>0,0,110,32</area>
-                    <filename>images/icons/VideoH264.png</filename>
+                    <filename>images/icons/CodecH264.png</filename>
                 </imagetype>
             </state>
             <state name="MPEG-4">
                 <imagetype name="mpeg4">
                     <area>0,0,110,32</area>
-                    <filename>images/icons/VideoMPG4.png</filename>
+                    <filename>images/icons/CodecMPG4.png</filename>
                 </imagetype>
             </state>
             <state name="RTjpeg">
                 <imagetype name="rtjpeg">
                     <area>0,0,110,32</area>
-                    <filename>images/icons/VideoRTJPEG.png</filename>
+                    <filename>images/icons/CodecRTJPEG.png</filename>
                 </imagetype>
             </state>
             <state name="WMV3">
                 <imagetype name="wmv3">
                     <area>0,0,110,32</area>
-                    <filename>images/icons/VideoWMV3.png</filename>
+                    <filename>images/icons/CodecWMV3.png</filename>
                 </imagetype>
             </state>
             <state name="H.263">
                 <imagetype name="h263">
                     <area>0,0,110,32</area>
-                    <filename>images/icons/VideoH263.png</filename>
+                    <filename>images/icons/CodecH263.png</filename>
+                </imagetype>
+            </state>
+            <state name="HEVC">
+                <imagetype name="hevc">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/CodecH265.png</filename>
+                </imagetype>
+            </state>
+            <state name="VP8">
+                <imagetype name="vp8">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/CodecVP8.png</filename>
+                </imagetype>
+            </state>
+            <state name="VP9">
+                <imagetype name="vp9">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/CodecVP9.png</filename>
+                </imagetype>
+            </state>
+            <state name="AV1">
+                <imagetype name="av1">
+                    <area>0,0,110,32</area>
+                    <filename>images/icons/CodecAV1.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -381,32 +405,50 @@
             <showempty>yes</showempty>
             <state name="SD">
                 <imagetype name="SD">
-                    <area>0,0,110,32</area>
+                    <area>0,0,115,32</area>
                     <filename>images/icons/VideoSD.png</filename>
+                </imagetype>
+            </state>
+            <state name="HD">
+                <imagetype name="HD">
+                    <area>0,0,115,32</area>
+                    <filename>images/icons/VideoHD.png</filename>
                 </imagetype>
             </state>
             <state name="HD_720_I">
                 <imagetype name="720i">
-                    <area>0,0,110,32</area>
+                    <area>0,0,115,32</area>
                     <filename>images/icons/VideoHD720.png</filename>
                 </imagetype>
             </state>
             <state name="HD_720_P">
                 <imagetype name="720p">
-                    <area>0,0,110,32</area>
+                    <area>0,0,115,32</area>
                     <filename>images/icons/VideoHD720p.png</filename>
                 </imagetype>
             </state>
             <state name="HD_1080_I">
                 <imagetype name="1080i">
-                    <area>0,0,110,32</area>
+                    <area>0,0,115,32</area>
                     <filename>images/icons/VideoHD1080i.png</filename>
                 </imagetype>
             </state>
             <state name="HD_1080_P">
                 <imagetype name="1080p">
-                    <area>0,0,110,32</area>
+                    <area>0,0,115,32</area>
                     <filename>images/icons/VideoHD1080p.png</filename>
+                </imagetype>
+            </state>
+            <state name="UHD_4K_I">
+                <imagetype name="4Ki">
+                    <area>0,0,115,32</area>
+                    <filename>images/icons/VideoUHD4Ki.png</filename>
+                </imagetype>
+            </state>
+            <state name="UHD_4K_P">
+                <imagetype name="4Kp">
+                    <area>0,0,115,32</area>
+                    <filename>images/icons/VideoUHD4Kp.png</filename>
                 </imagetype>
             </state>
         </statetype>

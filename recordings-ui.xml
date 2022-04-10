@@ -214,53 +214,99 @@
                 </state>
             </statetype>
             <statetype name="videoprops">
-                <area>100,100%-40,110,32</area>
+                <area>125,100%-40,110,32</area>
                 <state name="hdtv">
                     <imagetype name="hdtv" from="baseicon">
-                        <area>0,0,110,32</area>
+                        <area>0,0,115,32</area>
                         <filename>images/icons/VideoHD.png</filename>
                     </imagetype>
                 </state>
                 <state name="widescreen">
                     <imagetype name="widescreen" from="baseicon">
-                        <area>0,0,110,32</area>
+                        <area>0,0,115,32</area>
                         <filename>images/icons/VideoWidescreen.png</filename>
-                    </imagetype>
-                </state>
-                <state name="avchd">
-                    <imagetype name="avchd" from="baseicon">
-                        <area>0,0,110,32</area>
-                        <filename>images/icons/VideoAVCHD.png</filename>
                     </imagetype>
                 </state>
                 <state name="hd720">
                     <imagetype name="hd720" from="baseicon">
-                        <area>0,0,110,32</area>
+                        <area>0,0,115,32</area>
                         <filename>images/icons/VideoHD720.png</filename>
                     </imagetype>
                 </state>
                 <state name="hd1080">
                     <imagetype name="hd1080" from="baseicon">
-                        <area>0,0,110,32</area>
+                        <area>0,0,115,32</area>
                         <filename>images/icons/VideoHD1080.png</filename>
+                    </imagetype>
+                </state>
+                <state name="hd1080i">
+                    <imagetype name="hd1080i" from="baseicon">
+                        <area>0,0,115,32</area>
+                        <filename>images/icons/VideoHD1080i.png</filename>
+                    </imagetype>
+                </state>
+                <state name="hd1080p">
+                    <imagetype name="hd1080p" from="baseicon">
+                        <area>0,0,115,32</area>
+                        <filename>images/icons/VideoHD1080p.png</filename>
+                    </imagetype>
+                </state>
+                <state name="uhd4ki">
+                    <imagetype name="uhd4ki" from="baseicon">
+                        <area>0,0,115,32</area>
+                        <filename>images/icons/VideoUHD4Ki.png</filename>
+                    </imagetype>
+                </state>
+                <state name="uhd4kp">
+                    <imagetype name="uhd4kp" from="baseicon">
+                        <area>0,0,115,32</area>
+                        <filename>images/icons/VideoUHD4Kp.png</filename>
                     </imagetype>
                 </state>
                 <state name="damaged">
                     <textarea name="damaged" from="basetext_m">
-                        <area>0,0,110,32</area>
+                        <area>0,0,115,32</area>
                         <value>Damaged</value>
                     </textarea>
                 </state>
                 <state name="default">
                     <imagetype name="default" from="baseicon">
-                        <area>0,0,110,32</area>
+                        <area>0,0,115,32</area>
                         <alpha>100</alpha>
                         <filename>images/icons/VideoSD.png</filename>
                     </imagetype>
                 </state>
             </statetype>
+            <statetype name="codecprops">
+                <area>250,100%-40,110,32</area>
+                <state name="mpeg2">
+                    <imagetype name="mpeg2" from="baseicon">
+                        <area>0,0,115,32</area>
+                        <filename>images/icons/CodecMPG2.png</filename>
+                    </imagetype>
+                </state>
+                <state name="avc">
+                    <imagetype name="avc" from="baseicon">
+                        <area>0,0,115,32</area>
+                        <filename>images/icons/CodecH264.png</filename>
+                    </imagetype>
+                </state>
+                <state name="hevc">
+                    <imagetype name="hevc" from="baseicon">
+                        <area>0,0,115,32</area>
+                        <filename>images/icons/CodecH265.png</filename>
+                    </imagetype>
+                </state>
+                <state name="default">
+                    <imagetype name="default" from="baseicon">
+                        <area>0,0,110,32</area>
+                        <alpha>100</alpha>
+                        <filename>images/icons/CodecMPG2.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
             <statetype name="subtitletypes">
-                <area>225,100%-40,75,32</area>
+                <area>375,100%-40,75,32</area>
                 <state name="cc">
                     <imagetype name="sub" from="baseicon">
                         <area>0,0,100,32</area>
@@ -622,10 +668,16 @@
                             </imagetype>
                         </state>
                         <!-- video -->
+                        <state name="sd">
+                            <imagetype name="sd" from="baseicon">
+                                <area>0,4,110,32</area>
+                                <filename>images/icons/VideoSD.png</filename>
+                            </imagetype>
+                        </state>
                         <state name="hdtv">
                             <imagetype name="hdtv" from="baseicon">
                                 <area>0,4,110,32</area>
-                                <filename>images/icons/VideoHDTV.png</filename>
+                                <filename>images/icons/VideoHD.png</filename>
                             </imagetype>
                         </state>
                         <state name="widescreen">
@@ -634,10 +686,22 @@
                                 <filename>images/icons/VideoWidescreen.png</filename>
                             </imagetype>
                         </state>
+                        <state name="mpeg2">
+                            <imagetype name="mpeg2" from="baseicon">
+                                <area>0,4,110,32</area>
+                                <filename>images/icons/CodecMPG2.png</filename>
+                            </imagetype>
+                        </state>
                         <state name="avchd">
                             <imagetype name="avchd" from="baseicon">
                                 <area>0,4,110,32</area>
-                                <filename>images/icons/VideoAVCHD.png</filename>
+                                <filename>images/icons/CodecH264.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="hevc">
+                            <imagetype name="hevc" from="baseicon">
+                                <area>0,4,110,32</area>
+                                <filename>images/icons/CodecH265.png</filename>
                             </imagetype>
                         </state>
                         <state name="hd720">
@@ -650,6 +714,30 @@
                             <imagetype name="hd1080" from="baseicon">
                                 <area>0,4,110,32</area>
                                 <filename>images/icons/VideoHD1080.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="hd1080i">
+                            <imagetype name="hd1080i" from="baseicon">
+                                <area>0,4,110,32</area>
+                                <filename>images/icons/VideoHD1080i.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="hd1080p">
+                            <imagetype name="hd1080p" from="baseicon">
+                                <area>0,4,110,32</area>
+                                <filename>images/icons/VideoHD1080p.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="uhd4ki">
+                            <imagetype name="uhd4ki" from="baseicon">
+                                <area>0,4,110,32</area>
+                                <filename>images/icons/VideoUHD4Ki.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="uhd4kp">
+                            <imagetype name="uhd4kp" from="baseicon">
+                                <area>0,4,110,32</area>
+                                <filename>images/icons/VideoUHD4Kp.png</filename>
                             </imagetype>
                         </state>
                         <!-- subtitles -->
