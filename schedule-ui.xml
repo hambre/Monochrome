@@ -488,23 +488,22 @@
                         <alpha>100</alpha>
                         <font state="disabled">basefont_m_off</font>
                     </textarea>
+                    <progressbar name="buttonprogress2" from="baseprogress_xs">
+                        <shape name="progressimage">
+                            <fill color="#004b00" alpha="255"/>
+                        </shape>
+                    </progressbar>
                 </state>
-                <state name="selectedactive">
-                    <textarea name="card" from="baseitemtext">
-                        <area>5,0,50,100%</area>
-                        <font state="error">basefont_l_bad</font>
-                        <font state="running">basefont_l_good</font>
-                        <font state="warning">basefont_l_warn</font>
-                        <font state="disabled">basefont_l_off</font>
+                <state name="selectedactive" from="active">
+                    <area>0,0,100%,58</area>
+                    <textarea name="card">
+                        <alpha>255</alpha>
                     </textarea>
-                    <textarea name="title" from="baseitemtext">
-                        <area>50,0,60%,100%</area>
-                        <font state="disabled">basefont_l_off</font>
+                    <textarea name="title">
+                        <alpha>255</alpha>
                     </textarea>
-                    <textarea name="timedate" from="basetext_m">
-                        <area>60%,0,-5,100%</area>
-                        <align>right,vcenter</align>
-                        <font state="disabled">basefont_m_off</font>
+                    <textarea name="timedate">
+                        <alpha>255</alpha>
                     </textarea>
                 </state>
             </statetype>
@@ -528,7 +527,7 @@
                 <area>0,100%-120,100%,120</area>
                 <!-- left side -->
                 <group name="iconfacts" from="basescheduleiconfacts">
-                    <area>0,0,50%,120</area>
+                    <area>0,0,50%,170</area>
                 </group>
                 <!-- right side -->
                 <imagetype name="group" from="baseicon" depends="recgroup">

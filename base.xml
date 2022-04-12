@@ -520,6 +520,16 @@
             <fill color="#969696" alpha="255" />
         </shape>
     </progressbar>
+    <progressbar name="baseprogress_xs">
+        <area>5,100%-5,100%-5,2</area>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <shape name="progressimage">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#969696" alpha="255"/>
+        </shape>
+    </progressbar>
 
     <!-- scroll bar -->
     <scrollbar name="basescrollbar_v">
