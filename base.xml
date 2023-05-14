@@ -521,13 +521,18 @@
         </shape>
     </progressbar>
     <progressbar name="baseprogress_xs">
-        <area>5,100%-5,100%-5,2</area>
+        <area>5,100%-5,100%-5,3</area>
         <layout>horizontal</layout>
         <style>reveal</style>
         <shape name="progressimage">
             <area>0,0,100%,100%</area>
             <type>box</type>
             <fill color="#969696" alpha="255"/>
+        </shape>
+    </progressbar>
+    <progressbar name="basewatchedprogress" from="baseprogress_xs">
+        <shape name="progressimage">
+            <fill color="#004B00" alpha="255"/>
         </shape>
     </progressbar>
 
