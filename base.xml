@@ -926,6 +926,17 @@
         </state>
     </statetype>
 
+    <statetype name="basebookmarkstate">
+        <area>0,0,32,32</area>
+        <state name="yes">
+            <area>0,0,100%,100%</area>
+            <imagetype name="icon" from="baseicon">
+                <position>0,0</position>
+                <filename>images/icons/Bookmark.png</filename>
+            </imagetype>
+        </state>
+    </statetype>
+
     <statetype name="baseplayliststate">
         <area>0,0,32,32</area>
         <state name="yes">
@@ -1048,6 +1059,9 @@
             <area>50,100%-32,-200,32</area>
             <alpha>150</alpha>
         </textarea>
+        <statetype name="bookmarkstate" from="basebookmarkstate">
+            <position>100%-72,100%-122</position>
+        </statetype>
         <statetype name="watchedstate" from="basewatchedstate">
             <position>100%-32,100%-122</position>
         </statetype>

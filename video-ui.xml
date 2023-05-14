@@ -54,6 +54,9 @@
                         <area>0,0,100%+1,100%+1</area>
                         <type>box</type>
                     </shape>
+                    <progressbar name="buttonprogress1" from="basewatchedprogress">
+                        <area>0,100%+7,100%,3</area>
+                    </progressbar>
                 </state>
             </statetype>
         </buttonlist>
@@ -121,6 +124,9 @@
         <statetype name="userratingstate" from="basestarrating">
             <position>35,495</position>
         </statetype>
+        <progressbar name="watchedprogressbar" from="basewatchedprogress">
+            <area>35, 545, 100%-35, 3</area>
+        </progressbar>
         <textarea name="title" from="basetitletext">
             <area>235, 490, -235, 40</area>
             <align>top,hcenter</align>
@@ -128,6 +134,9 @@
             <scroll direction="horizontal" />
             <template>%TITLE| %%~ |00x00| %%~ |SUBTITLE%</template>
         </textarea>
+        <statetype name="bookmarkstate" from="basebookmarkstate">
+            <position>100%-107,495</position>
+        </statetype>
         <statetype name="watchedstate" from="basewatchedstate">
             <position>100%-67,495</position>
         </statetype>
@@ -251,6 +260,7 @@
                     <statetype name="watchedstate">
                         <alpha>255</alpha>
                     </statetype>
+                    <progressbar name="buttonprogress1" from="basewatchedprogress"/>
                 </state>
             </statetype>
             </buttonlist>
@@ -393,12 +403,12 @@
                         <alpha>150</alpha>
                     </textarea>
                     <textarea name="length" from="basetext_s">
-                        <area>100%-150,120,-10,30</area>
+                        <area>100%-160,120,-10,30</area>
                         <align>right,vcenter</align>
                         <alpha>150</alpha>
                     </textarea>
                     <statetype name="watchedstate" from="basewatchedstate">
-                        <position>100%-35,15</position>
+                        <position>100%-35,10</position>
                         <alpha>50</alpha>
                     </statetype>
                 </state>
@@ -428,6 +438,13 @@
                     <statetype name="watchedstate">
                         <alpha>255</alpha>
                     </statetype>
+                    <statetype name="bookmarkstate" from="basebookmarkstate">
+                        <position>100%-35,45</position>
+                        <alpha>255</alpha>
+                    </statetype>
+                    <progressbar name="buttonprogress1" from="basewatchedprogress">
+                        <area>125,100%-8,100%-5,3</area>
+                    </progressbar>
                 </state>
             </statetype>
         </buttonlist>
