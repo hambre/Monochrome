@@ -66,11 +66,7 @@
                             <fill color="#4B0000" alpha="255"/>
                         </shape>
                     </progressbar>
-                    <progressbar name="buttonprogress1" from="baseprogress_xs">
-                        <shape name="progressimage">
-                            <fill color="#004B00" alpha="255"/>
-                        </shape>
-                    </progressbar>
+                    <progressbar name="buttonprogress1" from="basewatchedprogress"/>
                     <!-- display watched state only when there is no job running -->
                     <statetype name="watched" depends="!jobstate&amp;!playlist">
                         <alpha>255</alpha>
