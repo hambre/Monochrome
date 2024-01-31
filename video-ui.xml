@@ -249,6 +249,9 @@
                         <position>100%-32,12</position>
                         <alpha>50</alpha>
                     </statetype>
+                    <progressbar name="buttonprogress1" from="basewatchedprogress">
+                        <alpha>125</alpha>
+                    </progressbar>
                 </state>
                 <state name="selectedactive" from="active">
                     <textarea name="title">
@@ -411,6 +414,14 @@
                         <position>100%-35,10</position>
                         <alpha>50</alpha>
                     </statetype>
+                    <statetype name="bookmarkstate" from="basebookmarkstate">
+                        <position>100%-35,45</position>
+                        <alpha>50</alpha>
+                    </statetype>
+                    <progressbar name="buttonprogress1" from="basewatchedprogress">
+                        <area>125,100%-8,100%-5,3</area>
+                        <alpha>125</alpha>
+                    </progressbar>
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="coverart">

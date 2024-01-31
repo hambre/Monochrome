@@ -54,6 +54,9 @@
                     <statetype name="jobstate" from="basejobstate" depends="!playlist">
                         <position>100%-37,12</position>
                     </statetype>
+                    <progressbar name="buttonprogress1" from="basewatchedprogress">
+                        <alpha>125</alpha>
+                    </progressbar>
                 </state>
                 <state name="selectedactive" from="active">
                     <textarea name="titlesubtitle">
