@@ -4,7 +4,7 @@
     <window name="browser">
         <!-- background and decoration -->
         <imagetype name="background" from="baseimagebackground" depends="!fanart">
-            <filename>images/Backgrounds/BackgroundTV.jpg</filename>
+            <filename>images/Backgrounds/BackgroundDefault.jpg</filename>
         </imagetype>
         <imagetype name="screenshot" from="baseimagebackground" depends="!fanart'"/>
         <imagetype name="fanart" from="baseimagebackground"/>
@@ -112,7 +112,7 @@
     <window name="gallery">
         <!-- background and decoration -->
         <imagetype name="background" from="baseimagebackground" depends="!fanart">
-            <filename>images/Backgrounds/BackgroundTV.jpg</filename>
+            <filename>images/Backgrounds/BackgroundDefault.jpg</filename>
         </imagetype>
         <imagetype name="screenshot" from="baseimagebackground" depends="!fanart'"/>
         <imagetype name="fanart" from="baseimagebackground"/>
@@ -211,7 +211,7 @@
     <window name="tree">
         <!-- background and decoration -->
         <imagetype name="background" from="baseimagebackground" depends="!fanart">
-            <filename>images/Backgrounds/BackgroundTV.jpg</filename>
+            <filename>images/Backgrounds/BackgroundDefault.jpg</filename>
         </imagetype>
         <imagetype name="screenshot" from="baseimagebackground" depends="!fanart'"/>
         <imagetype name="fanart" from="baseimagebackground"/>
@@ -320,7 +320,7 @@
     <window name="manager">
         <!-- background and decoration -->
         <imagetype name="background" from="baseimagebackground" depends="!fanart">
-            <filename>images/Backgrounds/BackgroundTV.jpg</filename>
+            <filename>images/Backgrounds/BackgroundDefault.jpg</filename>
         </imagetype>
         <imagetype name="screenshot" from="baseimagebackground" depends="!fanart'"/>
         <imagetype name="fanart" from="baseimagebackground"/>

@@ -61,8 +61,16 @@
             </state>
 
             <!-- library.xml -->
-            <state name="TV_WATCH_RECORDINGS" from="TV_WATCH_TV"/>
-            <state name="VIDEO_BROWSER" from="TV_WATCH_TV"/>
+            <state name="TV_WATCH_RECORDINGS" from="default">
+               <imagetype name="background">
+                   <filename>images/Backgrounds/BackgroundRec.jpg</filename>
+               </imagetype>
+            </state>
+            <state name="VIDEO_BROWSER" from="default">
+               <imagetype name="background">
+                    <filename>images/Backgrounds/BackgroundVideo.jpg</filename>
+                </imagetype>
+            </state>
             <state name="MUSIC_PLAY" from="default">
                <imagetype name="background">
                     <filename>images/Backgrounds/BackgroundMusic.jpg</filename>
